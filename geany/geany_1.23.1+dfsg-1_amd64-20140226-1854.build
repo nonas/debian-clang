@@ -1,0 +1,2903 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ geany 1.23.1+dfsg-1 (amd64)                                26 Feb 2014 18:54 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: geany
+Version: 1.23.1+dfsg-1
+Source Version: 1.23.1+dfsg-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/geany-AFHl0s/geany-1.23.1+dfsg' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/geany-AFHl0s' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-b8aa62c7-5666-4d7f-9c2a-fff4919399fb' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Update chroot                                                                │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Hit http://http.debian.net sid InRelease
+Hit http://http.debian.net sid/main Sources/DiffIndex
+Hit http://http.debian.net sid/main Translation-en/DiffIndex
+Hit http://http.debian.net sid/main amd64 Packages/DiffIndex
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Check APT
+─────────
+
+Checking available source versions...
+
+Download source files with APT
+──────────────────────────────
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+NOTICE: 'geany' packaging is maintained in the 'Git' version control system at:
+git://anonscm.debian.org/pkg-geany/packages/geany.git
+Need to get 4879 kB of source archives.
+Get:1 http://http.debian.net/debian/ sid/main geany 1.23.1+dfsg-1 (dsc) [2151 B]
+Get:2 http://http.debian.net/debian/ sid/main geany 1.23.1+dfsg-1 (diff) [11.5 kB]
+Get:3 http://http.debian.net/debian/ sid/main geany 1.23.1+dfsg-1 (tar) [4865 kB]
+Fetched 4879 kB in 5s (814 kB/s)
+Download complete and in download only mode
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-DOfF4b/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13258 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), libgtk2.0-dev (>= 2.10), libglib2.0-dev, libatk1.0-dev, libpango1.0-dev, intltool, chrpath, dh-autoreconf
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), libgtk2.0-dev (>= 2.10), libglib2.0-dev, libatk1.0-dev, libpango1.0-dev, intltool, chrpath, dh-autoreconf
+dpkg-deb: building package `sbuild-build-depends-geany-dummy' in `/«BUILDDIR»/resolver-O9GIqz/apt_archive/sbuild-build-depends-geany-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install geany build dependencies (apt-based resolver)                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils ca-certificates
+  chrpath debhelper dh-autoreconf fontconfig fontconfig-config
+  fonts-dejavu-core gettext gettext-base gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-2.0 gir1.2-pango-1.0
+  groff-base intltool intltool-debian libasprintf0c2 libatk1.0-0
+  libatk1.0-data libatk1.0-dev libavahi-client3 libavahi-common-data
+  libavahi-common3 libcairo-gobject2 libcairo-script-interpreter2 libcairo2
+  libcairo2-dev libcroco3 libcups2 libdatrie1 libdbus-1-3 libdrm-dev
+  libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2 libegl1-mesa
+  libegl1-mesa-dev libegl1-mesa-drivers libelf1 libelfg0 libencode-locale-perl
+  libexpat1-dev libfile-listing-perl libfontconfig1 libfontconfig1-dev
+  libfreetype6 libfreetype6-dev libgbm1 libgcrypt11 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-common libgdk-pixbuf2.0-dev libgirepository-1.0-1
+  libgl1-mesa-dev libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libglib2.0-0
+  libglib2.0-bin libglib2.0-data libglib2.0-dev libgnutls26 libgpg-error0
+  libgraphite2-3 libgssapi-krb5-2 libgtk2.0-0 libgtk2.0-common libgtk2.0-dev
+  libharfbuzz-dev libharfbuzz-gobject0 libharfbuzz-icu0 libharfbuzz0b
+  libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl
+  libhttp-cookies-perl libhttp-date-perl libhttp-message-perl
+  libhttp-negotiate-perl libice-dev libice6 libicu52 libio-html-perl
+  libio-socket-ssl-perl libjasper1 libjbig0 libjpeg8 libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libllvm3.3 liblwp-mediatypes-perl
+  liblwp-protocol-https-perl liblzo2-2 libnet-http-perl libnet-ssleay-perl
+  libopenvg1-mesa libp11-kit0 libpango-1.0-0 libpango1.0-dev
+  libpangocairo-1.0-0 libpangoft2-1.0-0 libpangoxft-1.0-0 libpciaccess0
+  libpcre3-dev libpcrecpp0 libpixman-1-0 libpixman-1-dev libpng12-0
+  libpng12-dev libpopt0 libpthread-stubs0-dev libsigsegv2 libsm-dev libsm6
+  libtasn1-6 libthai-data libthai0 libtiff5 libtool libudev1 libunistring0
+  liburi-perl libwayland-client0 libwayland-server0 libwww-perl
+  libwww-robotrules-perl libx11-6 libx11-data libx11-dev libx11-xcb-dev
+  libx11-xcb1 libxau-dev libxau6 libxcb-dri2-0 libxcb-dri2-0-dev libxcb-glx0
+  libxcb-glx0-dev libxcb-render0 libxcb-render0-dev libxcb-shape0 libxcb-shm0
+  libxcb-shm0-dev libxcb-xfixes0 libxcb1 libxcb1-dev libxcomposite-dev
+  libxcomposite1 libxcursor-dev libxcursor1 libxdamage-dev libxdamage1
+  libxdmcp-dev libxdmcp6 libxext-dev libxext6 libxfixes-dev libxfixes3
+  libxft-dev libxft2 libxi-dev libxi6 libxinerama-dev libxinerama1
+  libxml-parser-perl libxml2 libxml2-utils libxrandr-dev libxrandr2
+  libxrender-dev libxrender1 libxxf86vm-dev libxxf86vm1 m4 man-db
+  mesa-common-dev netbase openssl pkg-config po-debconf shared-mime-info ucf
+  x11-common x11proto-composite-dev x11proto-core-dev x11proto-damage-dev
+  x11proto-dri2-dev x11proto-fixes-dev x11proto-gl-dev x11proto-input-dev
+  x11proto-kb-dev x11proto-randr-dev x11proto-render-dev x11proto-xext-dev
+  x11proto-xf86vidmode-dev x11proto-xinerama-dev xorg-sgml-doctools xtrans-dev
+  zlib1g-dev
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make gettext-doc groff libcairo2-doc cups-common rng-tools
+  libglide3 libglib2.0-doc krb5-doc krb5-user librsvg2-common gvfs
+  libgtk2.0-doc libdata-dump-perl libice-doc libjasper-runtime
+  libcrypt-ssleay-perl ttf-baekmuk ttf-arphic-gbsn00lp ttf-arphic-bsmi00lp
+  ttf-arphic-gkai00mp ttf-arphic-bkai00mp libpango1.0-doc imagemagick pciutils
+  libsm-doc libtool-doc automaken gfortran fortran95-compiler gcj-jdk
+  libauthen-ntlm-perl libxcb-doc libxext-doc less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur libasprintf-dev libgettextpo-dev dbus libtxc-dxtn-s2tc0
+  libtxc-dxtn0 hicolor-icon-theme libgtk2.0-bin libhtml-format-perl
+  libio-socket-ip-perl libio-socket-inet6-perl krb5-locales libltdl-dev
+  libhtml-form-perl libhttp-daemon-perl libmailtools-perl libx11-doc xml-core
+  ifupdown libmail-sendmail-perl
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils ca-certificates
+  chrpath debhelper dh-autoreconf fontconfig fontconfig-config
+  fonts-dejavu-core gettext gettext-base gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-2.0 gir1.2-pango-1.0
+  groff-base intltool intltool-debian libasprintf0c2 libatk1.0-0
+  libatk1.0-data libatk1.0-dev libavahi-client3 libavahi-common-data
+  libavahi-common3 libcairo-gobject2 libcairo-script-interpreter2 libcairo2
+  libcairo2-dev libcroco3 libcups2 libdatrie1 libdbus-1-3 libdrm-dev
+  libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2 libegl1-mesa
+  libegl1-mesa-dev libegl1-mesa-drivers libelf1 libelfg0 libencode-locale-perl
+  libexpat1-dev libfile-listing-perl libfontconfig1 libfontconfig1-dev
+  libfreetype6 libfreetype6-dev libgbm1 libgcrypt11 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-common libgdk-pixbuf2.0-dev libgirepository-1.0-1
+  libgl1-mesa-dev libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libglib2.0-0
+  libglib2.0-bin libglib2.0-data libglib2.0-dev libgnutls26 libgpg-error0
+  libgraphite2-3 libgssapi-krb5-2 libgtk2.0-0 libgtk2.0-common libgtk2.0-dev
+  libharfbuzz-dev libharfbuzz-gobject0 libharfbuzz-icu0 libharfbuzz0b
+  libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl
+  libhttp-cookies-perl libhttp-date-perl libhttp-message-perl
+  libhttp-negotiate-perl libice-dev libice6 libicu52 libio-html-perl
+  libio-socket-ssl-perl libjasper1 libjbig0 libjpeg8 libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libllvm3.3 liblwp-mediatypes-perl
+  liblwp-protocol-https-perl liblzo2-2 libnet-http-perl libnet-ssleay-perl
+  libopenvg1-mesa libp11-kit0 libpango-1.0-0 libpango1.0-dev
+  libpangocairo-1.0-0 libpangoft2-1.0-0 libpangoxft-1.0-0 libpciaccess0
+  libpcre3-dev libpcrecpp0 libpixman-1-0 libpixman-1-dev libpng12-0
+  libpng12-dev libpopt0 libpthread-stubs0-dev libsigsegv2 libsm-dev libsm6
+  libtasn1-6 libthai-data libthai0 libtiff5 libtool libudev1 libunistring0
+  liburi-perl libwayland-client0 libwayland-server0 libwww-perl
+  libwww-robotrules-perl libx11-6 libx11-data libx11-dev libx11-xcb-dev
+  libx11-xcb1 libxau-dev libxau6 libxcb-dri2-0 libxcb-dri2-0-dev libxcb-glx0
+  libxcb-glx0-dev libxcb-render0 libxcb-render0-dev libxcb-shape0 libxcb-shm0
+  libxcb-shm0-dev libxcb-xfixes0 libxcb1 libxcb1-dev libxcomposite-dev
+  libxcomposite1 libxcursor-dev libxcursor1 libxdamage-dev libxdamage1
+  libxdmcp-dev libxdmcp6 libxext-dev libxext6 libxfixes-dev libxfixes3
+  libxft-dev libxft2 libxi-dev libxi6 libxinerama-dev libxinerama1
+  libxml-parser-perl libxml2 libxml2-utils libxrandr-dev libxrandr2
+  libxrender-dev libxrender1 libxxf86vm-dev libxxf86vm1 m4 man-db
+  mesa-common-dev netbase openssl pkg-config po-debconf
+  sbuild-build-depends-geany-dummy shared-mime-info ucf x11-common
+  x11proto-composite-dev x11proto-core-dev x11proto-damage-dev
+  x11proto-dri2-dev x11proto-fixes-dev x11proto-gl-dev x11proto-input-dev
+  x11proto-kb-dev x11proto-randr-dev x11proto-render-dev x11proto-xext-dev
+  x11proto-xf86vidmode-dev x11proto-xinerama-dev xorg-sgml-doctools xtrans-dev
+  zlib1g-dev
+0 upgraded, 209 newly installed, 0 to remove and 0 not upgraded.
+Need to get 74.4 MB/74.4 MB of archives.
+After this operation, 298 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main libpopt0 amd64 1.16-8 [48.9 kB]
+Get:2 http://http.debian.net/debian/ sid/main libudev1 amd64 204-7 [43.4 kB]
+Get:3 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:4 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:5 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://http.debian.net/debian/ sid/main libgcrypt11 amd64 1.5.3-3 [249 kB]
+Get:7 http://http.debian.net/debian/ sid/main libp11-kit0 amd64 0.20.2-1 [80.1 kB]
+Get:8 http://http.debian.net/debian/ sid/main libgnutls26 amd64 2.12.23-12 [530 kB]
+Get:9 http://http.debian.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:10 http://http.debian.net/debian/ sid/main libtasn1-6 amd64 3.4-3 [48.8 kB]
+Get:11 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:12 http://http.debian.net/debian/ sid/main libkrb5support0 amd64 1.12+dfsg-2 [61.7 kB]
+Get:13 http://http.debian.net/debian/ sid/main libgssapi-krb5-2 amd64 1.12+dfsg-2 [166 kB]
+Get:14 http://http.debian.net/debian/ sid/main libgpg-error0 amd64 1.12-0.2 [56.5 kB]
+Get:15 http://http.debian.net/debian/ sid/main libavahi-common3 amd64 0.6.31-4 [50.6 kB]
+Get:16 http://http.debian.net/debian/ sid/main libk5crypto3 amd64 1.12+dfsg-2 [127 kB]
+Get:17 http://http.debian.net/debian/ sid/main libatk1.0-0 amd64 2.10.0-2 [85.4 kB]
+Get:18 http://http.debian.net/debian/ sid/main libglapi-mesa amd64 9.2.2-1 [49.5 kB]
+Get:19 http://http.debian.net/debian/ sid/main libllvm3.3 amd64 1:3.3-16 [6096 kB]
+Get:20 http://http.debian.net/debian/ sid/main libwayland-server0 amd64 1.4.0-1 [27.5 kB]
+Get:21 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.38.2-5 [2231 kB]
+Get:22 http://http.debian.net/debian/ sid/main libxcb1 amd64 1.10-2 [41.8 kB]
+Get:23 http://http.debian.net/debian/ sid/main libxcb-dri2-0 amd64 1.10-2 [12.1 kB]
+Get:24 http://http.debian.net/debian/ sid/main libx11-xcb1 amd64 2:1.6.2-1 [162 kB]
+Get:25 http://http.debian.net/debian/ sid/main libkeyutils1 amd64 1.5.6-1 [8758 B]
+Get:26 http://http.debian.net/debian/ sid/main libpng12-0 amd64 1.2.50-1 [189 kB]
+Get:27 http://http.debian.net/debian/ sid/main libkrb5-3 amd64 1.12+dfsg-2 [391 kB]
+Get:28 http://http.debian.net/debian/ sid/main libavahi-common-data amd64 0.6.31-4 [98.3 kB]
+Get:29 http://http.debian.net/debian/ sid/main libdbus-1-3 amd64 1.8.0-1 [161 kB]
+Get:30 http://http.debian.net/debian/ sid/main libfontconfig1 amd64 2.11.0-5 [327 kB]
+Get:31 http://http.debian.net/debian/ sid/main libavahi-client3 amd64 0.6.31-4 [53.8 kB]
+Get:32 http://http.debian.net/debian/ sid/main libwayland-client0 amd64 1.4.0-1 [22.5 kB]
+Get:33 http://http.debian.net/debian/ sid/main libxau6 amd64 1:1.0.8-1 [20.7 kB]
+Get:34 http://http.debian.net/debian/ sid/main libpixman-1-0 amd64 0.32.4-1 [496 kB]
+Get:35 http://http.debian.net/debian/ sid/main libx11-6 amd64 2:1.6.2-1 [716 kB]
+Get:36 http://http.debian.net/debian/ sid/main libatk1.0-data all 2.10.0-2 [171 kB]
+Get:37 http://http.debian.net/debian/ sid/main libcairo2 amd64 1.12.16-2 [987 kB]
+Get:38 http://http.debian.net/debian/ sid/main libdrm2 amd64 2.4.52-1 [29.2 kB]
+Get:39 http://http.debian.net/debian/ sid/main libgbm1 amd64 9.2.2-1 [507 kB]
+Get:40 http://http.debian.net/debian/ sid/main libxcb-render0 amd64 1.10-2 [16.5 kB]
+Get:41 http://http.debian.net/debian/ sid/main ucf all 3.0027+nmu1 [70.6 kB]
+Get:42 http://http.debian.net/debian/ sid/main libxcb-glx0 amd64 1.10-2 [25.3 kB]
+Get:43 http://http.debian.net/debian/ sid/main libx11-data all 2:1.6.2-1 [125 kB]
+Get:44 http://http.debian.net/debian/ sid/main libxext6 amd64 2:1.3.2-1 [56.5 kB]
+Get:45 http://http.debian.net/debian/ sid/main libegl1-mesa amd64 9.2.2-1 [83.9 kB]
+Get:46 http://http.debian.net/debian/ sid/main libcairo-gobject2 amd64 1.12.16-2 [539 kB]
+Get:47 http://http.debian.net/debian/ sid/main libcups2 amd64 1.7.1-6 [273 kB]
+Get:48 http://http.debian.net/debian/ sid/main fonts-dejavu-core all 2.34-1 [1047 kB]
+Get:49 http://http.debian.net/debian/ sid/main libdatrie1 amd64 0.2.8-1 [32.6 kB]
+Get:50 http://http.debian.net/debian/ sid/main libpciaccess0 amd64 0.13.2-1 [46.5 kB]
+Get:51 http://http.debian.net/debian/ sid/main libelfg0 amd64 0.8.13-5 [51.6 kB]
+Get:52 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:53 http://http.debian.net/debian/ sid/main libjpeg8 amd64 8d-2 [120 kB]
+Get:54 http://http.debian.net/debian/ sid/main libdrm-radeon1 amd64 2.4.52-1 [31.2 kB]
+Get:55 http://http.debian.net/debian/ sid/main libopenvg1-mesa amd64 9.2.2-1 [41.6 kB]
+Get:56 http://http.debian.net/debian/ sid/main libgtk2.0-common all 2.24.22-1 [3140 kB]
+Get:57 http://http.debian.net/debian/ sid/main libjasper1 amd64 1.900.1-14 [160 kB]
+Get:58 http://http.debian.net/debian/ sid/main libxdamage1 amd64 1:1.1.4-1 [15.1 kB]
+Get:59 http://http.debian.net/debian/ sid/main libthai-data all 0.1.20-3 [157 kB]
+Get:60 http://http.debian.net/debian/ sid/main libharfbuzz0b amd64 0.9.26-4 [448 kB]
+Get:61 http://http.debian.net/debian/ sid/main libxxf86vm1 amd64 1:1.1.3-1 [19.1 kB]
+Get:62 http://http.debian.net/debian/ sid/main libxcb-shm0 amd64 1.10-2 [10.8 kB]
+Get:63 http://http.debian.net/debian/ sid/main liblzo2-2 amd64 2.06-1.2 [51.2 kB]
+Get:64 http://http.debian.net/debian/ sid/main libdrm-nouveau2 amd64 2.4.52-1 [20.8 kB]
+Get:65 http://http.debian.net/debian/ sid/main libgl1-mesa-dri amd64 9.2.2-1 [6105 kB]
+Get:66 http://http.debian.net/debian/ sid/main libpangocairo-1.0-0 amd64 1.36.0-1+b1 [185 kB]
+Get:67 http://http.debian.net/debian/ sid/main libxcomposite1 amd64 1:0.4.4-1 [17.4 kB]
+Get:68 http://http.debian.net/debian/ sid/main libxcursor1 amd64 1:1.1.14-1 [38.0 kB]
+Get:69 http://http.debian.net/debian/ sid/main libxrandr2 amd64 2:1.4.2-1 [34.9 kB]
+Get:70 http://http.debian.net/debian/ sid/main libgtk2.0-0 amd64 2.24.22-1 [2242 kB]
+Get:71 http://http.debian.net/debian/ sid/main libxdmcp6 amd64 1:1.1.1-1 [26.3 kB]
+Get:72 http://http.debian.net/debian/ sid/main libxcb-shape0 amd64 1.10-2 [11.0 kB]
+Get:73 http://http.debian.net/debian/ sid/main libxcb-xfixes0 amd64 1.10-2 [13.9 kB]
+Get:74 http://http.debian.net/debian/ sid/main libfreetype6 amd64 2.5.2-1 [454 kB]
+Get:75 http://http.debian.net/debian/ sid/main fontconfig-config all 2.11.0-5 [273 kB]
+Get:76 http://http.debian.net/debian/ sid/main libxfixes3 amd64 1:5.0.1-1 [22.5 kB]
+Get:77 http://http.debian.net/debian/ sid/main libgl1-mesa-glx amd64 9.2.2-1 [134 kB]
+Get:78 http://http.debian.net/debian/ sid/main libxft2 amd64 2.3.1-2 [54.0 kB]
+Get:79 http://http.debian.net/debian/ sid/main libxrender1 amd64 1:0.9.8-1 [33.5 kB]
+Get:80 http://http.debian.net/debian/ sid/main autoconf all 2.69-5 [340 kB]
+Get:81 http://http.debian.net/debian/ sid/main libcairo-script-interpreter2 amd64 1.12.16-2 [575 kB]
+Get:82 http://http.debian.net/debian/ sid/main libpangoft2-1.0-0 amd64 1.36.0-1+b1 [198 kB]
+Get:83 http://http.debian.net/debian/ sid/main openssl amd64 1.0.1f-1 [663 kB]
+Get:84 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:85 http://http.debian.net/debian/ sid/main libdrm-intel1 amd64 2.4.52-1 [62.2 kB]
+Get:86 http://http.debian.net/debian/ sid/main libelf1 amd64 0.157-3 [156 kB]
+Get:87 http://http.debian.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:88 http://http.debian.net/debian/ sid/main x11-common all 1:7.7+6 [287 kB]
+Get:89 http://http.debian.net/debian/ sid/main libjbig0 amd64 2.0-2 [32.2 kB]
+Get:90 http://http.debian.net/debian/ sid/main libgirepository-1.0-1 amd64 1.38.0-2 [91.0 kB]
+Get:91 http://http.debian.net/debian/ sid/main libgdk-pixbuf2.0-0 amd64 2.30.5-1 [163 kB]
+Get:92 http://http.debian.net/debian/ sid/main gir1.2-glib-2.0 amd64 1.38.0-2 [135 kB]
+Get:93 http://http.debian.net/debian/ sid/main gir1.2-atk-1.0 amd64 2.10.0-2 [62.1 kB]
+Get:94 http://http.debian.net/debian/ sid/main gir1.2-freedesktop amd64 1.38.0-2 [19.6 kB]
+Get:95 http://http.debian.net/debian/ sid/main gir1.2-pango-1.0 amd64 1.36.0-1+b1 [184 kB]
+Get:96 http://http.debian.net/debian/ sid/main libegl1-mesa-drivers amd64 9.2.2-1 [2425 kB]
+Get:97 http://http.debian.net/debian/ sid/main libice6 amd64 2:1.0.8-2 [63.1 kB]
+Get:98 http://http.debian.net/debian/ sid/main gir1.2-gtk-2.0 amd64 2.24.22-1 [684 kB]
+Get:99 http://http.debian.net/debian/ sid/main libpcrecpp0 amd64 1:8.31-2 [128 kB]
+Get:100 http://http.debian.net/debian/ sid/main libsm6 amd64 2:1.2.1-2 [34.2 kB]
+Get:101 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:102 http://http.debian.net/debian/ sid/main libgraphite2-3 amd64 1.2.4-2 [57.4 kB]
+Get:103 http://http.debian.net/debian/ sid/main m4 amd64 1.4.17-2 [255 kB]
+Get:104 http://http.debian.net/debian/ sid/main libpango-1.0-0 amd64 1.36.0-1+b1 [273 kB]
+Get:105 http://http.debian.net/debian/ sid/main autopoint all 0.18.3.2-1 [393 kB]
+Get:106 http://http.debian.net/debian/ sid/main libxi6 amd64 2:1.7.2-1 [77.0 kB]
+Get:107 http://http.debian.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:108 http://http.debian.net/debian/ sid/main libfile-listing-perl all 6.04-1 [10.3 kB]
+Get:109 http://http.debian.net/debian/ sid/main libhttp-negotiate-perl all 6.00-2 [13.6 kB]
+Get:110 http://http.debian.net/debian/ sid/main libnet-ssleay-perl amd64 1.58-1 [260 kB]
+Get:111 http://http.debian.net/debian/ sid/main libtiff5 amd64 4.0.3-7 [208 kB]
+Get:112 http://http.debian.net/debian/ sid/main libgdk-pixbuf2.0-common all 2.30.5-1 [293 kB]
+Get:113 http://http.debian.net/debian/ sid/main libthai0 amd64 0.1.20-3 [44.2 kB]
+Get:114 http://http.debian.net/debian/ sid/main chrpath amd64 0.16-1 [16.3 kB]
+Get:115 http://http.debian.net/debian/ sid/main fontconfig amd64 2.11.0-5 [402 kB]
+Get:116 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:117 http://http.debian.net/debian/ sid/main debhelper all 9.20131227 [687 kB]
+Get:118 http://http.debian.net/debian/ sid/main liblwp-protocol-https-perl all 6.04-2 [7830 B]
+Get:119 http://http.debian.net/debian/ sid/main libwww-robotrules-perl all 6.01-1 [14.3 kB]
+Get:120 http://http.debian.net/debian/ sid/main pkg-config amd64 0.26-1 [59.5 kB]
+Get:121 http://http.debian.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-1 [217 kB]
+Get:122 http://http.debian.net/debian/ sid/main libxinerama1 amd64 2:1.1.3-1 [17.4 kB]
+Get:123 http://http.debian.net/debian/ sid/main shared-mime-info amd64 1.2-1 [641 kB]
+Get:124 http://http.debian.net/debian/ sid/main liburi-perl all 1.60-1 [100 kB]
+Get:125 http://http.debian.net/debian/ sid/main libencode-locale-perl all 1.03-1 [13.6 kB]
+Get:126 http://http.debian.net/debian/ sid/main libhttp-date-perl all 6.02-1 [10.7 kB]
+Get:127 http://http.debian.net/debian/ sid/main dh-autoreconf all 9 [15.5 kB]
+Get:128 http://http.debian.net/debian/ sid/main libhtml-tagset-perl all 3.20-2 [13.5 kB]
+Get:129 http://http.debian.net/debian/ sid/main libwww-perl all 6.05-2 [193 kB]
+Get:130 http://http.debian.net/debian/ sid/main libhtml-parser-perl amd64 3.71-1+b1 [117 kB]
+Get:131 http://http.debian.net/debian/ sid/main libglib2.0-bin amd64 2.38.2-5 [1219 kB]
+Get:132 http://http.debian.net/debian/ sid/main libio-html-perl all 1.00-1 [18.2 kB]
+Get:133 http://http.debian.net/debian/ sid/main libxdmcp-dev amd64 1:1.1.1-1 [42.3 kB]
+Get:134 http://http.debian.net/debian/ sid/main libhttp-cookies-perl all 6.00-2 [23.5 kB]
+Get:135 http://http.debian.net/debian/ sid/main libnet-http-perl all 6.06-1 [24.9 kB]
+Get:136 http://http.debian.net/debian/ sid/main libx11-dev amd64 2:1.6.2-1 [785 kB]
+Get:137 http://http.debian.net/debian/ sid/main libxml-parser-perl amd64 2.41-1+b2 [216 kB]
+Get:138 http://http.debian.net/debian/ sid/main libharfbuzz-gobject0 amd64 0.9.26-4 [332 kB]
+Get:139 http://http.debian.net/debian/ sid/main intltool all 0.50.2-2 [101 kB]
+Get:140 http://http.debian.net/debian/ sid/main libpcre3-dev amd64 1:8.31-2 [356 kB]
+Get:141 http://http.debian.net/debian/ sid/main libicu52 amd64 52.1-3 [6751 kB]
+Get:142 http://http.debian.net/debian/ sid/main libatk1.0-dev amd64 2.10.0-2 [114 kB]
+Get:143 http://http.debian.net/debian/ sid/main libice-dev amd64 2:1.0.8-2 [74.1 kB]
+Get:144 http://http.debian.net/debian/ sid/main libexpat1-dev amd64 2.1.0-4 [223 kB]
+Get:145 http://http.debian.net/debian/ sid/main libfontconfig1-dev amd64 2.11.0-5 [891 kB]
+Get:146 http://http.debian.net/debian/ sid/main libdrm-dev amd64 2.4.52-1 [175 kB]
+Get:147 http://http.debian.net/debian/ sid/main x11proto-damage-dev all 1:1.2.1-2 [11.8 kB]
+Get:148 http://http.debian.net/debian/ sid/main x11proto-xf86vidmode-dev all 2.3.1-2 [6114 B]
+Get:149 http://http.debian.net/debian/ sid/main x11proto-gl-dev all 1.4.17-1 [28.0 kB]
+Get:150 http://http.debian.net/debian/ sid/main libegl1-mesa-dev amd64 9.2.2-1 [46.6 kB]
+Get:151 http://http.debian.net/debian/ sid/main libpng12-dev amd64 1.2.50-1 [267 kB]
+Get:152 http://http.debian.net/debian/ sid/main xorg-sgml-doctools all 1:1.11-1 [21.9 kB]
+Get:153 http://http.debian.net/debian/ sid/main libxft-dev amd64 2.3.1-2 [64.9 kB]
+Get:154 http://http.debian.net/debian/ sid/main libpthread-stubs0-dev amd64 0.3-4 [3866 B]
+Get:155 http://http.debian.net/debian/ sid/main libxcb1-dev amd64 1.10-2 [82.0 kB]
+Get:156 http://http.debian.net/debian/ sid/main x11proto-render-dev all 2:0.11.1-2 [20.8 kB]
+Get:157 http://http.debian.net/debian/ sid/main x11proto-xext-dev all 7.3.0-1 [212 kB]
+Get:158 http://http.debian.net/debian/ sid/main libxrender-dev amd64 1:0.9.8-1 [42.1 kB]
+Get:159 http://http.debian.net/debian/ sid/main libxinerama-dev amd64 2:1.1.3-1 [19.6 kB]
+Get:160 http://http.debian.net/debian/ sid/main libxcb-shm0-dev amd64 1.10-2 [12.2 kB]
+Get:161 http://http.debian.net/debian/ sid/main libxext-dev amd64 2:1.3.2-1 [116 kB]
+Get:162 http://http.debian.net/debian/ sid/main mesa-common-dev amd64 9.2.2-1 [276 kB]
+Get:163 http://http.debian.net/debian/ sid/main libsm-dev amd64 2:1.2.1-2 [37.0 kB]
+Get:164 http://http.debian.net/debian/ sid/main libpixman-1-dev amd64 0.32.4-1 [512 kB]
+Get:165 http://http.debian.net/debian/ sid/main libxrandr-dev amd64 2:1.4.2-1 [42.0 kB]
+Get:166 http://http.debian.net/debian/ sid/main libx11-xcb-dev amd64 2:1.6.2-1 [164 kB]
+Get:167 http://http.debian.net/debian/ sid/main libxfixes-dev amd64 1:5.0.1-1 [24.3 kB]
+Get:168 http://http.debian.net/debian/ sid/main x11proto-dri2-dev all 2.8-2 [18.2 kB]
+Get:169 http://http.debian.net/debian/ sid/main libgtk2.0-dev amd64 2.24.22-1 [3067 kB]
+Get:170 http://http.debian.net/debian/ sid/main libxdamage-dev amd64 1:1.1.4-1 [14.8 kB]
+Get:171 http://http.debian.net/debian/ sid/main libcairo2-dev amd64 1.12.16-2 [1131 kB]
+Get:172 http://http.debian.net/debian/ sid/main libxxf86vm-dev amd64 1:1.1.3-1 [23.5 kB]
+Get:173 http://http.debian.net/debian/ sid/main libpango1.0-dev amd64 1.36.0-1+b1 [431 kB]
+Get:174 http://http.debian.net/debian/ sid/main libxcursor-dev amd64 1:1.1.14-1 [45.5 kB]
+Get:175 http://http.debian.net/debian/ sid/main libxcomposite-dev amd64 1:0.4.4-1 [20.8 kB]
+Get:176 http://http.debian.net/debian/ sid/main libxml2-utils amd64 2.9.1+dfsg1-3 [89.6 kB]
+Get:177 http://http.debian.net/debian/ sid/main x11proto-xinerama-dev all 1.2.1-2 [4938 B]
+Get:178 http://http.debian.net/debian/ sid/main x11proto-randr-dev all 1.4.0-2 [46.8 kB]
+Get:179 http://http.debian.net/debian/ sid/main libharfbuzz-icu0 amd64 0.9.26-4 [327 kB]
+Get:180 http://http.debian.net/debian/ sid/main libpangoxft-1.0-0 amd64 1.36.0-1+b1 [180 kB]
+Get:181 http://http.debian.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:182 http://http.debian.net/debian/ sid/main netbase all 5.2 [18.9 kB]
+Get:183 http://http.debian.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:184 http://http.debian.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:185 http://http.debian.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:186 http://http.debian.net/debian/ sid/main ca-certificates all 20130906 [185 kB]
+Get:187 http://http.debian.net/debian/ sid/main gir1.2-gdkpixbuf-2.0 amd64 2.30.5-1 [15.7 kB]
+Get:188 http://http.debian.net/debian/ sid/main libhtml-tree-perl all 5.03-1 [210 kB]
+Get:189 http://http.debian.net/debian/ sid/main liblwp-mediatypes-perl all 6.02-1 [22.1 kB]
+Get:190 http://http.debian.net/debian/ sid/main libhttp-message-perl all 6.06-1 [80.1 kB]
+Get:191 http://http.debian.net/debian/ sid/main libio-socket-ssl-perl all 1.967-1 [97.3 kB]
+Get:192 http://http.debian.net/debian/ sid/main libglib2.0-data all 2.38.2-5 [2019 kB]
+Get:193 http://http.debian.net/debian/ sid/main libglib2.0-dev amd64 2.38.2-5 [2466 kB]
+Get:194 http://http.debian.net/debian/ sid/main libfreetype6-dev amd64 2.5.2-1 [629 kB]
+Get:195 http://http.debian.net/debian/ sid/main x11proto-core-dev all 7.0.24-1 [779 kB]
+Get:196 http://http.debian.net/debian/ sid/main libxau-dev amd64 1:1.0.8-1 [23.6 kB]
+Get:197 http://http.debian.net/debian/ sid/main x11proto-input-dev all 2.3-1 [177 kB]
+Get:198 http://http.debian.net/debian/ sid/main x11proto-kb-dev all 1.0.6-2 [269 kB]
+Get:199 http://http.debian.net/debian/ sid/main xtrans-dev all 1.3.2-1 [96.3 kB]
+Get:200 http://http.debian.net/debian/ sid/main libxcb-render0-dev amd64 1.10-2 [22.0 kB]
+Get:201 http://http.debian.net/debian/ sid/main libxcb-dri2-0-dev amd64 1.10-2 [14.4 kB]
+Get:202 http://http.debian.net/debian/ sid/main libxcb-glx0-dev amd64 1.10-2 [36.5 kB]
+Get:203 http://http.debian.net/debian/ sid/main x11proto-fixes-dev all 1:5.0-2 [19.2 kB]
+Get:204 http://http.debian.net/debian/ sid/main libgl1-mesa-dev amd64 9.2.2-1 [35.1 kB]
+Get:205 http://http.debian.net/debian/ sid/main libgdk-pixbuf2.0-dev amd64 2.30.5-1 [51.0 kB]
+Get:206 http://http.debian.net/debian/ sid/main libharfbuzz-dev amd64 0.9.26-4 [351 kB]
+Get:207 http://http.debian.net/debian/ sid/main libxi-dev amd64 2:1.7.2-1 [234 kB]
+Get:208 http://http.debian.net/debian/ sid/main x11proto-composite-dev all 1:0.4.2-2 [15.3 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 74.4 MB in 1min 23s (891 kB/s)
+Selecting previously unselected package libpopt0:amd64.
+(Reading database ... 13258 files and directories currently installed.)
+Preparing to unpack .../libpopt0_1.16-8_amd64.deb ...
+Unpacking libpopt0:amd64 (1.16-8) ...
+Selecting previously unselected package libudev1:amd64.
+Preparing to unpack .../libudev1_204-7_amd64.deb ...
+Unpacking libudev1:amd64 (204-7) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libgpg-error0:amd64.
+Preparing to unpack .../libgpg-error0_1.12-0.2_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.12-0.2) ...
+Selecting previously unselected package libgcrypt11:amd64.
+Preparing to unpack .../libgcrypt11_1.5.3-3_amd64.deb ...
+Unpacking libgcrypt11:amd64 (1.5.3-3) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../libp11-kit0_0.20.2-1_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.20.2-1) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../libtasn1-6_3.4-3_amd64.deb ...
+Unpacking libtasn1-6:amd64 (3.4-3) ...
+Selecting previously unselected package libgnutls26:amd64.
+Preparing to unpack .../libgnutls26_2.12.23-12_amd64.deb ...
+Unpacking libgnutls26:amd64 (2.12.23-12) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../libkeyutils1_1.5.6-1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.6-1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../libkrb5support0_1.12+dfsg-2_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.12+dfsg-2) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../libk5crypto3_1.12+dfsg-2_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.12+dfsg-2) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../libkrb5-3_1.12+dfsg-2_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.12+dfsg-2) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../libgssapi-krb5-2_1.12+dfsg-2_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.12+dfsg-2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.38.2-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.38.2-5) ...
+Selecting previously unselected package libatk1.0-data.
+Preparing to unpack .../libatk1.0-data_2.10.0-2_all.deb ...
+Unpacking libatk1.0-data (2.10.0-2) ...
+Selecting previously unselected package libatk1.0-0:amd64.
+Preparing to unpack .../libatk1.0-0_2.10.0-2_amd64.deb ...
+Unpacking libatk1.0-0:amd64 (2.10.0-2) ...
+Selecting previously unselected package libavahi-common-data:amd64.
+Preparing to unpack .../libavahi-common-data_0.6.31-4_amd64.deb ...
+Unpacking libavahi-common-data:amd64 (0.6.31-4) ...
+Selecting previously unselected package libavahi-common3:amd64.
+Preparing to unpack .../libavahi-common3_0.6.31-4_amd64.deb ...
+Unpacking libavahi-common3:amd64 (0.6.31-4) ...
+Selecting previously unselected package libdbus-1-3:amd64.
+Preparing to unpack .../libdbus-1-3_1.8.0-1_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.8.0-1) ...
+Selecting previously unselected package libavahi-client3:amd64.
+Preparing to unpack .../libavahi-client3_0.6.31-4_amd64.deb ...
+Unpacking libavahi-client3:amd64 (0.6.31-4) ...
+Selecting previously unselected package libdrm2:amd64.
+Preparing to unpack .../libdrm2_2.4.52-1_amd64.deb ...
+Unpacking libdrm2:amd64 (2.4.52-1) ...
+Selecting previously unselected package libglapi-mesa:amd64.
+Preparing to unpack .../libglapi-mesa_9.2.2-1_amd64.deb ...
+Unpacking libglapi-mesa:amd64 (9.2.2-1) ...
+Selecting previously unselected package libllvm3.3:amd64.
+Preparing to unpack .../libllvm3.3_1%3a3.3-16_amd64.deb ...
+Unpacking libllvm3.3:amd64 (1:3.3-16) ...
+Selecting previously unselected package libwayland-client0:amd64.
+Preparing to unpack .../libwayland-client0_1.4.0-1_amd64.deb ...
+Unpacking libwayland-client0:amd64 (1.4.0-1) ...
+Selecting previously unselected package libwayland-server0:amd64.
+Preparing to unpack .../libwayland-server0_1.4.0-1_amd64.deb ...
+Unpacking libwayland-server0:amd64 (1.4.0-1) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../libxau6_1%3a1.0.8-1_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.8-1) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../libxdmcp6_1%3a1.1.1-1_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.1-1) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../libxcb1_1.10-2_amd64.deb ...
+Unpacking libxcb1:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-dri2-0:amd64.
+Preparing to unpack .../libxcb-dri2-0_1.10-2_amd64.deb ...
+Unpacking libxcb-dri2-0:amd64 (1.10-2) ...
+Selecting previously unselected package libgbm1:amd64.
+Preparing to unpack .../libgbm1_9.2.2-1_amd64.deb ...
+Unpacking libgbm1:amd64 (9.2.2-1) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../libx11-data_2%3a1.6.2-1_all.deb ...
+Unpacking libx11-data (2:1.6.2-1) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../libx11-6_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../libx11-xcb1_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package libxcb-render0:amd64.
+Preparing to unpack .../libxcb-render0_1.10-2_amd64.deb ...
+Unpacking libxcb-render0:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-shape0:amd64.
+Preparing to unpack .../libxcb-shape0_1.10-2_amd64.deb ...
+Unpacking libxcb-shape0:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-xfixes0:amd64.
+Preparing to unpack .../libxcb-xfixes0_1.10-2_amd64.deb ...
+Unpacking libxcb-xfixes0:amd64 (1.10-2) ...
+Selecting previously unselected package libegl1-mesa:amd64.
+Preparing to unpack .../libegl1-mesa_9.2.2-1_amd64.deb ...
+Unpacking libegl1-mesa:amd64 (9.2.2-1) ...
+Selecting previously unselected package libpng12-0:amd64.
+Preparing to unpack .../libpng12-0_1.2.50-1_amd64.deb ...
+Unpacking libpng12-0:amd64 (1.2.50-1) ...
+Selecting previously unselected package libfreetype6:amd64.
+Preparing to unpack .../libfreetype6_2.5.2-1_amd64.deb ...
+Unpacking libfreetype6:amd64 (2.5.2-1) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../ucf_3.0027+nmu1_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0027+nmu1) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../fonts-dejavu-core_2.34-1_all.deb ...
+Unpacking fonts-dejavu-core (2.34-1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../fontconfig-config_2.11.0-5_all.deb ...
+Unpacking fontconfig-config (2.11.0-5) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../libfontconfig1_2.11.0-5_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.11.0-5) ...
+Selecting previously unselected package libxcb-glx0:amd64.
+Preparing to unpack .../libxcb-glx0_1.10-2_amd64.deb ...
+Unpacking libxcb-glx0:amd64 (1.10-2) ...
+Selecting previously unselected package libxfixes3:amd64.
+Preparing to unpack .../libxfixes3_1%3a5.0.1-1_amd64.deb ...
+Unpacking libxfixes3:amd64 (1:5.0.1-1) ...
+Selecting previously unselected package libxdamage1:amd64.
+Preparing to unpack .../libxdamage1_1%3a1.1.4-1_amd64.deb ...
+Unpacking libxdamage1:amd64 (1:1.1.4-1) ...
+Selecting previously unselected package libxext6:amd64.
+Preparing to unpack .../libxext6_2%3a1.3.2-1_amd64.deb ...
+Unpacking libxext6:amd64 (2:1.3.2-1) ...
+Selecting previously unselected package libxxf86vm1:amd64.
+Preparing to unpack .../libxxf86vm1_1%3a1.1.3-1_amd64.deb ...
+Unpacking libxxf86vm1:amd64 (1:1.1.3-1) ...
+Selecting previously unselected package libgl1-mesa-glx:amd64.
+Preparing to unpack .../libgl1-mesa-glx_9.2.2-1_amd64.deb ...
+Unpacking libgl1-mesa-glx:amd64 (9.2.2-1) ...
+Selecting previously unselected package libpixman-1-0:amd64.
+Preparing to unpack .../libpixman-1-0_0.32.4-1_amd64.deb ...
+Unpacking libpixman-1-0:amd64 (0.32.4-1) ...
+Selecting previously unselected package libxcb-shm0:amd64.
+Preparing to unpack .../libxcb-shm0_1.10-2_amd64.deb ...
+Unpacking libxcb-shm0:amd64 (1.10-2) ...
+Selecting previously unselected package libxrender1:amd64.
+Preparing to unpack .../libxrender1_1%3a0.9.8-1_amd64.deb ...
+Unpacking libxrender1:amd64 (1:0.9.8-1) ...
+Selecting previously unselected package libcairo2:amd64.
+Preparing to unpack .../libcairo2_1.12.16-2_amd64.deb ...
+Unpacking libcairo2:amd64 (1.12.16-2) ...
+Selecting previously unselected package libcairo-gobject2:amd64.
+Preparing to unpack .../libcairo-gobject2_1.12.16-2_amd64.deb ...
+Unpacking libcairo-gobject2:amd64 (1.12.16-2) ...
+Selecting previously unselected package liblzo2-2:amd64.
+Preparing to unpack .../liblzo2-2_2.06-1.2_amd64.deb ...
+Unpacking liblzo2-2:amd64 (2.06-1.2) ...
+Selecting previously unselected package libcairo-script-interpreter2:amd64.
+Preparing to unpack .../libcairo-script-interpreter2_1.12.16-2_amd64.deb ...
+Unpacking libcairo-script-interpreter2:amd64 (1.12.16-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libcups2:amd64.
+Preparing to unpack .../libcups2_1.7.1-6_amd64.deb ...
+Unpacking libcups2:amd64 (1.7.1-6) ...
+Selecting previously unselected package libdatrie1:amd64.
+Preparing to unpack .../libdatrie1_0.2.8-1_amd64.deb ...
+Unpacking libdatrie1:amd64 (0.2.8-1) ...
+Selecting previously unselected package libpciaccess0:amd64.
+Preparing to unpack .../libpciaccess0_0.13.2-1_amd64.deb ...
+Unpacking libpciaccess0:amd64 (0.13.2-1) ...
+Selecting previously unselected package libdrm-intel1:amd64.
+Preparing to unpack .../libdrm-intel1_2.4.52-1_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.52-1) ...
+Selecting previously unselected package libdrm-nouveau2:amd64.
+Preparing to unpack .../libdrm-nouveau2_2.4.52-1_amd64.deb ...
+Unpacking libdrm-nouveau2:amd64 (2.4.52-1) ...
+Selecting previously unselected package libdrm-radeon1:amd64.
+Preparing to unpack .../libdrm-radeon1_2.4.52-1_amd64.deb ...
+Unpacking libdrm-radeon1:amd64 (2.4.52-1) ...
+Selecting previously unselected package libelf1:amd64.
+Preparing to unpack .../libelf1_0.157-3_amd64.deb ...
+Unpacking libelf1:amd64 (0.157-3) ...
+Selecting previously unselected package libopenvg1-mesa:amd64.
+Preparing to unpack .../libopenvg1-mesa_9.2.2-1_amd64.deb ...
+Unpacking libopenvg1-mesa:amd64 (9.2.2-1) ...
+Selecting previously unselected package libgl1-mesa-dri:amd64.
+Preparing to unpack .../libgl1-mesa-dri_9.2.2-1_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (9.2.2-1) ...
+Selecting previously unselected package libegl1-mesa-drivers:amd64.
+Preparing to unpack .../libegl1-mesa-drivers_9.2.2-1_amd64.deb ...
+Unpacking libegl1-mesa-drivers:amd64 (9.2.2-1) ...
+Selecting previously unselected package libelfg0:amd64.
+Preparing to unpack .../libelfg0_0.8.13-5_amd64.deb ...
+Unpacking libelfg0:amd64 (0.8.13-5) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../libjpeg8_8d-2_amd64.deb ...
+Unpacking libjpeg8:amd64 (8d-2) ...
+Selecting previously unselected package libjasper1:amd64.
+Preparing to unpack .../libjasper1_1.900.1-14_amd64.deb ...
+Unpacking libjasper1:amd64 (1.900.1-14) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../libjbig0_2.0-2_amd64.deb ...
+Unpacking libjbig0:amd64 (2.0-2) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../libtiff5_4.0.3-7_amd64.deb ...
+Unpacking libtiff5:amd64 (4.0.3-7) ...
+Selecting previously unselected package libgdk-pixbuf2.0-common.
+Preparing to unpack .../libgdk-pixbuf2.0-common_2.30.5-1_all.deb ...
+Unpacking libgdk-pixbuf2.0-common (2.30.5-1) ...
+Selecting previously unselected package libgdk-pixbuf2.0-0:amd64.
+Preparing to unpack .../libgdk-pixbuf2.0-0_2.30.5-1_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-0:amd64 (2.30.5-1) ...
+Selecting previously unselected package libgraphite2-3:amd64.
+Preparing to unpack .../libgraphite2-3_1.2.4-2_amd64.deb ...
+Unpacking libgraphite2-3:amd64 (1.2.4-2) ...
+Selecting previously unselected package libgtk2.0-common.
+Preparing to unpack .../libgtk2.0-common_2.24.22-1_all.deb ...
+Unpacking libgtk2.0-common (2.24.22-1) ...
+Selecting previously unselected package libthai-data.
+Preparing to unpack .../libthai-data_0.1.20-3_all.deb ...
+Unpacking libthai-data (0.1.20-3) ...
+Selecting previously unselected package libthai0:amd64.
+Preparing to unpack .../libthai0_0.1.20-3_amd64.deb ...
+Unpacking libthai0:amd64 (0.1.20-3) ...
+Selecting previously unselected package fontconfig.
+Preparing to unpack .../fontconfig_2.11.0-5_amd64.deb ...
+Unpacking fontconfig (2.11.0-5) ...
+Selecting previously unselected package libpango-1.0-0:amd64.
+Preparing to unpack .../libpango-1.0-0_1.36.0-1+b1_amd64.deb ...
+Unpacking libpango-1.0-0:amd64 (1.36.0-1+b1) ...
+Selecting previously unselected package libharfbuzz0b:amd64.
+Preparing to unpack .../libharfbuzz0b_0.9.26-4_amd64.deb ...
+Unpacking libharfbuzz0b:amd64 (0.9.26-4) ...
+Selecting previously unselected package libpangoft2-1.0-0:amd64.
+Preparing to unpack .../libpangoft2-1.0-0_1.36.0-1+b1_amd64.deb ...
+Unpacking libpangoft2-1.0-0:amd64 (1.36.0-1+b1) ...
+Selecting previously unselected package libpangocairo-1.0-0:amd64.
+Preparing to unpack .../libpangocairo-1.0-0_1.36.0-1+b1_amd64.deb ...
+Unpacking libpangocairo-1.0-0:amd64 (1.36.0-1+b1) ...
+Selecting previously unselected package libxcomposite1:amd64.
+Preparing to unpack .../libxcomposite1_1%3a0.4.4-1_amd64.deb ...
+Unpacking libxcomposite1:amd64 (1:0.4.4-1) ...
+Selecting previously unselected package libxcursor1:amd64.
+Preparing to unpack .../libxcursor1_1%3a1.1.14-1_amd64.deb ...
+Unpacking libxcursor1:amd64 (1:1.1.14-1) ...
+Selecting previously unselected package libxi6:amd64.
+Preparing to unpack .../libxi6_2%3a1.7.2-1_amd64.deb ...
+Unpacking libxi6:amd64 (2:1.7.2-1) ...
+Selecting previously unselected package libxinerama1:amd64.
+Preparing to unpack .../libxinerama1_2%3a1.1.3-1_amd64.deb ...
+Unpacking libxinerama1:amd64 (2:1.1.3-1) ...
+Selecting previously unselected package libxrandr2:amd64.
+Preparing to unpack .../libxrandr2_2%3a1.4.2-1_amd64.deb ...
+Unpacking libxrandr2:amd64 (2:1.4.2-1) ...
+Selecting previously unselected package shared-mime-info.
+Preparing to unpack .../shared-mime-info_1.2-1_amd64.deb ...
+Unpacking shared-mime-info (1.2-1) ...
+Selecting previously unselected package libgtk2.0-0:amd64.
+Preparing to unpack .../libgtk2.0-0_2.24.22-1_amd64.deb ...
+Unpacking libgtk2.0-0:amd64 (2.24.22-1) ...
+Selecting previously unselected package libharfbuzz-gobject0:amd64.
+Preparing to unpack .../libharfbuzz-gobject0_0.9.26-4_amd64.deb ...
+Unpacking libharfbuzz-gobject0:amd64 (0.9.26-4) ...
+Selecting previously unselected package libicu52:amd64.
+Preparing to unpack .../libicu52_52.1-3_amd64.deb ...
+Unpacking libicu52:amd64 (52.1-3) ...
+Selecting previously unselected package libharfbuzz-icu0:amd64.
+Preparing to unpack .../libharfbuzz-icu0_0.9.26-4_amd64.deb ...
+Unpacking libharfbuzz-icu0:amd64 (0.9.26-4) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../x11-common_1%3a7.7+6_all.deb ...
+Unpacking x11-common (1:7.7+6) ...
+Selecting previously unselected package libice6:amd64.
+Preparing to unpack .../libice6_2%3a1.0.8-2_amd64.deb ...
+Unpacking libice6:amd64 (2:1.0.8-2) ...
+Selecting previously unselected package libxft2:amd64.
+Preparing to unpack .../libxft2_2.3.1-2_amd64.deb ...
+Unpacking libxft2:amd64 (2.3.1-2) ...
+Selecting previously unselected package libpangoxft-1.0-0:amd64.
+Preparing to unpack .../libpangoxft-1.0-0_1.36.0-1+b1_amd64.deb ...
+Unpacking libpangoxft-1.0-0:amd64 (1.36.0-1+b1) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Preparing to unpack .../libpcrecpp0_1%3a8.31-2_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-2) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libsm6:amd64.
+Preparing to unpack .../libsm6_2%3a1.2.1-2_amd64.deb ...
+Unpacking libsm6:amd64 (2:1.2.1-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../archives/netbase_5.2_all.deb ...
+Unpacking netbase (5.2) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-2_amd64.deb ...
+Unpacking m4 (1.4.17-2) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-5_all.deb ...
+Unpacking autoconf (2.69-5) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../autopoint_0.18.3.2-1_all.deb ...
+Unpacking autopoint (0.18.3.2-1) ...
+Selecting previously unselected package openssl.
+Preparing to unpack .../openssl_1.0.1f-1_amd64.deb ...
+Unpacking openssl (1.0.1f-1) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../ca-certificates_20130906_all.deb ...
+Unpacking ca-certificates (20130906) ...
+Selecting previously unselected package chrpath.
+Preparing to unpack .../chrpath_0.16-1_amd64.deb ...
+Unpacking chrpath (0.16-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20131227_all.deb ...
+Unpacking debhelper (9.20131227) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../dh-autoreconf_9_all.deb ...
+Unpacking dh-autoreconf (9) ...
+Selecting previously unselected package libgirepository-1.0-1.
+Preparing to unpack .../libgirepository-1.0-1_1.38.0-2_amd64.deb ...
+Unpacking libgirepository-1.0-1 (1.38.0-2) ...
+Selecting previously unselected package gir1.2-glib-2.0.
+Preparing to unpack .../gir1.2-glib-2.0_1.38.0-2_amd64.deb ...
+Unpacking gir1.2-glib-2.0 (1.38.0-2) ...
+Selecting previously unselected package gir1.2-atk-1.0.
+Preparing to unpack .../gir1.2-atk-1.0_2.10.0-2_amd64.deb ...
+Unpacking gir1.2-atk-1.0 (2.10.0-2) ...
+Selecting previously unselected package gir1.2-freedesktop.
+Preparing to unpack .../gir1.2-freedesktop_1.38.0-2_amd64.deb ...
+Unpacking gir1.2-freedesktop (1.38.0-2) ...
+Selecting previously unselected package gir1.2-gdkpixbuf-2.0.
+Preparing to unpack .../gir1.2-gdkpixbuf-2.0_2.30.5-1_amd64.deb ...
+Unpacking gir1.2-gdkpixbuf-2.0 (2.30.5-1) ...
+Selecting previously unselected package gir1.2-pango-1.0.
+Preparing to unpack .../gir1.2-pango-1.0_1.36.0-1+b1_amd64.deb ...
+Unpacking gir1.2-pango-1.0 (1.36.0-1+b1) ...
+Selecting previously unselected package gir1.2-gtk-2.0.
+Preparing to unpack .../gir1.2-gtk-2.0_2.24.22-1_amd64.deb ...
+Unpacking gir1.2-gtk-2.0 (2.24.22-1) ...
+Selecting previously unselected package liburi-perl.
+Preparing to unpack .../liburi-perl_1.60-1_all.deb ...
+Unpacking liburi-perl (1.60-1) ...
+Selecting previously unselected package libencode-locale-perl.
+Preparing to unpack .../libencode-locale-perl_1.03-1_all.deb ...
+Unpacking libencode-locale-perl (1.03-1) ...
+Selecting previously unselected package libhttp-date-perl.
+Preparing to unpack .../libhttp-date-perl_6.02-1_all.deb ...
+Unpacking libhttp-date-perl (6.02-1) ...
+Selecting previously unselected package libfile-listing-perl.
+Preparing to unpack .../libfile-listing-perl_6.04-1_all.deb ...
+Unpacking libfile-listing-perl (6.04-1) ...
+Selecting previously unselected package libhtml-tagset-perl.
+Preparing to unpack .../libhtml-tagset-perl_3.20-2_all.deb ...
+Unpacking libhtml-tagset-perl (3.20-2) ...
+Selecting previously unselected package libhtml-parser-perl.
+Preparing to unpack .../libhtml-parser-perl_3.71-1+b1_amd64.deb ...
+Unpacking libhtml-parser-perl (3.71-1+b1) ...
+Selecting previously unselected package libhtml-tree-perl.
+Preparing to unpack .../libhtml-tree-perl_5.03-1_all.deb ...
+Unpacking libhtml-tree-perl (5.03-1) ...
+Selecting previously unselected package libio-html-perl.
+Preparing to unpack .../libio-html-perl_1.00-1_all.deb ...
+Unpacking libio-html-perl (1.00-1) ...
+Selecting previously unselected package liblwp-mediatypes-perl.
+Preparing to unpack .../liblwp-mediatypes-perl_6.02-1_all.deb ...
+Unpacking liblwp-mediatypes-perl (6.02-1) ...
+Selecting previously unselected package libhttp-message-perl.
+Preparing to unpack .../libhttp-message-perl_6.06-1_all.deb ...
+Unpacking libhttp-message-perl (6.06-1) ...
+Selecting previously unselected package libhttp-cookies-perl.
+Preparing to unpack .../libhttp-cookies-perl_6.00-2_all.deb ...
+Unpacking libhttp-cookies-perl (6.00-2) ...
+Selecting previously unselected package libhttp-negotiate-perl.
+Preparing to unpack .../libhttp-negotiate-perl_6.00-2_all.deb ...
+Unpacking libhttp-negotiate-perl (6.00-2) ...
+Selecting previously unselected package libnet-ssleay-perl.
+Preparing to unpack .../libnet-ssleay-perl_1.58-1_amd64.deb ...
+Unpacking libnet-ssleay-perl (1.58-1) ...
+Selecting previously unselected package libio-socket-ssl-perl.
+Preparing to unpack .../libio-socket-ssl-perl_1.967-1_all.deb ...
+Unpacking libio-socket-ssl-perl (1.967-1) ...
+Selecting previously unselected package libnet-http-perl.
+Preparing to unpack .../libnet-http-perl_6.06-1_all.deb ...
+Unpacking libnet-http-perl (6.06-1) ...
+Selecting previously unselected package liblwp-protocol-https-perl.
+Preparing to unpack .../liblwp-protocol-https-perl_6.04-2_all.deb ...
+Unpacking liblwp-protocol-https-perl (6.04-2) ...
+Selecting previously unselected package libwww-robotrules-perl.
+Preparing to unpack .../libwww-robotrules-perl_6.01-1_all.deb ...
+Unpacking libwww-robotrules-perl (6.01-1) ...
+Selecting previously unselected package libwww-perl.
+Preparing to unpack .../libwww-perl_6.05-2_all.deb ...
+Unpacking libwww-perl (6.05-2) ...
+Selecting previously unselected package libxml-parser-perl.
+Preparing to unpack .../libxml-parser-perl_2.41-1+b2_amd64.deb ...
+Unpacking libxml-parser-perl (2.41-1+b2) ...
+Selecting previously unselected package intltool.
+Preparing to unpack .../intltool_0.50.2-2_all.deb ...
+Unpacking intltool (0.50.2-2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../pkg-config_0.26-1_amd64.deb ...
+Unpacking pkg-config (0.26-1) ...
+Selecting previously unselected package libglib2.0-data.
+Preparing to unpack .../libglib2.0-data_2.38.2-5_all.deb ...
+Unpacking libglib2.0-data (2.38.2-5) ...
+Selecting previously unselected package libglib2.0-bin.
+Preparing to unpack .../libglib2.0-bin_2.38.2-5_amd64.deb ...
+Unpacking libglib2.0-bin (2.38.2-5) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-2_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Selecting previously unselected package libglib2.0-dev.
+Preparing to unpack .../libglib2.0-dev_2.38.2-5_amd64.deb ...
+Unpacking libglib2.0-dev (2.38.2-5) ...
+Selecting previously unselected package libatk1.0-dev.
+Preparing to unpack .../libatk1.0-dev_2.10.0-2_amd64.deb ...
+Unpacking libatk1.0-dev (2.10.0-2) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../libexpat1-dev_2.1.0-4_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.1.0-4) ...
+Selecting previously unselected package libpng12-dev.
+Preparing to unpack .../libpng12-dev_1.2.50-1_amd64.deb ...
+Unpacking libpng12-dev (1.2.50-1) ...
+Selecting previously unselected package libfreetype6-dev.
+Preparing to unpack .../libfreetype6-dev_2.5.2-1_amd64.deb ...
+Unpacking libfreetype6-dev (2.5.2-1) ...
+Selecting previously unselected package libfontconfig1-dev:amd64.
+Preparing to unpack .../libfontconfig1-dev_2.11.0-5_amd64.deb ...
+Unpacking libfontconfig1-dev:amd64 (2.11.0-5) ...
+Selecting previously unselected package xorg-sgml-doctools.
+Preparing to unpack .../xorg-sgml-doctools_1%3a1.11-1_all.deb ...
+Unpacking xorg-sgml-doctools (1:1.11-1) ...
+Selecting previously unselected package x11proto-core-dev.
+Preparing to unpack .../x11proto-core-dev_7.0.24-1_all.deb ...
+Unpacking x11proto-core-dev (7.0.24-1) ...
+Selecting previously unselected package libxau-dev:amd64.
+Preparing to unpack .../libxau-dev_1%3a1.0.8-1_amd64.deb ...
+Unpacking libxau-dev:amd64 (1:1.0.8-1) ...
+Selecting previously unselected package libxdmcp-dev:amd64.
+Preparing to unpack .../libxdmcp-dev_1%3a1.1.1-1_amd64.deb ...
+Unpacking libxdmcp-dev:amd64 (1:1.1.1-1) ...
+Selecting previously unselected package x11proto-input-dev.
+Preparing to unpack .../x11proto-input-dev_2.3-1_all.deb ...
+Unpacking x11proto-input-dev (2.3-1) ...
+Selecting previously unselected package x11proto-kb-dev.
+Preparing to unpack .../x11proto-kb-dev_1.0.6-2_all.deb ...
+Unpacking x11proto-kb-dev (1.0.6-2) ...
+Selecting previously unselected package xtrans-dev.
+Preparing to unpack .../xtrans-dev_1.3.2-1_all.deb ...
+Unpacking xtrans-dev (1.3.2-1) ...
+Selecting previously unselected package libpthread-stubs0-dev:amd64.
+Preparing to unpack .../libpthread-stubs0-dev_0.3-4_amd64.deb ...
+Unpacking libpthread-stubs0-dev:amd64 (0.3-4) ...
+Selecting previously unselected package libxcb1-dev:amd64.
+Preparing to unpack .../libxcb1-dev_1.10-2_amd64.deb ...
+Unpacking libxcb1-dev:amd64 (1.10-2) ...
+Selecting previously unselected package libx11-dev:amd64.
+Preparing to unpack .../libx11-dev_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-dev:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package x11proto-render-dev.
+Preparing to unpack .../x11proto-render-dev_2%3a0.11.1-2_all.deb ...
+Unpacking x11proto-render-dev (2:0.11.1-2) ...
+Selecting previously unselected package libxrender-dev:amd64.
+Preparing to unpack .../libxrender-dev_1%3a0.9.8-1_amd64.deb ...
+Unpacking libxrender-dev:amd64 (1:0.9.8-1) ...
+Selecting previously unselected package x11proto-xext-dev.
+Preparing to unpack .../x11proto-xext-dev_7.3.0-1_all.deb ...
+Unpacking x11proto-xext-dev (7.3.0-1) ...
+Selecting previously unselected package libxext-dev:amd64.
+Preparing to unpack .../libxext-dev_2%3a1.3.2-1_amd64.deb ...
+Unpacking libxext-dev:amd64 (2:1.3.2-1) ...
+Selecting previously unselected package libice-dev:amd64.
+Preparing to unpack .../libice-dev_2%3a1.0.8-2_amd64.deb ...
+Unpacking libice-dev:amd64 (2:1.0.8-2) ...
+Selecting previously unselected package libsm-dev:amd64.
+Preparing to unpack .../libsm-dev_2%3a1.2.1-2_amd64.deb ...
+Unpacking libsm-dev:amd64 (2:1.2.1-2) ...
+Selecting previously unselected package libpixman-1-dev.
+Preparing to unpack .../libpixman-1-dev_0.32.4-1_amd64.deb ...
+Unpacking libpixman-1-dev (0.32.4-1) ...
+Selecting previously unselected package libxcb-render0-dev:amd64.
+Preparing to unpack .../libxcb-render0-dev_1.10-2_amd64.deb ...
+Unpacking libxcb-render0-dev:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-shm0-dev:amd64.
+Preparing to unpack .../libxcb-shm0-dev_1.10-2_amd64.deb ...
+Unpacking libxcb-shm0-dev:amd64 (1.10-2) ...
+Selecting previously unselected package libdrm-dev:amd64.
+Preparing to unpack .../libdrm-dev_2.4.52-1_amd64.deb ...
+Unpacking libdrm-dev:amd64 (2.4.52-1) ...
+Selecting previously unselected package mesa-common-dev.
+Preparing to unpack .../mesa-common-dev_9.2.2-1_amd64.deb ...
+Unpacking mesa-common-dev (9.2.2-1) ...
+Selecting previously unselected package libx11-xcb-dev.
+Preparing to unpack .../libx11-xcb-dev_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-xcb-dev (2:1.6.2-1) ...
+Selecting previously unselected package libxcb-dri2-0-dev:amd64.
+Preparing to unpack .../libxcb-dri2-0-dev_1.10-2_amd64.deb ...
+Unpacking libxcb-dri2-0-dev:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-glx0-dev:amd64.
+Preparing to unpack .../libxcb-glx0-dev_1.10-2_amd64.deb ...
+Unpacking libxcb-glx0-dev:amd64 (1.10-2) ...
+Selecting previously unselected package x11proto-fixes-dev.
+Preparing to unpack .../x11proto-fixes-dev_1%3a5.0-2_all.deb ...
+Unpacking x11proto-fixes-dev (1:5.0-2) ...
+Selecting previously unselected package libxfixes-dev.
+Preparing to unpack .../libxfixes-dev_1%3a5.0.1-1_amd64.deb ...
+Unpacking libxfixes-dev (1:5.0.1-1) ...
+Selecting previously unselected package x11proto-damage-dev.
+Preparing to unpack .../x11proto-damage-dev_1%3a1.2.1-2_all.deb ...
+Unpacking x11proto-damage-dev (1:1.2.1-2) ...
+Selecting previously unselected package libxdamage-dev.
+Preparing to unpack .../libxdamage-dev_1%3a1.1.4-1_amd64.deb ...
+Unpacking libxdamage-dev (1:1.1.4-1) ...
+Selecting previously unselected package x11proto-xf86vidmode-dev.
+Preparing to unpack .../x11proto-xf86vidmode-dev_2.3.1-2_all.deb ...
+Unpacking x11proto-xf86vidmode-dev (2.3.1-2) ...
+Selecting previously unselected package libxxf86vm-dev:amd64.
+Preparing to unpack .../libxxf86vm-dev_1%3a1.1.3-1_amd64.deb ...
+Unpacking libxxf86vm-dev:amd64 (1:1.1.3-1) ...
+Selecting previously unselected package x11proto-dri2-dev.
+Preparing to unpack .../x11proto-dri2-dev_2.8-2_all.deb ...
+Unpacking x11proto-dri2-dev (2.8-2) ...
+Selecting previously unselected package x11proto-gl-dev.
+Preparing to unpack .../x11proto-gl-dev_1.4.17-1_all.deb ...
+Unpacking x11proto-gl-dev (1.4.17-1) ...
+Selecting previously unselected package libgl1-mesa-dev.
+Preparing to unpack .../libgl1-mesa-dev_9.2.2-1_amd64.deb ...
+Unpacking libgl1-mesa-dev (9.2.2-1) ...
+Selecting previously unselected package libegl1-mesa-dev.
+Preparing to unpack .../libegl1-mesa-dev_9.2.2-1_amd64.deb ...
+Unpacking libegl1-mesa-dev (9.2.2-1) ...
+Selecting previously unselected package libcairo2-dev.
+Preparing to unpack .../libcairo2-dev_1.12.16-2_amd64.deb ...
+Unpacking libcairo2-dev (1.12.16-2) ...
+Selecting previously unselected package libgdk-pixbuf2.0-dev.
+Preparing to unpack .../libgdk-pixbuf2.0-dev_2.30.5-1_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-dev (2.30.5-1) ...
+Selecting previously unselected package libxft-dev.
+Preparing to unpack .../libxft-dev_2.3.1-2_amd64.deb ...
+Unpacking libxft-dev (2.3.1-2) ...
+Selecting previously unselected package libharfbuzz-dev.
+Preparing to unpack .../libharfbuzz-dev_0.9.26-4_amd64.deb ...
+Unpacking libharfbuzz-dev (0.9.26-4) ...
+Selecting previously unselected package libpango1.0-dev.
+Preparing to unpack .../libpango1.0-dev_1.36.0-1+b1_amd64.deb ...
+Unpacking libpango1.0-dev (1.36.0-1+b1) ...
+Selecting previously unselected package x11proto-xinerama-dev.
+Preparing to unpack .../x11proto-xinerama-dev_1.2.1-2_all.deb ...
+Unpacking x11proto-xinerama-dev (1.2.1-2) ...
+Selecting previously unselected package libxinerama-dev:amd64.
+Preparing to unpack .../libxinerama-dev_2%3a1.1.3-1_amd64.deb ...
+Unpacking libxinerama-dev:amd64 (2:1.1.3-1) ...
+Selecting previously unselected package libxi-dev.
+Preparing to unpack .../libxi-dev_2%3a1.7.2-1_amd64.deb ...
+Unpacking libxi-dev (2:1.7.2-1) ...
+Selecting previously unselected package x11proto-randr-dev.
+Preparing to unpack .../x11proto-randr-dev_1.4.0-2_all.deb ...
+Unpacking x11proto-randr-dev (1.4.0-2) ...
+Selecting previously unselected package libxrandr-dev:amd64.
+Preparing to unpack .../libxrandr-dev_2%3a1.4.2-1_amd64.deb ...
+Unpacking libxrandr-dev:amd64 (2:1.4.2-1) ...
+Selecting previously unselected package libxcursor-dev:amd64.
+Preparing to unpack .../libxcursor-dev_1%3a1.1.14-1_amd64.deb ...
+Unpacking libxcursor-dev:amd64 (1:1.1.14-1) ...
+Selecting previously unselected package x11proto-composite-dev.
+Preparing to unpack .../x11proto-composite-dev_1%3a0.4.2-2_all.deb ...
+Unpacking x11proto-composite-dev (1:0.4.2-2) ...
+Selecting previously unselected package libxcomposite-dev.
+Preparing to unpack .../libxcomposite-dev_1%3a0.4.4-1_amd64.deb ...
+Unpacking libxcomposite-dev (1:0.4.4-1) ...
+Selecting previously unselected package libxml2-utils.
+Preparing to unpack .../libxml2-utils_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2-utils (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libgtk2.0-dev.
+Preparing to unpack .../libgtk2.0-dev_2.24.22-1_amd64.deb ...
+Unpacking libgtk2.0-dev (2.24.22-1) ...
+Selecting previously unselected package sbuild-build-depends-geany-dummy.
+Preparing to unpack .../sbuild-build-depends-geany-dummy.deb ...
+Unpacking sbuild-build-depends-geany-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up libpopt0:amd64 (1.16-8) ...
+Setting up libudev1:amd64 (204-7) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libgpg-error0:amd64 (1.12-0.2) ...
+Setting up libgcrypt11:amd64 (1.5.3-3) ...
+Setting up libp11-kit0:amd64 (0.20.2-1) ...
+Setting up libtasn1-6:amd64 (3.4-3) ...
+Setting up libgnutls26:amd64 (2.12.23-12) ...
+Setting up libkeyutils1:amd64 (1.5.6-1) ...
+Setting up libkrb5support0:amd64 (1.12+dfsg-2) ...
+Setting up libk5crypto3:amd64 (1.12+dfsg-2) ...
+Setting up libkrb5-3:amd64 (1.12+dfsg-2) ...
+Setting up libgssapi-krb5-2:amd64 (1.12+dfsg-2) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.38.2-5) ...
+No schema files found: doing nothing.
+Setting up libatk1.0-data (2.10.0-2) ...
+Setting up libatk1.0-0:amd64 (2.10.0-2) ...
+Setting up libavahi-common-data:amd64 (0.6.31-4) ...
+Setting up libavahi-common3:amd64 (0.6.31-4) ...
+Setting up libdbus-1-3:amd64 (1.8.0-1) ...
+Setting up libavahi-client3:amd64 (0.6.31-4) ...
+Setting up libdrm2:amd64 (2.4.52-1) ...
+Setting up libglapi-mesa:amd64 (9.2.2-1) ...
+Setting up libllvm3.3:amd64 (1:3.3-16) ...
+Setting up libwayland-client0:amd64 (1.4.0-1) ...
+Setting up libwayland-server0:amd64 (1.4.0-1) ...
+Setting up libxau6:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp6:amd64 (1:1.1.1-1) ...
+Setting up libxcb1:amd64 (1.10-2) ...
+Setting up libxcb-dri2-0:amd64 (1.10-2) ...
+Setting up libgbm1:amd64 (9.2.2-1) ...
+Setting up libx11-data (2:1.6.2-1) ...
+Setting up libx11-6:amd64 (2:1.6.2-1) ...
+Setting up libx11-xcb1:amd64 (2:1.6.2-1) ...
+Setting up libxcb-render0:amd64 (1.10-2) ...
+Setting up libxcb-shape0:amd64 (1.10-2) ...
+Setting up libxcb-xfixes0:amd64 (1.10-2) ...
+Setting up libegl1-mesa:amd64 (9.2.2-1) ...
+Setting up libpng12-0:amd64 (1.2.50-1) ...
+Setting up libfreetype6:amd64 (2.5.2-1) ...
+Setting up ucf (3.0027+nmu1) ...
+Setting up fonts-dejavu-core (2.34-1) ...
+Setting up fontconfig-config (2.11.0-5) ...
+Setting up libfontconfig1:amd64 (2.11.0-5) ...
+Setting up libxcb-glx0:amd64 (1.10-2) ...
+Setting up libxfixes3:amd64 (1:5.0.1-1) ...
+Setting up libxdamage1:amd64 (1:1.1.4-1) ...
+Setting up libxext6:amd64 (2:1.3.2-1) ...
+Setting up libxxf86vm1:amd64 (1:1.1.3-1) ...
+Setting up libgl1-mesa-glx:amd64 (9.2.2-1) ...
+Setting up libpixman-1-0:amd64 (0.32.4-1) ...
+Setting up libxcb-shm0:amd64 (1.10-2) ...
+Setting up libxrender1:amd64 (1:0.9.8-1) ...
+Setting up libcairo2:amd64 (1.12.16-2) ...
+Setting up libcairo-gobject2:amd64 (1.12.16-2) ...
+Setting up liblzo2-2:amd64 (2.06-1.2) ...
+Setting up libcairo-script-interpreter2:amd64 (1.12.16-2) ...
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libcups2:amd64 (1.7.1-6) ...
+Setting up libdatrie1:amd64 (0.2.8-1) ...
+Setting up libpciaccess0:amd64 (0.13.2-1) ...
+Setting up libdrm-intel1:amd64 (2.4.52-1) ...
+Setting up libdrm-nouveau2:amd64 (2.4.52-1) ...
+Setting up libdrm-radeon1:amd64 (2.4.52-1) ...
+Setting up libelf1:amd64 (0.157-3) ...
+Setting up libopenvg1-mesa:amd64 (9.2.2-1) ...
+Setting up libgl1-mesa-dri:amd64 (9.2.2-1) ...
+Setting up libegl1-mesa-drivers:amd64 (9.2.2-1) ...
+Setting up libelfg0:amd64 (0.8.13-5) ...
+Setting up libjpeg8:amd64 (8d-2) ...
+Setting up libjasper1:amd64 (1.900.1-14) ...
+Setting up libjbig0:amd64 (2.0-2) ...
+Setting up libtiff5:amd64 (4.0.3-7) ...
+Setting up libgdk-pixbuf2.0-common (2.30.5-1) ...
+Setting up libgdk-pixbuf2.0-0:amd64 (2.30.5-1) ...
+Setting up libgraphite2-3:amd64 (1.2.4-2) ...
+Setting up libgtk2.0-common (2.24.22-1) ...
+Setting up libthai-data (0.1.20-3) ...
+Setting up libthai0:amd64 (0.1.20-3) ...
+Setting up fontconfig (2.11.0-5) ...
+Regenerating fonts cache... done.
+Setting up libpango-1.0-0:amd64 (1.36.0-1+b1) ...
+Setting up libharfbuzz0b:amd64 (0.9.26-4) ...
+Setting up libpangoft2-1.0-0:amd64 (1.36.0-1+b1) ...
+Setting up libpangocairo-1.0-0:amd64 (1.36.0-1+b1) ...
+Setting up libxcomposite1:amd64 (1:0.4.4-1) ...
+Setting up libxcursor1:amd64 (1:1.1.14-1) ...
+Setting up libxi6:amd64 (2:1.7.2-1) ...
+Setting up libxinerama1:amd64 (2:1.1.3-1) ...
+Setting up libxrandr2:amd64 (2:1.4.2-1) ...
+Setting up shared-mime-info (1.2-1) ...
+Setting up libgtk2.0-0:amd64 (2.24.22-1) ...
+Setting up libharfbuzz-gobject0:amd64 (0.9.26-4) ...
+Setting up libicu52:amd64 (52.1-3) ...
+Setting up libharfbuzz-icu0:amd64 (0.9.26-4) ...
+Setting up x11-common (1:7.7+6) ...
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+All runlevel operations denied by policy
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libice6:amd64 (2:1.0.8-2) ...
+Setting up libxft2:amd64 (2.3.1-2) ...
+Setting up libpangoxft-1.0-0:amd64 (1.36.0-1+b1) ...
+Setting up libpcrecpp0:amd64 (1:8.31-2) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libsm6:amd64 (2:1.2.1-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up netbase (5.2) ...
+
+Configuration file '/etc/protocols'
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package maintainer.
+ ==> Using current old file as you requested.
+
+Configuration file '/etc/services'
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package maintainer.
+ ==> Using current old file as you requested.
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-2) ...
+Setting up autoconf (2.69-5) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up autopoint (0.18.3.2-1) ...
+Setting up openssl (1.0.1f-1) ...
+Setting up ca-certificates (20130906) ...
+Setting up chrpath (0.16-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20131227) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up dh-autoreconf (9) ...
+Setting up libgirepository-1.0-1 (1.38.0-2) ...
+Setting up gir1.2-glib-2.0 (1.38.0-2) ...
+Setting up gir1.2-atk-1.0 (2.10.0-2) ...
+Setting up gir1.2-freedesktop (1.38.0-2) ...
+Setting up gir1.2-gdkpixbuf-2.0 (2.30.5-1) ...
+Setting up gir1.2-pango-1.0 (1.36.0-1+b1) ...
+Setting up gir1.2-gtk-2.0 (2.24.22-1) ...
+Setting up liburi-perl (1.60-1) ...
+Setting up libencode-locale-perl (1.03-1) ...
+Setting up libhttp-date-perl (6.02-1) ...
+Setting up libfile-listing-perl (6.04-1) ...
+Setting up libhtml-tagset-perl (3.20-2) ...
+Setting up libhtml-parser-perl (3.71-1+b1) ...
+Setting up libhtml-tree-perl (5.03-1) ...
+Setting up libio-html-perl (1.00-1) ...
+Setting up liblwp-mediatypes-perl (6.02-1) ...
+Setting up libhttp-message-perl (6.06-1) ...
+Setting up libhttp-cookies-perl (6.00-2) ...
+Setting up libhttp-negotiate-perl (6.00-2) ...
+Setting up libnet-ssleay-perl (1.58-1) ...
+Setting up libio-socket-ssl-perl (1.967-1) ...
+Setting up libnet-http-perl (6.06-1) ...
+Setting up libwww-robotrules-perl (6.01-1) ...
+Setting up pkg-config (0.26-1) ...
+Setting up libglib2.0-data (2.38.2-5) ...
+Setting up libglib2.0-bin (2.38.2-5) ...
+Setting up libpcre3-dev:amd64 (1:8.31-2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Setting up libglib2.0-dev (2.38.2-5) ...
+Setting up libatk1.0-dev (2.10.0-2) ...
+Setting up libexpat1-dev:amd64 (2.1.0-4) ...
+Setting up libpng12-dev (1.2.50-1) ...
+Setting up libfreetype6-dev (2.5.2-1) ...
+Setting up libfontconfig1-dev:amd64 (2.11.0-5) ...
+Setting up xorg-sgml-doctools (1:1.11-1) ...
+Setting up x11proto-core-dev (7.0.24-1) ...
+Setting up libxau-dev:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp-dev:amd64 (1:1.1.1-1) ...
+Setting up x11proto-input-dev (2.3-1) ...
+Setting up x11proto-kb-dev (1.0.6-2) ...
+Setting up xtrans-dev (1.3.2-1) ...
+Setting up libpthread-stubs0-dev:amd64 (0.3-4) ...
+Setting up libxcb1-dev:amd64 (1.10-2) ...
+Setting up libx11-dev:amd64 (2:1.6.2-1) ...
+Setting up x11proto-render-dev (2:0.11.1-2) ...
+Setting up libxrender-dev:amd64 (1:0.9.8-1) ...
+Setting up x11proto-xext-dev (7.3.0-1) ...
+Setting up libxext-dev:amd64 (2:1.3.2-1) ...
+Setting up libice-dev:amd64 (2:1.0.8-2) ...
+Setting up libsm-dev:amd64 (2:1.2.1-2) ...
+Setting up libpixman-1-dev (0.32.4-1) ...
+Setting up libxcb-render0-dev:amd64 (1.10-2) ...
+Setting up libxcb-shm0-dev:amd64 (1.10-2) ...
+Setting up libdrm-dev:amd64 (2.4.52-1) ...
+Setting up mesa-common-dev (9.2.2-1) ...
+Setting up libx11-xcb-dev (2:1.6.2-1) ...
+Setting up libxcb-dri2-0-dev:amd64 (1.10-2) ...
+Setting up libxcb-glx0-dev:amd64 (1.10-2) ...
+Setting up x11proto-fixes-dev (1:5.0-2) ...
+Setting up libxfixes-dev (1:5.0.1-1) ...
+Setting up x11proto-damage-dev (1:1.2.1-2) ...
+Setting up libxdamage-dev (1:1.1.4-1) ...
+Setting up x11proto-xf86vidmode-dev (2.3.1-2) ...
+Setting up libxxf86vm-dev:amd64 (1:1.1.3-1) ...
+Setting up x11proto-dri2-dev (2.8-2) ...
+Setting up x11proto-gl-dev (1.4.17-1) ...
+Setting up libgl1-mesa-dev (9.2.2-1) ...
+Setting up libegl1-mesa-dev (9.2.2-1) ...
+Setting up libcairo2-dev (1.12.16-2) ...
+Setting up libgdk-pixbuf2.0-dev (2.30.5-1) ...
+Setting up libxft-dev (2.3.1-2) ...
+Setting up libharfbuzz-dev (0.9.26-4) ...
+Setting up libpango1.0-dev (1.36.0-1+b1) ...
+Setting up x11proto-xinerama-dev (1.2.1-2) ...
+Setting up libxinerama-dev:amd64 (2:1.1.3-1) ...
+Setting up libxi-dev (2:1.7.2-1) ...
+Setting up x11proto-randr-dev (1.4.0-2) ...
+Setting up libxrandr-dev:amd64 (2:1.4.2-1) ...
+Setting up libxcursor-dev:amd64 (1:1.1.14-1) ...
+Setting up x11proto-composite-dev (1:0.4.2-2) ...
+Setting up libxcomposite-dev (1:0.4.4-1) ...
+Setting up libxml2-utils (2.9.1+dfsg1-3) ...
+Setting up libgtk2.0-dev (2.24.22-1) ...
+Setting up liblwp-protocol-https-perl (6.04-2) ...
+Setting up libwww-perl (6.05-2) ...
+Setting up libxml-parser-perl (2.41-1+b2) ...
+Setting up intltool (0.50.2-2) ...
+Setting up sbuild-build-depends-geany-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-3) ...
+Processing triggers for ca-certificates (20130906) ...
+Updating certificates in /etc/ssl/certs... 164 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d....done.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.12-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-3 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-3 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.4-1
+Package versions: apt_0.9.15.4+b1 autoconf_2.69-5 automake_1:1.14.1-3 autopoint_0.18.3.2-1 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.32 bash_4.2+dfsg-1 binfmt-support_2.1.3-2 binutils_2.24-3 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.6 build-essential_11.6 bzip2_1.0.6-5 ca-certificates_20130906 chrpath_0.16-1 clang-3.4_1:3.4-2 coreutils_8.21-1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20131227 debian-archive-keyring_2012.4 debianutils_4.4 dh-autoreconf_9 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-0.1 findutils_4.4.2-7 fontconfig_2.11.0-5 fontconfig-config_2.11.0-5 fonts-dejavu-core_2.34-1 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gir1.2-atk-1.0_2.10.0-2 gir1.2-freedesktop_1.38.0-2 gir1.2-gdkpixbuf-2.0_2.30.5-1 gir1.2-glib-2.0_1.38.0-2 gir1.2-gtk-2.0_2.24.22-1 gir1.2-pango-1.0_1.36.0-1+b1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.16-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool_0.50.2-2 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_0.9.15.4+b1 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatk1.0-0_2.10.0-2 libatk1.0-data_2.10.0-2 libatk1.0-dev_2.10.0-2 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.3-4 libaudit1_1:2.3.3-4 libavahi-client3_0.6.31-4 libavahi-common-data_0.6.31-4 libavahi-common3_0.6.31-4 libblkid1_2.20.1-5.6 libbz2-1.0_1.0.6-5 libc-bin_2.18-3 libc-dev-bin_2.18-3 libc6_2.18-3 libc6-dev_2.18-3 libcairo-gobject2_1.12.16-2 libcairo-script-interpreter2_1.12.16-2 libcairo2_1.12.16-2 libcairo2-dev_1.12.16-2 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libcups2_1.7.1-6 libdatrie1_0.2.8-1 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdbus-1-3_1.8.0-1 libdebconfclient0_0.187 libdpkg-perl_1.17.6 libdrm-dev_2.4.52-1 libdrm-intel1_2.4.52-1 libdrm-nouveau2_2.4.52-1 libdrm-radeon1_2.4.52-1 libdrm2_2.4.52-1 libegl1-mesa_9.2.2-1 libegl1-mesa-dev_9.2.2-1 libegl1-mesa-drivers_9.2.2-1 libelf1_0.157-3 libelfg0_0.8.13-5 libencode-locale-perl_1.03-1 libexpat1_2.1.0-4 libexpat1-dev_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.0.13-12 libffi6_3.0.13-12 libfile-listing-perl_6.04-1 libfontconfig1_2.11.0-5 libfontconfig1-dev_2.11.0-5 libfreetype6_2.5.2-1 libfreetype6-dev_2.5.2-1 libgbm1_9.2.2-1 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgcrypt11_1.5.3-3 libgdbm3_1.8.3-12 libgdk-pixbuf2.0-0_2.30.5-1 libgdk-pixbuf2.0-common_2.30.5-1 libgdk-pixbuf2.0-dev_2.30.5-1 libgirepository-1.0-1_1.38.0-2 libgl1-mesa-dev_9.2.2-1 libgl1-mesa-dri_9.2.2-1 libgl1-mesa-glx_9.2.2-1 libglapi-mesa_9.2.2-1 libglib2.0-0_2.38.2-5 libglib2.0-bin_2.38.2-5 libglib2.0-data_2.38.2-5 libglib2.0-dev_2.38.2-5 libgmp10_2:5.1.3+dfsg-1 libgnutls26_2.12.23-12 libgomp1_4.8.2-16 libgpg-error0_1.12-0.2 libgpm2_1.20.4-6.1 libgraphite2-3_1.2.4-2 libgssapi-krb5-2_1.12+dfsg-2 libgtk2.0-0_2.24.22-1 libgtk2.0-common_2.24.22-1 libgtk2.0-dev_2.24.22-1 libharfbuzz-dev_0.9.26-4 libharfbuzz-gobject0_0.9.26-4 libharfbuzz-icu0_0.9.26-4 libharfbuzz0b_0.9.26-4 libhtml-parser-perl_3.71-1+b1 libhtml-tagset-perl_3.20-2 libhtml-tree-perl_5.03-1 libhttp-cookies-perl_6.00-2 libhttp-date-perl_6.02-1 libhttp-message-perl_6.06-1 libhttp-negotiate-perl_6.00-2 libice-dev_2:1.0.8-2 libice6_2:1.0.8-2 libicu52_52.1-3 libio-html-perl_1.00-1 libio-socket-ssl-perl_1.967-1 libisl10_0.12.2-1 libitm1_4.8.2-16 libjasper1_1.900.1-14 libjbig0_2.0-2 libjpeg8_8d-2 libjsoncpp0_0.6.0~rc2-3 libk5crypto3_1.12+dfsg-2 libkeyutils1_1.5.6-1 libkrb5-3_1.12+dfsg-2 libkrb5support0_1.12+dfsg-2 libllvm3.3_1:3.3-16 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-7+b2 liblwp-mediatypes-perl_6.02-1 liblwp-protocol-https-perl_6.04-2 liblzma5_5.1.1alpha+20120614-2 liblzo2-2_2.06-1.2 libmagic1_1:5.17-0.1 libmount1_2.20.1-5.6 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libnet-http-perl_6.06-1 libnet-ssleay-perl_1.58-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libopenvg1-mesa_9.2.2-1 libp11-kit0_0.20.2-1 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpango-1.0-0_1.36.0-1+b1 libpango1.0-dev_1.36.0-1+b1 libpangocairo-1.0-0_1.36.0-1+b1 libpangoft2-1.0-0_1.36.0-1+b1 libpangoxft-1.0-0_1.36.0-1+b1 libpciaccess0_0.13.2-1 libpcre3_1:8.31-2 libpcre3-dev_1:8.31-2 libpcrecpp0_1:8.31-2 libpipeline1_1.2.6-2 libpixman-1-0_0.32.4-1 libpixman-1-dev_0.32.4-1 libpng12-0_1.2.50-1 libpng12-dev_1.2.50-1 libpopt0_1.16-8 libpthread-stubs0-dev_0.3-4 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-7 libpython2.7-stdlib_2.7.6-7 libquadmath0_4.8.2-16 libreadline6_6.2+dfsg-0.1 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libsm-dev_2:1.2.1-2 libsm6_2:1.2.1-2 libsqlite3-0_3.8.3.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtasn1-6_3.4-3 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libthai-data_0.1.20-3 libthai0_0.1.20-3 libtiff5_4.0.3-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtool_2.4.2-1.7 libtsan0_4.8.2-16 libudev1_204-7 libunistring0_0.9.3-5 liburi-perl_1.60-1 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.6 libwayland-client0_1.4.0-1 libwayland-server0_1.4.0-1 libwww-perl_6.05-2 libwww-robotrules-perl_6.01-1 libx11-6_2:1.6.2-1 libx11-data_2:1.6.2-1 libx11-dev_2:1.6.2-1 libx11-xcb-dev_2:1.6.2-1 libx11-xcb1_2:1.6.2-1 libxau-dev_1:1.0.8-1 libxau6_1:1.0.8-1 libxcb-dri2-0_1.10-2 libxcb-dri2-0-dev_1.10-2 libxcb-glx0_1.10-2 libxcb-glx0-dev_1.10-2 libxcb-render0_1.10-2 libxcb-render0-dev_1.10-2 libxcb-shape0_1.10-2 libxcb-shm0_1.10-2 libxcb-shm0-dev_1.10-2 libxcb-xfixes0_1.10-2 libxcb1_1.10-2 libxcb1-dev_1.10-2 libxcomposite-dev_1:0.4.4-1 libxcomposite1_1:0.4.4-1 libxcursor-dev_1:1.1.14-1 libxcursor1_1:1.1.14-1 libxdamage-dev_1:1.1.4-1 libxdamage1_1:1.1.4-1 libxdmcp-dev_1:1.1.1-1 libxdmcp6_1:1.1.1-1 libxext-dev_2:1.3.2-1 libxext6_2:1.3.2-1 libxfixes-dev_1:5.0.1-1 libxfixes3_1:5.0.1-1 libxft-dev_2.3.1-2 libxft2_2.3.1-2 libxi-dev_2:1.7.2-1 libxi6_2:1.7.2-1 libxinerama-dev_2:1.1.3-1 libxinerama1_2:1.1.3-1 libxml-parser-perl_2.41-1+b2 libxml2_2.9.1+dfsg1-3 libxml2-utils_2.9.1+dfsg1-3 libxrandr-dev_2:1.4.2-1 libxrandr2_2:1.4.2-1 libxrender-dev_1:0.9.8-1 libxrender1_1:0.9.8-1 libxxf86vm-dev_1:1.1.3-1 libxxf86vm1_1:1.1.3-1 linux-libc-dev_3.13.4-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1 lsb-base_4.1+Debian12 m4_1.4.17-2 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mesa-common-dev_9.2.2-1 mime-support_3.54 mount_2.20.1-5.6 multiarch-support_2.18-3 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 netbase_5.2 openssl_1.0.1f-1 passwd_1:4.1.5.1-1 patch_2.7.1-4 perl_5.18.2-2 perl-base_5.18.2-2 perl-modules_5.18.2-2 pkg-config_0.26-1 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-7 python2.7-minimal_2.7.6-7 readline-common_6.2+dfsg-0.1 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-geany-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 shared-mime-info_1.2-1 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-1 tzdata_2013i-1 ucf_3.0027+nmu1 util-linux_2.20.1-5.6 x11-common_1:7.7+6 x11proto-composite-dev_1:0.4.2-2 x11proto-core-dev_7.0.24-1 x11proto-damage-dev_1:1.2.1-2 x11proto-dri2-dev_2.8-2 x11proto-fixes-dev_1:5.0-2 x11proto-gl-dev_1.4.17-1 x11proto-input-dev_2.3-1 x11proto-kb-dev_1.0.6-2 x11proto-randr-dev_1.4.0-2 x11proto-render-dev_2:0.11.1-2 x11proto-xext-dev_7.3.0-1 x11proto-xf86vidmode-dev_2.3.1-2 x11proto-xinerama-dev_1.2.1-2 xorg-sgml-doctools_1:1.11-1 xtrans-dev_1.3.2-1 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1 zlib1g-dev_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Sun May 19 16:33:15 2013 UTC using RSA key ID 588752A1
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./geany_1.23.1+dfsg-1.dsc
+dpkg-source: info: extracting geany in geany-1.23.1+dfsg
+dpkg-source: info: unpacking geany_1.23.1+dfsg.orig.tar.gz
+dpkg-source: info: unpacking geany_1.23.1+dfsg-1.debian.tar.gz
+dpkg-source: info: applying 20_change_gpl_location.patch
+dpkg-source: info: applying 20_add_debian_specific_filetypes.patch
+dpkg-source: info: applying 20_debian_control_tags.patch
+dpkg-source: info: applying 20_use_sensible_browser.patch
+dpkg-source: info: applying 20_load_plugins_from_all_paths.patch
+dpkg-source: info: applying 20_use_x_terminal_emulator.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-b8aa62c7-5666-4d7f-9c2a-fff4919399fb
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package geany
+dpkg-buildpackage: source version 1.23.1+dfsg-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Chow Loong Jin <hyperair@debian.org>
+ dpkg-source --before-build geany-1.23.1+dfsg
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with=autoreconf --parallel
+   dh_testdir -O--parallel
+   dh_auto_clean -O--parallel
+   dh_autoreconf_clean -O--parallel
+   dh_clean -O--parallel
+ dpkg-source -b geany-1.23.1+dfsg
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building geany using existing ./geany_1.23.1+dfsg.orig.tar.gz
+dpkg-source: info: building geany in geany_1.23.1+dfsg-1.debian.tar.xz
+dpkg-source: info: building geany in geany_1.23.1+dfsg-1.dsc
+ debian/rules build
+dh build --with=autoreconf --parallel
+   dh_testdir -O--parallel
+   debian/rules override_dh_autoreconf
+make[1]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+NOCONFIGURE=1 dh_autoreconf ./autogen.sh
+Processing configure.ac
+Copying file po/Makefile.in.in
+
+Please add the files
+  codeset.m4 gettext.m4 glibc21.m4 iconv.m4 isc-posix.m4 lcmessage.m4
+  progtest.m4
+from the /usr/share/aclocal directory to your autoconf macro directory
+or directly to your aclocal.m4 file.
+You will also need config.guess and config.sub, which you can get from
+ftp://ftp.gnu.org/pub/gnu/config/.
+
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, `build-aux'.
+libtoolize: copying file `build-aux/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: copying file `m4/libtool.m4'
+libtoolize: copying file `m4/ltoptions.m4'
+libtoolize: copying file `m4/ltsugar.m4'
+libtoolize: copying file `m4/ltversion.m4'
+libtoolize: copying file `m4/lt~obsolete.m4'
+libtoolize: Remember to add `LT_INIT' to configure.ac.
+configure.ac:24: installing 'build-aux/compile'
+scintilla/Makefile.am:125: warning: 'INCLUDES' is the old name for 'AM_CPPFLAGS' (or '*_CPPFLAGS')
+scintilla/Makefile.am:44: warning: source file 'gtk/PlatGTK.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+automake: warning: possible forward-incompatibility.
+automake: At least a source file is in a subdirectory, but the 'subdir-objects'
+automake: automake option hasn't been enabled.  For now, the corresponding output
+automake: object file(s) will be placed in the top-level directory.  However,
+automake: this behaviour will change in future Automake versions: they will
+automake: unconditionally cause object files to be placed in the same subdirectory
+automake: of the corresponding sources.
+automake: You are advised to start using 'subdir-objects' option throughout your
+automake: project, to avoid future incompatibilities.
+scintilla/Makefile.am:44: warning: source file 'gtk/ScintillaGTK.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'gtk/scintilla-marshal.c' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'lexlib/Accessor.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'lexlib/CharacterSet.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'lexlib/LexerBase.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'lexlib/LexerModule.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'lexlib/LexerNoExceptions.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'lexlib/LexerSimple.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'lexlib/PropSetSimple.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'lexlib/StyleContext.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'lexlib/WordList.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/AutoComplete.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/CallTip.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/Catalogue.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/CellBuffer.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/CharClassify.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/ContractionState.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/Decoration.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/Document.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/Editor.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/ExternalLexer.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/Indicator.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/KeyMap.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/LineMarker.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/PerLine.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/PositionCache.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/RESearch.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/RunStyles.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/ScintillaBase.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/Selection.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/Style.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/UniConversion.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/ViewStyle.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:44: warning: source file 'src/XPM.cxx' is in a subdirectory,
+scintilla/Makefile.am:44: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexAbaqus.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexAda.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexAsm.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexBash.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexBasic.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexCOBOL.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexCPP.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexCSS.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexCaml.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexCmake.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexD.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexErlang.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexForth.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexFortran.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexHTML.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexHaskell.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexLisp.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexLua.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexMarkdown.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexMatlab.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexNsis.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexOthers.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexPascal.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexPerl.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexPython.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexPO.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexR.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexRuby.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexSQL.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexTCL.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexTxt2tags.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexVHDL.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexVerilog.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+scintilla/Makefile.am:8: warning: source file 'lexers/LexYAML.cxx' is in a subdirectory,
+scintilla/Makefile.am:8: but option 'subdir-objects' is disabled
+src/Makefile.am:77: warning: 'INCLUDES' is the old name for 'AM_CPPFLAGS' (or '*_CPPFLAGS')
+Done. configure skipped.
+make[1]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+dh_auto_configure -- --enable-vte --enable-the-force
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+/«BUILDDIR»/geany-1.23.1+dfsg/build-aux/missing: Unknown `--is-lightweight' option
+Try `/«BUILDDIR»/geany-1.23.1+dfsg/build-aux/missing --help' for more information
+configure: WARNING: 'missing' script is too old or missing
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) none
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking whether ln -s works... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking fnmatch.h usability... yes
+checking fnmatch.h presence... yes
+checking for fnmatch.h... yes
+checking glob.h usability... yes
+checking glob.h presence... yes
+checking for glob.h... yes
+checking for stdlib.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for off_t... yes
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for gethostname... yes
+checking for ftruncate... yes
+checking for fgetpos... yes
+checking for mkstemp... yes
+checking for strerror... yes
+checking for strstr... yes
+checking for Git revision... none
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for GTK... yes
+checking for GTHREAD... yes
+checking whether binary relocation support should be enabled... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for library containing connect... none required
+checking whether the force is with you... yes
+checking whether NLS is requested... yes
+checking for intltool-update... /usr/bin/intltool-update
+checking for intltool-merge... /usr/bin/intltool-merge
+checking for intltool-extract... /usr/bin/intltool-extract
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for perl... /usr/bin/perl
+checking for perl >= 5.8.1... 5.18.2
+checking for XML::Parser... ok
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for LC_MESSAGES... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for ngettext in libc... yes
+checking for dgettext in libc... yes
+checking for bind_textdomain_codeset... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for dcgettext... yes
+checking if msgfmt accepts -c... yes
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for catalogs to be installed...  ar ast be bg ca cs de el en_GB es et eu fa fi fr gl he hi hu id it ja kk ko lb lt mn nl nn pl pt pt_BR ro ru sk sl sr sv tr uk vi zh_CN zh_TW
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating icons/Makefile
+config.status: creating icons/16x16/Makefile
+config.status: creating icons/24x24/Makefile
+config.status: creating icons/32x32/Makefile
+config.status: creating icons/48x48/Makefile
+config.status: creating icons/scalable/Makefile
+config.status: creating icons/tango/Makefile
+config.status: creating icons/tango/16x16/Makefile
+config.status: creating icons/tango/24x24/Makefile
+config.status: creating icons/tango/32x32/Makefile
+config.status: creating icons/tango/48x48/Makefile
+config.status: creating icons/tango/scalable/Makefile
+config.status: creating tagmanager/Makefile
+config.status: creating tagmanager/ctags/Makefile
+config.status: creating tagmanager/mio/Makefile
+config.status: creating tagmanager/src/Makefile
+config.status: creating scintilla/Makefile
+config.status: creating scintilla/include/Makefile
+config.status: creating src/Makefile
+config.status: creating plugins/Makefile
+config.status: creating po/Makefile.in
+config.status: creating doc/Makefile
+config.status: creating doc/geany.1
+config.status: creating geany.spec
+config.status: creating geany.pc
+config.status: creating doc/Doxyfile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: executing po/stamp-it commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+------------------------------------------
+Install Geany in                 : /usr
+Using GTK version                : 2.24.22
+Enable binary relocation         : no
+Build with plugin support        : yes
+Use (UNIX domain) socket support : yes
+Use virtual terminal support     : yes
+
+Configuration is done OK.
+
+sed -i -r 's,^sys_lib_dlsearch_path_spec="(.*)$,sys_lib_dlsearch_path_spec="/usr/lib /lib \1,' /«BUILDDIR»/geany-1.23.1+dfsg/libtool
+make[1]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+   dh_auto_build -O--parallel
+make[1]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+(CDPATH="${ZSH_VERSION+.}:" && cd . && autoheader)
+rm -f stamp-h1
+touch config.h.in
+cd . && /bin/bash ./config.status config.h
+config.status: creating config.h
+config.status: config.h is unchanged
+make  all-recursive
+make[2]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+Making all in tagmanager
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+Making all in ctags
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/ctags'
+  CC       args.o
+  CC       ctags.o
+  CC       entry.o
+  CC       get.o
+  CC       keyword.o
+  CC       nestlevel.o
+  CC       options.o
+options.c:84:5: warning: implicit conversion from enumeration type 'enum eLocate' to different enumeration type 'boolean' [-Wenum-conversion]
+    EX_MIX,             /* -n, --excmd */
+    ^~~~~~
+1 warning generated.
+  CC       parse.o
+  CC       read.o
+  CC       sort.o
+  CC       strlist.o
+  CC       vstring.o
+  CC       abaqus.o
+  CC       abc.o
+  CC       actionscript.o
+  CC       asciidoc.o
+  CC       asm.o
+  CC       basic.o
+  CC       c.o
+  CC       cobol.o
+  CC       conf.o
+  CC       css.o
+  CC       diff.o
+  CC       docbook.o
+  CC       fortran.o
+  CC       haskell.o
+  CC       haxe.o
+  CC       html.o
+  CC       js.o
+  CC       latex.o
+  CC       lregex.o
+  CC       lua.o
+  CC       make.o
+  CC       markdown.o
+  CC       matlab.o
+  CC       nsis.o
+  CC       objc.o
+  CC       pascal.o
+  CC       perl.o
+  CC       php.o
+  CC       python.o
+  CC       r.o
+  CC       rest.o
+  CC       ruby.o
+  CC       sh.o
+  CC       sql.o
+  CC       tcl.o
+  CC       txt2tags.o
+  CC       verilog.o
+  CC       vhdl.o
+  AR       libctags.a
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/ctags'
+Making all in mio
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/mio'
+  CC       mio.o
+  AR       libmio.a
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/mio'
+Making all in src
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/src'
+  CC       tm_file_entry.o
+  CC       tm_project.o
+  CC       tm_source_file.o
+  CC       tm_symbol.o
+  CC       tm_tag.o
+  CC       tm_tagmanager.o
+  CC       tm_work_object.o
+  CC       tm_workspace.o
+  AR       libtagmanager.a
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/src'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+Making all in scintilla
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+Making all in include
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla/include'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla/include'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+  CXX      PlatGTK.o
+  CXX      ScintillaGTK.o
+  CC       scintilla-marshal.o
+  CXX      Accessor.o
+  CXX      CharacterSet.o
+  CXX      LexerBase.o
+  CXX      LexerModule.o
+  CXX      LexerNoExceptions.o
+  CXX      LexerSimple.o
+  CXX      PropSetSimple.o
+  CXX      StyleContext.o
+  CXX      WordList.o
+  CXX      AutoComplete.o
+  CXX      CallTip.o
+  CXX      Catalogue.o
+  CXX      CellBuffer.o
+  CXX      CharClassify.o
+  CXX      ContractionState.o
+  CXX      Decoration.o
+  CXX      Document.o
+  CXX      Editor.o
+  CXX      ExternalLexer.o
+  CXX      Indicator.o
+  CXX      KeyMap.o
+  CXX      LineMarker.o
+  CXX      PerLine.o
+  CXX      PositionCache.o
+  CXX      RESearch.o
+  CXX      RunStyles.o
+  CXX      ScintillaBase.o
+  CXX      Selection.o
+  CXX      Style.o
+  CXX      UniConversion.o
+  CXX      ViewStyle.o
+  CXX      XPM.o
+  CXX      LexAbaqus.o
+  CXX      LexAda.o
+  CXX      LexAsm.o
+  CXX      LexBash.o
+  CXX      LexBasic.o
+  CXX      LexCOBOL.o
+  CXX      LexCPP.o
+  CXX      LexCSS.o
+  CXX      LexCaml.o
+  CXX      LexCmake.o
+  CXX      LexD.o
+  CXX      LexErlang.o
+  CXX      LexForth.o
+  CXX      LexFortran.o
+  CXX      LexHTML.o
+  CXX      LexHaskell.o
+  CXX      LexLisp.o
+  CXX      LexLua.o
+  CXX      LexMarkdown.o
+  CXX      LexMatlab.o
+  CXX      LexNsis.o
+  CXX      LexOthers.o
+  CXX      LexPascal.o
+  CXX      LexPerl.o
+  CXX      LexPython.o
+  CXX      LexPO.o
+  CXX      LexR.o
+  CXX      LexRuby.o
+  CXX      LexSQL.o
+  CXX      LexTCL.o
+  CXX      LexTxt2tags.o
+  CXX      LexVHDL.o
+  CXX      LexVerilog.o
+  CXX      LexYAML.o
+  AR       libscintilla.a
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+Making all in src
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/src'
+  CC       about.o
+  CC       build.o
+  CC       callbacks.o
+  CC       dialogs.o
+  CC       document.o
+  CC       editor.o
+  CC       encodings.o
+  CC       filetypes.o
+  CC       geanyentryaction.o
+  CC       geanymenubuttonaction.o
+  CC       geanyobject.o
+  CC       geanywraplabel.o
+  CC       highlighting.o
+  CC       keybindings.o
+  CC       keyfile.o
+  CC       log.o
+  CC       main.o
+main.c:1053:3: warning: 'g_thread_init' is deprecated [-Wdeprecated-declarations]
+                g_thread_init(NULL);
+                ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:260:10: note: 'g_thread_init' declared here
+void     g_thread_init                   (gpointer vtable);
+         ^
+1 warning generated.
+  CC       msgwindow.o
+  CC       navqueue.o
+  CC       notebook.o
+  CC       plugins.o
+In file included from plugins.c:35:
+./plugindata.h:464:61: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+        void            (*ui_table_add_row) (GtkTable *table, gint row, ...) G_GNUC_NULL_TERMINATED;
+                                                                             ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+In file included from plugins.c:35:
+./plugindata.h:689:48: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+                        gconstpointer widget_id, gint enum_id, ...) G_GNUC_NULL_TERMINATED;
+                                                                    ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+2 warnings generated.
+  CC       pluginutils.o
+In file included from pluginutils.c:31:
+In file included from ./pluginprivate.h:26:
+./plugindata.h:464:61: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+        void            (*ui_table_add_row) (GtkTable *table, gint row, ...) G_GNUC_NULL_TERMINATED;
+                                                                             ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+In file included from pluginutils.c:31:
+In file included from ./pluginprivate.h:26:
+./plugindata.h:689:48: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+                        gconstpointer widget_id, gint enum_id, ...) G_GNUC_NULL_TERMINATED;
+                                                                    ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+2 warnings generated.
+  CC       prefix.o
+  CC       prefs.o
+  CC       printing.o
+  CC       project.o
+  CC       sciwrappers.o
+  CC       search.o
+  CC       socket.o
+  CC       stash.o
+  CC       symbols.o
+  CC       templates.o
+  CC       toolbar.o
+  CC       tools.o
+  CC       sidebar.o
+  CC       ui_utils.o
+  CC       utils.o
+  CC       vte.o
+  CXXLD    geany
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/src'
+Making all in plugins
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/plugins'
+  CC       demoplugin_la-demoplugin.lo
+In file included from demoplugin.c:35:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:464:61: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+        void            (*ui_table_add_row) (GtkTable *table, gint row, ...) G_GNUC_NULL_TERMINATED;
+                                                                             ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+In file included from demoplugin.c:35:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:689:48: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+                        gconstpointer widget_id, gint enum_id, ...) G_GNUC_NULL_TERMINATED;
+                                                                    ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+2 warnings generated.
+  CCLD     demoplugin.la
+  CC       classbuilder_la-classbuilder.lo
+In file included from classbuilder.c:29:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:464:61: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+        void            (*ui_table_add_row) (GtkTable *table, gint row, ...) G_GNUC_NULL_TERMINATED;
+                                                                             ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+In file included from classbuilder.c:29:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:689:48: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+                        gconstpointer widget_id, gint enum_id, ...) G_GNUC_NULL_TERMINATED;
+                                                                    ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+2 warnings generated.
+  CCLD     classbuilder.la
+  CC       htmlchars_la-htmlchars.lo
+In file included from htmlchars.c:29:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:464:61: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+        void            (*ui_table_add_row) (GtkTable *table, gint row, ...) G_GNUC_NULL_TERMINATED;
+                                                                             ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+In file included from htmlchars.c:29:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:689:48: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+                        gconstpointer widget_id, gint enum_id, ...) G_GNUC_NULL_TERMINATED;
+                                                                    ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+2 warnings generated.
+  CCLD     htmlchars.la
+  CC       export_la-export.lo
+In file included from export.c:31:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:464:61: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+        void            (*ui_table_add_row) (GtkTable *table, gint row, ...) G_GNUC_NULL_TERMINATED;
+                                                                             ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+In file included from export.c:31:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:689:48: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+                        gconstpointer widget_id, gint enum_id, ...) G_GNUC_NULL_TERMINATED;
+                                                                    ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+2 warnings generated.
+  CCLD     export.la
+  CC       saveactions_la-saveactions.lo
+In file included from saveactions.c:27:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:464:61: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+        void            (*ui_table_add_row) (GtkTable *table, gint row, ...) G_GNUC_NULL_TERMINATED;
+                                                                             ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+In file included from saveactions.c:27:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:689:48: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+                        gconstpointer widget_id, gint enum_id, ...) G_GNUC_NULL_TERMINATED;
+                                                                    ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+2 warnings generated.
+  CCLD     saveactions.la
+  CC       filebrowser_la-filebrowser.lo
+In file included from filebrowser.c:28:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:464:61: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+        void            (*ui_table_add_row) (GtkTable *table, gint row, ...) G_GNUC_NULL_TERMINATED;
+                                                                             ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+In file included from filebrowser.c:28:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:689:48: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+                        gconstpointer widget_id, gint enum_id, ...) G_GNUC_NULL_TERMINATED;
+                                                                    ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+2 warnings generated.
+  CCLD     filebrowser.la
+  CC       splitwindow_la-splitwindow.lo
+In file included from splitwindow.c:28:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:464:61: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+        void            (*ui_table_add_row) (GtkTable *table, gint row, ...) G_GNUC_NULL_TERMINATED;
+                                                                             ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+In file included from splitwindow.c:28:
+In file included from ./geanyplugin.h:32:
+../src/plugindata.h:689:48: warning: '__sentinel__' attribute only applies to functions, methods and blocks [-Wignored-attributes]
+                        gconstpointer widget_id, gint enum_id, ...) G_GNUC_NULL_TERMINATED;
+                                                                    ^
+/usr/include/glib-2.0/glib/gmacros.h:65:47: note: expanded from macro 'G_GNUC_NULL_TERMINATED'
+#define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
+                                              ^
+2 warnings generated.
+  CCLD     splitwindow.la
+python genapi.py || true
+Generated geanyfunctions.h
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/plugins'
+Making all in icons
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+Making all in 16x16
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/16x16'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/16x16'
+Making all in 24x24
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/24x24'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/24x24'
+Making all in 32x32
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/32x32'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/32x32'
+Making all in 48x48
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/48x48'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/48x48'
+Making all in scalable
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/scalable'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/scalable'
+Making all in tango
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+Making all in 16x16
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/16x16'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/16x16'
+Making all in 24x24
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/24x24'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/24x24'
+Making all in 32x32
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/32x32'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/32x32'
+Making all in 48x48
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/48x48'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/48x48'
+Making all in scalable
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/scalable'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/scalable'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[5]: Nothing to be done for `all-am'.
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+Making all in po
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/po'
+  MSGFMT ar.gmo
+  MSGFMT ast.gmo
+  MSGFMT be.gmo
+  MSGFMT bg.gmo
+  MSGFMT ca.gmo
+  MSGFMT cs.gmo
+  MSGFMT de.gmo
+  MSGFMT el.gmo
+  MSGFMT en_GB.gmo
+  MSGFMT es.gmo
+  MSGFMT et.gmo
+  MSGFMT eu.gmo
+  MSGFMT fa.gmo
+  MSGFMT fi.gmo
+  MSGFMT fr.gmo
+  MSGFMT gl.gmo
+  MSGFMT he.gmo
+  MSGFMT hi.gmo
+  MSGFMT hu.gmo
+  MSGFMT id.gmo
+  MSGFMT it.gmo
+  MSGFMT ja.gmo
+  MSGFMT kk.gmo
+  MSGFMT ko.gmo
+  MSGFMT lb.gmo
+  MSGFMT lt.gmo
+  MSGFMT mn.gmo
+  MSGFMT nl.gmo
+  MSGFMT nn.gmo
+  MSGFMT pl.gmo
+  MSGFMT pt.gmo
+  MSGFMT pt_BR.gmo
+  MSGFMT ro.gmo
+  MSGFMT ru.gmo
+  MSGFMT sk.gmo
+  MSGFMT sl.gmo
+  MSGFMT sr.gmo
+  MSGFMT sv.gmo
+  MSGFMT tr.gmo
+  MSGFMT uk.gmo
+  MSGFMT vi.gmo
+  MSGFMT zh_CN.gmo
+  MSGFMT zh_TW.gmo
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/po'
+Making all in doc
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/doc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/doc'
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+  ITMRG  geany.desktop
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+make[2]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+make[1]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+   dh_auto_test -O--parallel
+make[1]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+Making check in tagmanager
+make[2]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+Making check in ctags
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/ctags'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/ctags'
+Making check in mio
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/mio'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/mio'
+Making check in src
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/src'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/src'
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+make[2]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+Making check in scintilla
+make[2]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+Making check in include
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla/include'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla/include'
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+make[2]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+Making check in src
+make[2]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/src'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/src'
+Making check in plugins
+make[2]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/plugins'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/plugins'
+Making check in icons
+make[2]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+Making check in 16x16
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/16x16'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/16x16'
+Making check in 24x24
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/24x24'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/24x24'
+Making check in 32x32
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/32x32'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/32x32'
+Making check in 48x48
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/48x48'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/48x48'
+Making check in scalable
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/scalable'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/scalable'
+Making check in tango
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+Making check in 16x16
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/16x16'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/16x16'
+Making check in 24x24
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/24x24'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/24x24'
+Making check in 32x32
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/32x32'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/32x32'
+Making check in 48x48
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/48x48'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/48x48'
+Making check in scalable
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/scalable'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/scalable'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[4]: Nothing to be done for `check-am'.
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+make[2]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+Making check in po
+make[2]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/po'
+INTLTOOL_EXTRACT="/usr/bin/intltool-extract" XGETTEXT="/usr/bin/xgettext" srcdir=. /usr/bin/intltool-update --gettext-package geany --pot
+rm -f missing notexist
+srcdir=. /usr/bin/intltool-update -m
+if [ -r missing -o -r notexist ]; then \
+	  exit 1; \
+	fi
+make[2]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/po'
+Making check in doc
+make[2]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/doc'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/doc'
+make[2]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+make[2]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+make[1]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+ fakeroot debian/rules binary
+dh binary --with=autoreconf --parallel
+   dh_testroot -O--parallel
+   dh_prep -O--parallel
+   dh_installdirs -O--parallel
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+dh_auto_install
+make[2]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+Making install in tagmanager
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+Making install in ctags
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/ctags'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/ctags'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/ctags'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/ctags'
+Making install in mio
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/mio'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/mio'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/mio'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/mio'
+Making install in src
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/src'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/src'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/include/geany/tagmanager'
+ /usr/bin/install -c -m 644 tm_file_entry.h tm_project.h tm_source_file.h tm_symbol.h tm_tag.h tm_tagmanager.h tm_work_object.h tm_workspace.h '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/include/geany/tagmanager'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/src'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager/src'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/tagmanager'
+Making install in scintilla
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+Making install in include
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla/include'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla/include'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/include/geany/scintilla/'
+ /usr/bin/install -c -m 644 SciLexer.h Scintilla.h Scintilla.iface ScintillaWidget.h '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/include/geany/scintilla/'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla/include'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla/include'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/scintilla'
+Making install in src
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/src'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/src'
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/bin'
+  /bin/bash ../libtool --silent   --mode=install /usr/bin/install -c geany '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/bin'
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/include/geany'
+ /usr/bin/install -c -m 644 build.h document.h editor.h encodings.h filetypes.h geany.h highlighting.h keybindings.h msgwindow.h plugindata.h prefs.h project.h search.h stash.h support.h templates.h toolbar.h ui_utils.h utils.h '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/include/geany'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/src'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/src'
+Making install in plugins
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/plugins'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/plugins'
+make[4]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/geany'
+ /bin/bash ../libtool --silent   --mode=install /usr/bin/install -c   classbuilder.la htmlchars.la export.la saveactions.la filebrowser.la splitwindow.la '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/geany'
+libtool: install: warning: remember to run `libtool --finish /usr/lib/x86_64-linux-gnu/geany'
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/include/geany'
+ /usr/bin/install -c -m 644 geanyplugin.h geanyfunctions.h '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/include/geany'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/plugins'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/plugins'
+Making install in icons
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+Making install in 16x16
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/16x16'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/16x16'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/16x16/actions'
+ /usr/bin/install -c -m 644 geany-build.png geany-close-all.png geany-save-all.png '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/16x16/actions'
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/16x16/apps'
+ /usr/bin/install -c -m 644 classviewer-class.png classviewer-macro.png classviewer-member.png classviewer-method.png classviewer-namespace.png classviewer-other.png classviewer-struct.png classviewer-var.png geany.png '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/16x16/apps'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/16x16'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/16x16'
+Making install in 24x24
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/24x24'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/24x24'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/24x24/actions'
+ /usr/bin/install -c -m 644 geany-build.png geany-close-all.png geany-save-all.png '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/24x24/actions'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/24x24'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/24x24'
+Making install in 32x32
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/32x32'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/32x32'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/32x32/actions'
+ /usr/bin/install -c -m 644 geany-build.png geany-close-all.png geany-save-all.png '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/32x32/actions'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/32x32'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/32x32'
+Making install in 48x48
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/48x48'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/48x48'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/48x48/actions'
+ /usr/bin/install -c -m 644 geany-build.png geany-close-all.png geany-save-all.png '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/48x48/actions'
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/48x48/apps'
+ /usr/bin/install -c -m 644 geany.png '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/48x48/apps'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/48x48'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/48x48'
+Making install in scalable
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/scalable'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/scalable'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/scalable/actions'
+ /usr/bin/install -c -m 644 geany-build.svg geany-close-all.svg geany-save-all.svg '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/scalable/actions'
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/scalable/apps'
+ /usr/bin/install -c -m 644 geany.svg '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/hicolor/scalable/apps'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/scalable'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/scalable'
+Making install in tango
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+Making install in 16x16
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/16x16'
+make[6]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/16x16'
+make[6]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/Tango/16x16/actions'
+ /usr/bin/install -c -m 644 geany-save-all.png '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/Tango/16x16/actions'
+make[6]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/16x16'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/16x16'
+Making install in 24x24
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/24x24'
+make[6]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/24x24'
+make[6]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/Tango/24x24/actions'
+ /usr/bin/install -c -m 644 geany-save-all.png '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/Tango/24x24/actions'
+make[6]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/24x24'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/24x24'
+Making install in 32x32
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/32x32'
+make[6]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/32x32'
+make[6]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/Tango/32x32/actions'
+ /usr/bin/install -c -m 644 geany-save-all.png '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/Tango/32x32/actions'
+make[6]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/32x32'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/32x32'
+Making install in 48x48
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/48x48'
+make[6]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/48x48'
+make[6]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/Tango/48x48/actions'
+ /usr/bin/install -c -m 644 geany-save-all.png '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/Tango/48x48/actions'
+make[6]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/48x48'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/48x48'
+Making install in scalable
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/scalable'
+make[6]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/scalable'
+make[6]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/Tango/scalable/actions'
+ /usr/bin/install -c -m 644 geany-save-all.svg '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/icons/Tango/scalable/actions'
+make[6]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/scalable'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango/scalable'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[6]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons/tango'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+make[5]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+make[5]: Nothing to be done for `install-exec-am'.
+make  install-data-hook
+make[6]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+*** Icon cache not updated. Remember to run:
+***
+***   gtk-update-icon-cache -f -t '/usr/share/icons/hicolor'
+***   gtk-update-icon-cache -f -t '/usr/share/icons/Tango'
+***
+make[6]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+make[5]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/icons'
+Making install in po
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/po'
+linguas="ar ast be bg ca cs de el en_GB es et eu fa fi fr gl he hi hu id it ja kk ko lb lt mn nl nn pl pt pt_BR ro ru sk sl sr sv tr uk vi zh_CN zh_TW "; \
+	for lang in $linguas; do \
+	  dir=/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/$lang/LC_MESSAGES; \
+	  /bin/bash /«BUILDDIR»/geany-1.23.1+dfsg/build-aux/install-sh -d $dir; \
+	  if test -r $lang.gmo; then \
+	    /usr/bin/install -c -m 644 $lang.gmo $dir/geany.mo; \
+	    echo "installing $lang.gmo as $dir/geany.mo"; \
+	  else \
+	    /usr/bin/install -c -m 644 ./$lang.gmo $dir/geany.mo; \
+	    echo "installing ./$lang.gmo as" \
+		 "$dir/geany.mo"; \
+	  fi; \
+	  if test -r $lang.gmo.m; then \
+	    /usr/bin/install -c -m 644 $lang.gmo.m $dir/geany.mo.m; \
+	    echo "installing $lang.gmo.m as $dir/geany.mo.m"; \
+	  else \
+	    if test -r ./$lang.gmo.m ; then \
+	      /usr/bin/install -c -m 644 ./$lang.gmo.m \
+		$dir/geany.mo.m; \
+	      echo "installing ./$lang.gmo.m as" \
+		   "$dir/geany.mo.m"; \
+	    else \
+	      true; \
+	    fi; \
+	  fi; \
+	done
+installing ar.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/ar/LC_MESSAGES/geany.mo
+installing ast.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/ast/LC_MESSAGES/geany.mo
+installing be.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/be/LC_MESSAGES/geany.mo
+installing bg.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/bg/LC_MESSAGES/geany.mo
+installing ca.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/ca/LC_MESSAGES/geany.mo
+installing cs.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/cs/LC_MESSAGES/geany.mo
+installing de.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/de/LC_MESSAGES/geany.mo
+installing el.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/el/LC_MESSAGES/geany.mo
+installing en_GB.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/en_GB/LC_MESSAGES/geany.mo
+installing es.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/es/LC_MESSAGES/geany.mo
+installing et.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/et/LC_MESSAGES/geany.mo
+installing eu.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/eu/LC_MESSAGES/geany.mo
+installing fa.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/fa/LC_MESSAGES/geany.mo
+installing fi.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/fi/LC_MESSAGES/geany.mo
+installing fr.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/fr/LC_MESSAGES/geany.mo
+installing gl.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/gl/LC_MESSAGES/geany.mo
+installing he.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/he/LC_MESSAGES/geany.mo
+installing hi.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/hi/LC_MESSAGES/geany.mo
+installing hu.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/hu/LC_MESSAGES/geany.mo
+installing id.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/id/LC_MESSAGES/geany.mo
+installing it.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/it/LC_MESSAGES/geany.mo
+installing ja.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/ja/LC_MESSAGES/geany.mo
+installing kk.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/kk/LC_MESSAGES/geany.mo
+installing ko.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/ko/LC_MESSAGES/geany.mo
+installing lb.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/lb/LC_MESSAGES/geany.mo
+installing lt.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/lt/LC_MESSAGES/geany.mo
+installing mn.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/mn/LC_MESSAGES/geany.mo
+installing nl.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/nl/LC_MESSAGES/geany.mo
+installing nn.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/nn/LC_MESSAGES/geany.mo
+installing pl.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/pl/LC_MESSAGES/geany.mo
+installing pt.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/pt/LC_MESSAGES/geany.mo
+installing pt_BR.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/pt_BR/LC_MESSAGES/geany.mo
+installing ro.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/ro/LC_MESSAGES/geany.mo
+installing ru.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/ru/LC_MESSAGES/geany.mo
+installing sk.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/sk/LC_MESSAGES/geany.mo
+installing sl.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/sl/LC_MESSAGES/geany.mo
+installing sr.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/sr/LC_MESSAGES/geany.mo
+installing sv.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/sv/LC_MESSAGES/geany.mo
+installing tr.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/tr/LC_MESSAGES/geany.mo
+installing uk.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/uk/LC_MESSAGES/geany.mo
+installing vi.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/vi/LC_MESSAGES/geany.mo
+installing zh_CN.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/zh_CN/LC_MESSAGES/geany.mo
+installing zh_TW.gmo as /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/locale/zh_TW/LC_MESSAGES/geany.mo
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/po'
+Making install in doc
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/doc'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg/doc'
+make[4]: Nothing to be done for `install-exec-am'.
+/bin/bash /«BUILDDIR»/geany-1.23.1+dfsg/build-aux/install-sh -d /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany/html/images
+for file in `ls ./images/*.png`; do \
+	  if [ -f $file ]; then \
+	    basefile=`echo $file | sed -e 's,^.*/,,'`; \
+	    /usr/bin/install -c -m 644 $file /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany/html/images/$basefile; \
+	  fi \
+	done
+/usr/bin/install -c -m 644 ./geany.html /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany/html/index.html
+/usr/bin/install -c -m 644 ./geany.txt /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany/manual.txt
+/usr/bin/install -c -m 644 ../README /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany
+/usr/bin/install -c -m 644 ../ChangeLog /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany
+/usr/bin/install -c -m 644 ../NEWS /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany
+/usr/bin/install -c -m 644 ../COPYING /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany
+/usr/bin/install -c -m 644 ../AUTHORS /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany
+/usr/bin/install -c -m 644 ../TODO /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany
+/usr/bin/install -c -m 644 ../THANKS /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany
+/usr/bin/install -c -m 644 ../scintilla/License.txt /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany/ScintillaLicense.txt
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/man/man1'
+ /usr/bin/install -c -m 644 geany.1 '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/man/man1'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/doc'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg/doc'
+make[3]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+make[4]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+make[4]: Nothing to be done for `install-exec-am'.
+/bin/bash /«BUILDDIR»/geany-1.23.1+dfsg/build-aux/install-sh -d /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/geany; \
+	/usr/bin/install -c -m 644 ./COPYING /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/geany/GPL-2; \
+	for file in ./data/*; do \
+	  if test -f $file; then \
+	    /usr/bin/install -c -m 644 $file /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/geany/; \
+	  fi \
+	done
+/bin/bash /«BUILDDIR»/geany-1.23.1+dfsg/build-aux/install-sh -d /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/geany/templates;
+for file in ./data/templates/*; do \
+	  if test -f $file; then \
+	    /usr/bin/install -c -m 644 $file /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/geany/templates/; \
+	  fi \
+	done
+/bin/bash /«BUILDDIR»/geany-1.23.1+dfsg/build-aux/install-sh -d /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/geany/templates/files;
+for file in ./data/templates/files/*; do \
+	  if test -f $file; then \
+	    /usr/bin/install -c -m 644 $file /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/geany/templates/files/; \
+	  fi \
+	done
+/bin/bash /«BUILDDIR»/geany-1.23.1+dfsg/build-aux/install-sh -d /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/geany/colorschemes;
+for file in ./data/colorschemes/*; do \
+	  if test -f $file; then \
+	    /usr/bin/install -c -m 644 $file /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/geany/colorschemes/; \
+	  fi \
+	done
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/applications'
+ /usr/bin/install -c -m 644 geany.desktop '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/applications'
+ /bin/mkdir -p '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+ /usr/bin/install -c -m 644 geany.pc '/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+make[4]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+make[3]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+make[2]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+#chrpath -d /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/bin/geany \
+	#	/«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/lib/geany/*.so
+rm -f /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/geany/GPL-2
+rm -f /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany/COPYING \
+	       /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany/ScintillaLicense.txt \
+	       /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany/AUTHORS \
+	       /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/share/doc/geany/ChangeLog
+rm -f /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/lib/geany/*.la
+rm -f /«BUILDDIR»/geany-1.23.1+dfsg/debian/tmp/usr/lib/*/geany/*.la
+make[1]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+   debian/rules override_dh_install
+make[1]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+dh_install --list-missing
+dh_install: usr/share/man/man1/geany.1 exists in debian/tmp but is not installed to anywhere
+dh_install: usr/share/doc/geany/TODO exists in debian/tmp but is not installed to anywhere
+dh_install: usr/share/doc/geany/NEWS exists in debian/tmp but is not installed to anywhere
+dh_install: usr/share/doc/geany/README exists in debian/tmp but is not installed to anywhere
+make[1]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+   dh_installdocs -O--parallel
+   dh_installchangelogs -O--parallel
+   dh_installman -O--parallel
+   dh_installmenu -O--parallel
+   dh_icons -O--parallel
+   dh_perl -O--parallel
+   dh_link -O--parallel
+   dh_compress -O--parallel
+   dh_fixperms -O--parallel
+   dh_strip -O--parallel
+   dh_makeshlibs -O--parallel
+   dh_shlibdeps -O--parallel
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/geany/usr/lib/x86_64-linux-gnu/geany/filebrowser.so debian/geany/usr/lib/x86_64-linux-gnu/geany/saveactions.so debian/geany/usr/lib/x86_64-linux-gnu/geany/export.so debian/geany/usr/lib/x86_64-linux-gnu/geany/htmlchars.so debian/geany/usr/bin/geany debian/geany/usr/lib/x86_64-linux-gnu/geany/splitwindow.so debian/geany/usr/lib/x86_64-linux-gnu/geany/classbuilder.so were not linked against libpangoft2-1.0.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/geany/usr/bin/geany was not linked against libgthread-2.0.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/geany/usr/lib/x86_64-linux-gnu/geany/filebrowser.so debian/geany/usr/lib/x86_64-linux-gnu/geany/saveactions.so debian/geany/usr/lib/x86_64-linux-gnu/geany/export.so debian/geany/usr/lib/x86_64-linux-gnu/geany/htmlchars.so debian/geany/usr/bin/geany debian/geany/usr/lib/x86_64-linux-gnu/geany/splitwindow.so debian/geany/usr/lib/x86_64-linux-gnu/geany/classbuilder.so were not linked against libfreetype.so.6 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/geany/usr/lib/x86_64-linux-gnu/geany/filebrowser.so debian/geany/usr/lib/x86_64-linux-gnu/geany/saveactions.so debian/geany/usr/lib/x86_64-linux-gnu/geany/export.so debian/geany/usr/lib/x86_64-linux-gnu/geany/htmlchars.so debian/geany/usr/bin/geany debian/geany/usr/lib/x86_64-linux-gnu/geany/splitwindow.so debian/geany/usr/lib/x86_64-linux-gnu/geany/classbuilder.so were not linked against libatk-1.0.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/geany/usr/lib/x86_64-linux-gnu/geany/filebrowser.so debian/geany/usr/lib/x86_64-linux-gnu/geany/saveactions.so debian/geany/usr/lib/x86_64-linux-gnu/geany/export.so debian/geany/usr/lib/x86_64-linux-gnu/geany/htmlchars.so debian/geany/usr/bin/geany debian/geany/usr/lib/x86_64-linux-gnu/geany/splitwindow.so debian/geany/usr/lib/x86_64-linux-gnu/geany/classbuilder.so were not linked against libfontconfig.so.1 (they use none of the library's symbols)
+   dh_installdeb -O--parallel
+   debian/rules override_dh_gencontrol
+make[1]: Entering directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+echo -n "geany:Provides=geany-abi-`grep 'define GEANY_ABI_VERSION' src/plugindata.h |awk '{print $3}'`," \
+		>> debian/geany.substvars
+echo " geany-api-`grep 'define GEANY_API_VERSION' src/plugindata.h |awk '{print $3}'`" \
+		>> debian/geany.substvars
+dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+make[1]: Leaving directory `/«BUILDDIR»/geany-1.23.1+dfsg'
+   dh_md5sums -O--parallel
+   dh_builddeb -O--parallel
+dpkg-deb: building package `geany' in `../geany_1.23.1+dfsg-1_amd64.deb'.
+dpkg-deb: building package `geany-common' in `../geany-common_1.23.1+dfsg-1_all.deb'.
+ dpkg-genchanges  >../geany_1.23.1+dfsg-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build geany-1.23.1+dfsg
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140226-1857
+
+Finished
+────────
+
+I: Built successfully
+E: Package builds geany-common_1.23.1+dfsg-1_all.deb when binary-indep target is not called.  This is a bug in the packaging.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+geany_1.23.1+dfsg-1_amd64.changes:
+──────────────────────────────────
+
+Format: 1.8
+Date: Mon, 20 May 2013 00:18:56 +0800
+Source: geany
+Binary: geany geany-common
+Architecture: source amd64 all
+Version: 1.23.1+dfsg-1
+Distribution: sid
+Urgency: low
+Maintainer: Geany Packaging Team <pkg-geany-team@lists.alioth.debian.org>
+Changed-By: Chow Loong Jin <hyperair@debian.org>
+Description: 
+ geany      - fast and lightweight IDE
+ geany-common - fast and lightweight IDE -- common files
+Changes: 
+ geany (1.23.1+dfsg-1) unstable; urgency=low
+ .
+   * [3b1ced4] Imported Upstream version 1.23.1+dfsg
+   * [b418909] Update debian-branch in gbp.conf
+Checksums-Sha1: 
+ b40e12889be50e3c9da21a9ffc37f37088fd988b 1267 geany_1.23.1+dfsg-1.dsc
+ 92a3fd664b76918f66a77a83183e031fd33a8453 4865257 geany_1.23.1+dfsg.orig.tar.gz
+ 242441fccc0de561878f4656251a7de2adad2dd9 10132 geany_1.23.1+dfsg-1.debian.tar.xz
+ 25173a0e38e0fcb61ef65cd8a7975569f1b75761 883166 geany_1.23.1+dfsg-1_amd64.deb
+ d182a3fc1d571b4b5af88eecb7e36c994b8468db 1900562 geany-common_1.23.1+dfsg-1_all.deb
+Checksums-Sha256: 
+ aed4bb5d5ff32bc6589a5a0c12466174ed6e73bc0f2a6e83a9193aff008151d8 1267 geany_1.23.1+dfsg-1.dsc
+ c9a1330ef661cb4ec27289af1f2d7788a03489b57036b3f6fbb9c1d4079c920a 4865257 geany_1.23.1+dfsg.orig.tar.gz
+ e09ca7c3fd3208b0300f821be048abf70816f78c9c4c9c4cc9cd1673c2d2259b 10132 geany_1.23.1+dfsg-1.debian.tar.xz
+ 44d3f7c1c3131b716ae289695595e2666cd2f75309700078c1fbfdec51bcf60a 883166 geany_1.23.1+dfsg-1_amd64.deb
+ d5271ae7e3355e8b82a536c837ca2e00bf93de509fc3bd0fce8bcba9aba675b3 1900562 geany-common_1.23.1+dfsg-1_all.deb
+Files: 
+ 125b61836a33a4765ebc8c065f827b20 1267 devel optional geany_1.23.1+dfsg-1.dsc
+ 159fc6b97b84ec9967822d96c817243f 4865257 devel optional geany_1.23.1+dfsg.orig.tar.gz
+ 24fa96786f57a48f92f42a0857b37fcd 10132 devel optional geany_1.23.1+dfsg-1.debian.tar.xz
+ 04565a7269f102898c9669058140f831 883166 devel optional geany_1.23.1+dfsg-1_amd64.deb
+ e9d0fe9ab0b912c2e846f5abe948b1f0 1900562 devel optional geany-common_1.23.1+dfsg-1_all.deb
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+geany_1.23.1+dfsg-1_amd64.deb
+─────────────────────────────
+
+ new debian package, version 2.0.
+ size 883166 bytes: control archive=1798 bytes.
+    1350 bytes,    28 lines      control              
+    1308 bytes,    19 lines      md5sums              
+     185 bytes,     7 lines   *  postinst             #!/bin/sh
+     160 bytes,     5 lines   *  postrm               #!/bin/sh
+ Package: geany
+ Version: 1.23.1+dfsg-1
+ Architecture: amd64
+ Maintainer: Geany Packaging Team <pkg-geany-team@lists.alioth.debian.org>
+ Installed-Size: 2395
+ Pre-Depends: multiarch-support
+ Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.15), libcairo2 (>= 1.6.0), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.22.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libstdc++6 (>= 4.1.1), geany-common (= 1.23.1+dfsg-1)
+ Suggests: libvte9, doc-base
+ Breaks: geany-plugins-common (<< 0.21)
+ Provides: geany-abi-69, geany-api-216
+ Section: devel
+ Priority: optional
+ Homepage: http://www.geany.org
+ Description: fast and lightweight IDE
+  Geany is a small and lightweight integrated development environment.
+  It was developed to provide a small and fast IDE, which has only a
+  few dependencies from other packages. It is using only the GTK2 toolkit
+  and therefore you need only the GTK2 runtime libraries to run Geany.
+  .
+  The basic features of Geany are:
+   - syntax highlighting
+   - code completion
+   - auto completion of constructs like if, for and while, XML and HTML
+   - call tips
+   - folding
+   - many supported filetypes like C, Java, PHP, HTML, Python, Perl, Pascal
+   - symbol lists
+   - embedded terminal emulation
+
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/lib/
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/lib/x86_64-linux-gnu/pkgconfig/
+-rw-r--r-- root/root       422 2014-02-26 18:57 ./usr/lib/x86_64-linux-gnu/pkgconfig/geany.pc
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/lib/x86_64-linux-gnu/geany/
+-rw-r--r-- root/root     31112 2014-02-26 18:57 ./usr/lib/x86_64-linux-gnu/geany/classbuilder.so
+-rw-r--r-- root/root     18864 2014-02-26 18:57 ./usr/lib/x86_64-linux-gnu/geany/splitwindow.so
+-rw-r--r-- root/root     35888 2014-02-26 18:57 ./usr/lib/x86_64-linux-gnu/geany/filebrowser.so
+-rw-r--r-- root/root     39408 2014-02-26 18:57 ./usr/lib/x86_64-linux-gnu/geany/htmlchars.so
+-rw-r--r-- root/root     23200 2014-02-26 18:57 ./usr/lib/x86_64-linux-gnu/geany/saveactions.so
+-rw-r--r-- root/root     22904 2014-02-26 18:57 ./usr/lib/x86_64-linux-gnu/geany/export.so
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/bin/
+-rwxr-xr-x root/root   2054872 2014-02-26 18:57 ./usr/bin/geany
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/share/
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/share/menu/
+-rw-r--r-- root/root       170 2013-05-19 18:29 ./usr/share/menu/geany
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/share/man/man1/
+-rw-r--r-- root/root      1951 2014-02-26 18:57 ./usr/share/man/man1/geany.1.gz
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/share/applications/
+-rw-r--r-- root/root      6056 2014-02-26 18:57 ./usr/share/applications/geany.desktop
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/share/doc/geany/
+-rw-r--r-- root/root    107341 2013-05-19 15:13 ./usr/share/doc/geany/changelog.gz
+-rw-r--r-- root/root      1493 2013-05-19 14:57 ./usr/share/doc/geany/TODO
+-rw-r--r-- root/root      2727 2013-05-19 18:29 ./usr/share/doc/geany/changelog.Debian.gz
+-rw-r--r-- root/root       425 2013-05-19 18:29 ./usr/share/doc/geany/NEWS.Debian.gz
+-rw-r--r-- root/root      2135 2013-05-19 18:29 ./usr/share/doc/geany/copyright
+-rw-r--r-- root/root      3658 2013-05-19 14:57 ./usr/share/doc/geany/README
+-rw-r--r-- root/root     26933 2013-05-19 15:12 ./usr/share/doc/geany/NEWS.gz
+drwxr-xr-x root/root         0 2014-02-26 18:57 ./usr/share/pixmaps/
+-rw-r--r-- root/root      6390 2013-05-19 18:29 ./usr/share/pixmaps/geany.xpm
+
+
+geany-common_1.23.1+dfsg-1_all.deb
+──────────────────────────────────
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/geany-common_1.23.1+dfsg-1_all.deb': No such file or directory
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/geany-common_1.23.1+dfsg-1_all.deb': No such file or directory
+
+mv: cannot stat '/«CHROOT»/«BUILDDIR»/geany-common_1.23.1+dfsg-1_all.deb': No such file or directory
+E: Could not move geany-common_1.23.1+dfsg-1_all.deb to .
+du: cannot access '/home/nonas/projets/debian-clang/geany-common_1.23.1+dfsg-1_all.deb': No such file or directory
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 102488
+Build-Time: 50
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 110
+Job: geany_1.23.1+dfsg-1
+Machine Architecture: amd64
+Package: geany
+Package-Time: 177
+Source-Version: 1.23.1+dfsg-1
+Space: 102488
+Status: successful
+Version: 1.23.1+dfsg-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140226-1857
+Build needed 00:02:57, 102488k disc space
