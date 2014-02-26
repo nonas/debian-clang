@@ -1,3 +1,4 @@
+#!/bin/sh
 echo "Replace gcc, g++ & cpp by clang"
 
 cd /usr/bin
