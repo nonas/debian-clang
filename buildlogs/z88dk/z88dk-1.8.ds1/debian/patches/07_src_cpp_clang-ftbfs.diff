@@ -1,0 +1,126 @@
+--- a/src/cpp/cpp2.c
++++ b/src/cpp/cpp2.c
+@@ -336,14 +336,14 @@
+         else {
+             compiling = FALSE;
+         }
+-        return;
++        return 1;
+ 
+ badif:  cerror("#if, #ifdef, or #ifndef without an argument", NULLST);
+ #if !OLD_PREPROCESSOR
+         skipnl();                               /* Prevent an extra     */
+         unget();                                /* Error message        */
+ #endif
+-        return;
++        return 1;
+ }
+ 
+ FILE_LOCAL
+@@ -402,10 +402,10 @@
+             goto incerr;
+         }
+         else if (openinclude(def_filename, (delim == '"')))
+-            return;
++            return 1;
+ #else
+         if (openinclude(work, (delim == '"')))
+-            return;
++            return 1;
+ #endif
+         /*
+          * No sense continuing if #include file isn't there.
+@@ -413,7 +413,7 @@
+         cfatal("Cannot open include file \"%s\"", work);
+ 
+ incerr: cerror("#include syntax error", NULLST);
+-        return;
++        return 1;
+ }
+ 
+ FILE_LOCAL int
+--- a/src/cpp/cpp4.c
++++ b/src/cpp/cpp4.c
+@@ -211,7 +211,7 @@
+ 	    if (old != NULL)			/* We don't need the	*/
+ 		free(old);			/* old definition now.	*/
+ 	}	 
+-	return;
++	return 1;
+ 
+ bad_define:
+ 	cerror("#define syntax error", NULLST);
+@@ -236,7 +236,7 @@
+ 	for (i = 0; i < nargs; i++) {		/* For each argument	*/
+ 	    if (streq(parlist[i], token)) {	/* If it's known	*/
+ 		save(i + MAC_PARM);		/* Save a magic cookie	*/
+-		return;				/* And exit the search	*/
++		return 1;				/* And exit the search	*/
+ 	    }
+ 	}
+ 	if (streq(dp->name, token))		/* Macro name in body?	*/
+@@ -295,7 +295,7 @@
+ 
+ 	wp = workp;			/* Here's where it starts	*/
+ 	if (!scanstring(delim, save))
+-	    return;			/* Exit on scanstring error	*/
++	    return 1;			/* Exit on scanstring error	*/
+ 	workp[-1] = EOS;		/* Erase trailing quote		*/
+ 	wp++;				/* -> first string content byte	*/ 
+ 	for (i = 0; i < nargs; i++) {
+@@ -304,7 +304,7 @@
+ 		*wp++ = (i + MAC_PARM);		/* Make a formal marker	*/
+ 		*wp = wp[-3];			/* Add on closing quote	*/
+ 		workp = wp + 1;			/* Reset string end	*/
+-		return;
++		return 1;
+ 	    }
+ 	}
+ 	workp[-1] = wp[-1];		/* Nope, reset end quote.	*/
+@@ -402,7 +402,7 @@
+ 		} while (infile != NULL && infile->fp == NULL);
+ 		unget();
+ 		recursion = 0;
+-		return;
++		return 1;
+ 	    }
+ 	}
+ 	/*
+@@ -451,7 +451,7 @@
+ 		unget();
+ 		cwarn("Macro \"%s\" needs arguments", tokenp->name);
+ 		fputs(tokenp->name, stdout);
+-		return;
++		return 1;
+ 	    }
+ 	    else if (expcollect()) {		/* Collect arguments	*/
+ 		if (tokenp->nargs != nargs) {	/* Should be an error?	*/
+--- a/src/cpp/cpp6.c
++++ b/src/cpp/cpp6.c
+@@ -315,7 +315,7 @@
+ 	    (*outfun)('.');			/* Always out the dot	*/
+ 	    if (type[(c = get())] != DIG) {	/* If not a float numb,	*/
+ 		unget();			/* Rescan strange char	*/
+-		return;				/* All done for now	*/
++		return 1;				/* All done for now	*/
+ 	    }
+ 	}					/* End of float test	*/
+ 	else if (c == '0') {			/* Octal or hex?	*/
+@@ -851,7 +851,7 @@
+ 	register FILEINFO	*file;
+ 
+ 	if ((file = infile) == NULL)
+-	    return;			/* Unget after EOF		*/
++	    return 1;			/* Unget after EOF		*/
+ 	if (--file->bptr < file->buffer)
+ 	    cfatal("Too much pushback", NULLST);
+ 	if (*file->bptr == '\n')	/* Ungetting a newline?		*/
+@@ -917,7 +917,7 @@
+ 	    fprintf(stderr, format, (int) arg);
+ 	putc('\n', stderr);
+ 	if ((file = infile) == NULL)
+-	    return;				/* At end of file	*/
++	    return 1;				/* At end of file	*/
+ 	if (file->fp != NULL) {
+ 	    tp = file->buffer;			/* Print current file	*/
+ 	    fprintf(stderr, "%s", tp);		/* name, making sure	*/
