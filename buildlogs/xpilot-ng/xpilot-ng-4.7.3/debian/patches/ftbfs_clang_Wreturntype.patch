@@ -1,0 +1,14 @@
+Description: fix FTBFS with clang instead of gcc [-Wreturn-type]
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-03
+--- a/src/server/suibotdef.c
++++ b/src/server/suibotdef.c
+@@ -405,7 +405,7 @@
+   /* ignore if there is enough time to deal with this object  later */
+   if((time_until_closest < 0) || (time_until_closest > maxtime))
+     /*option instead of fixed value: options.dodgetime))*/
+-    return;
++    return false;
+ 
+   /* get the square of the distance */
+   sqdistance =
