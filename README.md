@@ -2,11 +2,10 @@
 
 See [this wiki page](https://github.com/nonas/debian-clang/wiki/Building-Debian-with-Clang:-tests) to see how to setup a sbuild chroot.
 
-Memo:
-```
-apt-get source _package_
-cp _package-version_.dsc _package-version_.orig.dsc
-sbuild _package-version_.dsc
+1. Make sure a bug does *not* already exists
+2. Get package source from _sid_: ```apt-get -t unstable source _package_```
+3. Backup the description file: ```cp _package-version_.dsc _package-version_.orig.dsc```
+4. Test if build still fails: ```sbuild _package-version_.dsc```
 ```
 if  build fails:
 ```

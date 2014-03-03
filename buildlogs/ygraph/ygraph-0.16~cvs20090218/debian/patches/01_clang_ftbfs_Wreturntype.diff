@@ -1,0 +1,14 @@
+Description: fix FTBFS with clang [-Wreturn-type]
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-03
+--- a/src/axis.c
++++ b/src/axis.c
+@@ -973,7 +973,7 @@
+ 
+   if ((entry_xmin == NULL) || (entry_xmax == NULL) || (entry_ymin == NULL)
+       || (entry_ymax == NULL))
+-    return;
++    return FALSE;
+     
+   new_xmin_str = gtk_entry_get_text(GTK_ENTRY(entry_xmin));
+   new_xmax_str = gtk_entry_get_text(GTK_ENTRY(entry_xmax));
