@@ -4,3 +4,4 @@
 *.gz
 *.xz
 .pc
+buildlogs
