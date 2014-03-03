@@ -3,3 +3,4 @@
 *.changes
 *.gz
 *.xz
+.pc
