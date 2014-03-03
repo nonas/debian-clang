@@ -1,8 +1,7 @@
-#!/bin/sh
 echo "Replace gcc, g++ & cpp by clang"
 
 cd /usr/bin
-VERSIONS="4.8"
+VERSIONS="4.8 4.7 4.6"
 for VERSION in $VERSIONS; do
 rm g++-$VERSION gcc-$VERSION cpp-$VERSION
 ln -s clang++ g++-$VERSION
@@ -14,14 +13,25 @@ ln -s clang++ g++
 ln -s clang gcc
 ln -s clang cpp
 
-echo "Block the installation of new gcc version"
+echo "Block the installation of new gcc versions"
 
 echo "cpp hold"|dpkg --set-selections
+echo "cpp-4.6 hold"|dpkg --set-selections
+echo "cpp-4.7 hold"|dpkg --set-selections
 echo "cpp-4.8 hold"|dpkg --set-selections
+
 echo "g++ hold"|dpkg --set-selections
+echo "g++-4.6 hold"|dpkg --set-selections
+echo "g++-4.7 hold"|dpkg --set-selections
 echo "g++-4.8 hold"|dpkg --set-selections
+
 echo "gcc hold"|dpkg --set-selections
+echo "gcc-4.6 hold"|dpkg --set-selections
+echo "gcc-4.7 hold"|dpkg --set-selections
 echo "gcc-4.8 hold"|dpkg --set-selections
+
+echo "gcc-4.6-base:amd64 hold"|dpkg --set-selections
+echo "gcc-4.7-base:amd64 hold"|dpkg --set-selections
 echo "gcc-4.8-base:amd64 hold"|dpkg --set-selections
 
 echo "Check if gcc, g++ & cpp are actually clang"
