@@ -1,6 +1,8 @@
 # Tests building debian packages with Clang
 
-See [this wiki page](https://github.com/nonas/debian-clang/wiki/Building-Debian-with-Clang:-tests) to see how to setup a sbuild chroot.
+[How to setup sbuild](https://github.com/nonas/debian-clang/wiki/Building-Debian-with-Clang:-tests)
+
+Improve things with [APT-cacher-NG](https://github.com/nonas/debian-clang/wiki/APT-cacher-NG)
 
 Change sbuild configuration, add the following lines to ```~/.sbuildrc```:
 ```
@@ -18,7 +20,7 @@ $apt_distupgrade = 0;
 5. Test if build still fails: ```sbuild _package-version_.dsc```
 6. If  build fails, cd to package directory: ```cd _package-version_/```
 7. Create a new patch using _quilt_: ```quilt new _patchname_```
-8. Add source file(s) to fix: ```quild add _some-source-to-fix_```
+8. Add source file(s) to fix: ```quilt add _some-source-to-fix_```
 9. Fix source files using your favorite $EDITOR
 10. "commit" them: ```quilt refresh```
 11. Generate a _proper_ patch header: ```quilt header -e --dep3```
