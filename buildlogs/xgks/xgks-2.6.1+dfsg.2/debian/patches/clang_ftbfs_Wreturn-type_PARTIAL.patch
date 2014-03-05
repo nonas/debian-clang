@@ -1,0 +1,1381 @@
+Description: fix FTBFS with clang instead of gcc [-Wreturn-type]
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-04
+--- a/src/lib/c/input.c
++++ b/src/lib/c/input.c
+@@ -206,7 +206,7 @@
+      * producing an X error!)
+      */
+     if (ws->ws_is_closing)
+-	return;
++	return 1;
+ 
+     switch (xev->type) {
+     case ButtonPress:
+@@ -364,14 +364,14 @@
+     DisCount++;
+ 
+     if (ws->ewstype != X_WIN)
+-	return;
++	return 1;
+ 
+ #ifdef IDEVDEBUG
+     (void) fprintf(stderr, "XgksIDevDisable() DisCount = %d\n", DisCount);
+ #endif
+ 
+     if (DisCount > 1)				/* already done */
+-	return;
++	return 1;
+ 
+     (void) XgksSIGIO_OFF(ws->dpy);
+ 
+@@ -460,7 +460,7 @@
+     DisCount--;
+ 
+     if (ws->ewstype != X_WIN)
+-	return;
++	return 1;
+ 
+ #ifdef IDEVDEBUG
+     (void) fprintf(stderr, "XgksIDevEnable() DisCount = %d\n", DisCount);
+@@ -468,7 +468,7 @@
+ 
+     /* only disable on last request */
+     if (DisCount > 0)
+-	return;
++	return 1;
+ 
+     /* check each active input device for trigger */
+     for (idev = ws->in_dev_list; idev != NULL; idev = idev->next) {
+--- a/src/lib/c/prmgr.c
++++ b/src/lib/c/prmgr.c
+@@ -212,10 +212,10 @@
+     if (xgks_state.gks_state == GSGOP) {	/* there's opened segment,
+ 						 * append to it */
+ 	if ((tmp = XgksAppendSegPrimi(primi)) == NULL)
+-	    return;				/* this means do not darw
++	    return 1;				/* this means do not draw
+ 						 * out, eg segment invisible */
+ 	XgksOutputToWs(tmp);
+-	return;
++	return 1;
+     }
+     XgksAppendWsPrimi(primi);			/* There's no open segments,
+ 						 * append to active ws */
+--- a/src/lib/c/segments.c
++++ b/src/lib/c/segments.c
+@@ -1225,7 +1225,7 @@
+     Glimit          tmp_clip;
+ 
+     if (seg->segattr.vis == GINVISIBLE)
+-	return;
++	return 1;
+     primi = &(seg->primi_list);
+     tmp_clip = ws->clip;			/* save the current clip
+ 						 * region */
+@@ -1418,13 +1418,13 @@
+     WS_SEG_LIST    *ptr;
+ 
+     if (ws->ewstype == MO)
+-	return;
++	return 1;
+ 
+     ptr = ws->seglist;
+     while (ptr != NULL) {
+ 	if (ptr->seg == old) {
+ 	    ptr->seg = new;
+-	    return;
++	    return 1;
+ 	}
+ 	ptr = ptr->next;
+     }
+@@ -2294,7 +2294,7 @@
+     seg = XgksFindSeg(xgks_state.gks_open_seg);
+     if (seg->primi_insert_pt->pid == CLIP_REC) {
+ 	seg->primi_insert_pt->primi.clip.rec = xgks_state.cliprec.rec;
+-	return;
++	return 1;
+     } else {
+ 	clip = XgksNewPrimi();
+ 	clip->pid = CLIP_REC;
+@@ -2410,7 +2410,7 @@
+ 
+ 	seg = XgksFindSeg(seg_id);
+ 	if (seg->segattr.vis == GINVISIBLE)
+-	    return;
++	    return 1;
+ 	primi = &(seg->primi_list);
+ 	tmp_clip = ws->clip;			/* save the current clip
+ 						 * region */
+--- a/src/lib/c/transforms.c
++++ b/src/lib/c/transforms.c
+@@ -577,7 +577,7 @@
+ {
+     /* step 1: check for nothing to do, return if so */
+     if (ws->wsti.wstus == GNOTPENDING)
+-	return;
++	return 0;
+ 
+     /* step 2: move the pending transformation to the current transformation. */
+     ws->wsti.current.w = ws->wsti.request.w;
+@@ -593,7 +593,7 @@
+     xXgksUpdateTrans(ws);
+     XgksUpdateWsClip(ws, &(xgks_state.cliprec.rec));
+ 
+-    return;
++    return 1;
+ }
+ 
+ 
+@@ -734,7 +734,7 @@
+     Glimit         *bound;
+ {
+     if (ws->ewstype != X_WIN)
+-	return;
++	return 1;
+     XgksWsWinInterset(ws, bound, &(ws->clip));
+     xXgksUpdateClip(ws);
+ }
+@@ -757,21 +757,21 @@
+ 
+ 	/* This probably means two are disjoint */
+ 	clip->xmin = clip->xmax = clip->ymin = clip->ymax = 0.0;
+-	return;
++	return 1;
+     }
+     if ((w->xmax >= v->xmax) && (w->xmin <= v->xmin) &&
+ 	    (w->ymax >= v->ymax) && (w->ymin <= v->ymin)) {
+ 
+ 	/* This means ws-window encloses NDC-viewport */
+ 	*(clip) = *v;
+-	return;
++	return 2;
+     }
+     if ((v->xmax >= w->xmax) && (v->xmin <= w->xmin) &&
+ 	    (v->ymax >= w->ymax) && (v->ymin <= w->ymin)) {
+ 
+ 	/* This means NDC-viewport encloses ws-window */
+ 	*(clip) = *w;
+-	return;
++	return 3;
+     }
+ 
+     /* Bigger of the two */
+@@ -786,7 +786,7 @@
+     /* Smaller of the two */
+     clip->ymax = (w->ymax < v->ymax) ? w->ymax : v->ymax;
+ 
+-    return;
++    return 4;
+ }
+ 
+ 
+--- a/src/lib/fortran/escapes.fc
++++ b/src/lib/fortran/escapes.fc
+@@ -116,7 +116,7 @@
+  * See also: ANSI standard p.80
+  */
+ /*FORTRAN*/
+-gessrp(int *wsid, int *store)
++void gessrp(int *wsid, int *store)
+ {
+     STOREAGEFLAG(*store, errgescstoreprimi);
+     (void) gescstoreprimi(*wsid, (Gstore) *store);
+--- a/src/lib/fortran/finqpixel.fc
++++ b/src/lib/fortran/finqpixel.fc
+@@ -83,7 +83,7 @@
+     rect.ur.x = (Gfloat) *qx;
+     rect.ur.y = (Gfloat) *py;
+     if (*errind = ginqpixelarraydim((Gint) *wkid, &rect, &dim))
+-	return;
++	return 1;
+ 
+     *n = (int) dim.x;
+     *m = (int) dim.y;
+@@ -133,13 +133,13 @@
+     if (*dx > *dimx || *dy > *dimy) {
+ 	*errind = 2001;
+ 	(void) gerrorhand(2001, errginqpixelarray, (errfp));
+-	return;
++	return 0;
+     }
+     point.x = *px;
+     point.y = *py;
+ 
+     if (*errind = ginqpixelarray((Gint) *wkid, &point, &dimen, &pxarr))
+-	return;
++	return 1;
+ 
+ 
+     *invval = (int) pxarr.covalid;
+--- a/src/lib/fortran/inputevent.fc
++++ b/src/lib/fortran/inputevent.fc
+@@ -96,7 +96,7 @@
+     debug(("Await Event %d %d %d %f \n", *wkid, *icl, *idnr, *tout));
+ 
+     if (gawaitevent((Gfloat) *tout, &event))
+-	return;
++	return 1;
+ 
+     *wkid = (int) event.ws;
+     *icl = (int) event.class;
+@@ -118,7 +118,7 @@
+  * See also: ANSI standard p.139
+  */
+ /*FORTRAN*/
+-gflush(
++void gflush(
+     int *wkid,
+     int *icl,
+     int *idnr
+@@ -157,7 +157,7 @@
+ 
+ 
+     if (ggetloc(&response))
+-	return;
++	return 1;
+ 
+     *tnr = (int) response.transform;
+     *lpx = (float) response.position.x;
+@@ -203,13 +203,13 @@
+ 	     * If memory allocation unsuccessful call error routine
+ 	     */
+ 	    (void) gerrorhand(300, errggetstroke, (errfp));
+-	    return;
++	    return 0;
+ 	} else
+ 	    currfortpoints = *n;
+     }
+     response.points = (Gpoint *) fortpoints;
+     if (ggetstroke(&response))
+-	return;
++	return 1;
+ 
+     *tnr = (int) response.transform;
+     *np = (int) response.n_points;
+@@ -245,7 +245,7 @@
+     debug(("Request Valuator \n"));
+ 
+     if (ggetval((Gfloat *) &response))
+-	return;
++	return 1;
+ 
+     *val = (float) response;
+ }
+@@ -272,7 +272,7 @@
+     debug(("Get Choice \n"));
+ 
+     if (ggetchoice(&response))
+-	return;
++	return 1;
+ 
+     switch (response.status) {
+     case GC_OK:
+@@ -314,7 +314,7 @@
+     debug(("Get Pick \n"));
+ 
+     if (ggetpick(&response))
+-	return;
++	return 1;
+ 
+     switch (response.status) {
+     case GP_OK:
+@@ -365,14 +365,14 @@
+ 						 * unsuccessful call error
+ 						 * routine */
+ 	    (void) gerrorhand(300, errggetstring, (errfp));
+-	    return;
++	    return 0;
+ 	} else
+ 	    currforttext = str_len;
+     }
+     response = (Gchar *) forttext;
+ 
+     if (ggetstring(response))
+-	return;
++	return 1;
+ 
+     debug(("response string = %s ", response));
+ 
+@@ -413,14 +413,14 @@
+ 						 * unsuccessful call error
+ 						 * routine */
+ 	    (void) gerrorhand(300, errggetstring, (errfp));
+-	    return;
++	    return 0;
+ 	} else
+ 	    currforttext = (*lostr) * sizeof(char);
+     }
+     response = (Gchar *) forttext;
+ 
+     if (ggetstring(response))
+-	return;
++	return 1;
+ 
+     debug(("response string = %s ", response));
+ 
+--- a/src/lib/fortran/fortmac.h
++++ b/src/lib/fortran/fortmac.h
+@@ -35,46 +35,46 @@
+ 
+ #define ASPECTSOURCE(x,y) \
+           if (((x)<(int)FORT_GBUNDL)||((x)>(int)FORT_GINDIV)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define CLEARCONTROLFLAG(x,y) \
+           if (((int)(x)<(int)FORT_GCONDI)||((int)(x)>(int)FORT_GALWAY)) \
+              {(void)gerrorhand(2000,y,(errfp)); return;}
+ #define CLIPPINGINDICATOR(x,y) \
+           if (((x)<(int)FORT_GNCLIP)||((x)>(int)FORT_GCLIP)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define COLOURAVAILABLE(x,y) \
+           if (((x)<(int)FORT_GMONOC)||((x)>(int)FORT_GCOLOR)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define COORDINATESWITCH(x,y) \
+           if (((x)<(int)FORT_GWC)||((x)>(int)FORT_GNDC)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define DEFERRALMODE(x,y) \
+           if (((int)(x)<(int)FORT_GASAP)||((int)(x)>(int)FORT_GASTI)) \
+              {(void)gerrorhand(2000,y,(errfp)); return;}
+ #define DETECTABILITY(x,y) \
+           if (((x)<(int)FORT_GUNDET)||((x)>(int)FORT_GDETEC)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define DEVICECOORDINATEUNITS(x,y) \
+           if (((x)<(int)FORT_GMETRE)||((x)>(int)FORT_GOTHU))  \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define DISPLAYSURFACEEMPTY(x,y) \
+           if (((x)<(int)FORT_GNEMPT)||((x)>(int)FORT_GEMPTY)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define DYNAMICMODIFICATION(x,y) \
+           if (((x)<(int)FORT_GIRG)||((x)>(int)FORT_GIMM)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define ECHOSWITCH(x,y) \
+           if (((x)<(int)FORT_GNECHO)||((x)>(int)FORT_GECHO)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define FILLAREAINTERIORSTYLE(x,y) \
+           if (((x)<(int)FORT_GHOLLO)||((x)>(int)FORT_GHATCH)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define HIGHLIGHTING(x,y) \
+           if (((x)<(int)FORT_GNORML)||((x)>(int)FORT_GHILIT)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define INPUTDEVICESTATUS(x,y) \
+           if (((x)<(int)FORT_GNONE)||((x)>(int)FORT_GNCHOI)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define INPUTCLASS(x,y) \
+           if (((x)<(int)FORT_GNCLAS)||((x)>(int)FORT_GSTRIN)) \
+              {(void)gerrorhand(2000,y,(errfp)); return;}
+@@ -83,93 +83,93 @@
+              {(void)gerrorhand(2000,y,(errfp)); return;}
+ #define LEVELOFGKS(x,y) \
+           if (((x)<((int)FORT_GLMA))||((x)>(int)FORT_GL2C)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define NEWFRAMEACTIONNECESSARY(x,y) \
+           if (((x)<(int)FORT_GNO)||((x)>(int)FORT_GYES)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define OPERATINGMODE(x,y) \
+           if (((x)<(int)FORT_GREQU)||((x)>(int)FORT_GEVENT)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define OPERATINGSTATEVALUE(x,y) \
+           if (((x)<(int)FORT_GGKCL)||((x)>(int)FORT_GSGOP)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define PRESENCEOFINVALIDVALUES(x,y) \
+           if (((x)<(int)FORT_GABSNT)||((x)>(int)FORT_GPRSNT)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define REGENERATIONFLAG(x,y) \
+           if (((int)(x)<(int)FORT_GPOSTP)||((int)(x)>(int)FORT_GPERFO)) \
+              {(void)gerrorhand(2000,y,(errfp)); return;}
+ #define RELATIVEINPUTPRIORITY(x,y) \
+           if (((x)<(int)FORT_GHIGHR)||((x)>(int)FORT_GLOWER)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define SIMULTANEOUSEVENTSFLAG(x,y) \
+           if (((x)<(int)FORT_GNMORE)||((x)>(int)FORT_GMORE)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define STOREAGEFLAG(x,y)\
+           if (((x)<(int)FORT_GNO) || ((x)>(int)FORT_GYES)) \
+              {(void)gerrorhand(2000,y,(errfp)); return;}
+ #define TEXTALIGNMENTHORIZONTAL(x,y) \
+           if (((x)<(int)FORT_GAHNOR)||((x)>(int)FORT_GARITE)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define TEXTALIGNMENTVERTICAL(x,y) \
+           if (((x)<(int)FORT_GAVNOR)||((x)>(int)FORT_GABOTT)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define TEXTPATH(x,y) \
+           if (((x)<(int)FORT_GRIGHT)||((x)>(int)FORT_GDOWN)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define TEXTPRECISION(x,y) \
+           if (((x)<(int)FORT_GSTRP)||((x)>(int)FORT_GSTRKP)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define TYPEOFRETURNEDVALUES(errind,x,y) \
+           if (((x)<(int)FORT_GSET)||((x)>(int)FORT_GREALI)) { \
+ 	      if ((errind)) \
+ 		  *(errind) = (int) (2000);(void)gerrorhand(2000,y,(errfp)); \
+-		  return; \
++		  return 1; \
+ 	  }
+ #define UPDATESTATENOTPENDING(x,y) \
+           if (((x)<(int)FORT_GNPEND)||((x)>(int)FORT_GPEND)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define VECTORRASTEROTHERTYPE(x,y) \
+           if (((x)<(int)FORT_GVECTR)||((x)>(int)FORT_GOTHWK)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define VISIBILITY(x,y) \
+           if (((x)<(int)FORT_GINVIS)||((x)>(int)FORT_GVISI)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define WORKSTATIONCATEGORY(x,y) \
+           if (((x)<(int)FORT_GOUTPT)||((x)>(int)FORT_GMI)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define WORKSTATIONSTATE(x,y) \
+           if (((x)<(int)FORT_GINACT)||((x)>(int)FORT_GACTIV)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define LISTOFGDPATTRIBUTES(x,y) \
+           if (((x)<(int)FORT_GPLATT)||((x)>(int)FORT_GFAATT)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define LINETYPE(x,y) \
+           if (((x)<(int)FORT_GLSOLI)||((x)>(int)FORT_GLDASD)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define MARKERTYPE(x,y) \
+           if (((x)<(int)FORT_GPOINT)||((x)>(int)FORT_GXMARK)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define ATTRIBUTECONTROLFLAG(x,y) \
+           if (((x)<(int)FORT_GCURNT)||((x)>(int)FORT_GSPEC)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define POLYLINEFILLAREACONTROLFLAG(x,y) \
+           if (((x)<(int)FORT_GPLINE)||((x)>(int)FORT_GFILLA)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define INITIALCHOICEPROMPTFLAG(x,y) \
+           if (((x)<(int)FORT_GPROFF)||((x)>(int)FORT_GPRON)) \
+-             {(void)gerrorhand(2000,y,(errfp)); return;}
++             {(void)gerrorhand(2000,y,(errfp)); return 1;}
+ #define VALIDTYPE(errind,x,min,max,fctid) \
+           if (((x)<min)||((x)>max)) \
+              {if ((errind) != NULL) *(errind) = (int) (22); \
+-	     (void)gerrorhand(22,fctid,(errfp)); return;}
++	     (void)gerrorhand(22,fctid,(errfp)); return 1;}
+ #define VALIDMEMBER(errind,x,min,max,fctid) \
+           if (((x)<min)||((x)>max)) \
+              {if (errind) *(errind) = (int) (2002); \
+-	     (void)gerrorhand(2002,fctid,(errfp)); return;}
++	     (void)gerrorhand(2002,fctid,(errfp)); return 1;}
+ #define CHECKMAGICNUM(datarec,fctid)           \
+           if ( ((Gdatarec *) datarec)->magicnum != MAGICNUMBER) \
+-             {(void)gerrorhand(2003,fctid,(errfp));return;}
++             {(void)gerrorhand(2003,fctid,(errfp));return 1;}
+ 
+ #undef  MIN
+ #define MIN(x,y)	((x) < (y) ? (x) : (y))
+--- a/src/lib/fortran/inputinit.fc
++++ b/src/lib/fortran/inputinit.fc
+@@ -131,7 +131,7 @@
+ 	    CHECKMAGICNUM(datarec, errginitloc);
+ 	    if (pdrintnum(datarec) < 1) {
+ 		(void) gerrorhand(2003, errginitloc, (errfp));
+-		return;
++		return 1;
+ 	    }
+ 	    attrcontrolflag = (Gacf) pdrintindex(datarec, 1);
+ 	    glocrec.pet4.acf = attrcontrolflag;
+@@ -139,7 +139,7 @@
+ 	    if (attrcontrolflag == GSPECIFIED) {
+ 		if ((pdrintnum(datarec) != 7) || (pdrrealnum(datarec) != 1)) {
+ 		    (void) gerrorhand(2003, errginitloc, (errfp));
+-		    return;
++		    return 0;
+ 		}
+ 		glocrec.pet4.ln.type = (Gasf) pdrintindex(datarec, 2);
+ 		glocrec.pet4.ln.width = (Gasf) pdrintindex(datarec, 3);
+@@ -160,7 +160,7 @@
+ 	    CHECKMAGICNUM(datarec, errginitloc);
+ 	    if (pdrintnum(datarec) < 2) {
+ 		(void) gerrorhand(2003, errginitloc, (errfp));
+-		return;
++		return 0;
+ 	    }
+ 	    attrcontrolflag = (Gacf) pdrintindex(datarec, 1);
+ 	    areacontrolflag = (Gpfcf) pdrintindex(datarec, 2);
+@@ -171,7 +171,7 @@
+ 		if (attrcontrolflag == GSPECIFIED)
+ 		    if (pdrintnum(datarec) != 8 || pdrrealnum(datarec) != 1) {
+ 			(void) gerrorhand(2003, errginitloc, (errfp));
+-			return;
++			return 0;
+ 		    }
+ 		glocrec.pet5.attr.ln.type = (Gasf) pdrintindex(datarec, 3);
+ 		glocrec.pet5.attr.ln.width = (Gasf) pdrintindex(datarec, 4);
+@@ -184,7 +184,7 @@
+ 		if (attrcontrolflag == GSPECIFIED)
+ 		    if (pdrintnum(datarec) != 9) {
+ 			(void) gerrorhand(2003, errginitloc, (errfp));
+-			return;
++			return 0;
+ 		    }
+ 		glocrec.pet5.attr.fl.inter = (Gasf) pdrintindex(datarec, 3);
+ 		glocrec.pet5.attr.fl.style = (Gasf) pdrintindex(datarec, 4);
+@@ -269,7 +269,7 @@
+     glimit.ymax = *ymax;
+     if (!(gstroke.points = (Gpoint *)malloc((size_t)(*n*sizeof(Gpoint))))) {
+ 	(void) gerrorhand(300, errginitstroke, (errfp));
+-	return;
++	return 0;
+     }
+     for (i = 0; i < *n; i++) {
+ 	gstroke.points[i].x = ipx[i];
+@@ -283,7 +283,7 @@
+ 	gstrokerec.pet1.bufsiz = *buflen;
+ 	if ((pdrintnum(datarec) != 2) || (pdrrealnum(datarec) != 3)) {
+ 	    (void) gerrorhand(2003, errginitstroke, (errfp));
+-	    return;
++	    return 0;
+ 	}
+ 	/* Note: The first integer in the datarec is the bufsize */
+ 	/* this is not used because it is a parameter to   */
+@@ -306,7 +306,7 @@
+ 	gstrokerec.pet2.bufsiz = *buflen;
+ 	if ((pdrintnum(datarec) != 2) || (pdrrealnum(datarec) != 3)) {
+ 	    (void) gerrorhand(2003, errginitstroke, (errfp));
+-	    return;
++	    return 0;
+ 	}
+ 	/* Note: The first integer in the datarec is the bufsize */
+ 	/* this is not used because it is a paremaeter to  */
+@@ -325,7 +325,7 @@
+ 
+ 	    if ((pdrintnum(datarec) < 3) || (pdrrealnum(datarec) < 3)) {
+ 		(void) gerrorhand(2003, errginitstroke, (errfp));
+-		return;
++		return 0;
+ 	    }
+ 	    /* bufsiz is not removed from the datarecord  */
+ 	    /* the parameter buflen is used */
+@@ -340,7 +340,7 @@
+ 	    if (attrcontrolflag == GSPECIFIED) {
+ 		if ((pdrintnum(datarec) != 9) || (pdrrealnum(datarec) != 4)) {
+ 		    (void) gerrorhand(2003, errginitstroke, (errfp));
+-		    return;
++		    return 0;
+ 		}
+ 		gstrokerec.pet3.mk.type = (Gasf) pdrintindex(datarec, 4);
+ 		gstrokerec.pet3.mk.size = (Gasf) pdrintindex(datarec, 5);
+@@ -360,7 +360,7 @@
+ 
+ 	    if ((pdrintnum(datarec) < 3) || (pdrrealnum(datarec) < 3)) {
+ 		(void) gerrorhand(2003, errginitstroke, (errfp));
+-		return;
++		return 0;
+ 	    }
+ 	    /*
+ 	     * bufsiz is not removed from the datarecord.  The parameter 
+@@ -378,7 +378,7 @@
+ 	    if (attrcontrolflag == GSPECIFIED) {
+ 		if ((pdrintnum(datarec) != 9) || (pdrrealnum(datarec) != 4)) {
+ 		    (void) gerrorhand(2003, errginitstroke, (errfp));
+-		    return;
++		    return 0;
+ 		}
+ 		gstrokerec.pet4.ln.type = (Gasf) pdrintindex(datarec, 4);
+ 		gstrokerec.pet4.ln.width = (Gasf) pdrintindex(datarec, 5);
+@@ -580,7 +580,7 @@
+     default:					/* covers cases 1 > pet ||
+ 						 * pet > 5 */
+ 	debug(("    WARNING! unknown pet (%d) specified \n", *pet));
+-	return;
++	return 0;
+     }
+ 
+     (void) ginitchoice((Gint) *wkid, (Gint) *chdnr, &gchoice, (Gint) *pet, 
+@@ -715,7 +715,7 @@
+ 						 * unsuccessful call error
+ 						 * routine */
+ 	    (void) gerrorhand(300, errgreqstring, (errfp));
+-	    return;
++	    return 0;
+ 	} else
+ 	    currforttext = *lstr + 1;
+     }
+@@ -783,7 +783,7 @@
+ 	/* If memory allocation unsuccessful call error routine */
+ 	if (forttext == NULL) {
+ 	    (void) gerrorhand(300, errgreqstring, (errfp));
+-	    return;
++	    return 0;
+ 	} else
+ 	    currforttext = *lstr + 1;
+     }
+--- a/src/lib/fortran/inputreq.fc
++++ b/src/lib/fortran/inputreq.fc
+@@ -97,7 +97,7 @@
+     debug(("Request Locator %d %d \n", *wkid, *lcdnr));
+ 
+     if (greqloc((Gint) *wkid, (Gint) *lcdnr, &response))
+-	return;
++	return 1;
+ 
+     /* Reverse the sense of status */
+     *stat = (int) (response.status) ? (int) FORT_GNONE : (int) FORT_GOK;
+@@ -151,14 +151,14 @@
+ 						 * routine */
+ 	    (void) gerrorhand(300, errgreqstroke, (errfp));
+ 	    currfortpoints = 0;
+-	    return;
++	    return 0;
+ 	} else
+ 	    currfortpoints = *n;
+     }
+     response.stroke.points = (Gpoint *) fortpoints;
+ 
+     if (greqstroke((Gint) *wkid, (Gint) *skdnr, &response))
+-	return;
++	return 1;
+ 
+     /* Reverse the sense of status */
+     *stat = (int) (response.status) ? (int) FORT_GNONE : (int) FORT_GOK;
+@@ -202,7 +202,7 @@
+     debug(("Request Valuator %d %d \n", *wkid, *vldnr));
+ 
+     if (greqval((Gint) *wkid, (Gint) *vldnr, &response))
+-	return;
++	return 1;
+ 
+     /* Reverse the sense of status */
+     *stat = (int) (response.status) ? (int) FORT_GNONE : (int) FORT_GOK;
+@@ -235,7 +235,7 @@
+     debug(("Request Choice %d %d \n", *wkid, *chdnr));
+ 
+     if (greqchoice((Gint) *wkid, (Gint) *chdnr, &response))
+-	return;
++	return 1;
+     debug(
+ 	(" status before switch  response.status = %d  response.choice = %d \n",
+ 	 response.status, response.choice));
+@@ -282,7 +282,7 @@
+     debug(("Request Pick %d %d \n", *wkid, *pkdnr));
+ 
+     if (greqpick((Gint) *wkid, (Gint) *pkdnr, &response))
+-	return;
++	return 1;
+ 
+     switch (response.status) {
+     case GP_OK:
+@@ -332,14 +332,14 @@
+ 	if (forttext == NULL) {
+ 	    (void) gerrorhand(300, errgreqstring, (errfp));
+ 	    currforttext = 0;
+-	    return;
++	    return 0;
+ 	} else
+ 	    currforttext = (str_len);
+     }
+     response.string = (Gchar *) forttext;
+ 
+     if (greqstring((Gint) *wkid, (Gint) *stdnr, &response))
+-	return;
++	return 1;
+ 
+     switch (response.status) {
+     case GOK:
+@@ -388,14 +388,14 @@
+ 	if (forttext == NULL) {
+ 	    (void) gerrorhand(300, errgreqstring, (errfp));
+ 	    currforttext = 0;
+-	    return;
++	    return 0;
+ 	} else
+ 	    currforttext = (str_len);
+     }
+     response.string = (Gchar *) forttext;
+ 
+     if (greqstring((Gint) *wkid, (Gint) *stdnr, &response))
+-	return;
++	return 1;
+ 
+     switch (response.status) {
+     case GOK:
+--- a/src/lib/fortran/inputsamp.fc
++++ b/src/lib/fortran/inputsamp.fc
+@@ -92,7 +92,7 @@
+     debug(("Sample Locator %d %d \n", *wkid, *lcdnr));
+ 
+     if (gsampleloc((Gint) *wkid, (Gint) *lcdnr, &response))
+-	return;
++	return 1;
+ 
+     *tnr = (int) response.transform;
+     *lpx = (float) response.position.x;
+@@ -139,14 +139,14 @@
+ 	if (fortpoints == NULL) {		/* If memory allocation
+ 						 * unsuccessful, error */
+ 	    (void) gerrorhand(300, errgsamplestroke, (errfp));
+-	    return;
++	    return 0;
+ 	} else
+ 	    currfortpoints = *n;
+     }
+     response.points = (Gpoint *) fortpoints;
+ 
+     if (gsamplestroke((Gint) *wkid, (Gint) *skdnr, &response))
+-	return;
++	return 1;
+ 
+     *tnr = (int) response.transform;
+     *np = (int) response.n_points;
+@@ -185,7 +185,7 @@
+     debug(("Request Valuator %d %d \n", *wkid, *vldnr));
+ 
+     if (gsampleval((Gint) *wkid, (Gint) *vldnr, (Gfloat *) &response))
+-	return;
++	return 1;
+ 
+     *val = (float) response;
+ }
+@@ -214,7 +214,7 @@
+     debug(("Sample Choice %d %d \n", *wkid, *chdnr));
+ 
+     if (gsamplechoice((Gint) *wkid, (Gint) *chdnr, &response))
+-	return;
++	return 1;
+     switch (response.status) {
+     case GC_OK:
+ 	*stat = (int) FORT_GOK;
+@@ -256,7 +256,7 @@
+     debug(("Sample Pick %d %d \n", *wkid, *pkdnr));
+ 
+     if (gsamplepick((Gint) *wkid, (Gint) *pkdnr, &response))
+-	return;
++	return 1;
+ 
+     switch (response.status) {
+     case GP_OK:
+@@ -299,7 +299,7 @@
+ 
+     response = (Gchar *) str;
+     if (gsamplestring((Gint) *wkid, (Gint) *stdnr, response))
+-	return;
++	return 1;
+ 
+     debug(("response string = %s ", str));
+ 
+@@ -331,7 +331,7 @@
+ 
+     response = (Gchar *) str;
+     if (gsamplestring((Gint) *wkid, (Gint) *stdnr, response))
+-	return;
++	return 1;
+ 
+     debug(("response string = %s ", str));
+ 
+--- a/src/lib/fortran/inqerrlist.fc
++++ b/src/lib/fortran/inqerrlist.fc
+@@ -73,7 +73,7 @@
+     debug(("Inquire Input Queue Overflow  \n"));
+ 
+     if (*errind = ginqinputoverflow(&overflow))
+-	return;
++	return 1;
+ 
+     *icl = (int) overflow.class;
+     *idn = (int) overflow.devno;
+--- a/src/lib/fortran/inqgksdesc.fc
++++ b/src/lib/fortran/inqgksdesc.fc
+@@ -92,7 +92,7 @@
+     Gstrlist        wstypes;
+ 
+     if (*errind = ginqavailwstypes(&wstypes))
+-	return;
++	return 1;
+     (void) free((voidp)(wstypes.strings));
+ 
+     /* set return values not dependent on range check */
+@@ -129,7 +129,7 @@
+     Gwsmax          maxws;
+ 
+     if (*errind = ginqwsmaxnum(&maxws))
+-	return;
++	return 1;
+     *mxopwk = (int) maxws.open;
+     *mxacwk = (int) maxws.active;
+     *mxwkas = (int) maxws.assoc;
+--- a/src/lib/fortran/inqgkslist.fc
++++ b/src/lib/fortran/inqgkslist.fc
+@@ -105,7 +105,7 @@
+ 
+     debug(("inquire set member of open workstations \n"));
+     if (*errind = ginqopenws(&wsids))
+-	return;
++	return 1;
+ 
+     /* set return values not dependent on range check */
+     *ol = (int) wsids.number;
+@@ -140,7 +140,7 @@
+ 
+     debug(("Inquire Set Member of Active Workstations %n \n", *n));
+     if (*errind = ginqactivews(&wsids))
+-	return;
++	return 1;
+ 
+     /* set return values not dependent on range check */
+     *ol = (int) wsids.number;
+@@ -172,7 +172,7 @@
+ 
+     debug(("inquire list member of polyline indices \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *pli = (int) primattr.plnindex;
+ }
+@@ -197,7 +197,7 @@
+ 
+     debug(("inquire list member of polymarker indices \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *pmi = (int) primattr.pmkindex;
+ }
+@@ -222,7 +222,7 @@
+ 
+     debug(("inquire list member of text indices \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *txi = (int) primattr.txindex;
+ }
+@@ -247,7 +247,7 @@
+ 
+     debug(("inquire character height \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *chh = (float) primattr.height;
+ }
+@@ -274,7 +274,7 @@
+ 
+     debug(("inquire character up vector \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *chux = (float) primattr.up.x;
+     *chuy = (float) primattr.up.y;
+@@ -300,7 +300,7 @@
+ 
+     debug(("inquire character width \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *chw = (float) primattr.chwidth;
+ }
+@@ -327,7 +327,7 @@
+ 
+     debug(("inquire character base vector \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *chbx = (float) primattr.base.x;
+     *chby = (float) primattr.base.y;
+@@ -353,7 +353,7 @@
+ 
+     debug(("inquire text path \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *txp = (int) primattr.path;
+ }
+@@ -380,7 +380,7 @@
+ 
+     debug(("inquire text alignment \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *txalh = (int) primattr.align.hor;
+     *txalv = (int) primattr.align.ver;
+@@ -406,7 +406,7 @@
+ 
+     debug(("inquire fill area index \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *fai = (int) primattr.flindex;
+ }
+@@ -435,7 +435,7 @@
+ 
+     debug(("inquire pattern size \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *pwx = (float) primattr.widthvec.x;
+     *pwy = (float) primattr.widthvec.y;
+@@ -465,7 +465,7 @@
+ 
+     debug(("inquire pattern reference point \n"));
+     if (*errind = ginqprimattr(&primattr))
+-	return;
++	return 1;
+ 
+     *rfx = (float) primattr.prp.x;
+     *rfy = (float) primattr.prp.y;
+@@ -512,7 +512,7 @@
+ 
+     debug(("inquire linetype \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+ 
+     *ltype = (int) indivattr.lntype;
+ }
+@@ -537,7 +537,7 @@
+ 
+     debug(("inquire linewidth scale factor \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+ 
+     *lwidth = (float) indivattr.lnwidth;
+ }
+@@ -562,7 +562,7 @@
+ 
+     debug(("inquire polyline color index \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+ 
+     *coli = (int) indivattr.lncolour;
+ }
+@@ -587,7 +587,7 @@
+ 
+     debug(("inquire markertype \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+ 
+     *mtype = (int) indivattr.mktype;
+ }
+@@ -612,7 +612,7 @@
+ 
+     debug(("inquire marker size scale factor \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+ 
+     *mszsf = (float) indivattr.mksize;
+ }
+@@ -637,7 +637,7 @@
+ 
+     debug(("inquire polymarker color index \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+ 
+     *coli = (int) indivattr.mkcolour;
+ }
+@@ -664,7 +664,7 @@
+ 
+     debug(("inquire text font and precision \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+ 
+     *font = (int) indivattr.fp.font;
+     *prec = (int) indivattr.fp.prec;
+@@ -690,7 +690,7 @@
+ 
+     debug(("inquire character expansion factor \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+ 
+     *chxp = (float) indivattr.chexp;
+ }
+@@ -715,7 +715,7 @@
+ 
+     debug(("inquire character spacing \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+     *chsp = indivattr.chspace;
+ }
+ 
+@@ -739,7 +739,7 @@
+ 
+     debug(("inquire text color index \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+ 
+     *coli = (int) indivattr.txcolour;
+ }
+@@ -764,7 +764,7 @@
+ 
+     debug(("inquire fill area interior style \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+     *ints = (int) indivattr.flstyle;
+ }
+ 
+@@ -788,7 +788,7 @@
+ 
+     debug(("inquire fill area style index \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+     *styli = (int) indivattr.flindex;
+ }
+ 
+@@ -812,7 +812,7 @@
+ 
+     debug(("inquire fill area color index"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+     *coli = (int) indivattr.flcolour;
+ }
+ 
+@@ -836,7 +836,7 @@
+ 
+     debug(("inquire aspect source flags \n"));
+     if (*errind = ginqindivattr(&indivattr))
+-	return;
++	return 1;
+ 
+     lasf[0] = (int) indivattr.asflist.ln_type;
+     lasf[1] = (int) indivattr.asflist.ln_width;
+@@ -897,7 +897,7 @@
+ 
+     debug(("inquire list element of normalization transformation %d \n", *n));
+     if (*errind = ginqntrannum(&tranlist))
+-	return;
++	return 1;
+ 
+     /* set return values not dependent on range check */
+     *ol = tranlist.number;
+@@ -932,7 +932,7 @@
+ 
+     debug(("inquire normalization transformation  %d\n", *ntnr));
+     if (*errind = ginqntran((Gint) *ntnr, &trans))
+-	return;
++	return 1;
+ 
+     window[0] = (float) trans.w.xmin;
+     window[1] = (float) trans.w.xmax;
+@@ -967,7 +967,7 @@
+ 
+     debug(("Inquire Clipping indicator \n"));
+     if (*errind = ginqclip(&clip))
+-	return;
++	return 1;
+ 
+     switch (clip.ind) {
+     case GCLIP:
+@@ -1030,7 +1030,7 @@
+ 
+     debug(("Inquire Set Member %d of Segment Names in Use \n", *n));
+     if (*errind = ginqsegnames(&segs))
+-	return;
++	return 1;
+ 
+     /* set return values not dependent on range check */
+     *ol = segs.number;
+--- a/src/lib/fortran/inqseglist.fc
++++ b/src/lib/fortran/inqseglist.fc
+@@ -78,7 +78,7 @@
+ 
+     segattr.seg = (Gint) *sgna;
+     if (*errind = ginqsegattr(&segattr))
+-	return;
++	return 1;
+ 
+     CHANGE_COL_TO_ROW_MAJOR_F(segattr.segtran, segtm, 2, 3);
+ 
+@@ -118,7 +118,7 @@
+     debug(("Inquire Set member of Associated Workstations \n"));
+ 
+     if (*errind = ginqassocws((Gint) *sgna, &asswk))
+-	return;
++	return 1;
+ 
+     /* set return values not effected by range query */
+     *ol = (int) asswk.number;
+--- a/src/lib/fortran/inqwsdesc.fc
++++ b/src/lib/fortran/inqwsdesc.fc
+@@ -114,7 +114,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqwscategory);
+ 
+     if (*errind = ginqwscategory(CLIB_WORKSTATION_TYPE(*wtype), &cat))
+-	return;
++	return 1;
+ 
+     /*
+      * Here we take advantage of the fact that C enumerated types are
+@@ -148,7 +148,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqwsclass);
+ 
+     if (*errind = ginqwsclass(CLIB_WORKSTATION_TYPE(*wtype), &class))
+-	return;
++	return 1;
+ 
+     debug(("        Workstation Class is %d  \n", class));
+ 
+@@ -188,7 +188,7 @@
+ 
+     if (*errind = ginqdisplayspacesize(CLIB_WORKSTATION_TYPE(*wtype),
+ 				       &dspsz))
+-	return;
++	return 1;
+ 
+     *dcunit = (int) dspsz.units;
+     *rx = (float) dspsz.device.x;
+@@ -235,7 +235,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqmodwsattr);
+ 
+     if (*errind = ginqmodwsattr(CLIB_WORKSTATION_TYPE(*wtype), &dyn))
+-	return;
++	return 1;
+ 
+     *plbun = (int) dyn.line;
+     *pmbun = (int) dyn.mark;
+@@ -284,7 +284,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqlinefacil);
+ 
+     if (*errind = ginqlinefacil(CLIB_WORKSTATION_TYPE(*wtype), &fac))
+-	return;
++	return 1;
+ 
+     *nlt = (int) fac.types.number;
+     *nlw = (int) fac.widths;
+@@ -339,7 +339,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqmarkerfacil);
+ 
+     if (*errind = ginqmarkerfacil(CLIB_WORKSTATION_TYPE(*wtype), &fac))
+-	return;
++	return 1;
+ 
+     *nmt = (int) fac.types.number;
+     *nms = (int) fac.sizes;
+@@ -394,7 +394,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqfillfacil);
+ 
+     if (*errind = ginqfillfacil(CLIB_WORKSTATION_TYPE(*wtype), &fac))
+-	return;
++	return 1;
+ 
+     *nis = (int) fac.interiors.number;
+     *nhs = (int) fac.hatches.number;
+@@ -465,7 +465,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqcolourfacil);
+ 
+     if (*errind = ginqcolourfacil(CLIB_WORKSTATION_TYPE(*wtype), &fac))
+-	return;
++	return 1;
+ 
+     *ncoli = (int) fac.colours;
+ 
+@@ -519,7 +519,7 @@
+ 
+     if (*errind = ginqpredmarkerrep(CLIB_WORKSTATION_TYPE(*wtype),
+ 	    (Gint) *pmi, &rep))
+-	return;
++	return 1;
+ 
+     *mtype = (int) rep.type;
+     *mszsf = (float) rep.size;
+@@ -558,7 +558,7 @@
+ 
+     if (*errind = ginqpredlinerep(CLIB_WORKSTATION_TYPE(*wtype),
+ 	    (Gint) *pli, &rep))
+-	return;
++	return 1;
+ 
+     *ltype = (int) rep.type;
+     *lwidth = (float) rep.width;
+@@ -611,7 +611,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqtextfacil);
+ 
+     if (*errind = ginqtextfacil(CLIB_WORKSTATION_TYPE(*wtype), &fac))
+-	return;
++	return 1;
+ 
+     *nfpp = (int) fac.fps;
+     *nchh = (int) fac.heights;
+@@ -661,7 +661,7 @@
+ 
+     if (*errind = ginqpredcolourrep(CLIB_WORKSTATION_TYPE(*wtype),
+ 				    (Gint)*pci, &rep))
+-	return;
++	return 1;
+ 
+     *red = (float) rep.red;
+     *green = (float) rep.green;
+@@ -703,7 +703,7 @@
+ 
+     if (*errind = ginqmaxwssttables(CLIB_WORKSTATION_TYPE(*wtype),
+ 				    &tables))
+-	return;
++	return 1;
+ 
+     *mplbte = (int) tables.line;
+     *mpmbte = (int) tables.mark;
+@@ -775,7 +775,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqmodsegattr);
+ 
+     if (*errind = ginqmodsegattr(CLIB_WORKSTATION_TYPE(*wtype), &dyn))
+-	return;
++	return 1;
+ 
+     *sgtr = (int) dyn.transform;
+     *vonoff = (int) dyn.appear;
+@@ -820,7 +820,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqnumavailinput);
+ 
+     if (*errind = ginqnumavailinput(CLIB_WORKSTATION_TYPE(*wtype), &num))
+-	return;
++	return 1;
+ 
+     *nlcd = (int) num.locator;
+     *nskd = (int) num.stroke;
+@@ -865,7 +865,7 @@
+ 
+     if (*errind = ginqpredtextrep(CLIB_WORKSTATION_TYPE(*wtype),
+ 	    (Gint) *ptxi, &rep))
+-	return;
++	return 1;
+ 
+     *font = (int) rep.fp.font;
+     switch (rep.fp.prec) {
+@@ -916,7 +916,7 @@
+ 
+     if (*errind = ginqpredfillrep(CLIB_WORKSTATION_TYPE(*wtype),
+ 				  *pfai, &rep))
+-	return;
++	return 1;
+ 
+     *ints = (int) rep.inter;
+     *styli = (int) rep.style;
+@@ -956,14 +956,14 @@
+ 
+     if (*errind = ginqpredpatrep(CLIB_WORKSTATION_TYPE(*wtype),
+ 				 (Gint) *ppai, &rep))
+-	return;
++	return 1;
+ 
+     *dx = (int) rep.size.x;
+     *dy = (int) rep.size.y;
+     if ((*dx > *dimx) || (*dy > *dimy)) {
+ 	*errind = 2001;
+ 	(void) gerrorhand(2001, errginqpredpatrep, (errfp));
+-	return;
++	return 1;
+     }
+ 
+     /*
+@@ -1038,7 +1038,7 @@
+ 
+     if (*errind = ginqdefloc(CLIB_WORKSTATION_TYPE(*wtype), (Gint) *devno,
+ 			     &data))
+-	return;
++	return 1;
+ 
+     *dpx = (float) data.position.x;
+     *dpy = (float) data.position.y;
+@@ -1166,7 +1166,7 @@
+ 
+     if (*errind = ginqdefstroke(CLIB_WORKSTATION_TYPE(*wtype),
+ 				(Gint) *devno, &data))
+-	return;
++	return 1;
+ 
+     *dbufsk = (int) data.bufsiz;
+     *ol = (int) data.pets.number;
+@@ -1288,7 +1288,7 @@
+ 
+     if (*errind = ginqdefval(CLIB_WORKSTATION_TYPE(*wtype), (Gint) *devno,
+ 	                     &data))
+-	return;
++	return 1;
+ 
+     *dval = (float) data.value;
+     *ol = (int) data.pets.number;
+@@ -1396,7 +1396,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqdefchoice);
+     if (*errind = ginqdefchoice(CLIB_WORKSTATION_TYPE(*wtype),
+ 				(Gint) *devno, &data))
+-	return;
++	return 1;
+ 
+     *malt = (int) data.choices;
+     *ol = (int) data.pets.number;
+@@ -1517,7 +1517,7 @@
+ 
+     if (*errind = ginqdefpick(CLIB_WORKSTATION_TYPE(*wtype), 
+ 			      (Gint) *devno, &data))
+-	return;
++	return 1;
+ 
+     *ol = (int) data.pets.number;
+     earea[0] = (float) data.e_area.xmin;
+@@ -1612,7 +1612,7 @@
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqdefstring);
+     if (*errind = ginqdefstring(CLIB_WORKSTATION_TYPE(*wtype),
+ 			        (Gint) *devno, &data))
+-	return;
++	return 1;
+ 
+     *mbuff = (int) data.bufsiz;
+     *ol = (int) data.pets.number;
+@@ -1669,7 +1669,7 @@
+     debug(("Inquire Default Deferral State Values \n"));
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqdefdeferst);
+     if (*errind = ginqdefdeferst(CLIB_WORKSTATION_TYPE(*wtype), &def))
+-	return;
++	return 1;
+ 
+     *defmod = (int) def.defmode;
+     switch (def.irgmode) {
+@@ -1711,7 +1711,7 @@
+ 
+     VALIDTYPE(errind, *wtype, 1, NUMWTYPES, errginqavailgdp);
+     if (*errind = ginqavailgdp(CLIB_WORKSTATION_TYPE(*wtype), &gdps))
+-	return;
++	return 1;
+ 
+     /* set return values not dependent on range check */
+     *ngdp = gdps.number;
