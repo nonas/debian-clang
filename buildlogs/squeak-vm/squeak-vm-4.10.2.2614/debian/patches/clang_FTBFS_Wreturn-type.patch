@@ -1,0 +1,18 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-06
+--- a/unix/vm-sound-pulse/sqUnixSoundPulseAudio.c
++++ b/unix/vm-sound-pulse/sqUnixSoundPulseAudio.c
+@@ -995,10 +995,10 @@
+ static sqInt sound_StopRecording(void) {
+ DBGMSG(">sound_StopRecording()");
+ 
+-	if (!audioIn.open) return;
++	if (!audioIn.open) return 0;
+ 	audioIn.open = false;
+ 	
+-	if (NULL == audioIn.pa_conn) return;
++	if (NULL == audioIn.pa_conn) return 1;
+ 	
+ 	ioThreadStall(&audioIn);
+ 
