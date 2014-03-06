@@ -1,0 +1,11 @@
+--- a/wmShutdown.c
++++ b/wmShutdown.c
+@@ -98,7 +98,7 @@
+ 			case 1:
+ 
+ 				if (dialog != NULL)
+-			        	return;
++			        	return 1;
+ 				message = "Shutdown confirmation";
+ 				dialog = gtk_dialog_new();
+ 		    		label = gtk_label_new (message);
