@@ -1,0 +1,14 @@
+Description: fails to build with clang instead of gcc [-Wreturn-type]
+Author: Nicolas Sévelin-Radiguet <nicosr@free.frl>
+Last-Update: 2014-03-06
+--- a/src/attr.c
++++ b/src/attr.c
+@@ -349,7 +349,7 @@
+ 	AttrStack *stack = stack_of_stacks_top;
+ 	if (!stack) {
+ 		warning_handler("No stack to get attribute from");
+-		return;
++		return 0;
+ 	}
+ 
+ 	i=stack->tos;

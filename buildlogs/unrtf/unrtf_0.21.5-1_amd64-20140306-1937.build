@@ -1,0 +1,769 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ unrtf 0.21.5-1 (amd64)                                     06 Mar 2014 19:37 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: unrtf
+Version: 0.21.5-1
+Source Version: 0.21.5-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/unrtf-eISZEn/unrtf-0.21.5' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/unrtf-eISZEn' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-83d60338-9935-4e5c-ad1b-b1e96ed9b72d' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+unrtf_0.21.5-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-FNfIbz/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/820 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13268 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>> 9.0.0), dh-autoreconf
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>> 9.0.0), dh-autoreconf
+dpkg-deb: building package `sbuild-build-depends-unrtf-dummy' in `/«BUILDDIR»/resolver-lhozZw/apt_archive/sbuild-build-depends-unrtf-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install unrtf build dependencies (apt-based resolver)                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf gettext gettext-base groff-base intltool-debian libasprintf0c2
+  libcroco3 libglib2.0-0 libsigsegv2 libtool libunistring0 libxml2 m4 man-db
+  po-debconf
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make gettext-doc groff libtool-doc automaken gfortran
+  fortran95-compiler gcj-jdk less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur libasprintf-dev libgettextpo-dev libglib2.0-data
+  shared-mime-info libltdl-dev xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf gettext gettext-base groff-base intltool-debian libasprintf0c2
+  libcroco3 libglib2.0-0 libsigsegv2 libtool libunistring0 libxml2 m4 man-db
+  po-debconf sbuild-build-depends-unrtf-dummy
+0 upgraded, 22 newly installed, 0 to remove and 0 not upgraded.
+Need to get 10.5 MB/10.5 MB of archives.
+After this operation, 28.7 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:2 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:3 http://http.debian.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:4 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:5 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:6 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.38.2-5 [2231 kB]
+Get:7 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:8 http://http.debian.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:9 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:10 http://http.debian.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:11 http://http.debian.net/debian/ sid/main m4 amd64 1.4.17-2 [255 kB]
+Get:12 http://http.debian.net/debian/ sid/main autoconf all 2.69-5 [340 kB]
+Get:13 http://http.debian.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:14 http://http.debian.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:15 http://http.debian.net/debian/ sid/main autopoint all 0.18.3.2-1 [393 kB]
+Get:16 http://http.debian.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:17 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:18 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:19 http://http.debian.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:20 http://http.debian.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:21 http://http.debian.net/debian/ sid/main dh-autoreconf all 9 [15.5 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 10.5 MB in 1s (10.3 MB/s)
+Selecting previously unselected package groff-base.
+(Reading database ... 13268 files and directories currently installed.)
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.38.2-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.38.2-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-2_amd64.deb ...
+Unpacking m4 (1.4.17-2) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-5_all.deb ...
+Unpacking autoconf (2.69-5) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../autopoint_0.18.3.2-1_all.deb ...
+Unpacking autopoint (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../dh-autoreconf_9_all.deb ...
+Unpacking dh-autoreconf (9) ...
+Selecting previously unselected package sbuild-build-depends-unrtf-dummy.
+Preparing to unpack .../sbuild-build-depends-unrtf-dummy.deb ...
+Unpacking sbuild-build-depends-unrtf-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.38.2-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-2) ...
+Setting up autoconf (2.69-5) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up autopoint (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up dh-autoreconf (9) ...
+Setting up sbuild-build-depends-unrtf-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.12-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-4 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.5-1
+Package versions: apt_0.9.15.5+b1 autoconf_2.69-5 automake_1:1.14.1-3 autopoint_0.18.3.2-1 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.32 bash_4.3-2 binfmt-support_2.1.3-2 binutils_2.24-4 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.6 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 dh-autoreconf_9 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-7 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.16-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_0.9.15.5+b1 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.4-1 libaudit1_1:2.3.4-1 libblkid1_2.20.1-5.6 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdebconfclient0_0.188 libdpkg-perl_1.17.6 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.0.13-12 libffi6_3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgdbm3_1.8.3-12 libglib2.0-0_2.38.2-5 libgmp10_2:5.1.3+dfsg-1 libgomp1_4.8.2-16 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.8.2-16 libjsoncpp0_0.6.0~rc2-3 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-7+b2 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.6 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpcre3_1:8.31-2 libpipeline1_1.2.6-2 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-7 libpython2.7-stdlib_2.7.6-7 libquadmath0_4.8.2-16 libreadline6_6.3-1 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libsqlite3-0_3.8.3.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtool_2.4.2-1.7 libtsan0_4.8.2-16 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.6 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.5-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1 lsb-base_4.1+Debian12 m4_1.4.17-2 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.6 multiarch-support_2.18-4 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1 patch_2.7.1-4 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-7 python2.7-minimal_2.7.6-7 readline-common_6.3-1 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-unrtf-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-1 tzdata_2013i-1 util-linux_2.20.1-5.6 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (unrtf_0.21.5-1.dsc)
+dpkg-source: info: extracting unrtf in unrtf-0.21.5
+dpkg-source: info: unpacking unrtf_0.21.5.orig.tar.gz
+dpkg-source: info: unpacking unrtf_0.21.5-1.debian.tar.xz
+dpkg-source: info: applying clang_FTBFS_Wreturn-type.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-83d60338-9935-4e5c-ad1b-b1e96ed9b72d
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package unrtf
+dpkg-buildpackage: source version 0.21.5-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Willi Mann <willi@debian.org>
+ dpkg-source --before-build unrtf-0.21.5
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with autoreconf
+   dh_testdir
+   dh_auto_clean
+   dh_autoreconf_clean
+   dh_clean
+ dpkg-source -b unrtf-0.21.5
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building unrtf using existing ./unrtf_0.21.5.orig.tar.gz
+dpkg-source: info: building unrtf in unrtf_0.21.5-1.debian.tar.xz
+dpkg-source: info: building unrtf in unrtf_0.21.5-1.dsc
+ debian/rules build
+dh build --with autoreconf
+   dh_testdir
+   dh_autoreconf
+   dh_auto_configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for stdlib.h... (cached) yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking for string.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for memset... yes
+checking for strchr... yes
+checking for strstr... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating outputs/Makefile
+config.status: creating patches/Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make  all-recursive
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making all in src
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o attr.o attr.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o convert.o convert.c
+convert.c:572:25: warning: implicit declaration of function 'strcasestr' is invalid in C99 [-Wimplicit-function-declaration]
+                    if (strcasestr(name, "symbol"))
+                        ^
+convert.c:2031:3: warning: implicit declaration of function 'attr_find_pop' is invalid in C99 [-Wimplicit-function-declaration]
+                attr_find_pop(ATTR_BOLD);
+                ^
+2 warnings generated.
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o error.o error.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o hash.o hash.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o my_iconv.o my_iconv.c
+my_iconv.c:37:17: warning: initializing 'unsigned char *' with an expression of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        unsigned char *utf8 = get_unicode_utf8(f);
+                       ^      ~~~~~~~~~~~~~~~~~~~
+my_iconv.c:50:18: warning: passing 'unsigned char *' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        ibytes = strlen(utf8);
+                        ^~~~
+/usr/include/string.h:395:35: note: passing argument to parameter '__s' here
+extern size_t strlen (const char *__s)
+                                  ^
+my_iconv.c:55:13: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        ocp0 = ocp = obuf + 1;
+                   ^ ~~~~~~~~
+my_iconv.c:56:18: warning: incompatible pointer types passing 'unsigned char **' to parameter of type 'char **' [-Wincompatible-pointer-types]
+        if (iconv(desc, &icp, &ibytes, &ocp, &obytes) == -1) {
+                        ^~~~
+/usr/include/iconv.h:42:54: note: passing argument to parameter '__inbuf' here
+extern size_t iconv (iconv_t __cd, char **__restrict __inbuf,
+                                                     ^
+my_iconv.c:56:33: warning: incompatible pointer types passing 'unsigned char **' to parameter of type 'char **' [-Wincompatible-pointer-types]
+        if (iconv(desc, &icp, &ibytes, &ocp, &obytes) == -1) {
+                                       ^~~~
+/usr/include/iconv.h:44:26: note: passing argument to parameter '__outbuf' here
+                     char **__restrict __outbuf,
+                                       ^
+my_iconv.c:63:10: warning: passing 'unsigned char *' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        my_free(utf8);
+                ^~~~
+./malloc.h:36:27: note: passing argument to parameter here
+extern void my_free (char*);
+                          ^
+my_iconv.c:76:34: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+            char *path = search_in_path(fromcode, "charmap");
+                                        ^~~~~~~~
+./path.h:17:35: note: passing argument to parameter 'name' here
+extern char *search_in_path(char *name, char *suffix);
+                                  ^
+7 warnings generated.
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o main.o main.c
+main.c:145:21: warning: expression which evaluates to zero treated as a null pointer constant of type 'char *' [-Wnon-literal-null-conversion]
+        char *env_path_p = '\0';
+                           ^~~~
+1 warning generated.
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o malloc.o malloc.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o output.o output.c
+output.c:371:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+output.c:368:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+output.c:365:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+output.c:362:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+output.c:359:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+output.c:500:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+output.c:497:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+output.c:494:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+output.c:491:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+output.c:488:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+10 warnings generated.
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o parse.o parse.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o path.o path.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o unicode.o unicode.c
+unicode.c:49:10: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                string = my_malloc(2 * sizeof(char));
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unicode.c:55:10: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                string = my_malloc(3 * sizeof(char));
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unicode.c:62:10: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                string = my_malloc(4 * sizeof(char));
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unicode.c:70:10: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                string = my_malloc(5 * sizeof(char));
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unicode.c:79:10: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                string = my_malloc(6 * sizeof(char));
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unicode.c:89:10: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                string = my_malloc(7 * sizeof(char));
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unicode.c:99:9: warning: returning 'unsigned char *' from a function with result type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        return string;
+               ^~~~~~
+7 warnings generated.
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o user.o user.c
+user.c:166:19: warning: '&&' within '||' [-Wlogical-op-parentheses]
+                                        if (c != '<' && c != '\\' || (c == '\\' && c2 == '\\'))
+                                            ~~~~~~~~~^~~~~~~~~~~~ ~~
+user.c:166:19: note: place parentheses around the '&&' expression to silence this warning
+                                        if (c != '<' && c != '\\' || (c == '\\' && c2 == '\\'))
+                                                     ^
+                                            (                    )
+1 warning generated.
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o util.o util.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DPKGDATADIR=\"/usr/share/unrtf\" -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o word.o word.c
+word.c:236:9: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+                if (s = word_string(w))
+                    ~~^~~~~~~~~~~~~~~~
+word.c:236:9: note: place parentheses around the assignment to silence this warning
+                if (s = word_string(w))
+                      ^
+                    (                 )
+word.c:236:9: note: use '==' to turn this assignment into an equality comparison
+                if (s = word_string(w))
+                      ^
+                      ==
+1 warning generated.
+gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o unrtf attr.o convert.o error.o hash.o my_iconv.o main.o malloc.o output.o parse.o path.o unicode.o user.o util.o word.o  
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+Making all in tests
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+Making all in doc
+make[3]: Entering directory `/«PKGBUILDDIR»/doc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/doc'
+Making all in patches
+make[3]: Entering directory `/«PKGBUILDDIR»/patches'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/patches'
+Making all in outputs
+make[3]: Entering directory `/«PKGBUILDDIR»/outputs'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/outputs'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making check in src
+make[2]: Entering directory `/«PKGBUILDDIR»/src'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/src'
+Making check in tests
+make[2]: Entering directory `/«PKGBUILDDIR»/tests'
+make  check-TESTS
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
+make[4]: Entering directory `/«PKGBUILDDIR»/tests'
+PASS: test_html.sh
+PASS: test_latex.sh
+make[5]: Entering directory `/«PKGBUILDDIR»/tests'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/tests'
+============================================================================
+Testsuite summary for unrtf 0.21.5
+============================================================================
+# TOTAL: 2
+# PASS:  2
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
+Making check in doc
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
+Making check in patches
+make[2]: Entering directory `/«PKGBUILDDIR»/patches'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/patches'
+Making check in outputs
+make[2]: Entering directory `/«PKGBUILDDIR»/outputs'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/outputs'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Nothing to be done for `check-am'.
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary --with autoreconf
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making install in src
+make[2]: Entering directory `/«PKGBUILDDIR»/src'
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/unrtf/usr/bin'
+  /usr/bin/install -c unrtf '/«PKGBUILDDIR»/debian/unrtf/usr/bin'
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+make[2]: Leaving directory `/«PKGBUILDDIR»/src'
+Making install in tests
+make[2]: Entering directory `/«PKGBUILDDIR»/tests'
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
+Making install in doc
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
+make[3]: Entering directory `/«PKGBUILDDIR»/doc'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/unrtf/usr/share/man/man1'
+ /usr/bin/install -c -m 644 unrtf.1 '/«PKGBUILDDIR»/debian/unrtf/usr/share/man/man1'
+make[3]: Leaving directory `/«PKGBUILDDIR»/doc'
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
+Making install in patches
+make[2]: Entering directory `/«PKGBUILDDIR»/patches'
+make[3]: Entering directory `/«PKGBUILDDIR»/patches'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/patches'
+make[2]: Leaving directory `/«PKGBUILDDIR»/patches'
+Making install in outputs
+make[2]: Entering directory `/«PKGBUILDDIR»/outputs'
+make[3]: Entering directory `/«PKGBUILDDIR»/outputs'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/unrtf/usr/share/unrtf'
+ /usr/bin/install -c -m 644 html.conf latex.conf rtf.conf text.conf troff_mm.conf vt.conf SYMBOL.charmap '/«PKGBUILDDIR»/debian/unrtf/usr/share/unrtf'
+make[3]: Leaving directory `/«PKGBUILDDIR»/outputs'
+make[2]: Leaving directory `/«PKGBUILDDIR»/outputs'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_installmime
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `unrtf' in `../unrtf_0.21.5-1_amd64.deb'.
+ dpkg-genchanges  >../unrtf_0.21.5-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build unrtf-0.21.5
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140306-1937
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+unrtf_0.21.5-1_amd64.changes:
+─────────────────────────────
+
+Format: 1.8
+Date: Sat, 30 Nov 2013 12:29:40 +0100
+Source: unrtf
+Binary: unrtf
+Architecture: source amd64
+Version: 0.21.5-1
+Distribution: sid
+Urgency: low
+Maintainer: Willi Mann <willi@debian.org>
+Changed-By: Willi Mann <willi@debian.org>
+Description: 
+ unrtf      - RTF to other formats converter
+Changes: 
+ unrtf (0.21.5-1) unstable; urgency=low
+ .
+   * Imported Upstream version 0.21.5
+   * fix lintian vcs-field-not-canonical: git.debian.org -> anonscm.debian.org
+   * Add Homepage field in d/control
+   * d/watch: More flexibility, thanks Bart Martens
+   * Add import script to filter unneeded files from upstream tarball
+   * Standards-Version 3.9.4 => 3.9.5 (no changes)
+Checksums-Sha1: 
+ 6300b443038038c549ac4a0b05bad8aafb20dc90 952 unrtf_0.21.5-1.dsc
+ ad42430e67555a25efdbce7be64a31c2e4d6832d 645273 unrtf_0.21.5.orig.tar.gz
+ c18967c3fba5ad8091e2fd424353c2f2d1471444 3924 unrtf_0.21.5-1.debian.tar.xz
+ f21bc112ec002a09667ecc85eb2fa7443d400ca9 41838 unrtf_0.21.5-1_amd64.deb
+Checksums-Sha256: 
+ a2cd34a365dca6b5accd7ae859d49223afcc58eb2de78c5043cf9193e971b5ba 952 unrtf_0.21.5-1.dsc
+ 959b095458940e12e09d1b8f465c4230305c1884062a0f40589f3bce2aab5396 645273 unrtf_0.21.5.orig.tar.gz
+ f631a2e23b3b3bc20ad328dcbb35b4e4213ccea315e29003015f224d10b58512 3924 unrtf_0.21.5-1.debian.tar.xz
+ cda8c78c9c197232bc3176abcc820eaf7771caa984a314cb4eb1ace893581d13 41838 unrtf_0.21.5-1_amd64.deb
+Files: 
+ 338a5db00d4c5260a0657ba691c1a7b7 952 text optional unrtf_0.21.5-1.dsc
+ 8e965b72298935cdb9f8dc9c89620d89 645273 text optional unrtf_0.21.5.orig.tar.gz
+ c4261fb37ed92c7ed6eec7e317d309bc 3924 text optional unrtf_0.21.5-1.debian.tar.xz
+ 72c048981969075696cbb8e2a06d486a 41838 text optional unrtf_0.21.5-1_amd64.deb
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+unrtf_0.21.5-1_amd64.deb
+────────────────────────
+
+ new debian package, version 2.0.
+ size 41838 bytes: control archive=1061 bytes.
+     579 bytes,    16 lines      control              
+     867 bytes,    14 lines      md5sums              
+ Package: unrtf
+ Version: 0.21.5-1
+ Architecture: amd64
+ Maintainer: Willi Mann <willi@debian.org>
+ Installed-Size: 159
+ Depends: libc6 (>= 2.14)
+ Conflicts: rtf2htm
+ Replaces: rtf2htm
+ Section: text
+ Priority: optional
+ Homepage: http://www.gnu.org/software/unrtf/
+ Description: RTF to other formats converter
+  UnRTF is a moderately complicated converter from RTF to other formats,
+  including HTML, LaTeX, and text. Converting to HTML, it supports tables,
+  fonts, colors, embedded images,  hyperlinks, paragraph alignment among other
+  things. All other conversions are "alpha"--just begun.
+
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/lib/
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/lib/mime/
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/lib/mime/packages/
+-rw-r--r-- root/root       119 2013-11-30 12:30 ./usr/lib/mime/packages/unrtf
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/bin/
+-rwxr-xr-x root/root     71608 2014-03-06 19:37 ./usr/bin/unrtf
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/share/man/man1/
+-rw-r--r-- root/root      1651 2014-03-06 19:37 ./usr/share/man/man1/unrtf.1.gz
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/share/doc/unrtf/
+-rw-r--r-- root/root      1503 2013-11-30 12:16 ./usr/share/doc/unrtf/changelog.gz
+-rw-r--r-- root/root      2415 2013-11-30 12:30 ./usr/share/doc/unrtf/changelog.Debian.gz
+-rw-r--r-- root/root       774 2013-11-30 12:30 ./usr/share/doc/unrtf/copyright
+-rw-r--r-- root/root       685 2013-11-30 12:16 ./usr/share/doc/unrtf/README
+drwxr-xr-x root/root         0 2014-03-06 19:37 ./usr/share/unrtf/
+-rw-r--r-- root/root      3750 2014-03-06 19:37 ./usr/share/unrtf/latex.conf
+-rw-r--r-- root/root       619 2014-03-06 19:37 ./usr/share/unrtf/text.conf
+-rw-r--r-- root/root       744 2014-03-06 19:37 ./usr/share/unrtf/vt.conf
+-rw-r--r-- root/root      6114 2014-03-06 19:37 ./usr/share/unrtf/troff_mm.conf
+-rw-r--r-- root/root      1941 2014-03-06 19:37 ./usr/share/unrtf/rtf.conf
+-rw-r--r-- root/root     10556 2014-03-06 19:37 ./usr/share/unrtf/SYMBOL.charmap
+-rw-r--r-- root/root      6471 2014-03-06 19:37 ./usr/share/unrtf/html.conf
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 7116
+Build-Time: 7
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 13
+Job: unrtf_0.21.5-1.dsc
+Machine Architecture: amd64
+Package: unrtf
+Package-Time: 25
+Source-Version: 0.21.5-1
+Space: 7116
+Status: successful
+Version: 0.21.5-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140306-1937
+Build needed 00:00:25, 7116k disc space
