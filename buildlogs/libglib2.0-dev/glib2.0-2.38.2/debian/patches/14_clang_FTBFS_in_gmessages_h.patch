@@ -1,0 +1,43 @@
+Description: Fix return values in gmessage.h
+ Packages depending on glib fail to build from source with clang instead of gcc with [-Wreturn-type] errors.
+ This is caused by functions defined in gmessages.h that return no value.
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-08
+--- a/glib/gmessages.h
++++ b/glib/gmessages.h
+@@ -342,7 +342,7 @@
+ 	 g_return_if_fail_warning (G_LOG_DOMAIN,			\
+ 		                   __PRETTY_FUNCTION__,		        \
+ 		                   #expr);				\
+-	 return;							\
++	 return 1;							\
+        };				}G_STMT_END
+ 
+ #define g_return_val_if_fail(expr,val)	G_STMT_START{			\
+@@ -361,7 +361,7 @@
+ 	    __FILE__,							\
+ 	    __LINE__,							\
+ 	    __PRETTY_FUNCTION__);					\
+-     return;				}G_STMT_END
++     return 1;				}G_STMT_END
+ 
+ #define g_return_val_if_reached(val)	G_STMT_START{			\
+      g_log (G_LOG_DOMAIN,						\
+@@ -383,7 +383,7 @@
+ 		__FILE__,					\
+ 		__LINE__,					\
+ 		#expr);						\
+-	 return;						\
++	 return 1;						\
+        };				}G_STMT_END
+ 
+ #define g_return_val_if_fail(expr, val)	G_STMT_START{		\
+@@ -404,7 +404,7 @@
+ 	    "file %s: line %d: should not be reached",		\
+ 	    __FILE__,						\
+ 	    __LINE__);						\
+-     return;				}G_STMT_END
++     return 1;				}G_STMT_END
+ 
+ #define g_return_val_if_reached(val)	G_STMT_START{		\
+      g_log (G_LOG_DOMAIN,					\
