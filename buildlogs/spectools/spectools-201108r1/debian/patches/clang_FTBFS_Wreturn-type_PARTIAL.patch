@@ -1,4 +1,7 @@
 Description: fix FTBFS with clang instead of gcc [-Wreturn-type]
+ When using gmessages.h, one should take care of using:
+	g_return_if_* in void functions
+	g_return_val_if_* in non-void functions
 Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
 Last-Update: 2014-03-08
 --- a/spectool_raw.c
@@ -84,3 +87,206 @@ Last-Update: 2014-03-08
  		}
  
  	} while ((r & SPECTOOL_NETCLI_POLL_ADDITIONAL));
+--- a/spectool_gtk_widget.c
++++ b/spectool_gtk_widget.c
+@@ -184,8 +184,8 @@
+ 	SpectoolWidgetController *con = (SpectoolWidgetController *) widget;
+ 	char alt_title_text[32];
+ 
+-	g_return_if_fail(widget != NULL);
+-	g_return_if_fail(event != NULL);
++	g_return_val_if_fail(widget != NULL, 0);
++	g_return_val_if_fail(event != NULL, 0);
+ 
+ 	if (event->type == GDK_BUTTON_PRESS) {
+ 		GdkEventButton *bevent = (GdkEventButton *) event;
+@@ -231,8 +231,8 @@
+ 	GdkColor c;
+ 	GtkStyle *style;
+ 
+-	g_return_if_fail(widget != NULL);
+-	g_return_if_fail(IS_SPECTOOL_WIDGET(widget));
++	g_return_val_if_fail(widget != NULL, 0);
++	g_return_val_if_fail(IS_SPECTOOL_WIDGET(widget), 0);
+ 
+ 	wwidget = SPECTOOL_WIDGET(widget);
+ 
+@@ -294,9 +294,9 @@
+ 	GtkWidget *menu;
+ 	GdkEvent *event = (GdkEvent *) button;
+ 
+-	g_return_if_fail(widget != NULL);
+-	g_return_if_fail(aux != NULL);
+-	g_return_if_fail(IS_SPECTOOL_WIDGET(aux));
++	g_return_val_if_fail(widget != NULL, 0);
++	g_return_val_if_fail(aux != NULL, 0);
++	g_return_val_if_fail(IS_SPECTOOL_WIDGET(aux), 0);
+ 
+ 	wwidget = SPECTOOL_WIDGET(aux);
+ 
+@@ -780,8 +780,8 @@
+ 	SpectoolWidget *wwidget;
+ 	cairo_t *cr;
+ 
+-	g_return_if_fail(widget != NULL);
+-	g_return_if_fail(IS_SPECTOOL_WIDGET(aux));
++	g_return_val_if_fail(widget != NULL, 0);
++	g_return_val_if_fail(IS_SPECTOOL_WIDGET(aux), 0);
+ 	wwidget = SPECTOOL_WIDGET(aux);
+ 
+ 	cr = gdk_cairo_create(widget->window);
+--- a/spectool_gtk_channel.c
++++ b/spectool_gtk_channel.c
+@@ -43,8 +43,8 @@
+ 	int dbm, maxy, nchannels;
+ 	SpectoolWidget *wwidget;
+ 
+-	g_return_if_fail(cwidget != NULL);
+-	g_return_if_fail(IS_SPECTOOL_WIDGET(cwidget));
++	g_return_val_if_fail(cwidget != NULL, 0);
++	g_return_val_if_fail(IS_SPECTOOL_WIDGET(cwidget), 0);
+ 	wwidget = SPECTOOL_WIDGET(cwidget);
+ 
+ 	/* Only compute if we know a chanset and if we're inside the bounding
+@@ -224,17 +224,17 @@
+ 	int ch;
+ 	GList *upd_iter;
+ 
+-	g_return_if_fail(aux != NULL);
+-	g_return_if_fail(IS_SPECTOOL_CHANNEL(aux));
+-	g_return_if_fail(IS_SPECTOOL_WIDGET(aux));
++	g_return_val_if_fail(aux != NULL, 1);
++	g_return_val_if_fail(IS_SPECTOOL_CHANNEL(aux), 1);
++	g_return_val_if_fail(IS_SPECTOOL_WIDGET(aux), 1);
+ 
+ 	channel = SPECTOOL_CHANNEL(aux);
+ 	wwidget = SPECTOOL_WIDGET(aux);
+ 
+-	g_return_if_fail(wwidget->chanopts != NULL);
+-	g_return_if_fail(wwidget->chanopts->chanset != NULL);
+-	g_return_if_fail(wwidget->sweepcache != NULL);
+-	g_return_if_fail(wwidget->sweepcache->latest != NULL);
++	g_return_val_if_fail(wwidget->chanopts != NULL, 0);
++	g_return_val_if_fail(wwidget->chanopts->chanset != NULL, 0);
++	g_return_val_if_fail(wwidget->sweepcache != NULL, 0);
++	g_return_val_if_fail(wwidget->sweepcache->latest != NULL, 0);
+ 
+ 	if (event->button != 1)
+ 		return TRUE;
+@@ -278,15 +278,15 @@
+ 	SpectoolWidget *wwidget;
+ 	GList *upd_iter;
+ 
+-	g_return_if_fail(aux != NULL);
+-	g_return_if_fail(IS_SPECTOOL_CHANNEL(aux));
+-	g_return_if_fail(IS_SPECTOOL_WIDGET(aux));
++	g_return_val_if_fail(aux != NULL, 0);
++	g_return_val_if_fail(IS_SPECTOOL_CHANNEL(aux), 0);
++	g_return_val_if_fail(IS_SPECTOOL_WIDGET(aux), 0);
+ 
+ 	channel = SPECTOOL_CHANNEL(aux);
+ 	wwidget = SPECTOOL_WIDGET(aux);
+ 
+-	g_return_if_fail(wwidget->sweepcache != NULL);
+-	g_return_if_fail(wwidget->sweepcache->latest != NULL);
++	g_return_val_if_fail(wwidget->sweepcache != NULL, 0);
++	g_return_val_if_fail(wwidget->sweepcache->latest != NULL, 0);
+ 
+ 	if (event->is_hint) {
+ 		gdk_window_get_pointer(event->window, &x, &y, &state);
+@@ -298,8 +298,8 @@
+ 
+ 	/* Search for the channel positions, update the graph if we've changed
+ 	 * the highlighted channel */
+-	g_return_if_fail(wwidget->chanopts != NULL);
+-	g_return_if_fail(wwidget->chanopts->chanset != NULL);
++	g_return_val_if_fail(wwidget->chanopts != NULL, 0);
++	g_return_val_if_fail(wwidget->chanopts->chanset != NULL, 0);
+ 
+ 	if ((ch = spectool_channel_find_chan_pt(channel, x, y)) >= -1) {
+ 		if (ch != wwidget->chanopts->hi_chan) {
+--- a/spectool_gtk_planar.c
++++ b/spectool_gtk_planar.c
+@@ -351,15 +351,15 @@
+ 	SpectoolWidget *wwidget;
+ 	int ch;
+ 
+-	g_return_if_fail(aux != NULL);
+-	g_return_if_fail(IS_SPECTOOL_PLANAR(aux));
+-	g_return_if_fail(IS_SPECTOOL_WIDGET(aux));
++	g_return_val_if_fail(aux != NULL, 0);
++	g_return_val_if_fail(IS_SPECTOOL_PLANAR(aux), 0);
++	g_return_val_if_fail(IS_SPECTOOL_WIDGET(aux), 0);
+ 
+ 	planar = SPECTOOL_PLANAR(aux);
+ 	wwidget = SPECTOOL_WIDGET(aux);
+ 
+-	g_return_if_fail(wwidget->sweepcache != NULL);
+-	g_return_if_fail(wwidget->sweepcache->avg != NULL);
++	g_return_val_if_fail(wwidget->sweepcache != NULL, 0);
++	g_return_val_if_fail(wwidget->sweepcache->avg != NULL, 0);
+ 
+ 	if (event->button != 1)
+ 		return TRUE;
+@@ -379,15 +379,15 @@
+ 	SpectoolPlanar *planar;
+ 	SpectoolWidget *wwidget;
+ 
+-	g_return_if_fail(aux != NULL);
+-	g_return_if_fail(IS_SPECTOOL_PLANAR(aux));
+-	g_return_if_fail(IS_SPECTOOL_WIDGET(aux));
++	g_return_val_if_fail(aux != NULL, 0);
++	g_return_val_if_fail(IS_SPECTOOL_PLANAR(aux), 0);
++	g_return_val_if_fail(IS_SPECTOOL_WIDGET(aux), 0);
+ 
+ 	planar = SPECTOOL_PLANAR(aux);
+ 	wwidget = SPECTOOL_WIDGET(aux);
+ 
+-	g_return_if_fail(wwidget->sweepcache != NULL);
+-	g_return_if_fail(wwidget->sweepcache->avg != NULL);
++	g_return_val_if_fail(wwidget->sweepcache != NULL, 0);
++	g_return_val_if_fail(wwidget->sweepcache->avg != NULL, 0);
+ 
+ 	if (event->is_hint) {
+ 		gdk_window_get_pointer(event->window, &x, &y, &state);
+--- a/spectool_gtk_spectral.c
++++ b/spectool_gtk_spectral.c
+@@ -415,9 +415,9 @@
+ 	cairo_pattern_t *pattern;
+ 	int cp;
+ 
+-	g_return_if_fail(widget != NULL);
+-	g_return_if_fail(aux != NULL);
+-	g_return_if_fail(IS_SPECTOOL_SPECTRAL(aux));
++	g_return_val_if_fail(widget != NULL, 0);
++	g_return_val_if_fail(aux != NULL, 0);
++	g_return_val_if_fail(IS_SPECTOOL_SPECTRAL(aux), 0);
+ 
+ 	spectral = SPECTOOL_SPECTRAL(aux);
+ 
+--- a/spectool_gtk_topo.c
++++ b/spectool_gtk_topo.c
+@@ -379,9 +379,9 @@
+ 	cairo_pattern_t *pattern;
+ 	int cp;
+ 
+-	g_return_if_fail(widget != NULL);
+-	g_return_if_fail(aux != NULL);
+-	g_return_if_fail(IS_SPECTOOL_TOPO(aux));
++	g_return_val_if_fail(widget != NULL, 0);
++	g_return_val_if_fail(aux != NULL, 0);
++	g_return_val_if_fail(IS_SPECTOOL_TOPO(aux), 0);
+ 
+ 	topo = SPECTOOL_TOPO(aux);
+ 
+--- a/spectool_gtk.c
++++ b/spectool_gtk.c
+@@ -182,7 +182,7 @@
+ 	GtkWidget *menu;
+ 	nb_aux *nbaux = (nb_aux *) aux;
+ 
+-	g_return_if_fail(aux != NULL);
++	g_return_val_if_fail(aux != NULL, 0);
+ 
+ 	if (event->type == GDK_BUTTON_PRESS) {
+ 		GdkEventButton *bevent = (GdkEventButton *) event;
