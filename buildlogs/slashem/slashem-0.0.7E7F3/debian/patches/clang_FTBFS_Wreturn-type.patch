@@ -1,0 +1,14 @@
+Description: fix FTBFS with clang instead of gcc [-Wreturn-type]
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-11
+--- a/win/gtk/gtkmap.c
++++ b/win/gtk/gtkmap.c
+@@ -615,7 +615,7 @@
+ nh_set_map_font(gchar *name)
+ {
+     PangoFontDescription *desc;
+-    g_return_if_fail(name != NULL);
++    g_return_val_if_fail(name != NULL, 0);
+     if (map_font_name) {
+ 	if (!strcmp(name, map_font_name))
+ 	    return 0;
