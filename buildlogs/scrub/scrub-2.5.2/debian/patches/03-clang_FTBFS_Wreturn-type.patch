@@ -1,0 +1,14 @@
+Description: fix FTBFS with clang instead of gcc [-Wreturn-type]
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-11
+--- a/src/genrand.c
++++ b/src/genrand.c
+@@ -106,7 +106,7 @@
+                 buf[n] = result;
+             }
+ #endif
+-            return;
++            return 0;
+         }
+     }
+ 
