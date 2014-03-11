@@ -7,6 +7,7 @@ Warning: this is likely to be **not** up-to-date
 Package name | bug URL | OP | Status
 --- | --- | --- | ---
 a56 | https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=739929 | Arthur Marble |
+blobwars | https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=686545 | Cyril Roelandt |
 cyrus-sasl2 | https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=739561 | Arthur Marble | DONE
 tcp-wrappers|https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=710391 | Sylvestre | DONE
 xbs | https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=710387 | Sylvestre
