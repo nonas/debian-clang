@@ -1,0 +1,93 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-13
+--- a/src/dbg/dump.c
++++ b/src/dbg/dump.c
+@@ -121,7 +121,7 @@
+ 		dir = dir + 1;
+ 		if (strchr(dir,'/')) {
+ 			eprintf("No '/' permitted here.\n");
+-			return;
++			return -1;
+ 		}
+ 	}
+ #if __WINDOWS__ && !__CYGWIN__
+@@ -131,7 +131,7 @@
+ #endif
+ 	if ( chdir(dir) == -1) {
+ 		eprintf("No '/' permitted here.\n");
+-		return;
++		return -1;
+ 	}
+ 	printf("Dump directory: %s\n", dir);
+ 
+@@ -161,7 +161,7 @@
+ 		dump_num--;
+ 		if (dump_num<0) {
+ 			eprintf("No dumps to restore from. Sorry\n");
+-			return;
++			return -1;
+ 		}
+ 		sprintf(dumpdir, "dump%d", dump_num);
+ 		dir = dumpdir;
+@@ -170,12 +170,12 @@
+ 		dir = dir + 1;
+ 		if (strchr(dir,'/')) {
+ 			eprintf("No '/' permitted here.\n");
+-			return;
++			return -1;
+ 		}
+ 	}
+ 	if ( chdir(dir) == -1 ) {
+ 		eprintf("Cannot chdir to '%s'\n", dir);
+-		return;
++		return -1;
+ 	}
+ 
+ 	printf("Restore directory: %s\n", dir);
+--- a/src/visual.c
++++ b/src/visual.c
+@@ -1206,7 +1206,7 @@
+ 	case 'G':
+ 		eprintf("Visual GUI\n");
+ 		visual_gui();
+-		return;
++		return 0;
+ 	}
+ 
+ 	cons_get_real_columns();
+--- a/src/cmds.c
++++ b/src/cmds.c
+@@ -1776,10 +1776,10 @@
+ 	switch(text[0]) {
+ 	case '\\':
+ 		radare_seek_search_backward(text+1);
+-		return;
++		return 0;
+ 	case '/':
+ 		radare_seek_search(text+1);
+-		return;
++		return 0;
+ 	case 'x': 
+ 		new_off = data_seek_to(config.seek, 0, atoi(text+1));
+ 		break;
+@@ -2642,7 +2642,7 @@
+ 		len = strlen(input+2);
+ 		if (len<2) {
+ 			eprintf("Too short len\n");
+-			return;
++			return -1;
+ 		}
+ 		input2 = (char *)malloc((len<<1)+10);
+ 		input2[0] = '\0';
+--- a/src/plug/io/gdbwrap.c
++++ b/src/plug/io/gdbwrap.c
+@@ -177,7 +177,7 @@
+ 	if (!memcmp(str, "reg",3)) {
+ 		gdbwrap_gdbreg32 *reg = gdbwrap_readgenreg(desc);
+ 		if (reg == NULL)
+-			return;
++			return 0;
+ 		ptr = strstr(str, "=");
+ 		if (ptr) {
+ 			ut32 value;
