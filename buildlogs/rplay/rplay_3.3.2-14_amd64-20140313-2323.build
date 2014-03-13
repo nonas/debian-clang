@@ -1,0 +1,1737 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ rplay 3.3.2-14 (amd64)                                     13 Mar 2014 23:23 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: rplay
+Version: 3.3.2-14
+Source Version: 3.3.2-14
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/rplay-C_AaTM/rplay-3.3.2' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/rplay-C_AaTM' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-bcbfeb54-1933-4695-b0dd-efedf0656307' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+rplay_3.3.2-14.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-Hf1sZi/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/820 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13267 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), libgsm1-dev, libreadline-dev, debhelper (>= 8.0.0), dpkg (>= 1.15.4) | install-info
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), libgsm1-dev, libreadline-dev, debhelper (>= 8.0.0), dpkg (>= 1.15.4)
+dpkg-deb: building package `sbuild-build-depends-rplay-dummy' in `/«BUILDDIR»/resolver-Qbg0Ea/apt_archive/sbuild-build-depends-rplay-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install rplay build dependencies (apt-based resolver)                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libgsm1 libgsm1-dev libreadline-dev
+  libreadline6-dev libunistring0 libxml2 man-db po-debconf
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff less www-browser
+  libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libgsm1 libgsm1-dev libreadline-dev
+  libreadline6-dev libunistring0 libxml2 man-db po-debconf
+  sbuild-build-depends-rplay-dummy
+0 upgraded, 18 newly installed, 0 to remove and 0 not upgraded.
+Need to get 8406 kB/8407 kB of archives.
+After this operation, 23.7 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:2 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:3 http://http.debian.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:4 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:5 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:6 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.38.2-5 [2231 kB]
+Get:7 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:8 http://http.debian.net/debian/ sid/main libgsm1 amd64 1.0.13-4 [29.7 kB]
+Get:9 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:10 http://http.debian.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:11 http://http.debian.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:12 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:13 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:14 http://http.debian.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:15 http://http.debian.net/debian/ sid/main libgsm1-dev amd64 1.0.13-4 [35.2 kB]
+Get:16 http://http.debian.net/debian/ sid/main libreadline6-dev amd64 6.3-1 [213 kB]
+Get:17 http://http.debian.net/debian/ sid/main libreadline-dev amd64 6.3-1 [994 B]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 8406 kB in 0s (67.0 MB/s)
+Selecting previously unselected package groff-base.
+(Reading database ... 13267 files and directories currently installed.)
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.38.2-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.38.2-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libgsm1:amd64.
+Preparing to unpack .../libgsm1_1.0.13-4_amd64.deb ...
+Unpacking libgsm1:amd64 (1.0.13-4) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libgsm1-dev:amd64.
+Preparing to unpack .../libgsm1-dev_1.0.13-4_amd64.deb ...
+Unpacking libgsm1-dev:amd64 (1.0.13-4) ...
+Selecting previously unselected package libreadline6-dev:amd64.
+Preparing to unpack .../libreadline6-dev_6.3-1_amd64.deb ...
+Unpacking libreadline6-dev:amd64 (6.3-1) ...
+Selecting previously unselected package libreadline-dev:amd64.
+Preparing to unpack .../libreadline-dev_6.3-1_amd64.deb ...
+Unpacking libreadline-dev:amd64 (6.3-1) ...
+Selecting previously unselected package sbuild-build-depends-rplay-dummy.
+Preparing to unpack .../sbuild-build-depends-rplay-dummy.deb ...
+Unpacking sbuild-build-depends-rplay-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.38.2-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libgsm1:amd64 (1.0.13-4) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libgsm1-dev:amd64 (1.0.13-4) ...
+Setting up libreadline6-dev:amd64 (6.3-1) ...
+Setting up libreadline-dev:amd64 (6.3-1) ...
+Setting up sbuild-build-depends-rplay-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.12-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-4 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.5-1
+Package versions: apt_0.9.15.5+b1 base-files_7.2 base-passwd_3.5.32 bash_4.3-2 binfmt-support_2.1.3-2 binutils_2.24-4 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.6 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-7 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_0.9.15.5+b1 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.4-1 libaudit1_1:2.3.4-1 libblkid1_2.20.1-5.6 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdebconfclient0_0.188 libdpkg-perl_1.17.6 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.0.13-12 libffi6_3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgdbm3_1.8.3-12 libglib2.0-0_2.38.2-5 libgmp10_2:5.1.3+dfsg-1 libgomp1_4.8.2-16 libgpm2_1.20.4-6.1 libgsm1_1.0.13-4 libgsm1-dev_1.0.13-4 libisl10_0.12.2-1 libitm1_4.8.2-16 libjsoncpp0_0.6.0~rc2-3 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.6 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpcre3_1:8.31-2 libpipeline1_1.2.6-2 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-7 libpython2.7-stdlib_2.7.6-7 libquadmath0_4.8.2-16 libreadline-dev_6.3-1 libreadline6_6.3-1 libreadline6-dev_6.3-1 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libsqlite3-0_3.8.3.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtsan0_4.8.2-16 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.6 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.5-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.6 multiarch-support_2.18-4 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1 patch_2.7.1-4 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-7 python2.7-minimal_2.7.6-7 readline-common_6.3-1 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-rplay-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-1 tzdata_2014a-1 util-linux_2.20.1-5.6 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (rplay_3.3.2-14.dsc)
+dpkg-source: info: extracting rplay in rplay-3.3.2
+dpkg-source: info: unpacking rplay_3.3.2.orig.tar.gz
+dpkg-source: info: unpacking rplay_3.3.2-14.debian.tar.xz
+dpkg-source: info: applying 01_previous_changes.patch
+dpkg-source: info: applying 10_fix_manpages.patch
+dpkg-source: info: applying 20_soname.patch
+dpkg-source: info: applying 30_contrib.patch
+dpkg-source: info: applying 40_clang_FTBFS_Wreturn-type.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-bcbfeb54-1933-4695-b0dd-efedf0656307
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package rplay
+dpkg-buildpackage: source version 3.3.2-14
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Thorsten Alteholz <debian@alteholz.de>
+ dpkg-source --before-build rplay-3.3.2
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp
+[ ! -f Makefile ] || /usr/bin/make distclean
+rm -f contrib/mailsound/mailsound{,.o} \
+		gsm/Makefile rx/{config.*,Makefile}
+dh_clean
+ dpkg-source -b rplay-3.3.2
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building rplay using existing ./rplay_3.3.2.orig.tar.gz
+dpkg-source: info: building rplay in rplay_3.3.2-14.debian.tar.xz
+dpkg-source: info: building rplay in rplay_3.3.2-14.dsc
+ debian/rules build
+dh_testdir
+./configure --prefix=/usr --sysconfdir=/etc/rplay --without-x \
+		--enable-rplayd-user=nobody --enable-rplayd-group=audio
+creating cache ./config.cache
+configuring rplay version 3.3.2
+checking for gcc... gcc
+checking whether the C compiler (gcc -g ) works... yes
+checking whether the C compiler (gcc -g ) is a cross-compiler... no
+checking whether we are using GNU C... yes
+checking whether gcc accepts -g... yes
+checking for POSIXized ISC... no
+checking how to run the C preprocessor... gcc -E
+checking for a BSD compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for ranlib... ranlib
+checking for etags... no
+checking for makedepend... no
+checking for makeinfo... no
+checking for texi2dvi... no
+checking for texi2html... no
+checking for dvips... no
+checking for dirent.h that defines DIR... yes
+checking for opendir in -ldir... no
+checking for ANSI C header files... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for fcntl.h... yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/time.h... yes
+checking for stdlib.h... yes
+checking for unistd.h... yes
+checking for memory.h... yes
+checking for string.h... yes
+checking for strings.h... yes
+checking for utime.h... yes
+checking for limits.h... yes
+checking for gsm.h... yes
+checking for gsm/gsm.h... yes
+checking for regex.h... yes
+checking for rxposix.h... no
+checking for rx/rxposix.h... no
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for working const... yes
+checking for size_t... yes
+checking for unistd.h... (cached) yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for 8-bit clean memcmp... yes
+checking for vprintf... yes
+checking return type of signal handlers... void
+checking for getcwd... yes
+checking for gethostname... yes
+checking for mkdir... yes
+checking for re_comp... yes
+checking for regcomp... yes
+checking for select... yes
+checking for snprintf... yes
+checking for socket... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strstr... yes
+checking for fstat... yes
+checking for fchmod... yes
+checking for fchown... yes
+checking for utime... yes
+checking for utimes... yes
+checking for memmove... yes
+checking for sigset... yes
+checking for vsnprintf... yes
+checking for waitpid... yes
+checking for random... yes
+checking for srandom... yes
+checking for socket in -lsocket... no
+checking for t_accept in -lnsl... no
+checking for readline in -lreadline... yes
+checking for gsm_decode in -lgsm... yes
+checking for regcomp... (cached) yes
+checking for sun... no
+checking for linux... yes
+using oss configuration
+updating cache ./config.cache
+creating ./config.status
+creating Makefile.config
+creating Makefile
+creating include/Makefile
+creating lib/Makefile
+creating adpcm/Makefile
+creating gsm/Makefile
+creating librplay/Makefile
+creating rplayd/Makefile
+creating rplay/Makefile
+creating rptp/Makefile
+creating doc/Makefile
+creating devrplay/Makefile
+creating include/config.h
+linking ./rplayd/audio/audio_oss.c to rplayd/audio.c
+linking ./rplayd/audio/audio_oss.h to rplayd/audio.h
+configuring in rx
+running /bin/sh ./configure  --prefix=/usr --sysconfdir=/etc/rplay --without-x --enable-rplayd-user=nobody --enable-rplayd-group=audio --cache-file=.././config.cache --srcdir=.
+loading cache .././config.cache
+checking for gcc... (cached) gcc
+checking whether we are using GNU C... (cached) yes
+checking whether gcc accepts -g... yes
+checking how to run the C preprocessor... (cached) gcc -E
+checking for ranlib... (cached) ranlib
+checking for a BSD compatible install... (cached) /usr/bin/install -c
+checking for working const... (cached) yes
+checking whether cross-compiling... no
+checking for ANSI C header files... (cached) yes
+updating cache .././config.cache
+creating ./config.status
+creating Makefile
+/usr/bin/make CFLAGS="-O2 -D_REENTRANT"
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make all in include...
+make[2]: Entering directory `/«PKGBUILDDIR»/include'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/include'
+make all in lib...
+make[2]: Entering directory `/«PKGBUILDDIR»/lib'
+gcc -c  -I. -I../include -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT getopt.c
+gcc -c  -I. -I../include -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT getopt1.c
+gcc -c  -I. -I../include -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT hash.c
+gcc -c  -I. -I../include -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT strdup.c
+gcc -c  -I. -I../include -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT tilde.c
+tilde.c:243:26: warning: implicit declaration of function 'getuid' is invalid in C99 [-Wimplicit-function-declaration]
+              entry = getpwuid (getuid ());
+                                ^
+1 warning generated.
+gcc -c  -I. -I../include -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT xmalloc.c
+ar rcv librp.a getopt.o getopt1.o hash.o strdup.o tilde.o xmalloc.o
+a - getopt.o
+a - getopt1.o
+a - hash.o
+a - strdup.o
+a - tilde.o
+a - xmalloc.o
+ranlib librp.a
+make[2]: Leaving directory `/«PKGBUILDDIR»/lib'
+make all in adpcm...
+make[2]: Entering directory `/«PKGBUILDDIR»/adpcm'
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT g711.c
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT g721.c
+g721.c:93:8: warning: implicit declaration of function 'alaw2linear' is invalid in C99 [-Wimplicit-function-declaration]
+                sl = alaw2linear(sl) >> 2;
+                     ^
+g721.c:96:8: warning: implicit declaration of function 'ulaw2linear' is invalid in C99 [-Wimplicit-function-declaration]
+                sl = ulaw2linear(sl) >> 2;
+                     ^
+g721.c:105:9: warning: implicit declaration of function 'predictor_zero' is invalid in C99 [-Wimplicit-function-declaration]
+        sezi = predictor_zero(state_ptr);
+               ^
+g721.c:107:15: warning: implicit declaration of function 'predictor_pole' is invalid in C99 [-Wimplicit-function-declaration]
+        se = (sezi + predictor_pole(state_ptr)) >> 1;   /* estimated signal */
+                     ^
+g721.c:112:6: warning: implicit declaration of function 'step_size' is invalid in C99 [-Wimplicit-function-declaration]
+        y = step_size(state_ptr);               /* quantizer step size */
+            ^
+g721.c:113:6: warning: implicit declaration of function 'quantize' is invalid in C99 [-Wimplicit-function-declaration]
+        i = quantize(d, y, qtab_721, 7);        /* i = ADPCM code */
+            ^
+g721.c:115:7: warning: implicit declaration of function 'reconstruct' is invalid in C99 [-Wimplicit-function-declaration]
+        dq = reconstruct(i & 8, _dqlntab[i], y);        /* quantized est diff */
+             ^
+g721.c:121:2: warning: implicit declaration of function 'update' is invalid in C99 [-Wimplicit-function-declaration]
+        update(4, y, _witab[i] << 5, _fitab[i], dq, sr, dqsez, state_ptr);
+        ^
+g721.c:165:11: warning: implicit declaration of function 'tandem_adjust_alaw' is invalid in C99 [-Wimplicit-function-declaration]
+                return (tandem_adjust_alaw(sr, se, y, i, 8, qtab_721));
+                        ^
+g721.c:167:11: warning: implicit declaration of function 'tandem_adjust_ulaw' is invalid in C99 [-Wimplicit-function-declaration]
+                return (tandem_adjust_ulaw(sr, se, y, i, 8, qtab_721));
+                        ^
+10 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT g723_24.c
+g723_24.c:81:8: warning: implicit declaration of function 'alaw2linear' is invalid in C99 [-Wimplicit-function-declaration]
+                sl = alaw2linear(sl) >> 2;
+                     ^
+g723_24.c:84:8: warning: implicit declaration of function 'ulaw2linear' is invalid in C99 [-Wimplicit-function-declaration]
+                sl = ulaw2linear(sl) >> 2;
+                     ^
+g723_24.c:93:9: warning: implicit declaration of function 'predictor_zero' is invalid in C99 [-Wimplicit-function-declaration]
+        sezi = predictor_zero(state_ptr);
+               ^
+g723_24.c:95:15: warning: implicit declaration of function 'predictor_pole' is invalid in C99 [-Wimplicit-function-declaration]
+        sei = sezi + predictor_pole(state_ptr);
+                     ^
+g723_24.c:101:6: warning: implicit declaration of function 'step_size' is invalid in C99 [-Wimplicit-function-declaration]
+        y = step_size(state_ptr);       /* quantizer step size */
+            ^
+g723_24.c:102:6: warning: implicit declaration of function 'quantize' is invalid in C99 [-Wimplicit-function-declaration]
+        i = quantize(d, y, qtab_723_24, 3);     /* i = ADPCM code */
+            ^
+g723_24.c:103:7: warning: implicit declaration of function 'reconstruct' is invalid in C99 [-Wimplicit-function-declaration]
+        dq = reconstruct(i & 4, _dqlntab[i], y); /* quantized diff. */
+             ^
+g723_24.c:109:2: warning: implicit declaration of function 'update' is invalid in C99 [-Wimplicit-function-declaration]
+        update(3, y, _witab[i], _fitab[i], dq, sr, dqsez, state_ptr);
+        ^
+g723_24.c:150:11: warning: implicit declaration of function 'tandem_adjust_alaw' is invalid in C99 [-Wimplicit-function-declaration]
+                return (tandem_adjust_alaw(sr, se, y, i, 4, qtab_723_24));
+                        ^
+g723_24.c:152:11: warning: implicit declaration of function 'tandem_adjust_ulaw' is invalid in C99 [-Wimplicit-function-declaration]
+                return (tandem_adjust_ulaw(sr, se, y, i, 4, qtab_723_24));
+                        ^
+10 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT g723_40.c
+g723_40.c:100:8: warning: implicit declaration of function 'alaw2linear' is invalid in C99 [-Wimplicit-function-declaration]
+                sl = alaw2linear(sl) >> 2;
+                     ^
+g723_40.c:103:8: warning: implicit declaration of function 'ulaw2linear' is invalid in C99 [-Wimplicit-function-declaration]
+                sl = ulaw2linear(sl) >> 2;
+                     ^
+g723_40.c:112:9: warning: implicit declaration of function 'predictor_zero' is invalid in C99 [-Wimplicit-function-declaration]
+        sezi = predictor_zero(state_ptr);
+               ^
+g723_40.c:114:15: warning: implicit declaration of function 'predictor_pole' is invalid in C99 [-Wimplicit-function-declaration]
+        sei = sezi + predictor_pole(state_ptr);
+                     ^
+g723_40.c:120:6: warning: implicit declaration of function 'step_size' is invalid in C99 [-Wimplicit-function-declaration]
+        y = step_size(state_ptr);       /* adaptive quantizer step size */
+            ^
+g723_40.c:121:6: warning: implicit declaration of function 'quantize' is invalid in C99 [-Wimplicit-function-declaration]
+        i = quantize(d, y, qtab_723_40, 15);    /* i = ADPCM code */
+            ^
+g723_40.c:123:7: warning: implicit declaration of function 'reconstruct' is invalid in C99 [-Wimplicit-function-declaration]
+        dq = reconstruct(i & 0x10, _dqlntab[i], y);     /* quantized diff */
+             ^
+g723_40.c:129:2: warning: implicit declaration of function 'update' is invalid in C99 [-Wimplicit-function-declaration]
+        update(5, y, _witab[i], _fitab[i], dq, sr, dqsez, state_ptr);
+        ^
+g723_40.c:170:11: warning: implicit declaration of function 'tandem_adjust_alaw' is invalid in C99 [-Wimplicit-function-declaration]
+                return (tandem_adjust_alaw(sr, se, y, i, 0x10, qtab_723_40));
+                        ^
+g723_40.c:172:11: warning: implicit declaration of function 'tandem_adjust_ulaw' is invalid in C99 [-Wimplicit-function-declaration]
+                return (tandem_adjust_ulaw(sr, se, y, i, 0x10, qtab_723_40));
+                        ^
+10 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT g72x.c
+g72x.c:205:8: warning: implicitly declaring library function 'abs' with type 'int (int)'
+        dqm = abs(d);
+              ^
+g72x.c:205:8: note: please include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+g72x.c:374:4: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                        else
+                        ^
+g72x.c:492:7: warning: implicit declaration of function 'linear2alaw' is invalid in C99 [-Wimplicit-function-declaration]
+        sp = linear2alaw((sr >> 1) << 3);       /* short to A-law compression */
+             ^
+g72x.c:493:8: warning: implicit declaration of function 'alaw2linear' is invalid in C99 [-Wimplicit-function-declaration]
+        dx = (alaw2linear(sp) >> 2) - se;       /* 16-bit prediction error */
+              ^
+g72x.c:541:7: warning: implicit declaration of function 'linear2ulaw' is invalid in C99 [-Wimplicit-function-declaration]
+        sp = linear2ulaw(sr << 2);      /* short to u-law compression */
+             ^
+g72x.c:542:8: warning: implicit declaration of function 'ulaw2linear' is invalid in C99 [-Wimplicit-function-declaration]
+        dx = (ulaw2linear(sp) >> 2) - se;       /* 16-bit prediction error */
+              ^
+6 warnings generated.
+ar rcv libadpcm.a g711.o g721.o g723_24.o g723_40.o g72x.o
+a - g711.o
+a - g721.o
+a - g723_24.o
+a - g723_40.o
+a - g72x.o
+ranlib libadpcm.a
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT decode.c
+decode.c:40:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(argc, argv)  
+^~~~
+decode.c:53:2: warning: implicit declaration of function 'g72x_init_state' is invalid in C99 [-Wimplicit-function-declaration]
+        g72x_init_state(&state);
+        ^
+decode.c:96:4: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+                        exit(1);
+                        ^
+decode.c:96:4: note: please include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+3 warnings generated.
+gcc -o g72xdecode decode.o  -L. -ladpcm 
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT encode.c
+encode.c:37:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(argc, argv)  
+^~~~
+encode.c:52:2: warning: implicit declaration of function 'g72x_init_state' is invalid in C99 [-Wimplicit-function-declaration]
+        g72x_init_state(&state);
+        ^
+encode.c:101:4: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+                        exit(1);
+                        ^
+encode.c:101:4: note: please include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+3 warnings generated.
+gcc -o g72xencode encode.o  -L. -ladpcm 
+make[2]: Leaving directory `/«PKGBUILDDIR»/adpcm'
+make all in librplay...
+make[2]: Entering directory `/«PKGBUILDDIR»/librplay'
+gcc -c  -I. -I../include -I./../include -DHAVE_CONFIG_H -O2 -D_REENTRANT rplay.c
+rplay.c:747:9: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+        seed = time(0);
+               ^
+1 warning generated.
+gcc -c  -I. -I../include -I./../include -DHAVE_CONFIG_H -O2 -D_REENTRANT rptp.c
+rptp.c:577:10: warning: implicit declaration of function 'isspace' is invalid in C99 [-Wimplicit-function-declaration]
+            if (isspace(*p))
+                ^
+1 warning generated.
+gcc -c  -I. -I../include -I./../include -DHAVE_CONFIG_H -O2 -D_REENTRANT async.c
+async.c:282:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+async.c:579:9: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+                if (p = memchr(ptr->current, '\r', ptr->length))
+                    ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+async.c:579:9: note: place parentheses around the assignment to silence this warning
+                if (p = memchr(ptr->current, '\r', ptr->length))
+                      ^
+                    (                                          )
+async.c:579:9: note: use '==' to turn this assignment into an equality comparison
+                if (p = memchr(ptr->current, '\r', ptr->length))
+                      ^
+                      ==
+2 warnings generated.
+ar rcv librplay.a rplay.o rptp.o async.o
+a - rplay.o
+a - rptp.o
+a - async.o
+ranlib librplay.a
+gcc -c -fPIC  -I. -I../include -I./../include -DHAVE_CONFIG_H -O2 -D_REENTRANT -o rplay.lo rplay.c
+rplay.c:747:9: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+        seed = time(0);
+               ^
+1 warning generated.
+gcc -c -fPIC  -I. -I../include -I./../include -DHAVE_CONFIG_H -O2 -D_REENTRANT -o rptp.lo rptp.c
+rptp.c:577:10: warning: implicit declaration of function 'isspace' is invalid in C99 [-Wimplicit-function-declaration]
+            if (isspace(*p))
+                ^
+1 warning generated.
+gcc -c -fPIC  -I. -I../include -I./../include -DHAVE_CONFIG_H -O2 -D_REENTRANT -o async.lo async.c
+async.c:282:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+async.c:579:9: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+                if (p = memchr(ptr->current, '\r', ptr->length))
+                    ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+async.c:579:9: note: place parentheses around the assignment to silence this warning
+                if (p = memchr(ptr->current, '\r', ptr->length))
+                      ^
+                    (                                          )
+async.c:579:9: note: use '==' to turn this assignment into an equality comparison
+                if (p = memchr(ptr->current, '\r', ptr->length))
+                      ^
+                      ==
+2 warnings generated.
+gcc -o librplay.so.3.3.2 rplay.lo rptp.lo async.lo  -shared -Xlinker -soname -Xlinker librplay.so.3 
+ln -fs librplay.so.3.3.2 librplay.so.3
+ln -fs librplay.so.3.3.2 librplay.so
+make[2]: Leaving directory `/«PKGBUILDDIR»/librplay'
+make all in rplayd...
+make[2]: Entering directory `/«PKGBUILDDIR»/rplayd'
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT audio.c
+audio.c:96:9: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)'
+    if (strcmp(rplay_audio_device, "/dev/audio") == 0)
+        ^
+audio.c:96:9: note: please include the header <string.h> or explicitly provide a declaration for 'strcmp'
+audio.c:102:2: warning: implicit declaration of function 'rplay_audio_set_port' is invalid in C99 [-Wimplicit-function-declaration]
+        rplay_audio_set_port();
+        ^
+audio.c:234:5: warning: implicit declaration of function 'rplay_audio_setfragsize' is invalid in C99 [-Wimplicit-function-declaration]
+    rplay_audio_setfragsize((0x7fff << 16) | i);
+    ^
+audio.c:292:12: warning: implicit declaration of function 'write' is invalid in C99 [-Wimplicit-function-declaration]
+    return write(rplay_audio_fd, buf, nbytes);
+           ^
+audio.c:305:2: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+        close(rplay_audio_fd);
+        ^
+audio.c:321:6: warning: implicit declaration of function 'rplay_audio_mixer_open' is invalid in C99 [-Wimplicit-function-declaration]
+        if (rplay_audio_mixer_open() < 0)
+            ^
+audio.c:390:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+audio.c:621:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+8 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT buffer.c
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT cache.c
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT cdrom.c
+cdrom.c:471:9: warning: implicit declaration of function 'ioctl' is invalid in C99 [-Wimplicit-function-declaration]
+    if (ioctl(info->fd, CDROMREADTOCHDR, &hdr) < 0)
+        ^
+cdrom.c:560:15: warning: implicit declaration of function 'open' is invalid in C99 [-Wimplicit-function-declaration]
+    info.fd = open(info.device, 0);
+              ^
+cdrom.c:600:16: warning: assigning to '__u8 *' (aka 'unsigned char *') from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            audio.buf = info.buffer;
+                      ^ ~~~~~~~~~~~
+cdrom.c:613:6: warning: implicit declaration of function 'write' is invalid in C99 [-Wimplicit-function-declaration]
+        if (write(output_fd, info.buffer, CD_FRAMESIZE_RAW * frames) < 0)
+            ^
+cdrom.c:622:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(info.fd);
+    ^
+5 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT command.c
+command.c:302:66: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+            SNPRINTF(SIZE(b->buf + b->nbytes, BUFFER_SIZE - b->nbytes), fmt);
+                                                                        ^~~
+command.c:909:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        while (name = rptp_parse(0, 0))
+               ~~~~~^~~~~~~~~~~~~~~~~~
+command.c:909:14: note: place parentheses around the assignment to silence this warning
+        while (name = rptp_parse(0, 0))
+                    ^
+               (                      )
+command.c:909:14: note: use '==' to turn this assignment into an equality comparison
+        while (name = rptp_parse(0, 0))
+                    ^
+                    ==
+command.c:1165:36: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+                SNPRINTF(SIZE(buf, sizeof(buf)), sound_name);
+                                                 ^~~~~~~~~~
+command.c:1457:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    while (p = strtok(first ? buf : NULL, ",| "))
+           ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+command.c:1457:14: note: place parentheses around the assignment to silence this warning
+    while (p = strtok(first ? buf : NULL, ",| "))
+             ^
+           (                                    )
+command.c:1457:14: note: use '==' to turn this assignment into an equality comparison
+    while (p = strtok(first ? buf : NULL, ",| "))
+             ^
+             ==
+command.c:1634:69: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+            SNPRINTF(SIZE(command_buffer + n, sizeof(command_buffer) - n), argv[i]);
+                                                                           ^~~~~~~
+command.c:1685:43: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        SNPRINTF(SIZE(buf + n, sizeof(buf) - n), argv[i]);
+                                                 ^~~~~~~
+command.c:1875:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    while (name = rptp_parse(0, 0))
+           ~~~~~^~~~~~~~~~~~~~~~~~
+command.c:1875:17: note: place parentheses around the assignment to silence this warning
+    while (name = rptp_parse(0, 0))
+                ^
+           (                      )
+command.c:1875:17: note: use '==' to turn this assignment into an equality comparison
+    while (name = rptp_parse(0, 0))
+                ^
+                ==
+command.c:2364:2: warning: implicit declaration of function 'monitor_alloc' is invalid in C99 [-Wimplicit-function-declaration]
+        monitor_alloc();
+        ^
+8 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT connection.c
+connection.c:90:15: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+    c->time = time(0);
+              ^
+connection.c:307:50: warning: passing 'int *' to parameter of type 'socklen_t *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    fd = accept(sock_fd, (struct sockaddr *) &f, &flen);
+                                                 ^~~~~
+/usr/include/x86_64-linux-gnu/sys/socket.h:244:28: note: passing argument to parameter '__addr_len' here
+                   socklen_t *__restrict __addr_len);
+                                         ^
+connection.c:1367:9: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                             sp->sample_rate,
+                             ^~~~~~~~~~~~~~~
+connection.c:1472:9: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                             sp->sample_rate,
+                             ^~~~~~~~~~~~~~~
+connection.c:1744:6: warning: implicit declaration of function 'isascii' is invalid in C99 [-Wimplicit-function-declaration]
+                && isascii(c->event->start[0]))
+                   ^
+5 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT flange.c
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT helper.c
+helper.c:70:24: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+    helper_read_time = time(0);
+                       ^
+1 warning generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT host.c
+host.c:82:22: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+    host_read_time = time(0);
+                     ^
+1 warning generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT misc.c
+misc.c:532:27: warning: the value of the size argument in 'strncat' is too large, might lead to a buffer overflow [-Wstrncat-size]
+        strncat(string, "none,", sizeof(string) - strlen(string));
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+misc.c:532:27: note: change the argument to be the free space in the destination buffer minus the terminating null byte
+        strncat(string, "none,", sizeof(string) - strlen(string));
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                 sizeof(string) - strlen(string) - 1
+misc.c:536:30: warning: the value of the size argument in 'strncat' is too large, might lead to a buffer overflow [-Wstrncat-size]
+        strncat(string, "speaker,", sizeof(string) - strlen(string));
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+misc.c:536:30: note: change the argument to be the free space in the destination buffer minus the terminating null byte
+        strncat(string, "speaker,", sizeof(string) - strlen(string));
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    sizeof(string) - strlen(string) - 1
+misc.c:540:32: warning: the value of the size argument in 'strncat' is too large, might lead to a buffer overflow [-Wstrncat-size]
+        strncat(string, "headphone,", sizeof(string) - strlen(string));
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+misc.c:540:32: note: change the argument to be the free space in the destination buffer minus the terminating null byte
+        strncat(string, "headphone,", sizeof(string) - strlen(string));
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                      sizeof(string) - strlen(string) - 1
+misc.c:544:30: warning: the value of the size argument in 'strncat' is too large, might lead to a buffer overflow [-Wstrncat-size]
+        strncat(string, "lineout,", sizeof(string) - strlen(string));
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+misc.c:544:30: note: change the argument to be the free space in the destination buffer minus the terminating null byte
+        strncat(string, "lineout,", sizeof(string) - strlen(string));
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    sizeof(string) - strlen(string) - 1
+4 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT native.c
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT rplayd.c
+rplayd.c:320:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(int argc, char **argv)
+^~~~
+rplayd.c:332:17: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+    starttime = time(0);
+                ^
+rplayd.c:543:11: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        while (p = (char *) strtok(first ? buf : NULL, " \t\n"))
+               ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rplayd.c:543:11: note: place parentheses around the assignment to silence this warning
+        while (p = (char *) strtok(first ? buf : NULL, " \t\n"))
+                 ^
+               (                                               )
+rplayd.c:543:11: note: use '==' to turn this assignment into an equality comparison
+        while (p = (char *) strtok(first ? buf : NULL, " \t\n"))
+                 ^
+                 ==
+rplayd.c:942:4: warning: implicit declaration of function 'connection_monitor_continue' is invalid in C99 [-Wimplicit-function-declaration]
+                        connection_monitor_continue();
+                        ^
+rplayd.c:1083:8: warning: implicit declaration of function 'monitor_cleanup' is invalid in C99 [-Wimplicit-function-declaration]
+                            monitor_cleanup();
+                            ^
+rplayd.c:1399:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+monitor_alloc()
+^~~~~~~~~~~~~
+rplayd.c:1419:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+rplayd.c:1421:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+monitor_cleanup()
+^~~~~~~~~~~~~~~
+rplayd.c:1429:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+rplayd.c:1525:74: warning: passing 'int *' to parameter of type 'socklen_t *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        n = recvfrom(fd, recv_buf, sizeof(recv_buf), 0, (struct sockaddr *) &f, &flen);
+                                                                                ^~~~~
+/usr/include/x86_64-linux-gnu/sys/socket.h:176:27: note: passing argument to parameter '__addr_len' here
+                         socklen_t *__restrict __addr_len);
+                                               ^
+rplayd.c:2029:5: warning: implicit declaration of function 'helper_reread' is invalid in C99 [-Wimplicit-function-declaration]
+    helper_reread(helpers_file);
+    ^
+rplayd.c:2050:5: warning: implicit declaration of function 'sigset' is invalid in C99 [-Wimplicit-function-declaration]
+    sigset(SIGPIPE, SIG_IGN);
+    ^
+12 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT server.c
+server.c:66:24: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+    server_read_time = time(0);
+                       ^
+server.c:163:62: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        SNPRINTF(SIZE(b->buf + b->nbytes, BUFFER_SIZE - b->nbytes), line);
+                                                                    ^~~~
+2 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT sound.c
+sound.c:132:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    while (p = (char *) strtok(first ? dirs : 0, ":"))
+           ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sound.c:132:14: note: place parentheses around the assignment to silence this warning
+    while (p = (char *) strtok(first ? dirs : 0, ":"))
+             ^
+           (                                         )
+sound.c:132:14: note: use '==' to turn this assignment into an equality comparison
+    while (p = (char *) strtok(first ? dirs : 0, ":"))
+             ^
+             ==
+sound.c:244:23: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+    sound_read_time = time(0);
+                      ^
+sound.c:303:5: warning: implicit declaration of function 'sound_free' is invalid in C99 [-Wimplicit-function-declaration]
+    sound_free(s);
+    ^
+sound.c:1267:3: warning: expression result unused [-Wunused-value]
+                *p++;
+                ^~~~
+sound.c:1917:2: warning: implicit declaration of function 'g72x_init_state' is invalid in C99 [-Wimplicit-function-declaration]
+        g72x_init_state(&si->adpcm_state[0]);
+        ^
+sound.c:2009:15: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+            while (p = (char *) strtok(first ? helper->program : NULL, " \t\n"))
+                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sound.c:2009:15: note: place parentheses around the assignment to silence this warning
+            while (p = (char *) strtok(first ? helper->program : NULL, " \t\n"))
+                     ^
+                   (                                                           )
+sound.c:2009:15: note: use '==' to turn this assignment into an equality comparison
+            while (p = (char *) strtok(first ? helper->program : NULL, " \t\n"))
+                     ^
+                     ==
+sound.c:2192:6: warning: implicit declaration of function 'sigset' is invalid in C99 [-Wimplicit-function-declaration]
+            sigset(SIGHUP, SIG_DFL);
+            ^
+7 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT spool.c
+spool.c:507:4: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                 sp->sample_rate,
+                 ^~~~~~~~~~~~~~~
+spool.c:919:11: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+    now = time(0);
+          ^
+spool.c:1255:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+3 warnings generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT timer.c
+timer.c:44:17: warning: implicit declaration of function 'rplay_audio_getospace_bytes' is invalid in C99 [-Wimplicit-function-declaration]
+    int bytes = rplay_audio_getospace_bytes();
+                ^
+1 warning generated.
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT ulaw.c
+gcc -c  -I. -I../include -I. -I./../include -I./../lib -I./../adpcm -DHAVE_CONFIG_H -DRPLAY_CONF=\"/etc/rplay/rplay.conf\" -DRPLAY_HOSTS=\"/etc/rplay/rplay.hosts\" -DRPLAY_SERVERS=\"/etc/rplay/rplay.servers\" -DRPLAY_HELPERS=\"/etc/rplay/rplay.helpers\" -DRPLAY_CACHE=\"/tmp/.rplay-cache\" -DRPLAY_LOG=\"/tmp/rplay.log\" -DRPLAYDRC=\"\~/.rplaydrc\" -O2 -D_REENTRANT xhash.c
+gcc -o rplayd audio.o buffer.o cache.o cdrom.o command.o connection.o flange.o helper.o host.o misc.o native.o rplayd.o server.o sound.o spool.o timer.o ulaw.o xhash.o  -L../librplay -lrplay -L../lib -lrp -L../adpcm -ladpcm -lgsm    -lm
+make[2]: Leaving directory `/«PKGBUILDDIR»/rplayd'
+make all in rplay...
+make[2]: Entering directory `/«PKGBUILDDIR»/rplay'
+gcc -c  -I. -I../include -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT rplay.c
+rplay.c:108:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(int argc, char **argv)
+^~~~
+rplay.c:679:3: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+                (int) rplay_get(rp, RPLAY_SOUND, index));
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rplay.c:791:3: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+                (int) rplay_get(rp, RPLAY_SOUND, index));
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rplay.c:804:3: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+                (int) rplay_get(rp, RPLAY_SOUND, index));
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+gcc -o rplay rplay.o  -L../librplay -lrplay -L../lib -lrp  
+make[2]: Leaving directory `/«PKGBUILDDIR»/rplay'
+make all in rptp...
+make[2]: Entering directory `/«PKGBUILDDIR»/rptp'
+gcc -c  -I. -I../include -I./../include -I./../lib -DHAVE_CONFIG_H -O2 -D_REENTRANT rptp.c
+rptp.c:153:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(int argc, char **argv)
+^~~~
+rptp.c:702:2: warning: implicit declaration of function 'write' is invalid in C99 [-Wimplicit-function-declaration]
+        write(2, line, strlen(line));
+        ^
+rptp.c:852:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        while (name = rptp_parse(first ? response : 0, 0))
+               ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rptp.c:852:14: note: place parentheses around the assignment to silence this warning
+        while (name = rptp_parse(first ? response : 0, 0))
+                    ^
+               (                                         )
+rptp.c:852:14: note: use '==' to turn this assignment into an equality comparison
+        while (name = rptp_parse(first ? response : 0, 0))
+                    ^
+                    ==
+rptp.c:1063:17: warning: implicit declaration of function 'read' is invalid in C99 [-Wimplicit-function-declaration]
+    while ((n = read(rptp_fd, buf, sizeof(buf))) > 0)
+                ^
+rptp.c:1068:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(rptp_fd);
+    ^
+5 warnings generated.
+gcc -o rptp rptp.o  -L../librplay -lrplay -L../lib -lrp  -lreadline 
+make[2]: Leaving directory `/«PKGBUILDDIR»/rptp'
+make all in doc...
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
+make all in devrplay...
+make[2]: Entering directory `/«PKGBUILDDIR»/devrplay'
+gcc -c  -fPIC -I. -I../include -I./../include -DHAVE_CONFIG_H -O2 -D_REENTRANT devrplay.c
+devrplay.c:175:10: warning: overflow converting case value to switch condition type (2148552716 to 18446744071563137036) [-Wswitch]
+    case SNDCTL_DSP_GETOSPACE:
+         ^
+/usr/include/linux/soundcard.h:577:31: note: expanded from macro 'SNDCTL_DSP_GETOSPACE'
+#define SNDCTL_DSP_GETOSPACE            _SIOR ('P',12, audio_buf_info)
+                                        ^
+/usr/include/linux/soundcard.h:95:16: note: expanded from macro '_SIOR'
+#define _SIOR           _IOR
+                        ^
+/usr/include/asm-generic/ioctl.h:75:28: note: expanded from macro '_IOR'
+#define _IOR(type,nr,size)      _IOC(_IOC_READ,(type),(nr),(_IOC_TYPECHECK(size)))
+                                ^
+/usr/include/asm-generic/ioctl.h:66:2: note: expanded from macro '_IOC'
+        (((dir)  << _IOC_DIRSHIFT) | \
+        ^
+devrplay.c:171:10: warning: overflow converting case value to switch condition type (2147766287 to 18446744071562350607) [-Wswitch]
+    case SNDCTL_DSP_GETCAPS:
+         ^
+/usr/include/linux/soundcard.h:580:29: note: expanded from macro 'SNDCTL_DSP_GETCAPS'
+#define SNDCTL_DSP_GETCAPS              _SIOR ('P',15, int)
+                                        ^
+/usr/include/linux/soundcard.h:95:16: note: expanded from macro '_SIOR'
+#define _SIOR           _IOR
+                        ^
+/usr/include/asm-generic/ioctl.h:75:28: note: expanded from macro '_IOR'
+#define _IOR(type,nr,size)      _IOC(_IOC_READ,(type),(nr),(_IOC_TYPECHECK(size)))
+                                ^
+/usr/include/asm-generic/ioctl.h:66:2: note: expanded from macro '_IOC'
+        (((dir)  << _IOC_DIRSHIFT) | \
+        ^
+devrplay.c:167:10: warning: overflow converting case value to switch condition type (2147766283 to 18446744071562350603) [-Wswitch]
+    case SNDCTL_DSP_GETFMTS:
+         ^
+/usr/include/linux/soundcard.h:550:29: note: expanded from macro 'SNDCTL_DSP_GETFMTS'
+#define SNDCTL_DSP_GETFMTS              _SIOR ('P',11, int) /* Returns a mask */
+                                        ^
+/usr/include/linux/soundcard.h:95:16: note: expanded from macro '_SIOR'
+#define _SIOR           _IOR
+                        ^
+/usr/include/asm-generic/ioctl.h:75:28: note: expanded from macro '_IOR'
+#define _IOR(type,nr,size)      _IOC(_IOC_READ,(type),(nr),(_IOC_TYPECHECK(size)))
+                                ^
+/usr/include/asm-generic/ioctl.h:66:2: note: expanded from macro '_IOC'
+        (((dir)  << _IOC_DIRSHIFT) | \
+        ^
+devrplay.c:163:10: warning: overflow converting case value to switch condition type (3221508100 to 18446744072636092420) [-Wswitch]
+    case SNDCTL_DSP_GETBLKSIZE:
+         ^
+/usr/include/linux/soundcard.h:540:32: note: expanded from macro 'SNDCTL_DSP_GETBLKSIZE'
+#define SNDCTL_DSP_GETBLKSIZE           _SIOWR('P', 4, int)
+                                        ^
+/usr/include/linux/soundcard.h:97:17: note: expanded from macro '_SIOWR'
+#define _SIOWR          _IOWR
+                        ^
+/usr/include/asm-generic/ioctl.h:77:29: note: expanded from macro '_IOWR'
+#define _IOWR(type,nr,size)     _IOC(_IOC_READ|_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
+                                ^
+/usr/include/asm-generic/ioctl.h:66:2: note: expanded from macro '_IOC'
+        (((dir)  << _IOC_DIRSHIFT) | \
+        ^
+devrplay.c:159:10: warning: overflow converting case value to switch condition type (3221508102 to 18446744072636092422) [-Wswitch]
+    case SNDCTL_DSP_CHANNELS:
+         ^
+/usr/include/linux/soundcard.h:542:30: note: expanded from macro 'SNDCTL_DSP_CHANNELS'
+#define SNDCTL_DSP_CHANNELS             _SIOWR('P', 6, int)
+                                        ^
+/usr/include/linux/soundcard.h:97:17: note: expanded from macro '_SIOWR'
+#define _SIOWR          _IOWR
+                        ^
+/usr/include/asm-generic/ioctl.h:77:29: note: expanded from macro '_IOWR'
+#define _IOWR(type,nr,size)     _IOC(_IOC_READ|_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
+                                ^
+/usr/include/asm-generic/ioctl.h:66:2: note: expanded from macro '_IOC'
+        (((dir)  << _IOC_DIRSHIFT) | \
+        ^
+devrplay.c:155:10: warning: overflow converting case value to switch condition type (3221508099 to 18446744072636092419) [-Wswitch]
+    case SNDCTL_DSP_STEREO:
+         ^
+/usr/include/linux/soundcard.h:539:28: note: expanded from macro 'SNDCTL_DSP_STEREO'
+#define SNDCTL_DSP_STEREO               _SIOWR('P', 3, int)
+                                        ^
+/usr/include/linux/soundcard.h:97:17: note: expanded from macro '_SIOWR'
+#define _SIOWR          _IOWR
+                        ^
+/usr/include/asm-generic/ioctl.h:77:29: note: expanded from macro '_IOWR'
+#define _IOWR(type,nr,size)     _IOC(_IOC_READ|_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
+                                ^
+/usr/include/asm-generic/ioctl.h:66:2: note: expanded from macro '_IOC'
+        (((dir)  << _IOC_DIRSHIFT) | \
+        ^
+devrplay.c:151:10: warning: overflow converting case value to switch condition type (3221508098 to 18446744072636092418) [-Wswitch]
+    case SNDCTL_DSP_SPEED:
+         ^
+/usr/include/linux/soundcard.h:538:27: note: expanded from macro 'SNDCTL_DSP_SPEED'
+#define SNDCTL_DSP_SPEED                _SIOWR('P', 2, int)
+                                        ^
+/usr/include/linux/soundcard.h:97:17: note: expanded from macro '_SIOWR'
+#define _SIOWR          _IOWR
+                        ^
+/usr/include/asm-generic/ioctl.h:77:29: note: expanded from macro '_IOWR'
+#define _IOWR(type,nr,size)     _IOC(_IOC_READ|_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
+                                ^
+/usr/include/asm-generic/ioctl.h:66:2: note: expanded from macro '_IOC'
+        (((dir)  << _IOC_DIRSHIFT) | \
+        ^
+devrplay.c:147:10: warning: overflow converting case value to switch condition type (3221508101 to 18446744072636092421) [-Wswitch]
+    case SNDCTL_DSP_SETFMT:
+         ^
+/usr/include/linux/soundcard.h:551:28: note: expanded from macro 'SNDCTL_DSP_SETFMT'
+#define SNDCTL_DSP_SETFMT               _SIOWR('P',5, int) /* Selects ONE fmt*/
+                                        ^
+/usr/include/linux/soundcard.h:97:17: note: expanded from macro '_SIOWR'
+#define _SIOWR          _IOWR
+                        ^
+/usr/include/asm-generic/ioctl.h:77:29: note: expanded from macro '_IOWR'
+#define _IOWR(type,nr,size)     _IOC(_IOC_READ|_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
+                                ^
+/usr/include/asm-generic/ioctl.h:66:2: note: expanded from macro '_IOC'
+        (((dir)  << _IOC_DIRSHIFT) | \
+        ^
+devrplay.c:243:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+devrplay.c:309:49: warning: multiple unsequenced modifications to 'dsp_speed' [-Wunsequenced]
+        dsp_fmt = dsp_speed = dsp_channels = dsp_speed = dsp_blksize = 0;
+                            ~                          ^
+10 warnings generated.
+gcc -o devrplay.so.3 devrplay.o  -Wl,-soname -Wl,devrplay.so.3 -shared   -L../librplay -lrplay -ldl
+make[2]: Leaving directory `/«PKGBUILDDIR»/devrplay'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+(cd contrib/mailsound; /usr/bin/make CFLAGS="-O2 -g")
+make[1]: Entering directory `/«PKGBUILDDIR»/contrib/mailsound'
+gcc -c  -I../../include -O2 -g mailsound.c
+mailsound.c:41:9: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+PRIVATE compare(char *buffer, char *from, long size);
+~~~~~~~ ^
+mailsound.c:42:9: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+PRIVATE play_sound(char *sound, long size);
+~~~~~~~ ^
+mailsound.c:75:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+PUBLIC main(int ac, char **av)
+       ^~~~
+mailsound.c:89:2: warning: 'gets' is deprecated [-Wdeprecated-declarations]
+        gets(buffer);
+        ^
+/usr/include/stdio.h:638:14: note: 'gets' declared here
+extern char *gets (char *__s) __wur __attribute_deprecated__;
+             ^
+mailsound.c:101:9: warning: 'gets' is deprecated [-Wdeprecated-declarations]
+        while (gets(buffer))
+               ^
+/usr/include/stdio.h:638:14: note: 'gets' declared here
+extern char *gets (char *__s) __wur __attribute_deprecated__;
+             ^
+mailsound.c:121:16: warning: implicit declaration of function 'getuid' is invalid in C99 [-Wimplicit-function-declaration]
+        pw = getpwuid(getuid());
+                      ^
+mailsound.c:149:9: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+PRIVATE compare(char *buffer, char *from, long size)
+~~~~~~~ ^
+mailsound.c:156:14: warning: implicit declaration of function 're_comp' is invalid in C99 [-Wimplicit-function-declaration]
+        if ((char *)re_comp(pattern) != NULL)
+                    ^
+mailsound.c:156:6: warning: cast to 'char *' from smaller integer type 'int' [-Wint-to-pointer-cast]
+        if ((char *)re_comp(pattern) != NULL)
+            ^
+mailsound.c:158:6: warning: implicit declaration of function 're_exec' is invalid in C99 [-Wimplicit-function-declaration]
+        if (re_exec(from))
+            ^
+mailsound.c:165:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+mailsound.c:175:9: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+PRIVATE play_sound(char *sound_args, long size)
+~~~~~~~ ^
+mailsound.c:197:7: warning: cast to 'char *' from smaller integer type 'int' [-Wint-to-pointer-cast]
+                if ((char *)re_comp(subject_re) != NULL)
+                    ^
+mailsound.c:236:14: warning: implicit declaration of function 'getopt' is invalid in C99 [-Wimplicit-function-declaration]
+        while ((c = getopt(ac, av, "s:h:rz:Z:v:d")) != NOTOK)
+                    ^
+mailsound.c:285:11: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+                srandom(time(NULL));
+                        ^
+15 warnings generated.
+gcc -o mailsound mailsound.o  -L../../librplay -lrplay
+mailsound.o: In function `main':
+/«PKGBUILDDIR»/contrib/mailsound/mailsound.c:89: warning: the `gets' function is dangerous and should not be used.
+make[1]: Leaving directory `/«PKGBUILDDIR»/contrib/mailsound'
+touch build-stamp
+ fakeroot debian/rules binary
+dh_testdir
+dh_testroot
+dh_prep
+/usr/bin/make install prefix=/«PKGBUILDDIR»/debian/tmp/usr \
+		infodir=/«PKGBUILDDIR»/debian/tmp/usr/share/info \
+		mandir=/«PKGBUILDDIR»/debian/tmp/usr/share/man
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make install in include...
+make[2]: Entering directory `/«PKGBUILDDIR»/include'
+./../mkinstalldirs /«PKGBUILDDIR»/debian/tmp/usr/include
+mkdir /«PKGBUILDDIR»/debian/tmp
+mkdir /«PKGBUILDDIR»/debian/tmp/usr
+mkdir /«PKGBUILDDIR»/debian/tmp/usr/include
+/usr/bin/install -c -m 644 ./rplay.h /«PKGBUILDDIR»/debian/tmp/usr/include/rplay.h
+make[2]: Leaving directory `/«PKGBUILDDIR»/include'
+make install in lib...
+make[2]: Entering directory `/«PKGBUILDDIR»/lib'
+make[2]: Nothing to be done for `install'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/lib'
+make install in adpcm...
+make[2]: Entering directory `/«PKGBUILDDIR»/adpcm'
+make[2]: Nothing to be done for `install'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/adpcm'
+make install in librplay...
+make[2]: Entering directory `/«PKGBUILDDIR»/librplay'
+./../mkinstalldirs /«PKGBUILDDIR»/debian/tmp/usr/lib
+mkdir /«PKGBUILDDIR»/debian/tmp/usr/lib
+/usr/bin/install -c -m 644 librplay.a /«PKGBUILDDIR»/debian/tmp/usr/lib
+/usr/bin/install -c -m 644 librplay.so.3.3.2 /«PKGBUILDDIR»/debian/tmp/usr/lib
+(cd /«PKGBUILDDIR»/debian/tmp/usr/lib && ln -s librplay.so.3.3.2 librplay.so.3)
+(cd /«PKGBUILDDIR»/debian/tmp/usr/lib && ln -s librplay.so.3.3.2 librplay.so)
+make[2]: Leaving directory `/«PKGBUILDDIR»/librplay'
+make install in rplayd...
+make[2]: Entering directory `/«PKGBUILDDIR»/rplayd'
+./../mkinstalldirs /«PKGBUILDDIR»/debian/tmp/usr/sbin
+mkdir /«PKGBUILDDIR»/debian/tmp/usr/sbin
+/usr/bin/install -c rplayd /«PKGBUILDDIR»/debian/tmp/usr/sbin/rplayd
+make[2]: Leaving directory `/«PKGBUILDDIR»/rplayd'
+make install in rplay...
+make[2]: Entering directory `/«PKGBUILDDIR»/rplay'
+./../mkinstalldirs /«PKGBUILDDIR»/debian/tmp/usr/bin
+mkdir /«PKGBUILDDIR»/debian/tmp/usr/bin
+/usr/bin/install -c rplay /«PKGBUILDDIR»/debian/tmp/usr/bin/rplay
+make[2]: Leaving directory `/«PKGBUILDDIR»/rplay'
+make install in rptp...
+make[2]: Entering directory `/«PKGBUILDDIR»/rptp'
+./../mkinstalldirs /«PKGBUILDDIR»/debian/tmp/usr/bin
+/usr/bin/install -c rptp /«PKGBUILDDIR»/debian/tmp/usr/bin/rptp
+make[2]: Leaving directory `/«PKGBUILDDIR»/rptp'
+make install in doc...
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
+./../mkinstalldirs /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man5 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man8 /«PKGBUILDDIR»/debian/tmp/usr/share/info
+mkdir /«PKGBUILDDIR»/debian/tmp/usr/share
+mkdir /«PKGBUILDDIR»/debian/tmp/usr/share/man
+mkdir /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1
+mkdir /«PKGBUILDDIR»/debian/tmp/usr/share/man/man5
+mkdir /«PKGBUILDDIR»/debian/tmp/usr/share/man/man8
+mkdir /«PKGBUILDDIR»/debian/tmp/usr/share/info
+/usr/bin/install -c -m 644 rplay.1 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1
+/usr/bin/install -c -m 644 rplaydsp.1 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1
+/usr/bin/install -c -m 644 rplayd.8 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man8
+/usr/bin/install -c -m 644 rptp.1 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1
+/usr/bin/install -c -m 644 rplay.conf.5 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man5
+/usr/bin/install -c -m 644 rplay.helpers.5 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man5
+/usr/bin/install -c -m 644 rplay.hosts.5 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man5
+/usr/bin/install -c -m 644 rplay.servers.5 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man5
+/usr/bin/install -c -m 644 RPLAY.info /«PKGBUILDDIR»/debian/tmp/usr/share/info/RPLAY.info
+/usr/bin/install -c -m 644 RPTP.info /«PKGBUILDDIR»/debian/tmp/usr/share/info/RPTP.info
+/usr/bin/install -c -m 644 librplay.info /«PKGBUILDDIR»/debian/tmp/usr/share/info/librplay.info
+/usr/bin/install -c -m 644 rplay.info /«PKGBUILDDIR»/debian/tmp/usr/share/info/rplay.info
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
+make install in devrplay...
+make[2]: Entering directory `/«PKGBUILDDIR»/devrplay'
+./../mkinstalldirs /«PKGBUILDDIR»/debian/tmp/usr/lib
+/usr/bin/install -c -m 644 devrplay.so.3 /«PKGBUILDDIR»/debian/tmp/usr/lib
+./../mkinstalldirs /«PKGBUILDDIR»/debian/tmp/usr/bin
+/usr/bin/install -c rplaydsp /«PKGBUILDDIR»/debian/tmp/usr/bin/rplaydsp
+make[2]: Leaving directory `/«PKGBUILDDIR»/devrplay'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+cd debian ; \
+	for f in *.lintian ; do \
+	  [ -r "$f" ] && { \
+	    mkdir -p "${f%%.lintian}/usr/share/lintian/overrides" ;\
+	    install  -m 644 "$f" "${f%%.lintian}/usr/share/lintian/overrides/${f%%.lintian}" ;\
+	  } ;\
+	done
+install contrib/mailsound/mailsound /«PKGBUILDDIR»/debian/tmp/usr/bin
+mkdir -p /«PKGBUILDDIR»/debian/tmp/usr/share/perl5
+install -m 664 perl/{RPlay.pm,rplay.ph,RPTP.pm} /«PKGBUILDDIR»/debian/tmp/usr/share/perl5
+install perl/Mailsound /«PKGBUILDDIR»/debian/tmp/usr/bin
+install -m 644 contrib/mailsound/mailsound.1 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1
+install -m 644 perl/Mailsound.1 /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1
+install -d /«PKGBUILDDIR»/debian/tmp/etc/rplay
+install -m 644 etc/rplay.{conf,helpers,hosts,servers} /«PKGBUILDDIR»/debian/tmp/etc/rplay
+dh_movefiles
+dh_testdir
+dh_testroot
+dh_installdocs
+dh_installexamples
+dh_installmenu
+dh_installinit		-prplay-server --init-script=rplay -- defaults 99 10
+dh_installman
+dh_installinfo
+dh_installchangelogs	ChangeLog
+dh_strip
+dh_link
+dh_compress
+dh_fixperms
+dh_makeshlibs
+dh_installdeb
+dh_perl
+dh_shlibdeps
+dh_gencontrol
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package `rplay-client' in `../rplay-client_3.3.2-14_amd64.deb'.
+dpkg-deb: building package `devrplay3' in `../devrplay3_3.3.2-14_amd64.deb'.
+dpkg-deb: building package `rplay-server' in `../rplay-server_3.3.2-14_amd64.deb'.
+dpkg-deb: building package `librplay3' in `../librplay3_3.3.2-14_amd64.deb'.
+dpkg-deb: building package `librplay3-dev' in `../librplay3-dev_3.3.2-14_amd64.deb'.
+dpkg-deb: building package `librplay-perl' in `../librplay-perl_3.3.2-14_all.deb'.
+dpkg-deb: building package `rplay-contrib' in `../rplay-contrib_3.3.2-14_amd64.deb'.
+ dpkg-genchanges  >../rplay_3.3.2-14_amd64.changes
+dpkg-genchanges: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build rplay-3.3.2
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140313-2324
+
+Finished
+────────
+
+I: Built successfully
+E: Package builds librplay-perl_3.3.2-14_all.deb when binary-indep target is not called.  This is a bug in the packaging.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+rplay_3.3.2-14_amd64.changes:
+─────────────────────────────
+
+Format: 1.8
+Date: Wed, 14 Dec 2011 18:04:35 +0100
+Source: rplay
+Binary: rplay-client devrplay3 rplay-server librplay3 librplay3-dev librplay-perl rplay-contrib
+Architecture: source amd64 all
+Version: 3.3.2-14
+Distribution: sid
+Urgency: low
+Maintainer: Thorsten Alteholz <debian@alteholz.de>
+Changed-By: Thorsten Alteholz <debian@alteholz.de>
+Description: 
+ devrplay3  - rplay network audio system - basic library
+ librplay-perl - rplay network audio system - perl modules
+ librplay3  - rplay network audio system - shared libraries
+ librplay3-dev - rplay network audio system - development libraries
+ rplay-client - rplay network audio system - basic clients
+ rplay-contrib - rplay network audio system - contributed binaries
+ rplay-server - rplay network audio system - server
+Changes: 
+ rplay (3.3.2-14) unstable; urgency=low
+ .
+   * debian/control: Standards version moved to 3.9.2 (no changes)
+   * debian/control: dependency on dpatch removed
+   * debian/control: add dependency on libperl4-corelibs-perl to librplay-perl
+   * debian/control: architecture: all for librplay-perl
+   * debian/source/format: changed to 3.0 (quilt)
+   * debian/rules: dpatch removed
+   * debian/rules: build-arch and build-indep according to lintian
+                   recommendation added
+   * debian/patches: moved from dpatch to quilt
+   * debian/rplay-server.rplay: add Description: to init-script
+Checksums-Sha1: 
+ 9555e735cceecb05f5259f7fca18f9c106a70ea2 1154 rplay_3.3.2-14.dsc
+ 0cc3cad7aff7b8c15019847578cccb61e8c63083 25080 rplay_3.3.2-14.debian.tar.xz
+ 0bf198ff541480e6355e09e9c0bd9456ff8b158f 54524 rplay-client_3.3.2-14_amd64.deb
+ 46517a030bb58f109dbd0d737abb6328294e56f7 31228 devrplay3_3.3.2-14_amd64.deb
+ f166824368495a678976d3dc379e3e8b5e761660 92760 rplay-server_3.3.2-14_amd64.deb
+ 1fc2aac1afb96812338ad3883b87b66a11973987 45458 librplay3_3.3.2-14_amd64.deb
+ 170bea6a761730a4a2341cf081976d8de395e042 46218 librplay3-dev_3.3.2-14_amd64.deb
+ 0150267e0daa537cfed56b6e1ffdebb237c7505f 31508 librplay-perl_3.3.2-14_all.deb
+ 23828d0637230cc016021abf82ace0720a1c193c 34960 rplay-contrib_3.3.2-14_amd64.deb
+Checksums-Sha256: 
+ c7d68ce6c198cd293e8d767751ea41285b5ff87eacf403718480f8b88384186c 1154 rplay_3.3.2-14.dsc
+ 5f156ef323adba4a7c56a63f36404f9a9db3061c10d0b8124131b53b632d0b04 25080 rplay_3.3.2-14.debian.tar.xz
+ 2d1930d76fb515963c0e4da921b9f30d03d70ae8cfe45418510e4df32cf4d6c0 54524 rplay-client_3.3.2-14_amd64.deb
+ 9a7216d96ed908db089faaf78be72b6d15c4749104025c95608a4ff030f66918 31228 devrplay3_3.3.2-14_amd64.deb
+ 44b94d50ad96fc363bbe61a804317dd489e94d7921b35c40bf570fbb8ca48adb 92760 rplay-server_3.3.2-14_amd64.deb
+ 5bf31403aa6d45c6257b33c7c2b87a8f50f0bbcecc954f292b784a85c24ce73a 45458 librplay3_3.3.2-14_amd64.deb
+ b8a2f93900e8c6d2a0bf1adde75678604a9663325d08852819b1afa88fe311ea 46218 librplay3-dev_3.3.2-14_amd64.deb
+ 79a695a42d4ed505ac5d4df5521715ee3d8db5275440d85de53d25d27e28a8be 31508 librplay-perl_3.3.2-14_all.deb
+ 201a299fd39dd1824679e1480e027393c6fe197f18502b54a45619572be0def9 34960 rplay-contrib_3.3.2-14_amd64.deb
+Files: 
+ 6dbe7c9e625de5138ab6b2417df396d4 1154 sound optional rplay_3.3.2-14.dsc
+ 29a31343e6560c80d2264e6584ddc53e 25080 sound optional rplay_3.3.2-14.debian.tar.xz
+ 0b8fe0839ae96b7221672c8f2bc8ac35 54524 sound optional rplay-client_3.3.2-14_amd64.deb
+ 5a3ab5aa850043c5d95e4215a0c94133 31228 sound optional devrplay3_3.3.2-14_amd64.deb
+ b1145be625a6ddb40c3f82ff88523e65 92760 sound optional rplay-server_3.3.2-14_amd64.deb
+ 0c8e983dd701b4a65e03aa05dc78652e 45458 libs optional librplay3_3.3.2-14_amd64.deb
+ 42e8238aa0da2588c3a7c6faf91762a2 46218 libdevel optional librplay3-dev_3.3.2-14_amd64.deb
+ 501c295ca91d447e14558dfc9010d694 31508 perl optional librplay-perl_3.3.2-14_all.deb
+ b5dae961a53c057f0cb61c95d22e91ce 34960 sound optional rplay-contrib_3.3.2-14_amd64.deb
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+rplay-client_3.3.2-14_amd64.deb
+───────────────────────────────
+
+ new debian package, version 2.0.
+ size 54524 bytes: control archive=1316 bytes.
+     957 bytes,    23 lines      control              
+     829 bytes,    13 lines      md5sums              
+     132 bytes,    11 lines   *  prerm                #!/bin/sh
+ Package: rplay-client
+ Source: rplay
+ Version: 3.3.2-14
+ Architecture: amd64
+ Maintainer: Thorsten Alteholz <debian@alteholz.de>
+ Installed-Size: 123
+ Depends: libc6 (>= 2.14), libreadline6 (>= 6.0), librplay3 (>= 3.3.2-2), dpkg (>= 1.15.4) | install-info, devrplay3
+ Breaks: rplay (<< 3.3.2-9)
+ Replaces: rplay (<< 3.3.2-9)
+ Section: sound
+ Priority: optional
+ Homepage: http://rplay.doit.org/
+ Description: rplay network audio system - basic clients
+  This package contains the basic rplay clients (rplay, rptp).  The clients
+  are used to play sounds on the local host or remote systems.
+  .
+  RPlay allows sounds to be played to and from local and remote Unix
+  systems.  Sounds can be played with or without sending audio data over
+  the network using either UDP or TCP/IP.  RPlay audio servers can be
+  configured to share sound files with each other.
+  .
+  Support for RPlay is included in several applications.  These include
+  xpilot, xlockmore, xboing, fvwm, and ctwm.
+
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/bin/
+-rwxr-xr-x root/root     20280 2014-03-13 23:24 ./usr/bin/rplay
+-rwxr-xr-x root/root       162 2014-03-13 23:24 ./usr/bin/rplaydsp
+-rwxr-xr-x root/root     20256 2014-03-13 23:24 ./usr/bin/rptp
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/man/man1/
+-rw-r--r-- root/root      1219 2014-03-13 23:24 ./usr/share/man/man1/rplay.1.gz
+-rw-r--r-- root/root       275 2014-03-13 23:24 ./usr/share/man/man1/rptp.1.gz
+-rw-r--r-- root/root       661 2014-03-13 23:24 ./usr/share/man/man1/rplaydsp.1.gz
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/rplay-client/
+-rw-r--r-- root/root     21809 1999-06-09 07:38 ./usr/share/doc/rplay-client/changelog.gz
+-rw-r--r-- root/root       208 2011-12-14 12:46 ./usr/share/doc/rplay-client/README.Debian
+-rw-r--r-- root/root      3167 2011-12-14 16:05 ./usr/share/doc/rplay-client/changelog.Debian.gz
+-rw-r--r-- root/root      4962 2011-12-14 12:46 ./usr/share/doc/rplay-client/copyright
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/info/
+-rw-r--r-- root/root      1961 2014-03-13 23:24 ./usr/share/info/RPLAY.info.gz
+-rw-r--r-- root/root      6946 2014-03-13 23:24 ./usr/share/info/RPTP.info.gz
+-rw-r--r-- root/root      2428 2014-03-13 23:24 ./usr/share/info/rplay.info.gz
+
+
+devrplay3_3.3.2-14_amd64.deb
+────────────────────────────
+
+ new debian package, version 2.0.
+ size 31228 bytes: control archive=1116 bytes.
+     842 bytes,    22 lines      control              
+     345 bytes,     5 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      21 bytes,     1 lines      shlibs               
+ Package: devrplay3
+ Source: rplay
+ Version: 3.3.2-14
+ Architecture: amd64
+ Maintainer: Thorsten Alteholz <debian@alteholz.de>
+ Installed-Size: 74
+ Depends: libc6 (>= 2.2.5), librplay3 (>= 3.3.2-2), dpkg (>= 1.15.4) | install-info
+ Breaks: rplay (<< 3.3.2-9)
+ Replaces: rplay (<< 3.3.2-9)
+ Section: sound
+ Priority: optional
+ Homepage: http://rplay.doit.org/
+ Description: rplay network audio system - basic library
+  This package contains the basic rplay library (devrplay).
+  .
+  RPlay allows sounds to be played to and from local and remote Unix
+  systems.  Sounds can be played with or without sending audio data over
+  the network using either UDP or TCP/IP.  RPlay audio servers can be
+  configured to share sound files with each other.
+  .
+  Support for RPlay is included in several applications.  These include
+  xpilot, xlockmore, xboing, fvwm, and ctwm.
+
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/lib/
+-rw-r--r-- root/root      8048 2014-03-13 23:24 ./usr/lib/devrplay.so.3
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/devrplay3/
+-rw-r--r-- root/root     21809 1999-06-09 07:38 ./usr/share/doc/devrplay3/changelog.gz
+-rw-r--r-- root/root      3167 2011-12-14 16:05 ./usr/share/doc/devrplay3/changelog.Debian.gz
+-rw-r--r-- root/root      4962 2011-12-14 12:46 ./usr/share/doc/devrplay3/copyright
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root       163 2014-03-13 23:24 ./usr/share/lintian/overrides/devrplay3
+
+
+rplay-server_3.3.2-14_amd64.deb
+───────────────────────────────
+
+ new debian package, version 2.0.
+ size 92760 bytes: control archive=1919 bytes.
+     113 bytes,     5 lines      conffiles            
+     900 bytes,    24 lines      control              
+     790 bytes,    11 lines      md5sums              
+     537 bytes,    25 lines   *  postinst             #!/bin/sh
+     440 bytes,    21 lines   *  postrm               #!/bin/sh
+     274 bytes,    26 lines   *  preinst              #!/bin/sh
+     281 bytes,    16 lines   *  prerm                #!/bin/sh
+ Package: rplay-server
+ Source: rplay
+ Version: 3.3.2-14
+ Architecture: amd64
+ Maintainer: Thorsten Alteholz <debian@alteholz.de>
+ Installed-Size: 250
+ Depends: libc6 (>= 2.14), libgsm1 (>= 1.0.13), librplay3 (>= 3.3.2-2)
+ Suggests: mpg123, vorbis-tools
+ Breaks: rplay (<< 3.3.2-9)
+ Replaces: rplay (<< 3.3.2-9)
+ Section: sound
+ Priority: optional
+ Homepage: http://rplay.doit.org/
+ Description: rplay network audio system - server
+  This package contains the rplay server.  The rplay server allows sounds
+  to be played on the system.
+  .
+  RPlay allows sounds to be played to and from local and remote Unix
+  systems.  Sounds can be played with or without sending audio data over
+  the network using either UDP or TCP/IP.  RPlay audio servers can be
+  configured to share sound files with each other.
+  .
+  Support for RPlay is included in several applications.  These include
+  xpilot, xlockmore, xboing, fvwm, and ctwm.
+
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/sbin/
+-rwxr-xr-x root/root    159552 2014-03-13 23:24 ./usr/sbin/rplayd
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/man/man5/
+-rw-r--r-- root/root       848 2014-03-13 23:24 ./usr/share/man/man5/rplay.hosts.5.gz
+-rw-r--r-- root/root       369 2014-03-13 23:24 ./usr/share/man/man5/rplay.conf.5.gz
+-rw-r--r-- root/root       407 2014-03-13 23:24 ./usr/share/man/man5/rplay.helpers.5.gz
+-rw-r--r-- root/root       465 2014-03-13 23:24 ./usr/share/man/man5/rplay.servers.5.gz
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/man/man8/
+-rw-r--r-- root/root      2615 2014-03-13 23:24 ./usr/share/man/man8/rplayd.8.gz
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/rplay-server/
+-rw-r--r-- root/root     21809 1999-06-09 07:38 ./usr/share/doc/rplay-server/changelog.gz
+-rw-r--r-- root/root      3167 2011-12-14 16:05 ./usr/share/doc/rplay-server/changelog.Debian.gz
+-rw-r--r-- root/root      4962 2011-12-14 12:46 ./usr/share/doc/rplay-server/copyright
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/rplay-server/examples/
+-rw-r--r-- root/root       160 2014-03-13 23:24 ./usr/share/doc/rplay-server/examples/rplay.hosts
+-rw-r--r-- root/root       305 2014-03-13 23:24 ./usr/share/doc/rplay-server/examples/rplay.helpers
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./etc/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./etc/init.d/
+-rwxr-xr-x root/root      1576 2011-12-14 15:57 ./etc/init.d/rplay
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./etc/rplay/
+-rw-r--r-- root/root       160 2014-03-13 23:24 ./etc/rplay/rplay.hosts
+-rw-r--r-- root/root        80 2014-03-13 23:24 ./etc/rplay/rplay.conf
+-rw-r--r-- root/root       164 2014-03-13 23:24 ./etc/rplay/rplay.servers
+-rw-r--r-- root/root       305 2014-03-13 23:24 ./etc/rplay/rplay.helpers
+
+
+librplay3_3.3.2-14_amd64.deb
+────────────────────────────
+
+ new debian package, version 2.0.
+ size 45458 bytes: control archive=1282 bytes.
+     824 bytes,    22 lines      control              
+     683 bytes,    10 lines      md5sums              
+     139 bytes,    11 lines   *  postinst             #!/bin/sh
+     135 bytes,    10 lines   *  postrm               #!/bin/sh
+      34 bytes,     1 lines      shlibs               
+ Package: librplay3
+ Source: rplay
+ Version: 3.3.2-14
+ Architecture: amd64
+ Maintainer: Thorsten Alteholz <debian@alteholz.de>
+ Installed-Size: 106
+ Depends: libc6 (>= 2.14), dpkg (>= 1.15.4) | install-info
+ Breaks: rplay (<< 3.3.2-9)
+ Replaces: rplay (<< 3.3.2-9)
+ Section: libs
+ Priority: optional
+ Homepage: http://rplay.doit.org/
+ Description: rplay network audio system - shared libraries
+  Contains shared libraries for the rplay network audio system.
+  .
+  RPlay allows sounds to be played to and from local and remote Unix
+  systems.  Sounds can be played with or without sending audio data over
+  the network using either UDP or TCP/IP.  RPlay audio servers can be
+  configured to share sound files with each other.
+  .
+  Support for RPlay is included in several applications.  These include
+  xpilot, xlockmore, xboing, fvwm, and ctwm.
+
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/lib/
+-rw-r--r-- root/root     32088 2014-03-13 23:24 ./usr/lib/librplay.so.3.3.2
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/librplay3/
+-rw-r--r-- root/root     21809 1999-06-09 07:38 ./usr/share/doc/librplay3/changelog.gz
+-rw-r--r-- root/root      1117 1999-03-10 08:51 ./usr/share/doc/librplay3/TODO
+-rw-r--r-- root/root      1918 1998-08-13 08:13 ./usr/share/doc/librplay3/PORTING.gz
+-rw-r--r-- root/root      3167 2011-12-14 16:05 ./usr/share/doc/librplay3/changelog.Debian.gz
+-rw-r--r-- root/root      1644 1998-08-13 08:13 ./usr/share/doc/librplay3/README.linux
+-rw-r--r-- root/root      4962 2011-12-14 12:46 ./usr/share/doc/librplay3/copyright
+-rw-r--r-- root/root      2206 1999-03-10 08:51 ./usr/share/doc/librplay3/README
+-rw-r--r-- root/root      1356 1999-03-10 22:17 ./usr/share/doc/librplay3/NEWS.gz
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root       163 2014-03-13 23:24 ./usr/share/lintian/overrides/librplay3
+lrwxrwxrwx root/root         0 2014-03-13 23:24 ./usr/lib/librplay.so.3 -> librplay.so.3.3.2
+
+
+librplay3-dev_3.3.2-14_amd64.deb
+────────────────────────────────
+
+ new debian package, version 2.0.
+ size 46218 bytes: control archive=1074 bytes.
+     889 bytes,    23 lines      control              
+     402 bytes,     6 lines      md5sums              
+     140 bytes,    11 lines   *  prerm                #!/bin/sh
+ Package: librplay3-dev
+ Source: rplay
+ Version: 3.3.2-14
+ Architecture: amd64
+ Maintainer: Thorsten Alteholz <debian@alteholz.de>
+ Installed-Size: 125
+ Depends: libc6-dev | libc-dev, librplay3 (= 3.3.2-14), dpkg (>= 1.15.4) | install-info
+ Breaks: rplay (<< 3.3.2-9)
+ Replaces: rplay (<< 3.3.2-9)
+ Section: libdevel
+ Priority: optional
+ Homepage: http://rplay.doit.org/
+ Description: rplay network audio system - development libraries
+  Contains header files and development libraries for the rplay network
+  audio system.
+  .
+  RPlay allows sounds to be played to and from local and remote Unix
+  systems.  Sounds can be played with or without sending audio data over
+  the network using either UDP or TCP/IP.  RPlay audio servers can be
+  configured to share sound files with each other.
+  .
+  Support for RPlay is included in several applications.  These include
+  xpilot, xlockmore, xboing, fvwm, and ctwm.
+
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/lib/
+-rw-r--r-- root/root     44366 2014-03-13 23:24 ./usr/lib/librplay.a
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/include/
+-rw-r--r-- root/root     10868 2014-03-13 23:24 ./usr/include/rplay.h
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/librplay3-dev/
+-rw-r--r-- root/root     21809 1999-06-09 07:38 ./usr/share/doc/librplay3-dev/changelog.gz
+-rw-r--r-- root/root      3167 2011-12-14 16:05 ./usr/share/doc/librplay3-dev/changelog.Debian.gz
+-rw-r--r-- root/root      4962 2011-12-14 12:46 ./usr/share/doc/librplay3-dev/copyright
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/info/
+-rw-r--r-- root/root      5004 2014-03-13 23:24 ./usr/share/info/librplay.info.gz
+lrwxrwxrwx root/root         0 2014-03-13 23:24 ./usr/lib/librplay.so -> librplay.so.3.3.2
+
+
+librplay-perl_3.3.2-14_all.deb
+──────────────────────────────
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/librplay-perl_3.3.2-14_all.deb': No such file or directory
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/librplay-perl_3.3.2-14_all.deb': No such file or directory
+
+
+rplay-contrib_3.3.2-14_amd64.deb
+────────────────────────────────
+
+ new debian package, version 2.0.
+ size 34960 bytes: control archive=1104 bytes.
+     894 bytes,    23 lines      control              
+     469 bytes,     7 lines      md5sums              
+     140 bytes,    11 lines   *  prerm                #!/bin/sh
+ Package: rplay-contrib
+ Source: rplay
+ Version: 3.3.2-14
+ Architecture: amd64
+ Maintainer: Thorsten Alteholz <debian@alteholz.de>
+ Installed-Size: 79
+ Depends: libc6 (>= 2.14), librplay3 (>= 3.3.2-2), librplay-perl, perl
+ Breaks: rplay (<< 3.3.2-9)
+ Replaces: rplay (<< 3.3.2-9)
+ Section: sound
+ Priority: optional
+ Homepage: http://rplay.doit.org/
+ Description: rplay network audio system - contributed binaries
+  Contains mailsounds and Mailsounds each of which can be used to play
+  sounds on a system when new mail arrives.
+  .
+  RPlay allows sounds to be played to and from local and remote Unix
+  systems.  Sounds can be played with or without sending audio data over
+  the network using either UDP or TCP/IP.  RPlay audio servers can be
+  configured to share sound files with each other.
+  .
+  Support for RPlay is included in several applications.  These include
+  xpilot, xlockmore, xboing, fvwm, and ctwm.
+
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/bin/
+-rwxr-xr-x root/root      2226 2014-03-13 23:24 ./usr/bin/Mailsound
+-rwxr-xr-x root/root      9408 2014-03-13 23:24 ./usr/bin/mailsound
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/man/man1/
+-rw-r--r-- root/root       777 2014-03-13 23:24 ./usr/share/man/man1/Mailsound.1.gz
+-rw-r--r-- root/root      1540 2014-03-13 23:24 ./usr/share/man/man1/mailsound.1.gz
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-13 23:24 ./usr/share/doc/rplay-contrib/
+-rw-r--r-- root/root     21809 1999-06-09 07:38 ./usr/share/doc/rplay-contrib/changelog.gz
+-rw-r--r-- root/root      3167 2011-12-14 16:05 ./usr/share/doc/rplay-contrib/changelog.Debian.gz
+-rw-r--r-- root/root      4962 2011-12-14 12:46 ./usr/share/doc/rplay-contrib/copyright
+
+mv: cannot stat '/«CHROOT»/«BUILDDIR»/librplay-perl_3.3.2-14_all.deb': No such file or directory
+E: Could not move librplay-perl_3.3.2-14_all.deb to .
+du: cannot access '/mnt/ito/data/projets/debian-clang/buildlogs/rplay/librplay-perl_3.3.2-14_all.deb': No such file or directory
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 6880
+Build-Time: 8
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 10
+Job: rplay_3.3.2-14.dsc
+Machine Architecture: amd64
+Package: rplay
+Package-Time: 25
+Source-Version: 3.3.2-14
+Space: 6880
+Status: successful
+Version: 3.3.2-14
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140313-2324
+Build needed 00:00:25, 6880k disc space

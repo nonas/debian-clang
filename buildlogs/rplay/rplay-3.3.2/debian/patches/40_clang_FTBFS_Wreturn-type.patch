@@ -1,0 +1,14 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-13
+--- a/contrib/mailsound/mailsound.c
++++ b/contrib/mailsound/mailsound.c
+@@ -154,7 +154,7 @@
+ 	pattern = strtok(buffer, " \t");
+ 	sound_args = strtok(NULL, "\t\n");
+ 	if ((char *)re_comp(pattern) != NULL)
+-		return;
++		return 0;
+ 	if (re_exec(from))
+ 	{
+ 		if (debug)
