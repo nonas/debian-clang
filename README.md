@@ -12,7 +12,7 @@ $apt_upgrade = 0;
 $apt_distupgrade = 0;
 ```
 
-NB: the following will only work with '3.0 quilt' package. Check "Format:" field in dsc file.
+NB: the following will only work with '3.0 (quilt)' package. Check "Format:" field in dsc file.
 
 1. Make sure a bug report does **not** already exist
 2. Get package source from _sid_: ```apt-get -t unstable source _package_```

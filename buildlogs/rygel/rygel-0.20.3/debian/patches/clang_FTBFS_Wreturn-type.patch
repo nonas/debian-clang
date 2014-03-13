@@ -1,0 +1,16 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-13
+--- a/src/librygel-renderer-gst/rygel-playbin-player.vala
++++ b/src/librygel-renderer-gst/rygel-playbin-player.vala
+@@ -304,8 +304,8 @@
+ 
+     public Player.wrap (Gst.Element playbin) {
+ 
+-        return_if_fail (playbin != null);
+-        return_if_fail (playbin.get_type ().name() == "GstPlayBin");
++        return_val_if_fail (playbin != null, null);
++        return_val_if_fail (playbin.get_type ().name() == "GstPlayBin", null);
+ 
+         this.playbin = playbin;
+         this.foreign = true;
