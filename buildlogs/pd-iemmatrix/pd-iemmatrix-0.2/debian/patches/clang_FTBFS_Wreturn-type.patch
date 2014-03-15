@@ -1,0 +1,11 @@
+--- a/src/mtx_dispersive_dline.c
++++ b/src/mtx_dispersive_dline.c
+@@ -163,7 +163,7 @@
+   
+   if (channels*samples>argc) {
+      post("mtx_dispersive_dline: corrupt matrix passed");
+-     return;
++     return -1;
+   }
+   post("%d samples, %d channels",samples,channels);
+ 
