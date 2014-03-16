@@ -1,10 +1,10 @@
 # Tests building debian packages with Clang
 
-[How to setup sbuild](https://github.com/nonas/debian-clang/wiki/Building-Debian-with-Clang:-tests)
+## Configuration
 
-Improve things with [APT-cacher-NG](https://github.com/nonas/debian-clang/wiki/APT-cacher-NG)
-
-Change sbuild configuration, add the following lines to ```~/.sbuildrc```:
+* [How to setup sbuild](https://github.com/nonas/debian-clang/wiki/Building-Debian-with-Clang:-tests)
+* Improve things with [APT-cacher-NG](https://github.com/nonas/debian-clang/wiki/APT-cacher-NG)
+* Change sbuild configuration, add the following lines to ```~/.sbuildrc```:
 ```
 # Do not update chroot everytime i.e. you need to take care of that yourself!
 $apt_update = 0;
@@ -12,6 +12,7 @@ $apt_upgrade = 0;
 $apt_distupgrade = 0;
 ```
 
+## Building, patching, testing
 NB: the following will only work with '3.0 (quilt)' package. Check "Format:" field in dsc file.
 
 1. Make sure a bug report does **not** already exist
@@ -33,7 +34,12 @@ NB: the following will only work with '3.0 (quilt)' package. Check "Format:" fie
 If your patch fixes the issue the build should be successful.
 Fill a bug report with patch :-)
 
-1. reportbug: FTBFS with clang instead of gcc
-2. When editing the message, add ```Usertags: clang-ftbfs``` and ```User: pkg-llvm-team@lists.alioth.debian.org``` fields
-3. Do **not** forget to attach the patch (```a``` after editing or ```reportbug -A path/to/the/patch```)
-4. Send it :-)
+## Bug reports
+* reportbug: FTBFS with clang instead of gcc
+* When editing the message, add 
+```
+Usertags: clang-ftbfs
+User: pkg-llvm-team@lists.alioth.debian.org
+```
+* Do **not** forget to attach the patch (```a``` after editing or ```reportbug -A path/to/the/patch```)
+* Send it :-)
