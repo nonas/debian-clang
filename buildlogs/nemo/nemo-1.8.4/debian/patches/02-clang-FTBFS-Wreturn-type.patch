@@ -1,0 +1,36 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-16
+--- a/src/nemo-icon-view.c
++++ b/src/nemo-icon-view.c
+@@ -1197,7 +1197,7 @@
+ static NemoZoomLevel
+ nemo_icon_view_get_default_zoom_level (NemoView *view)
+ {
+-    g_return_if_fail (NEMO_IS_ICON_VIEW (view));
++    g_return_val_if_fail (NEMO_IS_ICON_VIEW (view), FALSE);
+ 
+     return get_default_zoom_level(NEMO_ICON_VIEW (view));
+ }
+--- a/src/nemo-list-view.c
++++ b/src/nemo-list-view.c
+@@ -2852,7 +2852,7 @@
+ static NemoZoomLevel
+ nemo_list_view_get_default_zoom_level (NemoView *view)
+ {
+-    g_return_if_fail (NEMO_IS_LIST_VIEW (view));
++    g_return_val_if_fail (NEMO_IS_LIST_VIEW (view), FALSE);
+ 
+     return get_default_zoom_level();
+ }
+--- a/src/nemo-view.c
++++ b/src/nemo-view.c
+@@ -683,7 +683,7 @@
+ NemoZoomLevel
+ nemo_view_get_default_zoom_level (NemoView *view)
+ {
+-    g_return_if_fail (NEMO_IS_VIEW (view));
++    g_return_val_if_fail (NEMO_IS_VIEW (view), FALSE);
+ 
+     if (!nemo_view_supports_zooming (view)) {
+         return -1;
