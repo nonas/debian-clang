@@ -1,0 +1,14 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-16
+--- a/src/nuauth/sasl.c
++++ b/src/nuauth/sasl.c
+@@ -365,7 +365,7 @@
+ 									"Unable to negotiate proto");
+ 							c_session->proto_version = PROTO_VERSION_NONE;
+ 						}
+-						return;
++						return 0;
+ 					}
+ 					/* sanity check on know protocol */
+ 					switch (c_session->proto_version) {
