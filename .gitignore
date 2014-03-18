@@ -5,3 +5,4 @@
 *.xz
 .pc
 buildlogs
+patch_header.txt

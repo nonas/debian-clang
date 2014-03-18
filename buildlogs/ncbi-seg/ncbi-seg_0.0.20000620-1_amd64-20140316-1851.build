@@ -1,0 +1,558 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ ncbi-seg 0.0.20000620-1 (amd64)                            16 Mar 2014 18:51 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: ncbi-seg
+Version: 0.0.20000620-1
+Source Version: 0.0.20000620-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/ncbi-seg-wbWRax/ncbi-seg-0.0.20000620' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/ncbi-seg-wbWRax' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-eec10b9e-4a7c-4326-9cbb-3399e270f934' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+ncbi-seg_0.0.20000620-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-ucjtL0/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13265 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8), dh-autoreconf
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8), dh-autoreconf
+dpkg-deb: building package `sbuild-build-depends-ncbi-seg-dummy' in `/«BUILDDIR»/resolver-2EH6lO/apt_archive/sbuild-build-depends-ncbi-seg-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install ncbi-seg build dependencies (apt-based resolver)                     │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf gettext gettext-base groff-base intltool-debian libasprintf0c2
+  libcroco3 libglib2.0-0 libsigsegv2 libtool libunistring0 libxml2 m4 man-db
+  po-debconf
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make gettext-doc groff libtool-doc automaken gfortran
+  fortran95-compiler gcj-jdk less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur libasprintf-dev libgettextpo-dev libglib2.0-data
+  shared-mime-info libltdl-dev xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf gettext gettext-base groff-base intltool-debian libasprintf0c2
+  libcroco3 libglib2.0-0 libsigsegv2 libtool libunistring0 libxml2 m4 man-db
+  po-debconf sbuild-build-depends-ncbi-seg-dummy
+0 upgraded, 22 newly installed, 0 to remove and 0 not upgraded.
+Need to get 10.5 MB/10.5 MB of archives.
+After this operation, 28.7 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:2 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:3 http://http.debian.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:4 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:5 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:6 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.38.2-5 [2231 kB]
+Get:7 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:8 http://http.debian.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:9 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:10 http://http.debian.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:11 http://http.debian.net/debian/ sid/main m4 amd64 1.4.17-3 [254 kB]
+Get:12 http://http.debian.net/debian/ sid/main autoconf all 2.69-5 [340 kB]
+Get:13 http://http.debian.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:14 http://http.debian.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:15 http://http.debian.net/debian/ sid/main autopoint all 0.18.3.2-1 [393 kB]
+Get:16 http://http.debian.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:17 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:18 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:19 http://http.debian.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:20 http://http.debian.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:21 http://http.debian.net/debian/ sid/main dh-autoreconf all 9 [15.5 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 10.5 MB in 0s (68.8 MB/s)
+Selecting previously unselected package groff-base.
+(Reading database ... 13265 files and directories currently installed.)
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.38.2-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.38.2-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-3_amd64.deb ...
+Unpacking m4 (1.4.17-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-5_all.deb ...
+Unpacking autoconf (2.69-5) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../autopoint_0.18.3.2-1_all.deb ...
+Unpacking autopoint (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../dh-autoreconf_9_all.deb ...
+Unpacking dh-autoreconf (9) ...
+Selecting previously unselected package sbuild-build-depends-ncbi-seg-dummy.
+Preparing to unpack .../sbuild-build-depends-ncbi-seg-dummy.deb ...
+Unpacking sbuild-build-depends-ncbi-seg-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.38.2-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-3) ...
+Setting up autoconf (2.69-5) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up autopoint (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up dh-autoreconf (9) ...
+Setting up sbuild-build-depends-ncbi-seg-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-4 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.5-1
+Package versions: apt_0.9.16.1 autoconf_2.69-5 automake_1:1.14.1-3 autopoint_0.18.3.2-1 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.32 bash_4.3-2 binfmt-support_2.1.3-2 binutils_2.24-4 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.6 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 dh-autoreconf_9 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-7 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_0.9.16.1 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.4-1 libaudit1_1:2.3.4-1 libblkid1_2.20.1-5.6 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdebconfclient0_0.188 libdpkg-perl_1.17.6 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.0.13-12 libffi6_3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgdbm3_1.8.3-12 libglib2.0-0_2.38.2-5 libgmp10_2:5.1.3+dfsg-1 libgomp1_4.8.2-16 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.8.2-16 libjsoncpp0_0.6.0~rc2-3 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.6 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpcre3_1:8.31-2 libpipeline1_1.2.6-2 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-7 libpython2.7-stdlib_2.7.6-7 libquadmath0_4.8.2-16 libreadline6_6.3-1 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libsqlite3-0_3.8.3.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtool_2.4.2-1.7 libtsan0_4.8.2-16 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.6 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.5-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1 lsb-base_4.1+Debian12 m4_1.4.17-3 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.6 multiarch-support_2.18-4 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1 patch_2.7.1-4 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-7 python2.7-minimal_2.7.6-7 readline-common_6.3-1 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-ncbi-seg-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-1 tzdata_2014a-1 util-linux_2.20.1-5.6 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Mon Jul  9 15:08:29 2012 UTC using DSA key ID C09FD35A
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./ncbi-seg_0.0.20000620-1.dsc
+dpkg-source: info: extracting ncbi-seg in ncbi-seg-0.0.20000620
+dpkg-source: info: unpacking ncbi-seg_0.0.20000620.orig.tar.gz
+dpkg-source: info: unpacking ncbi-seg_0.0.20000620-1.debian.tar.gz
+dpkg-source: info: applying makefile
+dpkg-source: info: applying example
+dpkg-source: info: applying seg.c
+dpkg-source: info: applying genwin.c
+dpkg-source: info: applying autotools
+dpkg-source: info: applying seg.pod
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-eec10b9e-4a7c-4326-9cbb-3399e270f934
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package ncbi-seg
+dpkg-buildpackage: source version 0.0.20000620-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Laszlo Kajan <lkajan@rostlab.org>
+ dpkg-source --before-build ncbi-seg-0.0.20000620
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+ fakeroot debian/rules clean
+dh clean --with autoreconf
+   dh_testdir
+   dh_auto_clean
+   dh_autoreconf_clean
+   dh_clean
+ dpkg-source -b ncbi-seg-0.0.20000620
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building ncbi-seg using existing ./ncbi-seg_0.0.20000620.orig.tar.gz
+dpkg-source: info: building ncbi-seg in ncbi-seg_0.0.20000620-1.debian.tar.xz
+dpkg-source: info: building ncbi-seg in ncbi-seg_0.0.20000620-1.dsc
+ debian/rules build
+dh build --with autoreconf
+   dh_testdir
+   debian/rules override_dh_autoreconf
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_autoreconf -X./COPYING
+configure.ac:5: installing './compile'
+configure.ac:3: installing './install-sh'
+configure.ac:3: installing './missing'
+Makefile.am: installing './INSTALL'
+Makefile.am: installing './depcomp'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_configure
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+gcc -DPACKAGE_NAME=\"ncbi-seg\" -DPACKAGE_TARNAME=\"ncbi-seg\" -DPACKAGE_VERSION=\"0.0.20000620\" -DPACKAGE_STRING=\"ncbi-seg\ 0.0.20000620\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"ncbi-seg\" -DVERSION=\"0.0.20000620\" -I.   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o seg.o seg.c
+In file included from seg.c:10:
+./genwin.h:146:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern closedbase();
+~~~~~~ ^
+./genwin.h:149:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern closeseq();
+~~~~~~ ^
+./genwin.h:152:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern shiftwin(), closewin();
+~~~~~~ ^
+./genwin.h:152:20: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern shiftwin(), closewin();
+~~~~~~             ^
+./genwin.h:154:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern compon(), stateon(), enton();
+~~~~~~ ^
+./genwin.h:154:18: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern compon(), stateon(), enton();
+~~~~~~           ^
+./genwin.h:154:29: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern compon(), stateon(), enton();
+~~~~~~                      ^
+./genwin.h:158:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern closemat();
+~~~~~~ ^
+./genwin.h:160:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern upper(), lower(), findchar();
+~~~~~~ ^
+./genwin.h:160:17: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern upper(), lower(), findchar();
+~~~~~~          ^
+./genwin.h:160:26: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+extern upper(), lower(), findchar();
+~~~~~~                   ^
+seg.c:49:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(argc, argv)
+^~~~
+seg.c:58:4: warning: implicit declaration of function 'genwininit' is invalid in C99 [-Wimplicit-function-declaration]
+   genwininit();
+   ^
+seg.c:60:4: warning: implicit declaration of function 'getparams' is invalid in C99 [-Wimplicit-function-declaration]
+   getparams(argc, argv);
+   ^
+seg.c:61:4: warning: implicit declaration of function 'entropy_init' is invalid in C99 [-Wimplicit-function-declaration]
+   entropy_init(window);
+   ^
+seg.c:72:7: warning: implicit declaration of function 'segseq' is invalid in C99 [-Wimplicit-function-declaration]
+      segseq(seq, &segs, 0);
+      ^
+seg.c:73:7: warning: implicit declaration of function 'mergesegs' is invalid in C99 [-Wimplicit-function-declaration]
+      mergesegs(seq, segs);
+      ^
+seg.c:75:22: warning: implicit declaration of function 'singreport' is invalid in C99 [-Wimplicit-function-declaration]
+      if (singleseq) singreport(seq, segs);
+                     ^
+seg.c:76:27: warning: implicit declaration of function 'prettyreport' is invalid in C99 [-Wimplicit-function-declaration]
+      else if (prettyseq) prettyreport(seq, segs);
+                          ^
+seg.c:77:28: warning: implicit declaration of function 'pretreereport' is invalid in C99 [-Wimplicit-function-declaration]
+      else if (prettytree) pretreereport(seq, segs);
+                           ^
+seg.c:78:12: warning: implicit declaration of function 'report' is invalid in C99 [-Wimplicit-function-declaration]
+      else report(seq, segs);
+           ^
+seg.c:80:7: warning: implicit declaration of function 'freesegs' is invalid in C99 [-Wimplicit-function-declaration]
+      freesegs(segs);
+      ^
+seg.c:90:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getparams(argc, argv)
+^~~~~~~~~
+seg.c:103:7: warning: implicit declaration of function 'usage' is invalid in C99 [-Wimplicit-function-declaration]
+      usage();
+      ^
+seg.c:133:17: error: non-void function 'getparams' should return a value [-Wreturn-type]
+   if (i==argc) return;
+                ^
+seg.c:137:14: warning: implicit declaration of function 'getopt' is invalid in C99 [-Wimplicit-function-declaration]
+   while ((c=getopt(nargc, nargv, "m:olhaxpqc:nt:"))!=-1)
+             ^
+seg.c:205:4: error: non-void function 'getparams' should return a value [-Wreturn-type]
+   return;
+   ^
+seg.c:210:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+segseq(seq, segs, offset)
+^~~~~~
+seg.c:223:17: error: non-void function 'segseq' should return a value [-Wreturn-type]
+   if (H==NULL) return;
+                ^
+seg.c:233:16: warning: implicit declaration of function 'findlo' is invalid in C99 [-Wimplicit-function-declaration]
+         loi = findlo(i, lowlim, H);
+               ^
+seg.c:234:16: warning: implicit declaration of function 'findhi' is invalid in C99 [-Wimplicit-function-declaration]
+         hii = findhi(i, last, H);
+               ^
+seg.c:239:10: warning: implicit declaration of function 'trim' is invalid in C99 [-Wimplicit-function-declaration]
+         trim(openwin(seq, leftend, rightend-leftend+1), &leftend, &rightend);
+         ^
+seg.c:252:21: warning: implicit declaration of function 'appendseg' is invalid in C99 [-Wimplicit-function-declaration]
+               else appendseg(*segs, leftsegs);
+                    ^
+seg.c:273:14: warning: implicit declaration of function 'min' is invalid in C99 [-Wimplicit-function-declaration]
+         i = min(hii, rightend+downset);
+             ^
+seg.c:280:4: error: non-void function 'segseq' should return a value [-Wreturn-type]
+   return;
+   ^
+seg.c:312:31: warning: implicit declaration of function 'hasdash' is invalid in C99 [-Wimplicit-function-declaration]
+      if (seq->punctuation && hasdash(win))
+                              ^
+seg.c:314:10: warning: implicit declaration of function 'shiftwin1' is invalid in C99 [-Wimplicit-function-declaration]
+         shiftwin1(win);
+         ^
+seg.c:326:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+hasdash(win)
+^~~~~~~
+seg.c:343:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+findlo(i, limit, H)
+^~~~~~
+seg.c:360:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+findhi(i, limit, H)
+^~~~~~
+seg.c:377:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+trim(seq, leftend, rightend)
+^~~~
+seg.c:424:4: error: non-void function 'trim' should return a value [-Wreturn-type]
+   return;
+   ^
+seg.c:507:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+mergesegs(seq, segs)
+^~~~~~~~~
+seg.c:514:18: error: non-void function 'mergesegs' should return a value [-Wreturn-type]
+   if (overlaps) return;
+                 ^
+seg.c:515:20: error: non-void function 'mergesegs' should return a value [-Wreturn-type]
+   if (segs==NULL) return;
+                   ^
+seg.c:548:4: error: non-void function 'mergesegs' should return a value [-Wreturn-type]
+   return;
+   ^
+seg.c:553:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+report(seq, segs)
+^~~~~~
+seg.c:565:7: warning: implicit declaration of function 'seqout' is invalid in C99 [-Wimplicit-function-declaration]
+      seqout(seq, hi, 1, seq->length);
+      ^
+seg.c:567:7: error: non-void function 'report' should return a value [-Wreturn-type]
+      return;
+      ^
+seg.c:612:7: error: non-void function 'report' should return a value [-Wreturn-type]
+      return;
+      ^
+seg.c:621:4: error: non-void function 'report' should return a value [-Wreturn-type]
+   return;
+   ^
+seg.c:626:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+singreport(seq, segs)
+^~~~~~~~~~
+seg.c:663:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+prettyreport(seq, segs)
+^~~~~~~~~~~~
+seg.c:687:2: warning: implicit declaration of function 'space' is invalid in C99 [-Wimplicit-function-declaration]
+        space(leftspace+1);
+        ^
+seg.c:718:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+pretreereport(seq, segs)
+^~~~~~~~~~~~~
+seg.c:811:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+space(len)
+^~~~~
+seg.c:832:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+seqout(seq, hilo, begin, end)
+^~~~~~
+seg.c:846:28: error: non-void function 'seqout' should return a value [-Wreturn-type]
+   if (hionly && hilo==lo) return;
+                           ^
+seg.c:847:28: error: non-void function 'seqout' should return a value [-Wreturn-type]
+   if (loonly && hilo==hi) return;
+                           ^
+seg.c:906:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+appendseg(segs, seg)
+^~~~~~~~~
+seg.c:925:4: error: non-void function 'appendseg' should return a value [-Wreturn-type]
+   return;
+   ^
+seg.c:930:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+freesegs(segs)
+^~~~~~~~
+seg.c:945:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+usage()
+^~~~~
+49 warnings and 14 errors generated.
+make[1]: *** [seg.o] Error 1
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+dh_auto_build: make -j1 returned exit code 2
+make: *** [build] Error 2
+dpkg-buildpackage: error: debian/rules build gave error exit status 2
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140316-1852
+
+Finished
+────────
+
+E: Build failure (dpkg-buildpackage died)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 1208
+Build-Time: 5
+Distribution: sid
+Fail-Stage: build
+Host Architecture: amd64
+Install-Time: 10
+Job: ncbi-seg_0.0.20000620-1.dsc
+Machine Architecture: amd64
+Package: ncbi-seg
+Package-Time: 24
+Source-Version: 0.0.20000620-1
+Space: 1208
+Status: attempted
+Version: 0.0.20000620-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140316-1852
+Build needed 00:00:24, 1208k disc space

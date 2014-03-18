@@ -1,0 +1,215 @@
+--- a/seg.c
++++ b/seg.c
+@@ -130,7 +130,7 @@
+    downset = (window+1)/2 - 1;
+    upset = window - downset;
+ 
+-   if (i==argc) return;
++   if (i==argc) return 0;
+ 
+    nargc = argc-i+1;
+    nargv = argv+(i-1);
+@@ -202,7 +202,7 @@
+         }
+      }   
+ 
+-   return;
++   return 0;
+   }
+ 
+ /*---------------------------------------------------------------(segment)---*/
+@@ -220,7 +220,7 @@
+    double *H, *seqent();
+ 
+    H = seqent(seq);
+-   if (H==NULL) return;
++   if (H==NULL) return -1;
+ 
+    first = downset;
+    last = seq->length - upset;
+@@ -277,7 +277,7 @@
+      }
+ 
+    free(H);
+-   return;
++   return 0;
+   }
+ 
+ /*----------------------------------------------------------------(seqent)---*/
+@@ -421,7 +421,7 @@
+ /* fprintf(stderr, "%d-%d\n", *leftend, *rightend);  */
+ 
+    closewin(seq);
+-   return;
++   return 0;
+   }
+ 
+ /*---------------------------------------------------------------(getprob)---*/
+@@ -511,8 +511,8 @@
+   {struct Segment *seg, *nextseg;
+    int len;
+ 
+-   if (overlaps) return;
+-   if (segs==NULL) return;
++   if (overlaps) return -1;
++   if (segs==NULL) return -1;
+ 
+    if (segs->begin<hilenmin) segs->begin = 0;
+ 
+@@ -545,7 +545,7 @@
+    len = seq->length - seg->end - 1;
+    if (len<hilenmin) seg->end = seq->length - 1;
+ 
+-   return;
++   return 0;
+   }
+ 
+ /*----------------------------------------------------------------(report)---*/
+@@ -564,7 +564,7 @@
+       enton(seq);
+       seqout(seq, hi, 1, seq->length);
+ /*    fputc('\n', stdout);   -- for spacing after each sequence */
+-      return;
++      return 0;
+      }
+ 
+    if (segs->begin>0)
+@@ -609,7 +609,7 @@
+    if (seg->end+1==seq->length)
+      {
+ /*    fputc('\n', stdout);   -- for spacing after each sequence */
+-      return;
++      return 0;
+      }
+ 
+    subseq = openwin(seq, seg->end+1, seq->length-seg->end-1);
+@@ -618,7 +618,7 @@
+    closewin(subseq);
+ 
+ /* fputc('\n', stdout);   -- for spacing after each sequence */
+-   return;
++   return 0;
+   }
+ 
+ /*------------------------------------------------------------(singreport)---*/
+@@ -843,8 +843,8 @@
+    static int lo = 0;
+    int i, ctr, iend;
+ 
+-   if (hionly && hilo==lo) return;
+-   if (loonly && hilo==hi) return;
++   if (hionly && hilo==lo) return -1;
++   if (loonly && hilo==hi) return -1;
+ 
+    proseq = seq->seq;
+    proseqmax = proseq + seq->length;
+@@ -922,7 +922,7 @@
+         }
+      }
+ 
+-   return;
++   return 0;
+   }
+ 
+ /*--------------------------------------------------------------(freesegs)---*/
+--- a/genwin.c
++++ b/genwin.c
+@@ -78,7 +78,7 @@
+ 		aaflag[c] = FALSE;
+ 		aaflag[tolower(c)] = FALSE;
+ 	}
+-	return;
++	return 0;
+ }
+         
+ /*-------------------------------------------------------------(opendbase)---*/
+@@ -150,7 +150,7 @@
+    free(dbase->indexname);
+    free(dbase);
+ 
+-   return;
++   return 0;
+   }
+ 
+ /*--------------------------------------------------------------(firstseq)---*/
+@@ -186,7 +186,7 @@
+   struct Sequence *seq;
+ 
+   {
+-   if (seq==NULL) return;
++   if (seq==NULL) return 0;
+ 
+    if (seq->id!=NULL)          free(seq->id);
+    if (seq->name!=NULL)        free(seq->name);
+@@ -196,7 +196,7 @@
+    if (seq->composition!=NULL) free(seq->composition);
+    free(seq->seq);
+    free(seq);
+-   return;
++   return 0;
+   }
+ 
+ /*---------------------------------------------------------------(openwin)---*/
+@@ -320,7 +320,7 @@
+   struct Sequence *win;
+ 
+   {
+-   if (win==NULL) return;
++   if (win==NULL) return 0;
+ 
+    if (win->state!=NULL)       free(win->state);
+    if (win->composition!=NULL) free(win->composition);
+@@ -328,7 +328,7 @@
+    if (win->scorevec!=NULL)    free(win->scorevec);
+ 
+    free(win);
+-   return;
++   return 0;
+   }
+ 
+ /*----------------------------------------------------------------(compon)---*/
+@@ -350,7 +350,7 @@
+ 			comp[aaindex[aa]]++;
+ 	}
+ 
+-	return;
++	return 0;
+ }
+ 
+ /*---------------------------------------------------------------(stateon)---*/
+@@ -381,7 +381,7 @@
+ 
+ 	qsort(win->state, nel, sizeof(win->state[0]), state_cmp);
+ 
+-	return;
++	return 0;
+ }
+ 
+ /*-----------------------------------------------------------------(enton)---*/
+@@ -394,7 +394,7 @@
+ 
+    win->entropy = entropy(win->state);
+ 
+-   return;
++   return 0;
+   }
+ 
+ /*---------------------------------------------------------------(entropy)---*/
+@@ -689,7 +689,7 @@
+    while ((c=getc(fp))!='\n' && c!=EOF)
+      ;
+ 
+-   return;
++   return 0;
+   }
+ 
+ /*--------------------------------------------------------------(findchar)---*/
+@@ -787,7 +787,7 @@
+ 
+ 	seq->length = strlen(seq->seq);
+ 
+-	return;
++	return 0;
+ }
+ /*-----------------------------------------------------------------(upper)---*/
+ 
