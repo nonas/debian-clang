@@ -1,0 +1,126 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-19
+
+--- a/src/database-internal.vala
++++ b/src/database-internal.vala
+@@ -258,7 +258,7 @@
+ 		}
+ 
+ 		ret = open_db ();
+-		return_if_fail (ret == true);
++		return_val_if_fail (ret == true, false);
+ 
+ 		// Lock the database
+ 		try {
+--- a/src/signature.vala
++++ b/src/signature.vala
+@@ -294,7 +294,7 @@
+ 		bool ret;
+ 
+ 		err = Data.create (out dt);
+-		return_if_fail (check_gpg_err (err));
++		return_val_if_fail (check_gpg_err (err), false);
+ 
+ 		ret = read_file_to_data (ctrl_fname, ref dt);
+ 		if (!ret)
+@@ -303,7 +303,7 @@
+ 		//err = Data.create_from_memory (out sig, signtext, signtext.length, false);
+ 		err = Data.create (out sig);
+ 		read_string_to_data (signtext, ref sig);
+-		return_if_fail (check_gpg_err (err));
++		return_val_if_fail (check_gpg_err (err), false);
+ 
+ 		sig.seek (0, Posix.SEEK_SET);
+ 		dt.seek (0, Posix.SEEK_SET);
+--- a/src/key-manager.vala
++++ b/src/key-manager.vala
+@@ -50,7 +50,7 @@
+ 		// create main GPG context
+ 		GPGError.ErrorCode err;
+ 		err = new_context (out main_ctx);
+-		return_if_fail (check_gpg_err (err));
++		return_val_if_fail (check_gpg_err (err), null);
+ 		main_ctx.set_armor (true);
+ 	}
+ 
+@@ -136,7 +136,7 @@
+ 		write_gpg_config_to_homedir (tmpctx.homedir);
+ 
+ 		err = new_context (out tmpctx.context, homedir);
+-		return_val_if_fail (check_gpg_err (err), null);
++		return_if_fail (check_gpg_err (err));
+ 		tmpctx.context->set_armor (true);
+ 
+ 		ret = import_key_internal (tmpctx.context, fpr, out tmpctx.key);
+--- a/src/pk-plugin/pk-plugin-listaller.c
++++ b/src/pk-plugin/pk-plugin-listaller.c
+@@ -736,7 +736,7 @@
+ 	}
+ 
+ 	/* set locale so Listaller messages are translated */
+-        if (locale = pk_backend_job_get_locale (plugin->job)) {
++        if (locale == pk_backend_job_get_locale (plugin->job)) {
+             setenv ("LANGUAGE", locale, 1);
+             setenv ("LANG", locale, 1);
+         }
+--- a/tools/lipkgen/gpgsign.vala
++++ b/tools/lipkgen/gpgsign.vala
+@@ -82,7 +82,7 @@
+ 		Context ctx;
+ 		err = Context.Context (out ctx);
+ 		ctx.set_protocol (Protocol.OpenPGP);
+-		return_if_fail (check_gpg_err (err));
++		return_val_if_fail (check_gpg_err (err), null);
+ 
+ 		string? agent_info = Environment.get_variable ("GPG_AGENT_INFO");
+ 		if (!((agent_info != null) && (agent_info.index_of_char (':') > 0)))
+@@ -93,7 +93,7 @@
+ 
+ 		Data din;
+ 		err = Data.create (out din);
+-		return_if_fail (check_gpg_err (err));
++		return_val_if_fail (check_gpg_err (err), null);
+ 
+ 		ret = read_file_to_data (control_fname, ref din);
+ 		if (!ret)
+@@ -103,9 +103,9 @@
+ 		din.seek (0, Posix.SEEK_SET);
+ 		Data *dout;
+ 		err = Data.create (out dout);
+-		return_if_fail (check_gpg_err (err));
++		return_val_if_fail (check_gpg_err (err), null);
+ 		err = ctx.op_sign (din, dout, SigMode.DETACH);
+-		// return_if_fail (check_gpg_err (err));
++		// return_val_if_fail (check_gpg_err (err), null);
+ 		SignResult *result = ctx.op_sign_result ();
+ 		check_result (result, SigMode.DETACH);
+ 
+@@ -119,7 +119,7 @@
+ 
+ 		Context ctx;
+ 		err = Context.Context (out ctx);
+-		return_if_fail (check_gpg_err (err));
++		return_val_if_fail (check_gpg_err (err), null);
+ 
+ 		string? agent_info = Environment.get_variable ("GPG_AGENT_INFO");
+ 		if (!((agent_info != null) && (agent_info.index_of_char (':') > 0)))
+@@ -130,15 +130,15 @@
+ 
+ 		Data din;
+ 		err = Data.create_from_memory (out din, "Hallo Leute\n", 12, false);
+-		return_if_fail (check_gpg_err (err));
++		return_val_if_fail (check_gpg_err (err), null);
+ 
+ 		// detached signature.
+ 		din.seek (0, Posix.SEEK_SET);
+ 		Data dout;
+ 		err = Data.create (out dout);
+-		return_if_fail (check_gpg_err (err));
++		return_val_if_fail (check_gpg_err (err), null);
+ 		err = ctx.op_sign (din, dout, SigMode.DETACH);
+-		return_if_fail (check_gpg_err (err));
++		return_val_if_fail (check_gpg_err (err), null);
+ 		SignResult *result = ctx.op_sign_result ();
+ 		check_result (result, SigMode.DETACH);
+ 		_dbg_print_data (dout);
