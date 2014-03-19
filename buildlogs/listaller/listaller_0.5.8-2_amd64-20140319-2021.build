@@ -1,7 +1,7 @@
 sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
 
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║ listaller 0.5.8-2 (amd64)                                  19 Mar 2014 20:17 ║
+║ listaller 0.5.8-2 (amd64)                                  19 Mar 2014 20:21 ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 Package: listaller
@@ -12,9 +12,9 @@ Machine Architecture: amd64
 Host Architecture: amd64
 Build Architecture: amd64
 
-I: NOTICE: Log filtering will replace 'build/listaller-BbayRv/listaller-0.5.8' with '«PKGBUILDDIR»'
-I: NOTICE: Log filtering will replace 'build/listaller-BbayRv' with '«BUILDDIR»'
-I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-8b0c7eb8-d838-496d-aee4-a81584c477b3' with '«CHROOT»'
+I: NOTICE: Log filtering will replace 'build/listaller-mJKdcy/listaller-0.5.8' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/listaller-mJKdcy' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-dd183ff3-fa94-4e59-9cfa-1b12136b9173' with '«CHROOT»'
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Fetch source files                                                           │
@@ -31,7 +31,7 @@ Check arch
 
 Merged Build-Depends: build-essential, fakeroot
 Filtered Build-Depends: build-essential, fakeroot
-dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-UVY_JX/apt_archive/sbuild-build-depends-core-dummy.deb'.
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-PMHZXx/apt_archive/sbuild-build-depends-core-dummy.deb'.
 OK
 Reading package lists...
 
@@ -47,7 +47,7 @@ The following NEW packages will be installed:
   sbuild-build-depends-core-dummy
 debconf: delaying package configuration, since apt-utils is not installed
 0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 0 B/816 B of archives.
+Need to get 0 B/818 B of archives.
 After this operation, 0 B of additional disk space will be used.
 Selecting previously unselected package sbuild-build-depends-core-dummy.
 (Reading database ... 13265 files and directories currently installed.)
@@ -56,7 +56,7 @@ Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
 Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
 Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), cmake (>= 2.8), debhelper (>= 9.0.0), intltool, libarchive-dev (>= 2.8), libdbus-glib-1-dev, libgee-dev (>= 0.6), libgirepository1.0-dev, libglib2.0-dev (>= 2.28), libgpgme11-dev, libpackagekit-glib2-dev (>= 0.8.10), libpolkit-gobject-1-dev, librdf0-dev (>= 1.0), libsoup2.4-dev (>= 2.40), libsqlite3-dev (>= 3.6), libxml2-dev, valac (>= 0.20), xmlto
 Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), cmake (>= 2.8), debhelper (>= 9.0.0), intltool, libarchive-dev (>= 2.8), libdbus-glib-1-dev, libgee-dev (>= 0.6), libgirepository1.0-dev, libglib2.0-dev (>= 2.28), libgpgme11-dev, libpackagekit-glib2-dev (>= 0.8.10), libpolkit-gobject-1-dev, librdf0-dev (>= 1.0), libsoup2.4-dev (>= 2.40), libsqlite3-dev (>= 3.6), libxml2-dev, valac (>= 0.20), xmlto
-dpkg-deb: building package `sbuild-build-depends-listaller-dummy' in `/«BUILDDIR»/resolver-kd74DO/apt_archive/sbuild-build-depends-listaller-dummy.deb'.
+dpkg-deb: building package `sbuild-build-depends-listaller-dummy' in `/«BUILDDIR»/resolver-EhAAXQ/apt_archive/sbuild-build-depends-listaller-dummy.deb'.
 OK
 Reading package lists...
 
@@ -418,7 +418,7 @@ Get:227 http://http.debian.net/debian/ sid/main valac all 0.22.1-2 [133 kB]
 Get:228 http://http.debian.net/debian/ sid/main xsltproc amd64 1.1.28-2 [118 kB]
 Get:229 http://http.debian.net/debian/ sid/main xmlto amd64 0.0.25-2 [36.5 kB]
 debconf: delaying package configuration, since apt-utils is not installed
-Fetched 68.6 MB in 1s (45.0 MB/s)
+Fetched 68.6 MB in 1s (48.9 MB/s)
 Selecting previously unselected package libpopt0:amd64.
 (Reading database ... 13265 files and directories currently installed.)
 Preparing to unpack .../libpopt0_1.16-8_amd64.deb ...
@@ -1408,7 +1408,7 @@ SCHROOT_CHROOT_NAME=sid-amd64-sbuild
 SCHROOT_COMMAND=env
 SCHROOT_GID=1000
 SCHROOT_GROUP=nonas
-SCHROOT_SESSION_ID=sid-amd64-sbuild-8b0c7eb8-d838-496d-aee4-a81584c477b3
+SCHROOT_SESSION_ID=sid-amd64-sbuild-dd183ff3-fa94-4e59-9cfa-1b12136b9173
 SCHROOT_UID=1000
 SCHROOT_USER=nonas
 SHELL=/bin/sh
@@ -3048,70 +3048,1571 @@ cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen && /usr/bin/cc  -DCMAKE_I
 /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:290:2: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
         write (_tmp8_, pass, _tmp9_);
         ^~~~~  ~~~~~~~~~~~~~~~~~~~~
-/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:381:2: error: non-void function 'listaller_gpg_sign_sign_package' should return a value [-Wreturn-type]
-        g_return_if_fail (_tmp4_);
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:381:2: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'gboolean' (aka 'int') [-Wint-conversion]
+        g_return_val_if_fail (_tmp4_, NULL);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmessages.h:354:10: note: expanded from macro 'g_return_val_if_fail'
+         return (val);                                                  \
+                ^~~~~
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:411:2: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'gboolean' (aka 'int') [-Wint-conversion]
+        g_return_val_if_fail (_tmp18_, NULL);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmessages.h:354:10: note: expanded from macro 'g_return_val_if_fail'
+         return (val);                                                  \
+                ^~~~~
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:435:2: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'gboolean' (aka 'int') [-Wint-conversion]
+        g_return_val_if_fail (_tmp26_, NULL);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmessages.h:354:10: note: expanded from macro 'g_return_val_if_fail'
+         return (val);                                                  \
+                ^~~~~
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:502:2: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'gboolean' (aka 'int') [-Wint-conversion]
+        g_return_val_if_fail (_tmp3_, NULL);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmessages.h:354:10: note: expanded from macro 'g_return_val_if_fail'
+         return (val);                                                  \
+                ^~~~~
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:532:2: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'gboolean' (aka 'int') [-Wint-conversion]
+        g_return_val_if_fail (_tmp17_, NULL);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmessages.h:354:10: note: expanded from macro 'g_return_val_if_fail'
+         return (val);                                                  \
+                ^~~~~
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:540:2: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'gboolean' (aka 'int') [-Wint-conversion]
+        g_return_val_if_fail (_tmp21_, NULL);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmessages.h:354:10: note: expanded from macro 'g_return_val_if_fail'
+         return (val);                                                  \
+                ^~~~~
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:546:2: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'gboolean' (aka 'int') [-Wint-conversion]
+        g_return_val_if_fail (_tmp25_, NULL);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmessages.h:354:10: note: expanded from macro 'g_return_val_if_fail'
+         return (val);                                                  \
+                ^~~~~
+8 warnings generated.
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 33
+[ 59%] Building C object tools/lipkgen/CMakeFiles/lipkgen.dir/depfind.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DG_LOG_DOMAIN=\"Builder\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit    --include config.h -o CMakeFiles/lipkgen.dir/depfind.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/depfind.c
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/depfind.c:395:46: warning: incompatible pointer types passing 'GeeCollection *' (aka 'struct _GeeCollection *') to parameter of type 'GeeAbstractCollection *' (aka 'struct _GeeAbstractCollection *') [-Wincompatible-pointer-types]
+                _tmp6_ = gee_abstract_collection_get_size ((GeeCollection*) _tmp5_);
+                                                           ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gee-1.0/gee.h:755:63: note: passing argument to parameter 'self' here
+gint gee_abstract_collection_get_size (GeeAbstractCollection* self);
+                                                              ^
+1 warning generated.
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 34
+[ 60%] Building C object tools/lipkgen/CMakeFiles/lipkgen.dir/ipkbuilder.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DG_LOG_DOMAIN=\"Builder\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit    --include config.h -o CMakeFiles/lipkgen.dir/ipkbuilder.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:488:2: warning: 'archive_write_set_compression_xz' is deprecated [-Wdeprecated-declarations]
+        archive_write_set_compression_xz (_tmp5_);
         ^
-/usr/include/glib-2.0/glib/gmessages.h:345:3: note: expanded from macro 'g_return_if_fail'
-         return;                                                        \
-         ^
-/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:411:2: error: non-void function 'listaller_gpg_sign_sign_package' should return a value [-Wreturn-type]
-        g_return_if_fail (_tmp18_);
+/usr/include/archive.h:632:15: note: 'archive_write_set_compression_xz' declared here
+__LA_DECL int archive_write_set_compression_xz(struct archive *)
+              ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:530:47: warning: incompatible pointer types passing 'GeeCollection *' (aka 'struct _GeeCollection *') to parameter of type 'GeeAbstractCollection *' (aka 'struct _GeeAbstractCollection *') [-Wincompatible-pointer-types]
+                _tmp28_ = gee_abstract_collection_get_size ((GeeCollection*) _tmp27_);
+                                                            ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gee-1.0/gee.h:755:63: note: passing argument to parameter 'self' here
+gint gee_abstract_collection_get_size (GeeAbstractCollection* self);
+                                                              ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:716:5: warning: 'archive_write_finish' is deprecated [-Wdeprecated-declarations]
+                                _archive_write_finish0 (a);
+                                ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:54:69: note: expanded from macro '_archive_write_finish0'
+#define _archive_write_finish0(var) ((var == NULL) ? NULL : (var = (archive_write_finish (var), NULL)))
+                                                                    ^
+/usr/include/archive.h:721:17: note: 'archive_write_finish' declared here
+__LA_DECL int            archive_write_finish(struct archive *) __LA_DEPRECATED;
+                         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:821:2: warning: 'archive_write_finish' is deprecated [-Wdeprecated-declarations]
+        _archive_write_finish0 (a);
         ^
-/usr/include/glib-2.0/glib/gmessages.h:345:3: note: expanded from macro 'g_return_if_fail'
-         return;                                                        \
-         ^
-/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:435:2: error: non-void function 'listaller_gpg_sign_sign_package' should return a value [-Wreturn-type]
-        g_return_if_fail (_tmp26_);
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:54:69: note: expanded from macro '_archive_write_finish0'
+#define _archive_write_finish0(var) ((var == NULL) ? NULL : (var = (archive_write_finish (var), NULL)))
+                                                                    ^
+/usr/include/archive.h:721:17: note: 'archive_write_finish' declared here
+__LA_DECL int            archive_write_finish(struct archive *) __LA_DEPRECATED;
+                         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:977:46: warning: incompatible pointer types passing 'GeeCollection *' (aka 'struct _GeeCollection *') to parameter of type 'GeeAbstractCollection *' (aka 'struct _GeeAbstractCollection *') [-Wincompatible-pointer-types]
+        _tmp47_ = gee_abstract_collection_get_size ((GeeCollection*) _tmp46_);
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gee-1.0/gee.h:755:63: note: passing argument to parameter 'self' here
+gint gee_abstract_collection_get_size (GeeAbstractCollection* self);
+                                                              ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1026:2: warning: 'archive_write_set_compression_xz' is deprecated [-Wdeprecated-declarations]
+        archive_write_set_compression_xz (_tmp1_);
         ^
-/usr/include/glib-2.0/glib/gmessages.h:345:3: note: expanded from macro 'g_return_if_fail'
-         return;                                                        \
-         ^
-/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:502:2: error: non-void function '_listaller_gpg_sign_dbg_sign_test' should return a value [-Wreturn-type]
-        g_return_if_fail (_tmp3_);
+/usr/include/archive.h:632:15: note: 'archive_write_set_compression_xz' declared here
+__LA_DECL int archive_write_set_compression_xz(struct archive *)
+              ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1050:47: warning: incompatible pointer types passing 'GeeCollection *' (aka 'struct _GeeCollection *') to parameter of type 'GeeAbstractCollection *' (aka 'struct _GeeAbstractCollection *') [-Wincompatible-pointer-types]
+                _tmp11_ = gee_abstract_collection_get_size ((GeeCollection*) _tmp10_);
+                                                            ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gee-1.0/gee.h:755:63: note: passing argument to parameter 'self' here
+gint gee_abstract_collection_get_size (GeeAbstractCollection* self);
+                                                              ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1181:2: warning: 'archive_write_finish' is deprecated [-Wdeprecated-declarations]
+        _archive_write_finish0 (a);
         ^
-/usr/include/glib-2.0/glib/gmessages.h:345:3: note: expanded from macro 'g_return_if_fail'
-         return;                                                        \
-         ^
-/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:532:2: error: non-void function '_listaller_gpg_sign_dbg_sign_test' should return a value [-Wreturn-type]
-        g_return_if_fail (_tmp17_);
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:54:69: note: expanded from macro '_archive_write_finish0'
+#define _archive_write_finish0(var) ((var == NULL) ? NULL : (var = (archive_write_finish (var), NULL)))
+                                                                    ^
+/usr/include/archive.h:721:17: note: 'archive_write_finish' declared here
+__LA_DECL int            archive_write_finish(struct archive *) __LA_DEPRECATED;
+                         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1307:14: warning: passing 'const gchar *' (aka 'const char *') to parameter of type 'gchar *' (aka 'char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        g_strstrip (_tmp1_);
+                    ^~~~~~
+/usr/include/glib-2.0/glib/gstrfuncs.h:182:53: note: expanded from macro 'g_strstrip'
+#define g_strstrip( string )    g_strchomp (g_strchug (string))
+                                                       ^
+/usr/include/glib-2.0/glib/gstrfuncs.h:177:55: note: passing argument to parameter 'string' here
+gchar*                g_strchug        (gchar        *string);
+                                                      ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1561:2: warning: 'archive_write_set_compression_none' is deprecated [-Wdeprecated-declarations]
+        archive_write_set_compression_none (_tmp60_);
         ^
-/usr/include/glib-2.0/glib/gmessages.h:345:3: note: expanded from macro 'g_return_if_fail'
-         return;                                                        \
-         ^
-/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:540:2: error: non-void function '_listaller_gpg_sign_dbg_sign_test' should return a value [-Wreturn-type]
-        g_return_if_fail (_tmp21_);
+/usr/include/archive.h:628:15: note: 'archive_write_set_compression_none' declared here
+__LA_DECL int archive_write_set_compression_none(struct archive *)
+              ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1582:47: warning: incompatible pointer types passing 'GeeCollection *' (aka 'struct _GeeCollection *') to parameter of type 'GeeAbstractCollection *' (aka 'struct _GeeAbstractCollection *') [-Wincompatible-pointer-types]
+                _tmp68_ = gee_abstract_collection_get_size ((GeeCollection*) _tmp67_);
+                                                            ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gee-1.0/gee.h:755:63: note: passing argument to parameter 'self' here
+gint gee_abstract_collection_get_size (GeeAbstractCollection* self);
+                                                              ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1702:3: warning: 'archive_write_finish' is deprecated [-Wdeprecated-declarations]
+                _archive_write_finish0 (a);
+                ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:54:69: note: expanded from macro '_archive_write_finish0'
+#define _archive_write_finish0(var) ((var == NULL) ? NULL : (var = (archive_write_finish (var), NULL)))
+                                                                    ^
+/usr/include/archive.h:721:17: note: 'archive_write_finish' declared here
+__LA_DECL int            archive_write_finish(struct archive *) __LA_DEPRECATED;
+                         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1846:4: warning: 'archive_write_finish' is deprecated [-Wdeprecated-declarations]
+                        _archive_write_finish0 (a);
+                        ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:54:69: note: expanded from macro '_archive_write_finish0'
+#define _archive_write_finish0(var) ((var == NULL) ? NULL : (var = (archive_write_finish (var), NULL)))
+                                                                    ^
+/usr/include/archive.h:721:17: note: 'archive_write_finish' declared here
+__LA_DECL int            archive_write_finish(struct archive *) __LA_DEPRECATED;
+                         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1856:4: warning: 'archive_write_finish' is deprecated [-Wdeprecated-declarations]
+                        _archive_write_finish0 (a);
+                        ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:54:69: note: expanded from macro '_archive_write_finish0'
+#define _archive_write_finish0(var) ((var == NULL) ? NULL : (var = (archive_write_finish (var), NULL)))
+                                                                    ^
+/usr/include/archive.h:721:17: note: 'archive_write_finish' declared here
+__LA_DECL int            archive_write_finish(struct archive *) __LA_DEPRECATED;
+                         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1877:4: warning: 'archive_write_finish' is deprecated [-Wdeprecated-declarations]
+                        _archive_write_finish0 (a);
+                        ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:54:69: note: expanded from macro '_archive_write_finish0'
+#define _archive_write_finish0(var) ((var == NULL) ? NULL : (var = (archive_write_finish (var), NULL)))
+                                                                    ^
+/usr/include/archive.h:721:17: note: 'archive_write_finish' declared here
+__LA_DECL int            archive_write_finish(struct archive *) __LA_DEPRECATED;
+                         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:1926:2: warning: 'archive_write_finish' is deprecated [-Wdeprecated-declarations]
+        _archive_write_finish0 (a);
         ^
-/usr/include/glib-2.0/glib/gmessages.h:345:3: note: expanded from macro 'g_return_if_fail'
-         return;                                                        \
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:54:69: note: expanded from macro '_archive_write_finish0'
+#define _archive_write_finish0(var) ((var == NULL) ? NULL : (var = (archive_write_finish (var), NULL)))
+                                                                    ^
+/usr/include/archive.h:721:17: note: 'archive_write_finish' declared here
+__LA_DECL int            archive_write_finish(struct archive *) __LA_DEPRECATED;
+                         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:2300:46: warning: incompatible pointer types passing 'GeeCollection *' (aka 'struct _GeeCollection *') to parameter of type 'GeeAbstractCollection *' (aka 'struct _GeeAbstractCollection *') [-Wincompatible-pointer-types]
+        _tmp16_ = gee_abstract_collection_get_size ((GeeCollection*) _tmp15_);
+                                                    ^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gee-1.0/gee.h:755:63: note: passing argument to parameter 'self' here
+gint gee_abstract_collection_get_size (GeeAbstractCollection* self);
+                                                              ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/ipkbuilder.c:2801:16: warning: 'gee_map_contains' is deprecated [-Wdeprecated-declarations]
+                                _tmp201_ = gee_map_contains ((GeeMap*) _tmp197_, _tmp200_);
+                                           ^
+/usr/include/gee-1.0/gee.h:906:10: note: 'gee_map_contains' declared here
+gboolean gee_map_contains (GeeMap* self, gconstpointer key) G_GNUC_DEPRECATED;
          ^
-/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/gpgsign.c:546:2: error: non-void function '_listaller_gpg_sign_dbg_sign_test' should return a value [-Wreturn-type]
-        g_return_if_fail (_tmp25_);
-        ^
-/usr/include/glib-2.0/glib/gmessages.h:345:3: note: expanded from macro 'g_return_if_fail'
-         return;                                                        \
-         ^
-1 warning and 7 errors generated.
-make[3]: *** [tools/lipkgen/CMakeFiles/lipkgen.dir/gpgsign.c.o] Error 1
+18 warnings generated.
+Linking C executable lipkgen
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen && /usr/bin/cmake -E cmake_link_script CMakeFiles/lipkgen.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g   -Wl,-z,relro CMakeFiles/lipkgen.dir/lipkgen.c.o CMakeFiles/lipkgen.dir/lpkgutils.c.o CMakeFiles/lipkgen.dir/__/reporting.c.o CMakeFiles/lipkgen.dir/prepare.c.o CMakeFiles/lipkgen.dir/gpgsign.c.o CMakeFiles/lipkgen.dir/depfind.c.o CMakeFiles/lipkgen.dir/ipkbuilder.c.o  -o lipkgen -rdynamic -lglib-2.0 -lm -lglib-2.0 -lgee -lgobject-2.0 -lglib-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -larchive -lxml2 -lgpgme -lassuan -lgpg-error -lrdf ../../src/liblistaller-glib.so.0.5.8 -lglib-2.0 -lm -lgee -lsqlite3 -lsoup-2.4 -lpackagekit-glib2 -lsqlite3 -lpackagekit-glib2 -lsqlite3 -lgobject-2.0 -lglib-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lgio-2.0 -larchive -lxml2 -lgpgme -lassuan -lgpg-error -lrdf -Wl,-rpath,/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src: 
 make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
-make[2]: *** [tools/lipkgen/CMakeFiles/lipkgen.dir/all] Error 2
-make[1]: *** [all] Error 2
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  29 30 31 32 33 34
+[ 60%] Built target lipkgen
+make -f tools/appcompile/CMakeFiles/appcompile_precompile.dir/build.make tools/appcompile/CMakeFiles/appcompile_precompile.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/appcompile /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/CMakeFiles/appcompile_precompile.dir/DependInfo.cmake --color=
+Scanning dependencies of target appcompile_precompile
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/appcompile/CMakeFiles/appcompile_precompile.dir/build.make tools/appcompile/CMakeFiles/appcompile_precompile.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 6
+[ 61%] Precompiling Vala target appcompile_precompile
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile && /usr/bin/cmake -DVALA_COMPILER:FILEPATH=/usr/bin/valac -DCMAKE_CFG_INTDIR:STRING=. -DVERBOSE:STRING=1 -P /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/CMakeFiles/appcompile_precompile.dir/precompile.cmake
+/usr/bin/valac -C -b /«PKGBUILDDIR»/tools/appcompile -d /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile//. --vapidir=/«PKGBUILDDIR»/vapi --pkg=config --pkg=gee-1.0 --pkg=gio-2.0 --pkg=posix /«PKGBUILDDIR»/src/utils.vala /«PKGBUILDDIR»/src/logging.vala /«PKGBUILDDIR»/tools/lipkgen/lpkgutils.vala /«PKGBUILDDIR»/tools/appcompile/acutils.vala /«PKGBUILDDIR»/tools/appcompile/appcompile.vala /«PKGBUILDDIR»/tools/appcompile/autocompiler.vala /«PKGBUILDDIR»/tools/appcompile/autostrip.vala
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile && /usr/bin/cmake -E touch /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/CMakeFiles/appcompile_precompile.dir/precompile.stamp
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  6
+[ 61%] Built target appcompile_precompile
+make -f tools/appcompile/CMakeFiles/appcompile.dir/build.make tools/appcompile/CMakeFiles/appcompile.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/appcompile /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/CMakeFiles/appcompile.dir/DependInfo.cmake --color=
+Scanning dependencies of target appcompile
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/appcompile/CMakeFiles/appcompile.dir/build.make tools/appcompile/CMakeFiles/appcompile.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 61%] Building C object tools/appcompile/CMakeFiles/appcompile.dir/__/__/src/utils.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit -I/«PKGBUILDDIR»/tools/appcompile    --include config.h -o CMakeFiles/appcompile.dir/__/__/src/utils.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/utils.c
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/utils.c:1180:45: warning: incompatible pointer types passing 'GeeCollection *' (aka 'struct _GeeCollection *') to parameter of type 'GeeAbstractCollection *' (aka 'struct _GeeAbstractCollection *') [-Wincompatible-pointer-types]
+        _tmp1_ = gee_abstract_collection_get_size ((GeeCollection*) _tmp0_);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gee-1.0/gee.h:755:63: note: passing argument to parameter 'self' here
+gint gee_abstract_collection_get_size (GeeAbstractCollection* self);
+                                                              ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/utils.c:1203:46: warning: incompatible pointer types passing 'GeeCollection *' (aka 'struct _GeeCollection *') to parameter of type 'GeeAbstractCollection *' (aka 'struct _GeeAbstractCollection *') [-Wincompatible-pointer-types]
+                _tmp7_ = gee_abstract_collection_get_size ((GeeCollection*) _tmp6_);
+                                                           ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/gee-1.0/gee.h:755:63: note: passing argument to parameter 'self' here
+gint gee_abstract_collection_get_size (GeeAbstractCollection* self);
+                                                              ^
+2 warnings generated.
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 1
+[ 62%] Building C object tools/appcompile/CMakeFiles/appcompile.dir/__/__/src/logging.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit -I/«PKGBUILDDIR»/tools/appcompile    --include config.h -o CMakeFiles/appcompile.dir/__/__/src/logging.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/logging.c
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 2
+[ 63%] Building C object tools/appcompile/CMakeFiles/appcompile.dir/__/lipkgen/lpkgutils.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit -I/«PKGBUILDDIR»/tools/appcompile    --include config.h -o CMakeFiles/appcompile.dir/__/lipkgen/lpkgutils.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/lpkgutils.c
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 3
+[ 64%] Building C object tools/appcompile/CMakeFiles/appcompile.dir/acutils.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit -I/«PKGBUILDDIR»/tools/appcompile    --include config.h -o CMakeFiles/appcompile.dir/acutils.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/acutils.c
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 4
+[ 65%] Building C object tools/appcompile/CMakeFiles/appcompile.dir/appcompile.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit -I/«PKGBUILDDIR»/tools/appcompile    --include config.h -o CMakeFiles/appcompile.dir/appcompile.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/appcompile.c
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/appcompile.c:134:13: warning: passing 'const gchar *' (aka 'const char *') to parameter of type 'gchar *' (aka 'char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        g_strchug (_tmp1_);
+                   ^~~~~~
+/usr/include/glib-2.0/glib/gstrfuncs.h:177:55: note: passing argument to parameter 'string' here
+gchar*                g_strchug        (gchar        *string);
+                                                      ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/appcompile.c:392:2: warning: 'g_type_init' is deprecated [-Wdeprecated-declarations]
+        g_type_init ();
+        ^
+/usr/include/glib-2.0/gobject/gtype.h:669:23: note: 'g_type_init' declared here
+void                  g_type_init                    (void);
+                      ^
+2 warnings generated.
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 5
+[ 66%] Building C object tools/appcompile/CMakeFiles/appcompile.dir/autocompiler.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit -I/«PKGBUILDDIR»/tools/appcompile    --include config.h -o CMakeFiles/appcompile.dir/autocompiler.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/autocompiler.c
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 66%] Building C object tools/appcompile/CMakeFiles/appcompile.dir/autostrip.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit -I/«PKGBUILDDIR»/tools/appcompile    --include config.h -o CMakeFiles/appcompile.dir/autostrip.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/autostrip.c
+Linking C executable appcompile
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile && /usr/bin/cmake -E cmake_link_script CMakeFiles/appcompile.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g   -Wl,-z,relro CMakeFiles/appcompile.dir/__/__/src/utils.c.o CMakeFiles/appcompile.dir/__/__/src/logging.c.o CMakeFiles/appcompile.dir/__/lipkgen/lpkgutils.c.o CMakeFiles/appcompile.dir/acutils.c.o CMakeFiles/appcompile.dir/appcompile.c.o CMakeFiles/appcompile.dir/autocompiler.c.o CMakeFiles/appcompile.dir/autostrip.c.o  -o appcompile -rdynamic -lglib-2.0 -lglib-2.0 -lgee -lgobject-2.0 -lglib-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lgio-2.0 
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  1 2 3 4 5
+[ 66%] Built target appcompile
+make -f tools/lirepo/CMakeFiles/lirepo_precompile.dir/build.make tools/lirepo/CMakeFiles/lirepo_precompile.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/lirepo /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo/CMakeFiles/lirepo_precompile.dir/DependInfo.cmake --color=
+Scanning dependencies of target lirepo_precompile
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/lirepo/CMakeFiles/lirepo_precompile.dir/build.make tools/lirepo/CMakeFiles/lirepo_precompile.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 38
+[ 67%] Precompiling Vala target lirepo_precompile
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo && /usr/bin/cmake -DVALA_COMPILER:FILEPATH=/usr/bin/valac -DCMAKE_CFG_INTDIR:STRING=. -DVERBOSE:STRING=1 -P /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo/CMakeFiles/lirepo_precompile.dir/precompile.cmake
+/usr/bin/valac -C -b /«PKGBUILDDIR»/tools/lirepo -d /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo//. --vapidir=/«PKGBUILDDIR»/vapi --vapidir=/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src --pkg=config --pkg=gee-1.0 --pkg=gio-2.0 --pkg=sqlite3 --pkg=libarchive --pkg=libsoup-2.4 --pkg=gpgme --pkg=libxml-2.0 --pkg=rdf-minimal --pkg=listaller_internal --pkg=packagekit-glib2 /«PKGBUILDDIR»/tools/lirepo/lirepo.vala /«PKGBUILDDIR»/tools/lirepo/ipk-repo-local.vala /«PKGBUILDDIR»/tools/reporting.vala
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo && /usr/bin/cmake -E touch /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo/CMakeFiles/lirepo_precompile.dir/precompile.stamp
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  38
+[ 67%] Built target lirepo_precompile
+make -f tools/lirepo/CMakeFiles/lirepo.dir/build.make tools/lirepo/CMakeFiles/lirepo.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/lirepo /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo/CMakeFiles/lirepo.dir/DependInfo.cmake --color=
+Scanning dependencies of target lirepo
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/lirepo/CMakeFiles/lirepo.dir/build.make tools/lirepo/CMakeFiles/lirepo.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 36
+[ 68%] Building C object tools/lirepo/CMakeFiles/lirepo.dir/lirepo.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DG_LOG_DOMAIN=\"RepoTool\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit -I/«PKGBUILDDIR»/tools/lirepo    --include config.h -o CMakeFiles/lirepo.dir/lirepo.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo/lirepo.c
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo/lirepo.c:371:2: warning: 'g_type_init' is deprecated [-Wdeprecated-declarations]
+        g_type_init ();
+        ^
+/usr/include/glib-2.0/gobject/gtype.h:669:23: note: 'g_type_init' declared here
+void                  g_type_init                    (void);
+                      ^
+1 warning generated.
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 68%] Building C object tools/lirepo/CMakeFiles/lirepo.dir/ipk-repo-local.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DG_LOG_DOMAIN=\"RepoTool\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit -I/«PKGBUILDDIR»/tools/lirepo    --include config.h -o CMakeFiles/lirepo.dir/ipk-repo-local.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo/ipk-repo-local.c
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 37
+[ 69%] Building C object tools/lirepo/CMakeFiles/lirepo.dir/__/reporting.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -DG_LOG_DOMAIN=\"RepoTool\" -DI_KNOW_THE_PACKAGEKIT_GLIB2_API_IS_SUBJECT_TO_CHANGE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src -I/«PKGBUILDDIR»/tools -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/gee-1.0 -I/usr/include/libxml2 -I/usr/include/raptor2 -I/usr/include/rasqal -I/usr/include/PackageKit -I/«PKGBUILDDIR»/tools/lirepo    --include config.h -o CMakeFiles/lirepo.dir/__/reporting.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c:221:3: warning: 'g_static_rec_mutex_lock' is deprecated [-Wdeprecated-declarations]
+                g_static_rec_mutex_lock (&self->priv->__lock_lines);
+                ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:174:10: note: 'g_static_rec_mutex_lock' declared here
+void     g_static_rec_mutex_lock        (GStaticRecMutex *mutex);
+         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c:249:4: warning: 'g_static_rec_mutex_unlock' is deprecated [-Wdeprecated-declarations]
+                        g_static_rec_mutex_unlock (&self->priv->__lock_lines);
+                        ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:180:10: note: 'g_static_rec_mutex_unlock' declared here
+void     g_static_rec_mutex_unlock      (GStaticRecMutex *mutex);
+         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c:263:4: warning: 'g_static_rec_mutex_lock' is deprecated [-Wdeprecated-declarations]
+                        g_static_rec_mutex_lock (&self->priv->__lock_error_received);
+                        ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:174:10: note: 'g_static_rec_mutex_lock' declared here
+void     g_static_rec_mutex_lock        (GStaticRecMutex *mutex);
+         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c:271:5: warning: 'g_static_rec_mutex_unlock' is deprecated [-Wdeprecated-declarations]
+                                g_static_rec_mutex_unlock (&self->priv->__lock_error_received);
+                                ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:180:10: note: 'g_static_rec_mutex_unlock' declared here
+void     g_static_rec_mutex_unlock      (GStaticRecMutex *mutex);
+         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c:343:3: warning: 'g_static_rec_mutex_lock' is deprecated [-Wdeprecated-declarations]
+                g_static_rec_mutex_lock (&self->priv->__lock_lines);
+                ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:174:10: note: 'g_static_rec_mutex_lock' declared here
+void     g_static_rec_mutex_lock        (GStaticRecMutex *mutex);
+         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c:394:4: warning: 'g_static_rec_mutex_unlock' is deprecated [-Wdeprecated-declarations]
+                        g_static_rec_mutex_unlock (&self->priv->__lock_lines);
+                        ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:180:10: note: 'g_static_rec_mutex_unlock' declared here
+void     g_static_rec_mutex_unlock      (GStaticRecMutex *mutex);
+         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c:542:2: warning: 'g_static_rec_mutex_init' is deprecated [-Wdeprecated-declarations]
+        g_static_rec_mutex_init (&self->priv->__lock_lines);
+        ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:171:10: note: 'g_static_rec_mutex_init' declared here
+void     g_static_rec_mutex_init        (GStaticRecMutex *mutex);
+         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c:543:2: warning: 'g_static_rec_mutex_init' is deprecated [-Wdeprecated-declarations]
+        g_static_rec_mutex_init (&self->priv->__lock_error_received);
+        ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:171:10: note: 'g_static_rec_mutex_init' declared here
+void     g_static_rec_mutex_init        (GStaticRecMutex *mutex);
+         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c:550:2: warning: 'g_static_rec_mutex_free' is deprecated [-Wdeprecated-declarations]
+        g_static_rec_mutex_free (&self->priv->__lock_lines);
+        ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:190:10: note: 'g_static_rec_mutex_free' declared here
+void     g_static_rec_mutex_free        (GStaticRecMutex *mutex);
+         ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/reporting.c:552:2: warning: 'g_static_rec_mutex_free' is deprecated [-Wdeprecated-declarations]
+        g_static_rec_mutex_free (&self->priv->__lock_error_received);
+        ^
+/usr/include/glib-2.0/glib/deprecated/gthread.h:190:10: note: 'g_static_rec_mutex_free' declared here
+void     g_static_rec_mutex_free        (GStaticRecMutex *mutex);
+         ^
+10 warnings generated.
+Linking C executable lirepo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo && /usr/bin/cmake -E cmake_link_script CMakeFiles/lirepo.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g   -Wl,-z,relro CMakeFiles/lirepo.dir/lirepo.c.o CMakeFiles/lirepo.dir/ipk-repo-local.c.o CMakeFiles/lirepo.dir/__/reporting.c.o  -o lirepo -rdynamic -lglib-2.0 -lm -lglib-2.0 -lgee -lgobject-2.0 -lglib-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -larchive -lxml2 -lgpgme -lassuan -lgpg-error -lrdf ../../src/liblistaller-glib.so.0.5.8 -lglib-2.0 -lm -lgee -lsqlite3 -lsoup-2.4 -lpackagekit-glib2 -lsqlite3 -lpackagekit-glib2 -lsqlite3 -lgobject-2.0 -lglib-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lgio-2.0 -larchive -lxml2 -lgpgme -lassuan -lgpg-error -lrdf -Wl,-rpath,/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src: 
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  36 37
+[ 69%] Built target lirepo
+make -f data/mime/CMakeFiles/merge-l10n.dir/build.make data/mime/CMakeFiles/merge-l10n.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/data/mime /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/mime /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/mime/CMakeFiles/merge-l10n.dir/DependInfo.cmake --color=
+Scanning dependencies of target merge-l10n
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f data/mime/CMakeFiles/merge-l10n.dir/build.make data/mime/CMakeFiles/merge-l10n.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/intltool-merge -x /«PKGBUILDDIR»/po /«PKGBUILDDIR»/data/mime/listaller-ipk.xml.in /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/mime/listaller-ipk.xml
+Merging translations into /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/mime/listaller-ipk.xml.
+CREATED /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/mime/listaller-ipk.xml
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 69%] Built target merge-l10n
+make -f contrib/libuild/CMakeFiles/buildlist_precompile.dir/build.make contrib/libuild/CMakeFiles/buildlist_precompile.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/contrib/libuild /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild/CMakeFiles/buildlist_precompile.dir/DependInfo.cmake --color=
+Scanning dependencies of target buildlist_precompile
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f contrib/libuild/CMakeFiles/buildlist_precompile.dir/build.make contrib/libuild/CMakeFiles/buildlist_precompile.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 9
+[ 70%] Precompiling Vala target buildlist_precompile
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild && /usr/bin/cmake -DVALA_COMPILER:FILEPATH=/usr/bin/valac -DCMAKE_CFG_INTDIR:STRING=. -DVERBOSE:STRING=1 -P /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild/CMakeFiles/buildlist_precompile.dir/precompile.cmake
+/usr/bin/valac -C -b /«PKGBUILDDIR»/contrib/libuild -d /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild//. --pkg=posix --pkg=glib-2.0 --pkg=gio-2.0 --pkg=gee-1.0 /«PKGBUILDDIR»/contrib/libuild/buildlist.vala
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild && /usr/bin/cmake -E touch /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild/CMakeFiles/buildlist_precompile.dir/precompile.stamp
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  9
+[ 70%] Built target buildlist_precompile
+make -f contrib/libuild/CMakeFiles/buildlist.dir/build.make contrib/libuild/CMakeFiles/buildlist.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/contrib/libuild /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild/CMakeFiles/buildlist.dir/DependInfo.cmake --color=
+Scanning dependencies of target buildlist
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f contrib/libuild/CMakeFiles/buildlist.dir/build.make contrib/libuild/CMakeFiles/buildlist.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 8
+[ 71%] Building C object contrib/libuild/CMakeFiles/buildlist.dir/buildlist.c.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild && /usr/bin/cc  -DCMAKE_INSTALL_LIBDIR=\"\"\"\" -DCMAKE_INSTALL_PREFIX=\"\"/usr\"\" -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g -I/«PKGBUILDDIR»/obj-x86_64-linux-gnu -I/«PKGBUILDDIR»/contrib/libuild -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include    --include config.h -I/usr/include/gee-1.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -o CMakeFiles/buildlist.dir/buildlist.c.o   -c /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild/buildlist.c
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild/buildlist.c:934:41: warning: incompatible pointer types passing 'GeeMap *' (aka 'struct _GeeMap *') to parameter of type 'GeeAbstractMap *' (aka 'struct _GeeAbstractMap *') [-Wincompatible-pointer-types]
+                _tmp141_ = gee_abstract_map_get_keys ((GeeMap*) _tmp140_);
+                                                      ^~~~~~~~~~~~~~~~~~
+/usr/include/gee-1.0/gee.h:792:52: note: passing argument to parameter 'self' here
+GeeSet* gee_abstract_map_get_keys (GeeAbstractMap* self);
+                                                   ^
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild/buildlist.c:1095:2: warning: 'g_type_init' is deprecated [-Wdeprecated-declarations]
+        g_type_init ();
+        ^
+/usr/include/glib-2.0/gobject/gtype.h:669:23: note: 'g_type_init' declared here
+void                  g_type_init                    (void);
+                      ^
+2 warnings generated.
+Linking C executable buildlist
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild && /usr/bin/cmake -E cmake_link_script CMakeFiles/buildlist.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -g   -Wl,-z,relro CMakeFiles/buildlist.dir/buildlist.c.o  -o buildlist -rdynamic -lglib-2.0 -lgee -lgobject-2.0 -lglib-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lglib-2.0 -lgee -lgio-2.0 
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  8
+[ 71%] Built target buildlist
+make -f docs/man/CMakeFiles/doc-man.dir/build.make docs/man/CMakeFiles/doc-man.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/docs/man /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man/CMakeFiles/doc-man.dir/DependInfo.cmake --color=
+Scanning dependencies of target doc-man
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f docs/man/CMakeFiles/doc-man.dir/build.make docs/man/CMakeFiles/doc-man.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 13
+[ 72%] Generating runapp.1
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man && xmlto man /«PKGBUILDDIR»/docs/man/runapp.1.xml
+Note: Writing runapp.1
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 14
+[ 73%] Generating lipa.1
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man && xmlto man /«PKGBUILDDIR»/docs/man/lipa.1.xml
+Note: Writing lipa.1
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 15
+[ 74%] Generating likey.1
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man && xmlto man /«PKGBUILDDIR»/docs/man/likey.1.xml
+Note: Writing likey.1
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 74%] Generating lipkgen.1
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man && xmlto man /«PKGBUILDDIR»/docs/man/lipkgen.1.xml
+Note: Writing lipkgen.1
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 16
+[ 75%] Generating appcompile.1
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man && xmlto man /«PKGBUILDDIR»/docs/man/appcompile.1.xml
+Note: Writing appcompile.1
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 17
+[ 76%] Generating depscan.1
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man && xmlto man /«PKGBUILDDIR»/docs/man/depscan.1.xml
+Note: Writing depscan.1
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 18
+[ 77%] Generating ligcc.1
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man && xmlto man /«PKGBUILDDIR»/docs/man/ligcc.1.xml
+Note: Writing ligcc.1
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 19
+[ 78%] Generating lig++.1
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man && xmlto man /«PKGBUILDDIR»/docs/man/lig++.1.xml
+Note: Writing lig++.1
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 20
+[ 79%] Generating relaytool.1
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man && xmlto man /«PKGBUILDDIR»/docs/man/relaytool.1.xml
+Note: Writing relaytool.1
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  13 14 15 16 17 18 19 20
+[ 79%] Built target doc-man
+make -f docs/man/CMakeFiles/nls-doc-man.dir/build.make docs/man/CMakeFiles/nls-doc-man.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/docs/man /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man/CMakeFiles/nls-doc-man.dir/DependInfo.cmake --color=
+Scanning dependencies of target nls-doc-man
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f docs/man/CMakeFiles/nls-doc-man.dir/build.make docs/man/CMakeFiles/nls-doc-man.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `docs/man/CMakeFiles/nls-doc-man.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 79%] Built target nls-doc-man
+make -f po/CMakeFiles/translations_1.dir/build.make po/CMakeFiles/translations_1.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/po /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/CMakeFiles/translations_1.dir/DependInfo.cmake --color=
+Scanning dependencies of target translations_1
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f po/CMakeFiles/translations_1.dir/build.make po/CMakeFiles/translations_1.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 81
+[ 80%] Generating nl.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/nl.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/nl.gmo /«PKGBUILDDIR»/po/nl.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 82
+[ 81%] Generating fi.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/fi.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/fi.gmo /«PKGBUILDDIR»/po/fi.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 83
+[ 82%] Generating id.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/id.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/id.gmo /«PKGBUILDDIR»/po/id.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 84
+[ 83%] Generating ast.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/ast.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/ast.gmo /«PKGBUILDDIR»/po/ast.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 83%] Generating es.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/es.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/es.gmo /«PKGBUILDDIR»/po/es.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 85
+[ 84%] Generating lt.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/lt.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/lt.gmo /«PKGBUILDDIR»/po/lt.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 86
+[ 85%] Generating sk.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/sk.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/sk.gmo /«PKGBUILDDIR»/po/sk.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 87
+[ 86%] Generating fr.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/fr.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/fr.gmo /«PKGBUILDDIR»/po/fr.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 88
+[ 87%] Generating de.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/de.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/de.gmo /«PKGBUILDDIR»/po/de.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 89
+[ 88%] Generating cs.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/cs.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/cs.gmo /«PKGBUILDDIR»/po/cs.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 88%] Generating nds.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/nds.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/nds.gmo /«PKGBUILDDIR»/po/nds.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 90
+[ 89%] Generating tr.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/tr.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/tr.gmo /«PKGBUILDDIR»/po/tr.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 91
+[ 90%] Generating it.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/it.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/it.gmo /«PKGBUILDDIR»/po/it.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 92
+[ 91%] Generating he.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/he.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/he.gmo /«PKGBUILDDIR»/po/he.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 93
+[ 92%] Generating sv.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/sv.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/sv.gmo /«PKGBUILDDIR»/po/sv.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 94
+[ 93%] Generating oc.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/oc.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/oc.gmo /«PKGBUILDDIR»/po/oc.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 93%] Generating pt_BR.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/pt_BR.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/pt_BR.gmo /«PKGBUILDDIR»/po/pt_BR.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 95
+[ 94%] Generating ca.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/ca.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/ca.gmo /«PKGBUILDDIR»/po/ca.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 96
+[ 95%] Generating zh_CN.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/zh_CN.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/zh_CN.gmo /«PKGBUILDDIR»/po/zh_CN.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 97
+[ 96%] Generating da.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/da.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/da.gmo /«PKGBUILDDIR»/po/da.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 98
+[ 97%] Generating sq.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/sq.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/sq.gmo /«PKGBUILDDIR»/po/sq.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 99
+[ 98%] Generating ru.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/ru.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/ru.gmo /«PKGBUILDDIR»/po/ru.po
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 100
+[100%] Generating pl.gmo
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgmerge --quiet --update --backup=none -s /«PKGBUILDDIR»/po/pl.po /«PKGBUILDDIR»/po/listaller.pot
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po && /usr/bin/msgfmt -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/pl.gmo /«PKGBUILDDIR»/po/pl.po
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
+[100%] Built target translations_1
 make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 0
 make[1]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
-dh_auto_build: make -j1 returned exit code 2
-make: *** [build] Error 2
-dpkg-buildpackage: error: debian/rules build gave error exit status 2
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_install --destdir=/«PKGBUILDDIR»/debian/tmp
+make[2]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -H/«PKGBUILDDIR» -B/«PKGBUILDDIR»/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/listaller-glib_precompile.dir/build.make src/CMakeFiles/listaller-glib_precompile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/CMakeFiles/listaller-glib_precompile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/listaller-glib_precompile.dir/build.make src/CMakeFiles/listaller-glib_precompile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `src/CMakeFiles/listaller-glib_precompile.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  76
+[  1%] Built target listaller-glib_precompile
+make -f src/CMakeFiles/gir-compile.dir/build.make src/CMakeFiles/gir-compile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/CMakeFiles/gir-compile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/gir-compile.dir/build.make src/CMakeFiles/gir-compile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/g-ir-compiler --shared-library=listaller-glib --includedir=. /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/Listaller-0.5.gir -o /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/Listaller-0.5.typelib
+/usr/share/gir-1.0/Gee-1.0.gir:8:51: warning: element annotation from state 6 is unknown, ignoring
+/usr/share/gir-1.0/Gee-1.0.gir:9:53: warning: element annotation from state 6 is unknown, ignoring
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/Listaller-0.5.gir:60:1: warning: element errordomain from state 6 is unknown, ignoring
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/Listaller-0.5.gir:283:64: warning: element annotation from state 9 is unknown, ignoring
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/Listaller-0.5.gir:284:56: warning: element annotation from state 9 is unknown, ignoring
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/Listaller-0.5.gir:611:1: warning: element errordomain from state 6 is unknown, ignoring
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/Listaller-0.5.gir:1364:64: warning: element annotation from state 9 is unknown, ignoring
+/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/Listaller-0.5.gir:1365:56: warning: element annotation from state 9 is unknown, ignoring
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[  1%] Built target gir-compile
+make -f src/CMakeFiles/header_internal_fix.dir/build.make src/CMakeFiles/header_internal_fix.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/CMakeFiles/header_internal_fix.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/header_internal_fix.dir/build.make src/CMakeFiles/header_internal_fix.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `src/CMakeFiles/header_internal_fix.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  21
+[  2%] Built target header_internal_fix
+make -f src/CMakeFiles/listaller-glib.dir/build.make src/CMakeFiles/listaller-glib.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/CMakeFiles/listaller-glib.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/listaller-glib.dir/build.make src/CMakeFiles/listaller-glib.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `src/CMakeFiles/listaller-glib.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75
+[ 39%] Built target listaller-glib
+make -f src/pk-plugin/CMakeFiles/pk_plugin_listaller.dir/build.make src/pk-plugin/CMakeFiles/pk_plugin_listaller.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/src/pk-plugin /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/pk-plugin /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/pk-plugin/CMakeFiles/pk_plugin_listaller.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/pk-plugin/CMakeFiles/pk_plugin_listaller.dir/build.make src/pk-plugin/CMakeFiles/pk_plugin_listaller.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `src/pk-plugin/CMakeFiles/pk_plugin_listaller.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  77 78
+[ 41%] Built target pk_plugin_listaller
+make -f tools/runapp/CMakeFiles/runapp_precompile.dir/build.make tools/runapp/CMakeFiles/runapp_precompile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/runapp /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/runapp /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/runapp/CMakeFiles/runapp_precompile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/runapp/CMakeFiles/runapp_precompile.dir/build.make tools/runapp/CMakeFiles/runapp_precompile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/runapp/CMakeFiles/runapp_precompile.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  79
+[ 42%] Built target runapp_precompile
+make -f tools/runapp/CMakeFiles/runapp.dir/build.make tools/runapp/CMakeFiles/runapp.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/runapp /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/runapp /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/runapp/CMakeFiles/runapp.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/runapp/CMakeFiles/runapp.dir/build.make tools/runapp/CMakeFiles/runapp.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/runapp/CMakeFiles/runapp.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 42%] Built target runapp
+make -f tools/CMakeFiles/tools-shared.dir/build.make tools/CMakeFiles/tools-shared.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/CMakeFiles/tools-shared.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/CMakeFiles/tools-shared.dir/build.make tools/CMakeFiles/tools-shared.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/CMakeFiles/tools-shared.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  80
+[ 43%] Built target tools-shared
+make -f tools/lipa/CMakeFiles/lipa_precompile.dir/build.make tools/lipa/CMakeFiles/lipa_precompile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/lipa /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipa /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipa/CMakeFiles/lipa_precompile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/lipa/CMakeFiles/lipa_precompile.dir/build.make tools/lipa/CMakeFiles/lipa_precompile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/lipa/CMakeFiles/lipa_precompile.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  28
+[ 44%] Built target lipa_precompile
+make -f tools/lipa/CMakeFiles/lipa.dir/build.make tools/lipa/CMakeFiles/lipa.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/lipa /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipa /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipa/CMakeFiles/lipa.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/lipa/CMakeFiles/lipa.dir/build.make tools/lipa/CMakeFiles/lipa.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/lipa/CMakeFiles/lipa.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  23 24 25 26 27
+[ 49%] Built target lipa
+make -f tools/likey/CMakeFiles/likey_precompile.dir/build.make tools/likey/CMakeFiles/likey_precompile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/likey /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/likey /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/likey/CMakeFiles/likey_precompile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/likey/CMakeFiles/likey_precompile.dir/build.make tools/likey/CMakeFiles/likey_precompile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/likey/CMakeFiles/likey_precompile.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  22
+[ 50%] Built target likey_precompile
+make -f tools/likey/CMakeFiles/likey.dir/build.make tools/likey/CMakeFiles/likey.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/likey /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/likey /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/likey/CMakeFiles/likey.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/likey/CMakeFiles/likey.dir/build.make tools/likey/CMakeFiles/likey.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/likey/CMakeFiles/likey.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 50%] Built target likey
+make -f tools/depscan/CMakeFiles/depscan_precompile.dir/build.make tools/depscan/CMakeFiles/depscan_precompile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/depscan /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/depscan /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/depscan/CMakeFiles/depscan_precompile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/depscan/CMakeFiles/depscan_precompile.dir/build.make tools/depscan/CMakeFiles/depscan_precompile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/depscan/CMakeFiles/depscan_precompile.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  12
+[ 51%] Built target depscan_precompile
+make -f tools/depscan/CMakeFiles/depscan.dir/build.make tools/depscan/CMakeFiles/depscan.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/depscan /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/depscan /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/depscan/CMakeFiles/depscan.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/depscan/CMakeFiles/depscan.dir/build.make tools/depscan/CMakeFiles/depscan.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/depscan/CMakeFiles/depscan.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  10 11
+[ 53%] Built target depscan
+make -f tools/lipkgen/CMakeFiles/lipkgen_precompile.dir/build.make tools/lipkgen/CMakeFiles/lipkgen_precompile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/lipkgen /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/CMakeFiles/lipkgen_precompile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/lipkgen/CMakeFiles/lipkgen_precompile.dir/build.make tools/lipkgen/CMakeFiles/lipkgen_precompile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/lipkgen/CMakeFiles/lipkgen_precompile.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  35
+[ 54%] Built target lipkgen_precompile
+make -f tools/lipkgen/CMakeFiles/lipkgen.dir/build.make tools/lipkgen/CMakeFiles/lipkgen.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/lipkgen /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lipkgen/CMakeFiles/lipkgen.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/lipkgen/CMakeFiles/lipkgen.dir/build.make tools/lipkgen/CMakeFiles/lipkgen.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/lipkgen/CMakeFiles/lipkgen.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  29 30 31 32 33 34
+[ 60%] Built target lipkgen
+make -f tools/appcompile/CMakeFiles/appcompile_precompile.dir/build.make tools/appcompile/CMakeFiles/appcompile_precompile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/appcompile /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/CMakeFiles/appcompile_precompile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/appcompile/CMakeFiles/appcompile_precompile.dir/build.make tools/appcompile/CMakeFiles/appcompile_precompile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/appcompile/CMakeFiles/appcompile_precompile.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  6
+[ 61%] Built target appcompile_precompile
+make -f tools/appcompile/CMakeFiles/appcompile.dir/build.make tools/appcompile/CMakeFiles/appcompile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/appcompile /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/appcompile/CMakeFiles/appcompile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/appcompile/CMakeFiles/appcompile.dir/build.make tools/appcompile/CMakeFiles/appcompile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/appcompile/CMakeFiles/appcompile.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  1 2 3 4 5
+[ 66%] Built target appcompile
+make -f tools/lirepo/CMakeFiles/lirepo_precompile.dir/build.make tools/lirepo/CMakeFiles/lirepo_precompile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/lirepo /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo/CMakeFiles/lirepo_precompile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/lirepo/CMakeFiles/lirepo_precompile.dir/build.make tools/lirepo/CMakeFiles/lirepo_precompile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/lirepo/CMakeFiles/lirepo_precompile.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  38
+[ 67%] Built target lirepo_precompile
+make -f tools/lirepo/CMakeFiles/lirepo.dir/build.make tools/lirepo/CMakeFiles/lirepo.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools/lirepo /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/lirepo/CMakeFiles/lirepo.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/lirepo/CMakeFiles/lirepo.dir/build.make tools/lirepo/CMakeFiles/lirepo.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `tools/lirepo/CMakeFiles/lirepo.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  36 37
+[ 69%] Built target lirepo
+make -f data/mime/CMakeFiles/merge-l10n.dir/build.make data/mime/CMakeFiles/merge-l10n.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/data/mime /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/mime /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/mime/CMakeFiles/merge-l10n.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f data/mime/CMakeFiles/merge-l10n.dir/build.make data/mime/CMakeFiles/merge-l10n.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/intltool-merge -x /«PKGBUILDDIR»/po /«PKGBUILDDIR»/data/mime/listaller-ipk.xml.in /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/mime/listaller-ipk.xml
+Merging translations into /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/mime/listaller-ipk.xml.
+CREATED /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/mime/listaller-ipk.xml
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 69%] Built target merge-l10n
+make -f contrib/libuild/CMakeFiles/buildlist_precompile.dir/build.make contrib/libuild/CMakeFiles/buildlist_precompile.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/contrib/libuild /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild/CMakeFiles/buildlist_precompile.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f contrib/libuild/CMakeFiles/buildlist_precompile.dir/build.make contrib/libuild/CMakeFiles/buildlist_precompile.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `contrib/libuild/CMakeFiles/buildlist_precompile.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  9
+[ 70%] Built target buildlist_precompile
+make -f contrib/libuild/CMakeFiles/buildlist.dir/build.make contrib/libuild/CMakeFiles/buildlist.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/contrib/libuild /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild /«PKGBUILDDIR»/obj-x86_64-linux-gnu/contrib/libuild/CMakeFiles/buildlist.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f contrib/libuild/CMakeFiles/buildlist.dir/build.make contrib/libuild/CMakeFiles/buildlist.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `contrib/libuild/CMakeFiles/buildlist.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  8
+[ 71%] Built target buildlist
+make -f docs/man/CMakeFiles/doc-man.dir/build.make docs/man/CMakeFiles/doc-man.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/docs/man /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man/CMakeFiles/doc-man.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f docs/man/CMakeFiles/doc-man.dir/build.make docs/man/CMakeFiles/doc-man.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `docs/man/CMakeFiles/doc-man.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  13 14 15 16 17 18 19 20
+[ 79%] Built target doc-man
+make -f docs/man/CMakeFiles/nls-doc-man.dir/build.make docs/man/CMakeFiles/nls-doc-man.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/docs/man /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man /«PKGBUILDDIR»/obj-x86_64-linux-gnu/docs/man/CMakeFiles/nls-doc-man.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f docs/man/CMakeFiles/nls-doc-man.dir/build.make docs/man/CMakeFiles/nls-doc-man.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `docs/man/CMakeFiles/nls-doc-man.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 
+[ 79%] Built target nls-doc-man
+make -f po/CMakeFiles/translations_1.dir/build.make po/CMakeFiles/translations_1.dir/depend
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/po /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po /«PKGBUILDDIR»/obj-x86_64-linux-gnu/po/CMakeFiles/translations_1.dir/DependInfo.cmake --color=
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f po/CMakeFiles/translations_1.dir/build.make po/CMakeFiles/translations_1.dir/build
+make[4]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[4]: Nothing to be done for `po/CMakeFiles/translations_1.dir/build'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
+[100%] Built target translations_1
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 0
+make -f CMakeFiles/Makefile2 preinstall
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `preinstall'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "Debug"
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/liblistaller-glib.so.0.5.8
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/liblistaller-glib.so.0
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/liblistaller-glib.so
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig/listaller-glib.pc
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/listaller-glib/listaller.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/vala/vapi/listaller-0.5.vapi
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/gir-1.0/Listaller-0.5.gir
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/lib/girepository-1.0/Listaller-0.5.typelib
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so
+-- Removed runtime path from "/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so"
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/bin/runapp
+-- Removed runtime path from "/«PKGBUILDDIR»/debian/tmp/usr/bin/runapp"
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/bin/lipa
+-- Removed runtime path from "/«PKGBUILDDIR»/debian/tmp/usr/bin/lipa"
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/bin/likey
+-- Removed runtime path from "/«PKGBUILDDIR»/debian/tmp/usr/bin/likey"
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/bin/depscan
+-- Removed runtime path from "/«PKGBUILDDIR»/debian/tmp/usr/bin/depscan"
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/bin/lipkgen
+-- Removed runtime path from "/«PKGBUILDDIR»/debian/tmp/usr/bin/lipkgen"
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/bin/appcompile
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/bin/lirepo
+-- Removed runtime path from "/«PKGBUILDDIR»/debian/tmp/usr/bin/lirepo"
+-- Installing: /«PKGBUILDDIR»/debian/tmp/etc/listaller/Listaller.conf
+-- Installing: /«PKGBUILDDIR»/debian/tmp/etc/listaller/depscan-ignore.list
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/GNOME3.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/Libc6.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/GLib2.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/GTK+3.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/Python3.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/XOrg.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/Mesa.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/KDELibs4.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/Stdlibs.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/Qt4Core.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/Linux.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/Python2.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/PulseAudio.framework
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/frameworks/README
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/modules/OggVorbis.module
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/modules/LibTIFF.module
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/modules/ZLib.module
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/modules/OpenAL.module
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/components/modules/README
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/mime/packages/listaller-ipk.xml
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/icons/hicolor/32x32/mimetypes/package-x-ipk.png
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/icons/hicolor/48x48/mimetypes/package-x-ipk.png
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/lib/listaller/buildlist
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/bin/ligcc
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/bin/lig++
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/bin/relaytool
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/LiBuild/GCC.pm
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/LiBuild/Utils.pm
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/libuild/ctype.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/aclocal/relaytool.m4
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/basic.c
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/binreloc.m4
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/fdbr-test.c
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/fdbr.c
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/generate.pl
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/glib.c
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/normal.c
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/README
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/java/BinReloc.java
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/mono/BinReloc.cs
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/mono/Readme.txt
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/python/reloc.py
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/python/reloc.txt
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/python/testreloc.py
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1/runapp.1
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1/lipa.1
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1/likey.1
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1/lipkgen.1
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1/appcompile.1
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1/depscan.1
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1/ligcc.1
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1/lig++.1
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/man/man1/relaytool.1
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/nl/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/fi/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/id/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/ast/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/es/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/lt/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/sk/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/fr/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/de/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/cs/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/nds/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/tr/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/it/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/he/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/sv/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/oc/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/pt_BR/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/ca/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/zh_CN/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/da/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/sq/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/ru/LC_MESSAGES/listaller.mo
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/share/locale/pl/LC_MESSAGES/listaller.mo
+make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+# Make sure script still has x-right
+chmod +x /«PKGBUILDDIR»/debian/tmp/usr/share/listaller/binreloc/generate.pl
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_install --list-missing
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_icons
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so contains an unresolvable reference to symbol pk_backend_job_get_exit_code: it's probably a plugin
+dpkg-shlibdeps: warning: 29 other similar warnings have been skipped (use -v to see them all)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller/usr/bin/lipa debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so debian/listaller/usr/bin/runapp debian/listaller/usr/bin/likey were not linked against libsoup-2.4.so.1 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller/usr/bin/lipa debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so debian/listaller/usr/bin/runapp debian/listaller/usr/bin/likey were not linked against librdf.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller/usr/bin/lipa debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so debian/listaller/usr/bin/runapp debian/listaller/usr/bin/likey were not linked against libgpg-error.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller/usr/bin/lipa debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so debian/listaller/usr/bin/runapp debian/listaller/usr/bin/likey were not linked against libarchive.so.13 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller/usr/bin/lipa debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so debian/listaller/usr/bin/runapp debian/listaller/usr/bin/likey were not linked against libgpgme.so.11 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller/usr/bin/lipa debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so debian/listaller/usr/bin/runapp debian/listaller/usr/bin/likey were not linked against libassuan.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller/usr/bin/lipa debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so debian/listaller/usr/bin/runapp debian/listaller/usr/bin/likey were not linked against libsqlite3.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller/usr/bin/lipa debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so debian/listaller/usr/bin/runapp debian/listaller/usr/bin/likey were not linked against libm.so.6 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller/usr/bin/lipa debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so debian/listaller/usr/bin/runapp debian/listaller/usr/bin/likey were not linked against libgio-2.0.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller/usr/bin/lipa debian/listaller/usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so debian/listaller/usr/bin/runapp debian/listaller/usr/bin/likey were not linked against libxml2.so.2 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/liblistaller-glib0/usr/lib/x86_64-linux-gnu/liblistaller-glib.so.0.5.8 was not linked against libgpg-error.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/liblistaller-glib0/usr/lib/x86_64-linux-gnu/liblistaller-glib.so.0.5.8 was not linked against libassuan.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller-devtools/usr/bin/lirepo debian/listaller-devtools/usr/bin/depscan debian/listaller-devtools/usr/bin/lipkgen were not linked against librdf.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller-devtools/usr/bin/lirepo debian/listaller-devtools/usr/bin/depscan debian/listaller-devtools/usr/bin/lipkgen were not linked against libsqlite3.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller-devtools/usr/bin/lirepo debian/listaller-devtools/usr/bin/depscan debian/listaller-devtools/usr/bin/lipkgen were not linked against libsoup-2.4.so.1 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller-devtools/usr/bin/lirepo debian/listaller-devtools/usr/bin/depscan debian/listaller-devtools/usr/bin/lipkgen were not linked against libxml2.so.2 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller-devtools/usr/bin/lirepo debian/listaller-devtools/usr/bin/depscan debian/listaller-devtools/usr/bin/lipkgen were not linked against libpackagekit-glib2.so.16 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller-devtools/usr/bin/lirepo debian/listaller-devtools/usr/bin/depscan debian/listaller-devtools/usr/bin/lipkgen were not linked against libm.so.6 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller-devtools/usr/bin/lirepo debian/listaller-devtools/usr/bin/depscan debian/listaller-devtools/usr/bin/lipkgen were not linked against libassuan.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/listaller-devtools/usr/bin/lirepo debian/listaller-devtools/usr/bin/depscan debian/listaller-devtools/usr/bin/lipkgen were not linked against libgpg-error.so.0 (they use none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: package listaller: unused substitution variable ${misc:Pre-Depends}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: Depends field of package gir1.2-listaller-0.5: unknown substitution variable ${gir:Depends}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `listaller' in `../listaller_0.5.8-2_amd64.deb'.
+dpkg-deb: building package `liblistaller-glib0' in `../liblistaller-glib0_0.5.8-2_amd64.deb'.
+dpkg-deb: building package `liblistaller-glib-dev' in `../liblistaller-glib-dev_0.5.8-2_amd64.deb'.
+dpkg-deb: building package `gir1.2-listaller-0.5' in `../gir1.2-listaller-0.5_0.5.8-2_amd64.deb'.
+dpkg-deb: building package `listaller-devtools' in `../listaller-devtools_0.5.8-2_amd64.deb'.
+dpkg-deb: building package `listaller-libuild' in `../listaller-libuild_0.5.8-2_amd64.deb'.
+ dpkg-genchanges  >../listaller_0.5.8-2_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build listaller-0.5.8
+dpkg-buildpackage: binary and diff upload (original source NOT included)
 ────────────────────────────────────────────────────────────────────────────────
-Build finished at 20140319-2018
+Build finished at 20140319-2022
 
 Finished
 ────────
 
-E: Build failure (dpkg-buildpackage died)
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+listaller_0.5.8-2_amd64.changes:
+────────────────────────────────
+
+Format: 1.8
+Date: Sun, 20 Oct 2013 18:58:02 +0200
+Source: listaller
+Binary: listaller liblistaller-glib0 liblistaller-glib-dev gir1.2-listaller-0.5 listaller-devtools listaller-libuild
+Architecture: source amd64
+Version: 0.5.8-2
+Distribution: sid
+Urgency: low
+Maintainer: Matthias Klumpp <mak@debian.org>
+Changed-By: Matthias Klumpp <mak@debian.org>
+Description: 
+ gir1.2-listaller-0.5 - GObject introspection data for the Listaller library
+ liblistaller-glib-dev - 3rd-party application installer (development files)
+ liblistaller-glib0 - 3rd-party application installer (shared library)
+ listaller  - 3rd-party application installer
+ listaller-devtools - 3rd-party application installer packaging tools
+ listaller-libuild - Listaller libuild facilities
+Closes: 724662
+Changes: 
+ listaller (0.5.8-2) unstable; urgency=low
+ .
+   * Move old database out of the way on upgrade (Closes: #724662)
+Checksums-Sha1: 
+ f6613c737e06602b879660de366f3fc3b0c17c7a 1613 listaller_0.5.8-2.dsc
+ fdc92b5d452bc5eba6b2328d01288cc36575ef45 6056 listaller_0.5.8-2.debian.tar.xz
+ d41af2eac318a84471e07da76711b7c5bc2aab47 78288 listaller_0.5.8-2_amd64.deb
+ b06153a04223ff99e8f8e56def7db90b98467634 177826 liblistaller-glib0_0.5.8-2_amd64.deb
+ d7a60a6f96441bc1f872765bbc136ab9580833d2 17018 liblistaller-glib-dev_0.5.8-2_amd64.deb
+ 9f1a6d63d83d742b4af0adc758bd8aecc4d0ce8e 10640 gir1.2-listaller-0.5_0.5.8-2_amd64.deb
+ 7735f22a5c8d8829eab77ebeb8aaedd485c2a8b9 57956 listaller-devtools_0.5.8-2_amd64.deb
+ 4c34a7bee492f1133a1b2b0a83d4b480db5e4278 48744 listaller-libuild_0.5.8-2_amd64.deb
+Checksums-Sha256: 
+ 4920ca938a0be77af6a7b35a1790330f3ceafeaa121e8554a8ee9a0787cb6c8a 1613 listaller_0.5.8-2.dsc
+ 8a8422cd7ea021a2e57ebf75eeef7312e35a38cda4e511abf8cdda47bd664538 6056 listaller_0.5.8-2.debian.tar.xz
+ 1ebbb947624c7e9a46d148deb60a875abfc097c5d5fb82432ae6a74e273b9278 78288 listaller_0.5.8-2_amd64.deb
+ a87c7cfd278460d63b79400b3f7c88a4f3c909da4ffa9f81af4d934d2a82cb3d 177826 liblistaller-glib0_0.5.8-2_amd64.deb
+ 2a030ca844f80342ac927947041b963f2024af5b7b2569aedd9a0b1f5d9a1f58 17018 liblistaller-glib-dev_0.5.8-2_amd64.deb
+ 350071070e8cc5819dbd8481f393d794d3cde4329841bedd7a0362f4b71493c3 10640 gir1.2-listaller-0.5_0.5.8-2_amd64.deb
+ 0d0566c32e11819c9abbda3a4f76198efd5615f910612fae141fa29e61b60ec7 57956 listaller-devtools_0.5.8-2_amd64.deb
+ 8ba6e070be15f592804bfaf7786c31d91fee77d786cc0b3f35c45517254fc17d 48744 listaller-libuild_0.5.8-2_amd64.deb
+Files: 
+ 23d28a7ccd0337eed9c79b19631c0434 1613 admin optional listaller_0.5.8-2.dsc
+ b37851ded6f2e769345c91e5a3f648ca 6056 admin optional listaller_0.5.8-2.debian.tar.xz
+ 5117e5d92b369dc2b7cf7673308c90dc 78288 admin optional listaller_0.5.8-2_amd64.deb
+ 9ade1e381bd035c0ae5710c657deb87c 177826 libs optional liblistaller-glib0_0.5.8-2_amd64.deb
+ 307192c3ac4b0998e8ea4a3507f5ed29 17018 libdevel optional liblistaller-glib-dev_0.5.8-2_amd64.deb
+ 4548b2bce0fb137b4e21d449a8f66e29 10640 introspection optional gir1.2-listaller-0.5_0.5.8-2_amd64.deb
+ 8355e52405e90c0b6dc07e6134148d6d 57956 admin optional listaller-devtools_0.5.8-2_amd64.deb
+ c7b6f0bb67ba5a65ec4e2c379462b82e 48744 admin optional listaller-libuild_0.5.8-2_amd64.deb
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+listaller_0.5.8-2_amd64.deb
+───────────────────────────
+
+ new debian package, version 2.0.
+ size 78288 bytes: control archive=2927 bytes.
+      65 bytes,     2 lines      conffiles            
+    1098 bytes,    22 lines      control              
+    4461 bytes,    55 lines      md5sums              
+     335 bytes,    15 lines   *  postinst             #!/bin/sh
+ Package: listaller
+ Version: 0.5.8-2
+ Architecture: amd64
+ Maintainer: Matthias Klumpp <mak@debian.org>
+ Installed-Size: 551
+ Depends: liblistaller-glib0 (>= 0.5.8-2), packagekit (>= 0.8.4), libarchive13, libassuan0 (>= 2.0.1), libc6 (>= 2.4), libgee2 (>= 0.5.0), libglib2.0-0 (>= 2.28), libgpg-error0 (>= 1.10), libgpgme11 (>= 1.1.2), libpackagekit-glib2-16 (>= 0.8.10), librdf0 (>= 1.0.17), libsoup2.4-1 (>= 2.40), libsqlite3-0 (>= 3.5.9), libxml2 (>= 2.6.27)
+ Section: admin
+ Priority: optional
+ Multi-Arch: foreign
+ Homepage: http://listaller.tenstral.net
+ Description: 3rd-party application installer
+  Listaller is a distro-agnostic 3rd-party application installer
+  with close integration into PackageKit.
+  The project uses GPG-signed software packages with minimal
+  permissions, making 3rd-party installations as simple
+  and secure as possible.
+  .
+  Dependencies are resolved automatically using PackageKit.
+  Listaller applications can be installed and removed using any
+  PackageKit frontend, without having to use additional tools.
+  .
+  This package contains all modules required for Listaller to work.
+
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/x86_64-linux-gnu/packagekit-plugins/
+-rw-r--r-- root/root     31560 2014-03-19 20:22 ./usr/lib/x86_64-linux-gnu/packagekit-plugins/libpk_plugin_listaller.so
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/bin/
+-rwxr-xr-x root/root     47984 2014-03-19 20:22 ./usr/bin/lipa
+-rwxr-xr-x root/root     14712 2014-03-19 20:22 ./usr/bin/likey
+-rwxr-xr-x root/root     18864 2014-03-19 20:22 ./usr/bin/runapp
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/listaller/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/listaller/components/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/listaller/components/modules/
+-rw-r--r-- root/root       231 2013-08-02 16:51 ./usr/share/listaller/components/modules/OggVorbis.module
+-rw-r--r-- root/root        81 2013-08-02 16:51 ./usr/share/listaller/components/modules/LibTIFF.module
+-rw-r--r-- root/root       493 2013-08-02 16:51 ./usr/share/listaller/components/modules/README
+-rw-r--r-- root/root        49 2013-08-02 16:51 ./usr/share/listaller/components/modules/ZLib.module
+-rw-r--r-- root/root        74 2013-08-02 16:51 ./usr/share/listaller/components/modules/OpenAL.module
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/listaller/components/frameworks/
+-rw-r--r-- root/root        95 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/GNOME3.framework
+-rw-r--r-- root/root       202 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/Libc6.framework
+-rw-r--r-- root/root       151 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/GLib2.framework
+-rw-r--r-- root/root       137 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/GTK+3.framework
+-rw-r--r-- root/root       146 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/Python3.framework
+-rw-r--r-- root/root       625 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/XOrg.framework
+-rw-r--r-- root/root       673 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/README
+-rw-r--r-- root/root       275 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/Mesa.framework
+-rw-r--r-- root/root       254 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/KDELibs4.framework
+-rw-r--r-- root/root       115 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/Stdlibs.framework
+-rw-r--r-- root/root       161 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/Qt4Core.framework
+-rw-r--r-- root/root       159 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/Linux.framework
+-rw-r--r-- root/root       147 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/Python2.framework
+-rw-r--r-- root/root       208 2013-08-02 16:51 ./usr/share/listaller/components/frameworks/PulseAudio.framework
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/icons/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/icons/hicolor/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/icons/hicolor/48x48/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/icons/hicolor/48x48/mimetypes/
+-rw-r--r-- root/root      3778 2013-08-02 16:51 ./usr/share/icons/hicolor/48x48/mimetypes/package-x-ipk.png
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/icons/hicolor/32x32/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/icons/hicolor/32x32/mimetypes/
+-rw-r--r-- root/root      2037 2013-08-02 16:51 ./usr/share/icons/hicolor/32x32/mimetypes/package-x-ipk.png
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/man/man1/
+-rw-r--r-- root/root      1104 2014-03-19 20:22 ./usr/share/man/man1/lipa.1.gz
+-rw-r--r-- root/root       903 2014-03-19 20:22 ./usr/share/man/man1/runapp.1.gz
+-rw-r--r-- root/root       958 2014-03-19 20:22 ./usr/share/man/man1/likey.1.gz
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/mime/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/mime/packages/
+-rw-r--r-- root/root       848 2014-03-19 20:22 ./usr/share/mime/packages/listaller-ipk.xml
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/listaller/
+-rw-r--r-- root/root      1146 2013-10-20 19:45 ./usr/share/doc/listaller/changelog.Debian.gz
+-rw-r--r-- root/root      3359 2013-10-20 19:45 ./usr/share/doc/listaller/copyright
+-rw-r--r-- root/root      7540 2013-08-02 16:51 ./usr/share/doc/listaller/NEWS.gz
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/ast/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/ast/LC_MESSAGES/
+-rw-r--r-- root/root       494 2014-03-19 20:22 ./usr/share/locale/ast/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/tr/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/tr/LC_MESSAGES/
+-rw-r--r-- root/root       534 2014-03-19 20:22 ./usr/share/locale/tr/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/fi/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/fi/LC_MESSAGES/
+-rw-r--r-- root/root     18792 2014-03-19 20:22 ./usr/share/locale/fi/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/de/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/de/LC_MESSAGES/
+-rw-r--r-- root/root     17327 2014-03-19 20:22 ./usr/share/locale/de/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/it/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/it/LC_MESSAGES/
+-rw-r--r-- root/root     23857 2014-03-19 20:22 ./usr/share/locale/it/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/cs/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/cs/LC_MESSAGES/
+-rw-r--r-- root/root     18296 2014-03-19 20:22 ./usr/share/locale/cs/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/fr/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r-- root/root      2818 2014-03-19 20:22 ./usr/share/locale/fr/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/ru/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/ru/LC_MESSAGES/
+-rw-r--r-- root/root     17020 2014-03-19 20:22 ./usr/share/locale/ru/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/da/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/da/LC_MESSAGES/
+-rw-r--r-- root/root       566 2014-03-19 20:22 ./usr/share/locale/da/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/es/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/es/LC_MESSAGES/
+-rw-r--r-- root/root      2218 2014-03-19 20:22 ./usr/share/locale/es/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/sv/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/sv/LC_MESSAGES/
+-rw-r--r-- root/root      2586 2014-03-19 20:22 ./usr/share/locale/sv/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/ca/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/ca/LC_MESSAGES/
+-rw-r--r-- root/root       464 2014-03-19 20:22 ./usr/share/locale/ca/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/sq/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/sq/LC_MESSAGES/
+-rw-r--r-- root/root       526 2014-03-19 20:22 ./usr/share/locale/sq/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/he/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/he/LC_MESSAGES/
+-rw-r--r-- root/root       555 2014-03-19 20:22 ./usr/share/locale/he/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/pl/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/pl/LC_MESSAGES/
+-rw-r--r-- root/root      9737 2014-03-19 20:22 ./usr/share/locale/pl/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/sk/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/sk/LC_MESSAGES/
+-rw-r--r-- root/root       475 2014-03-19 20:22 ./usr/share/locale/sk/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/nl/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/nl/LC_MESSAGES/
+-rw-r--r-- root/root       533 2014-03-19 20:22 ./usr/share/locale/nl/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/id/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/id/LC_MESSAGES/
+-rw-r--r-- root/root       526 2014-03-19 20:22 ./usr/share/locale/id/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/oc/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/oc/LC_MESSAGES/
+-rw-r--r-- root/root       585 2014-03-19 20:22 ./usr/share/locale/oc/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/nds/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/nds/LC_MESSAGES/
+-rw-r--r-- root/root       568 2014-03-19 20:22 ./usr/share/locale/nds/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/lt/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/lt/LC_MESSAGES/
+-rw-r--r-- root/root      3638 2014-03-19 20:22 ./usr/share/locale/lt/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/pt_BR/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/pt_BR/LC_MESSAGES/
+-rw-r--r-- root/root      1513 2014-03-19 20:22 ./usr/share/locale/pt_BR/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/zh_CN/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/locale/zh_CN/LC_MESSAGES/
+-rw-r--r-- root/root       600 2014-03-19 20:22 ./usr/share/locale/zh_CN/LC_MESSAGES/listaller.mo
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./etc/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./etc/listaller/
+-rw-r--r-- root/root       149 2013-08-02 16:51 ./etc/listaller/depscan-ignore.list
+-rw-r--r-- root/root       947 2013-08-02 16:51 ./etc/listaller/Listaller.conf
+
+
+liblistaller-glib0_0.5.8-2_amd64.deb
+────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 177826 bytes: control archive=1174 bytes.
+    1135 bytes,    25 lines      control              
+     250 bytes,     3 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      39 bytes,     1 lines      shlibs               
+ Package: liblistaller-glib0
+ Source: listaller
+ Version: 0.5.8-2
+ Architecture: amd64
+ Maintainer: Matthias Klumpp <mak@debian.org>
+ Installed-Size: 642
+ Pre-Depends: multiarch-support
+ Depends: libarchive13, libassuan0 (>= 2.0.1), libc6 (>= 2.14), libgee2 (>= 0.5.0), libglib2.0-0 (>= 2.35.9), libgpg-error0 (>= 1.10), libgpgme11 (>= 1.2.0), libpackagekit-glib2-16 (>= 0.8.10), librdf0 (>= 1.0.17), libsoup2.4-1 (>= 2.40), libsqlite3-0 (>= 3.5.9), libxml2 (>= 2.7.4)
+ Recommends: listaller (= 0.5.8-2)
+ Section: libs
+ Priority: optional
+ Multi-Arch: same
+ Homepage: http://listaller.tenstral.net
+ Description: 3rd-party application installer (shared library)
+  Listaller is a distro-agnostic 3rd-party application installer
+  with close integration into PackageKit.
+  The project uses GPG-signed software packages with minimal
+  permissions, making 3rd-party installations as simple
+  and secure as possible.
+  .
+  Dependencies are resolved automatically using PackageKit.
+  Listaller applications can be installed and removed using any
+  PackageKit frontend, without having to use additional tools.
+  .
+  This package contains the Listaller shared library.
+
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    619416 2014-03-19 20:22 ./usr/lib/x86_64-linux-gnu/liblistaller-glib.so.0.5.8
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/liblistaller-glib0/
+-rw-r--r-- root/root      1146 2013-10-20 19:45 ./usr/share/doc/liblistaller-glib0/changelog.Debian.gz
+-rw-r--r-- root/root      3359 2013-10-20 19:45 ./usr/share/doc/liblistaller-glib0/copyright
+lrwxrwxrwx root/root         0 2014-03-19 20:22 ./usr/lib/x86_64-linux-gnu/liblistaller-glib.so.0 -> liblistaller-glib.so.0.5.8
+
+
+liblistaller-glib-dev_0.5.8-2_amd64.deb
+───────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 17018 bytes: control archive=977 bytes.
+     906 bytes,    23 lines      control              
+     473 bytes,     6 lines      md5sums              
+ Package: liblistaller-glib-dev
+ Source: listaller
+ Version: 0.5.8-2
+ Architecture: amd64
+ Maintainer: Matthias Klumpp <mak@debian.org>
+ Installed-Size: 190
+ Depends: libgee-dev (>= 0.6), libglib2.0-dev (>= 2.28), liblistaller-glib0 (= 0.5.8-2)
+ Section: libdevel
+ Priority: optional
+ Homepage: http://listaller.tenstral.net
+ Description: 3rd-party application installer (development files)
+  Listaller is a distro-agnostic 3rd-party application installer
+  with close integration into PackageKit.
+  The project uses GPG-signed software packages with minimal
+  permissions, making 3rd-party installations as simple
+  and secure as possible.
+  .
+  Dependencies are resolved automatically using PackageKit.
+  Listaller applications can be installed and removed using any
+  PackageKit frontend, without having to use additional tools.
+  .
+  This package contains development files necessary to develop
+  custom Listaller frontends.
+
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/x86_64-linux-gnu/pkgconfig/
+-rw-r--r-- root/root       305 2014-03-19 20:22 ./usr/lib/x86_64-linux-gnu/pkgconfig/listaller-glib.pc
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/include/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/include/listaller-glib/
+-rw-r--r-- root/root     45510 2014-03-19 20:22 ./usr/include/listaller-glib/listaller.h
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/liblistaller-glib-dev/
+-rw-r--r-- root/root      1146 2013-10-20 19:45 ./usr/share/doc/liblistaller-glib-dev/changelog.Debian.gz
+-rw-r--r-- root/root      3359 2013-10-20 19:45 ./usr/share/doc/liblistaller-glib-dev/copyright
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/vala/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/vala/vapi/
+-rw-r--r-- root/root     14075 2014-03-19 20:22 ./usr/share/vala/vapi/listaller-0.5.vapi
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/gir-1.0/
+-rw-r--r-- root/root     72155 2014-03-19 20:22 ./usr/share/gir-1.0/Listaller-0.5.gir
+lrwxrwxrwx root/root         0 2014-03-19 20:22 ./usr/lib/x86_64-linux-gnu/liblistaller-glib.so -> liblistaller-glib.so.0
+
+
+gir1.2-listaller-0.5_0.5.8-2_amd64.deb
+──────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 10640 bytes: control archive=752 bytes.
+     692 bytes,    20 lines      control              
+     249 bytes,     3 lines      md5sums              
+ Package: gir1.2-listaller-0.5
+ Source: listaller
+ Version: 0.5.8-2
+ Architecture: amd64
+ Maintainer: Matthias Klumpp <mak@debian.org>
+ Installed-Size: 65
+ Section: introspection
+ Priority: optional
+ Homepage: http://listaller.tenstral.net
+ Description: GObject introspection data for the Listaller library
+  Listaller is a distro-agnostic 3rd-party application installer
+  with close integration into PackageKit.
+  Applications can be installed and removed using any
+  PackageKit frontend, without having to use additional tools.
+  .
+  This package contains introspection data for the Listaller
+  interface library.
+  .
+  It can be used by packages using the GIRepository format to generate
+  dynamic bindings.
+
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/girepository-1.0/
+-rw-r--r-- root/root     29060 2014-03-19 20:22 ./usr/lib/girepository-1.0/Listaller-0.5.typelib
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/gir1.2-listaller-0.5/
+-rw-r--r-- root/root      1146 2013-10-20 19:45 ./usr/share/doc/gir1.2-listaller-0.5/changelog.Debian.gz
+-rw-r--r-- root/root      3359 2013-10-20 19:45 ./usr/share/doc/gir1.2-listaller-0.5/copyright
+
+
+listaller-devtools_0.5.8-2_amd64.deb
+────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 57956 bytes: control archive=1035 bytes.
+     931 bytes,    19 lines      control              
+     567 bytes,     9 lines      md5sums              
+ Package: listaller-devtools
+ Source: listaller
+ Version: 0.5.8-2
+ Architecture: amd64
+ Maintainer: Matthias Klumpp <mak@debian.org>
+ Installed-Size: 252
+ Depends: libarchive13, libassuan0 (>= 2.0.1), libc6 (>= 2.14), libgee2 (>= 0.5.0), libglib2.0-0 (>= 2.35.9), libgpg-error0 (>= 1.10), libgpgme11 (>= 1.1.6), liblistaller-glib0, libpackagekit-glib2-16 (>= 0.8.10), librdf0 (>= 1.0.17), libsoup2.4-1 (>= 2.40), libsqlite3-0 (>= 3.5.9), libxml2 (>= 2.6.27)
+ Suggests: listaller-libuild
+ Section: admin
+ Priority: optional
+ Homepage: http://listaller.tenstral.net
+ Description: 3rd-party application installer packaging tools
+  Listaller is a distro-agnostic 3rd-party application installer
+  with close integration into PackageKit.
+  Applications can be installed and removed using any
+  PackageKit frontend, without having to use additional tools.
+  .
+  This package contains tools which are required to build
+  and maintain your own IPK packages.
+
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/bin/
+-rwxr-xr-x root/root     35496 2014-03-19 20:22 ./usr/bin/lirepo
+-rwxr-xr-x root/root     35640 2014-03-19 20:22 ./usr/bin/depscan
+-rwxr-xr-x root/root     60464 2014-03-19 20:22 ./usr/bin/appcompile
+-rwxr-xr-x root/root     81616 2014-03-19 20:22 ./usr/bin/lipkgen
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/man/man1/
+-rw-r--r-- root/root      1057 2014-03-19 20:22 ./usr/share/man/man1/appcompile.1.gz
+-rw-r--r-- root/root       959 2014-03-19 20:22 ./usr/share/man/man1/depscan.1.gz
+-rw-r--r-- root/root      1026 2014-03-19 20:22 ./usr/share/man/man1/lipkgen.1.gz
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/listaller-devtools/
+-rw-r--r-- root/root      1146 2013-10-20 19:45 ./usr/share/doc/listaller-devtools/changelog.Debian.gz
+-rw-r--r-- root/root      3359 2013-10-20 19:45 ./usr/share/doc/listaller-devtools/copyright
+
+
+listaller-libuild_0.5.8-2_amd64.deb
+───────────────────────────────────
+
+ new debian package, version 2.0.
+ size 48744 bytes: control archive=1523 bytes.
+     705 bytes,    19 lines      control              
+    1896 bytes,    27 lines      md5sums              
+ Package: listaller-libuild
+ Source: listaller
+ Version: 0.5.8-2
+ Architecture: amd64
+ Maintainer: Matthias Klumpp <mak@debian.org>
+ Installed-Size: 252
+ Depends: gcc, make, perl (>= 5.14), libc6 (>= 2.3.4), libgee2 (>= 0.5.0), libglib2.0-0 (>= 2.28)
+ Suggests: build-essential
+ Section: admin
+ Priority: optional
+ Homepage: http://listaller.tenstral.net
+ Description: Listaller libuild facilities
+  Listaller is a distro-agnostic 3rd-party application installer
+  with close integration into PackageKit.
+  Applications can be installed and removed using any
+  PackageKit frontend, without having to use additional tools.
+  .
+  This package contains the libuild facilities, which help building
+  more portable applications.
+
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/lib/listaller/
+-rwxr-xr-x root/root     23048 2014-03-19 20:22 ./usr/lib/listaller/buildlist
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/bin/
+-rwxr-xr-x root/root       177 2013-08-02 16:51 ./usr/bin/lig++
+-rwxr-xr-x root/root     30000 2013-08-02 16:51 ./usr/bin/ligcc
+-rwxr-xr-x root/root     19961 2013-08-02 16:51 ./usr/bin/relaytool
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/include/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/include/libuild/
+-rw-r--r-- root/root      9472 2013-08-02 16:51 ./usr/include/libuild/ctype.h
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/listaller/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/listaller/LiBuild/
+-rw-r--r-- root/root     12566 2013-08-02 16:51 ./usr/share/listaller/LiBuild/GCC.pm
+-rw-r--r-- root/root      4057 2013-08-02 16:51 ./usr/share/listaller/LiBuild/Utils.pm
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/listaller/binreloc/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/listaller/binreloc/mono/
+-rw-r--r-- root/root      2609 2013-08-02 16:51 ./usr/share/listaller/binreloc/mono/Readme.txt
+-rw-r--r-- root/root      2082 2013-08-02 16:51 ./usr/share/listaller/binreloc/mono/BinReloc.cs
+-rw-r--r-- root/root     13070 2013-08-02 16:51 ./usr/share/listaller/binreloc/normal.c
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/listaller/binreloc/python/
+-rw-r--r-- root/root       699 2013-08-02 16:51 ./usr/share/listaller/binreloc/python/reloc.txt
+-rw-r--r-- root/root       760 2013-08-02 16:51 ./usr/share/listaller/binreloc/python/reloc.py
+-rw-r--r-- root/root       249 2013-08-02 16:51 ./usr/share/listaller/binreloc/python/testreloc.py
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/listaller/binreloc/java/
+-rw-r--r-- root/root     11646 2013-08-02 16:51 ./usr/share/listaller/binreloc/java/BinReloc.java
+-rw-r--r-- root/root      8768 2013-08-02 16:51 ./usr/share/listaller/binreloc/basic.c
+-rw-r--r-- root/root     11728 2013-08-02 16:51 ./usr/share/listaller/binreloc/glib.c
+-rwxr-xr-x root/root      7021 2013-08-02 16:51 ./usr/share/listaller/binreloc/generate.pl
+-rw-r--r-- root/root      1369 2013-08-02 16:51 ./usr/share/listaller/binreloc/README
+-rw-r--r-- root/root      3833 2013-08-02 16:51 ./usr/share/listaller/binreloc/fdbr.c
+-rw-r--r-- root/root      1832 2013-08-02 16:51 ./usr/share/listaller/binreloc/binreloc.m4
+-rw-r--r-- root/root       680 2013-08-02 16:51 ./usr/share/listaller/binreloc/fdbr-test.c
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/man/man1/
+-rw-r--r-- root/root       874 2014-03-19 20:22 ./usr/share/man/man1/lig++.1.gz
+-rw-r--r-- root/root      1455 2014-03-19 20:22 ./usr/share/man/man1/ligcc.1.gz
+-rw-r--r-- root/root      1890 2014-03-19 20:22 ./usr/share/man/man1/relaytool.1.gz
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/aclocal/
+-rw-r--r-- root/root      1320 2013-08-02 16:51 ./usr/share/aclocal/relaytool.m4
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-19 20:22 ./usr/share/doc/listaller-libuild/
+-rw-r--r-- root/root      1146 2013-10-20 19:45 ./usr/share/doc/listaller-libuild/changelog.Debian.gz
+-rw-r--r-- root/root      3359 2013-10-20 19:45 ./usr/share/doc/listaller-libuild/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ Cleanup                                                                      │
 └──────────────────────────────────────────────────────────────────────────────┘
 
+Purging /«BUILDDIR»
 Not cleaning session: cloned chroot in use
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -3119,20 +4620,19 @@ Not cleaning session: cloned chroot in use
 └──────────────────────────────────────────────────────────────────────────────┘
 
 Build Architecture: amd64
-Build-Space: 25080
-Build-Time: 14
+Build-Space: 35392
+Build-Time: 27
 Distribution: sid
-Fail-Stage: build
 Host Architecture: amd64
 Install-Time: 38
 Job: listaller_0.5.8-2.dsc
 Machine Architecture: amd64
 Package: listaller
-Package-Time: 59
+Package-Time: 73
 Source-Version: 0.5.8-2
-Space: 25080
-Status: attempted
+Space: 35392
+Status: successful
 Version: 0.5.8-2
 ────────────────────────────────────────────────────────────────────────────────
-Finished at 20140319-2018
-Build needed 00:00:59, 25080k disc space
+Finished at 20140319-2022
+Build needed 00:01:13, 35392k disc space
