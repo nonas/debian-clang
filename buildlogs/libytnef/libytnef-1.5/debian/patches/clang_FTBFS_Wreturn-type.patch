@@ -1,0 +1,24 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-19
+
+--- a/ytnef.c
++++ b/ytnef.c
+@@ -565,7 +565,7 @@
+ int TNEFHexBreakdown STD_ARGLIST {
+     int i;
+     if (TNEF->Debug == 0) 
+-        return;
++        return -1;
+ 
+     printf("%s: [%i bytes] \n", TNEFList[id].name, size);
+ 
+@@ -580,7 +580,7 @@
+ int TNEFDetailedPrint STD_ARGLIST {
+     int i;
+     if (TNEF->Debug == 0) 
+-        return;
++        return -1;
+ 
+     printf("%s: [%i bytes] \n", TNEFList[id].name, size);
+ 
