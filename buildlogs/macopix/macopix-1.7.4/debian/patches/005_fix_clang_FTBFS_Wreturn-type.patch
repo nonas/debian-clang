@@ -1,0 +1,66 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-19
+
+--- a/src/callbacks.c
++++ b/src/callbacks.c
+@@ -538,7 +538,7 @@
+ 	    if((win_bar_size==0)&&(mascot->no_capbar)){
+ 	      // for windows w/o title bar 
+ 	      flag_homepos=mascot->homepos_nb;
+-	      if(flag_homepos==HOMEPOS_NEVER) return;
++	      if(flag_homepos==HOMEPOS_NEVER) return 0;
+ 	    }
+ 	    break;
+ 	  }
+--- a/src/gui.c
++++ b/src/gui.c
+@@ -4557,7 +4557,7 @@
+   gchar *dest_file;
+ 
+   if(flagChildDialog){
+-    return;
++    return 0;
+   }
+   else{
+     flagChildDialog=TRUE;
+@@ -4637,7 +4637,7 @@
+   char win_title[64];
+ 
+   if(flagChildDialog){
+-    return;
++    return 0;
+   }
+   else{
+     flagChildDialog=TRUE;
+--- a/src/mail.c
++++ b/src/mail.c
+@@ -1422,7 +1422,7 @@
+     froms=strbuf(NULL);
+ 
+     if((fp=fopen(mascot->mail.file,"r"))==NULL){
+-	return;
++	return -1;
+     }
+     
+     while(!feof(fp)){
+@@ -1545,7 +1545,7 @@
+     froms=strbuf(NULL);
+ 
+     if ((dp=opendir(mascot->mail.file))==NULL){
+-	return;
++	return -1;
+     }	
+     
+ 
+--- a/src/sockmsg.c
++++ b/src/sockmsg.c
+@@ -276,7 +276,7 @@
+ 
+ 	fd_close(fd);
+ 	
+-	if(readsize<4) return;
++	if(readsize<4) return -1;
+ 	
+ 	strncpy(tmp,buf,2);
+ 	mode=atoi(tmp);
