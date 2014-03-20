@@ -1,0 +1,15 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-20
+
+--- a/examples/kwaj_subtract_one_day.c
++++ b/examples/kwaj_subtract_one_day.c
+@@ -37,7 +37,7 @@
+   *m = t->tm_mon+1;
+   *d = t->tm_mday;
+   *y = t->tm_year+1900;
+-  return;
++  return 0;
+ }
+ 
+ /**********************************************************************/
