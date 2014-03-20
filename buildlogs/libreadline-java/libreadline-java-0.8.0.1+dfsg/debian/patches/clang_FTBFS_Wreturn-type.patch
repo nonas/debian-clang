@@ -1,0 +1,33 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-20
+
+--- a/src/native/org_gnu_readline_Readline.c
++++ b/src/native/org_gnu_readline_Readline.c
+@@ -654,7 +654,7 @@
+   jtext = (*jniEnv)->NewStringUTF(jniEnv,text);
+ 
+   if (jniMethodId == 0) {
+-    return;
++    return ((const char *)NULL);
+   }
+ 
+   completion = (*jniEnv)->CallObjectMethod(jniEnv, jniObject,
+@@ -829,7 +829,7 @@
+       newExcCls = (*env)->FindClass(env,"java/lang/OutOfMemoryError");
+       if (newExcCls != NULL)
+         (*env)->ThrowNew(env,newExcCls,"");
+-      return;    
++      return NULL;    
+     }
+   } else
+     oldValue = NULL;
+@@ -844,7 +844,7 @@
+     newExcCls = (*env)->FindClass(env,"java/io/UnsupportedEncodingException");
+     if (newExcCls != NULL)
+       (*env)->ThrowNew(env,newExcCls,"");
+-    return;
++    return NULL;
+   }
+   if (is_copy == JNI_TRUE)
+     (*env)->ReleaseStringUTFChars(env,jvalue,newValue);
