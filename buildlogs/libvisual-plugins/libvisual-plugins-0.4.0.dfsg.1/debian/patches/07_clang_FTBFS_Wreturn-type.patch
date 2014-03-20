@@ -1,0 +1,15 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-20
+
+--- a/plugins/morph/flash/morph_flash.c
++++ b/plugins/morph/flash/morph_flash.c
+@@ -116,7 +116,7 @@
+ 	FlashPrivate *priv = visual_object_get_private (VISUAL_OBJECT (plugin));
+ 
+ 	if (src1->pal == NULL || src2->pal == NULL)
+-		return;
++		return -1;
+ 
+ 	if (rate < 0.5)
+ 		visual_palette_blend (pal, src1->pal, &priv->whitepal, rate * 2);
