@@ -1,0 +1,27 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-20
+
+--- a/libskk/state.vala
++++ b/libskk/state.vala
+@@ -269,7 +269,7 @@
+                         break;
+                     }
+                 } catch (GLib.RegexError e) {
+-                    return_if_reached ();
++                    return_val_if_reached (null);
+                 }
+                             
+                 int match_start_pos, match_end_pos;
+--- a/libskk/expr.vala
++++ b/libskk/expr.vala
+@@ -59,8 +59,7 @@
+         }
+ 
+         public ExprNode read_string (string expr, ref int index) {
+-            return_val_if_fail (index < expr.length && expr[index] == '"',
+-                                null);
++            return_if_fail (index < expr.length && expr[index] == '"');
+             var builder = new StringBuilder ();
+             index++;
+             bool stop = false;
