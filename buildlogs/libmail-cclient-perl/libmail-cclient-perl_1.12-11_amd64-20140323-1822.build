@@ -1,0 +1,1022 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ libmail-cclient-perl 1.12-11 (amd64)                       23 Mar 2014 18:22 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: libmail-cclient-perl
+Version: 1.12-11
+Source Version: 1.12-11
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/libmail-cclient-perl-d1UZRB/libmail-cclient-perl-1.12' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/libmail-cclient-perl-d1UZRB' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-cc53e97b-b213-4061-b542-b607ae37f19b' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+libmail-cclient-perl_1.12-11.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-KlcEUw/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13265 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), devscripts (>= 2.10.7~), cdbs (>= 0.4.73~), perl, debhelper (>= 6), dh-buildinfo, libc-client-dev, libpam-dev, libssl-dev, libkrb5-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), devscripts (>= 2.10.7~), cdbs (>= 0.4.73~), perl, debhelper (>= 6), dh-buildinfo, libc-client-dev, libpam-dev, libssl-dev, libkrb5-dev
+dpkg-deb: building package `sbuild-build-depends-libmail-cclient-perl-dummy' in `/«BUILDDIR»/resolver-IGMUMF/apt_archive/sbuild-build-depends-libmail-cclient-perl-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install libmail-cclient-perl build dependencies (apt-based resolver)         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils cdbs comerr-dev debhelper devscripts dh-buildinfo dh-python
+  gettext gettext-base groff-base intltool-debian krb5-multidev libasprintf0c2
+  libc-client2007e libc-client2007e-dev libcroco3 libglib2.0-0
+  libgssapi-krb5-2 libgssrpc4 libk5crypto3 libkadm5clnt-mit9 libkadm5srv-mit9
+  libkdb5-7 libkeyutils1 libkrb5-3 libkrb5-dev libkrb5support0 libmpdec2
+  libpam0g-dev libpython3-stdlib libpython3.3-minimal libpython3.3-stdlib
+  libssl-dev libunistring0 libxml2 man-db mlock po-debconf python3
+  python3-minimal python3.3 python3.3-minimal zlib1g-dev
+Suggested packages:
+  wamerican wordlist whois vacation doc-base dh-make bsd-mailx mailx
+  cvs-buildpackage devscripts-el gnuplot libauthen-sasl-perl
+  libfile-desktopentry-perl libnet-smtp-ssl-perl libterm-size-perl
+  libyaml-syck-perl mutt ssh-client svn-buildpackage w3m gettext-doc groff
+  krb5-doc uw-mailutils krb5-user less www-browser libmail-box-perl
+  python3-doc python3-tk python3.3-doc
+Recommended packages:
+  autotools-dev at dctrl-tools dput dupload libdistro-info-perl
+  libencode-locale-perl libjson-perl libparse-debcontrol-perl liburi-perl
+  libwww-perl lintian patchutils python3-debian python3-magic strace unzip
+  wdiff wget curl debian-keyring equivs liblwp-protocol-https-perl
+  libsoap-lite-perl autopoint libasprintf-dev libgettextpo-dev libglib2.0-data
+  shared-mime-info krb5-locales libssl-doc xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils cdbs comerr-dev debhelper devscripts dh-buildinfo dh-python
+  gettext gettext-base groff-base intltool-debian krb5-multidev libasprintf0c2
+  libc-client2007e libc-client2007e-dev libcroco3 libglib2.0-0
+  libgssapi-krb5-2 libgssrpc4 libk5crypto3 libkadm5clnt-mit9 libkadm5srv-mit9
+  libkdb5-7 libkeyutils1 libkrb5-3 libkrb5-dev libkrb5support0 libmpdec2
+  libpam0g-dev libpython3-stdlib libpython3.3-minimal libpython3.3-stdlib
+  libssl-dev libunistring0 libxml2 man-db mlock po-debconf python3
+  python3-minimal python3.3 python3.3-minimal
+  sbuild-build-depends-libmail-cclient-perl-dummy zlib1g-dev
+0 upgraded, 44 newly installed, 0 to remove and 16 not upgraded.
+Need to get 17.6 MB/17.6 MB of archives.
+After this operation, 56.9 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:2 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:3 http://http.debian.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:4 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:5 http://http.debian.net/debian/ sid/main libkeyutils1 amd64 1.5.6-1 [8758 B]
+Get:6 http://http.debian.net/debian/ sid/main libkrb5support0 amd64 1.12.1+dfsg-1 [56.3 kB]
+Get:7 http://http.debian.net/debian/ sid/main libk5crypto3 amd64 1.12.1+dfsg-1 [109 kB]
+Get:8 http://http.debian.net/debian/ sid/main libkrb5-3 amd64 1.12.1+dfsg-1 [296 kB]
+Get:9 http://http.debian.net/debian/ sid/main libgssapi-krb5-2 amd64 1.12.1+dfsg-1 [143 kB]
+Get:10 http://http.debian.net/debian/ sid/main libgssrpc4 amd64 1.12.1+dfsg-1 [82.7 kB]
+Get:11 http://http.debian.net/debian/ sid/main libkadm5clnt-mit9 amd64 1.12.1+dfsg-1 [65.6 kB]
+Get:12 http://http.debian.net/debian/ sid/main libkdb5-7 amd64 1.12.1+dfsg-1 [65.5 kB]
+Get:13 http://http.debian.net/debian/ sid/main libkadm5srv-mit9 amd64 1.12.1+dfsg-1 [79.8 kB]
+Get:14 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:15 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.38.2-5 [2231 kB]
+Get:16 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:17 http://http.debian.net/debian/ sid/main libmpdec2 amd64 2.4.0-6 [82.0 kB]
+Get:18 http://http.debian.net/debian/ sid/main libpython3.3-minimal amd64 3.3.5-1 [424 kB]
+Get:19 http://http.debian.net/debian/ sid/main libpython3.3-stdlib amd64 3.3.5-1 [2000 kB]
+Get:20 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:21 http://http.debian.net/debian/ sid/main python3.3-minimal amd64 3.3.5-1 [1395 kB]
+Get:22 http://http.debian.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:23 http://http.debian.net/debian/ sid/main cdbs all 0.4.122 [81.4 kB]
+Get:24 http://http.debian.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:25 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:26 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:27 http://http.debian.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:28 http://http.debian.net/debian/ sid/main python3.3 amd64 3.3.5-1 [164 kB]
+Get:29 http://http.debian.net/debian/ sid/main python3-minimal amd64 3.3.4-1 [34.1 kB]
+Get:30 http://http.debian.net/debian/ sid/main libpython3-stdlib amd64 3.3.4-1 [17.7 kB]
+Get:31 http://http.debian.net/debian/ sid/main dh-python all 1.20140128-1 [52.4 kB]
+Get:32 http://http.debian.net/debian/ sid/main python3 amd64 3.3.4-1 [20.8 kB]
+Get:33 http://http.debian.net/debian/ sid/main devscripts amd64 2.14.1 [875 kB]
+Get:34 http://http.debian.net/debian/ sid/main dh-buildinfo all 0.10 [14.9 kB]
+Get:35 http://http.debian.net/debian/ sid/main comerr-dev amd64 2.1-1.42.9-3 [38.3 kB]
+Get:36 http://http.debian.net/debian/ sid/main krb5-multidev amd64 1.12.1+dfsg-1 [140 kB]
+Get:37 http://http.debian.net/debian/ sid/main mlock amd64 8:2007f~dfsg-2 [34.0 kB]
+Get:38 http://http.debian.net/debian/ sid/main libc-client2007e amd64 8:2007f~dfsg-2 [758 kB]
+Get:39 http://http.debian.net/debian/ sid/main libkrb5-dev amd64 1.12.1+dfsg-1 [43.3 kB]
+Get:40 http://http.debian.net/debian/ sid/main libpam0g-dev amd64 1.1.8-2 [182 kB]
+Get:41 http://http.debian.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-1 [217 kB]
+Get:42 http://http.debian.net/debian/ sid/main libssl-dev amd64 1.0.1f-1 [1243 kB]
+Get:43 http://http.debian.net/debian/ sid/main libc-client2007e-dev amd64 8:2007f~dfsg-2 [730 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 17.6 MB in 0s (20.0 MB/s)
+Selecting previously unselected package groff-base.
+(Reading database ... 13265 files and directories currently installed.)
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../libkeyutils1_1.5.6-1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.6-1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../libkrb5support0_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../libk5crypto3_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../libkrb5-3_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../libgssapi-krb5-2_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libgssrpc4:amd64.
+Preparing to unpack .../libgssrpc4_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libgssrpc4:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libkadm5clnt-mit9:amd64.
+Preparing to unpack .../libkadm5clnt-mit9_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkadm5clnt-mit9:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libkdb5-7:amd64.
+Preparing to unpack .../libkdb5-7_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkdb5-7:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libkadm5srv-mit9:amd64.
+Preparing to unpack .../libkadm5srv-mit9_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkadm5srv-mit9:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.38.2-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.38.2-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libmpdec2:amd64.
+Preparing to unpack .../libmpdec2_2.4.0-6_amd64.deb ...
+Unpacking libmpdec2:amd64 (2.4.0-6) ...
+Selecting previously unselected package libpython3.3-minimal:amd64.
+Preparing to unpack .../libpython3.3-minimal_3.3.5-1_amd64.deb ...
+Unpacking libpython3.3-minimal:amd64 (3.3.5-1) ...
+Selecting previously unselected package libpython3.3-stdlib:amd64.
+Preparing to unpack .../libpython3.3-stdlib_3.3.5-1_amd64.deb ...
+Unpacking libpython3.3-stdlib:amd64 (3.3.5-1) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package python3.3-minimal.
+Preparing to unpack .../python3.3-minimal_3.3.5-1_amd64.deb ...
+Unpacking python3.3-minimal (3.3.5-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package cdbs.
+Preparing to unpack .../archives/cdbs_0.4.122_all.deb ...
+Unpacking cdbs (0.4.122) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package python3.3.
+Preparing to unpack .../python3.3_3.3.5-1_amd64.deb ...
+Unpacking python3.3 (3.3.5-1) ...
+Selecting previously unselected package python3-minimal.
+Preparing to unpack .../python3-minimal_3.3.4-1_amd64.deb ...
+Unpacking python3-minimal (3.3.4-1) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../libpython3-stdlib_3.3.4-1_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.3.4-1) ...
+Selecting previously unselected package dh-python.
+Preparing to unpack .../dh-python_1.20140128-1_all.deb ...
+Unpacking dh-python (1.20140128-1) ...
+Selecting previously unselected package python3.
+Preparing to unpack .../python3_3.3.4-1_amd64.deb ...
+Unpacking python3 (3.3.4-1) ...
+Selecting previously unselected package devscripts.
+Preparing to unpack .../devscripts_2.14.1_amd64.deb ...
+Unpacking devscripts (2.14.1) ...
+Selecting previously unselected package dh-buildinfo.
+Preparing to unpack .../dh-buildinfo_0.10_all.deb ...
+Unpacking dh-buildinfo (0.10) ...
+Selecting previously unselected package comerr-dev.
+Preparing to unpack .../comerr-dev_2.1-1.42.9-3_amd64.deb ...
+Unpacking comerr-dev (2.1-1.42.9-3) ...
+Selecting previously unselected package krb5-multidev.
+Preparing to unpack .../krb5-multidev_1.12.1+dfsg-1_amd64.deb ...
+Unpacking krb5-multidev (1.12.1+dfsg-1) ...
+Selecting previously unselected package mlock.
+Preparing to unpack .../mlock_8%3a2007f~dfsg-2_amd64.deb ...
+Unpacking mlock (8:2007f~dfsg-2) ...
+Selecting previously unselected package libc-client2007e.
+Preparing to unpack .../libc-client2007e_8%3a2007f~dfsg-2_amd64.deb ...
+Unpacking libc-client2007e (8:2007f~dfsg-2) ...
+Selecting previously unselected package libkrb5-dev.
+Preparing to unpack .../libkrb5-dev_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5-dev (1.12.1+dfsg-1) ...
+Selecting previously unselected package libpam0g-dev:amd64.
+Preparing to unpack .../libpam0g-dev_1.1.8-2_amd64.deb ...
+Unpacking libpam0g-dev:amd64 (1.1.8-2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1f-1_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1f-1) ...
+Selecting previously unselected package libc-client2007e-dev.
+Preparing to unpack .../libc-client2007e-dev_8%3a2007f~dfsg-2_amd64.deb ...
+Unpacking libc-client2007e-dev (8:2007f~dfsg-2) ...
+Selecting previously unselected package sbuild-build-depends-libmail-cclient-perl-dummy.
+Preparing to unpack .../sbuild-build-depends-libmail-cclient-perl-dummy.deb ...
+Unpacking sbuild-build-depends-libmail-cclient-perl-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libkeyutils1:amd64 (1.5.6-1) ...
+Setting up libkrb5support0:amd64 (1.12.1+dfsg-1) ...
+Setting up libk5crypto3:amd64 (1.12.1+dfsg-1) ...
+Setting up libkrb5-3:amd64 (1.12.1+dfsg-1) ...
+Setting up libgssapi-krb5-2:amd64 (1.12.1+dfsg-1) ...
+Setting up libgssrpc4:amd64 (1.12.1+dfsg-1) ...
+Setting up libkadm5clnt-mit9:amd64 (1.12.1+dfsg-1) ...
+Setting up libkdb5-7:amd64 (1.12.1+dfsg-1) ...
+Setting up libkadm5srv-mit9:amd64 (1.12.1+dfsg-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.38.2-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libmpdec2:amd64 (2.4.0-6) ...
+Setting up libpython3.3-minimal:amd64 (3.3.5-1) ...
+Setting up libpython3.3-stdlib:amd64 (3.3.5-1) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up python3.3-minimal (3.3.5-1) ...
+update-binfmts: warning: Couldn't load the binfmt_misc module.
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up cdbs (0.4.122) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up python3.3 (3.3.5-1) ...
+Setting up python3-minimal (3.3.4-1) ...
+Setting up libpython3-stdlib:amd64 (3.3.4-1) ...
+Setting up dh-buildinfo (0.10) ...
+Setting up comerr-dev (2.1-1.42.9-3) ...
+Setting up krb5-multidev (1.12.1+dfsg-1) ...
+Setting up mlock (8:2007f~dfsg-2) ...
+Setting up libc-client2007e (8:2007f~dfsg-2) ...
+Setting up libkrb5-dev (1.12.1+dfsg-1) ...
+Setting up libpam0g-dev:amd64 (1.1.8-2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Setting up libssl-dev:amd64 (1.0.1f-1) ...
+Setting up libc-client2007e-dev (8:2007f~dfsg-2) ...
+Setting up dh-python (1.20140128-1) ...
+Setting up python3 (3.3.4-1) ...
+Setting up devscripts (2.14.1) ...
+Setting up sbuild-build-depends-libmail-cclient-perl-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-4 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.6-1
+Package versions: apt_0.9.16.1 base-files_7.2 base-passwd_3.5.32 bash_4.3-4 binfmt-support_2.1.3-2 binutils_2.24-4 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.6 build-essential_11.6 bzip2_1.0.6-5 cdbs_0.4.122 clang-3.4_1:3.4-2 comerr-dev_2.1-1.42.9-3 coreutils_8.21-1.1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 devscripts_2.14.1 dh-buildinfo_0.10 dh-python_1.20140128-1 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-7 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 krb5-multidev_1.12.1+dfsg-1 libacl1_2.2.52-1 libapt-pkg4.12_0.9.16.1 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.4-1 libaudit1_1:2.3.4-1 libblkid1_2.20.1-5.6 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-client2007e_8:2007f~dfsg-2 libc-client2007e-dev_8:2007f~dfsg-2 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.6 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.0.13-12 libffi6_3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgdbm3_1.8.3-12 libglib2.0-0_2.38.2-5 libgmp10_2:5.1.3+dfsg-1 libgomp1_4.8.2-16 libgpm2_1.20.4-6.1 libgssapi-krb5-2_1.12.1+dfsg-1 libgssrpc4_1.12.1+dfsg-1 libisl10_0.12.2-1 libitm1_4.8.2-16 libjsoncpp0_0.6.0~rc2-3 libk5crypto3_1.12.1+dfsg-1 libkadm5clnt-mit9_1.12.1+dfsg-1 libkadm5srv-mit9_1.12.1+dfsg-1 libkdb5-7_1.12.1+dfsg-1 libkeyutils1_1.5.6-1 libkrb5-3_1.12.1+dfsg-1 libkrb5-dev_1.12.1+dfsg-1 libkrb5support0_1.12.1+dfsg-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.6 libmpc3_1.0.1-1 libmpdec2_2.4.0-6 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpam0g-dev_1.1.8-2 libpcre3_1:8.31-2 libpipeline1_1.2.6-2 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libpython3-stdlib_3.3.4-1 libpython3.3-minimal_3.3.5-1 libpython3.3-stdlib_3.3.5-1 libquadmath0_4.8.2-16 libreadline6_6.3-4 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libsqlite3-0_3.8.4.1-1 libss2_1.42.9-3 libssl-dev_1.0.1f-1 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtsan0_4.8.2-16 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.6 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.6-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mime-support_3.54 mlock_8:2007f~dfsg-2 mount_2.20.1-5.6 multiarch-support_2.18-4 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-4 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-minimal_2.7.6-8 python3_3.3.4-1 python3-minimal_3.3.4-1 python3.3_3.3.5-1 python3.3-minimal_3.3.5-1 readline-common_6.3-4 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-libmail-cclient-perl-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-2 tzdata_2014a-1 util-linux_2.20.1-5.6 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1 zlib1g-dev_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (libmail-cclient-perl_1.12-11.dsc)
+dpkg-source: info: extracting libmail-cclient-perl in libmail-cclient-perl-1.12
+dpkg-source: info: unpacking libmail-cclient-perl_1.12.orig.tar.gz
+dpkg-source: info: unpacking libmail-cclient-perl_1.12-11.debian.tar.xz
+dpkg-source: info: applying 1001_fix_segfault_from_truncated_pointer.patch
+dpkg-source: info: applying 1002_Don-t-use-PERL_POLLUTE-macros.patch
+dpkg-source: info: applying 1003_fix_clang_FTBFS_Wreturn-type.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-cc53e97b-b213-4061-b542-b607ae37f19b
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package libmail-cclient-perl
+dpkg-buildpackage: source version 1.12-11
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Dominic Hargreaves <dom@earth.li>
+ dpkg-source --before-build libmail-cclient-perl-1.12
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+test -x debian/rules
+rm -f debian/stamp-makefile-build debian/stamp-makefile-install
+/usr/bin/make  -C . CFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall" CXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall" CPPFLAGS="-D_FORTIFY_SOURCE=2" LDFLAGS="-Wl,-z,relro"  -k clean
+make[1]: make[1]: Entering directory `/«PKGBUILDDIR»'
+*** No rule to make target `clean'.
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+make: [makefile-clean] Error 2 (ignored)
+rm -f debian/stamp-makefile-check
+rm -f debian/copyright_newhints
+rm -f debian/cdbs-install-list debian/cdbs-package-list debian/stamp-copyright-check
+rm -rf "debian/upstream-cruft"
+rm -f debian/stamp-upstream-cruft
+dh_clean 
+rm -f debian/tests.txt
+rm -f Cclient.h
+ dpkg-source -b libmail-cclient-perl-1.12
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building libmail-cclient-perl using existing ./libmail-cclient-perl_1.12.orig.tar.gz
+dpkg-source: info: building libmail-cclient-perl in libmail-cclient-perl_1.12-11.debian.tar.xz
+dpkg-source: info: building libmail-cclient-perl in libmail-cclient-perl_1.12-11.dsc
+ debian/rules build
+test -x debian/rules
+mkdir -p "."
+
+Scanning upstream source for new/changed copyright notices...
+
+licensecheck -c '.*' -r --copyright -i '^debian/(changelog|copyright(|_hints|_newhints))' -l '99999' * | /usr/lib/cdbs/licensecheck2dep5 > debian/copyright_newhints
+6 combinations of copyright and licensing found.
+WARNING: The following (and possibly more) new or changed notices discovered:
+
+Format: http://www.debian.org/doc/packaging-manuals/…
+ debian/patches/1002_Don-t-use-PERL_POLLUTE-macros.patch
+ debian/patches/1003_fix_clang_FTBFS_Wreturn-type.patch
+License: GPL-2+
+ FIXME
+
+Files: Copying
+Copyright: 1989, Free Software Foundation, Inc
+  19xx name of author
+  19yy <name of author>
+  disclaimer" for the program, if
+  interest in the
+  the software, and
+License: GPL-ever
+Copyright: of this Package, but belong to whoever generated
+
+To fix the situation please do the following:
+  1) Fully compare debian/copyright_hints with debian/copyright_newhints
+  2) Update debian/copyright as needed
+  3) Replace debian/copyright_hints with debian/copyright_newhints
+touch debian/stamp-copyright-check
+touch debian/stamp-upstream-cruft
+(cd . && /usr/bin/perl Makefile.PL --with-shared_cclient --with-pam --with-ssl --cclient_dir=/usr/include/c-client --with-kerberos --with-cclient-includes=/usr/include/c-client INSTALLDIRS=vendor )
+configure with shared c-client: -lc-client
+configure with pam: -lpam -lpam_misc
+configure with ssl: -lcrypto -lssl
+configure with kerberos: -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err
+Checking if your kit is complete...
+Looks good
+Writing Makefile for Mail::Cclient
+Writing MYMETA.yml and MYMETA.json
+/usr/bin/make  -C . CFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall" CXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall" CPPFLAGS="-D_FORTIFY_SOURCE=2" LDFLAGS="-Wl,-z,relro"  all
+make[1]: Entering directory `/«PKGBUILDDIR»'
+cp Cclient.pm blib/lib/Mail/Cclient.pm
+cp Cclient.pod blib/lib/Mail/Cclient.pod
+cc -c  -I/usr/include/c-client -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fstack-protector -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g   -DVERSION=\"1.12\" -DXS_VERSION=\"1.12\" -fPIC "-I/usr/lib/perl/5.18/CORE"   criteria.c
+criteria.c:63:17: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                switch(*ucase(s)) {
+                              ^
+/usr/include/c-client/misc.h:86:38: note: passing argument to parameter 'string' here
+unsigned char *ucase (unsigned char *string);
+                                     ^
+criteria.c:198:5: warning: implicit declaration of function 'isdigit' is invalid in C99 [-Wimplicit-function-declaration]
+        if(isdigit(d = *(*arg)++) || ((d == ' ') && isdigit(**arg))) {
+           ^
+criteria.c:276:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+                if(*size = i)
+                   ~~~~~~^~~
+criteria.c:276:12: note: place parentheses around the assignment to silence this warning
+                if(*size = i)
+                         ^
+                   (        )
+criteria.c:276:12: note: use '==' to turn this assignment into an equality comparison
+                if(*size = i)
+                         ^
+                         ==
+criteria.c:291:19: warning: implicit declaration of function 'strtoul' is invalid in C99 [-Wimplicit-function-declaration]
+                if((*size = i = strtoul(s,&t,10)) > MAXCLIENTLIT) {
+                                ^
+criteria.c:306:10: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if(*del = *t) {
+           ~~~~~^~~~
+criteria.c:306:10: note: place parentheses around the assignment to silence this warning
+        if(*del = *t) {
+                ^
+           (        )
+criteria.c:306:10: note: use '==' to turn this assignment into an equality comparison
+        if(*del = *t) {
+                ^
+                ==
+5 warnings generated.
+/usr/bin/perl /usr/share/perl/5.18/ExtUtils/xsubpp  -typemap /usr/share/perl/5.18/ExtUtils/typemap -typemap typemap  Cclient.xs > Cclient.xsc && mv Cclient.xsc Cclient.c
+cc -c  -I/usr/include/c-client -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fstack-protector -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g   -DVERSION=\"1.12\" -DXS_VERSION=\"1.12\" -fPIC "-I/usr/lib/perl/5.18/CORE"   Cclient.c
+Cclient.xs:108:19: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                (*s)->text.data = cpystr(SvPV(*svp, len));
+                                ^ ~~~~~~~~~~~~~~~~~~~~~~~
+Cclient.xs:233:13: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                env->date = SvPV(*value, PL_na);
+                          ^ ~~~~~~~~~~~~~~~~~~~
+Cclient.xs:237:13: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                env->date = cpystr(buf);
+                          ^ ~~~~~~~~~~~
+Cclient.xs:335:7: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        data = (char*)fs_get(statbuf.st_size);
+             ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Cclient.xs:341:11: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        st->data = (char*)fs_get(statbuf.st_size);
+                 ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Cclient.xs:471:28: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                body->contents.text.data = SvPV(*value, len);
+                                         ^ ~~~~~~~~~~~~~~~~~
+Cclient.xs:549:23: warning: passing 'unsigned char *' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        av_push(e, str_to_sv(envelope->date));
+                             ^~~~~~~~~~~~~~
+/usr/lib/perl/5.18/CORE/embed.h:56:44: note: expanded from macro 'av_push'
+#define av_push(a,b)            Perl_av_push(aTHX_ a,b)
+                                                     ^
+Cclient.xs:81:28: note: passing argument to parameter 'str' here
+static SV *str_to_sv(char *str) {
+                           ^
+Cclient.xs:654:9: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+                        if(t = thr->next) {
+                           ~~^~~~~~~~~~~
+Cclient.xs:654:9: note: place parentheses around the assignment to silence this warning
+                        if(t = thr->next) {
+                             ^
+                           (            )
+Cclient.xs:654:9: note: use '==' to turn this assignment into an equality comparison
+                        if(t = thr->next) {
+                             ^
+                             ==
+Cclient.xs:695:23: warning: passing 'unsigned char *' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                av_push(av, newSVpv(s->text.data, s->text.size));
+                                    ^~~~~~~~~~~~
+/usr/lib/perl/5.18/CORE/embed.h:379:42: note: expanded from macro 'newSVpv'
+#define newSVpv(a,b)            Perl_newSVpv(aTHX_ a,b)
+                                                   ^
+/usr/lib/perl/5.18/CORE/embed.h:56:44: note: expanded from macro 'av_push'
+#define av_push(a,b)            Perl_av_push(aTHX_ a,b)
+                                                     ^
+/usr/lib/perl/5.18/CORE/proto.h:2865:56: note: passing argument to parameter 's' here
+PERL_CALLCONV SV*       Perl_newSVpv(pTHX_ const char *const s, const STRLEN len)
+                                                             ^
+Cclient.xs:1038:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+Cclient.xs:1867:10: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if(spgm = make_criteria(search_criteria))
+           ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Cclient.xs:1867:10: note: place parentheses around the assignment to silence this warning
+        if(spgm = make_criteria(search_criteria))
+                ^
+           (                                    )
+Cclient.xs:1867:10: note: use '==' to turn this assignment into an equality comparison
+        if(spgm = make_criteria(search_criteria))
+                ^
+                ==
+Cclient.c:4171:37: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        RETVAL = mail_set_sequence(stream, sequence);
+                                           ^~~~~~~~
+Cclient.c:4137:62: note: expanded from macro 'mail_set_sequence'
+#define mail_set_sequence(stream, seq) mail_sequence(stream, seq)
+                                                             ^
+/usr/include/c-client/mail.h:1776:55: note: passing argument to parameter 'sequence' here
+long mail_sequence (MAILSTREAM *stream,unsigned char *sequence);
+                                                      ^
+Cclient.c:4211:41: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        RETVAL = mail_uid_set_sequence(stream, sequence);
+                                               ^~~~~~~~
+Cclient.c:4177:70: note: expanded from macro 'mail_uid_set_sequence'
+#define mail_uid_set_sequence(stream, seq) mail_uid_sequence(stream, seq)
+                                                                     ^
+/usr/include/c-client/mail.h:1777:59: note: passing argument to parameter 'sequence' here
+long mail_uid_sequence (MAILSTREAM *stream,unsigned char *sequence);
+                                                          ^
+Cclient.xs:2266:19: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                trans = ucase(SvPV(ST(i+1), PL_na));
+                                              ^~~~~~~~~~~~~~~~~~~~
+/usr/lib/perl/5.18/CORE/sv.h:1641:30: note: expanded from macro 'SvPV'
+#define SvPV(sv, lp)         SvPV_flags(sv, lp, SV_GMAGIC)
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/perl/5.18/CORE/sv.h:1646:5: note: expanded from macro 'SvPV_flags'
+    (SvPOK_nog(sv) \
+    ^~~~~~~~~~~~~~~~
+/usr/include/c-client/misc.h:86:38: note: passing argument to parameter 'string' here
+unsigned char *ucase (unsigned char *string);
+                                     ^
+Cclient.xs:2266:11: warning: assigning to 'char *' from 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                trans = ucase(SvPV(ST(i+1), PL_na));
+                                      ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Cclient.xs:2395:3: warning: implicit declaration of function 'utf8_mime2text' is invalid in C99 [-Wimplicit-function-declaration]
+                utf8_mime2text(&src, &dst);   
+                ^
+16 warnings generated.
+Running Mkbootstrap for Mail::Cclient ()
+chmod 644 Cclient.bs
+rm -f blib/arch/auto/Mail/Cclient/Cclient.so
+cc  -shared -L/usr/local/lib -fstack-protector criteria.o Cclient.o  -o blib/arch/auto/Mail/Cclient/Cclient.so 	\
+	   -lc -lc-client -lpam -lpam_misc -lcrypto -lssl -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err  	\
+	  
+chmod 755 blib/arch/auto/Mail/Cclient/Cclient.so
+cp Cclient.bs blib/arch/auto/Mail/Cclient/Cclient.bs
+chmod 644 blib/arch/auto/Mail/Cclient/Cclient.bs
+Manifying blib/man3/Mail::Cclient.3pm
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+touch debian/stamp-makefile-build
+/usr/bin/make  -C . CFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall" CXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall" CPPFLAGS="-D_FORTIFY_SOURCE=2" LDFLAGS="-Wl,-z,relro"  test | tee debian/tests.txt || true
+make[1]: Entering directory `/«PKGBUILDDIR»'
+PERL_DL_NONLAZY=1 /usr/bin/perl "-MExtUtils::Command::MM" "-e" "test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+Can't call method "check" on an undefined value at t/check.t line 24.
+t/check.t ................. 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/5 subtests 
+Can't call method "elt" on an undefined value at t/elt.t line 15.
+t/elt.t ................... 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "expunge" on an undefined value at t/expunge.t line 24.
+t/expunge.t ............... 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/5 subtests 
+Can't call method "fetch_body" on an undefined value at t/fetch_body.t line 15.
+t/fetch_body.t ............ 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "fetch_header" on an undefined value at t/fetch_header.t line 15.
+t/fetch_header.t .......... 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "fetch_message" on an undefined value at t/fetch_message.t line 15.
+t/fetch_message.t ......... 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "fetch_mime" on an undefined value at t/fetch_mime.t line 15.
+t/fetch_mime.t ............ 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "fetch_structure" on an undefined value at t/fetch_structure.t line 15.
+t/fetch_structure.t ....... 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "fetch_text" on an undefined value at t/fetch_text.t line 15.
+t/fetch_text.t ............ 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "list" on an undefined value at t/list.t line 21.
+t/list.t .................. 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/5 subtests 
+Can't call method "uid" on an undefined value at t/msgno.t line 15.
+t/msgno.t ................. 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 4/5 subtests 
+Can't call method "nmsgs" on an undefined value at t/nmsgs.t line 15.
+t/nmsgs.t ................. 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+t/parameters.t ............ ok
+Can't call method "ping" on an undefined value at t/ping.t line 15.
+t/ping.t .................. 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+t/rfc822_8bit.t ........... ok
+t/rfc822_base64.t ......... ok
+t/rfc822_binary.t ......... ok
+t/rfc822_date.t ........... ok
+t/rfc822_parse_adrlist.t .. ok
+t/rfc822_qprint.t ......... ok
+t/rfc822_write_address.t .. ok
+Can't call method "search" on an undefined value at t/search.t line 23.
+t/search.t ................ 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 4/6 subtests 
+Can't call method "search_msg" on an undefined value at t/search_msg.t line 15.
+t/search_msg.t ............ 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+t/smtp_open.t ............. 
+No subtests run 
+Can't call method "sort" on an undefined value at t/sort.t line 15.
+t/sort.t .................. 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "subscribe" on an undefined value at t/subscribe.t line 15.
+t/subscribe.t ............. 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "thread" on an undefined value at t/thread.t line 15.
+t/thread.t ................ 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "uid" on an undefined value at t/uid.t line 15.
+t/uid.t ................... 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+Can't call method "unsubscribe" on an undefined value at t/unsubscribe.t line 15.
+t/unsubscribe.t ........... 
+Dubious, test returned 22 (wstat 5632, 0x1600)
+Failed 3/4 subtests 
+t/utf8_mime2text.t ........ ok
+
+Test Summary Report
+-------------------
+t/check.t               (Wstat: 5632 Tests: 3 Failed: 1)
+  Failed test:  3
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 5 tests but ran 3.
+t/elt.t                 (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/expunge.t             (Wstat: 5632 Tests: 3 Failed: 1)
+  Failed test:  3
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 5 tests but ran 3.
+t/fetch_body.t          (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/fetch_header.t        (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/fetch_message.t       (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/fetch_mime.t          (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/fetch_structure.t     (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/fetch_text.t          (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/list.t                (Wstat: 5632 Tests: 3 Failed: 1)
+  Failed test:  3
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 5 tests but ran 3.
+t/msgno.t               (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 5 tests but ran 2.
+t/nmsgs.t               (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/ping.t                (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/search.t              (Wstat: 5632 Tests: 3 Failed: 1)
+  Failed test:  3
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 6 tests but ran 3.
+t/search_msg.t          (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/smtp_open.t           (Wstat: 11 Tests: 0 Failed: 0)
+  Non-zero wait status: 11
+  Parse errors: No plan found in TAP output
+t/sort.t                (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/subscribe.t           (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/thread.t              (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/uid.t                 (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+t/unsubscribe.t         (Wstat: 5632 Tests: 2 Failed: 1)
+  Failed test:  2
+  Non-zero exit status: 22
+  Parse errors: Bad plan.  You planned 4 tests but ran 2.
+Files=30, Tests=63,  1 wallclock secs ( 0.03 usr  0.04 sys +  0.17 cusr  0.02 csys =  0.26 CPU)
+Result: FAIL
+Failed 21/30 test programs. 20/63 subtests failed.
+make[1]: *** [test_dynamic] Error 255
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+touch debian/stamp-makefile-check
+ fakeroot debian/rules binary
+test -x debian/rules
+dh_testroot
+dh_clean -k 
+dh_clean: dh_clean -k is deprecated; use dh_prep instead
+dh_installdirs -A 
+mkdir -p "."
+/usr/bin/make  -C . CFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall" CXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall" CPPFLAGS="-D_FORTIFY_SOURCE=2" LDFLAGS="-Wl,-z,relro"  install DESTDIR="/«PKGBUILDDIR»/debian/libmail-cclient-perl"
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /«PKGBUILDDIR»/debian/libmail-cclient-perl/usr/lib/perl5/auto/Mail/Cclient/Cclient.bs
+Installing /«PKGBUILDDIR»/debian/libmail-cclient-perl/usr/lib/perl5/auto/Mail/Cclient/Cclient.so
+Installing /«PKGBUILDDIR»/debian/libmail-cclient-perl/usr/lib/perl5/Mail/Cclient.pm
+Installing /«PKGBUILDDIR»/debian/libmail-cclient-perl/usr/lib/perl5/Mail/Cclient.pod
+Installing /«PKGBUILDDIR»/debian/libmail-cclient-perl/usr/share/man/man3/Mail::Cclient.3pm
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+touch debian/stamp-makefile-install
+Adding cdbs dependencies to debian/libmail-cclient-perl.substvars
+dh_installdirs -plibmail-cclient-perl 
+dh_installdocs -plibmail-cclient-perl ./README ./TODO debian/tests.txt 
+dh_installexamples -plibmail-cclient-perl examples/*
+dh_installman -plibmail-cclient-perl  
+dh_installinfo -plibmail-cclient-perl  
+dh_installmenu -plibmail-cclient-perl 
+dh_installcron -plibmail-cclient-perl 
+dh_installinit -plibmail-cclient-perl  
+dh_installdebconf -plibmail-cclient-perl 
+dh_installemacsen -plibmail-cclient-perl   
+dh_installcatalogs -plibmail-cclient-perl 
+dh_installpam -plibmail-cclient-perl 
+dh_installlogrotate -plibmail-cclient-perl 
+dh_installlogcheck -plibmail-cclient-perl 
+dh_installchangelogs -plibmail-cclient-perl  ./Changes 
+dh_installudev -plibmail-cclient-perl 
+dh_lintian -plibmail-cclient-perl 
+dh_bugfiles -plibmail-cclient-perl 
+dh_install -plibmail-cclient-perl  
+dh_link -plibmail-cclient-perl  
+dh_buildinfo -plibmail-cclient-perl 
+dh_installmime -plibmail-cclient-perl 
+dh_installgsettings -plibmail-cclient-perl 
+dh_strip -plibmail-cclient-perl  
+dh_compress -plibmail-cclient-perl  
+dh_fixperms -plibmail-cclient-perl  
+dh_makeshlibs -plibmail-cclient-perl  
+chmod a-x /«PKGBUILDDIR»/debian/libmail-cclient-perl//usr/share/doc/libmail-cclient-perl/examples/*.txt
+dh_installdeb -plibmail-cclient-perl 
+dh_perl -plibmail-cclient-perl 
+dh_shlibdeps -plibmail-cclient-perl    
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmail-cclient-perl/usr/lib/perl5/auto/Mail/Cclient/Cclient.so was not linked against libkrb5.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmail-cclient-perl/usr/lib/perl5/auto/Mail/Cclient/Cclient.so was not linked against libssl.so.1.0.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmail-cclient-perl/usr/lib/perl5/auto/Mail/Cclient/Cclient.so was not linked against libcom_err.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmail-cclient-perl/usr/lib/perl5/auto/Mail/Cclient/Cclient.so was not linked against libpam.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmail-cclient-perl/usr/lib/perl5/auto/Mail/Cclient/Cclient.so was not linked against libgssapi_krb5.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmail-cclient-perl/usr/lib/perl5/auto/Mail/Cclient/Cclient.so was not linked against libcrypto.so.1.0.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmail-cclient-perl/usr/lib/perl5/auto/Mail/Cclient/Cclient.so was not linked against libpam_misc.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libmail-cclient-perl/usr/lib/perl5/auto/Mail/Cclient/Cclient.so was not linked against libk5crypto.so.3 (it uses none of the library's symbols)
+dh_gencontrol -plibmail-cclient-perl  
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dh_md5sums -plibmail-cclient-perl 
+dh_builddeb -plibmail-cclient-perl 
+dpkg-deb: building package `libmail-cclient-perl' in `../libmail-cclient-perl_1.12-11_amd64.deb'.
+ dpkg-genchanges  >../libmail-cclient-perl_1.12-11_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build libmail-cclient-perl-1.12
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140323-1822
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libmail-cclient-perl_1.12-11_amd64.changes:
+───────────────────────────────────────────
+
+Format: 1.8
+Date: Sat, 30 Jul 2011 15:11:15 +0100
+Source: libmail-cclient-perl
+Binary: libmail-cclient-perl
+Architecture: source amd64
+Version: 1.12-11
+Distribution: sid
+Urgency: low
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Dominic Hargreaves <dom@earth.li>
+Description: 
+ libmail-cclient-perl - Interface to UW c-client library
+Closes: 628517
+Changes: 
+ libmail-cclient-perl (1.12-11) unstable; urgency=low
+ .
+   * Add patch 1002_Don-t-use-PERL_POLLUTE-macros from Niko Tyni to fix
+     FTBFS with perl 5.14 (Closes: #628517)
+Checksums-Sha1: 
+ 88f8f495584383a2479ec843468904797592ed10 1329 libmail-cclient-perl_1.12-11.dsc
+ a3f7e69026b2bb60a605fbcbbe9cc4c72451e729 12588 libmail-cclient-perl_1.12-11.debian.tar.xz
+ 2263350759c872853a0a04394caf9cca61fb1256 87464 libmail-cclient-perl_1.12-11_amd64.deb
+Checksums-Sha256: 
+ 1bacee84edc37c434ecd6c3d0e9efbd835fb03f14b67cd28fe9690adf539b9d8 1329 libmail-cclient-perl_1.12-11.dsc
+ e3e35300c14e102ae1647e500095bcd8d8b1933d5c94da655f86fdf9bbc882ce 12588 libmail-cclient-perl_1.12-11.debian.tar.xz
+ 4c22688f0ac7d5f94957ca9158fdab98b2f57cb45f17bc7560d03cd9aedc0acc 87464 libmail-cclient-perl_1.12-11_amd64.deb
+Files: 
+ b3cbf82b15dd2abbf87d33aa365962f4 1329 perl optional libmail-cclient-perl_1.12-11.dsc
+ 7b23f9588fb380259d1c7cc590c184b6 12588 perl optional libmail-cclient-perl_1.12-11.debian.tar.xz
+ 32360149c059462cf1deb65232991177 87464 perl optional libmail-cclient-perl_1.12-11_amd64.deb
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libmail-cclient-perl_1.12-11_amd64.deb
+──────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 87464 bytes: control archive=1763 bytes.
+     796 bytes,    14 lines      control              
+    2878 bytes,    33 lines      md5sums              
+ Package: libmail-cclient-perl
+ Version: 1.12-11
+ Architecture: amd64
+ Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+ Installed-Size: 279
+ Depends: perl (>= 5.18.2-2+b1), perlapi-5.18.2, libc-client2007e, libc6 (>= 2.14), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.6.dfsg.2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), libpam0g (>= 0.99.7.1), libssl1.0.0 (>= 1.0.0)
+ Section: perl
+ Priority: optional
+ Homepage: http://www.cpan.org/modules/by-module/Mail/HDIAS/
+ Description: Interface to UW c-client library
+  Mail::Cclient gives access to mailboxes in many different formats
+  (including remote IMAP folders) via the c-client API. The c-client
+  library is the core library used by Pine and the University of
+  Washington IMAP daemon (written by Mark Crispin).
+
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/lib/
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/lib/perl5/
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/lib/perl5/auto/
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/lib/perl5/auto/Mail/
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/lib/perl5/auto/Mail/Cclient/
+-rw-r--r-- root/root         0 2014-03-23 18:22 ./usr/lib/perl5/auto/Mail/Cclient/Cclient.bs
+-rw-r--r-- root/root    131336 2014-03-23 18:22 ./usr/lib/perl5/auto/Mail/Cclient/Cclient.so
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/lib/perl5/Mail/
+-rw-r--r-- root/root      3553 2004-10-09 19:14 ./usr/lib/perl5/Mail/Cclient.pm
+-rw-r--r-- root/root     38906 2004-10-09 19:32 ./usr/lib/perl5/Mail/Cclient.pod
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/share/man/man3/
+-rw-r--r-- root/root     15944 2014-03-23 18:22 ./usr/share/man/man3/Mail::Cclient.3pm.gz
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/share/doc/libmail-cclient-perl/
+-rw-r--r-- root/root      2716 2004-10-09 19:39 ./usr/share/doc/libmail-cclient-perl/changelog.gz
+-rw-r--r-- root/root       218 2004-10-06 11:34 ./usr/share/doc/libmail-cclient-perl/TODO
+-rw-r--r-- root/root      2033 2004-10-09 19:44 ./usr/share/doc/libmail-cclient-perl/README.gz
+-rw-r--r-- root/root      5295 2011-07-30 16:11 ./usr/share/doc/libmail-cclient-perl/changelog.Debian.gz
+-rw-r--r-- root/root       861 2014-03-23 18:22 ./usr/share/doc/libmail-cclient-perl/tests.txt.gz
+-rw-r--r-- root/root      2038 2011-07-30 15:51 ./usr/share/doc/libmail-cclient-perl/copyright
+-rw-r--r-- root/root      2382 2014-03-23 18:22 ./usr/share/doc/libmail-cclient-perl/buildinfo_amd64.gz
+drwxr-xr-x root/root         0 2014-03-23 18:22 ./usr/share/doc/libmail-cclient-perl/examples/
+-rw-r--r-- root/root      1071 2001-10-15 15:25 ./usr/share/doc/libmail-cclient-perl/examples/sort.txt
+-rwxr-xr-x root/root       773 2003-06-14 17:27 ./usr/share/doc/libmail-cclient-perl/examples/list_mailboxs.pl
+-rwxr-xr-x root/root       752 2004-10-09 19:32 ./usr/share/doc/libmail-cclient-perl/examples/smtp_mail.pl
+-rwxr-xr-x root/root       101 2001-10-11 11:37 ./usr/share/doc/libmail-cclient-perl/examples/rfc822_date.pl
+-rw-r--r-- root/root      1521 2001-10-15 15:22 ./usr/share/doc/libmail-cclient-perl/examples/search.txt
+-rw-r--r-- root/root      1691 2003-05-12 18:17 ./usr/share/doc/libmail-cclient-perl/examples/smtp_mail_append.txt
+-rw-r--r-- root/root       423 1998-04-12 22:06 ./usr/share/doc/libmail-cclient-perl/examples/copy.txt
+-rwxr-xr-x root/root       937 2004-04-20 18:17 ./usr/share/doc/libmail-cclient-perl/examples/fetch_body.pl
+-rw-r--r-- root/root       471 2002-09-13 14:09 ./usr/share/doc/libmail-cclient-perl/examples/mime.txt
+-rw-r--r-- root/root      1645 2001-10-17 12:15 ./usr/share/doc/libmail-cclient-perl/examples/rfc822_output.txt
+-rwxr-xr-x root/root       415 2001-12-01 18:51 ./usr/share/doc/libmail-cclient-perl/examples/utf8_mime2text.pl
+-rwxr-xr-x root/root       420 2001-07-06 11:29 ./usr/share/doc/libmail-cclient-perl/examples/rfc822_parse_adrlist.pl
+-rw-r--r-- root/root       473 2001-07-09 15:22 ./usr/share/doc/libmail-cclient-perl/examples/search_msg.txt
+-rwxr-xr-x root/root      1101 2002-09-13 14:11 ./usr/share/doc/libmail-cclient-perl/examples/thread_test.pl
+-rwxr-xr-x root/root      1110 2003-05-12 18:17 ./usr/share/doc/libmail-cclient-perl/examples/smtp_mail_mpart.pl
+-rw-r--r-- root/root       553 1998-04-12 22:07 ./usr/share/doc/libmail-cclient-perl/examples/imap.txt
+-rw-r--r-- root/root       473 2001-07-03 11:21 ./usr/share/doc/libmail-cclient-perl/examples/thread.txt
+-rwxr-xr-x root/root      2588 2004-04-20 17:42 ./usr/share/doc/libmail-cclient-perl/examples/fetch_structure.pl
+-rw-r--r-- root/root       461 2002-09-13 14:11 ./usr/share/doc/libmail-cclient-perl/examples/summ.txt
+-rwxr-xr-x root/root       226 2001-07-06 11:29 ./usr/share/doc/libmail-cclient-perl/examples/rfc822_write_address.pl
+-rw-r--r-- root/root       923 2002-09-13 14:10 ./usr/share/doc/libmail-cclient-perl/examples/struct.txt
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 2876
+Build-Time: 6
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 16
+Job: libmail-cclient-perl_1.12-11.dsc
+Machine Architecture: amd64
+Package: libmail-cclient-perl
+Package-Time: 28
+Source-Version: 1.12-11
+Space: 2876
+Status: successful
+Version: 1.12-11
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140323-1822
+Build needed 00:00:28, 2876k disc space

@@ -1,0 +1,15 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-23
+
+--- a/Cclient.xs
++++ b/Cclient.xs
+@@ -1028,7 +1028,7 @@
+     dSP;
+     SV *sv = mm_callback("diskerror");
+     if (!sv)
+-	return;
++	return -1;
+     PUSHMARK(sp);
+     XPUSHs(sv_mortalcopy(get_mailstream_sv(stream, 0)));
+     XPUSHs(sv_2mortal(newSViv(errcode)));
