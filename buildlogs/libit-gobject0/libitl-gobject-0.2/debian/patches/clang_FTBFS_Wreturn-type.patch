@@ -1,0 +1,33 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-23
+
+--- a/itl-gobject.c
++++ b/itl-gobject.c
+@@ -654,7 +654,7 @@
+   GList *Prayers=NULL;
+   Prayer ITLPrayer[6];
+ 
+-  g_return_if_fail (GOBJECT_IS_PRAYER (prayer));
++  g_return_val_if_fail (GOBJECT_IS_PRAYER (prayer), 0);
+ 
+   g_object_ref (prayer);
+ 
+@@ -712,7 +712,7 @@
+   Prayer cPrayer;
+   GDateTime *NextDayFajr;
+ 
+-  g_return_if_fail (GOBJECT_IS_PRAYER (prayer));
++  g_return_val_if_fail (GOBJECT_IS_PRAYER (prayer), 0);
+ 
+   g_object_ref (prayer);
+ 
+@@ -746,7 +746,7 @@
+ {
+   gdouble NorthQibla;
+ 
+-  g_return_if_fail (GOBJECT_IS_PRAYER (prayer));
++  g_return_val_if_fail (GOBJECT_IS_PRAYER (prayer), 0);
+ 
+   g_object_ref (prayer);
+ 
