@@ -1,0 +1,15 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-24
+
+--- a/mktlin.c
++++ b/mktlin.c
+@@ -337,7 +337,7 @@
+       PROGRAM_ABORT;
+     }
+   }
+-return;
++return 0;
+ }
+ 
+ 

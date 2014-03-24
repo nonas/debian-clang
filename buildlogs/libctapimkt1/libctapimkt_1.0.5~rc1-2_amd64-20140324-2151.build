@@ -1,0 +1,977 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ libctapimkt 1.0.5~rc1-2 (amd64)                            24 Mar 2014 21:51 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: libctapimkt
+Version: 1.0.5~rc1-2
+Source Version: 1.0.5~rc1-2
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/libctapimkt-NT4LFa/libctapimkt-1.0.5~rc1' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/libctapimkt-NT4LFa' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-66db74ed-9eb2-4ca3-a1e8-a828fc616ad7' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+libctapimkt_1.0.5~rc1-2.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-oaBKFw/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13265 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dh-autoreconf, d-shlibs, libusb-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dh-autoreconf, d-shlibs, libusb-dev
+dpkg-deb: building package `sbuild-build-depends-libctapimkt-dummy' in `/«BUILDDIR»/resolver-Mq0iAH/apt_archive/sbuild-build-depends-libctapimkt-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install libctapimkt build dependencies (apt-based resolver)                  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils d-shlibs debhelper
+  dh-autoreconf gettext gettext-base groff-base intltool-debian libasprintf0c2
+  libcroco3 libglib2.0-0 libsigsegv2 libtool libunistring0 libusb-dev libxml2
+  m4 man-db po-debconf
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make gettext-doc groff libtool-doc automaken gfortran
+  fortran95-compiler gcj-jdk less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur libasprintf-dev libgettextpo-dev libglib2.0-data
+  shared-mime-info libltdl-dev xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils d-shlibs debhelper
+  dh-autoreconf gettext gettext-base groff-base intltool-debian libasprintf0c2
+  libcroco3 libglib2.0-0 libsigsegv2 libtool libunistring0 libusb-dev libxml2
+  m4 man-db po-debconf sbuild-build-depends-libctapimkt-dummy
+0 upgraded, 24 newly installed, 0 to remove and 16 not upgraded.
+Need to get 10.5 MB/10.5 MB of archives.
+After this operation, 29.0 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:2 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:3 http://http.debian.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:4 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:5 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:6 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.38.2-5 [2231 kB]
+Get:7 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:8 http://http.debian.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:9 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:10 http://http.debian.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:11 http://http.debian.net/debian/ sid/main m4 amd64 1.4.17-3 [254 kB]
+Get:12 http://http.debian.net/debian/ sid/main autoconf all 2.69-5 [340 kB]
+Get:13 http://http.debian.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:14 http://http.debian.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:15 http://http.debian.net/debian/ sid/main autopoint all 0.18.3.2-1 [393 kB]
+Get:16 http://http.debian.net/debian/ sid/main d-shlibs all 0.54 [15.8 kB]
+Get:17 http://http.debian.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:18 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:19 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:20 http://http.debian.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:21 http://http.debian.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:22 http://http.debian.net/debian/ sid/main dh-autoreconf all 9 [15.5 kB]
+Get:23 http://http.debian.net/debian/ sid/main libusb-dev amd64 2:0.1.12-23.3 [35.6 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 10.5 MB in 0s (66.5 MB/s)
+Selecting previously unselected package groff-base.
+(Reading database ... 13265 files and directories currently installed.)
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.38.2-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.38.2-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-3_amd64.deb ...
+Unpacking m4 (1.4.17-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-5_all.deb ...
+Unpacking autoconf (2.69-5) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../autopoint_0.18.3.2-1_all.deb ...
+Unpacking autopoint (0.18.3.2-1) ...
+Selecting previously unselected package d-shlibs.
+Preparing to unpack .../archives/d-shlibs_0.54_all.deb ...
+Unpacking d-shlibs (0.54) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../dh-autoreconf_9_all.deb ...
+Unpacking dh-autoreconf (9) ...
+Selecting previously unselected package libusb-dev.
+Preparing to unpack .../libusb-dev_2%3a0.1.12-23.3_amd64.deb ...
+Unpacking libusb-dev (2:0.1.12-23.3) ...
+Selecting previously unselected package sbuild-build-depends-libctapimkt-dummy.
+Preparing to unpack .../sbuild-build-depends-libctapimkt-dummy.deb ...
+Unpacking sbuild-build-depends-libctapimkt-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.38.2-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-3) ...
+Setting up autoconf (2.69-5) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up autopoint (0.18.3.2-1) ...
+Setting up d-shlibs (0.54) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up dh-autoreconf (9) ...
+Setting up libusb-dev (2:0.1.12-23.3) ...
+Setting up sbuild-build-depends-libctapimkt-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-5 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.6-1
+Package versions: apt_0.9.16.1 autoconf_2.69-5 automake_1:1.14.1-3 autopoint_0.18.3.2-1 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.32 bash_4.3-4 binfmt-support_2.1.3-2 binutils_2.24-5 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.6 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 d-shlibs_0.54 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 dh-autoreconf_9 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-7 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_0.9.16.1 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.4-1 libaudit1_1:2.3.4-1 libblkid1_2.20.1-5.6 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.6 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.0.13-12 libffi6_3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgdbm3_1.8.3-12 libglib2.0-0_2.38.2-5 libgmp10_2:5.1.3+dfsg-1 libgomp1_4.8.2-16 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.8.2-16 libjsoncpp0_0.6.0~rc2-3 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.6 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpcre3_1:8.31-2 libpipeline1_1.2.6-2 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libquadmath0_4.8.2-16 libreadline6_6.3-4 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libsqlite3-0_3.8.4.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtool_2.4.2-1.7 libtsan0_4.8.2-16 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libusb-dev_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.6 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.6-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 m4_1.4.17-3 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.6 multiarch-support_2.18-4 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-4 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-minimal_2.7.6-8 readline-common_6.3-4 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-libctapimkt-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-2 tzdata_2014a-1 util-linux_2.20.1-5.6 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (libctapimkt_1.0.5~rc1-2.dsc)
+dpkg-source: info: extracting libctapimkt in libctapimkt-1.0.5~rc1
+dpkg-source: info: unpacking libctapimkt_1.0.5~rc1.orig.tar.xz
+dpkg-source: info: unpacking libctapimkt_1.0.5~rc1-2.debian.tar.xz
+dpkg-source: info: applying clang_FTBFS_Wreturn-type.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-66db74ed-9eb2-4ca3-a1e8-a828fc616ad7
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package libctapimkt
+dpkg-buildpackage: source version 1.0.5~rc1-2
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Andreas Tille <tille@debian.org>
+ dpkg-source --before-build libctapimkt-1.0.5~rc1
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with autoreconf
+   dh_testdir
+   dh_auto_clean
+   dh_autoreconf_clean
+   dh_clean
+ dpkg-source -b libctapimkt-1.0.5~rc1
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building libctapimkt using existing ./libctapimkt_1.0.5~rc1.orig.tar.xz
+dpkg-source: info: building libctapimkt in libctapimkt_1.0.5~rc1-2.debian.tar.xz
+dpkg-source: info: building libctapimkt in libctapimkt_1.0.5~rc1-2.dsc
+ debian/rules build
+dh build --with autoreconf
+   dh_testdir
+   dh_autoreconf
+aclocal: warning: autoconf input should be named 'configure.ac', not 'configure.in'
+libtoolize: putting auxiliary files in `.'.
+libtoolize: copying file `./ltmain.sh'
+libtoolize: Consider adding `AC_CONFIG_MACRO_DIR([m4])' to configure.in and
+libtoolize: rerunning libtoolize, to keep the correct libtool macros in-tree.
+libtoolize: Consider adding `-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+aclocal: warning: autoconf input should be named 'configure.ac', not 'configure.in'
+automake: warning: autoconf input should be named 'configure.ac', not 'configure.in'
+configure.in:57: warning: AM_INIT_AUTOMAKE: two- and three-arguments forms are deprecated.  For more info, see:
+configure.in:57: http://www.gnu.org/software/automake/manual/automake.html#Modernize-AM_005fINIT_005fAUTOMAKE-invocation
+automake: warning: autoconf input should be named 'configure.ac', not 'configure.in'
+   dh_auto_configure
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) none
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether ln -s works... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for ANSI C header files... (cached) yes
+yes
+checking for inline... inline
+checking whether time.h and sys/time.h may both be included... yes
+checking whether gcc needs -traditional... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make  all-am
+make[2]: Entering directory `/«PKGBUILDDIR»'
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o ctapi.lo ctapi.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c ctapi.c  -fPIC -DPIC -o .libs/ctapi.o
+ctapi.c:133:18: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 0: strcpy(device,"/dev/ttyS0"); break;   /* COM1 mit 9600 Baud */
+                 ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:134:18: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 1: strcpy(device,"/dev/ttyS0"); break;   /* COM1 mit 9600 Baud */
+                 ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:135:18: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 2: strcpy(device,"/dev/ttyS1"); break;   /* COM2 mit 9600 Baud */
+                 ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:136:18: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 3: strcpy(device,"/dev/ttyS2"); break;   /* COM3 mit 9600 Baud */
+                 ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:137:18: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 4: strcpy(device,"/dev/ttyS0"); break;   /* COM1 mit 115200 Baud */
+                 ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:138:18: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 5: strcpy(device,"/dev/ttyS1"); break;   /* COM2 mit 115200 Baud */
+                 ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:139:18: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 6: strcpy(device,"/dev/ttyACM0"); break; /* USB1 <81>ber ACM0 */
+                 ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:140:18: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 7: strcpy(device,"/dev/ttyACM1"); break; /* USB2 <81>ber ACM1 */
+                 ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:141:18: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 8: strcpy(device,"/dev/ttyS0"); break;   /* USB1 <81>ber ACM0 mit Verz<94>gerung f<81>r VML GK1 */
+                 ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:142:18: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 9: strcpy(device,"/dev/ttyUSB0"); break; /* USB <81>ber USB-seriell-Adapter mit 9600 Baud */
+                 ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:143:19: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 10: strcpy(device,"/dev/ttyUSB0"); break; /* USB <81>ber USB-seriell-Adapter mit 115200 Baud */
+                  ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:144:19: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 11: strcpy(device,"/dev/ttyACM0"); break; /* USB1 <81>ber ACM0 f<81>r Hypercom medMobile und SCM eHealth500 */
+                  ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:145:19: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  case 12: strcpy(device,"/dev/ttyACM1"); break; /* USB2 <81>ber ACM1 f<81>r Hypercom medMobile und SCM eHealth500 */
+                  ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:146:20: warning: passing 'unsigned char [20]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  default:  strcpy(device,"/dev/ttyS0"); break;
+                   ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/string3.h:102:33: note: passing argument to parameter '__dest' here
+__NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+                                ^
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:57:59: note: expanded from macro '__NTH'
+#  define __NTH(fct)    __attribute__ ((__nothrow__ __LEAF)) fct
+                                                             ^
+ctapi.c:150:18: warning: passing 'unsigned char [20]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    port = open (device, O_RDWR | O_NOCTTY | O_NONBLOCK);
+                 ^~~~~~
+/usr/include/fcntl.h:146:30: note: passing argument to parameter '__file' here
+extern int open (const char *__file, int __oflag, ...) __nonnull ((1));
+                             ^
+15 warnings generated.
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c ctapi.c -o ctapi.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -version-info 1:0:0 -Wl,-z,relro -o libctapimkt.la -rpath /usr/lib/x86_64-linux-gnu ctapi.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/ctapi.o    -O2 -Wl,-z -Wl,relro   -Wl,-soname -Wl,libctapimkt.so.1 -o .libs/libctapimkt.so.1.0.0
+libtool: link: (cd ".libs" && rm -f "libctapimkt.so.1" && ln -s "libctapimkt.so.1.0.0" "libctapimkt.so.1")
+libtool: link: (cd ".libs" && rm -f "libctapimkt.so" && ln -s "libctapimkt.so.1.0.0" "libctapimkt.so")
+libtool: link: ar cru .libs/libctapimkt.a  ctapi.o
+libtool: link: ranlib .libs/libctapimkt.a
+libtool: link: ( cd ".libs" && rm -f "libctapimkt.la" && ln -s "../libctapimkt.la" "libctapimkt.la" )
+gcc -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o mktlin.o mktlin.c
+mktlin.c:301:23: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+      fprintf(karte, "<9A>bertragungsfehler", abschnitt);
+                      ^~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:308:23: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+      fprintf(karte, "<9A>bertragungsfehler", abschnitt);
+                      ^~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:315:23: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+      fprintf(karte, "<9A>bertragungsfehler", abschnitt);
+                      ^~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:322:23: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+      fprintf(karte, "<9A>bertragungsfehler", abschnitt);
+                      ^~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:329:23: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+      fprintf(karte, "<9A>bertragungsfehler", abschnitt);
+                      ^~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:336:23: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+      fprintf(karte, "<9A>bertragungsfehler", abschnitt);
+                      ^~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:497:11: warning: passing 'char [13]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  antwort("Erase Binary");
+          ^~~~~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:548:11: warning: passing 'char [10]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  antwort("Eject ICC");
+          ^~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:579:11: warning: passing 'char [9]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  antwort("Reset CT");
+          ^~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:589:52: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+      fprintf(stdout,"Reset CT erfolgreich, station<84>res Leseger<84>t\n");
+                                                   ^~~~           ~~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:681:11: warning: passing 'char [15]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  antwort("GetStatusCTMDO");
+          ^~~~~~~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:697:16: warning: passing 'char [18]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       antwort("Authentifizierung");
+               ^~~~~~~~~~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:745:11: warning: passing 'char [12]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  antwort("Request ICC");
+          ^~~~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:845:11: warning: passing 'char [12]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  antwort("Select File");
+          ^~~~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:882:13: warning: passing 'char [12]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    antwort("Read Binary");
+            ^~~~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:919:37: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+        fprintf(karte, "Fehler beim <99>ffnen der Datei ef_kvk.txt");
+                                    ^~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:963:13: warning: passing 'char [32]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    antwort("Read Binary: Versichertenstatus");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:994:33: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+     fprintf(karte,"Fehler beim <99>ffnen der Datei ef_st.txt");
+                                ^~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:1024:13: warning: passing 'char [28]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    antwort("Read Binary: Patientendaten");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:1081:33: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+     fprintf(karte,"Fehler beim <99>ffnen der Datei ef_pd.gz");
+                                ^~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:1109:13: warning: passing 'char [32]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    antwort("Read Binary: Versicherungsdaten");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:1210:11: warning: passing 'char [10]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  antwort("Eject ICC");
+          ^~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:1238:11: warning: passing 'char [13]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  antwort("Erase Binary");
+          ^~~~~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+mktlin.c:1241:55: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+      fprintf(stdout, "keine Daten zum Loeschen ausgew<84>hlt");
+                                                      ^~~~
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:110:51: note: expanded from macro 'fprintf'
+  __fprintf_chk (stream, __USE_FORTIFY_LEVEL - 1, __VA_ARGS__)
+                                                  ^
+mktlin.c:1287:11: warning: passing 'char [10]' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  antwort("Eject ICC");
+          ^~~~~~~~~~~
+mktlin.c:251:28: note: passing argument to parameter 'abschnitt' here
+int antwort(unsigned char *abschnitt){
+                           ^
+25 warnings generated.
+/bin/bash ./libtool  --tag=CC   --mode=link gcc  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o mktlin mktlin.o -lrt -lusb -ldl -lctapimkt 
+libtool: link: gcc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/mktlin mktlin.o  -lrt -lusb -ldl /«PKGBUILDDIR»/.libs/libctapimkt.so
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary --with autoreconf
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libctapimkt.la '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/libctapimkt.so.1.0.0 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libctapimkt.so.1.0.0
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libctapimkt.so.1.0.0 libctapimkt.so.1 || { rm -f libctapimkt.so.1 && ln -s libctapimkt.so.1.0.0 libctapimkt.so.1; }; })
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libctapimkt.so.1.0.0 libctapimkt.so || { rm -f libctapimkt.so && ln -s libctapimkt.so.1.0.0 libctapimkt.so; }; })
+libtool: install: /usr/bin/install -c .libs/libctapimkt.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libctapimkt.la
+libtool: install: /usr/bin/install -c .libs/libctapimkt.a /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libctapimkt.a
+libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libctapimkt.a
+libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libctapimkt.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib/x86_64-linux-gnu'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/bin'
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c mktlin '/«PKGBUILDDIR»/debian/tmp/usr/bin'
+libtool: install: warning: `/«PKGBUILDDIR»/libctapimkt.la' has not been installed in `/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/mktlin /«PKGBUILDDIR»/debian/tmp/usr/bin/mktlin
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_install
+# Call d-shlibmove to comply with library packaging guide
+mkdir -p debian/tmp/usr/include
+cp -a ctapimkt debian/tmp/usr/include
+d-shlibmove --commit \
+		    --multiarch \
+		    --movedev "debian/tmp/usr/include/*" usr/include/ \
+		    debian/tmp/usr/lib/*/*.so
+Library package automatic movement utility
+set -e
+install -d -m 755  debian/libctapimkt1-dev/usr/lib/x86_64-linux-gnu
+install -d -m 755  debian/libctapimkt1/usr/lib/x86_64-linux-gnu
+mv debian/tmp/usr/lib/x86_64-linux-gnu/libctapimkt.a debian/libctapimkt1-dev/usr/lib/x86_64-linux-gnu
+mv debian/tmp/usr/lib/x86_64-linux-gnu/libctapimkt.la debian/libctapimkt1-dev/usr/lib/x86_64-linux-gnu || true
+mv debian/tmp/usr/lib/x86_64-linux-gnu/libctapimkt.so debian/libctapimkt1-dev/usr/lib/x86_64-linux-gnu
+mv /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libctapimkt.so.1 debian/libctapimkt1/usr/lib/x86_64-linux-gnu
+mv /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libctapimkt.so.1.0.0 debian/libctapimkt1/usr/lib/x86_64-linux-gnu
+PKGDEV=libctapimkt1-dev
+PKGSHL=libctapimkt1
+install -d -m 755  debian/libctapimkt1-dev/usr/include/
+mv debian/tmp/usr/include/* debian/libctapimkt1-dev/usr/include/
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installexamples
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: package libctapimkt1: unused substitution variable ${misc:Pre-Depends}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `libctapimkt1-dev' in `../libctapimkt1-dev_1.0.5~rc1-2_amd64.deb'.
+dpkg-deb: building package `libctapimkt1' in `../libctapimkt1_1.0.5~rc1-2_amd64.deb'.
+ dpkg-genchanges  >../libctapimkt_1.0.5~rc1-2_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build libctapimkt-1.0.5~rc1
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140324-2151
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libctapimkt_1.0.5~rc1-2_amd64.changes:
+──────────────────────────────────────
+
+Format: 1.8
+Date: Sun, 12 Jan 2014 09:52:58 +0100
+Source: libctapimkt
+Binary: libctapimkt1-dev libctapimkt1
+Architecture: source amd64
+Version: 1.0.5~rc1-2
+Distribution: sid
+Urgency: medium
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Changed-By: Andreas Tille <tille@debian.org>
+Description: 
+ libctapimkt1 - Read German Krankenversichertenkarte and eGK
+ libctapimkt1-dev - Read German Krankenversichertenkarte and eGK (development)
+Closes: 735011
+Changes: 
+ libctapimkt (1.0.5~rc1-2) unstable; urgency=medium
+ .
+   * use dh-autoreconf to fix FTBFS on ppc64el (thanks for the patch to
+     Logan Rosen <logan@ubuntu.com>)
+     Closes: #735011
+   * cme fix dpkg-control
+Checksums-Sha1: 
+ 9f5f46d0e4fdf2bf1f5ff23b7ab21be25c1c00d9 1230 libctapimkt_1.0.5~rc1-2.dsc
+ e99eabc8eb69d79df561e223d0db319f5d9da70c 2676 libctapimkt_1.0.5~rc1-2.debian.tar.xz
+ eb413721ecc22b20dfda34a70b3c54d4e7cebd56 15468 libctapimkt1-dev_1.0.5~rc1-2_amd64.deb
+ 6d9898e8493e4dc320f8bff625e27f19970205ce 9238 libctapimkt1_1.0.5~rc1-2_amd64.deb
+Checksums-Sha256: 
+ 55c2fb45ce384460cb5b5678893d16530947c53902739e6fbebb4d7b410913ba 1230 libctapimkt_1.0.5~rc1-2.dsc
+ b9b64552bb18a646f47d74cd04013dd7ca2c25152746bae6af11d7b5f185c5dc 2676 libctapimkt_1.0.5~rc1-2.debian.tar.xz
+ 78f691907f1ae306e4045138bb6473ec607bc7161e806649faecf337862d941c 15468 libctapimkt1-dev_1.0.5~rc1-2_amd64.deb
+ 44a5654fb47bbb9e5b6dd17df55eb15a2b11de0858f4ccb13710390943200226 9238 libctapimkt1_1.0.5~rc1-2_amd64.deb
+Files: 
+ ae8494be22674eaebe7d88e853b4af7d 1230 libs optional libctapimkt_1.0.5~rc1-2.dsc
+ d57fff00bf6402b066e99d71194e7732 2676 libs optional libctapimkt_1.0.5~rc1-2.debian.tar.xz
+ 5026aa536d9bce9a0e13be730265a186 15468 libdevel optional libctapimkt1-dev_1.0.5~rc1-2_amd64.deb
+ 0ab098abad2b357b2e735b8f13a429be 9238 libs optional libctapimkt1_1.0.5~rc1-2_amd64.deb
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libctapimkt1-dev_1.0.5~rc1-2_amd64.deb
+──────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 15468 bytes: control archive=947 bytes.
+     703 bytes,    18 lines      control              
+     613 bytes,     8 lines      md5sums              
+ Package: libctapimkt1-dev
+ Source: libctapimkt
+ Version: 1.0.5~rc1-2
+ Architecture: amd64
+ Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+ Installed-Size: 68
+ Depends: libctapimkt1 (= 1.0.5~rc1-2), ctapi-dev
+ Conflicts: libctapimkt-dev
+ Provides: libctapimkt-dev
+ Section: libdevel
+ Priority: optional
+ Homepage: http://sourceforge.net/projects/ctapi-mkt
+ Description: Read German Krankenversichertenkarte and eGK (development)
+  Library and program to read the German health insurance card (KVK) and
+  the German electronic health card (eGK) from a certified card reading
+  device on the serial port in Linux with kernel 2.6.x.
+  .
+  This package contains the development library.
+
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/lib/
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root       973 2014-03-24 21:51 ./usr/lib/x86_64-linux-gnu/libctapimkt.la
+-rw-r--r-- root/root     11586 2014-03-24 21:51 ./usr/lib/x86_64-linux-gnu/libctapimkt.a
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/include/
+drwxr-xr-x root/root         0 2013-11-13 12:00 ./usr/include/ctapimkt/
+-rw-r--r-- root/root      2217 2010-06-06 21:16 ./usr/include/ctapimkt/ctapi.h
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/share/doc/libctapimkt1-dev/
+-rw-r--r-- root/root       507 2010-06-06 22:12 ./usr/share/doc/libctapimkt1-dev/changelog.gz
+-rw-r--r-- root/root       297 2013-09-12 11:00 ./usr/share/doc/libctapimkt1-dev/README.Debian
+-rw-r--r-- root/root       557 2014-01-12 09:58 ./usr/share/doc/libctapimkt1-dev/changelog.Debian.gz
+-rw-r--r-- root/root      1090 2013-11-13 10:48 ./usr/share/doc/libctapimkt1-dev/copyright
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/share/doc/libctapimkt1-dev/examples/
+-rw-r--r-- root/root      6793 2014-03-24 21:51 ./usr/share/doc/libctapimkt1-dev/examples/mktlin.c.gz
+lrwxrwxrwx root/root         0 2014-03-24 21:51 ./usr/lib/x86_64-linux-gnu/libctapimkt.so -> libctapimkt.so.1.0.0
+
+
+libctapimkt1_1.0.5~rc1-2_amd64.deb
+──────────────────────────────────
+
+ new debian package, version 2.0.
+ size 9238 bytes: control archive=1021 bytes.
+     553 bytes,    14 lines      control              
+     443 bytes,     6 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      27 bytes,     1 lines      shlibs               
+ Package: libctapimkt1
+ Source: libctapimkt
+ Version: 1.0.5~rc1-2
+ Architecture: amd64
+ Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+ Installed-Size: 52
+ Depends: libc6 (>= 2.14)
+ Section: libs
+ Priority: optional
+ Homepage: http://sourceforge.net/projects/ctapi-mkt
+ Description: Read German Krankenversichertenkarte and eGK
+  Library and program to read the German health insurance card (KVK) and
+  the German electronic health card (eGK) from a certified card reading
+  device on the serial port in Linux with kernel 2.6.x.
+
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/lib/
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     14360 2014-03-24 21:51 ./usr/lib/x86_64-linux-gnu/libctapimkt.so.1.0.0
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-24 21:51 ./usr/share/doc/libctapimkt1/
+-rw-r--r-- root/root       507 2010-06-06 22:12 ./usr/share/doc/libctapimkt1/changelog.gz
+-rw-r--r-- root/root       557 2014-01-12 09:58 ./usr/share/doc/libctapimkt1/changelog.Debian.gz
+-rw-r--r-- root/root        44 2008-03-22 13:08 ./usr/share/doc/libctapimkt1/AUTHORS
+-rw-r--r-- root/root      1090 2013-11-13 10:48 ./usr/share/doc/libctapimkt1/copyright
+-rw-r--r-- root/root      2637 2010-06-06 22:50 ./usr/share/doc/libctapimkt1/README
+lrwxrwxrwx root/root         0 2014-03-24 21:51 ./usr/lib/x86_64-linux-gnu/libctapimkt.so.1 -> libctapimkt.so.1.0.0
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 4008
+Build-Time: 11
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 12
+Job: libctapimkt_1.0.5~rc1-2.dsc
+Machine Architecture: amd64
+Package: libctapimkt
+Package-Time: 29
+Source-Version: 1.0.5~rc1-2
+Space: 4008
+Status: successful
+Version: 1.0.5~rc1-2
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140324-2151
+Build needed 00:00:29, 4008k disc space
