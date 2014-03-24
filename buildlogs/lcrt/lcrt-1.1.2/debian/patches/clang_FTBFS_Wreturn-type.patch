@@ -1,0 +1,37 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-24
+
+--- a/src/ifind.c
++++ b/src/ifind.c
+@@ -83,7 +83,7 @@
+         break;
+     default:
+         printf("%s: unkown flag\n", __func__);
+-        return;
++        return NULL;
+     }
+     gtk_window_set_transient_for(GTK_WINDOW(dialog_find), 
+             GTK_WINDOW(lfind->parent_window));
+--- a/src/ssh.c
++++ b/src/ssh.c
+@@ -874,7 +874,7 @@
+              * FIXME: There is no more memory, how can 
+              * we handle this exception ?
+              */
+-            return;
++            return NULL;
+         }
+ 
+         lcrt_user_find_unused_label(lwindow, hostname, name);
+--- a/src/telnet.c
++++ b/src/telnet.c
+@@ -339,7 +339,7 @@
+              * FIXME: There is no more memory, how can 
+              * we handle this exception ?
+              */
+-            return;
++            return NULL;
+         }
+ 
+         lcrt_user_find_unused_label(lwindow, hostname, name);
