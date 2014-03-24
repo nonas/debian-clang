@@ -1,0 +1,15 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-24
+
+--- a/Mix.c
++++ b/Mix.c
+@@ -78,7 +78,7 @@
+ #ifdef DEBUG
+   fprintf(stderr, "close_mixer()\n");
+ #endif
+-  if (mixer_fd < 0) return;
++  if (mixer_fd < 0) return(0);
+   close(mixer_fd);
+   init_flag = 0;
+   mixer_fd = -1;

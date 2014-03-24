@@ -1,0 +1,447 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ libaudio-mixer-perl 0.7-4 (amd64)                          24 Mar 2014 22:06 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: libaudio-mixer-perl
+Version: 0.7-4
+Source Version: 0.7-4
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/libaudio-mixer-perl-oRfhYF/libaudio-mixer-perl-0.7' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/libaudio-mixer-perl-oRfhYF' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-41387bff-4d0b-495a-a967-cc0c410fe506' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+libaudio-mixer-perl_0.7-4.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-Ty3N3W/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13265 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9.20120312), perl
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9.20120312), perl
+dpkg-deb: building package `sbuild-build-depends-libaudio-mixer-perl-dummy' in `/«BUILDDIR»/resolver-GmIWyI/apt_archive/sbuild-build-depends-libaudio-mixer-perl-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install libaudio-mixer-perl build dependencies (apt-based resolver)          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libunistring0 libxml2 man-db
+  po-debconf
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff less www-browser
+  libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libunistring0 libxml2 man-db
+  po-debconf sbuild-build-depends-libaudio-mixer-perl-dummy
+0 upgraded, 14 newly installed, 0 to remove and 16 not upgraded.
+Need to get 8127 kB/8128 kB of archives.
+After this operation, 22.5 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:2 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:3 http://http.debian.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:4 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:5 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:6 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.38.2-5 [2231 kB]
+Get:7 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:8 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:9 http://http.debian.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:10 http://http.debian.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:11 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:12 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:13 http://http.debian.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 8127 kB in 0s (21.4 MB/s)
+Selecting previously unselected package groff-base.
+(Reading database ... 13265 files and directories currently installed.)
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.38.2-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.38.2-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package sbuild-build-depends-libaudio-mixer-perl-dummy.
+Preparing to unpack .../sbuild-build-depends-libaudio-mixer-perl-dummy.deb ...
+Unpacking sbuild-build-depends-libaudio-mixer-perl-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.38.2-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up sbuild-build-depends-libaudio-mixer-perl-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-5 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.6-1
+Package versions: apt_0.9.16.1 base-files_7.2 base-passwd_3.5.32 bash_4.3-4 binfmt-support_2.1.3-2 binutils_2.24-5 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.6 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-7 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_0.9.16.1 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.4-1 libaudit1_1:2.3.4-1 libblkid1_2.20.1-5.6 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.6 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.0.13-12 libffi6_3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgdbm3_1.8.3-12 libglib2.0-0_2.38.2-5 libgmp10_2:5.1.3+dfsg-1 libgomp1_4.8.2-16 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.8.2-16 libjsoncpp0_0.6.0~rc2-3 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.6 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpcre3_1:8.31-2 libpipeline1_1.2.6-2 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libquadmath0_4.8.2-16 libreadline6_6.3-4 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libsqlite3-0_3.8.4.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtsan0_4.8.2-16 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.6 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.6-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.6 multiarch-support_2.18-4 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-4 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-minimal_2.7.6-8 readline-common_6.3-4 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-libaudio-mixer-perl-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-2 tzdata_2014a-1 util-linux_2.20.1-5.6 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (libaudio-mixer-perl_0.7-4.dsc)
+dpkg-source: info: extracting libaudio-mixer-perl in libaudio-mixer-perl-0.7
+dpkg-source: info: unpacking libaudio-mixer-perl_0.7.orig.tar.gz
+dpkg-source: info: unpacking libaudio-mixer-perl_0.7-4.debian.tar.xz
+dpkg-source: info: applying fix_spelling.patch
+dpkg-source: info: applying clang_FTBFS_Wreturn-type.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-41387bff-4d0b-495a-a967-cc0c410fe506
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package libaudio-mixer-perl
+dpkg-buildpackage: source version 0.7-4
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Jonas Genannt <jonas.genannt@capi2name.de>
+ dpkg-source --before-build libaudio-mixer-perl-0.7
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b libaudio-mixer-perl-0.7
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building libaudio-mixer-perl using existing ./libaudio-mixer-perl_0.7.orig.tar.gz
+dpkg-source: info: building libaudio-mixer-perl in libaudio-mixer-perl_0.7-4.debian.tar.xz
+dpkg-source: info: building libaudio-mixer-perl in libaudio-mixer-perl_0.7-4.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_auto_configure
+Checking if your kit is complete...
+Looks good
+Writing Makefile for Audio::Mixer
+Writing MYMETA.yml and MYMETA.json
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+cp volume.pl blib/lib/Audio/volume.pl
+cp Mixer.pm blib/lib/Audio/Mixer.pm
+AutoSplitting blib/lib/Audio/Mixer.pm (blib/lib/auto/Audio/Mixer)
+cc -c   -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fstack-protector -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2   -DVERSION=\"0.7\" -DXS_VERSION=\"0.7\" -fPIC "-I/usr/lib/perl/5.18/CORE"   Mix.c
+/usr/bin/perl /usr/share/perl/5.18/ExtUtils/xsubpp  -typemap /usr/share/perl/5.18/ExtUtils/typemap  Mixer.xs > Mixer.xsc && mv Mixer.xsc Mixer.c
+Please specify prototyping behavior for Mixer.xs (see perlxs manual)
+cc -c   -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fstack-protector -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2   -DVERSION=\"0.7\" -DXS_VERSION=\"0.7\" -fPIC "-I/usr/lib/perl/5.18/CORE"   Mixer.c
+Running Mkbootstrap for Audio::Mixer ()
+chmod 644 Mixer.bs
+rm -f blib/arch/auto/Audio/Mixer/Mixer.so
+cc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z,relro  -shared -L/usr/local/lib -fstack-protector Mixer.o  -o blib/arch/auto/Audio/Mixer/Mixer.so Mix.o	\
+	     	\
+	  
+chmod 755 blib/arch/auto/Audio/Mixer/Mixer.so
+cp Mixer.bs blib/arch/auto/Audio/Mixer/Mixer.bs
+chmod 644 blib/arch/auto/Audio/Mixer/Mixer.bs
+Manifying blib/man3/Audio::Mixer.3pm
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+PERL_DL_NONLAZY=1 /usr/bin/perl "-Iblib/lib" "-Iblib/arch" test.pl
+1..1
+Opening mixer...  Error opening /dev/mixer.FAILED.
+Getting the volume... Error opening /dev/mixer.255, 255 Ok.
+Setting to 50... Error opening /dev/mixer.Error opening /dev/mixer.FAILED.
+Trying to reset back... Error opening /dev/mixer.Error opening /dev/mixer.Ok.
+ok 1
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Manifying blib/man3/Audio::Mixer.3pm
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /«PKGBUILDDIR»/debian/libaudio-mixer-perl/usr/lib/perl5/auto/Audio/Mixer/Mixer.bs
+Installing /«PKGBUILDDIR»/debian/libaudio-mixer-perl/usr/lib/perl5/auto/Audio/Mixer/Mixer.so
+Installing /«PKGBUILDDIR»/debian/libaudio-mixer-perl/usr/lib/perl5/Audio/Mixer.pm
+Installing /«PKGBUILDDIR»/debian/libaudio-mixer-perl/usr/lib/perl5/Audio/volume.pl
+Installing /«PKGBUILDDIR»/debian/libaudio-mixer-perl/usr/lib/perl5/auto/Audio/Mixer/autosplit.ix
+Installing /«PKGBUILDDIR»/debian/libaudio-mixer-perl/usr/share/man/man3/Audio::Mixer.3pm
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `libaudio-mixer-perl' in `../libaudio-mixer-perl_0.7-4_amd64.deb'.
+ dpkg-genchanges  >../libaudio-mixer-perl_0.7-4_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build libaudio-mixer-perl-0.7
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140324-2207
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libaudio-mixer-perl_0.7-4_amd64.changes:
+────────────────────────────────────────
+
+Format: 1.8
+Date: Sat, 24 Nov 2012 15:56:10 +0100
+Source: libaudio-mixer-perl
+Binary: libaudio-mixer-perl
+Architecture: source amd64
+Version: 0.7-4
+Distribution: sid
+Urgency: low
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Jonas Genannt <jonas.genannt@capi2name.de>
+Description: 
+ libaudio-mixer-perl - perl extension for Sound Mixer control
+Closes: 687356
+Changes: 
+ libaudio-mixer-perl (0.7-4) unstable; urgency=low
+ .
+   * Change Maintainer to Perl Pkg Group
+   * Refreshed debian/ with dh-make-perl
+   * d/control: fix spelling error (Closes: #687356)
+   * d/control: added note, only working with OSS
+Checksums-Sha1: 
+ 83e958017d4ccd750051ac7355f3e9441f47fc93 1165 libaudio-mixer-perl_0.7-4.dsc
+ 92a338d76efad048b5638ff781f57bbcc7a545c0 2420 libaudio-mixer-perl_0.7-4.debian.tar.xz
+ 04b29d5ce525d43febd501f643ddd5508ecb808f 14086 libaudio-mixer-perl_0.7-4_amd64.deb
+Checksums-Sha256: 
+ cbc4f3834140f59014e1e705b411b98b4513abd0c241d1266da8259c9dcffb6a 1165 libaudio-mixer-perl_0.7-4.dsc
+ 0ffeb2fa49eaca2dbb9c910c1a627917d81109356cdd90c7d6e0f14f76cc0305 2420 libaudio-mixer-perl_0.7-4.debian.tar.xz
+ b00f5598afc415be4330c19caf15d14314db69cc0c0189c01705bf2b87810096 14086 libaudio-mixer-perl_0.7-4_amd64.deb
+Files: 
+ fb7d3a1df82f75463cefe0ecb5821646 1165 perl optional libaudio-mixer-perl_0.7-4.dsc
+ 4ef030458f7c3a3bb5bc4ee8e76407c7 2420 perl optional libaudio-mixer-perl_0.7-4.debian.tar.xz
+ f07e4a1075f396e615ea6610a7e837e6 14086 perl optional libaudio-mixer-perl_0.7-4_amd64.deb
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libaudio-mixer-perl_0.7-4_amd64.deb
+───────────────────────────────────
+
+ new debian package, version 2.0.
+ size 14086 bytes: control archive=998 bytes.
+     701 bytes,    18 lines      control              
+     755 bytes,    10 lines      md5sums              
+ Package: libaudio-mixer-perl
+ Version: 0.7-4
+ Architecture: amd64
+ Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+ Installed-Size: 86
+ Depends: perl (>= 5.18.2-2+b1), perlapi-5.18.2, libc6 (>= 2.3.4)
+ Section: perl
+ Priority: optional
+ Homepage: http://search.cpan.org/dist/Audio-Mixer/
+ Description: perl extension for Sound Mixer control
+  Library to query / set various sound mixer parameters.
+  .
+  This is just a very simple Perl interface which allows one to
+  set various sound mixer parameters. The most important
+  probably 'vol' (volume). The list of all mixer parameters
+  can be obtained using get_mixer_params() function.
+  .
+  This Audio::Mixer library works only with OSS.
+
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/lib/
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/lib/perl5/
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/lib/perl5/Audio/
+-rw-r--r-- root/root      5165 2014-03-24 22:07 ./usr/lib/perl5/Audio/Mixer.pm
+-rwxr-xr-x root/root      1419 2003-03-27 06:43 ./usr/lib/perl5/Audio/volume.pl
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/lib/perl5/auto/
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/lib/perl5/auto/Audio/
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/lib/perl5/auto/Audio/Mixer/
+-rw-r--r-- root/root        90 2014-03-24 22:07 ./usr/lib/perl5/auto/Audio/Mixer/autosplit.ix
+-rw-r--r-- root/root         0 2014-03-24 22:07 ./usr/lib/perl5/auto/Audio/Mixer/Mixer.bs
+-rw-r--r-- root/root     18792 2014-03-24 22:07 ./usr/lib/perl5/auto/Audio/Mixer/Mixer.so
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/share/
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/share/man/man3/
+-rw-r--r-- root/root      2943 2014-03-24 22:07 ./usr/share/man/man3/Audio::Mixer.3pm.gz
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-03-24 22:07 ./usr/share/doc/libaudio-mixer-perl/
+-rw-r--r-- root/root       318 2003-03-27 06:43 ./usr/share/doc/libaudio-mixer-perl/changelog.gz
+-rw-r--r-- root/root       224 2012-11-29 17:18 ./usr/share/doc/libaudio-mixer-perl/README.Debian
+-rw-r--r-- root/root       535 2012-11-29 17:18 ./usr/share/doc/libaudio-mixer-perl/changelog.Debian.gz
+-rw-r--r-- root/root      1120 2012-11-29 17:18 ./usr/share/doc/libaudio-mixer-perl/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 652
+Build-Time: 3
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 15
+Job: libaudio-mixer-perl_0.7-4.dsc
+Machine Architecture: amd64
+Package: libaudio-mixer-perl
+Package-Time: 25
+Source-Version: 0.7-4
+Space: 652
+Status: successful
+Version: 0.7-4
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140324-2207
+Build needed 00:00:25, 652k disc space
