@@ -1,0 +1,127 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ jabberd2 2.2.17-1 (amd64)                                  26 Mar 2014 20:23 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: jabberd2
+Version: 2.2.17-1
+Source Version: 2.2.17-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/jabberd2-cBZbyA/jabberd2-2.2.17' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/jabberd2-cBZbyA' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-82af5eb0-acf0-4aac-9e56-643ecb9f6b07' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+jabberd2_2.2.17-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-scyiPg/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13265 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), autotools-dev, automake, libtool, libssl-dev, libgsasl7-dev (>= 0.2.27), libdb-dev, libpam0g-dev, libmysqlclient15-dev, libpq-dev, libldap2-dev, libsqlite3-dev, libidn11-dev, libexpat1-dev, libudns-dev, dh-autoreconf
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), autotools-dev, automake, libtool, libssl-dev, libgsasl7-dev (>= 0.2.27), libdb-dev, libpam0g-dev, libmysqlclient15-dev, libpq-dev, libldap2-dev, libsqlite3-dev, libidn11-dev, libexpat1-dev, libudns-dev, dh-autoreconf
+dpkg-deb: building package `sbuild-build-depends-jabberd2-dummy' in `/«BUILDDIR»/resolver-AhNjAK/apt_archive/sbuild-build-depends-jabberd2-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install jabberd2 build dependencies (apt-based resolver)                     │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ sbuild-build-depends-jabberd2-dummy : Depends: debhelper (>= 9) but it is not installable
+                                       Depends: autotools-dev but it is not installable
+                                       Depends: automake but it is not installable
+                                       Depends: libtool but it is not installable
+                                       Depends: libssl-dev but it is not installable
+                                       Depends: libgsasl7-dev (>= 0.2.27) but it is not installable
+                                       Depends: libdb-dev but it is not installable
+                                       Depends: libpam0g-dev but it is not installable
+                                       Depends: libmysqlclient15-dev but it is not installable
+                                       Depends: libpq-dev but it is not installable
+                                       Depends: libldap2-dev but it is not installable
+                                       Depends: libsqlite3-dev but it is not installable
+                                       Depends: libidn11-dev but it is not installable
+                                       Depends: libexpat1-dev but it is not installable
+                                       Depends: libudns-dev but it is not installable
+                                       Depends: dh-autoreconf but it is not installable
+E: Unable to correct problems, you have held broken packages.
+apt-get failed.
+Package installation failed
+Not removing build depends: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Not cleaning session: cloned chroot in use
+E: Package build dependencies not satisfied; skipping
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 0
+Build-Time: 0
+Distribution: sid
+Fail-Stage: install-deps
+Host Architecture: amd64
+Install-Time: 0
+Job: jabberd2_2.2.17-1.dsc
+Machine Architecture: amd64
+Package: jabberd2
+Package-Time: 0
+Source-Version: 2.2.17-1
+Space: 0
+Status: failed
+Version: 2.2.17-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140326-2023
+Build needed 00:00:00, 0k disc space
