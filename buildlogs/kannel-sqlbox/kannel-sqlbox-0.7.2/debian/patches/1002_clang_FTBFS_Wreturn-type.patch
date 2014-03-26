@@ -1,0 +1,15 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-26
+
+--- a/gw/sqlbox_sqlite3.c
++++ b/gw/sqlbox_sqlite3.c
+@@ -111,7 +111,7 @@
+     pc = dbpool_conn_consume(pool);
+     if (pc == NULL) {
+         error(0, "SQLITE3: Database pool got no connection! DB update failed!");
+-        return;
++        return NULL;
+     }
+ 
+     sql = octstr_format(SQLBOX_SQLITE3_SELECT_QUERY, sqlbox_insert_table);
