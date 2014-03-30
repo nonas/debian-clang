@@ -1,0 +1,15 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-30
+
+--- a/src/setup.c
++++ b/src/setup.c
+@@ -428,7 +428,7 @@
+     gboolean retval = TRUE;
+ 
+     if (!gtk_tree_model_get_iter_first (model, &iter))
+-        return;
++        return FALSE;
+ 
+     do {
+         gtk_tree_model_get (model, &iter,
