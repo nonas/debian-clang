@@ -1,0 +1,30 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-30
+
+--- a/src/engine.c
++++ b/src/engine.c
+@@ -360,7 +360,7 @@
+ 
+     if (arrayeng->preedit->len == 0) {
+         ibus_engine_hide_lookup_table ((IBusEngine *) arrayeng);
+-        return;
++        return FALSE;
+     }
+ 
+     ibus_lookup_table_clear (arrayeng->table);
+@@ -371,12 +371,12 @@
+     
+     if (candidates == NULL) {
+         ibus_engine_hide_lookup_table ((IBusEngine *) arrayeng);
+-        return;
++        return FALSE;
+     }
+     else if (candidates->len == 0) {
+         array_release_candidates(candidates);
+         ibus_engine_hide_lookup_table ((IBusEngine *) arrayeng);
+-        return;
++        return FALSE;
+     }
+ 
+     for (i = 0; i < candidates->len; i++) {
