@@ -1,0 +1,24 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-03-30
+
+--- a/src/sendfile.c
++++ b/src/sendfile.c
+@@ -115,7 +115,7 @@
+ 	if(sendsess->ircp_client == NULL) {
+ 		printf("Error opening ircp-client\n");
+ 		g_free(sendsess);
+-		return;
++		return NULL;
+ 	}
+ 
+ 	//connect to remote
+@@ -135,7 +135,7 @@
+ 
+ 		ircp_cli_close(sendsess->ircp_client);
+ 		g_free(sendsess);
+-		return;
++		return NULL;
+ 	}
+ 
+ 	remote_u = filename_to_utf8(filename);
