@@ -1,0 +1,17 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-04-01
+
+--- a/custom-list.c
++++ b/custom-list.c
+@@ -610,8 +610,8 @@
+   gulong        newsize;
+   guint         pos;
+ 
+-  g_return_if_fail (CUSTOM_IS_LIST(custom_list));
+-  g_return_if_fail (name != NULL);
++  g_return_val_if_fail (CUSTOM_IS_LIST(custom_list), NULL);
++  g_return_val_if_fail (name != NULL, NULL);
+ 
+   pos = custom_list->num_rows;
+ 
