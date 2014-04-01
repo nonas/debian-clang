@@ -1,0 +1,15 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-04-01
+
+--- a/src/grst_admin_main.c
++++ b/src/grst_admin_main.c
+@@ -220,7 +220,7 @@
+       puts("Status: 500 Internal Server Error\nContent-type: text/plain\n\n"
+            "REDIRECT_GRST_DIR_PATH or REDIRECT_GRST_ADMIN_FILE "
+            "or REQUEST_URI missing");
+-      return;
++      return -1;
+     }
+ 
+   GRSTgaclInit();
