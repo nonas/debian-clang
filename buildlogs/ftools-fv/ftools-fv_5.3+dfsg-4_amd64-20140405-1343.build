@@ -1,0 +1,1439 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ ftools-fv 5.3+dfsg-4 (amd64)                               05 Apr 2014 13:43 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: ftools-fv
+Version: 5.3+dfsg-4
+Source Version: 5.3+dfsg-4
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/ftools-fv-AV2h4X/ftools-fv-5.3+dfsg' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/ftools-fv-AV2h4X' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-34af541c-44f5-41ef-b2f0-7cabcc522851' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+ftools-fv_5.3+dfsg-4.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-ypE9uu/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13262 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dh-autoreconf, libcfitsio3-dev, tcl8.5-dev, tk8.5-dev, wcslib-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dh-autoreconf, libcfitsio3-dev, tcl8.5-dev, tk8.5-dev, wcslib-dev
+dpkg-deb: building package `sbuild-build-depends-ftools-fv-dummy' in `/«BUILDDIR»/resolver-QK0Hd3/apt_archive/sbuild-build-depends-ftools-fv-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install ftools-fv build dependencies (apt-based resolver)                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf fontconfig-config fonts-dejavu-core gettext gettext-base
+  groff-base intltool-debian libasprintf0c2 libcfitsio3 libcfitsio3-dev
+  libcroco3 libexpat1-dev libfontconfig1 libfontconfig1-dev libfreetype6
+  libfreetype6-dev libglib2.0-0 libpng12-0 libpng12-dev libpopt0
+  libpthread-stubs0-dev libsigsegv2 libtcl8.5 libtk8.5 libtool libunistring0
+  libwcs4 libx11-6 libx11-data libx11-dev libxau-dev libxau6 libxcb1
+  libxcb1-dev libxdmcp-dev libxdmcp6 libxext-dev libxext6 libxft-dev libxft2
+  libxml2 libxrender-dev libxrender1 libxss-dev libxss1 m4 man-db pkg-config
+  po-debconf tcl8.5 tcl8.5-dev tk8.5 tk8.5-dev ucf wcslib-dev x11-common
+  x11proto-core-dev x11proto-input-dev x11proto-kb-dev x11proto-render-dev
+  x11proto-scrnsaver-dev x11proto-xext-dev xorg-sgml-doctools xtrans-dev
+  zlib1g-dev
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make gettext-doc groff libtool-doc automaken gfortran
+  fortran95-compiler gcj-jdk libxcb-doc libxext-doc less www-browser
+  libmail-box-perl tcl-tclreadline tcl8.5-doc tk8.5-doc wcslib-doc
+Recommended packages:
+  curl wget lynx-cur libasprintf-dev libgettextpo-dev libglib2.0-data
+  shared-mime-info libltdl-dev libx11-doc xml-core libmail-sendmail-perl xterm
+  x-terminal-emulator
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf fontconfig-config fonts-dejavu-core gettext gettext-base
+  groff-base intltool-debian libasprintf0c2 libcfitsio3 libcfitsio3-dev
+  libcroco3 libexpat1-dev libfontconfig1 libfontconfig1-dev libfreetype6
+  libfreetype6-dev libglib2.0-0 libpng12-0 libpng12-dev libpopt0
+  libpthread-stubs0-dev libsigsegv2 libtcl8.5 libtk8.5 libtool libunistring0
+  libwcs4 libx11-6 libx11-data libx11-dev libxau-dev libxau6 libxcb1
+  libxcb1-dev libxdmcp-dev libxdmcp6 libxext-dev libxext6 libxft-dev libxft2
+  libxml2 libxrender-dev libxrender1 libxss-dev libxss1 m4 man-db pkg-config
+  po-debconf sbuild-build-depends-ftools-fv-dummy tcl8.5 tcl8.5-dev tk8.5
+  tk8.5-dev ucf wcslib-dev x11-common x11proto-core-dev x11proto-input-dev
+  x11proto-kb-dev x11proto-render-dev x11proto-scrnsaver-dev x11proto-xext-dev
+  xorg-sgml-doctools xtrans-dev zlib1g-dev
+0 upgraded, 72 newly installed, 0 to remove and 19 not upgraded.
+Need to get 24.1 MB/24.1 MB of archives.
+After this operation, 75.3 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpopt0 amd64 1.16-8 [48.9 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libcfitsio3 amd64 3.340-2 [488 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libpng12-0 amd64 1.2.50-1 [189 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libfreetype6 amd64 2.5.2-1 [454 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main ucf all 3.0027+nmu1 [70.6 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main fonts-dejavu-core all 2.34-1 [1047 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main fontconfig-config all 2.11.0-5 [273 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libfontconfig1 amd64 2.11.0-5 [327 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libtcl8.5 amd64 8.5.15-4 [728 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libxau6 amd64 1:1.0.8-1 [20.7 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libxdmcp6 amd64 1:1.1.1-1 [26.3 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libxcb1 amd64 1.10-2 [41.8 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libx11-data all 2:1.6.2-1 [125 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libx11-6 amd64 2:1.6.2-1 [716 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libxext6 amd64 2:1.3.2-1 [56.5 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main libxrender1 amd64 1:0.9.8-1 [33.5 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main libxft2 amd64 2.3.1-2 [54.0 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main x11-common all 1:7.7+7 [287 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main libxss1 amd64 1:1.2.2-1 [17.5 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main libtk8.5 amd64 8.5.15-4 [734 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main libwcs4 amd64 4.20-2 [202 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main m4 amd64 1.4.17-3 [254 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main autoconf all 2.69-6 [340 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main autopoint all 0.18.3.2-1 [393 kB]
+Get:37 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:40 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:41 http://debian.proxad.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:42 http://debian.proxad.net/debian/ sid/main dh-autoreconf all 9 [15.5 kB]
+Get:43 http://debian.proxad.net/debian/ sid/main libcfitsio3-dev amd64 3.340-2 [556 kB]
+Get:44 http://debian.proxad.net/debian/ sid/main libexpat1-dev amd64 2.1.0-4 [223 kB]
+Get:45 http://debian.proxad.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-1 [217 kB]
+Get:46 http://debian.proxad.net/debian/ sid/main libpng12-dev amd64 1.2.50-1 [267 kB]
+Get:47 http://debian.proxad.net/debian/ sid/main libfreetype6-dev amd64 2.5.2-1 [629 kB]
+Get:48 http://debian.proxad.net/debian/ sid/main pkg-config amd64 0.26-1 [59.5 kB]
+Get:49 http://debian.proxad.net/debian/ sid/main libfontconfig1-dev amd64 2.11.0-5 [891 kB]
+Get:50 http://debian.proxad.net/debian/ sid/main libpthread-stubs0-dev amd64 0.3-4 [3866 B]
+Get:51 http://debian.proxad.net/debian/ sid/main xorg-sgml-doctools all 1:1.11-1 [21.9 kB]
+Get:52 http://debian.proxad.net/debian/ sid/main x11proto-core-dev all 7.0.24-1 [779 kB]
+Get:53 http://debian.proxad.net/debian/ sid/main libxau-dev amd64 1:1.0.8-1 [23.6 kB]
+Get:54 http://debian.proxad.net/debian/ sid/main libxdmcp-dev amd64 1:1.1.1-1 [42.3 kB]
+Get:55 http://debian.proxad.net/debian/ sid/main x11proto-input-dev all 2.3-1 [177 kB]
+Get:56 http://debian.proxad.net/debian/ sid/main x11proto-kb-dev all 1.0.6-2 [269 kB]
+Get:57 http://debian.proxad.net/debian/ sid/main xtrans-dev all 1.3.2-1 [96.3 kB]
+Get:58 http://debian.proxad.net/debian/ sid/main libxcb1-dev amd64 1.10-2 [82.0 kB]
+Get:59 http://debian.proxad.net/debian/ sid/main libx11-dev amd64 2:1.6.2-1 [785 kB]
+Get:60 http://debian.proxad.net/debian/ sid/main x11proto-xext-dev all 7.3.0-1 [212 kB]
+Get:61 http://debian.proxad.net/debian/ sid/main libxext-dev amd64 2:1.3.2-1 [116 kB]
+Get:62 http://debian.proxad.net/debian/ sid/main x11proto-render-dev all 2:0.11.1-2 [20.8 kB]
+Get:63 http://debian.proxad.net/debian/ sid/main libxrender-dev amd64 1:0.9.8-1 [42.1 kB]
+Get:64 http://debian.proxad.net/debian/ sid/main libxft-dev amd64 2.3.1-2 [64.9 kB]
+Get:65 http://debian.proxad.net/debian/ sid/main x11proto-scrnsaver-dev all 1.2.2-1 [25.0 kB]
+Get:66 http://debian.proxad.net/debian/ sid/main libxss-dev amd64 1:1.2.2-1 [22.8 kB]
+Get:67 http://debian.proxad.net/debian/ sid/main tcl8.5 amd64 8.5.15-4 [58.5 kB]
+Get:68 http://debian.proxad.net/debian/ sid/main tcl8.5-dev amd64 8.5.15-4 [703 kB]
+Get:69 http://debian.proxad.net/debian/ sid/main tk8.5 amd64 8.5.15-4 [106 kB]
+Get:70 http://debian.proxad.net/debian/ sid/main tk8.5-dev amd64 8.5.15-4 [739 kB]
+Get:71 http://debian.proxad.net/debian/ sid/main wcslib-dev amd64 4.20-2 [267 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 24.1 MB in 0s (55.8 MB/s)
+Selecting previously unselected package libpopt0:amd64.
+(Reading database ... 13262 files and directories currently installed.)
+Preparing to unpack .../libpopt0_1.16-8_amd64.deb ...
+Unpacking libpopt0:amd64 (1.16-8) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libcfitsio3:amd64.
+Preparing to unpack .../libcfitsio3_3.340-2_amd64.deb ...
+Unpacking libcfitsio3:amd64 (3.340-2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libpng12-0:amd64.
+Preparing to unpack .../libpng12-0_1.2.50-1_amd64.deb ...
+Unpacking libpng12-0:amd64 (1.2.50-1) ...
+Selecting previously unselected package libfreetype6:amd64.
+Preparing to unpack .../libfreetype6_2.5.2-1_amd64.deb ...
+Unpacking libfreetype6:amd64 (2.5.2-1) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../ucf_3.0027+nmu1_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0027+nmu1) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../fonts-dejavu-core_2.34-1_all.deb ...
+Unpacking fonts-dejavu-core (2.34-1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../fontconfig-config_2.11.0-5_all.deb ...
+Unpacking fontconfig-config (2.11.0-5) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../libfontconfig1_2.11.0-5_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.11.0-5) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libtcl8.5:amd64.
+Preparing to unpack .../libtcl8.5_8.5.15-4_amd64.deb ...
+Unpacking libtcl8.5:amd64 (8.5.15-4) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../libxau6_1%3a1.0.8-1_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.8-1) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../libxdmcp6_1%3a1.1.1-1_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.1-1) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../libxcb1_1.10-2_amd64.deb ...
+Unpacking libxcb1:amd64 (1.10-2) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../libx11-data_2%3a1.6.2-1_all.deb ...
+Unpacking libx11-data (2:1.6.2-1) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../libx11-6_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package libxext6:amd64.
+Preparing to unpack .../libxext6_2%3a1.3.2-1_amd64.deb ...
+Unpacking libxext6:amd64 (2:1.3.2-1) ...
+Selecting previously unselected package libxrender1:amd64.
+Preparing to unpack .../libxrender1_1%3a0.9.8-1_amd64.deb ...
+Unpacking libxrender1:amd64 (1:0.9.8-1) ...
+Selecting previously unselected package libxft2:amd64.
+Preparing to unpack .../libxft2_2.3.1-2_amd64.deb ...
+Unpacking libxft2:amd64 (2.3.1-2) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../x11-common_1%3a7.7+7_all.deb ...
+Unpacking x11-common (1:7.7+7) ...
+Selecting previously unselected package libxss1:amd64.
+Preparing to unpack .../libxss1_1%3a1.2.2-1_amd64.deb ...
+Unpacking libxss1:amd64 (1:1.2.2-1) ...
+Selecting previously unselected package libtk8.5:amd64.
+Preparing to unpack .../libtk8.5_8.5.15-4_amd64.deb ...
+Unpacking libtk8.5:amd64 (8.5.15-4) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package libwcs4:amd64.
+Preparing to unpack .../libwcs4_4.20-2_amd64.deb ...
+Unpacking libwcs4:amd64 (4.20-2) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-3_amd64.deb ...
+Unpacking m4 (1.4.17-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-6_all.deb ...
+Unpacking autoconf (2.69-6) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../autopoint_0.18.3.2-1_all.deb ...
+Unpacking autopoint (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../dh-autoreconf_9_all.deb ...
+Unpacking dh-autoreconf (9) ...
+Selecting previously unselected package libcfitsio3-dev.
+Preparing to unpack .../libcfitsio3-dev_3.340-2_amd64.deb ...
+Unpacking libcfitsio3-dev (3.340-2) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../libexpat1-dev_2.1.0-4_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.1.0-4) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Selecting previously unselected package libpng12-dev.
+Preparing to unpack .../libpng12-dev_1.2.50-1_amd64.deb ...
+Unpacking libpng12-dev (1.2.50-1) ...
+Selecting previously unselected package libfreetype6-dev.
+Preparing to unpack .../libfreetype6-dev_2.5.2-1_amd64.deb ...
+Unpacking libfreetype6-dev (2.5.2-1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../pkg-config_0.26-1_amd64.deb ...
+Unpacking pkg-config (0.26-1) ...
+Selecting previously unselected package libfontconfig1-dev:amd64.
+Preparing to unpack .../libfontconfig1-dev_2.11.0-5_amd64.deb ...
+Unpacking libfontconfig1-dev:amd64 (2.11.0-5) ...
+Selecting previously unselected package libpthread-stubs0-dev:amd64.
+Preparing to unpack .../libpthread-stubs0-dev_0.3-4_amd64.deb ...
+Unpacking libpthread-stubs0-dev:amd64 (0.3-4) ...
+Selecting previously unselected package xorg-sgml-doctools.
+Preparing to unpack .../xorg-sgml-doctools_1%3a1.11-1_all.deb ...
+Unpacking xorg-sgml-doctools (1:1.11-1) ...
+Selecting previously unselected package x11proto-core-dev.
+Preparing to unpack .../x11proto-core-dev_7.0.24-1_all.deb ...
+Unpacking x11proto-core-dev (7.0.24-1) ...
+Selecting previously unselected package libxau-dev:amd64.
+Preparing to unpack .../libxau-dev_1%3a1.0.8-1_amd64.deb ...
+Unpacking libxau-dev:amd64 (1:1.0.8-1) ...
+Selecting previously unselected package libxdmcp-dev:amd64.
+Preparing to unpack .../libxdmcp-dev_1%3a1.1.1-1_amd64.deb ...
+Unpacking libxdmcp-dev:amd64 (1:1.1.1-1) ...
+Selecting previously unselected package x11proto-input-dev.
+Preparing to unpack .../x11proto-input-dev_2.3-1_all.deb ...
+Unpacking x11proto-input-dev (2.3-1) ...
+Selecting previously unselected package x11proto-kb-dev.
+Preparing to unpack .../x11proto-kb-dev_1.0.6-2_all.deb ...
+Unpacking x11proto-kb-dev (1.0.6-2) ...
+Selecting previously unselected package xtrans-dev.
+Preparing to unpack .../xtrans-dev_1.3.2-1_all.deb ...
+Unpacking xtrans-dev (1.3.2-1) ...
+Selecting previously unselected package libxcb1-dev:amd64.
+Preparing to unpack .../libxcb1-dev_1.10-2_amd64.deb ...
+Unpacking libxcb1-dev:amd64 (1.10-2) ...
+Selecting previously unselected package libx11-dev:amd64.
+Preparing to unpack .../libx11-dev_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-dev:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package x11proto-xext-dev.
+Preparing to unpack .../x11proto-xext-dev_7.3.0-1_all.deb ...
+Unpacking x11proto-xext-dev (7.3.0-1) ...
+Selecting previously unselected package libxext-dev:amd64.
+Preparing to unpack .../libxext-dev_2%3a1.3.2-1_amd64.deb ...
+Unpacking libxext-dev:amd64 (2:1.3.2-1) ...
+Selecting previously unselected package x11proto-render-dev.
+Preparing to unpack .../x11proto-render-dev_2%3a0.11.1-2_all.deb ...
+Unpacking x11proto-render-dev (2:0.11.1-2) ...
+Selecting previously unselected package libxrender-dev:amd64.
+Preparing to unpack .../libxrender-dev_1%3a0.9.8-1_amd64.deb ...
+Unpacking libxrender-dev:amd64 (1:0.9.8-1) ...
+Selecting previously unselected package libxft-dev.
+Preparing to unpack .../libxft-dev_2.3.1-2_amd64.deb ...
+Unpacking libxft-dev (2.3.1-2) ...
+Selecting previously unselected package x11proto-scrnsaver-dev.
+Preparing to unpack .../x11proto-scrnsaver-dev_1.2.2-1_all.deb ...
+Unpacking x11proto-scrnsaver-dev (1.2.2-1) ...
+Selecting previously unselected package libxss-dev:amd64.
+Preparing to unpack .../libxss-dev_1%3a1.2.2-1_amd64.deb ...
+Unpacking libxss-dev:amd64 (1:1.2.2-1) ...
+Selecting previously unselected package tcl8.5.
+Preparing to unpack .../tcl8.5_8.5.15-4_amd64.deb ...
+Unpacking tcl8.5 (8.5.15-4) ...
+Selecting previously unselected package tcl8.5-dev:amd64.
+Preparing to unpack .../tcl8.5-dev_8.5.15-4_amd64.deb ...
+Unpacking tcl8.5-dev:amd64 (8.5.15-4) ...
+Selecting previously unselected package tk8.5.
+Preparing to unpack .../tk8.5_8.5.15-4_amd64.deb ...
+Unpacking tk8.5 (8.5.15-4) ...
+Selecting previously unselected package tk8.5-dev:amd64.
+Preparing to unpack .../tk8.5-dev_8.5.15-4_amd64.deb ...
+Unpacking tk8.5-dev:amd64 (8.5.15-4) ...
+Selecting previously unselected package wcslib-dev.
+Preparing to unpack .../wcslib-dev_4.20-2_amd64.deb ...
+Unpacking wcslib-dev (4.20-2) ...
+Selecting previously unselected package sbuild-build-depends-ftools-fv-dummy.
+Preparing to unpack .../sbuild-build-depends-ftools-fv-dummy.deb ...
+Unpacking sbuild-build-depends-ftools-fv-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up libpopt0:amd64 (1.16-8) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libcfitsio3:amd64 (3.340-2) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libpng12-0:amd64 (1.2.50-1) ...
+Setting up libfreetype6:amd64 (2.5.2-1) ...
+Setting up ucf (3.0027+nmu1) ...
+Setting up fonts-dejavu-core (2.34-1) ...
+Setting up fontconfig-config (2.11.0-5) ...
+Setting up libfontconfig1:amd64 (2.11.0-5) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libtcl8.5:amd64 (8.5.15-4) ...
+Setting up libxau6:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp6:amd64 (1:1.1.1-1) ...
+Setting up libxcb1:amd64 (1.10-2) ...
+Setting up libx11-data (2:1.6.2-1) ...
+Setting up libx11-6:amd64 (2:1.6.2-1) ...
+Setting up libxext6:amd64 (2:1.3.2-1) ...
+Setting up libxrender1:amd64 (1:0.9.8-1) ...
+Setting up libxft2:amd64 (2.3.1-2) ...
+Setting up x11-common (1:7.7+7) ...
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+All runlevel operations denied by policy
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libxss1:amd64 (1:1.2.2-1) ...
+Setting up libtk8.5:amd64 (8.5.15-4) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libwcs4:amd64 (4.20-2) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-3) ...
+Setting up autoconf (2.69-6) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up autopoint (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up dh-autoreconf (9) ...
+Setting up libcfitsio3-dev (3.340-2) ...
+Setting up libexpat1-dev:amd64 (2.1.0-4) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Setting up libpng12-dev (1.2.50-1) ...
+Setting up libfreetype6-dev (2.5.2-1) ...
+Setting up pkg-config (0.26-1) ...
+Setting up libfontconfig1-dev:amd64 (2.11.0-5) ...
+Setting up libpthread-stubs0-dev:amd64 (0.3-4) ...
+Setting up xorg-sgml-doctools (1:1.11-1) ...
+Setting up x11proto-core-dev (7.0.24-1) ...
+Setting up libxau-dev:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp-dev:amd64 (1:1.1.1-1) ...
+Setting up x11proto-input-dev (2.3-1) ...
+Setting up x11proto-kb-dev (1.0.6-2) ...
+Setting up xtrans-dev (1.3.2-1) ...
+Setting up libxcb1-dev:amd64 (1.10-2) ...
+Setting up libx11-dev:amd64 (2:1.6.2-1) ...
+Setting up x11proto-xext-dev (7.3.0-1) ...
+Setting up libxext-dev:amd64 (2:1.3.2-1) ...
+Setting up x11proto-render-dev (2:0.11.1-2) ...
+Setting up libxrender-dev:amd64 (1:0.9.8-1) ...
+Setting up libxft-dev (2.3.1-2) ...
+Setting up x11proto-scrnsaver-dev (1.2.2-1) ...
+Setting up libxss-dev:amd64 (1:1.2.2-1) ...
+Setting up tcl8.5 (8.5.15-4) ...
+Setting up tcl8.5-dev:amd64 (8.5.15-4) ...
+Setting up tk8.5 (8.5.15-4) ...
+Setting up tk8.5-dev:amd64 (8.5.15-4) ...
+Setting up wcslib-dev (4.20-2) ...
+Setting up sbuild-build-depends-ftools-fv-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-5 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.7-1
+Package versions: apt_1.0 autoconf_2.69-6 automake_1:1.14.1-3 autopoint_0.18.3.2-1 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.32 bash_4.3-5 binfmt-support_2.1.4-1 binutils_2.24-5 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 dh-autoreconf_9 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-7 fontconfig-config_2.11.0-5 fonts-dejavu-core_2.34-1 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.4-1 libaudit1_1:2.3.4-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libcfitsio3_3.340-2 libcfitsio3-dev_3.340-2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.6 libexpat1_2.1.0-4 libexpat1-dev_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.1~rc1+r3.0.13-12 libffi6_3.1~rc1+r3.0.13-12 libfontconfig1_2.11.0-5 libfontconfig1-dev_2.11.0-5 libfreetype6_2.5.2-1 libfreetype6-dev_2.5.2-1 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2 libgomp1_4.8.2-16 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.8.2-16 libjsoncpp0_0.6.0~rc2-3 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpcre3_1:8.31-2 libpipeline1_1.3.0-1 libpng12-0_1.2.50-1 libpng12-dev_1.2.50-1 libpopt0_1.16-8 libpthread-stubs0-dev_0.3-4 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libquadmath0_4.8.2-16 libreadline6_6.3-5 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libsqlite3-0_3.8.4.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtcl8.5_8.5.15-4 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtk8.5_8.5.15-4 libtool_2.4.2-1.7 libtsan0_4.8.2-16 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libwcs4_4.20-2 libx11-6_2:1.6.2-1 libx11-data_2:1.6.2-1 libx11-dev_2:1.6.2-1 libxau-dev_1:1.0.8-1 libxau6_1:1.0.8-1 libxcb1_1.10-2 libxcb1-dev_1.10-2 libxdmcp-dev_1:1.1.1-1 libxdmcp6_1:1.1.1-1 libxext-dev_2:1.3.2-1 libxext6_2:1.3.2-1 libxft-dev_2.3.1-2 libxft2_2.3.1-2 libxml2_2.9.1+dfsg1-3 libxrender-dev_1:0.9.8-1 libxrender1_1:0.9.8-1 libxss-dev_1:1.2.2-1 libxss1_1:1.2.2-1 linux-libc-dev_3.13.7-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 m4_1.4.17-3 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-4 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 pkg-config_0.26-1 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-minimal_2.7.6-8 readline-common_6.3-5 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-ftools-fv-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-2 tcl8.5_8.5.15-4 tcl8.5-dev_8.5.15-4 tk8.5_8.5.15-4 tk8.5-dev_8.5.15-4 tzdata_2014b-1 ucf_3.0027+nmu1 util-linux_2.20.1-5.7 wcslib-dev_4.20-2 x11-common_1:7.7+7 x11proto-core-dev_7.0.24-1 x11proto-input-dev_2.3-1 x11proto-kb-dev_1.0.6-2 x11proto-render-dev_2:0.11.1-2 x11proto-scrnsaver-dev_1.2.2-1 x11proto-xext-dev_7.3.0-1 xorg-sgml-doctools_1:1.11-1 xtrans-dev_1.3.2-1 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1 zlib1g-dev_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (ftools-fv_5.3+dfsg-4.dsc)
+dpkg-source: info: extracting ftools-fv in ftools-fv-5.3+dfsg
+dpkg-source: info: unpacking ftools-fv_5.3+dfsg.orig.tar.gz
+dpkg-source: info: unpacking ftools-fv_5.3+dfsg-4.debian.tar.xz
+dpkg-source: info: applying pow_update_photo.patch
+dpkg-source: info: applying pow_fix_makefile.patch
+dpkg-source: info: applying pow_create_package.patch
+dpkg-source: info: applying pow_fix_startup.patch
+dpkg-source: info: applying pow_fix_compilerwarnings.patch
+dpkg-source: info: applying pow_nolinux.patch
+dpkg-source: info: applying fv_require.patch
+dpkg-source: info: applying fv_fix_initial_menubar.patch
+dpkg-source: info: applying fv_fix_startup.patch
+dpkg-source: info: applying fv_fix_sample.patch
+dpkg-source: info: applying clang_FTBFS_Wreturn-type.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-34af541c-44f5-41ef-b2f0-7cabcc522851
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package ftools-fv
+dpkg-buildpackage: source version 5.3+dfsg-4
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Ole Streicher <debian@liska.ath.cx>
+ dpkg-source --before-build ftools-fv-5.3+dfsg
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with autoreconf
+   dh_testdir
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+fgrep -q WCSLIB_OBJ_TMP tcltk/pow/Makefile || dh_auto_clean -D tcltk/pow
+make[1]: Leaving directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+   dh_autoreconf_clean
+   dh_clean
+ dpkg-source -b ftools-fv-5.3+dfsg
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building ftools-fv using existing ./ftools-fv_5.3+dfsg.orig.tar.gz
+dpkg-source: info: building ftools-fv in ftools-fv_5.3+dfsg-4.debian.tar.xz
+dpkg-source: info: building ftools-fv in ftools-fv_5.3+dfsg-4.dsc
+ debian/rules build
+dh build --with autoreconf
+   dh_testdir
+   debian/rules override_dh_autoreconf
+make[1]: Entering directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+dh_autoreconf "(cd tcltk/pow ; autoreconf)"
+aclocal: warning: autoconf input should be named 'configure.ac', not 'configure.in'
+make[1]: Leaving directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+dh_auto_configure -D tcltk/pow -- CC=gcc
+configure: WARNING: unrecognized options: --disable-maintainer-mode, --disable-dependency-tracking
+checking for uname... uname
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for ranlib... ranlib
+./configure: line 1502: ac_fn_c_try_link: command not found
+checking for gethostbyname... no
+checking for gethostbyname in -lnsl... yes
+checking for connect... yes
+checking for accept... yes
+checking how to run the C preprocessor... gcc -E
+checking for X... libraries , headers 
+checking for getnodebyname in -ldnet_stub... no
+checking for dlopen in -ldl... yes
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking for string.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for an ANSI C-conforming const... yes
+checking for mode_t... yes
+checking for size_t... (cached) yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for working memcmp... yes
+checking return type of signal handlers... void
+checking for strftime... yes
+checking for getcwd... yes
+checking for socket... yes
+checking for strcspn... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for strtod... yes
+checking for strtol... yes
+configure: creating ./config.status
+config.status: creating Makefile
+configure: WARNING: unrecognized options: --disable-maintainer-mode, --disable-dependency-tracking
+make[1]: Leaving directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+   debian/rules override_dh_auto_build
+make[1]: Entering directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+dh_auto_build -D tcltk/pow
+make[2]: Entering directory `/«BUILDDIR»/ftools-fv-5.3+dfsg/tcltk/pow'
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowCanvCurve.c
+PowCanvCurve.c:1266:15: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+    if ((state==TK_STATE_HIDDEN)) {
+         ~~~~~^~~~~~~~~~~~~~~~~
+PowCanvCurve.c:1266:15: note: remove extraneous parentheses around the comparison to silence this warning
+    if ((state==TK_STATE_HIDDEN)) {
+        ~     ^                ~
+PowCanvCurve.c:1266:15: note: use '=' to turn this equality comparison into an assignment
+    if ((state==TK_STATE_HIDDEN)) {
+              ^~
+              =
+1 warning generated.
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowColormap.c
+PowColormap.c:121:24: warning: result of comparison against a string literal is unspecified (use strncmp instead) [-Wstring-compare]
+    if (interp->result != "1") {
+                       ^  ~~~
+PowColormap.c:398:10: warning: passing 'unsigned char *' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  ckfree(dithered_data_array);
+         ^~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tcl.h:2289:31: note: expanded from macro 'ckfree'
+#   define ckfree(x) Tcl_Free(x)
+                              ^
+/usr/include/tcl8.5/tclDecls.h:65:29: note: passing argument to parameter 'ptr' here
+EXTERN void             Tcl_Free(char *ptr);
+                                       ^
+PowColormap.c:834:10: warning: passing 'unsigned char *' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  ckfree(photo_block.pixelPtr);
+         ^~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tcl.h:2289:31: note: expanded from macro 'ckfree'
+#   define ckfree(x) Tcl_Free(x)
+                              ^
+/usr/include/tcl8.5/tclDecls.h:65:29: note: passing argument to parameter 'ptr' here
+EXTERN void             Tcl_Free(char *ptr);
+                                       ^
+3 warnings generated.
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowCommands.c
+PowCommands.c:1881:11: warning: assigning to 'char *' from 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+      bin = Tcl_GetByteArrayFromObj(argv[1], NULL);
+          ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowCreateCurve.c
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowCreateData.c
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowCreateGraph.c
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowCreateImage.c
+PowCreateImage.c:218:12: warning: passing 'unsigned char *' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    ckfree(photo_block.pixelPtr);
+           ^~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tcl.h:2289:31: note: expanded from macro 'ckfree'
+#   define ckfree(x) Tcl_Free(x)
+                              ^
+/usr/include/tcl8.5/tclDecls.h:65:29: note: passing argument to parameter 'ptr' here
+EXTERN void             Tcl_Free(char *ptr);
+                                       ^
+1 warning generated.
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowCreateVector.c
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowEventHandlers.c
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowGrid.c
+PowGrid.c:1382:42: warning: '&&' within '||' [-Wlogical-op-parentheses]
+   done = (i<0 || i>=Info->xdim-1 || j<0 && j>=Info->ydim-1);
+                                  ~~ ~~~~^~~~~~~~~~~~~~~~~~
+PowGrid.c:1382:42: note: place parentheses around the '&&' expression to silence this warning
+   done = (i<0 || i>=Info->xdim-1 || j<0 && j>=Info->ydim-1);
+                                         ^
+                                     (                     )
+PowGrid.c:1393:11: warning: enumeration value 'none' not handled in switch [-Wswitch]
+         switch( side ) {
+                 ^
+PowGrid.c:1418:14: warning: enumeration value 'none' not handled in switch [-Wswitch]
+            switch( side ) {
+                    ^
+3 warnings generated.
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowInit.c
+PowInit.c:202:54: warning: passing 'unsigned char [20]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  Tk_DefineBitmap(interp, Tk_GetUid("stretcharrow"), stretcharrow_bits,
+                                                     ^~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tkDecls.h:319:17: note: passing argument to parameter 'source' here
+                                CONST char *source, int width, int height);
+                                            ^
+PowInit.c:270:54: warning: passing 'unsigned char [20]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  Tk_DefineBitmap(interp, Tk_GetUid("stretcharrow"), stretcharrow_bits,
+                                                     ^~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tkDecls.h:319:17: note: passing argument to parameter 'source' here
+                                CONST char *source, int width, int height);
+                                            ^
+PowInit.c:303:48: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powGetImageOrigin",PowGetImageOrigin,
+                                               ^~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:305:50: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powGetImageOtherend",PowGetImageOtherend,
+                                                 ^~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:307:47: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powGetImageUnits",PowGetImageUnits,
+                                              ^~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:309:45: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powDestroyData",PowDestroyData_Tcl,
+                                            ^~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:311:46: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powDestroyImage",PowDestroyImage_Tcl,
+                                             ^~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:313:47: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powDestroyVector",PowDestroyVector_Tcl,
+                                              ^~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:315:46: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powDestroyCurve",PowDestroyCurve_Tcl,
+                                             ^~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:317:46: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powDestroyGraph",PowDestroyGraph_Tcl,
+                                             ^~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:319:45: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateImage",PowCreateImage_Tcl,
+                                            ^~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:321:45: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateGraph",PowCreateGraph_Tcl,
+                                            ^~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:323:42: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powFindData",PowFindData_Tcl,
+                                         ^~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:325:50: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powFindCurvesMinMax",PowFindCurvesMinMax_Tcl,
+                                                 ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:327:49: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powFetchDataLength",PowFetchDataLength,
+                                                ^~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:329:52: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powFetchCurveInfoHash",PowFetchCurveInfoHash,
+                                                   ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:331:53: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powFetchVectorInfoHash",PowFetchVectorInfoHash,
+                                                    ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:333:52: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powFetchImageInfoHash",PowFetchImageInfoHash,
+                                                   ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:335:46: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateVector",PowCreateVector_Tcl,
+                                             ^~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:337:48: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateVectorEN",PowCreateVectorEN_Tcl,
+                                               ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:339:45: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateCurve",PowCreateCurve_Tcl,
+                                            ^~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:341:45: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateHisto",PowCreateHisto_Tcl,
+                                            ^~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:343:48: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateDataFlip",PowCreateDataFlip_Tcl,
+                                               ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:346:49: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateCurveFlip",PowCreateCurveFlip_Tcl,
+                                                ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:349:44: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateData",PowCreateData_Tcl,
+                                           ^~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:352:43: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCloneData",PowCloneData,
+                                          ^~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:355:46: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powRegisterData",PowRegisterData_Tcl,
+                                             ^~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:358:52: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateDataFromList",PowCreateDataFromList,
+                                                   ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:379:49: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powSetGraphMagstep",PowSetGraphMagstep,
+                                                ^~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:382:46: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powProcessCurve",PowProcessCurve,
+                                             ^~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:385:44: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powListGraphs",PowListGraphs,
+                                           ^~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:388:44: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powListCurves",PowListCurves,
+                                           ^~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:391:44: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powListImages",PowListImages,
+                                           ^~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:394:45: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powListVectors",PowListVectors,
+                                            ^~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:397:42: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powListData",PowListData,
+                                         ^~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:400:41: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCleanUp",PowCleanUp,
+                                        ^~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:403:47: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powSetupColormap",PowSetupColormap,
+                                              ^~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:406:50: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powSetupPhotoImages",PowSetupPhotoImages,
+                                                 ^~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:409:46: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powTestColormap",PowTestColormap,
+                                             ^~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:412:48: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powPutZoomedBlock",PowPutZoomedBlock,
+                                               ^~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:415:49: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powPhotoColorTable",PowPhotoColorTable,
+                                                ^~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:418:52: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powReditherPhotoBlock",PowReditherPhotoBlock,
+                                                   ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:480:47: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powDrawGridLines",PowDrawGridLines,
+                                              ^~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:484:47: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powCreateContour",PowCreateContour,
+                                              ^~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:488:41: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powGetTics",PowGetTics,
+                                        ^~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+PowInit.c:492:54: warning: incompatible pointer types passing 'int (ClientData, Tcl_Interp *, int, char **)' to parameter of type 'Tcl_CmdProc *' (aka 'int (*)(ClientData, Tcl_Interp *, int, const char **)') [-Wincompatible-pointer-types]
+  Tcl_CreateCommand(interp,"powGetRegionStatistics", PowGetRegionStatistics, 
+                                                     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/tcl8.5/tclDecls.h:579:39: note: passing argument to parameter 'proc' here
+                                CONST char *cmdName, Tcl_CmdProc *proc,
+                                                                  ^
+46 warnings generated.
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowUtils.c
+PowUtils.c:663:30: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+         if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+                             ^~~~~~~~~
+/usr/include/wcslib/wcshdr.h:1108:18: note: passing argument to parameter 'header' here
+int wcspih(char *header, int nkeyrec, int relax, int ctrl, int *nreject,
+                 ^
+PowUtils.c:663:21: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+         if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PowUtils.c:663:21: note: place parentheses around the assignment to silence this warning
+         if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+                    ^
+             (                                                                            )
+PowUtils.c:663:21: note: use '==' to turn this assignment into an equality comparison
+         if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+                    ^
+                    ==
+PowUtils.c:701:61: warning: incompatible pointer types passing 'double [1][4]' to parameter of type 'const double *' [-Wincompatible-pointer-types]
+      status = wcss2p(&(WCS->wcs[coordSel]), NCOORD, nelem, world, phi, theta, imgcrd, pixcrd, stat);
+                                                            ^~~~~
+/usr/include/wcslib/wcs.h:1539:68: note: passing argument to parameter 'world' here
+int wcss2p(struct wcsprm *wcs, int ncoord, int nelem, const double world[],
+                                                                   ^
+PowUtils.c:701:80: warning: incompatible pointer types passing 'double [1][4]' to parameter of type 'double *' [-Wincompatible-pointer-types]
+      status = wcss2p(&(WCS->wcs[coordSel]), NCOORD, nelem, world, phi, theta, imgcrd, pixcrd, stat);
+                                                                               ^~~~~~
+/usr/include/wcslib/wcs.h:1540:49: note: passing argument to parameter 'imgcrd' here
+           double phi[], double theta[], double imgcrd[], double pixcrd[],
+                                                ^
+PowUtils.c:701:88: warning: incompatible pointer types passing 'double [1][4]' to parameter of type 'double *' [-Wincompatible-pointer-types]
+      status = wcss2p(&(WCS->wcs[coordSel]), NCOORD, nelem, world, phi, theta, imgcrd, pixcrd, stat);
+                                                                                       ^~~~~~
+/usr/include/wcslib/wcs.h:1540:66: note: passing argument to parameter 'pixcrd' here
+           double phi[], double theta[], double imgcrd[], double pixcrd[],
+                                                                 ^
+PowUtils.c:790:30: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+         if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+                             ^~~~~~~~~
+/usr/include/wcslib/wcshdr.h:1108:18: note: passing argument to parameter 'header' here
+int wcspih(char *header, int nkeyrec, int relax, int ctrl, int *nreject,
+                 ^
+PowUtils.c:790:21: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+         if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PowUtils.c:790:21: note: place parentheses around the assignment to silence this warning
+         if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+                    ^
+             (                                                                            )
+PowUtils.c:790:21: note: use '==' to turn this assignment into an equality comparison
+         if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+                    ^
+                    ==
+PowUtils.c:829:61: warning: incompatible pointer types passing 'double [1][4]' to parameter of type 'const double *' [-Wincompatible-pointer-types]
+      status = wcsp2s(&(WCS->wcs[coordSel]), NCOORD, nelem, pixcrd, imgcrd, phi, theta, world, stat);
+                                                            ^~~~~~
+/usr/include/wcslib/wcs.h:1535:68: note: passing argument to parameter 'pixcrd' here
+int wcsp2s(struct wcsprm *wcs, int ncoord, int nelem, const double pixcrd[],
+                                                                   ^
+PowUtils.c:829:69: warning: incompatible pointer types passing 'double [1][4]' to parameter of type 'double *' [-Wincompatible-pointer-types]
+      status = wcsp2s(&(WCS->wcs[coordSel]), NCOORD, nelem, pixcrd, imgcrd, phi, theta, world, stat);
+                                                                    ^~~~~~
+/usr/include/wcslib/wcs.h:1536:19: note: passing argument to parameter 'imgcrd' here
+           double imgcrd[], double phi[], double theta[], double world[],
+                  ^
+PowUtils.c:829:89: warning: incompatible pointer types passing 'double [1][4]' to parameter of type 'double *' [-Wincompatible-pointer-types]
+      status = wcsp2s(&(WCS->wcs[coordSel]), NCOORD, nelem, pixcrd, imgcrd, phi, theta, world, stat);
+                                                                                        ^~~~~
+/usr/include/wcslib/wcs.h:1536:66: note: passing argument to parameter 'world' here
+           double imgcrd[], double phi[], double theta[], double world[],
+                                                                 ^
+10 warnings generated.
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  PowWCS.c
+PowWCS.c:32:18: warning: incompatible pointer types passing 'char [1024]' to parameter of type 'struct wcsprm *' [-Wincompatible-pointer-types]
+   wcsini (1, n, WCS->graphName);
+                 ^~~~~~~~~~~~~~
+/usr/include/wcslib/wcs.h:1520:49: note: passing argument to parameter 'wcs' here
+int wcsini(int alloc, int naxis, struct wcsprm *wcs);
+                                                ^
+PowWCS.c:65:24: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+                       ^~~~~~~~~
+/usr/include/wcslib/wcshdr.h:1108:18: note: passing argument to parameter 'header' here
+int wcspih(char *header, int nkeyrec, int relax, int ctrl, int *nreject,
+                 ^
+PowWCS.c:65:15: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+   if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PowWCS.c:65:15: note: place parentheses around the assignment to silence this warning
+   if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+              ^
+       (                                                                            )
+PowWCS.c:65:15: note: use '==' to turn this assignment into an equality comparison
+   if (status = wcspih(HDRstring, HDRcnt, relax, ctrl, &nreject, &nwcs, &(WCS->wcs))) {
+              ^
+              ==
+3 warnings generated.
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  Visu_Init.c
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  Visu_colors.c
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  Visu_generic.c
+Visu_generic.c:78:34: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                             ~~~~^~~
+Visu_generic.c:78:34: note: place parentheses around the '-' expression to silence this warning
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                                 ^
+                               (    )
+Visu_generic.c:115:34: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                             ~~~~^~~
+Visu_generic.c:115:34: note: place parentheses around the '-' expression to silence this warning
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                                 ^
+                               (    )
+Visu_generic.c:152:34: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                             ~~~~^~~
+Visu_generic.c:152:34: note: place parentheses around the '-' expression to silence this warning
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                                 ^
+                               (    )
+Visu_generic.c:189:34: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                             ~~~~^~~
+Visu_generic.c:189:34: note: place parentheses around the '-' expression to silence this warning
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                                 ^
+                               (    )
+Visu_generic.c:226:34: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                             ~~~~^~~
+Visu_generic.c:226:34: note: place parentheses around the '-' expression to silence this warning
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                                 ^
+                               (    )
+Visu_generic.c:272:34: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                             ~~~~^~~
+Visu_generic.c:272:34: note: place parentheses around the '-' expression to silence this warning
+            histo[ MAX_LOOKUP>>1 - 1 ] = npts;
+                                 ^
+                               (    )
+6 warnings generated.
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  Visu_lut.c
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  Visu_shared_colors.c
+Visu_shared_colors.c:22:1: warning: 'static' ignored on this declaration [-Wmissing-declarations]
+static struct XColorSharedStruct { /* Structure for posting color lut info
+^
+1 warning generated.
+gcc -c -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -fPIC -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBNSL=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBDL=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DRETSIGTYPE=void -DHAVE_STRFTIME=1 -DHAVE_GETCWD=1 -DHAVE_SOCKET=1 -DHAVE_STRCSPN=1 -DHAVE_STRSPN=1 -DHAVE_STRSTR=1 -DHAVE_STRTOD=1 -DHAVE_STRTOL=1 -DVISU_LIBRARY=\"/usr/lib/pow\"  -I/usr/include/tcl8.5 -I/usr/include/tcl8.5/tk-private/generic/ -I/usr/include/tcl8.5/tk-private/generic//../unix  Visu_tkImgPict.c
+Visu_tkImgPict.c:1343:9: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        option = argv[index];
+               ^ ~~~~~~~~~~~
+Visu_tkImgPict.c:1503:18: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+                optPtr->format = argv[index];
+                               ^ ~~~~~~~~~~~
+Visu_tkImgPict.c:1764:2: warning: implicit declaration of function '_XInitImageFuncPtrs' is invalid in C99 [-Wimplicit-function-declaration]
+        _XInitImageFuncPtrs(imagePtr);
+        ^
+Visu_tkImgPict.c:2613:33: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  if ((destHandle = Tk_FindPict(argv[2])) == NULL) {
+                                ^~~~~~~
+./tkpict.h:345:40: note: passing argument to parameter 'imageName' here
+extern Tk_PictHandle Tk_FindPict(char *imageName);
+                                       ^
+4 warnings generated.
+gcc -shared -Wl,-z,relro PowCanvCurve.o PowColormap.o PowCommands.o PowCreateCurve.o PowCreateData.o PowCreateGraph.o PowCreateImage.o PowCreateVector.o PowEventHandlers.o PowGrid.o PowInit.o PowUtils.o PowWCS.o Visu_Init.o Visu_colors.o Visu_generic.o Visu_lut.o Visu_shared_colors.o Visu_tkImgPict.o -ldl -lnsl   -ltcl8.5 -ltk8.5 -lwcs -lcfitsio -lX11 -o libpow.so
+echo "pkg_mkIndex  . libpow.so" | tclsh8.5
+make[2]: Leaving directory `/«BUILDDIR»/ftools-fv-5.3+dfsg/tcltk/pow'
+make[1]: Leaving directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary --with autoreconf
+   dh_testroot
+   dh_prep
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+dh_auto_install -D tcltk/pow
+make[2]: Entering directory `/«BUILDDIR»/ftools-fv-5.3+dfsg/tcltk/pow'
+mkdir /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/lib/tcltk/POW
+cp libpow.so /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/lib/tcltk/POW/
+mkdir -p /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/bin
+cp POWplot /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/bin/
+mkdir -p /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/include
+cp pow.h /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/include/
+cp tkpict.h /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/include/
+mkdir -p /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW
+cp Notifications.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp POWplot.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp PowCmdsClass.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp Region.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp RegionList.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp Shape.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp html_library.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp notebook.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp pow.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp powEdit.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp powImgProbe.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp powMovie.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp powProfile.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp powRgn.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp powRuler.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp powScript.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp powXRange.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp visu_widgets.tcl /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+cp tclIndex /«BUILDDIR»/ftools-fv-5.3+dfsg/debian/tmp/usr/share/ftools/POW/
+make[2]: Leaving directory `/«BUILDDIR»/ftools-fv-5.3+dfsg/tcltk/pow'
+make[1]: Leaving directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installexamples
+   dh_installman
+   dh_installmenu
+   dh_perl
+   dh_link
+   dh_compress
+   debian/rules override_dh_fixperms
+make[1]: Entering directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+dh_fixperms
+chmod 0644 debian/ftools-*/usr/share/ftools/*/*.tcl
+make[1]: Leaving directory `/«BUILDDIR»/ftools-fv-5.3+dfsg'
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/ftools-pow/usr/lib/tcltk/POW/libpow.so was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/ftools-pow/usr/lib/tcltk/POW/libpow.so was not linked against libnsl.so.1 (it uses none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package ftools-fv: unknown substitution variable ${shlibs:Depends}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `ftools-fv' in `../ftools-fv_5.3+dfsg-4_all.deb'.
+dpkg-deb: building package `ftools-pow' in `../ftools-pow_5.3+dfsg-4_amd64.deb'.
+ dpkg-genchanges  >../ftools-fv_5.3+dfsg-4_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build ftools-fv-5.3+dfsg
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140405-1343
+
+Finished
+────────
+
+I: Built successfully
+E: Package builds ftools-fv_5.3+dfsg-4_all.deb when binary-indep target is not called.  This is a bug in the packaging.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+ftools-fv_5.3+dfsg-4_amd64.changes:
+───────────────────────────────────
+
+Format: 1.8
+Date: Thu, 10 Oct 2013 09:20:23 +0200
+Source: ftools-fv
+Binary: ftools-fv ftools-pow
+Architecture: source all amd64
+Version: 5.3+dfsg-4
+Distribution: sid
+Urgency: low
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Changed-By: Ole Streicher <debian@liska.ath.cx>
+Description: 
+ ftools-fv  - Tool for viewing and editing FITS format files
+ ftools-pow - Curve plotting and image display interface tool
+Changes: 
+ ftools-fv (5.3+dfsg-4) unstable; urgency=low
+ .
+   [ Sergei Golovan ]
+   * Fixed FTBFS with new Tcl/Tk after dropping /usr/bin/tclsh alternative
+     and removing patch for tclPort.h.
+Checksums-Sha1: 
+ fc0ce99297a39d916b842cb83b717f305ce9de34 1253 ftools-fv_5.3+dfsg-4.dsc
+ db9c399c339c84a67ba7a91563d93bdcaca3a01a 17340 ftools-fv_5.3+dfsg-4.debian.tar.xz
+ f61472c5d0a036277707e7e05d4843582b0bcd34 650032 ftools-fv_5.3+dfsg-4_all.deb
+ 05c8046f2f4c167e4d3cd68966af19af348e9456 462252 ftools-pow_5.3+dfsg-4_amd64.deb
+Checksums-Sha256: 
+ c0b0a3df20d4785a836e0c8401f0a715cb2c00f40a6e092a523d355ca8a57f97 1253 ftools-fv_5.3+dfsg-4.dsc
+ 150686cb12cb346887650fb2571d73baee8b163be0da48a69ecfdf8292326482 17340 ftools-fv_5.3+dfsg-4.debian.tar.xz
+ bee6f6554304ab738302f18157ee509a23ed6680f94b0c4e2a9f54ce8c3e96a2 650032 ftools-fv_5.3+dfsg-4_all.deb
+ cff74012c9118e6113e383d89a3ac2a4b4551f70880b9af26d96df06d947abc6 462252 ftools-pow_5.3+dfsg-4_amd64.deb
+Files: 
+ fcdf923f98bb041be72d4bf9f02c0d75 1253 science optional ftools-fv_5.3+dfsg-4.dsc
+ 7648b7f466f66450940b026dd7dd8ef5 17340 science optional ftools-fv_5.3+dfsg-4.debian.tar.xz
+ 597758af924ffa3e0886e0ea8cb0e746 650032 science optional ftools-fv_5.3+dfsg-4_all.deb
+ 27cd0910edd0ce840439887853840fd7 462252 science optional ftools-pow_5.3+dfsg-4_amd64.deb
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+ftools-fv_5.3+dfsg-4_all.deb
+────────────────────────────
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/ftools-fv_5.3+dfsg-4_all.deb': No such file or directory
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/ftools-fv_5.3+dfsg-4_all.deb': No such file or directory
+
+
+ftools-pow_5.3+dfsg-4_amd64.deb
+───────────────────────────────
+
+ new debian package, version 2.0.
+ size 462252 bytes: control archive=2384 bytes.
+     821 bytes,    17 lines      control              
+    3743 bytes,    54 lines      md5sums              
+ Package: ftools-pow
+ Source: ftools-fv
+ Version: 5.3+dfsg-4
+ Architecture: amd64
+ Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+ Installed-Size: 1591
+ Depends: itcl3, itk3, iwidgets4, tcl-fitstcl, tix, libc6 (>= 2.14), libcfitsio3 (>= 3.130), libtcl8.5 (>= 8.5.0), libtk8.5 (>= 8.5.8), libwcs4 (>= 4.8.1), libx11-6
+ Section: science
+ Priority: optional
+ Homepage: http://heasarc.gsfc.nasa.gov/docs/software/lheasoft/ftools/fv/
+ Description: Curve plotting and image display interface tool
+  POW is a curve plotting and image display interface tool written and
+  distributed by the HEASARC at NASA/GSFC.
+  .
+  POW features a very flexible developer's interface and a "friendly" end user
+  GUI interface. POW is a Tcl/Tk extension and can be called from standard C or
+  FORTRAN main programs.
+
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/lib/tcltk/
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/lib/tcltk/POW/
+-rw-r--r-- root/root       530 2014-04-05 13:43 ./usr/lib/tcltk/POW/pkgIndex.tcl
+-rw-r--r-- root/root    261400 2014-04-05 13:43 ./usr/lib/tcltk/POW/libpow.so
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/bin/
+-rwxr-xr-x root/root       173 2014-04-05 13:43 ./usr/bin/POWplot
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/include/
+-rw-r--r-- root/root     20765 2014-04-05 13:43 ./usr/include/tkpict.h
+-rw-r--r-- root/root     18680 2014-04-05 13:43 ./usr/include/pow.h
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/share/man/man1/
+-rw-r--r-- root/root       381 2014-04-05 13:43 ./usr/share/man/man1/POWplot.1.gz
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/share/doc/ftools-pow/
+-rw-r--r-- root/root      3048 2004-07-07 15:21 ./usr/share/doc/ftools-pow/Labels.html
+-rw-r--r-- root/root       233 1998-07-01 18:58 ./usr/share/doc/ftools-pow/stretcharrow.xbm
+-rw-r--r-- root/root      1264 2006-06-28 21:58 ./usr/share/doc/ftools-pow/Tools.html
+-rw-r--r-- root/root     24780 2005-04-12 21:18 ./usr/share/doc/ftools-pow/Scripting.html
+-rw-r--r-- root/root      2908 2004-07-07 15:21 ./usr/share/doc/ftools-pow/Edit.html
+-rw-r--r-- root/root      2057 2006-06-28 21:58 ./usr/share/doc/ftools-pow/ROI.html
+-rw-r--r-- root/root       515 2013-10-10 09:20 ./usr/share/doc/ftools-pow/changelog.Debian.gz
+-rw-r--r-- root/root      1864 2004-07-06 23:21 ./usr/share/doc/ftools-pow/Profile.html
+-rw-r--r-- root/root      4626 2004-07-07 15:21 ./usr/share/doc/ftools-pow/Blinking.html
+-rw-r--r-- root/root      1094 2000-11-06 18:55 ./usr/share/doc/ftools-pow/Release_Notes
+-rw-r--r-- root/root      4002 2004-07-07 15:21 ./usr/share/doc/ftools-pow/EditObjects.html
+-rw-r--r-- root/root      3299 2004-07-07 15:21 ./usr/share/doc/ftools-pow/Color.html
+-rw-r--r-- root/root       151 2004-07-07 15:21 ./usr/share/doc/ftools-pow/Options.html
+-rw-r--r-- root/root      3445 2004-07-07 15:21 ./usr/share/doc/ftools-pow/Contours.html
+-rw-r--r-- root/root      3025 2004-07-07 15:21 ./usr/share/doc/ftools-pow/Probe.html
+-rw-r--r-- root/root    180338 1997-04-24 16:45 ./usr/share/doc/ftools-pow/mhh7.gif
+-rw-r--r-- root/root      1803 2006-06-28 21:58 ./usr/share/doc/ftools-pow/XRange.html
+-rw-r--r-- root/root      2069 2012-10-18 12:13 ./usr/share/doc/ftools-pow/copyright
+-rw-r--r-- root/root      2013 2006-06-28 21:58 ./usr/share/doc/ftools-pow/Overview.html
+-rw-r--r-- root/root      9001 2004-07-07 15:21 ./usr/share/doc/ftools-pow/EditGraphs.html
+-rw-r--r-- root/root       739 2004-07-07 15:21 ./usr/share/doc/ftools-pow/Ruler.html
+-rw-r--r-- root/root      1485 2006-05-08 19:16 ./usr/share/doc/ftools-pow/Moving_Graphs.html
+-rw-r--r-- root/root      8455 2006-03-08 22:08 ./usr/share/doc/ftools-pow/Regions.html
+-rw-r--r-- root/root      8388 2004-07-07 15:21 ./usr/share/doc/ftools-pow/DefaultOptions.html
+-rw-r--r-- root/root      1868 1999-09-20 21:31 ./usr/share/doc/ftools-pow/HOWTO
+-rw-r--r-- root/root     35770 2000-10-19 22:01 ./usr/share/doc/ftools-pow/POWAPI.html
+-rw-r--r-- root/root       491 2006-06-28 21:58 ./usr/share/doc/ftools-pow/File.html
+-rw-r--r-- root/root      2790 2006-06-29 17:48 ./usr/share/doc/ftools-pow/PrintControl.html
+-rw-r--r-- root/root       489 2004-07-07 15:21 ./usr/share/doc/ftools-pow/About.html
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/share/ftools/
+drwxr-xr-x root/root         0 2014-04-05 13:43 ./usr/share/ftools/POW/
+-rw-r--r-- root/root     38293 2014-04-05 13:43 ./usr/share/ftools/POW/Shape.tcl
+-rw-r--r-- root/root     41630 2014-04-05 13:43 ./usr/share/ftools/POW/RegionList.tcl
+-rw-r--r-- root/root    366278 2014-04-05 13:43 ./usr/share/ftools/POW/pow.tcl
+-rw-r--r-- root/root      8681 2014-04-05 13:43 ./usr/share/ftools/POW/notebook.tcl
+-rw-r--r-- root/root     62842 2014-04-05 13:43 ./usr/share/ftools/POW/powScript.tcl
+-rw-r--r-- root/root      7968 2014-04-05 13:43 ./usr/share/ftools/POW/Notifications.tcl
+-rw-r--r-- root/root     13817 2014-04-05 13:43 ./usr/share/ftools/POW/powImgProbe.tcl
+-rw-r--r-- root/root     20398 2014-04-05 13:43 ./usr/share/ftools/POW/Region.tcl
+-rw-r--r-- root/root     27260 2014-04-05 13:43 ./usr/share/ftools/POW/POWplot.tcl
+-rw-r--r-- root/root     33585 2014-04-05 13:43 ./usr/share/ftools/POW/tclIndex
+-rw-r--r-- root/root      5851 2014-04-05 13:43 ./usr/share/ftools/POW/PowCmdsClass.tcl
+-rw-r--r-- root/root      7141 2014-04-05 13:43 ./usr/share/ftools/POW/powRuler.tcl
+-rw-r--r-- root/root     22086 2014-04-05 13:43 ./usr/share/ftools/POW/powMovie.tcl
+-rw-r--r-- root/root     58776 2014-04-05 13:43 ./usr/share/ftools/POW/powRgn.tcl
+-rw-r--r-- root/root     65763 2014-04-05 13:43 ./usr/share/ftools/POW/visu_widgets.tcl
+-rw-r--r-- root/root     13335 2014-04-05 13:43 ./usr/share/ftools/POW/powProfile.tcl
+-rw-r--r-- root/root     85284 2014-04-05 13:43 ./usr/share/ftools/POW/powEdit.tcl
+-rw-r--r-- root/root     40869 2014-04-05 13:43 ./usr/share/ftools/POW/html_library.tcl
+-rw-r--r-- root/root     33557 2014-04-05 13:43 ./usr/share/ftools/POW/powXRange.tcl
+
+mv: cannot stat '/«CHROOT»/«BUILDDIR»/ftools-fv_5.3+dfsg-4_all.deb': No such file or directory
+E: Could not move ftools-fv_5.3+dfsg-4_all.deb to .
+du: cannot access '/mnt/ito/data/projets/debian-clang/buildlogs/ftools-fv/ftools-fv_5.3+dfsg-4_all.deb': No such file or directory
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 16288
+Build-Time: 11
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 16
+Job: ftools-fv_5.3+dfsg-4.dsc
+Machine Architecture: amd64
+Package: ftools-fv
+Package-Time: 33
+Source-Version: 5.3+dfsg-4
+Space: 16288
+Status: successful
+Version: 5.3+dfsg-4
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140405-1343
+Build needed 00:00:33, 16288k disc space
