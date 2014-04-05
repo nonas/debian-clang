@@ -1,0 +1,84 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-04-05
+
+--- a/src/libpaths.c
++++ b/src/libpaths.c
+@@ -294,7 +294,7 @@
+ 	guint ptr, start, end, entry, entries;
+ 	gchar *entryhash, *entryname, *entryext;
+ 	
+-	if (libcache == NULL) return;
++	if (libcache == NULL) return 0;
+ 	
+ 	/*Cache file must be terminated with value 0x00*/
+ 	if (libcache->mapping[libcache->mapsize-1] != 0x00) {
+--- a/src/main.c
++++ b/src/main.c
+@@ -732,7 +732,7 @@
+ 		
+ 	appdata = (mmgui_application_data_t)data;
+ 	
+-	if (appdata == NULL) return;
++	if (appdata == NULL) return FALSE;
+ 	
+ 	currenttime = time(NULL);
+ 	
+@@ -1425,7 +1425,7 @@
+ 	
+ 	mmguiapp = (mmgui_application_t)data;
+ 	
+-	if (mmguiapp == NULL) return;
++	if (mmguiapp == NULL) return FALSE;
+ 	
+ 	if (mmguiapp->options->askforhide) {
+ 		/*Ask at exit*/
+@@ -1752,7 +1752,7 @@
+ 	
+ 	mmguiapp = (mmgui_application_t)data;
+ 	
+-	if (mmguiapp == NULL) return;
++	if (mmguiapp == NULL) return FALSE;
+ 	
+ 	if (mmguicore_devices_get_current(mmguiapp->core) != NULL) {
+ 		unreadmessages = mmgui_smsdb_get_unread_messages(mmguicore_devices_get_sms_db(mmguiapp->core));
+@@ -1795,7 +1795,7 @@
+ 	guint id, contacttype;
+ 	mmgui_contact_t contact;
+ 	
+-	if (mmguiapp == NULL) return;
++	if (mmguiapp == NULL) return 0;
+ 	
+ 	model = gtk_tree_view_get_model(GTK_TREE_VIEW(mmguiapp->window->contactstreeview));
+ 	selection = gtk_tree_view_get_selection(GTK_TREE_VIEW(mmguiapp->window->contactstreeview));
+@@ -2958,8 +2958,8 @@
+ 	
+ 	mmguiapp = (mmgui_application_t)data;
+ 	
+-	if (mmguiapp == NULL) return;
+-	if (mmguiapp->core == NULL) return;
++	if (mmguiapp == NULL) return FALSE;
++	if (mmguiapp->core == NULL) return FALSE;
+ 	
+ 	device = mmguicore_devices_get_current(mmguiapp->core);
+ 	
+@@ -2995,8 +2995,8 @@
+ 		
+ 	mmguiapp = (mmgui_application_t)data;
+ 	
+-	if (mmguiapp == NULL) return;
+-	if (mmguiapp->core == NULL) return;
++	if (mmguiapp == NULL) return FALSE;
++	if (mmguiapp->core == NULL) return FALSE;
+ 	
+ 	device = mmguicore_devices_get_current(mmguiapp->core);
+ 	
+@@ -4183,7 +4183,7 @@
+ 	gint smsvalidflags;
+ 	enum _mmgui_main_new_sms_dialog_result result;
+ 	
+-	if (mmguiapp == NULL) return;
++	if (mmguiapp == NULL) return 0;
+ 	
+ 	smsvalidflags = MMGUI_MAIN_NEW_SMS_VALIDATION_VALID;
+ 	
