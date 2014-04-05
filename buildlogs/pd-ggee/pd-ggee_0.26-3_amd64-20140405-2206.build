@@ -1,0 +1,828 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ pd-ggee 0.26-3 (amd64)                                     05 Apr 2014 22:06 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: pd-ggee
+Version: 0.26-3
+Source Version: 0.26-3
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/pd-ggee-MZ4DFT/pd-ggee-0.26' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/pd-ggee-MZ4DFT' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-12f7857d-26bd-4fc6-92f1-7959fb2be294' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+pd-ggee_0.26-3.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-ac3YVz/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13262 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7.0.50~), puredata-dev, quilt (>= 0.46-7~)
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7.0.50~), puredata-dev, quilt (>= 0.46-7~)
+dpkg-deb: building package `sbuild-build-depends-pd-ggee-dummy' in `/«BUILDDIR»/resolver-l17Tqr/apt_archive/sbuild-build-depends-pd-ggee-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install pd-ggee build dependencies (apt-based resolver)                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper diffstat gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libcroco3 libglib2.0-0 libunistring0 libxml2
+  man-db po-debconf puredata-dev quilt
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff less www-browser
+  libmail-box-perl procmail graphviz default-mta mail-transport-agent
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper diffstat gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libcroco3 libglib2.0-0 libunistring0 libxml2
+  man-db po-debconf puredata-dev quilt sbuild-build-depends-pd-ggee-dummy
+0 upgraded, 17 newly installed, 0 to remove and 19 not upgraded.
+Need to get 8708 kB/8709 kB of archives.
+After this operation, 23.8 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main diffstat amd64 1.58-1 [29.4 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main puredata-dev all 0.45.4-1 [35.2 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main quilt all 0.61-1 [345 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 8708 kB in 1s (6527 kB/s)
+Selecting previously unselected package groff-base.
+(Reading database ... 13262 files and directories currently installed.)
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package diffstat.
+Preparing to unpack .../diffstat_1.58-1_amd64.deb ...
+Unpacking diffstat (1.58-1) ...
+Selecting previously unselected package puredata-dev.
+Preparing to unpack .../puredata-dev_0.45.4-1_all.deb ...
+Unpacking puredata-dev (0.45.4-1) ...
+Selecting previously unselected package quilt.
+Preparing to unpack .../archives/quilt_0.61-1_all.deb ...
+Unpacking quilt (0.61-1) ...
+Selecting previously unselected package sbuild-build-depends-pd-ggee-dummy.
+Preparing to unpack .../sbuild-build-depends-pd-ggee-dummy.deb ...
+Unpacking sbuild-build-depends-pd-ggee-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up diffstat (1.58-1) ...
+Setting up puredata-dev (0.45.4-1) ...
+Setting up quilt (0.61-1) ...
+Setting up sbuild-build-depends-pd-ggee-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-5 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.7-1
+Package versions: apt_1.0 base-files_7.2 base-passwd_3.5.32 bash_4.3-5 binfmt-support_2.1.4-1 binutils_2.24-5 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffstat_1.58-1 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-7 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.4-1 libaudit1_1:2.3.4-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.6 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.1~rc1+r3.0.13-12 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2 libgomp1_4.8.2-16 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.8.2-16 libjsoncpp0_0.6.0~rc2-3 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpcre3_1:8.31-2 libpipeline1_1.3.0-1 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libquadmath0_4.8.2-16 libreadline6_6.3-5 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libsqlite3-0_3.8.4.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtsan0_4.8.2-16 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.7-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-4 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 puredata-dev_0.45.4-1 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-minimal_2.7.6-8 quilt_0.61-1 readline-common_6.3-5 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-pd-ggee-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Sun Jan  1 01:52:11 2012 UTC using RSA key ID 374BBE81
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./pd-ggee_0.26-3.dsc
+dpkg-source: info: extracting pd-ggee in pd-ggee-0.26
+dpkg-source: info: unpacking pd-ggee_0.26.orig.tar.gz
+dpkg-source: info: unpacking pd-ggee_0.26-3.debian.tar.gz
+dpkg-source: info: applying update-makefile-for-hurd-and-kfreebsd
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-12f7857d-26bd-4fc6-92f1-7959fb2be294
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package pd-ggee
+dpkg-buildpackage: source version 0.26-3
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Hans-Christoph Steiner <hans@eds.org>
+ dpkg-source --before-build pd-ggee-0.26
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+ fakeroot debian/rules clean
+dh --with quilt clean --buildsystem=makefile
+   dh_testdir -O--buildsystem=makefile
+   dh_auto_clean -O--buildsystem=makefile
+make[1]: Entering directory `/«PKGBUILDDIR»'
+rm -f -- control/constant.o control/rl.o control/serial_ms.o control/sl.o control/getdir.o control/rtout.o control/serial_mt.o control/stripdir.o control/inv.o control/serial_bird.o control/shell.o control/unserialize.o control/qread.o control/serialize.o control/sinh.o control/unwonk.o experimental/fofsynth~.o experimental/tabwrite4~.o experimental/pvocfreq.o filters/bandpass.o filters/highpass.o filters/hlshelf.o filters/lowshelf.o filters/notch.o filters/equalizer.o filters/highshelf.o filters/lowpass.o filters/moog~.o gui/button.o gui/fatom.o gui/image.o gui/sliderh.o gui/ticker.o gui/envgen.o gui/gcanvas.o gui/slider.o gui/state.o gui/toddle.o signal/atan2~.o signal/mixer~.o signal/sfwrite~.o signal/streamin~.o signal/streamout~.o  
+rm -f -- control/constant.pd_linux control/rl.pd_linux control/serial_ms.pd_linux control/sl.pd_linux control/getdir.pd_linux control/rtout.pd_linux control/serial_mt.pd_linux control/stripdir.pd_linux control/inv.pd_linux control/serial_bird.pd_linux control/shell.pd_linux control/unserialize.pd_linux control/qread.pd_linux control/serialize.pd_linux control/sinh.pd_linux control/unwonk.pd_linux experimental/fofsynth~.pd_linux experimental/tabwrite4~.pd_linux experimental/pvocfreq.pd_linux filters/bandpass.pd_linux filters/highpass.pd_linux filters/hlshelf.pd_linux filters/lowshelf.pd_linux filters/notch.pd_linux filters/equalizer.pd_linux filters/highshelf.pd_linux filters/lowpass.pd_linux filters/moog~.pd_linux gui/button.pd_linux gui/fatom.pd_linux gui/image.pd_linux gui/sliderh.pd_linux gui/ticker.pd_linux gui/envgen.pd_linux gui/gcanvas.pd_linux gui/slider.pd_linux gui/state.pd_linux gui/toddle.pd_linux signal/atan2~.pd_linux signal/mixer~.pd_linux signal/sfwrite~.pd_linux signal/streamin~.pd_linux signal/streamout~.pd_linux
+rm -f -- ggee.o
+rm -f -- ggee.pd_linux
+rm -f -- 
+rm -f -- ggee-0.26-linux-x86_64.tar.gz
+rm -rf -- ggee-0.26-linux-x86_64
+rm -f -- ggee-0.26.tar.gz
+rm -rf -- ggee-0.26
+rm -f -- pd-ggee_0.26.tar.gz
+rm -rf -- pd-ggee_0.26
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_quilt_unpatch -O--buildsystem=makefile
+Removing patch update-makefile-for-hurd-and-kfreebsd
+Restoring Makefile
+
+No patches applied
+   dh_clean -O--buildsystem=makefile
+ dpkg-source -b pd-ggee-0.26
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: applying update-makefile-for-hurd-and-kfreebsd
+dpkg-source: info: building pd-ggee using existing ./pd-ggee_0.26.orig.tar.gz
+dpkg-source: info: building pd-ggee in pd-ggee_0.26-3.debian.tar.xz
+dpkg-source: info: building pd-ggee in pd-ggee_0.26-3.dsc
+ debian/rules build
+dh --with quilt build --buildsystem=makefile
+   dh_testdir -O--buildsystem=makefile
+   dh_quilt_patch -O--buildsystem=makefile
+File series fully applied, ends at patch update-makefile-for-hurd-and-kfreebsd
+   dh_auto_configure -O--buildsystem=makefile
+   dh_auto_build -O--buildsystem=makefile
+make[1]: Entering directory `/«PKGBUILDDIR»'
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/constant.o" -c "control/constant.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "control/constant.pd_linux" "control/constant.o"    -lc  
+chmod a-x "control/constant.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/rl.o" -c "control/rl.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "control/rl.pd_linux" "control/rl.o"    -lc  
+chmod a-x "control/rl.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/serial_ms.o" -c "control/serial_ms.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+control/serial_ms.c:92:38: warning: unused parameter 's' [-Wunused-parameter]
+static void *serial_ms_new(t_symbol *s)
+                                     ^
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -o "control/serial_ms.pd_linux" "control/serial_ms.o"    -lc  
+chmod a-x "control/serial_ms.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/sl.o" -c "control/sl.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "control/sl.pd_linux" "control/sl.o"    -lc  
+chmod a-x "control/sl.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/getdir.o" -c "control/getdir.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "control/getdir.pd_linux" "control/getdir.o"    -lc  
+chmod a-x "control/getdir.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/rtout.o" -c "control/rtout.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "control/rtout.pd_linux" "control/rtout.o"    -lc  
+chmod a-x "control/rtout.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/serial_mt.o" -c "control/serial_mt.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+control/serial_mt.c:52:38: warning: unused parameter 's' [-Wunused-parameter]
+static void *serial_mt_new(t_symbol *s)
+                                     ^
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -o "control/serial_mt.pd_linux" "control/serial_mt.o"    -lc  
+chmod a-x "control/serial_mt.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/stripdir.o" -c "control/stripdir.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "control/stripdir.pd_linux" "control/stripdir.o"    -lc  
+chmod a-x "control/stripdir.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/inv.o" -c "control/inv.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+control/inv.c:31:28: warning: unused parameter 'x' [-Wunused-parameter]
+static void inv_dsp(t_inv *x, t_signal **sp)
+                           ^
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -o "control/inv.pd_linux" "control/inv.o"    -lc  
+chmod a-x "control/inv.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/serial_bird.o" -c "control/serial_bird.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+control/serial_bird.c:231:40: warning: unused parameter 's' [-Wunused-parameter]
+static void *serial_bird_new(t_symbol *s)
+                                       ^
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -o "control/serial_bird.pd_linux" "control/serial_bird.o"    -lc  
+chmod a-x "control/serial_bird.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/shell.o" -c "control/shell.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+control/shell.c:31:9: warning: unused variable 'p1' [-Wunused-variable]
+    int p1 ,p2, p3;
+        ^
+control/shell.c:31:13: warning: unused variable 'p2' [-Wunused-variable]
+    int p1 ,p2, p3;
+            ^
+control/shell.c:31:17: warning: unused variable 'p3' [-Wunused-variable]
+    int p1 ,p2, p3;
+                ^
+control/shell.c:92:26: warning: unused parameter 'x' [-Wunused-parameter]
+void shell_bang(t_shell *x)
+                         ^
+control/shell.c:140:10: warning: unused variable 'readto' [-Wunused-variable]
+     int readto =
+         ^
+control/shell.c:179:46: warning: unused parameter 's' [-Wunused-parameter]
+static void shell_send(t_shell *x, t_symbol *s,int ac, t_atom *at)
+                                             ^
+control/shell.c:202:16: warning: unused variable 'sym' [-Wunused-variable]
+     t_symbol* sym;
+               ^
+control/shell.c:54:12: warning: unused variable 'shell_pid' [-Wunused-variable]
+static int shell_pid;
+           ^
+9 warnings generated.
+cc   -rdynamic -shared -fPIC -o "control/shell.pd_linux" "control/shell.o"    -lc  
+chmod a-x "control/shell.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/unserialize.o" -c "control/unserialize.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "control/unserialize.pd_linux" "control/unserialize.o"    -lc  
+chmod a-x "control/unserialize.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/qread.o" -c "control/qread.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "control/qread.pd_linux" "control/qread.o"    -lc  
+chmod a-x "control/qread.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/serialize.o" -c "control/serialize.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "control/serialize.pd_linux" "control/serialize.o"    -lc  
+chmod a-x "control/serialize.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/sinh.o" -c "control/sinh.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+control/sinh.c:25:24: warning: unused parameter 'x' [-Wunused-parameter]
+void sinh_bang(t_sinh *x)
+                       ^
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -o "control/sinh.pd_linux" "control/sinh.o"    -lc  
+chmod a-x "control/sinh.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "control/unwonk.o" -c "control/unwonk.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+control/unwonk.c:24:35: warning: unused parameter 's' [-Wunused-parameter]
+static void *unwonk_new(t_symbol *s, int argc, t_atom *argv)
+                                  ^
+control/unwonk.c:78:48: warning: unused parameter 's' [-Wunused-parameter]
+static void unwonk_list(t_unwonk *x, t_symbol *s, int argc, t_atom *argv)
+                                               ^
+3 warnings generated.
+cc   -rdynamic -shared -fPIC -o "control/unwonk.pd_linux" "control/unwonk.o"    -lc  
+chmod a-x "control/unwonk.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "experimental/fofsynth~.o" -c "experimental/fofsynth~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "experimental/fofsynth~.pd_linux" "experimental/fofsynth~.o"    -lc  
+chmod a-x "experimental/fofsynth~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "experimental/tabwrite4~.o" -c "experimental/tabwrite4~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+experimental/tabwrite4~.c:55:14: warning: unused variable 'end' [-Wunused-variable]
+    t_float* end = in1 + n;
+             ^
+experimental/tabwrite4~.c:25:13: warning: unused function 'tabwrite4_tilde_tick' [-Wunused-function]
+static void tabwrite4_tilde_tick(t_tabwrite4_tilde *x);
+            ^
+3 warnings generated.
+cc   -rdynamic -shared -fPIC -o "experimental/tabwrite4~.pd_linux" "experimental/tabwrite4~.o"    -lc  
+chmod a-x "experimental/tabwrite4~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "experimental/pvocfreq.o" -c "experimental/pvocfreq.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+1 warning generated.
+cc   -rdynamic -shared -fPIC -o "experimental/pvocfreq.pd_linux" "experimental/pvocfreq.o"    -lc  
+chmod a-x "experimental/pvocfreq.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "filters/bandpass.o" -c "filters/bandpass.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from filters/bandpass.c:20:
+filters/filters.h:43:16: warning: unused parameter 'ff1' [-Wunused-parameter]
+                            t_float ff1,
+                                    ^
+filters/filters.h:44:16: warning: unused parameter 'ff2' [-Wunused-parameter]
+                            t_float ff2,
+                                    ^
+filters/filters.h:45:16: warning: unused parameter 'ff3' [-Wunused-parameter]
+                            t_float ff3)
+                                    ^
+4 warnings generated.
+cc   -rdynamic -shared -fPIC -o "filters/bandpass.pd_linux" "filters/bandpass.o"    -lc  
+chmod a-x "filters/bandpass.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "filters/highpass.o" -c "filters/highpass.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from filters/highpass.c:19:
+filters/filters.h:43:16: warning: unused parameter 'ff1' [-Wunused-parameter]
+                            t_float ff1,
+                                    ^
+filters/filters.h:44:16: warning: unused parameter 'ff2' [-Wunused-parameter]
+                            t_float ff2,
+                                    ^
+filters/filters.h:45:16: warning: unused parameter 'ff3' [-Wunused-parameter]
+                            t_float ff3)
+                                    ^
+4 warnings generated.
+cc   -rdynamic -shared -fPIC -o "filters/highpass.pd_linux" "filters/highpass.o"    -lc  
+chmod a-x "filters/highpass.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "filters/hlshelf.o" -c "filters/hlshelf.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+filters/hlshelf.c:41:16: warning: unused parameter 'ff1' [-Wunused-parameter]
+                            t_float ff1,
+                                    ^
+filters/hlshelf.c:42:16: warning: unused parameter 'ff2' [-Wunused-parameter]
+                            t_float ff2,
+                                    ^
+filters/hlshelf.c:43:16: warning: unused parameter 'ff3' [-Wunused-parameter]
+                            t_float ff3)
+                                    ^
+filters/hlshelf.c:177:36: warning: unused parameter 's' [-Wunused-parameter]
+static void *hlshelf_new(t_symbol* s,t_int argc, t_atom* at)
+                                   ^
+filters/hlshelf.c:177:44: warning: unused parameter 'argc' [-Wunused-parameter]
+static void *hlshelf_new(t_symbol* s,t_int argc, t_atom* at)
+                                           ^
+6 warnings generated.
+cc   -rdynamic -shared -fPIC -o "filters/hlshelf.pd_linux" "filters/hlshelf.o"    -lc  
+chmod a-x "filters/hlshelf.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "filters/lowshelf.o" -c "filters/lowshelf.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from filters/lowshelf.c:19:
+filters/filters.h:43:16: warning: unused parameter 'ff1' [-Wunused-parameter]
+                            t_float ff1,
+                                    ^
+filters/filters.h:44:16: warning: unused parameter 'ff2' [-Wunused-parameter]
+                            t_float ff2,
+                                    ^
+filters/filters.h:45:16: warning: unused parameter 'ff3' [-Wunused-parameter]
+                            t_float ff3)
+                                    ^
+4 warnings generated.
+cc   -rdynamic -shared -fPIC -o "filters/lowshelf.pd_linux" "filters/lowshelf.o"    -lc  
+chmod a-x "filters/lowshelf.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "filters/notch.o" -c "filters/notch.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from filters/notch.c:19:
+filters/filters.h:43:16: warning: unused parameter 'ff1' [-Wunused-parameter]
+                            t_float ff1,
+                                    ^
+filters/filters.h:44:16: warning: unused parameter 'ff2' [-Wunused-parameter]
+                            t_float ff2,
+                                    ^
+filters/filters.h:45:16: warning: unused parameter 'ff3' [-Wunused-parameter]
+                            t_float ff3)
+                                    ^
+4 warnings generated.
+cc   -rdynamic -shared -fPIC -o "filters/notch.pd_linux" "filters/notch.o"    -lc  
+chmod a-x "filters/notch.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "filters/equalizer.o" -c "filters/equalizer.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from filters/equalizer.c:19:
+filters/filters.h:43:16: warning: unused parameter 'ff1' [-Wunused-parameter]
+                            t_float ff1,
+                                    ^
+filters/filters.h:44:16: warning: unused parameter 'ff2' [-Wunused-parameter]
+                            t_float ff2,
+                                    ^
+filters/filters.h:45:16: warning: unused parameter 'ff3' [-Wunused-parameter]
+                            t_float ff3)
+                                    ^
+4 warnings generated.
+cc   -rdynamic -shared -fPIC -o "filters/equalizer.pd_linux" "filters/equalizer.o"    -lc  
+chmod a-x "filters/equalizer.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "filters/highshelf.o" -c "filters/highshelf.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from filters/highshelf.c:19:
+filters/filters.h:43:16: warning: unused parameter 'ff1' [-Wunused-parameter]
+                            t_float ff1,
+                                    ^
+filters/filters.h:44:16: warning: unused parameter 'ff2' [-Wunused-parameter]
+                            t_float ff2,
+                                    ^
+filters/filters.h:45:16: warning: unused parameter 'ff3' [-Wunused-parameter]
+                            t_float ff3)
+                                    ^
+4 warnings generated.
+cc   -rdynamic -shared -fPIC -o "filters/highshelf.pd_linux" "filters/highshelf.o"    -lc  
+chmod a-x "filters/highshelf.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "filters/lowpass.o" -c "filters/lowpass.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from filters/lowpass.c:19:
+filters/filters.h:43:16: warning: unused parameter 'ff1' [-Wunused-parameter]
+                            t_float ff1,
+                                    ^
+filters/filters.h:44:16: warning: unused parameter 'ff2' [-Wunused-parameter]
+                            t_float ff2,
+                                    ^
+filters/filters.h:45:16: warning: unused parameter 'ff3' [-Wunused-parameter]
+                            t_float ff3)
+                                    ^
+4 warnings generated.
+cc   -rdynamic -shared -fPIC -o "filters/lowpass.pd_linux" "filters/lowpass.o"    -lc  
+chmod a-x "filters/lowpass.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "filters/moog~.o" -c "filters/moog~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+filters/moog~.c:28:33: warning: unused parameter 's' [-Wunused-parameter]
+static void *moog_new(t_symbol *s, int argc, t_atom *argv)
+                                ^
+filters/moog~.c:28:54: warning: unused parameter 'argv' [-Wunused-parameter]
+static void *moog_new(t_symbol *s, int argc, t_atom *argv)
+                                                     ^
+filters/moog~.c:125:13: warning: unused variable 'temp' [-Wunused-variable]
+    t_float temp,temp2;
+            ^
+filters/moog~.c:125:18: warning: unused variable 'temp2' [-Wunused-variable]
+    t_float temp,temp2;
+                 ^
+5 warnings generated.
+cc   -rdynamic -shared -fPIC -o "filters/moog~.pd_linux" "filters/moog~.o"    -lc  
+chmod a-x "filters/moog~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "gui/button.o" -c "gui/button.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+gui/button.c:148:10: warning: unused variable 'n' [-Wunused-variable]
+     int n;
+         ^
+gui/button.c:222:37: warning: unused parameter 'z' [-Wunused-parameter]
+static void button_activate(t_gobj *z, t_glist *glist, int state)
+                                    ^
+gui/button.c:222:49: warning: unused parameter 'glist' [-Wunused-parameter]
+static void button_activate(t_gobj *z, t_glist *glist, int state)
+                                                ^
+gui/button.c:222:60: warning: unused parameter 'state' [-Wunused-parameter]
+static void button_activate(t_gobj *z, t_glist *glist, int state)
+                                                           ^
+gui/button.c:260:29: warning: unused parameter 'x' [-Wunused-parameter]
+void button_color(t_button* x,t_symbol* col)
+                            ^
+gui/button.c:260:41: warning: unused parameter 'col' [-Wunused-parameter]
+void button_color(t_button* x,t_symbol* col)
+                                        ^
+gui/button.c:80:13: warning: unused function 'draw_handle' [-Wunused-function]
+static void draw_handle(t_button *x, t_glist *glist, int firsttime) {
+            ^
+8 warnings generated.
+cc   -rdynamic -shared -fPIC -o "gui/button.pd_linux" "gui/button.o"    -lc  
+chmod a-x "gui/button.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "gui/fatom.o" -c "gui/fatom.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from gui/fatom.c:3:
+gui/fatom.h:227:10: warning: unused variable 'n' [-Wunused-variable]
+     int n;
+         ^
+gui/fatom.h:301:36: warning: unused parameter 'z' [-Wunused-parameter]
+static void fatom_activate(t_gobj *z, t_glist *glist, int state)
+                                   ^
+gui/fatom.h:301:48: warning: unused parameter 'glist' [-Wunused-parameter]
+static void fatom_activate(t_gobj *z, t_glist *glist, int state)
+                                               ^
+gui/fatom.h:301:59: warning: unused parameter 'state' [-Wunused-parameter]
+static void fatom_activate(t_gobj *z, t_glist *glist, int state)
+                                                          ^
+gui/fatom.h:339:27: warning: unused parameter 'x' [-Wunused-parameter]
+void fatom_color(t_fatom* x,t_symbol* col)
+                          ^
+gui/fatom.h:339:39: warning: unused parameter 'col' [-Wunused-parameter]
+void fatom_color(t_fatom* x,t_symbol* col)
+                                      ^
+gui/fatom.h:362:46: warning: unused parameter 'f' [-Wunused-parameter]
+static void fatom_bang(t_fatom* x,t_floatarg f) 
+                                             ^
+gui/fatom.h:374:38: warning: unused parameter 'z' [-Wunused-parameter]
+static void fatom_properties(t_gobj *z, t_glist *owner)
+                                     ^
+gui/fatom.h:374:50: warning: unused parameter 'owner' [-Wunused-parameter]
+static void fatom_properties(t_gobj *z, t_glist *owner)
+                                                 ^
+gui/fatom.h:414:27: warning: format specifies type 'unsigned int' but the argument has type 't_fatom *' (aka 'struct _fatom *') [-Wformat]
+    sprintf(buf,"fatom%x",x);
+                      ~~  ^
+gui/fatom.h:76:13: warning: unused function 'draw_handle' [-Wunused-function]
+static void draw_handle(t_fatom *x, t_glist *glist, int firsttime) {
+            ^
+gui/fatom.h:374:13: warning: unused function 'fatom_properties' [-Wunused-function]
+static void fatom_properties(t_gobj *z, t_glist *owner)
+            ^
+13 warnings generated.
+cc   -rdynamic -shared -fPIC -o "gui/fatom.pd_linux" "gui/fatom.o"    -lc  
+chmod a-x "gui/fatom.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "gui/image.o" -c "gui/image.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+gui/image.c:52:10: warning: unused variable 'n' [-Wunused-variable]
+     int n;
+         ^
+gui/image.c:132:36: warning: unused parameter 'z' [-Wunused-parameter]
+static void image_activate(t_gobj *z, t_glist *glist, int state)
+                                   ^
+gui/image.c:132:48: warning: unused parameter 'glist' [-Wunused-parameter]
+static void image_activate(t_gobj *z, t_glist *glist, int state)
+                                               ^
+gui/image.c:132:59: warning: unused parameter 'state' [-Wunused-parameter]
+static void image_activate(t_gobj *z, t_glist *glist, int state)
+                                                          ^
+gui/image.c:175:27: warning: unused parameter 'x' [-Wunused-parameter]
+void image_color(t_image* x,t_symbol* col)
+                          ^
+gui/image.c:175:39: warning: unused parameter 'col' [-Wunused-parameter]
+void image_color(t_image* x,t_symbol* col)
+                                      ^
+gui/image.c:182:39: warning: unused parameter 's' [-Wunused-parameter]
+void image_open(t_image* x, t_symbol *s, t_int argc, t_atom *argv)
+                                      ^
+gui/image.c:207:34: warning: unused parameter 's' [-Wunused-parameter]
+static void *image_new(t_symbol *s, t_int argc, t_atom *argv)
+                                 ^
+9 warnings generated.
+cc   -rdynamic -shared -fPIC -o "gui/image.pd_linux" "gui/image.o"    -lc  
+chmod a-x "gui/image.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "gui/sliderh.o" -c "gui/sliderh.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from gui/sliderh.c:10:
+gui/fatom.h:227:10: warning: unused variable 'n' [-Wunused-variable]
+     int n;
+         ^
+gui/fatom.h:301:36: warning: unused parameter 'z' [-Wunused-parameter]
+static void fatom_activate(t_gobj *z, t_glist *glist, int state)
+                                   ^
+gui/fatom.h:301:48: warning: unused parameter 'glist' [-Wunused-parameter]
+static void fatom_activate(t_gobj *z, t_glist *glist, int state)
+                                               ^
+gui/fatom.h:301:59: warning: unused parameter 'state' [-Wunused-parameter]
+static void fatom_activate(t_gobj *z, t_glist *glist, int state)
+                                                          ^
+gui/fatom.h:339:27: warning: unused parameter 'x' [-Wunused-parameter]
+void fatom_color(t_fatom* x,t_symbol* col)
+                          ^
+gui/fatom.h:339:39: warning: unused parameter 'col' [-Wunused-parameter]
+void fatom_color(t_fatom* x,t_symbol* col)
+                                      ^
+gui/fatom.h:362:46: warning: unused parameter 'f' [-Wunused-parameter]
+static void fatom_bang(t_fatom* x,t_floatarg f) 
+                                             ^
+gui/fatom.h:374:38: warning: unused parameter 'z' [-Wunused-parameter]
+static void fatom_properties(t_gobj *z, t_glist *owner)
+                                     ^
+gui/fatom.h:374:50: warning: unused parameter 'owner' [-Wunused-parameter]
+static void fatom_properties(t_gobj *z, t_glist *owner)
+                                                 ^
+gui/fatom.h:414:27: warning: format specifies type 'unsigned int' but the argument has type 't_fatom *' (aka 'struct _fatom *') [-Wformat]
+    sprintf(buf,"fatom%x",x);
+                      ~~  ^
+gui/fatom.h:76:13: warning: unused function 'draw_handle' [-Wunused-function]
+static void draw_handle(t_fatom *x, t_glist *glist, int firsttime) {
+            ^
+gui/fatom.h:374:13: warning: unused function 'fatom_properties' [-Wunused-function]
+static void fatom_properties(t_gobj *z, t_glist *owner)
+            ^
+13 warnings generated.
+cc   -rdynamic -shared -fPIC -o "gui/sliderh.pd_linux" "gui/sliderh.o"    -lc  
+chmod a-x "gui/sliderh.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "gui/ticker.o" -c "gui/ticker.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from gui/ticker.c:10:
+gui/fatom.h:227:10: warning: unused variable 'n' [-Wunused-variable]
+     int n;
+         ^
+gui/fatom.h:301:36: warning: unused parameter 'z' [-Wunused-parameter]
+static void fatom_activate(t_gobj *z, t_glist *glist, int state)
+                                   ^
+gui/fatom.h:301:48: warning: unused parameter 'glist' [-Wunused-parameter]
+static void fatom_activate(t_gobj *z, t_glist *glist, int state)
+                                               ^
+gui/fatom.h:301:59: warning: unused parameter 'state' [-Wunused-parameter]
+static void fatom_activate(t_gobj *z, t_glist *glist, int state)
+                                                          ^
+gui/fatom.h:339:27: warning: unused parameter 'x' [-Wunused-parameter]
+void fatom_color(t_fatom* x,t_symbol* col)
+                          ^
+gui/fatom.h:339:39: warning: unused parameter 'col' [-Wunused-parameter]
+void fatom_color(t_fatom* x,t_symbol* col)
+                                      ^
+gui/fatom.h:362:46: warning: unused parameter 'f' [-Wunused-parameter]
+static void fatom_bang(t_fatom* x,t_floatarg f) 
+                                             ^
+gui/fatom.h:374:38: warning: unused parameter 'z' [-Wunused-parameter]
+static void fatom_properties(t_gobj *z, t_glist *owner)
+                                     ^
+gui/fatom.h:374:50: warning: unused parameter 'owner' [-Wunused-parameter]
+static void fatom_properties(t_gobj *z, t_glist *owner)
+                                                 ^
+gui/fatom.h:414:27: warning: format specifies type 'unsigned int' but the argument has type 't_fatom *' (aka 'struct _fatom *') [-Wformat]
+    sprintf(buf,"fatom%x",x);
+                      ~~  ^
+gui/fatom.h:76:13: warning: unused function 'draw_handle' [-Wunused-function]
+static void draw_handle(t_fatom *x, t_glist *glist, int firsttime) {
+            ^
+gui/fatom.h:374:13: warning: unused function 'fatom_properties' [-Wunused-function]
+static void fatom_properties(t_gobj *z, t_glist *owner)
+            ^
+13 warnings generated.
+cc   -rdynamic -shared -fPIC -o "gui/ticker.pd_linux" "gui/ticker.o"    -lc  
+chmod a-x "gui/ticker.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.26"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "gui/envgen.o" -c "gui/envgen.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+In file included from gui/envgen.c:14:
+gui/w_envgen.h:62:10: warning: unused variable 'ret' [-Wunused-variable]
+     int ret = -1;
+         ^
+gui/w_envgen.h:286:10: warning: unused variable 'n' [-Wunused-variable]
+     int n;
+         ^
+gui/w_envgen.h:338:37: warning: unused parameter 'z' [-Wunused-parameter]
+static void envgen_activate(t_gobj *z, t_glist *glist, int state)
+                                    ^
+gui/w_envgen.h:338:49: warning: unused parameter 'glist' [-Wunused-parameter]
+static void envgen_activate(t_gobj *z, t_glist *glist, int state)
+                                                ^
+gui/w_envgen.h:338:60: warning: unused parameter 'state' [-Wunused-parameter]
+static void envgen_activate(t_gobj *z, t_glist *glist, int state)
+                                                           ^
+gui/w_envgen.h:456:14: error: non-void function 'envgen_newclick' should return a value [-Wreturn-type]
+             return;
+             ^
+gui/w_envgen.h:440:40: warning: unused parameter 'alt' [-Wunused-parameter]
+    int xpos, int ypos, int shift, int alt, int dbl, int doit)
+                                       ^
+gui/w_envgen.h:440:49: warning: unused parameter 'dbl' [-Wunused-parameter]
+    int xpos, int ypos, int shift, int alt, int dbl, int doit)
+                                                ^
+gui/envgen.c:128:40: warning: unused parameter 's' [-Wunused-parameter]
+void envgen_list(t_envgen *x,t_symbol* s, int argc,t_atom* argv)
+                                       ^
+gui/envgen.c:207:71: warning: format specifies type 'double' but the argument has type 'int' [-Wformat]
+                 pd_error(x,"sustain value not betweem 0 and %f, ignoring message", x->last_state);
+                                                             ~~                     ^~~~~~~~~~~~~
+                                                             %d
+gui/envgen.c:239:35: warning: unused parameter 's' [-Wunused-parameter]
+static void *envgen_new(t_symbol *s,int argc,t_atom* argv)
+                                  ^
+gui/envgen.c:344:37: warning: incompatible pointer types assigning to 't_clickfn' (aka 'int (*)(t_gobj *, struct _glist *, int, int, int, int, int, int)') from 'int (t_envgen *, struct _glist *, int, int, int, int, int, int)' [-Wincompatible-pointer-types]
+    envgen_widgetbehavior.w_clickfn = envgen_newclick;
+                                    ^ ~~~~~~~~~~~~~~~
+12 warnings and 1 error generated.
+make[1]: *** [gui/envgen.o] Error 1
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+dh_auto_build: make -j1 returned exit code 2
+make: *** [build] Error 2
+dpkg-buildpackage: error: debian/rules build gave error exit status 2
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140405-2206
+
+Finished
+────────
+
+E: Build failure (dpkg-buildpackage died)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 2080
+Build-Time: 2
+Distribution: sid
+Fail-Stage: build
+Host Architecture: amd64
+Install-Time: 11
+Job: pd-ggee_0.26-3.dsc
+Machine Architecture: amd64
+Package: pd-ggee
+Package-Time: 20
+Source-Version: 0.26-3
+Space: 2080
+Status: attempted
+Version: 0.26-3
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140405-2206
+Build needed 00:00:20, 2080k disc space

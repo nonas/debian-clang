@@ -1,0 +1,15 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-04-05
+
+--- a/gui/w_envgen.h
++++ b/gui/w_envgen.h
+@@ -453,7 +453,7 @@
+          if (x->resizeable && (xpos > wxpos + x->w.width) && 
+              (ypos > wypos)) {
+              x->resizing = 1;     
+-             return;
++             return 0;
+          }
+          
+          x->w.shift = shift;
