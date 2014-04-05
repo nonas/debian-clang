@@ -1,0 +1,1996 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ pd-unauthorized 0.1-1 (amd64)                              05 Apr 2014 21:55 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: pd-unauthorized
+Version: 0.1-1
+Source Version: 0.1-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/pd-unauthorized-9V7jWk/pd-unauthorized-0.1' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/pd-unauthorized-9V7jWk' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-676f8691-c24a-4165-bfea-ec05f0941b93' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+pd-unauthorized_0.1-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-BxWcsE/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13262 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7.0.50~), puredata-dev | puredata (<< 0.43), libmp3lame-dev, libspeex-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7.0.50~), puredata-dev, libmp3lame-dev, libspeex-dev
+dpkg-deb: building package `sbuild-build-depends-pd-unauthorized-dummy' in `/«BUILDDIR»/resolver-Y8RxKu/apt_archive/sbuild-build-depends-pd-unauthorized-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install pd-unauthorized build dependencies (apt-based resolver)              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmp3lame-dev libmp3lame0
+  libspeex-dev libspeex1 libunistring0 libxml2 man-db po-debconf puredata-dev
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff pkg-config speex
+  less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmp3lame-dev libmp3lame0
+  libspeex-dev libspeex1 libunistring0 libxml2 man-db po-debconf puredata-dev
+  sbuild-build-depends-pd-unauthorized-dummy
+0 upgraded, 19 newly installed, 0 to remove and 19 not upgraded.
+Need to get 9299 kB/9300 kB of archives.
+After this operation, 24.8 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libmp3lame0 amd64 3.99.5+repack1-3 [404 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libspeex1 amd64 1.2~rc1.1-1 [54.2 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libmp3lame-dev amd64 3.99.5+repack1-3 [440 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libspeex-dev amd64 1.2~rc1.1-1 [67.1 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main puredata-dev all 0.45.4-1 [35.2 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 9299 kB in 0s (67.1 MB/s)
+Selecting previously unselected package groff-base.
+(Reading database ... 13262 files and directories currently installed.)
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libmp3lame0:amd64.
+Preparing to unpack .../libmp3lame0_3.99.5+repack1-3_amd64.deb ...
+Unpacking libmp3lame0:amd64 (3.99.5+repack1-3) ...
+Selecting previously unselected package libspeex1:amd64.
+Preparing to unpack .../libspeex1_1.2~rc1.1-1_amd64.deb ...
+Unpacking libspeex1:amd64 (1.2~rc1.1-1) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libmp3lame-dev:amd64.
+Preparing to unpack .../libmp3lame-dev_3.99.5+repack1-3_amd64.deb ...
+Unpacking libmp3lame-dev:amd64 (3.99.5+repack1-3) ...
+Selecting previously unselected package libspeex-dev:amd64.
+Preparing to unpack .../libspeex-dev_1.2~rc1.1-1_amd64.deb ...
+Unpacking libspeex-dev:amd64 (1.2~rc1.1-1) ...
+Selecting previously unselected package puredata-dev.
+Preparing to unpack .../puredata-dev_0.45.4-1_all.deb ...
+Unpacking puredata-dev (0.45.4-1) ...
+Selecting previously unselected package sbuild-build-depends-pd-unauthorized-dummy.
+Preparing to unpack .../sbuild-build-depends-pd-unauthorized-dummy.deb ...
+Unpacking sbuild-build-depends-pd-unauthorized-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libmp3lame0:amd64 (3.99.5+repack1-3) ...
+Setting up libspeex1:amd64 (1.2~rc1.1-1) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libmp3lame-dev:amd64 (3.99.5+repack1-3) ...
+Setting up libspeex-dev:amd64 (1.2~rc1.1-1) ...
+Setting up puredata-dev (0.45.4-1) ...
+Setting up sbuild-build-depends-pd-unauthorized-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-5 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.7-1
+Package versions: apt_1.0 base-files_7.2 base-passwd_3.5.32 bash_4.3-5 binfmt-support_2.1.4-1 binutils_2.24-5 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-7 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.4-1 libaudit1_1:2.3.4-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.6 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.1~rc1+r3.0.13-12 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2 libgomp1_4.8.2-16 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.8.2-16 libjsoncpp0_0.6.0~rc2-3 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.7 libmp3lame-dev_3.99.5+repack1-3 libmp3lame0_3.99.5+repack1-3 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpcre3_1:8.31-2 libpipeline1_1.3.0-1 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libquadmath0_4.8.2-16 libreadline6_6.3-5 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libspeex-dev_1.2~rc1.1-1 libspeex1_1.2~rc1.1-1 libsqlite3-0_3.8.4.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtsan0_4.8.2-16 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.7-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-4 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 puredata-dev_0.45.4-1 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-minimal_2.7.6-8 readline-common_6.3-5 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-pd-unauthorized-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (pd-unauthorized_0.1-1.dsc)
+dpkg-source: info: extracting pd-unauthorized in pd-unauthorized-0.1
+dpkg-source: info: unpacking pd-unauthorized_0.1.orig.tar.gz
+dpkg-source: info: unpacking pd-unauthorized_0.1-1.debian.tar.xz
+dpkg-source: info: applying clang_FTBFS_Wreturn-type.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-676f8691-c24a-4165-bfea-ec05f0941b93
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package pd-unauthorized
+dpkg-buildpackage: source version 0.1-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Hans-Christoph Steiner <hans@eds.org>
+ dpkg-source --before-build pd-unauthorized-0.1
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+ fakeroot debian/rules clean
+dh clean --buildsystem=makefile
+   dh_testdir -O--buildsystem=makefile
+   dh_auto_clean -O--buildsystem=makefile
+make[1]: Entering directory `/«PKGBUILDDIR»'
+rm -f -- audience~.o beatify~.o blinkenlights.o compressor~.o cooled~.o countund.o disto~.o exciter.o filterbank~.o formant~.o grid.o mp3cast~.o mp3fileout~.o mp3streamin~.o mp3streamout~.o mp3write~.o pianoroll.o playlist.o probalizer.o randomblock~.o samplebox~.o scratcher~.o scrolllist.o sonogram~.o speexin~.o speexout~.o spigot~.o wahwah~.o mp3amp~.o  
+rm -f -- audience~.pd_linux beatify~.pd_linux blinkenlights.pd_linux compressor~.pd_linux cooled~.pd_linux countund.pd_linux disto~.pd_linux exciter.pd_linux filterbank~.pd_linux formant~.pd_linux grid.pd_linux mp3cast~.pd_linux mp3fileout~.pd_linux mp3streamin~.pd_linux mp3streamout~.pd_linux mp3write~.pd_linux pianoroll.pd_linux playlist.pd_linux probalizer.pd_linux randomblock~.pd_linux samplebox~.pd_linux scratcher~.pd_linux scrolllist.pd_linux sonogram~.pd_linux speexin~.pd_linux speexout~.pd_linux spigot~.pd_linux wahwah~.pd_linux mp3amp~.pd_linux
+rm -f -- unauthorized.o
+rm -f -- unauthorized.pd_linux
+rm -f -- 
+rm -f -- unauthorized-0.1-linux-x86_64.tar.gz
+rm -rf -- unauthorized-0.1-linux-x86_64
+rm -f -- unauthorized-0.1.tar.gz
+rm -rf -- unauthorized-0.1
+rm -f -- pd-unauthorized_0.1.tar.gz
+rm -rf -- pd-unauthorized_0.1
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_clean -O--buildsystem=makefile
+ dpkg-source -b pd-unauthorized-0.1
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building pd-unauthorized using existing ./pd-unauthorized_0.1.orig.tar.gz
+dpkg-source: info: building pd-unauthorized in pd-unauthorized_0.1-1.debian.tar.xz
+dpkg-source: info: building pd-unauthorized in pd-unauthorized_0.1-1.dsc
+ debian/rules build
+dh build --buildsystem=makefile
+   dh_testdir -O--buildsystem=makefile
+   dh_auto_configure -O--buildsystem=makefile
+   dh_auto_build -O--buildsystem=makefile
+make[1]: Entering directory `/«PKGBUILDDIR»'
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "audience~.o" -c "audience~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+audience~.c:390:13: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nboutputs
+            ^~~~~~~~~~
+audience~.c:390:25: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nboutputs
+                        ^~~~~~~~~~~
+audience~.c:390:38: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nboutputs
+                                     ^~~~~~~~~~~~~~
+audience~.c:384:53: warning: unused parameter 'owner' [-Wunused-parameter]
+static void audience_properties(t_gobj *z, t_glist *owner)
+                                                    ^
+audience~.c:419:60: warning: unused parameter 's' [-Wunused-parameter]
+static void audience_dialog(t_audience_tilde *x, t_symbol *s, int argc, t_atom *argv)
+                                                           ^
+audience~.c:634:51: warning: unused parameter 'shift' [-Wunused-parameter]
+                          int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                  ^
+audience~.c:634:62: warning: unused parameter 'alt' [-Wunused-parameter]
+                          int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                             ^
+audience~.c:634:71: warning: unused parameter 'dbl' [-Wunused-parameter]
+                          int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                      ^
+audience~.c:683:11: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^
+audience~.c:682:11: warning: unused variable 'x2' [-Wunused-variable]
+    t_pd *x2;
+          ^
+audience~.c:678:49: warning: unused parameter 's' [-Wunused-parameter]
+static t_audience_tilde *audience_new(t_symbol *s, int argc, t_atom *argv)
+                                                ^
+audience~.c:940:96: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+                        error( "audience~ : delay : %d : wrong readpos !!! : %d >= %d or < 0", delay, readpos, x->x_audiobuffersize );
+                                                    ~~                                         ^~~~~
+                                                    %ld
+audience~.c:940:103: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+                        error( "audience~ : delay : %d : wrong readpos !!! : %d >= %d or < 0", delay, readpos, x->x_audiobuffersize );
+                                                                             ~~                       ^~~~~~~
+                                                                             %ld
+audience~.c:940:112: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+                        error( "audience~ : delay : %d : wrong readpos !!! : %d >= %d or < 0", delay, readpos, x->x_audiobuffersize );
+                                                                                   ~~                          ^~~~~~~~~~~~~~~~~~~~
+                                                                                   %ld
+audience~.c:1041:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  audience_version );
+                      ^~~~~~~~~~~~~~~~
+16 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "audience~.pd_linux" "audience~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "audience~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "beatify~.o" -c "beatify~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+beatify~.c:174:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  beatify_version );
+                      ^~~~~~~~~~~~~~~
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "beatify~.pd_linux" "beatify~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "beatify~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "blinkenlights.o" -c "blinkenlights.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+blinkenlights.c:205:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(x->x_glist);
+              ^
+blinkenlights.c:253:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(x->x_glist);
+              ^
+blinkenlights.c:649:22: warning: unused variable 'newvalue' [-Wunused-variable]
+    int i, n, width, newvalue, height, nwidth;
+                     ^
+blinkenlights.c:649:12: warning: unused variable 'n' [-Wunused-variable]
+    int i, n, width, newvalue, height, nwidth;
+           ^
+blinkenlights.c:649:9: warning: unused variable 'i' [-Wunused-variable]
+    int i, n, width, newvalue, height, nwidth;
+        ^
+blinkenlights.c:870:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, blinkenlights_version);
+                     ^~~~~~~~~~~~~~~~~~~~~
+7 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "blinkenlights.pd_linux" "blinkenlights.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "blinkenlights.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "compressor~.o" -c "compressor~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+compressor~.c:100:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  compressor_version );
+                      ^~~~~~~~~~~~~~~~~~
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "compressor~.pd_linux" "compressor~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "compressor~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "cooled~.o" -c "cooled~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+cooled~.c:241:72: warning: format specifies type 'unsigned int' but the argument has type 't_cooled *' (aka 'struct _cooled *') [-Wformat]
+        sprintf( x->x_guicommand, "COOLEDIMAGE%x put {%s} -to %d 0\n", x, x->x_gifdata, (bnumber*x->x_zoom)+i );
+                                              ~~                       ^
+cooled~.c:173:9: warning: unused variable 'phase' [-Wunused-variable]
+    int phase=0;
+        ^
+cooled~.c:172:13: warning: unused variable 'fspectrum' [-Wunused-variable]
+    t_float fspectrum=0.0;
+            ^
+cooled~.c:169:55: warning: unused parameter 'glist' [-Wunused-parameter]
+static void cooled_update_block(t_cooled *x, t_glist *glist, int bnumber)
+                                                      ^
+cooled~.c:253:10: warning: unused variable 'fillColor' [-Wunused-variable]
+    char fillColor[ 16 ];
+         ^
+cooled~.c:250:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(glist);
+              ^
+cooled~.c:252:13: warning: unused variable 'fspectrum' [-Wunused-variable]
+    t_float fspectrum=0.0;
+            ^
+cooled~.c:337:22: warning: incompatible pointer to integer conversion assigning to 'pthread_t' (aka 'unsigned long') from 'void *' [-Wint-conversion]
+    x->x_updatechild = NULL;
+                     ^ ~~~~
+cooled~.c:342:54: warning: unused parameter 'glist' [-Wunused-parameter]
+static void cooled_update_part(t_cooled *x, t_glist *glist, int bstart, int bend,
+                                                     ^
+cooled~.c:590:48: warning: unused parameter 'owner' [-Wunused-parameter]
+static void cooled_getrect(t_gobj *z, t_glist *owner,
+                                               ^
+cooled~.c:623:14: warning: unused variable 'y' [-Wunused-variable]
+    t_rtext *y;
+             ^
+cooled~.c:657:66: warning: unused parameter 'dy' [-Wunused-parameter]
+static void cooled_motion(t_cooled *x, t_floatarg dx, t_floatarg dy)
+                                                                 ^
+cooled~.c:785:51: warning: unused parameter 'owner' [-Wunused-parameter]
+static void cooled_properties(t_gobj *z, t_glist *owner)
+                                                  ^
+cooled~.c:797:50: warning: unused parameter 's' [-Wunused-parameter]
+static void cooled_dialog(t_cooled *x, t_symbol *s, int argc, t_atom *argv)
+                                                 ^
+cooled~.c:857:9: warning: unused variable 'pipos' [-Wunused-variable]
+    int pipos;
+        ^
+cooled~.c:854:69: warning: unused parameter 'dbl' [-Wunused-parameter]
+                        int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                    ^
+cooled~.c:951:9: warning: unused variable 'fi' [-Wunused-variable]
+    int fi;
+        ^
+cooled~.c:1014:9: warning: unused variable 'fi' [-Wunused-variable]
+    int fi, csize;
+        ^
+cooled~.c:1308:11: warning: unused variable 'operator' [-Wunused-variable]
+    char *operator = soperator->s_name;
+          ^
+cooled~.c:1375:35: warning: unused parameter 's' [-Wunused-parameter]
+static void *cooled_new(t_symbol *s, int argc, t_atom *argv)
+                                  ^
+cooled~.c:1458:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, cooled_version);
+                     ^~~~~~~~~~~~~~
+22 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "cooled~.pd_linux" "cooled~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "cooled~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "countund.o" -c "countund.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+countund.c:58:39: warning: unused parameter 'x' [-Wunused-parameter]
+static void countund_free(t_countund *x)
+                                      ^
+countund.c:89:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+countund.c:118:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, countund_version);
+                     ^~~~~~~~~~~~~~~~
+4 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "countund.pd_linux" "countund.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "countund.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "disto~.o" -c "disto~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+disto~.c:476:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  disto_version );
+                      ^~~~~~~~~~~~~
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "disto~.pd_linux" "disto~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "disto~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "exciter.o" -c "exciter.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+exciter.c:143:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(glist);
+              ^
+exciter.c:268:9: warning: unused variable 'i' [-Wunused-variable]
+    int i, ei, gi;
+        ^
+exciter.c:353:13: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nbevents, x->x_timegrain, x->x_loop, x->x_save );
+            ^~~~~~~~~~
+exciter.c:353:25: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nbevents, x->x_timegrain, x->x_loop, x->x_save );
+                        ^~~~~~~~~~~
+exciter.c:353:38: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nbevents, x->x_timegrain, x->x_loop, x->x_save );
+                                     ^~~~~~~~~~~~~
+exciter.c:347:52: warning: unused parameter 'owner' [-Wunused-parameter]
+static void exciter_properties(t_gobj *z, t_glist *owner)
+                                                   ^
+exciter.c:395:52: warning: unused parameter 's' [-Wunused-parameter]
+static void exciter_dialog(t_exciter *x, t_symbol *s, int argc, t_atom *argv)
+                                                   ^
+exciter.c:512:50: warning: unused parameter 'shift' [-Wunused-parameter]
+                         int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                 ^
+exciter.c:512:61: warning: unused parameter 'alt' [-Wunused-parameter]
+                         int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                            ^
+exciter.c:512:70: warning: unused parameter 'dbl' [-Wunused-parameter]
+                         int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                     ^
+exciter.c:612:13: warning: unused variable 'si' [-Wunused-variable]
+        int si = 0;
+            ^
+exciter.c:542:13: warning: unused variable 'i' [-Wunused-variable]
+    int bi, i, ei, gi;
+            ^
+exciter.c:544:11: warning: unused variable 'x2' [-Wunused-variable]
+    t_pd *x2;
+          ^
+exciter.c:540:41: warning: unused parameter 's' [-Wunused-parameter]
+static t_exciter *exciter_new(t_symbol *s, int argc, t_atom *argv)
+                                        ^
+exciter.c:766:50: warning: unused parameter 'sp' [-Wunused-parameter]
+static void exciter_dsp(t_exciter *x, t_signal **sp)
+                                                 ^
+exciter.c:792:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  exciter_version );
+                      ^~~~~~~~~~~~~~~
+exciter.c:69:12: warning: unused variable 'excitercount' [-Wunused-variable]
+static int excitercount=0;
+           ^
+exciter.c:72:12: warning: unused variable 'pointsize' [-Wunused-variable]
+static int pointsize = 5;
+           ^
+19 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "exciter.pd_linux" "exciter.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "exciter.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "filterbank~.o" -c "filterbank~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+filterbank~.c:255:11: warning: unused variable 'ii' [-Wunused-variable]
+    t_int ii;
+          ^
+filterbank~.c:271:13: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_lowfreq, x->x_highfreq );
+            ^~~~~~~~~~~~
+filterbank~.c:271:27: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_lowfreq, x->x_highfreq );
+                          ^~~~~~~~~~~~~
+filterbank~.c:265:55: warning: unused parameter 'owner' [-Wunused-parameter]
+static void filterbank_properties(t_gobj *z, t_glist *owner)
+                                                      ^
+filterbank~.c:306:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(x->x_glist);
+              ^
+filterbank~.c:303:11: warning: unused variable 'dspstate' [-Wunused-variable]
+    t_int dspstate;
+          ^
+filterbank~.c:302:15: warning: unused variable 'ei' [-Wunused-variable]
+    t_int fi, ei;
+              ^
+filterbank~.c:298:64: warning: unused parameter 's' [-Wunused-parameter]
+static void filterbank_dialog(t_filterbank_tilde *x, t_symbol *s, int argc, t_atom *argv)
+                                                               ^
+filterbank~.c:434:11: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^
+filterbank~.c:432:15: warning: unused variable 'ei' [-Wunused-variable]
+    t_int fi, ei;
+              ^
+filterbank~.c:430:53: warning: unused parameter 's' [-Wunused-parameter]
+static t_filterbank_tilde *filterbank_new(t_symbol *s, int argc, t_atom *argv)
+                                                    ^
+filterbank~.c:529:15: warning: unused variable 'fi' [-Wunused-variable]
+    t_int ei, fi;
+              ^
+filterbank~.c:563:15: warning: unused variable 'si' [-Wunused-variable]
+    t_int fi, si;
+              ^
+filterbank~.c:656:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  filterbank_version );
+                      ^~~~~~~~~~~~~~~~~~
+15 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "filterbank~.pd_linux" "filterbank~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "filterbank~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "formant~.o" -c "formant~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+formant~.c:159:51: warning: unused parameter 'fsize' [-Wunused-parameter]
+static void formant_bang(t_formant *x, t_floatarg fsize)
+                                                  ^
+formant~.c:263:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, formant_version);
+                     ^~~~~~~~~~~~~~~
+3 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "formant~.pd_linux" "formant~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "formant~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "grid.o" -c "grid.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+grid.c:253:46: warning: unused parameter 'owner' [-Wunused-parameter]
+static void grid_getrect(t_gobj *z, t_glist *owner,
+                                             ^
+grid.c:281:49: warning: unused parameter 'owner' [-Wunused-parameter]
+static void grid_properties(t_gobj *z, t_glist *owner)
+                                                ^
+grid.c:318:46: warning: unused parameter 's' [-Wunused-parameter]
+static void grid_dialog(t_grid *x, t_symbol *s, int argc, t_atom *argv)
+                                             ^
+grid.c:395:47: warning: unused parameter 'shift' [-Wunused-parameter]
+                      int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                              ^
+grid.c:395:58: warning: unused parameter 'alt' [-Wunused-parameter]
+                      int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                         ^
+grid.c:395:67: warning: unused parameter 'dbl' [-Wunused-parameter]
+                      int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                  ^
+grid.c:687:31: warning: unused parameter 'x' [-Wunused-parameter]
+static void grid_free(t_grid *x)
+                              ^
+grid.c:693:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, grid_version );
+                     ^~~~~~~~~~~~
+9 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "grid.pd_linux" "grid.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "grid.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "mp3cast~.o" -c "mp3cast~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+mp3cast~.c:195:20: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                   x->x_mp3outbuf, MY_MP3_MALLOC_OUT_SIZE);
+                   ^~~~~~~~~~~~~~
+/usr/include/lame/lame.h:737:29: note: passing argument to parameter 'mp3buf' here
+        unsigned char*      mp3buf,        /* pointer to encoded MP3 stream */
+                            ^
+mp3cast~.c:136:9: warning: unused variable 'err' [-Wunused-variable]
+    int err = -1;
+        ^
+mp3cast~.c:211:19: warning: unused variable 'i' [-Wunused-variable]
+    int err = -1, i;            /* error return code */
+                  ^
+mp3cast~.c:212:18: warning: unused variable 'hframe' [-Wunused-variable]
+    struct frame hframe;
+                 ^
+mp3cast~.c:762:57: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        if ( x->x_mp3size = lame_encode_flush( x->lgfp, x->x_mp3outbuf, 0) < 0 )
+                                                        ^~~~~~~~~~~~~~
+/usr/include/lame/lame.h:858:30: note: passing argument to parameter 'mp3buf' here
+        unsigned char*       mp3buf, /* pointer to encoded MP3 stream         */
+                             ^
+mp3cast~.c:762:27: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if ( x->x_mp3size = lame_encode_flush( x->lgfp, x->x_mp3outbuf, 0) < 0 )
+             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3cast~.c:762:27: note: place parentheses around the assignment to silence this warning
+        if ( x->x_mp3size = lame_encode_flush( x->lgfp, x->x_mp3outbuf, 0) < 0 )
+                          ^
+             (                                                                )
+mp3cast~.c:762:27: note: use '==' to turn this assignment into an equality comparison
+        if ( x->x_mp3size = lame_encode_flush( x->lgfp, x->x_mp3outbuf, 0) < 0 )
+                          ^
+                          ==
+mp3cast~.c:758:9: warning: unused variable 'err' [-Wunused-variable]
+    int err = -1;
+        ^
+mp3cast~.c:813:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, mp3cast_version);
+                     ^~~~~~~~~~~~~~~
+mp3cast~.c:975:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, mp3cast_version);
+                     ^~~~~~~~~~~~~~~
+10 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "mp3cast~.pd_linux" "mp3cast~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "mp3cast~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "mp3fileout~.o" -c "mp3fileout~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+mp3fileout~.c:145:11: warning: unused variable 'length' [-Wunused-variable]
+    t_int length = 0;
+          ^
+mp3fileout~.c:144:11: warning: unused variable 'i' [-Wunused-variable]
+    t_int i;
+          ^
+mp3fileout~.c:313:9: warning: unused variable 'ret' [-Wunused-variable]
+    int ret;
+        ^
+mp3fileout~.c:314:9: warning: unused variable 'i' [-Wunused-variable]
+    int i = 0;
+        ^
+mp3fileout~.c:433:12: warning: unused variable 'ret' [-Wunused-variable]
+    int    ret;
+           ^
+mp3fileout~.c:427:21: warning: unused variable 'len' [-Wunused-variable]
+    unsigned int    len;
+                    ^
+mp3fileout~.c:492:9: warning: unused variable 'err' [-Wunused-variable]
+    int err = -1;
+        ^
+mp3fileout~.c:511:9: warning: unused variable 'i' [-Wunused-variable]
+    int i;
+        ^
+mp3fileout~.c:552:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  mp3fileout_version );
+                      ^~~~~~~~~~~~~~~~~~
+mp3fileout~.c:83:23: warning: unused variable 'ztout' [-Wunused-variable]
+static struct timeval ztout;
+                      ^
+11 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "mp3fileout~.pd_linux" "mp3fileout~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "mp3fileout~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "mp3streamin~.o" -c "mp3streamin~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+mp3streamin~.c:180:9: warning: unused variable 'ret' [-Wunused-variable]
+    int ret;
+        ^
+mp3streamin~.c:408:76: warning: passing 'int *' to parameter of type 'socklen_t *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    int fd = accept(x->x_serversocket, (struct sockaddr*)&incomer_address, &sockaddrl );
+                                                                           ^~~~~~~~~~
+/usr/include/x86_64-linux-gnu/sys/socket.h:244:28: note: passing argument to parameter '__addr_len' here
+                   socklen_t *__restrict __addr_len);
+                                         ^
+mp3streamin~.c:524:9: warning: unused variable 'ret' [-Wunused-variable]
+    int ret;
+        ^
+mp3streamin~.c:525:9: warning: unused variable 'i' [-Wunused-variable]
+    int i = 0;
+        ^
+mp3streamin~.c:600:9: warning: unused variable 'i' [-Wunused-variable]
+    int i;
+        ^
+mp3streamin~.c:672:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  mp3streamin_version );
+                      ^~~~~~~~~~~~~~~~~~~
+7 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "mp3streamin~.pd_linux" "mp3streamin~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "mp3streamin~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "mp3streamout~.o" -c "mp3streamout~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+mp3streamout~.c:181:20: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                   x->x_mp3outbuf, MY_MP3_MALLOC_OUT_SIZE);
+                   ^~~~~~~~~~~~~~
+/usr/include/lame/lame.h:737:29: note: passing argument to parameter 'mp3buf' here
+        unsigned char*      mp3buf,        /* pointer to encoded MP3 stream */
+                            ^
+mp3streamout~.c:182:47: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    x->x_mp3size+=lame_encode_flush( x->lgfp, x->x_mp3outbuf+x->x_mp3size, MY_MP3_MALLOC_OUT_SIZE-x->x_mp3size );
+                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/lame/lame.h:858:30: note: passing argument to parameter 'mp3buf' here
+        unsigned char*       mp3buf, /* pointer to encoded MP3 stream         */
+                             ^
+mp3streamout~.c:121:9: warning: unused variable 'err' [-Wunused-variable]
+    int err = -1;
+        ^
+mp3streamout~.c:198:18: warning: unused variable 'hframe' [-Wunused-variable]
+    struct frame hframe;
+                 ^
+mp3streamout~.c:418:22: warning: unused variable 'buf' [-Wunused-variable]
+    const char      *buf = 0;
+                     ^
+mp3streamout~.c:419:21: warning: unused variable 'resp' [-Wunused-variable]
+    char            resp[STRBUF_SIZE];
+                    ^
+mp3streamout~.c:420:21: warning: unused variable 'len' [-Wunused-variable]
+    unsigned int    len;
+                    ^
+mp3streamout~.c:426:12: warning: unused variable 'ret' [-Wunused-variable]
+    int    ret;
+           ^
+mp3streamout~.c:490:57: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        if ( x->x_mp3size = lame_encode_flush( x->lgfp, x->x_mp3outbuf, 0) < 0 )
+                                                        ^~~~~~~~~~~~~~
+/usr/include/lame/lame.h:858:30: note: passing argument to parameter 'mp3buf' here
+        unsigned char*       mp3buf, /* pointer to encoded MP3 stream         */
+                             ^
+mp3streamout~.c:490:27: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if ( x->x_mp3size = lame_encode_flush( x->lgfp, x->x_mp3outbuf, 0) < 0 )
+             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3streamout~.c:490:27: note: place parentheses around the assignment to silence this warning
+        if ( x->x_mp3size = lame_encode_flush( x->lgfp, x->x_mp3outbuf, 0) < 0 )
+                          ^
+             (                                                                )
+mp3streamout~.c:490:27: note: use '==' to turn this assignment into an equality comparison
+        if ( x->x_mp3size = lame_encode_flush( x->lgfp, x->x_mp3outbuf, 0) < 0 )
+                          ^
+                          ==
+mp3streamout~.c:486:9: warning: unused variable 'err' [-Wunused-variable]
+    int err = -1;
+        ^
+mp3streamout~.c:553:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, mp3streamout_version);
+                     ^~~~~~~~~~~~~~~~~~~~
+mp3streamout~.c:632:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, mp3streamout_version);
+                     ^~~~~~~~~~~~~~~~~~~~
+14 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "mp3streamout~.pd_linux" "mp3streamout~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "mp3streamout~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "mp3write~.o" -c "mp3write~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+mp3write~.c:180:20: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                   x->x_mp3outbuf, MY_MP3_MALLOC_OUT_SIZE);
+                   ^~~~~~~~~~~~~~
+/usr/include/lame/lame.h:737:29: note: passing argument to parameter 'mp3buf' here
+        unsigned char*      mp3buf,        /* pointer to encoded MP3 stream */
+                            ^
+mp3write~.c:120:9: warning: unused variable 'err' [-Wunused-variable]
+    int err = -1;
+        ^
+mp3write~.c:498:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, mp3write_version);
+                     ^~~~~~~~~~~~~~~~
+mp3write~.c:569:48: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    x->x_mp3size = lame_encode_flush( x->lgfp, x->x_mp3outbuf, MY_MP3_MALLOC_OUT_SIZE );
+                                               ^~~~~~~~~~~~~~
+/usr/include/lame/lame.h:858:30: note: passing argument to parameter 'mp3buf' here
+        unsigned char*       mp3buf, /* pointer to encoded MP3 stream         */
+                             ^
+mp3write~.c:552:9: warning: unused variable 'err' [-Wunused-variable]
+    int err = -1;
+        ^
+mp3write~.c:630:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, mp3write_version);
+                     ^~~~~~~~~~~~~~~~
+mp3write~.c:75:15: warning: unused variable 'sockfd' [-Wunused-variable]
+static int    sockfd;
+              ^
+8 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "mp3write~.pd_linux" "mp3write~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "mp3write~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "pianoroll.o" -c "pianoroll.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+pianoroll.c:218:11: warning: unused variable 'i' [-Wunused-variable]
+    t_int i;
+          ^
+pianoroll.c:239:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(glist);
+              ^
+pianoroll.c:297:13: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_nbgrades, x->x_nbsteps, x->x_defvalue, x->x_save );
+            ^~~~~~~~~~~~~
+pianoroll.c:297:28: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_nbgrades, x->x_nbsteps, x->x_defvalue, x->x_save );
+                           ^~~~~~~~~~~~
+pianoroll.c:297:42: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_nbgrades, x->x_nbsteps, x->x_defvalue, x->x_save );
+                                         ^~~~~~~~~~~~~
+pianoroll.c:290:54: warning: unused parameter 'owner' [-Wunused-parameter]
+static void pianoroll_properties(t_gobj *z, t_glist *owner)
+                                                     ^
+pianoroll.c:313:14: warning: unused variable 'y' [-Wunused-variable]
+    t_rtext *y;
+             ^
+pianoroll.c:327:56: warning: unused parameter 's' [-Wunused-parameter]
+static void pianoroll_dialog(t_pianoroll *x, t_symbol *s, int argc, t_atom *argv)
+                                                       ^
+pianoroll.c:424:52: warning: unused parameter 'shift' [-Wunused-parameter]
+                           int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                   ^
+pianoroll.c:424:63: warning: unused parameter 'alt' [-Wunused-parameter]
+                           int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                              ^
+pianoroll.c:424:72: warning: unused parameter 'dbl' [-Wunused-parameter]
+                           int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                       ^
+pianoroll.c:488:13: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_nbgrades, x->x_nbsteps,
+            ^~~~~~~~~~~~~
+pianoroll.c:488:28: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_nbgrades, x->x_nbsteps,
+                           ^~~~~~~~~~~~
+pianoroll.c:489:13: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_defvalue, x->x_transpose, x->x_save );
+            ^~~~~~~~~~~~~
+pianoroll.c:522:17: warning: format specifies type 'int *' but the argument has type 't_int *' (aka 'long *') [-Wformat]
+                &x->x_nbgrades, &x->x_nbsteps,
+                ^~~~~~~~~~~~~~
+pianoroll.c:522:33: warning: format specifies type 'int *' but the argument has type 't_int *' (aka 'long *') [-Wformat]
+                &x->x_nbgrades, &x->x_nbsteps,
+                                ^~~~~~~~~~~~~
+pianoroll.c:523:17: warning: format specifies type 'int *' but the argument has type 't_int *' (aka 'long *') [-Wformat]
+                &x->x_defvalue, &x->x_transpose, &x->x_save ) != 9 )
+                ^~~~~~~~~~~~~~
+pianoroll.c:657:11: warning: unused variable 'x2' [-Wunused-variable]
+    t_pd *x2;
+          ^
+pianoroll.c:655:13: warning: unused variable 'i' [-Wunused-variable]
+    int si, i, zz;
+            ^
+pianoroll.c:796:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  pianoroll_version );
+                      ^~~~~~~~~~~~~~~~~
+pianoroll.c:77:12: warning: unused variable 'pointsize' [-Wunused-variable]
+static int pointsize = 5;
+           ^
+22 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "pianoroll.pd_linux" "pianoroll.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "pianoroll.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "playlist.o" -c "playlist.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+playlist.c:456:55: warning: unused parameter 'dx' [-Wunused-parameter]
+static void playlist_motion(t_playlist *x, t_floatarg dx, t_floatarg dy)
+                                                      ^
+playlist.c:576:51: warning: unused parameter 'shift' [-Wunused-parameter]
+                          int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                  ^
+playlist.c:576:62: warning: unused parameter 'alt' [-Wunused-parameter]
+                          int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                             ^
+playlist.c:576:71: warning: unused parameter 'dbl' [-Wunused-parameter]
+                          int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                      ^
+playlist.c:648:53: warning: unused parameter 'owner' [-Wunused-parameter]
+static void playlist_properties(t_gobj *z, t_glist *owner)
+                                                    ^
+playlist.c:661:54: warning: unused parameter 's' [-Wunused-parameter]
+static void playlist_dialog(t_playlist *x, t_symbol *s, int argc, t_atom *argv)
+                                                     ^
+playlist.c:697:43: warning: unused parameter 's' [-Wunused-parameter]
+static t_playlist *playlist_new(t_symbol *s, int argc, t_atom *argv )
+                                          ^
+8 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "playlist.pd_linux" "playlist.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "playlist.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "probalizer.o" -c "probalizer.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+probalizer.c:228:16: warning: unused variable 'gi' [-Wunused-variable]
+    int i, ei, gi;
+               ^
+probalizer.c:228:9: warning: unused variable 'i' [-Wunused-variable]
+    int i, ei, gi;
+        ^
+probalizer.c:246:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(glist);
+              ^
+probalizer.c:278:12: warning: unused variable 'gi' [-Wunused-variable]
+    int ei,gi;
+           ^
+probalizer.c:302:13: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nvalues, x->x_noccurrences, x->x_save );
+            ^~~~~~~~~~
+probalizer.c:302:25: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nvalues, x->x_noccurrences, x->x_save );
+                        ^~~~~~~~~~~
+probalizer.c:302:38: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nvalues, x->x_noccurrences, x->x_save );
+                                     ^~~~~~~~~~~~
+probalizer.c:302:52: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nvalues, x->x_noccurrences, x->x_save );
+                                                   ^~~~~~~~~~~~~~~~~
+probalizer.c:296:55: warning: unused parameter 'owner' [-Wunused-parameter]
+static void probalizer_properties(t_gobj *z, t_glist *owner)
+                                                      ^
+probalizer.c:318:14: warning: unused variable 'y' [-Wunused-variable]
+    t_rtext *y;
+             ^
+probalizer.c:334:33: warning: unused variable 'gi' [-Wunused-variable]
+    t_int onvalues, owidth, ei, gi, bi;
+                                ^
+probalizer.c:334:37: warning: unused variable 'bi' [-Wunused-variable]
+    t_int onvalues, owidth, ei, gi, bi;
+                                    ^
+probalizer.c:332:58: warning: unused parameter 's' [-Wunused-parameter]
+static void probalizer_dialog(t_probalizer *x, t_symbol *s, int argc, t_atom *argv)
+                                                         ^
+probalizer.c:423:11: warning: unused variable 'nevent' [-Wunused-variable]
+    t_int nevent, npix;
+          ^
+probalizer.c:422:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(glist);
+              ^
+probalizer.c:423:19: warning: unused variable 'npix' [-Wunused-variable]
+    t_int nevent, npix;
+                  ^
+probalizer.c:419:53: warning: unused parameter 'shift' [-Wunused-parameter]
+                            int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                    ^
+probalizer.c:419:64: warning: unused parameter 'alt' [-Wunused-parameter]
+                            int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                               ^
+probalizer.c:419:73: warning: unused parameter 'dbl' [-Wunused-parameter]
+                            int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                        ^
+probalizer.c:536:13: warning: unused variable 'si' [-Wunused-variable]
+        int si = 0;
+            ^
+probalizer.c:469:11: warning: unused variable 'x2' [-Wunused-variable]
+    t_pd *x2;
+          ^
+probalizer.c:467:9: warning: unused variable 'bi' [-Wunused-variable]
+    int bi, i, ei;
+        ^
+probalizer.c:467:13: warning: unused variable 'i' [-Wunused-variable]
+    int bi, i, ei;
+            ^
+probalizer.c:465:47: warning: unused parameter 's' [-Wunused-parameter]
+static t_probalizer *probalizer_new(t_symbol *s, int argc, t_atom *argv)
+                                              ^
+probalizer.c:665:11: warning: unused variable 'ei' [-Wunused-variable]
+    t_int ei;
+          ^
+probalizer.c:679:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  probalizer_version );
+                      ^~~~~~~~~~~~~~~~~~
+probalizer.c:66:12: warning: unused variable 'pointsize' [-Wunused-variable]
+static int pointsize = 5;
+           ^
+28 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "probalizer.pd_linux" "probalizer.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "probalizer.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "randomblock~.o" -c "randomblock~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+randomblock~.c:56:45: warning: unused parameter 'x' [-Wunused-parameter]
+static void randomblock_free(t_randomblock *x)
+                                            ^
+randomblock~.c:85:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+randomblock~.c:114:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, randomblock_version);
+                     ^~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "randomblock~.pd_linux" "randomblock~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "randomblock~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "samplebox~.o" -c "samplebox~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+samplebox~.c:497:13: warning: unused variable 's1' [-Wunused-variable]
+    t_float s1, s2;
+            ^
+samplebox~.c:497:17: warning: unused variable 's2' [-Wunused-variable]
+    t_float s1, s2;
+                ^
+samplebox~.c:582:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, samplebox_version);
+                     ^~~~~~~~~~~~~~~~~
+4 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "samplebox~.pd_linux" "samplebox~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "samplebox~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "scratcher~.o" -c "scratcher~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+scratcher~.c:253:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(glist);
+              ^
+scratcher~.c:303:14: warning: unused variable 'y' [-Wunused-variable]
+    t_rtext *y;
+             ^
+scratcher~.c:330:57: warning: unused parameter 'dx' [-Wunused-parameter]
+static void scratcher_motion(t_scratcher *x, t_floatarg dx, t_floatarg dy)
+                                                        ^
+scratcher~.c:364:13: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height );
+            ^~~~~~~~~~
+scratcher~.c:364:25: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height );
+                        ^~~~~~~~~~~
+scratcher~.c:358:54: warning: unused parameter 'owner' [-Wunused-parameter]
+static void scratcher_properties(t_gobj *z, t_glist *owner)
+                                                     ^
+scratcher~.c:369:56: warning: unused parameter 's' [-Wunused-parameter]
+static void scratcher_dialog(t_scratcher *x, t_symbol *s, int argc, t_atom *argv)
+                                                       ^
+scratcher~.c:410:52: warning: unused parameter 'shift' [-Wunused-parameter]
+                           int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                   ^
+scratcher~.c:410:63: warning: unused parameter 'alt' [-Wunused-parameter]
+                           int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                              ^
+scratcher~.c:410:72: warning: unused parameter 'dbl' [-Wunused-parameter]
+                           int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                       ^
+scratcher~.c:648:21: warning: unused variable 'ts' [-Wunused-variable]
+    struct timespec ts;
+                    ^
+scratcher~.c:647:11: warning: unused variable 'dspstate' [-Wunused-variable]
+    t_int dspstate;
+          ^
+scratcher~.c:719:38: warning: unused parameter 's' [-Wunused-parameter]
+static void *scratcher_new(t_symbol *s, int argc, t_atom *argv)
+                                     ^
+scratcher~.c:808:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, scratcher_version);
+                     ^~~~~~~~~~~~~~~~~
+scratcher~.c:63:12: warning: unused variable 'ignorevisible' [-Wunused-variable]
+static int ignorevisible=1; // ignore visible test
+           ^
+16 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "scratcher~.pd_linux" "scratcher~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "scratcher~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "scrolllist.o" -c "scrolllist.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+scrolllist.c:303:14: warning: unused variable 'y' [-Wunused-variable]
+    t_rtext *y;
+             ^
+scrolllist.c:320:19: warning: unused variable 'x' [-Wunused-variable]
+    t_scrolllist *x = (t_scrolllist *)z;
+                  ^
+scrolllist.c:343:11: warning: unused variable 'i' [-Wunused-variable]
+    t_int i;
+          ^
+scrolllist.c:344:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(x->x_glist);
+              ^
+scrolllist.c:341:59: warning: unused parameter 'dx' [-Wunused-parameter]
+static void scrolllist_motion(t_scrolllist *x, t_floatarg dx, t_floatarg dy)
+                                                          ^
+scrolllist.c:398:53: warning: unused parameter 'shift' [-Wunused-parameter]
+                            int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                    ^
+scrolllist.c:398:64: warning: unused parameter 'alt' [-Wunused-parameter]
+                            int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                               ^
+scrolllist.c:398:73: warning: unused parameter 'dbl' [-Wunused-parameter]
+                            int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                        ^
+scrolllist.c:434:55: warning: unused parameter 'owner' [-Wunused-parameter]
+static void scrolllist_properties(t_gobj *z, t_glist *owner)
+                                                      ^
+scrolllist.c:447:58: warning: unused parameter 's' [-Wunused-parameter]
+static void scrolllist_dialog(t_scrolllist *x, t_symbol *s, int argc, t_atom *argv)
+                                                         ^
+scrolllist.c:861:53: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            error( "scrolllist : wrong width (%d)", (t_int)(int)argv[1].a_w.w_float );
+                                              ~~    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                              %ld
+scrolllist.c:876:54: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            error( "scrolllist : wrong height (%d)", (t_int)(int)argv[2].a_w.w_float );
+                                               ~~    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                               %ld
+scrolllist.c:917:76: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+            error( "scrolllist : wrong arguments (background color : %d)", 7-argoffset );
+                                                                     ~~    ^~~~~~~~~~~
+                                                                     %ld
+scrolllist.c:926:76: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+            error( "scrolllist : wrong arguments (foreground color : %d)", 8-argoffset );
+                                                                     ~~    ^~~~~~~~~~~
+                                                                     %ld
+scrolllist.c:935:75: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+            error( "scrolllist : wrong arguments (selection color : %d)", 9-argoffset );
+                                                                    ~~    ^~~~~~~~~~~
+                                                                    %ld
+scrolllist.c:822:47: warning: unused parameter 's' [-Wunused-parameter]
+static t_scrolllist *scrolllist_new(t_symbol *s, int argc, t_atom *argv )
+                                              ^
+scrolllist.c:1003:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  scrolllist_version );
+                      ^~~~~~~~~~~~~~~~~~
+18 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "scrolllist.pd_linux" "scrolllist.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "scrolllist.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "sonogram~.o" -c "sonogram~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+sonogram~.c:333:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(glist);
+              ^
+sonogram~.c:336:25: warning: unused variable 'olColor' [-Wunused-variable]
+    char newColor[ 8 ], olColor[8];
+                        ^
+sonogram~.c:399:100: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        sprintf( x->x_guicommand, "SONIMAGE%x put {%s} -to %d 0\n", (unsigned int)x, x->x_gifdata, (bnumber*x->x_zoom)+i );
+                                                           ~~                                      ^~~~~~~~~~~~~~~~~~~~~
+                                                           %ld
+sonogram~.c:419:104: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+            sprintf( x->x_guicommand, "FAZIMAGE%x put {%s} -to %d 0\n", (unsigned int)x, x->x_gifdata, (bnumber*x->x_zoom)+i );
+                                                               ~~                                      ^~~~~~~~~~~~~~~~~~~~~
+                                                               %ld
+sonogram~.c:378:59: warning: unused parameter 'glist' [-Wunused-parameter]
+static void sonogram_update_block(t_sonogram *x, t_glist *glist, t_int bnumber)
+                                                          ^
+sonogram~.c:428:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(glist);
+              ^
+sonogram~.c:430:13: warning: unused variable 'fspectrum' [-Wunused-variable]
+    t_float fspectrum=0.0;
+            ^
+sonogram~.c:431:10: warning: unused variable 'fillColor' [-Wunused-variable]
+    char fillColor[ 16 ];
+         ^
+sonogram~.c:514:16: warning: unused variable 'update_child' [-Wunused-variable]
+    pthread_t  update_child;
+               ^
+sonogram~.c:700:13: warning: unused variable 'fspectrum' [-Wunused-variable]
+    t_float fspectrum, fdestspectrum;
+            ^
+sonogram~.c:917:50: warning: unused parameter 'owner' [-Wunused-parameter]
+static void sonogram_getrect(t_gobj *z, t_glist *owner,
+                                                 ^
+sonogram~.c:958:14: warning: unused variable 'y' [-Wunused-variable]
+    t_rtext *y;
+             ^
+sonogram~.c:1097:71: warning: unused parameter 'dbl' [-Wunused-parameter]
+                          int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                      ^
+sonogram~.c:1331:11: warning: unused variable 'fi' [-Wunused-variable]
+    t_int fi;
+          ^
+sonogram~.c:1658:45: warning: unused variable 'ffi' [-Wunused-variable]
+    t_int samplestart, sampleend, si, fi=0, ffi=0;
+                                            ^
+sonogram~.c:1659:13: warning: unused variable 'oldenergy' [-Wunused-variable]
+    t_float oldenergy;
+            ^
+sonogram~.c:1700:13: warning: unused variable 'oldenergy' [-Wunused-variable]
+    t_float oldenergy;
+            ^
+sonogram~.c:2121:13: warning: unused variable 's1' [-Wunused-variable]
+    t_float s1, s2;
+            ^
+sonogram~.c:2121:17: warning: unused variable 's2' [-Wunused-variable]
+    t_float s1, s2;
+                ^
+sonogram~.c:2254:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, sonogram_version);
+                     ^~~~~~~~~~~~~~~~
+sonogram~.c:64:12: warning: unused variable 'ignorevisible' [-Wunused-variable]
+static int ignorevisible=1; // ignore visible test
+           ^
+22 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "sonogram~.pd_linux" "sonogram~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "sonogram~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "speexin~.o" -c "speexin~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+speexin~.c:182:9: warning: unused variable 'ret' [-Wunused-variable]
+    int ret;
+        ^
+speexin~.c:216:13: warning: unused variable 'pbytes' [-Wunused-variable]
+    int     pbytes;
+            ^
+speexin~.c:213:9: warning: unused variable 'alength' [-Wunused-variable]
+    int alength = 0;
+        ^
+speexin~.c:215:23: warning: unused variable 'p' [-Wunused-variable]
+    signed short int *p = (signed short int *) out;
+                      ^
+speexin~.c:212:9: warning: unused variable 'i' [-Wunused-variable]
+    int i;
+        ^
+speexin~.c:217:13: warning: unused variable 'ret' [-Wunused-variable]
+    int     ret;
+            ^
+speexin~.c:358:76: warning: passing 'int *' to parameter of type 'socklen_t *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    int fd = accept(x->x_serversocket, (struct sockaddr*)&incomer_address, &sockaddrl );
+                                                                           ^~~~~~~~~~
+/usr/include/x86_64-linux-gnu/sys/socket.h:244:28: note: passing argument to parameter '__addr_len' here
+                   socklen_t *__restrict __addr_len);
+                                         ^
+speexin~.c:464:11: warning: unused variable 'i' [-Wunused-variable]
+    t_int i = 0;
+          ^
+speexin~.c:463:11: warning: unused variable 'ret' [-Wunused-variable]
+    t_int ret;
+          ^
+speexin~.c:543:9: warning: unused variable 'i' [-Wunused-variable]
+    int i;
+        ^
+speexin~.c:611:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  speexin_version );
+                      ^~~~~~~~~~~~~~~
+12 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "speexin~.pd_linux" "speexin~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "speexin~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "speexout~.o" -c "speexout~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+speexout~.c:200:54: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+                error("speexout~: %d bytes skipped", x->x_encsize - count);
+                                  ~~                 ^~~~~~~~~~~~~~~~~~~~
+                                  %ld
+speexout~.c:174:21: warning: unused variable 'i' [-Wunused-variable]
+    int count = -1, i;
+                    ^
+speexout~.c:214:20: warning: unused variable 'i' [-Wunused-variable]
+    unsigned short i,wp;
+                   ^
+speexout~.c:296:22: warning: unused variable 'buf' [-Wunused-variable]
+    const char      *buf = 0;
+                     ^
+speexout~.c:297:21: warning: unused variable 'len' [-Wunused-variable]
+    unsigned int    len;
+                    ^
+speexout~.c:303:12: warning: unused variable 'ret' [-Wunused-variable]
+    int    ret;
+           ^
+speexout~.c:362:9: warning: unused variable 'err' [-Wunused-variable]
+    int err = -1;
+        ^
+speexout~.c:411:37: warning: unused parameter 's' [-Wunused-parameter]
+static void *speexout_new(t_symbol *s, int argc, t_atom *argv)
+                                    ^
+speexout~.c:411:44: warning: unused parameter 'argc' [-Wunused-parameter]
+static void *speexout_new(t_symbol *s, int argc, t_atom *argv)
+                                           ^
+speexout~.c:411:58: warning: unused parameter 'argv' [-Wunused-parameter]
+static void *speexout_new(t_symbol *s, int argc, t_atom *argv)
+                                                         ^
+speexout~.c:447:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, speexout_version);
+                     ^~~~~~~~~~~~~~~~
+12 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "speexout~.pd_linux" "speexout~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "speexout~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "spigot~.o" -c "spigot~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+spigot~.c:74:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, spigot_version );
+                     ^~~~~~~~~~~~~~
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "spigot~.pd_linux" "spigot~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "spigot~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "wahwah~.o" -c "wahwah~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+wahwah~.c:396:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  wahwah_version );
+                      ^~~~~~~~~~~~~~
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "wahwah~.pd_linux" "wahwah~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "wahwah~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "mp3amp~.o" -c "mp3amp~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+mp3amp~.c:223:9: warning: unused variable 'ret' [-Wunused-variable]
+    int ret;
+        ^
+mp3amp~.c:287:96: warning: incompatible pointer types passing 't_int *' (aka 'long *') to parameter of type 'int *' [-Wincompatible-pointer-types]
+                        hframe.framesize+sizeof( unsigned long), (char *) p, sizeof(x->x_out), &pbytes);
+                                                                                               ^~~~~~~
+./interface.h:26:100: note: passing argument to parameter 'done' here
+int      decodeMP3(PMPSTR mp,unsigned char *inmemory,int inmemsize,char *outmemory,int outmemsize,int *done);
+                                                                                                       ^
+mp3amp~.c:232:11: warning: unused variable 'resample' [-Wunused-variable]
+    float resample = 0;
+          ^
+mp3amp~.c:403:14: warning: unused variable 'i' [-Wunused-variable]
+    int ret, i;
+             ^
+mp3amp~.c:404:11: warning: unused variable 'resample' [-Wunused-variable]
+    float resample = 0;
+          ^
+mp3amp~.c:499:9: warning: unused variable 'ret' [-Wunused-variable]
+    int ret;
+        ^
+mp3amp~.c:500:9: warning: unused variable 'i' [-Wunused-variable]
+    int i = 0;
+        ^
+mp3amp~.c:729:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if(sptr = strstr(request, "302"))
+           ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:729:17: note: place parentheses around the assignment to silence this warning
+        if(sptr = strstr(request, "302"))
+                ^
+           (                            )
+mp3amp~.c:729:17: note: use '==' to turn this assignment into an equality comparison
+        if(sptr = strstr(request, "302"))
+                ^
+                ==
+mp3amp~.c:759:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if( cpoint = strstr(request, "x-audiocast-mount:"))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:759:20: note: place parentheses around the assignment to silence this warning
+        if( cpoint = strstr(request, "x-audiocast-mount:"))
+                   ^
+            (                                             )
+mp3amp~.c:759:20: note: use '==' to turn this assignment into an equality comparison
+        if( cpoint = strstr(request, "x-audiocast-mount:"))
+                   ^
+                   ==
+mp3amp~.c:772:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if( cpoint = strstr(request, "x-audiocast-server-url:"))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:772:20: note: place parentheses around the assignment to silence this warning
+        if( cpoint = strstr(request, "x-audiocast-server-url:"))
+                   ^
+            (                                                  )
+mp3amp~.c:772:20: note: use '==' to turn this assignment into an equality comparison
+        if( cpoint = strstr(request, "x-audiocast-server-url:"))
+                   ^
+                   ==
+mp3amp~.c:785:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if( cpoint = strstr(request, "x-audiocast-location:"))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:785:20: note: place parentheses around the assignment to silence this warning
+        if( cpoint = strstr(request, "x-audiocast-location:"))
+                   ^
+            (                                                )
+mp3amp~.c:785:20: note: use '==' to turn this assignment into an equality comparison
+        if( cpoint = strstr(request, "x-audiocast-location:"))
+                   ^
+                   ==
+mp3amp~.c:798:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if( cpoint = strstr(request, "x-audiocast-admin:"))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:798:20: note: place parentheses around the assignment to silence this warning
+        if( cpoint = strstr(request, "x-audiocast-admin:"))
+                   ^
+            (                                             )
+mp3amp~.c:798:20: note: use '==' to turn this assignment into an equality comparison
+        if( cpoint = strstr(request, "x-audiocast-admin:"))
+                   ^
+                   ==
+mp3amp~.c:811:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if( cpoint = strstr(request, "x-audiocast-name:"))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:811:20: note: place parentheses around the assignment to silence this warning
+        if( cpoint = strstr(request, "x-audiocast-name:"))
+                   ^
+            (                                            )
+mp3amp~.c:811:20: note: use '==' to turn this assignment into an equality comparison
+        if( cpoint = strstr(request, "x-audiocast-name:"))
+                   ^
+                   ==
+mp3amp~.c:824:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if( cpoint = strstr(request, "x-audiocast-genre:"))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:824:20: note: place parentheses around the assignment to silence this warning
+        if( cpoint = strstr(request, "x-audiocast-genre:"))
+                   ^
+            (                                             )
+mp3amp~.c:824:20: note: use '==' to turn this assignment into an equality comparison
+        if( cpoint = strstr(request, "x-audiocast-genre:"))
+                   ^
+                   ==
+mp3amp~.c:837:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if( cpoint = strstr(request, "x-audiocast-url:"))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:837:20: note: place parentheses around the assignment to silence this warning
+        if( cpoint = strstr(request, "x-audiocast-url:"))
+                   ^
+            (                                           )
+mp3amp~.c:837:20: note: use '==' to turn this assignment into an equality comparison
+        if( cpoint = strstr(request, "x-audiocast-url:"))
+                   ^
+                   ==
+mp3amp~.c:850:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if( cpoint = strstr(request, "x-audiocast-public:1"))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:850:20: note: place parentheses around the assignment to silence this warning
+        if( cpoint = strstr(request, "x-audiocast-public:1"))
+                   ^
+            (                                               )
+mp3amp~.c:850:20: note: use '==' to turn this assignment into an equality comparison
+        if( cpoint = strstr(request, "x-audiocast-public:1"))
+                   ^
+                   ==
+mp3amp~.c:854:25: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        else if( cpoint = strstr(request, "x-audiocast-public:0"))
+                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:854:25: note: place parentheses around the assignment to silence this warning
+        else if( cpoint = strstr(request, "x-audiocast-public:0"))
+                        ^
+                 (                                               )
+mp3amp~.c:854:25: note: use '==' to turn this assignment into an equality comparison
+        else if( cpoint = strstr(request, "x-audiocast-public:0"))
+                        ^
+                        ==
+mp3amp~.c:858:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if( cpoint = strstr(request, "x-audiocast-bitrate:"))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:858:20: note: place parentheses around the assignment to silence this warning
+        if( cpoint = strstr(request, "x-audiocast-bitrate:"))
+                   ^
+            (                                               )
+mp3amp~.c:858:20: note: use '==' to turn this assignment into an equality comparison
+        if( cpoint = strstr(request, "x-audiocast-bitrate:"))
+                   ^
+                   ==
+mp3amp~.c:894:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if( cpoint = strstr(request, "x-audiocast-udpport:"))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:894:20: note: place parentheses around the assignment to silence this warning
+        if( cpoint = strstr(request, "x-audiocast-udpport:"))
+                   ^
+            (                                               )
+mp3amp~.c:894:20: note: use '==' to turn this assignment into an equality comparison
+        if( cpoint = strstr(request, "x-audiocast-udpport:"))
+                   ^
+                   ==
+mp3amp~.c:916:24: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+            if( cpoint = strstr(request, "icy-name:"))
+                ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:916:24: note: place parentheses around the assignment to silence this warning
+            if( cpoint = strstr(request, "icy-name:"))
+                       ^
+                (                                    )
+mp3amp~.c:916:24: note: use '==' to turn this assignment into an equality comparison
+            if( cpoint = strstr(request, "icy-name:"))
+                       ^
+                       ==
+mp3amp~.c:929:24: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+            if( cpoint = strstr(request, "x-audiocast-name:"))
+                ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:929:24: note: place parentheses around the assignment to silence this warning
+            if( cpoint = strstr(request, "x-audiocast-name:"))
+                       ^
+                (                                            )
+mp3amp~.c:929:24: note: use '==' to turn this assignment into an equality comparison
+            if( cpoint = strstr(request, "x-audiocast-name:"))
+                       ^
+                       ==
+mp3amp~.c:942:24: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+            if( cpoint = strstr(request, "icy-genre:"))
+                ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:942:24: note: place parentheses around the assignment to silence this warning
+            if( cpoint = strstr(request, "icy-genre:"))
+                       ^
+                (                                     )
+mp3amp~.c:942:24: note: use '==' to turn this assignment into an equality comparison
+            if( cpoint = strstr(request, "icy-genre:"))
+                       ^
+                       ==
+mp3amp~.c:955:24: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+            if( cpoint = strstr(request, "icy-aim:"))
+                ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:955:24: note: place parentheses around the assignment to silence this warning
+            if( cpoint = strstr(request, "icy-aim:"))
+                       ^
+                (                                   )
+mp3amp~.c:955:24: note: use '==' to turn this assignment into an equality comparison
+            if( cpoint = strstr(request, "icy-aim:"))
+                       ^
+                       ==
+mp3amp~.c:968:24: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+            if( cpoint = strstr(request, "icy-url:"))
+                ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:968:24: note: place parentheses around the assignment to silence this warning
+            if( cpoint = strstr(request, "icy-url:"))
+                       ^
+                (                                   )
+mp3amp~.c:968:24: note: use '==' to turn this assignment into an equality comparison
+            if( cpoint = strstr(request, "icy-url:"))
+                       ^
+                       ==
+mp3amp~.c:989:24: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+            if( cpoint = strstr(request, "icy-br:"))
+                ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mp3amp~.c:989:24: note: place parentheses around the assignment to silence this warning
+            if( cpoint = strstr(request, "icy-br:"))
+                       ^
+                (                                  )
+mp3amp~.c:989:24: note: use '==' to turn this assignment into an equality comparison
+            if( cpoint = strstr(request, "icy-br:"))
+                       ^
+                       ==
+mp3amp~.c:614:29: warning: unused variable 'rest' [-Wunused-variable]
+    t_int           i, ret, rest, nanswers=0;
+                            ^
+mp3amp~.c:613:31: warning: unused variable 'numrelocs' [-Wunused-variable]
+    t_int           relocate, numrelocs = 0;
+                              ^
+mp3amp~.c:614:35: warning: unused variable 'nanswers' [-Wunused-variable]
+    t_int           i, ret, rest, nanswers=0;
+                                  ^
+mp3amp~.c:1248:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, mp3amp_version);
+                     ^~~~~~~~~~~~~~
+30 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "mp3amp~.pd_linux" "mp3amp~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "mp3amp~.pd_linux"
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test -O--buildsystem=makefile
+ fakeroot debian/rules binary
+dh binary --buildsystem=makefile
+   dh_testroot -O--buildsystem=makefile
+   dh_prep -O--buildsystem=makefile
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_install -- prefix=/usr pkglibdir=/usr/lib/pd/extra
+make[2]: Entering directory `/«PKGBUILDDIR»'
+install -p -m 755 -d /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized
+test -z "audience~.c beatify~.c blinkenlights.c compressor~.c cooled~.c countund.c disto~.c exciter.c filterbank~.c formant~.c grid.c mp3cast~.c mp3fileout~.c mp3streamin~.c mp3streamout~.c mp3write~.c pianoroll.c playlist.c probalizer.c randomblock~.c samplebox~.c scratcher~.c scrolllist.c sonogram~.c speexin~.c speexout~.c spigot~.c wahwah~.c mp3amp~.c" || \
+		install -p -m 644 audience~-help.pd beatify~-help.pd blinkenlights-help.pd compressor~-help.pd cooled~-help.pd countund-help.pd disto~-help.pd exciter-help.pd filterbank~-help.pd formant~-help.pd grid-help.pd mp3cast~-help.pd mp3fileout~-help.pd mp3streamin~-help.pd mp3streamout~-help.pd mp3write~-help.pd pianoroll-help.pd playlist-help.pd probalizer-help.pd randomblock~-help.pd samplebox~-help.pd scratcher~-help.pd scrolllist-help.pd sonogram~-help.pd speexin~-help.pd speexout~-help.pd spigot~-help.pd wahwah~-help.pd mp3amp~-help.pd  \
+			/«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized
+install -p -m 644 README.txt /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/README.txt
+install -p -m 644 LICENSE.txt /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/LICENSE.txt
+test -z "analyze-100.pd mrandtab.pd randtab.pd resynth-64.pd setosc.pd speaker.gif test-streaming-mp3.pd wanderer.gif xmms.pd yesterday.txt" || \
+		install -p -m 755 -d /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/examples && \
+		for file in analyze-100.pd mrandtab.pd randtab.pd resynth-64.pd setosc.pd speaker.gif test-streaming-mp3.pd wanderer.gif xmms.pd yesterday.txt; do \
+			install -p -m 644 examples/$file /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/examples; \
+		done
+test -z "disto~.txt" || \
+		install -p -m 755 -d /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/manual && \
+		for file in disto~.txt; do \
+			install -p -m 644 manual/$file /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/manual; \
+		done
+test -z "" || \
+		install -p -m 755 -d /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/unittests && \
+		for file in ; do \
+			install -p -m 644 unittests/$file /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/unittests; \
+		done
+install -p -m 755 -d /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized
+install -p -m 644 unauthorized-meta.pd \
+		/«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized
+test -z "audience~.c beatify~.c blinkenlights.c compressor~.c cooled~.c countund.c disto~.c exciter.c filterbank~.c formant~.c grid.c mp3cast~.c mp3fileout~.c mp3streamin~.c mp3streamout~.c mp3write~.c pianoroll.c playlist.c probalizer.c randomblock~.c samplebox~.c scratcher~.c scrolllist.c sonogram~.c speexin~.c speexout~.c spigot~.c wahwah~.c mp3amp~.c" || (\
+		install -p -m 644 audience~.pd_linux beatify~.pd_linux blinkenlights.pd_linux compressor~.pd_linux cooled~.pd_linux countund.pd_linux disto~.pd_linux exciter.pd_linux filterbank~.pd_linux formant~.pd_linux grid.pd_linux mp3cast~.pd_linux mp3fileout~.pd_linux mp3streamin~.pd_linux mp3streamout~.pd_linux mp3write~.pd_linux pianoroll.pd_linux playlist.pd_linux probalizer.pd_linux randomblock~.pd_linux samplebox~.pd_linux scratcher~.pd_linux scrolllist.pd_linux sonogram~.pd_linux speexin~.pd_linux speexout~.pd_linux spigot~.pd_linux wahwah~.pd_linux mp3amp~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized && \
+		strip --strip-unneeded -R .note -R .comment /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/audience~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/beatify~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/blinkenlights.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/compressor~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/cooled~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/countund.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/disto~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/exciter.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/filterbank~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/formant~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/grid.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3cast~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3fileout~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3streamin~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3streamout~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3write~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/pianoroll.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/playlist.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/probalizer.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/randomblock~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/samplebox~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/scratcher~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/scrolllist.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/sonogram~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/speexin~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/speexout~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/spigot~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/wahwah~.pd_linux /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3amp~.pd_linux)
+test -z "" || \
+		install -p -m 644  \
+			/«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized
+test -z "audience~.tcl cooled~.tcl exciter.tcl filterbank~.tcl grid.tcl pianoroll.tcl playlist.tcl probalizer.tcl scratcher~.tcl scrolllist.tcl" || \
+		install -p -m 644 audience~.tcl cooled~.tcl exciter.tcl filterbank~.tcl grid.tcl pianoroll.tcl playlist.tcl probalizer.tcl scratcher~.tcl scrolllist.tcl \
+			/«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized
+test -z "" || \
+		install -p -m 644  \
+			/«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized
+test -z "" || \
+		install -p -m 644  \
+			/«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+rm -f -- /«PKGBUILDDIR»/debian/pd-unauthorized//usr/lib/pd/extra/unauthorized/LICENSE.txt
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs -O--buildsystem=makefile
+   dh_installchangelogs -O--buildsystem=makefile
+   dh_lintian -O--buildsystem=makefile
+   dh_perl -O--buildsystem=makefile
+   dh_link -O--buildsystem=makefile
+   dh_compress -O--buildsystem=makefile
+   dh_fixperms -O--buildsystem=makefile
+   dh_strip -O--buildsystem=makefile
+   dh_makeshlibs -O--buildsystem=makefile
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dpkg-shlibdeps /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/*.pd_linux \
+		-T/«PKGBUILDDIR»/debian/pd-unauthorized.substvars
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/grid.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/grid.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/grid.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/grid.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/exciter.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/exciter.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/exciter.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/exciter.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/speexout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/speexout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/speexout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/speexout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3streamin~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3streamin~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3streamin~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3streamin~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/sonogram~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/sonogram~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/sonogram~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/sonogram~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/cooled~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/cooled~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/cooled~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/cooled~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/scrolllist.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/scrolllist.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/scrolllist.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/scrolllist.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3write~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3write~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3write~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3write~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/scratcher~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/scratcher~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/scratcher~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/scratcher~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/beatify~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/beatify~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/beatify~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/beatify~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/wahwah~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/wahwah~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/wahwah~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/wahwah~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/disto~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/disto~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/disto~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/disto~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/pianoroll.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/pianoroll.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/pianoroll.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/pianoroll.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/samplebox~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/samplebox~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/samplebox~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/samplebox~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/speexin~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/speexin~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/speexin~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/speexin~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/playlist.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/playlist.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/playlist.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/playlist.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/filterbank~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/filterbank~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/filterbank~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/filterbank~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/spigot~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/spigot~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/spigot~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/spigot~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/audience~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/audience~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/audience~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/audience~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3cast~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3cast~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3cast~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3cast~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3streamout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3streamout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3streamout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3streamout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/probalizer.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/probalizer.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/probalizer.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/probalizer.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3amp~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3amp~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3amp~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3amp~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/compressor~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/compressor~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/compressor~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/compressor~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/formant~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/formant~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/formant~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/formant~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3fileout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3fileout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3fileout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/mp3fileout~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/randomblock~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/randomblock~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/randomblock~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/randomblock~.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/blinkenlights.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/blinkenlights.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/blinkenlights.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/blinkenlights.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/countund.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/countund.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/countund.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: $ORIGIN is used in RPATH of /«PKGBUILDDIR»/debian/pd-unauthorized/usr/lib/pd/extra/unauthorized/countund.pd_linux and the corresponding directory could not be identified due to lack of DEBIAN sub-directory in the root of package's build tree
+dpkg-shlibdeps: warning: binaries to analyze should already be installed in their package's directory
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdeb -O--buildsystem=makefile
+   dh_gencontrol -O--buildsystem=makefile
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums -O--buildsystem=makefile
+   dh_builddeb -O--buildsystem=makefile
+dpkg-deb: building package `pd-unauthorized' in `../pd-unauthorized_0.1-1_amd64.deb'.
+ dpkg-genchanges  >../pd-unauthorized_0.1-1_amd64.changes
+dpkg-genchanges: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build pd-unauthorized-0.1
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140405-2156
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+pd-unauthorized_0.1-1_amd64.changes:
+────────────────────────────────────
+
+Format: 1.8
+Date: Thu, 17 Jan 2013 23:27:03 -0500
+Source: pd-unauthorized
+Binary: pd-unauthorized
+Architecture: source amd64
+Version: 0.1-1
+Distribution: sid
+Urgency: low
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Changed-By: Hans-Christoph Steiner <hans@eds.org>
+Description: 
+ pd-unauthorized - library of Pd objects for streaming and GUI control
+Closes: 636273
+Changes: 
+ pd-unauthorized (0.1-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #636273)
+Checksums-Sha1: 
+ 190bab450ebec5598e0cb0913eef817474043574 1188 pd-unauthorized_0.1-1.dsc
+ 161d467d861e9c2eb4a8902f245a24858af9ca96 214723 pd-unauthorized_0.1.orig.tar.gz
+ b3c9b00c6e00c9e2fc2d24fd62c4ec47f869fd83 3744 pd-unauthorized_0.1-1.debian.tar.xz
+ 16861aa3ef96b4f624df211cbc8add345285e252 158732 pd-unauthorized_0.1-1_amd64.deb
+Checksums-Sha256: 
+ a0baa8657d7b62c34c7e08f010751f464e36118f81ce5bdcefc9a0bd0baac5a1 1188 pd-unauthorized_0.1-1.dsc
+ 10029822d2f1cba7b661365035d568acbbf424b9eba7583af5c8ac0fec265c88 214723 pd-unauthorized_0.1.orig.tar.gz
+ 785aad2eca4a062b5526979e8e5a8eaffae578326094d253af9b0342f35d45d6 3744 pd-unauthorized_0.1-1.debian.tar.xz
+ 8bcf9de133a96edad987a2207283a463fd4f445e8ab24b09d1d2ee8c8af8d23f 158732 pd-unauthorized_0.1-1_amd64.deb
+Files: 
+ 8eab5228ce7b4cc8700438f011a678be 1188 sound optional pd-unauthorized_0.1-1.dsc
+ b1f6d1e8cf00daf96b4cecba8d541bb7 214723 sound optional pd-unauthorized_0.1.orig.tar.gz
+ 31b2dc18cec5597e0af6d15169a703a1 3744 sound optional pd-unauthorized_0.1-1.debian.tar.xz
+ 06d948ccc942d29cfb4715bb72d13445 158732 sound optional pd-unauthorized_0.1-1_amd64.deb
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+pd-unauthorized_0.1-1_amd64.deb
+───────────────────────────────
+
+ new debian package, version 2.0.
+ size 158732 bytes: control archive=3708 bytes.
+    2039 bytes,    41 lines      control              
+    6899 bytes,    84 lines      md5sums              
+ Package: pd-unauthorized
+ Version: 0.1-1
+ Architecture: amd64
+ Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+ Installed-Size: 695
+ Depends: libc6 (>= 2.14), libmp3lame0, libspeex1 (>= 1.2~beta3-1), pd, pd-libdir
+ Recommends: pd-import, pd-zexy
+ Section: sound
+ Priority: optional
+ Homepage: http://ydegoyon.free.fr/software.html
+ Description: library of Pd objects for streaming and GUI control
+  unauthorized is a Pure Data library of GUI objects and a handful of objects
+  for working with streaming and mp3s.
+  .
+  audience~: 2-dimensional audience simulation
+  beatify~: modulate amplitude of a sound
+  blinkenlight: a blinken lights films player ( but also a pixel grid )
+  compressor~: a compressor of audio signals
+  cooled: a micro sound editor
+  disto~: a kind of effect used in pop music, use it elsewhere
+  exciter: a bang-events sequencer
+  filterbank~: outputs frequency response for a range of filters
+  formant~ is a formant synthesis generator external for pd
+  grid: 2-dimensional control object, ala "kaospad"
+  mp3amp~ is a MPEG I Layer III (mp3) icecast/shoutcast client
+  mp3cast~ is a MPEG I Layer III (mp3) streaming external
+  mp3streamout~: peer-to-peer mp3 streaming out
+  mp3fileout~: peer-to-peer mp3 streaming to a file
+  mp3streamin~: peer-to-peer mp3 stream receiving
+  mp3write~ is a MPEG I Layer III (mp3) file writer.
+  pianoroll: a graphical sequencer controller
+  playlist: choose a file in 1 click with space, numeric, characters
+  probalizer: outputs integer values according to a drawn probability curve
+  samplebox~: an opaque box to record and playback a sound
+  scratcher~: records a sound and lets you scratch it with your mouse
+  scrolllist: displays and scrolls a text in  a patch window
+  sonogram~: displays, plays back and lets you modify a recorded sonogram.
+  speexin~: a voice quality stream receiver using Speex library
+  speexout~: a voice quality streamer using Speex library
+  spigot~: a signal router.
+  wahwah~: a kind of effect used in psychedelic music, use it elsewhere
+
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/lib/pd/
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/lib/pd/extra/
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/
+-rw-r--r-- root/root      5967 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/filterbank~-help.pd
+-rw-r--r-- root/root     13888 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/speexin~.pd_linux
+-rw-r--r-- root/root     16288 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/probalizer.pd_linux
+-rw-r--r-- root/root     22276 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/wahwah~-help.pd
+-rw-r--r-- root/root      6728 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/compressor~.pd_linux
+-rw-r--r-- root/root      9656 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/wahwah~.pd_linux
+-rw-r--r-- root/root      1889 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/mp3amp~-help.pd
+-rw-r--r-- root/root      2052 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/mp3cast~-help.pd
+-rw-r--r-- root/root      2061 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/speexin~-help.pd
+-rw-r--r-- root/root      9138 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/sonogram~-help.pd
+-rw-r--r-- root/root      4063 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/cooled~-help.pd
+-rw-r--r-- root/root     12320 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/samplebox~.pd_linux
+-rw-r--r-- root/root     21336 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/mp3amp~.pd_linux
+-rw-r--r-- root/root      1343 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/mp3write~-help.pd
+-rw-r--r-- root/root     15304 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/mp3write~.pd_linux
+-rw-r--r-- root/root      4712 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/blinkenlights-help.pd
+-rw-r--r-- root/root      6704 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/spigot~.pd_linux
+-rw-r--r-- root/root     11284 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/README.txt
+-rw-r--r-- root/root     19384 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/mp3cast~.pd_linux
+-rw-r--r-- root/root     25544 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/cooled~.pd_linux
+-rw-r--r-- root/root     11344 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/mp3fileout~.pd_linux
+-rw-r--r-- root/root      1568 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/formant~-help.pd
+-rw-r--r-- root/root      3436 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/mp3streamin~-help.pd
+-rw-r--r-- root/root     10864 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/disto~.pd_linux
+-rw-r--r-- root/root      1707 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/probalizer-help.pd
+-rw-r--r-- root/root      7601 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/grid.tcl
+-rw-r--r-- root/root      2814 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/cooled~.tcl
+-rw-r--r-- root/root     21576 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/scrolllist.pd_linux
+-rw-r--r-- root/root     19360 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/pianoroll.pd_linux
+-rw-r--r-- root/root      5947 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/playlist.tcl
+-rw-r--r-- root/root       230 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/unauthorized-meta.pd
+-rw-r--r-- root/root      6720 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/randomblock~.pd_linux
+-rw-r--r-- root/root     13944 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/mp3streamin~.pd_linux
+-rw-r--r-- root/root      4135 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/probalizer.tcl
+-rw-r--r-- root/root      1210 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/beatify~-help.pd
+-rw-r--r-- root/root       475 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/countund-help.pd
+-rw-r--r-- root/root      2594 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/pianoroll-help.pd
+-rw-r--r-- root/root     21784 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/audience~.pd_linux
+-rw-r--r-- root/root      2061 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/speexout~-help.pd
+-rw-r--r-- root/root     15088 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/filterbank~.pd_linux
+-rw-r--r-- root/root     42584 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/sonogram~.pd_linux
+-rw-r--r-- root/root       425 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/spigot~-help.pd
+-rw-r--r-- root/root      3436 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/mp3streamout~-help.pd
+-rw-r--r-- root/root      4407 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/exciter.tcl
+-rw-r--r-- root/root      2143 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/playlist-help.pd
+-rw-r--r-- root/root     19160 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/exciter.pd_linux
+-rw-r--r-- root/root      6824 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/beatify~.pd_linux
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/manual/
+-rw-r--r-- root/root      2452 2013-01-18 00:28 ./usr/lib/pd/extra/unauthorized/manual/disto~.txt
+-rw-r--r-- root/root     23855 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/disto~-help.pd
+-rw-r--r-- root/root      4043 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/samplebox~-help.pd
+-rw-r--r-- root/root       479 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/randomblock~-help.pd
+-rw-r--r-- root/root     17592 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/grid.pd_linux
+-rw-r--r-- root/root      6233 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/pianoroll.tcl
+-rw-r--r-- root/root      5447 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/grid-help.pd
+-rw-r--r-- root/root     20248 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/playlist.pd_linux
+-rw-r--r-- root/root     19136 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/blinkenlights.pd_linux
+-rw-r--r-- root/root      3436 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/mp3fileout~-help.pd
+-rw-r--r-- root/root       421 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/compressor~-help.pd
+-rw-r--r-- root/root     10968 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/speexout~.pd_linux
+-rw-r--r-- root/root     13688 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/mp3streamout~.pd_linux
+-rw-r--r-- root/root      3334 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/scrolllist-help.pd
+-rw-r--r-- root/root      5385 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/scrolllist.tcl
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/examples/
+-rw-r--r-- root/root       962 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/examples/wanderer.gif
+-rw-r--r-- root/root      1147 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/examples/analyze-100.pd
+-rw-r--r-- root/root       932 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/examples/yesterday.txt
+-rw-r--r-- root/root       195 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/examples/mrandtab.pd
+-rw-r--r-- root/root      2481 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/examples/test-streaming-mp3.pd
+-rw-r--r-- root/root       474 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/examples/setosc.pd
+-rw-r--r-- root/root      1028 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/examples/randtab.pd
+-rw-r--r-- root/root        83 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/examples/speaker.gif
+-rw-r--r-- root/root      6906 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/examples/resynth-64.pd
+-rw-r--r-- root/root      4074 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/examples/xmms.pd
+-rw-r--r-- root/root      3106 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/audience~.tcl
+-rw-r--r-- root/root      3032 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/scratcher~-help.pd
+-rw-r--r-- root/root      1947 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/audience~-help.pd
+-rw-r--r-- root/root     19176 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/scratcher~.pd_linux
+-rw-r--r-- root/root      6712 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/countund.pd_linux
+-rw-r--r-- root/root      2092 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/exciter-help.pd
+-rw-r--r-- root/root      2509 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/scratcher~.tcl
+-rw-r--r-- root/root      8936 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/formant~.pd_linux
+-rw-r--r-- root/root      2613 2013-01-18 00:29 ./usr/lib/pd/extra/unauthorized/filterbank~.tcl
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/share/doc/pd-unauthorized/
+-rw-r--r-- root/root       160 2013-01-18 05:27 ./usr/share/doc/pd-unauthorized/changelog.Debian.gz
+-rw-r--r-- root/root      2470 2012-12-12 04:18 ./usr/share/doc/pd-unauthorized/copyright
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-04-05 21:56 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root       498 2012-12-12 04:18 ./usr/share/lintian/overrides/pd-unauthorized
+lrwxrwxrwx root/root         0 2014-04-05 21:56 ./usr/lib/pd/extra/unauthorized/LICENSE.txt -> ../../../../share/common-licenses/GPL-2
+lrwxrwxrwx root/root         0 2014-04-05 21:56 ./usr/share/doc/pd-unauthorized/README -> ../../../lib/pd/extra/unauthorized/README.txt
+lrwxrwxrwx root/root         0 2014-04-05 21:56 ./usr/share/doc/pd-unauthorized/examples -> ../../../lib/pd/extra/unauthorized/examples
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 5240
+Build-Time: 6
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 11
+Job: pd-unauthorized_0.1-1.dsc
+Machine Architecture: amd64
+Package: pd-unauthorized
+Package-Time: 24
+Source-Version: 0.1-1
+Space: 5240
+Status: successful
+Version: 0.1-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140405-2156
+Build needed 00:00:24, 5240k disc space

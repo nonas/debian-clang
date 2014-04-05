@@ -1,0 +1,35 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-04-05
+
+--- a/countund.c
++++ b/countund.c
+@@ -80,7 +80,7 @@
+     if ( flimit < 0 )
+     {
+         post( "countund~: wrong count limit" );
+-        return;
++        return NULL;
+     }
+     else
+     {
+@@ -110,7 +110,7 @@
+         }
+     }
+     outlet_float( x->x_obj.ob_outlet, x->x_value );
+-    return;
++    return NULL;
+ }
+ 
+ void countund_setup(void)
+--- a/randomblock~.c
++++ b/randomblock~.c
+@@ -76,7 +76,7 @@
+     if ( flimit < 0 || flimit > RAND_MAX )
+     {
+         post( "randomblock~: wrong random limit" );
+-        return;
++        return NULL;
+     }
+     else
+     {

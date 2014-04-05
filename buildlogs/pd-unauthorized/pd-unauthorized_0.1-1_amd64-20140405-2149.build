@@ -1,0 +1,495 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ pd-unauthorized 0.1-1 (amd64)                              05 Apr 2014 21:49 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: pd-unauthorized
+Version: 0.1-1
+Source Version: 0.1-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/pd-unauthorized-s4OKX7/pd-unauthorized-0.1' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/pd-unauthorized-s4OKX7' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-7f8c83e0-9b29-4ec5-b8c5-e0624d5e9ee0' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+pd-unauthorized_0.1-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-jG5VOQ/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 13262 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7.0.50~), puredata-dev | puredata (<< 0.43), libmp3lame-dev, libspeex-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7.0.50~), puredata-dev, libmp3lame-dev, libspeex-dev
+dpkg-deb: building package `sbuild-build-depends-pd-unauthorized-dummy' in `/«BUILDDIR»/resolver-CvaNoW/apt_archive/sbuild-build-depends-pd-unauthorized-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install pd-unauthorized build dependencies (apt-based resolver)              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmp3lame-dev libmp3lame0
+  libspeex-dev libspeex1 libunistring0 libxml2 man-db po-debconf puredata-dev
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff pkg-config speex
+  less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmp3lame-dev libmp3lame0
+  libspeex-dev libspeex1 libunistring0 libxml2 man-db po-debconf puredata-dev
+  sbuild-build-depends-pd-unauthorized-dummy
+0 upgraded, 19 newly installed, 0 to remove and 19 not upgraded.
+Need to get 9299 kB/9300 kB of archives.
+After this operation, 24.8 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.6-1 [990 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libmp3lame0 amd64 3.99.5+repack1-3 [404 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libspeex1 amd64 1.2~rc1.1-1 [54.2 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libmp3lame-dev amd64 3.99.5+repack1-3 [440 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libspeex-dev amd64 1.2~rc1.1-1 [67.1 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main puredata-dev all 0.45.4-1 [35.2 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 9299 kB in 1s (5101 kB/s)
+Selecting previously unselected package groff-base.
+(Reading database ... 13262 files and directories currently installed.)
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.6-1_amd64.deb ...
+Unpacking man-db (2.6.6-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libmp3lame0:amd64.
+Preparing to unpack .../libmp3lame0_3.99.5+repack1-3_amd64.deb ...
+Unpacking libmp3lame0:amd64 (3.99.5+repack1-3) ...
+Selecting previously unselected package libspeex1:amd64.
+Preparing to unpack .../libspeex1_1.2~rc1.1-1_amd64.deb ...
+Unpacking libspeex1:amd64 (1.2~rc1.1-1) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libmp3lame-dev:amd64.
+Preparing to unpack .../libmp3lame-dev_3.99.5+repack1-3_amd64.deb ...
+Unpacking libmp3lame-dev:amd64 (3.99.5+repack1-3) ...
+Selecting previously unselected package libspeex-dev:amd64.
+Preparing to unpack .../libspeex-dev_1.2~rc1.1-1_amd64.deb ...
+Unpacking libspeex-dev:amd64 (1.2~rc1.1-1) ...
+Selecting previously unselected package puredata-dev.
+Preparing to unpack .../puredata-dev_0.45.4-1_all.deb ...
+Unpacking puredata-dev (0.45.4-1) ...
+Selecting previously unselected package sbuild-build-depends-pd-unauthorized-dummy.
+Preparing to unpack .../sbuild-build-depends-pd-unauthorized-dummy.deb ...
+Unpacking sbuild-build-depends-pd-unauthorized-dummy (0.invalid.0) ...
+Processing triggers for mime-support (3.54) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.6-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libmp3lame0:amd64 (3.99.5+repack1-3) ...
+Setting up libspeex1:amd64 (1.2~rc1.1-1) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libmp3lame-dev:amd64 (3.99.5+repack1-3) ...
+Setting up libspeex-dev:amd64 (1.2~rc1.1-1) ...
+Setting up puredata-dev (0.45.4-1) ...
+Setting up sbuild-build-depends-pd-unauthorized-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24-5 dpkg-dev_1.17.6 g++-4.8_4.8.2-16 gcc-4.8_4.8.2-16 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 linux-libc-dev_3.13.7-1
+Package versions: apt_1.0 base-files_7.2 base-passwd_3.5.32 bash_4.3-5 binfmt-support_2.1.4-1 binutils_2.24-5 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.1 cpp_4:4.8.2-2 cpp-4.8_4.8.2-16 dash_0.5.7-4 debconf_1.5.52 debconf-i18n_1.5.52 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.6 dpkg-dev_1.17.6 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-7 g++_4:4.8.2-2 g++-4.8_4.8.2-16 gcc_4:4.8.2-2 gcc-4.8_4.8.2-16 gcc-4.8-base_4.8.2-16 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-1 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 init-system-helpers_1.18 initscripts_2.88dsf-51 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0 libasan0_4.8.2-16 libasprintf0c2_0.18.3.2-1 libatomic1_4.8.2-16 libattr1_1:2.4.47-1 libaudit-common_1:2.3.4-1 libaudit1_1:2.3.4-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.1_5.1.29-7 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.6 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi-dev_3.1~rc1+r3.0.13-12 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-16 libgcc1_1:4.8.2-16 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2 libgomp1_4.8.2-16 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.8.2-16 libjsoncpp0_0.6.0~rc2-3 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.7 libmp3lame-dev_3.99.5+repack1-3 libmp3lame0_3.99.5+repack1-3 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-16 libobjc4_4.8.2-16 libpam-modules_1.1.8-2 libpam-modules-bin_1.1.8-2 libpam-runtime_1.1.8-2 libpam0g_1.1.8-2 libpcre3_1:8.31-2 libpipeline1_1.3.0-1 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libquadmath0_4.8.2-16 libreadline6_6.3-5 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libspeex-dev_1.2~rc1.1-1 libspeex1_1.2~rc1.1-1 libsqlite3-0_3.8.4.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1f-1 libstdc++-4.8-dev_4.8.2-16 libstdc++6_4.8.2-16 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-1 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtsan0_4.8.2-16 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.7-1 llvm-3.4_1:3.4-2 llvm-3.4-dev_1:3.4-2 llvm-3.4-runtime_1:3.4-2 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.6-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1+b1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-4 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 puredata-dev_0.45.4-1 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-minimal_2.7.6-8 readline-common_6.3-5 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-pd-unauthorized-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sysv-rc_2.88dsf-51 sysvinit_2.88dsf-51 sysvinit-core_2.88dsf-51 sysvinit-utils_2.88dsf-51 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Fri Jan 18 04:29:12 2013 UTC using RSA key ID 374BBE81
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./pd-unauthorized_0.1-1.dsc
+dpkg-source: info: extracting pd-unauthorized in pd-unauthorized-0.1
+dpkg-source: info: unpacking pd-unauthorized_0.1.orig.tar.gz
+dpkg-source: info: unpacking pd-unauthorized_0.1-1.debian.tar.gz
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-7f8c83e0-9b29-4ec5-b8c5-e0624d5e9ee0
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package pd-unauthorized
+dpkg-buildpackage: source version 0.1-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Hans-Christoph Steiner <hans@eds.org>
+ dpkg-source --before-build pd-unauthorized-0.1
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+ fakeroot debian/rules clean
+dh clean --buildsystem=makefile
+   dh_testdir -O--buildsystem=makefile
+   dh_auto_clean -O--buildsystem=makefile
+make[1]: Entering directory `/«PKGBUILDDIR»'
+rm -f -- audience~.o beatify~.o blinkenlights.o compressor~.o cooled~.o countund.o disto~.o exciter.o filterbank~.o formant~.o grid.o mp3cast~.o mp3fileout~.o mp3streamin~.o mp3streamout~.o mp3write~.o pianoroll.o playlist.o probalizer.o randomblock~.o samplebox~.o scratcher~.o scrolllist.o sonogram~.o speexin~.o speexout~.o spigot~.o wahwah~.o mp3amp~.o  
+rm -f -- audience~.pd_linux beatify~.pd_linux blinkenlights.pd_linux compressor~.pd_linux cooled~.pd_linux countund.pd_linux disto~.pd_linux exciter.pd_linux filterbank~.pd_linux formant~.pd_linux grid.pd_linux mp3cast~.pd_linux mp3fileout~.pd_linux mp3streamin~.pd_linux mp3streamout~.pd_linux mp3write~.pd_linux pianoroll.pd_linux playlist.pd_linux probalizer.pd_linux randomblock~.pd_linux samplebox~.pd_linux scratcher~.pd_linux scrolllist.pd_linux sonogram~.pd_linux speexin~.pd_linux speexout~.pd_linux spigot~.pd_linux wahwah~.pd_linux mp3amp~.pd_linux
+rm -f -- unauthorized.o
+rm -f -- unauthorized.pd_linux
+rm -f -- 
+rm -f -- unauthorized-0.1-linux-x86_64.tar.gz
+rm -rf -- unauthorized-0.1-linux-x86_64
+rm -f -- unauthorized-0.1.tar.gz
+rm -rf -- unauthorized-0.1
+rm -f -- pd-unauthorized_0.1.tar.gz
+rm -rf -- pd-unauthorized_0.1
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_clean -O--buildsystem=makefile
+ dpkg-source -b pd-unauthorized-0.1
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building pd-unauthorized using existing ./pd-unauthorized_0.1.orig.tar.gz
+dpkg-source: info: building pd-unauthorized in pd-unauthorized_0.1-1.debian.tar.xz
+dpkg-source: info: building pd-unauthorized in pd-unauthorized_0.1-1.dsc
+ debian/rules build
+dh build --buildsystem=makefile
+   dh_testdir -O--buildsystem=makefile
+   dh_auto_configure -O--buildsystem=makefile
+   dh_auto_build -O--buildsystem=makefile
+make[1]: Entering directory `/«PKGBUILDDIR»'
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "audience~.o" -c "audience~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+audience~.c:390:13: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nboutputs
+            ^~~~~~~~~~
+audience~.c:390:25: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nboutputs
+                        ^~~~~~~~~~~
+audience~.c:390:38: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+            x->x_width, x->x_height, x->x_nboutputs
+                                     ^~~~~~~~~~~~~~
+audience~.c:384:53: warning: unused parameter 'owner' [-Wunused-parameter]
+static void audience_properties(t_gobj *z, t_glist *owner)
+                                                    ^
+audience~.c:419:60: warning: unused parameter 's' [-Wunused-parameter]
+static void audience_dialog(t_audience_tilde *x, t_symbol *s, int argc, t_atom *argv)
+                                                           ^
+audience~.c:634:51: warning: unused parameter 'shift' [-Wunused-parameter]
+                          int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                  ^
+audience~.c:634:62: warning: unused parameter 'alt' [-Wunused-parameter]
+                          int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                             ^
+audience~.c:634:71: warning: unused parameter 'dbl' [-Wunused-parameter]
+                          int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                      ^
+audience~.c:683:11: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^
+audience~.c:682:11: warning: unused variable 'x2' [-Wunused-variable]
+    t_pd *x2;
+          ^
+audience~.c:678:49: warning: unused parameter 's' [-Wunused-parameter]
+static t_audience_tilde *audience_new(t_symbol *s, int argc, t_atom *argv)
+                                                ^
+audience~.c:940:96: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+                        error( "audience~ : delay : %d : wrong readpos !!! : %d >= %d or < 0", delay, readpos, x->x_audiobuffersize );
+                                                    ~~                                         ^~~~~
+                                                    %ld
+audience~.c:940:103: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+                        error( "audience~ : delay : %d : wrong readpos !!! : %d >= %d or < 0", delay, readpos, x->x_audiobuffersize );
+                                                                             ~~                       ^~~~~~~
+                                                                             %ld
+audience~.c:940:112: warning: format specifies type 'int' but the argument has type 't_int' (aka 'long') [-Wformat]
+                        error( "audience~ : delay : %d : wrong readpos !!! : %d >= %d or < 0", delay, readpos, x->x_audiobuffersize );
+                                                                                   ~~                          ^~~~~~~~~~~~~~~~~~~~
+                                                                                   %ld
+audience~.c:1041:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  audience_version );
+                      ^~~~~~~~~~~~~~~~
+16 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "audience~.pd_linux" "audience~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "audience~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "beatify~.o" -c "beatify~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+beatify~.c:174:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  beatify_version );
+                      ^~~~~~~~~~~~~~~
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "beatify~.pd_linux" "beatify~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "beatify~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "blinkenlights.o" -c "blinkenlights.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+blinkenlights.c:205:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(x->x_glist);
+              ^
+blinkenlights.c:253:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(x->x_glist);
+              ^
+blinkenlights.c:649:12: warning: unused variable 'n' [-Wunused-variable]
+    int i, n, width, newvalue, height, nwidth;
+           ^
+blinkenlights.c:649:9: warning: unused variable 'i' [-Wunused-variable]
+    int i, n, width, newvalue, height, nwidth;
+        ^
+blinkenlights.c:649:22: warning: unused variable 'newvalue' [-Wunused-variable]
+    int i, n, width, newvalue, height, nwidth;
+                     ^
+blinkenlights.c:870:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, blinkenlights_version);
+                     ^~~~~~~~~~~~~~~~~~~~~
+7 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "blinkenlights.pd_linux" "blinkenlights.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "blinkenlights.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "compressor~.o" -c "compressor~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+compressor~.c:100:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4,  compressor_version );
+                      ^~~~~~~~~~~~~~~~~~
+2 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "compressor~.pd_linux" "compressor~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "compressor~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "cooled~.o" -c "cooled~.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+cooled~.c:241:72: warning: format specifies type 'unsigned int' but the argument has type 't_cooled *' (aka 'struct _cooled *') [-Wformat]
+        sprintf( x->x_guicommand, "COOLEDIMAGE%x put {%s} -to %d 0\n", x, x->x_gifdata, (bnumber*x->x_zoom)+i );
+                                              ~~                       ^
+cooled~.c:173:9: warning: unused variable 'phase' [-Wunused-variable]
+    int phase=0;
+        ^
+cooled~.c:172:13: warning: unused variable 'fspectrum' [-Wunused-variable]
+    t_float fspectrum=0.0;
+            ^
+cooled~.c:169:55: warning: unused parameter 'glist' [-Wunused-parameter]
+static void cooled_update_block(t_cooled *x, t_glist *glist, int bnumber)
+                                                      ^
+cooled~.c:253:10: warning: unused variable 'fillColor' [-Wunused-variable]
+    char fillColor[ 16 ];
+         ^
+cooled~.c:250:15: warning: unused variable 'canvas' [-Wunused-variable]
+    t_canvas *canvas=glist_getcanvas(glist);
+              ^
+cooled~.c:252:13: warning: unused variable 'fspectrum' [-Wunused-variable]
+    t_float fspectrum=0.0;
+            ^
+cooled~.c:337:22: warning: incompatible pointer to integer conversion assigning to 'pthread_t' (aka 'unsigned long') from 'void *' [-Wint-conversion]
+    x->x_updatechild = NULL;
+                     ^ ~~~~
+cooled~.c:342:54: warning: unused parameter 'glist' [-Wunused-parameter]
+static void cooled_update_part(t_cooled *x, t_glist *glist, int bstart, int bend,
+                                                     ^
+cooled~.c:590:48: warning: unused parameter 'owner' [-Wunused-parameter]
+static void cooled_getrect(t_gobj *z, t_glist *owner,
+                                               ^
+cooled~.c:623:14: warning: unused variable 'y' [-Wunused-variable]
+    t_rtext *y;
+             ^
+cooled~.c:657:66: warning: unused parameter 'dy' [-Wunused-parameter]
+static void cooled_motion(t_cooled *x, t_floatarg dx, t_floatarg dy)
+                                                                 ^
+cooled~.c:785:51: warning: unused parameter 'owner' [-Wunused-parameter]
+static void cooled_properties(t_gobj *z, t_glist *owner)
+                                                  ^
+cooled~.c:797:50: warning: unused parameter 's' [-Wunused-parameter]
+static void cooled_dialog(t_cooled *x, t_symbol *s, int argc, t_atom *argv)
+                                                 ^
+cooled~.c:857:9: warning: unused variable 'pipos' [-Wunused-variable]
+    int pipos;
+        ^
+cooled~.c:854:69: warning: unused parameter 'dbl' [-Wunused-parameter]
+                        int xpix, int ypix, int shift, int alt, int dbl, int doit)
+                                                                    ^
+cooled~.c:951:9: warning: unused variable 'fi' [-Wunused-variable]
+    int fi;
+        ^
+cooled~.c:1014:9: warning: unused variable 'fi' [-Wunused-variable]
+    int fi, csize;
+        ^
+cooled~.c:1308:11: warning: unused variable 'operator' [-Wunused-variable]
+    char *operator = soperator->s_name;
+          ^
+cooled~.c:1375:35: warning: unused parameter 's' [-Wunused-parameter]
+static void *cooled_new(t_symbol *s, int argc, t_atom *argv)
+                                  ^
+cooled~.c:1458:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, cooled_version);
+                     ^~~~~~~~~~~~~~
+22 warnings generated.
+cc   -rdynamic -shared -fPIC -Wl,-rpath,"\$ORIGIN",--enable-new-dtags -o "cooled~.pd_linux" "cooled~.o"   -lspeex -lmp3lame -lpthread -lc  
+chmod a-x "cooled~.pd_linux"
+cc -I"/usr/include/pd" -DPD -DVERSION='"0.1"' -fPIC -Wall -W -g -O6 -funroll-loops -fomit-frame-pointer -o "countund.o" -c "countund.c"
+warning: optimization level '-O6' is unsupported; using '-O3' instead
+countund.c:58:39: warning: unused parameter 'x' [-Wunused-parameter]
+static void countund_free(t_countund *x)
+                                      ^
+countund.c:83:9: error: non-void function 'countund_limit' should return a value [-Wreturn-type]
+        return;
+        ^
+countund.c:113:5: error: non-void function 'countund_bang' should return a value [-Wreturn-type]
+    return;
+    ^
+countund.c:118:22: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    logpost(NULL, 4, countund_version);
+                     ^~~~~~~~~~~~~~~~
+3 warnings and 2 errors generated.
+make[1]: *** [countund.o] Error 1
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+dh_auto_build: make -j1 returned exit code 2
+make: *** [build] Error 2
+dpkg-buildpackage: error: debian/rules build gave error exit status 2
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140405-2150
+
+Finished
+────────
+
+E: Build failure (dpkg-buildpackage died)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 1724
+Build-Time: 1
+Distribution: sid
+Fail-Stage: build
+Host Architecture: amd64
+Install-Time: 17
+Job: pd-unauthorized_0.1-1.dsc
+Machine Architecture: amd64
+Package: pd-unauthorized
+Package-Time: 26
+Source-Version: 0.1-1
+Space: 1724
+Status: attempted
+Version: 0.1-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140405-2150
+Build needed 00:00:26, 1724k disc space
