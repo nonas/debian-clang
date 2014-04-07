@@ -1,0 +1,45 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-04-07
+
+--- a/src/model/item-data.c
++++ b/src/model/item-data.c
+@@ -514,8 +514,8 @@
+ {
+ 	ItemDataClass *id_class;
+ 
+-	g_return_if_fail (data != NULL);
+-	g_return_if_fail (IS_ITEM_DATA (data));
++	g_return_val_if_fail (data != NULL, NULL);
++	g_return_val_if_fail (IS_ITEM_DATA (data), NULL);
+ 
+ 	id_class = ITEM_DATA_CLASS (G_OBJECT_GET_CLASS (data));
+ 	if (id_class->has_properties) {
+--- a/src/plot-add-function.c
++++ b/src/plot-add-function.c
+@@ -104,7 +104,7 @@
+ 									gtk_widget_destroy (GTK_WIDGET (warning));
+ 									plot_add_function_show (engine, current);
+ 									gtk_widget_destroy (GTK_WIDGET (dialog));
+-									return;
++									return 0;
+ 						}
+ 		}
+ 		if  ((result == GTK_RESPONSE_OK) &&
+--- a/src/splash.c
++++ b/src/splash.c
+@@ -58,12 +58,12 @@
+ 			OREGANO_GLADEDIR "/splash.glade",  OREGANO_GLADEDIR "/splash.xpm");
+ 		oregano_error_with_title (_("Could not create textbox properties dialog"), msg);
+ 		g_free (msg);
+-		return;
++		return NULL;
+ 	}
+ 	gui = glade_xml_new (OREGANO_GLADEDIR "/splash.glade", NULL, NULL);
+ 	if (!gui) {
+ 		oregano_error (_("Could not create textbox properties dialog"));
+-		return;
++		return NULL;
+ 	}
+ 
+ 	sp = g_new0 (Splash, 1);
