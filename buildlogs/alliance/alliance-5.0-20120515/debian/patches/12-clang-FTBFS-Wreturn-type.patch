@@ -1,0 +1,76 @@
+--- a/elp/src/elp.c
++++ b/elp/src/elp.c
+@@ -179,7 +179,7 @@
+ /* -------------------                                                      */
+ /*    Aucun!                                                                */
+ /****************************************************************************/
+-elpFCT int elpLotrsShrink(lotrs)
++elpFCT void elpLotrsShrink(lotrs)
+ struct lotrs *lotrs ;
+ 
+ {
+@@ -415,7 +415,7 @@
+ /* -------------------                                                      */
+ /*    Aucun!                                                                */
+ /****************************************************************************/
+-elpFCT int elpLofigCapaDiff(lofig)
++elpFCT void elpLofigCapaDiff(lofig)
+ struct lofig*lofig ;
+ 
+ {
+@@ -442,7 +442,7 @@
+      ))
+        {
+        elpError(1005,"diffusion") ;
+-       return 0 ;
++       return ;
+        }
+     }
+ 
+@@ -474,7 +474,7 @@
+ /* -------------------                                                      */
+ /*    Aucun!                                                                */
+ /****************************************************************************/
+-elpFCT int elpLofigCapaGrid(lofig)
++elpFCT void elpLofigCapaGrid(lofig)
+ struct lofig *lofig ;
+ 
+ {
+@@ -505,7 +505,7 @@
+ /* -------------------                                                      */
+ /*    Aucun!                                                                */
+ /****************************************************************************/
+-elpFCT int elpLofigShrink(lofig)
++elpFCT void elpLofigShrink(lofig)
+ struct lofig *lofig ;
+ 
+ {
+--- a/elp/src/elp.h
++++ b/elp/src/elp.h
+@@ -111,11 +111,11 @@
+ /* les fonctions externes */
+ extern int elpenv() ;
+ extern short elpLoadElp() ;
+-extern int elpLotrsShrink(lotrs_list *) ;
++extern void elpLotrsShrink(lotrs_list *) ;
+ extern float elpLotrsCapaDrain(lotrs_list *) ;
+ extern float elpLotrsCapaSource(lotrs_list *) ;
+ extern float elpLotrsCapaGrid(lotrs_list *) ;
+-extern int elpLofigCapaDiff(lofig_list *) ;
+-extern int elpLofigCapaGrid(lofig_list *) ;
+-extern int elpLofigShrink(lofig_list *) ;
++extern void elpLofigCapaDiff(lofig_list *) ;
++extern void elpLofigCapaGrid(lofig_list *) ;
++extern void elpLofigShrink(lofig_list *) ;
+ extern short elpError(short, ...) ;
+--- a/druc/src/drucompi_y.y
++++ b/druc/src/drucompi_y.y
+@@ -96,7 +96,7 @@
+             DRUC_REGLES
+             list_bloc
+             DRUC_FIN
+-	    DRUC_REGLES      { return ;}
++	    DRUC_REGLES      { return 0;}
+           ;
+ 
+ list_layer: list_layer layer
