@@ -1,0 +1,15 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-04-10
+
+--- a/apps/image_archive/queue.c
++++ b/apps/image_archive/queue.c
+@@ -242,7 +242,7 @@
+     COND_DumpConditions();
+ }
+ 
+-
++void
+ queueDisplayImage(const char* node, const char* name)
+ {
+   CONDITION cond;
