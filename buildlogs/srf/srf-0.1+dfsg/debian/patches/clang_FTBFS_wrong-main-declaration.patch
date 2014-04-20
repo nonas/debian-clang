@@ -1,0 +1,64 @@
+--- a/test/testRead.cc
++++ b/test/testRead.cc
+@@ -29,7 +29,7 @@
+ }
+ 
+ 
+-main(int argc, char* argv[])
++int main(int argc, char* argv[])
+ {
+     if ( argc != 2 )
+     {
+@@ -65,4 +65,5 @@
+     {
+         read->dump();
+     }
++    return 0;
+ }
+--- a/test/testWrite.cc
++++ b/test/testWrite.cc
+@@ -21,7 +21,7 @@
+   return oss.str();
+ }   
+ 
+-main(int argc, char **argv)
++int main(int argc, char **argv)
+ {
+     SRF_File::openType mode = SRF_File::openTypeWrite;
+     SRF_File file( "myFirstSSRFFile", mode );
+--- a/test/testWriteFastaq.cc
++++ b/test/testWriteFastaq.cc
+@@ -22,7 +22,7 @@
+ #include <io_lib/ztr.h>
+ #include <zlib.h>
+ 
+-main(int argc, char* argv[])
++int main(int argc, char* argv[])
+ {
+     if ( argc != 3 )
+     {
+@@ -115,5 +115,6 @@
+         }
+     }
+     newReadSet.write( file.getFile(), ztrBlobs, readIds );
++    return 0;
+ }
+ 
+--- a/test/testWriteSFF.cc
++++ b/test/testWriteSFF.cc
+@@ -31,7 +31,7 @@
+   return oss.str();
+ }   
+ 
+-main(int argc, char* argv[])
++int main(int argc, char* argv[])
+ {
+     if ( argc != 3 )
+     {
+@@ -75,5 +75,6 @@
+         readIdCounter++;
+     }
+     newReadSet.write( file.getFile(), ztrBlobs, readIds );
++    return 0;
+ }
+ 
