@@ -1,0 +1,11 @@
+--- a/scanner/testexitvalue.cc
++++ b/scanner/testexitvalue.cc
+@@ -9,7 +9,7 @@
+             "NOTE: this is the literal text of the executed command. "
+                             "Maybe a typo?" << endl;
+ 
+-    if (d_testExitValue && A2x(s_exitValue[1]) != 0)
++    if (d_testExitValue && int(A2x(s_exitValue[1])) != 0)
+         d_reporter.error() << 
+             "Program terminated due to non-zero exit value for\n" <<
+             *d_cmdIterator << " (" << exitStr << ")" << endl;
