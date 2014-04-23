@@ -1,0 +1,11 @@
+--- uanytun-0.3.3.orig/src/udp.c
++++ uanytun-0.3.3/src/udp.c
+@@ -258,7 +258,7 @@
+     break;
+   default:
+     asprintf(&ret, "unknown address type");
+-    return ;
++    return NULL;
+   }
+   addrstr = malloc(addrstr_len);
+   if(!addrstr)

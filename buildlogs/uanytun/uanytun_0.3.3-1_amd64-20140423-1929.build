@@ -1,0 +1,422 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ uanytun 0.3.3-1 (amd64)                                    23 Apr 2014 19:29 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: uanytun
+Version: 0.3.3-1
+Source Version: 0.3.3-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/uanytun-00PwPQ/uanytun-0.3.3' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/uanytun-00PwPQ' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-6d6b482d-7481-461b-b434-c9a5b25b759b' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+uanytun_0.3.3-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-1brqW5/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 5), libgcrypt11-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 5), libgcrypt11-dev
+dpkg-deb: building package `sbuild-build-depends-uanytun-dummy' in `/«BUILDDIR»/resolver-R53WcT/apt_archive/sbuild-build-depends-uanytun-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install uanytun build dependencies (apt-based resolver)                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libgcrypt11 libgcrypt11-dev libglib2.0-0
+  libgpg-error-dev libgpg-error0 libmagic1 libpipeline1 libunistring0 libxml2
+  man-db po-debconf
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff rng-tools
+  libgcrypt11-doc less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libgcrypt11 libgcrypt11-dev libglib2.0-0
+  libgpg-error-dev libgpg-error0 libmagic1 libpipeline1 libunistring0 libxml2
+  man-db po-debconf sbuild-build-depends-uanytun-dummy
+0 upgraded, 21 newly installed, 0 to remove and 0 not upgraded.
+Need to get 9228 kB/9229 kB of archives.
+After this operation, 28.3 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libgpg-error0 amd64 1.12-0.2 [56.5 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libgcrypt11 amd64 1.5.3-4 [250 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.17-1 [229 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main file amd64 1:5.17-1 [55.5 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libgpg-error-dev amd64 1.12-0.2 [28.1 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libgcrypt11-dev amd64 1.5.3-4 [285 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 9228 kB in 2s (4559 kB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libgpg-error0:amd64.
+Preparing to unpack .../libgpg-error0_1.12-0.2_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.12-0.2) ...
+Selecting previously unselected package libgcrypt11:amd64.
+Preparing to unpack .../libgcrypt11_1.5.3-4_amd64.deb ...
+Unpacking libgcrypt11:amd64 (1.5.3-4) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.17-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.17-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.17-1_amd64.deb ...
+Unpacking file (1:5.17-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libgpg-error-dev.
+Preparing to unpack .../libgpg-error-dev_1.12-0.2_amd64.deb ...
+Unpacking libgpg-error-dev (1.12-0.2) ...
+Selecting previously unselected package libgcrypt11-dev.
+Preparing to unpack .../libgcrypt11-dev_1.5.3-4_amd64.deb ...
+Unpacking libgcrypt11-dev (1.5.3-4) ...
+Selecting previously unselected package sbuild-build-depends-uanytun-dummy.
+Preparing to unpack .../sbuild-build-depends-uanytun-dummy.deb ...
+Unpacking sbuild-build-depends-uanytun-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libgpg-error0:amd64 (1.12-0.2) ...
+Setting up libgcrypt11:amd64 (1.5.3-4) ...
+Setting up libmagic1:amd64 (1:5.17-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.17-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libgpg-error-dev (1.12-0.2) ...
+Setting up libgcrypt11-dev (1.5.3-4) ...
+Setting up sbuild-build-depends-uanytun-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9-20140411-2 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.17-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9-20140411-2 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.1 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9-20140411-2 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9-20140411-2 libgcrypt11_1.5.3-4 libgcrypt11-dev_1.5.3-4 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2 libgomp1_4.9-20140411-2 libgpg-error-dev_1.12-0.2 libgpg-error0_1.12-0.2 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9-20140411-2 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.17-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9-20140411-2 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-4 libpipeline1_1.3.0-1 libquadmath0_4.9-20140411-2 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9-20140411-2 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9-20140411-2 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-uanytun-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Wed Feb 17 02:16:12 2010 UTC using DSA key ID 37E272E8
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./uanytun_0.3.3-1.dsc
+dpkg-source: info: extracting uanytun in uanytun-0.3.3
+dpkg-source: info: unpacking uanytun_0.3.3.orig.tar.gz
+dpkg-source: info: applying uanytun_0.3.3-1.diff.gz
+dpkg-source: info: upstream files that have been modified: 
+ uanytun-0.3.3/etc/init.d/uanytun
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-6d6b482d-7481-461b-b434-c9a5b25b759b
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package uanytun
+dpkg-buildpackage: source version 0.3.3-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Michael Prokop <mika@debian.org>
+ dpkg-source --before-build uanytun-0.3.3
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp configure-stamp
+# Add here commands to clean up after the build process.
+/usr/bin/make --directory=/«PKGBUILDDIR»/src distclean
+make[1]: Entering directory `/«PKGBUILDDIR»/src'
+rm -f *.o
+rm -f *.d
+rm -f *.d.*
+rm -f uanytun
+/usr/bin/make --directory="../doc/" clean
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
+rm -f uanytun.8.xml
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
+find . -name *.o -exec rm -f {} \;
+find . -name "*.\~*" -exec rm -rf {} \;
+rm -f include.mk
+rm -f version.h
+rm -f tun.c
+make[1]: Leaving directory `/«PKGBUILDDIR»/src'
+dh_clean
+ dpkg-source -b uanytun-0.3.3
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building uanytun using existing uanytun_0.3.3.orig.tar.gz
+dpkg-source: info: building uanytun in uanytun_0.3.3-1.diff.gz
+dpkg-source: warning: the diff modifies the following upstream files: 
+ etc/init.d/uanytun
+dpkg-source: info: use the '3.0 (quilt)' format to have separate and documented changes to upstream files, see dpkg-source(1)
+dpkg-source: info: building uanytun in uanytun_0.3.3-1.dsc
+ debian/rules build
+dh_testdir
+cd src && ./configure --no-manpage --prefix=/usr --sysconfdir=/etc --examplesdir=/usr/share/uanytun/examples && cd ..
+loading Linux specific TUN Device
+using libgcrypt library
+not installing manpage
+installing example files
+touch configure-stamp
+dh_testdir
+cd src && /usr/bin/make && cd ..
+make[1]: Entering directory `/«PKGBUILDDIR»/src'
+(re)building auth_algo.d
+(re)building key_derivation.d
+(re)building uanytun.d
+(re)building cipher.d
+(re)building seq_window.d
+(re)building encrypted_packet.d
+(re)building plain_packet.d
+(re)building udp.d
+(re)building tun.d
+(re)building options.d
+(re)building sysexec.d
+(re)building sig_handler.d
+(re)building string_list.d
+(re)building log.d
+make[1]: Leaving directory `/«PKGBUILDDIR»/src'
+make[1]: Entering directory `/«PKGBUILDDIR»/src'
+gcc -g -O2 -c log.c
+log.c:119:7: warning: implicit declaration of function 'isdigit' is invalid in C99 [-Wimplicit-function-declaration]
+  if(!isdigit(prioptr[0]) || (prioptr[1] != 0 && prioptr[1] != ',')) {
+      ^
+log.c:249:15: warning: initializing 'u_int8_t *' (aka 'unsigned char *') with an expression of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    u_int8_t* ptr = &msg[offset];
+              ^     ~~~~~~~~~~~~
+log.c:254:16: warning: passing 'u_int8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+      snprintf(ptr, 3, "%02X ", buf[i]);
+               ^~~
+/usr/include/stdio.h:386:39: note: passing argument to parameter '__s' here
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+                                      ^
+3 warnings generated.
+gcc -g -O2 -c string_list.c
+gcc -g -O2 -c sig_handler.c
+sig_handler.c:65:71: warning: implicitly declaring library function 'strerror' with type 'char *(int)'
+    log_printf(ERROR, "signal handling init failed (pipe error: %s)", strerror(errno));
+                                                                      ^
+sig_handler.c:65:71: note: please include the header <string.h> or explicitly provide a declaration for 'strerror'
+1 warning generated.
+gcc -g -O2 -c sysexec.c
+sysexec.c:56:6: warning: implicit declaration of function 'pipe' is invalid in C99 [-Wimplicit-function-declaration]
+  if(pipe(pipefd) == -1) {
+     ^
+sysexec.c:62:9: warning: implicit declaration of function 'fork' is invalid in C99 [-Wimplicit-function-declaration]
+  pid = fork();
+        ^
+sysexec.c:70:13: warning: implicit declaration of function 'getdtablesize' is invalid in C99 [-Wimplicit-function-declaration]
+    for (fd=getdtablesize();fd>=0;--fd) // close all file descriptors
+            ^
+sysexec.c:71:27: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+      if(fd != pipefd[1]) close(fd);
+                          ^
+sysexec.c:77:10: warning: implicit declaration of function 'dup' is invalid in C99 [-Wimplicit-function-declaration]
+      if(dup(fd) == -1)   // stdout
+         ^
+sysexec.c:82:5: warning: implicit declaration of function 'execve' is invalid in C99 [-Wimplicit-function-declaration]
+    execve(script, argv, evp);
+    ^
+sysexec.c:86:5: warning: implicit declaration of function 'write' is invalid in C99 [-Wimplicit-function-declaration]
+    write(pipefd[1], (void*)(&errno), sizeof(errno));
+    ^
+sysexec.c:100:8: warning: implicit declaration of function 'read' is invalid in C99 [-Wimplicit-function-declaration]
+    if(read(pipefd[0], (void*)(&err), sizeof(err)) >= sizeof(err)) {
+       ^
+8 warnings generated.
+gcc -g -O2 -c options.c
+gcc -g -O2 -c tun.c
+tun.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+tun.c:195:3: warning: implicit declaration of function 'asprintf' is invalid in C99 [-Wimplicit-function-declaration]
+  asprintf(&mtu_str, "%d", dev->mtu_);
+  ^
+2 warnings generated.
+gcc -g -O2 -c udp.c
+udp.c:260:5: warning: implicit declaration of function 'asprintf' is invalid in C99 [-Wimplicit-function-declaration]
+    asprintf(&ret, "unknown address type");
+    ^
+udp.c:261:5: error: non-void function 'udp_endpoint_to_string' should return a value [-Wreturn-type]
+    return ;
+    ^
+1 warning and 1 error generated.
+make[1]: *** [udp.o] Error 1
+make[1]: Leaving directory `/«PKGBUILDDIR»/src'
+make: *** [build-stamp] Error 2
+dpkg-buildpackage: error: debian/rules build gave error exit status 2
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140423-1930
+
+Finished
+────────
+
+E: Build failure (dpkg-buildpackage died)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 744
+Build-Time: 1
+Distribution: sid
+Fail-Stage: build
+Host Architecture: amd64
+Install-Time: 13
+Job: uanytun_0.3.3-1.dsc
+Machine Architecture: amd64
+Package: uanytun
+Package-Time: 19
+Source-Version: 0.3.3-1
+Space: 744
+Status: attempted
+Version: 0.3.3-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140423-1930
+Build needed 00:00:19, 744k disc space
