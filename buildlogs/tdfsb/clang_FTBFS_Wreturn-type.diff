@@ -1,0 +1,11 @@
+--- tdfsb-0.0.10.orig/tdfsb.c
++++ tdfsb-0.0.10/tdfsb.c
+@@ -2795,7 +2795,7 @@
+                             {
+                                 strcpy(TDFSB_CURRENTPATH,temp_trunc);        
+                                 TDFSB_FUNC_IDLE=nullDisplay; TDFSB_FUNC_DISP=noDisplay; 
+-                                return;
++                                return(1);
+                             }
+ 			    TDFSB_FUNC_IDLE=nullDisplay;
+                             TDFSB_FUNC_DISP=noDisplay;
