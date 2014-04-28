@@ -1,0 +1,591 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ lziprecover 1.16~pre1-1 (amd64)                            27 Apr 2014 16:19 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: lziprecover
+Version: 1.16~pre1-1
+Source Version: 1.16~pre1-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/lziprecover-CzaDvc/lziprecover-1.16~pre1' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/lziprecover-CzaDvc' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-c6c462d2-717a-48bf-b68a-5081f07d8c72' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+lziprecover_1.16~pre1-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-pQm7Mg/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), texinfo
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), texinfo
+dpkg-deb: building package `sbuild-build-depends-lziprecover-dummy' in `/«BUILDDIR»/resolver-XlpE6U/apt_archive/sbuild-build-depends-lziprecover-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install lziprecover build dependencies (apt-based resolver)                  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libintl-perl libmagic1 libpipeline1
+  libtext-unidecode-perl libunistring0 libxml-libxml-perl
+  libxml-namespacesupport-perl libxml-sax-base-perl libxml-sax-perl libxml2
+  man-db po-debconf texinfo ucf
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff libintl-xs-perl
+  less www-browser libmail-box-perl texlive-base texlive-latex-base
+  texlive-generic-recommended texinfo-doc-nonfree
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info libxml-sax-expat-perl xml-core
+  libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libintl-perl libmagic1 libpipeline1
+  libtext-unidecode-perl libunistring0 libxml-libxml-perl
+  libxml-namespacesupport-perl libxml-sax-base-perl libxml-sax-perl libxml2
+  man-db po-debconf sbuild-build-depends-lziprecover-dummy texinfo ucf
+0 upgraded, 25 newly installed, 0 to remove and 8 not upgraded.
+Need to get 11.4 MB/11.4 MB of archives.
+After this operation, 37.7 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libtext-unidecode-perl all 0.04-2 [115 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libintl-perl all 1.23-1 [1209 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libxml-namespacesupport-perl all 1.11-1 [14.8 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libxml-sax-base-perl all 1.07-1 [23.1 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main ucf all 3.0028 [69.1 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libxml-sax-perl all 0.99+dfsg-2 [68.3 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libxml-libxml-perl amd64 2.0108+dfsg-1 [358 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main texinfo amd64 5.2.0.dfsg.1-2 [954 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 11.4 MB in 0s (26.9 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package libtext-unidecode-perl.
+Preparing to unpack .../libtext-unidecode-perl_0.04-2_all.deb ...
+Unpacking libtext-unidecode-perl (0.04-2) ...
+Selecting previously unselected package libintl-perl.
+Preparing to unpack .../libintl-perl_1.23-1_all.deb ...
+Unpacking libintl-perl (1.23-1) ...
+Selecting previously unselected package libxml-namespacesupport-perl.
+Preparing to unpack .../libxml-namespacesupport-perl_1.11-1_all.deb ...
+Unpacking libxml-namespacesupport-perl (1.11-1) ...
+Selecting previously unselected package libxml-sax-base-perl.
+Preparing to unpack .../libxml-sax-base-perl_1.07-1_all.deb ...
+Unpacking libxml-sax-base-perl (1.07-1) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../archives/ucf_3.0028_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0028) ...
+Selecting previously unselected package libxml-sax-perl.
+Preparing to unpack .../libxml-sax-perl_0.99+dfsg-2_all.deb ...
+Unpacking libxml-sax-perl (0.99+dfsg-2) ...
+Selecting previously unselected package libxml-libxml-perl.
+Preparing to unpack .../libxml-libxml-perl_2.0108+dfsg-1_amd64.deb ...
+Unpacking libxml-libxml-perl (2.0108+dfsg-1) ...
+Selecting previously unselected package texinfo.
+Preparing to unpack .../texinfo_5.2.0.dfsg.1-2_amd64.deb ...
+Unpacking texinfo (5.2.0.dfsg.1-2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package sbuild-build-depends-lziprecover-dummy.
+Preparing to unpack .../sbuild-build-depends-lziprecover-dummy.deb ...
+Unpacking sbuild-build-depends-lziprecover-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up libtext-unidecode-perl (0.04-2) ...
+Setting up libintl-perl (1.23-1) ...
+Setting up libxml-namespacesupport-perl (1.11-1) ...
+Setting up libxml-sax-base-perl (1.07-1) ...
+Setting up ucf (3.0028) ...
+Setting up libxml-sax-perl (0.99+dfsg-2) ...
+update-perl-sax-parsers: Registering Perl SAX parser XML::SAX::PurePerl with priority 10...
+update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
+
+Creating config file /etc/perl/XML/SAX/ParserDetails.ini with new version
+Setting up libxml-libxml-perl (2.0108+dfsg-1) ...
+update-perl-sax-parsers: Registering Perl SAX parser XML::LibXML::SAX::Parser with priority 50...
+update-perl-sax-parsers: Registering Perl SAX parser XML::LibXML::SAX with priority 50...
+update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
+Replacing config file /etc/perl/XML/SAX/ParserDetails.ini with new version
+Setting up texinfo (5.2.0.dfsg.1-2) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up sbuild-build-depends-lziprecover-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libintl-perl_1.23-1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-unidecode-perl_0.04-2 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml-libxml-perl_2.0108+dfsg-1 libxml-namespacesupport-perl_1.11-1 libxml-sax-base-perl_1.07-1 libxml-sax-perl_0.99+dfsg-2 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-lziprecover-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 texinfo_5.2.0.dfsg.1-2 tzdata_2014b-1 ucf_3.0028 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Sat Apr  5 09:38:39 2014 UTC using DSA key ID 4B2B2B9E
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./lziprecover_1.16~pre1-1.dsc
+dpkg-source: info: extracting lziprecover in lziprecover-1.16~pre1
+dpkg-source: info: unpacking lziprecover_1.16~pre1.orig.tar.xz
+dpkg-source: info: unpacking lziprecover_1.16~pre1-1.debian.tar.xz
+dpkg-source: info: applying 0001-build.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-c6c462d2-717a-48bf-b68a-5081f07d8c72
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package lziprecover
+dpkg-buildpackage: source version 1.16~pre1-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Daniel Baumann <mail@daniel-baumann.ch>
+ dpkg-source --before-build lziprecover-1.16~pre1
+dpkg-buildpackage: host architecture amd64
+dpkg-source: info: using options from lziprecover-1.16~pre1/debian/source/options: --compression=xz
+ fakeroot debian/rules clean
+dh clean --parallel
+   dh_testdir -O--parallel
+   dh_auto_clean -O--parallel
+   dh_clean -O--parallel
+ dpkg-source -b lziprecover-1.16~pre1
+dpkg-source: info: using options from lziprecover-1.16~pre1/debian/source/options: --compression=xz
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building lziprecover using existing ./lziprecover_1.16~pre1.orig.tar.xz
+dpkg-source: info: building lziprecover in lziprecover_1.16~pre1-1.debian.tar.xz
+dpkg-source: info: building lziprecover in lziprecover_1.16~pre1-1.dsc
+ debian/rules build
+dh build --parallel
+   dh_testdir -O--parallel
+   dh_auto_configure -O--parallel
+configure: WARNING: unrecognized option: '--build=x86_64-linux-gnu'
+configure: WARNING: unrecognized option: '--includedir=${prefix}/include'
+configure: WARNING: unrecognized option: '--sysconfdir=/etc'
+configure: WARNING: unrecognized option: '--localstatedir=/var'
+configure: WARNING: unrecognized option: '--libdir=${prefix}/lib/x86_64-linux-gnu'
+configure: WARNING: unrecognized option: '--libexecdir=${prefix}/lib/x86_64-linux-gnu'
+configure: WARNING: unrecognized option: '--disable-maintainer-mode'
+configure: WARNING: unrecognized option: '--disable-dependency-tracking'
+
+creating config.status
+creating Makefile
+VPATH = .
+prefix = /usr
+exec_prefix = $(prefix)
+bindir = $(exec_prefix)/bin
+datarootdir = $(prefix)/share
+infodir = ${prefix}/share/info
+mandir = ${prefix}/share/man
+CXX = g++
+CPPFLAGS = -D_FORTIFY_SOURCE=2
+CXXFLAGS = -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security
+LDFLAGS = -Wl,-z,relro
+OK. Now you can run make.
+   dh_auto_build -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»'
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o arg_parser.o arg_parser.cc
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o file_index.o file_index.cc
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o merge.o merge.cc
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o range_dec.o range_dec.cc
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o repair.o repair.cc
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o split.o split.cc
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o decoder.o decoder.cc
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DPROGVERSION=\"1.16-pre1\" -c -o main.o main.cc
+g++ -Wl,-z,relro -o lziprecover arg_parser.o file_index.o merge.o range_dec.o repair.o split.o decoder.o main.o
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»'
+testing lziprecover-1.16-pre1............................................
+tests completed successfully.
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary --parallel
+   dh_testroot -O--parallel
+   dh_prep -O--parallel
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_install -- DESTDIR=/«PKGBUILDDIR»/debian/lziprecover
+make[2]: Entering directory `/«PKGBUILDDIR»'
+if [ ! -d "/«PKGBUILDDIR»/debian/lziprecover/usr/bin" ] ; then install -d -m 755 "/«PKGBUILDDIR»/debian/lziprecover/usr/bin" ; fi
+install -m 755 ./lziprecover "/«PKGBUILDDIR»/debian/lziprecover/usr/bin/lziprecover"
+if [ ! -d "/«PKGBUILDDIR»/debian/lziprecover/usr/share/info" ] ; then install -d -m 755 "/«PKGBUILDDIR»/debian/lziprecover/usr/share/info" ; fi
+install -m 644 ./doc/lziprecover.info "/«PKGBUILDDIR»/debian/lziprecover/usr/share/info/lziprecover.info"
+install-info --info-dir="/«PKGBUILDDIR»/debian/lziprecover/usr/share/info" "/«PKGBUILDDIR»/debian/lziprecover/usr/share/info/lziprecover.info"
+/bin/sh: 1: install-info: not found
+make[2]: [install-info] Error 127 (ignored)
+if [ ! -d "/«PKGBUILDDIR»/debian/lziprecover/usr/share/man/man1" ] ; then install -d -m 755 "/«PKGBUILDDIR»/debian/lziprecover/usr/share/man/man1" ; fi
+install -m 644 ./doc/lziprecover.1 "/«PKGBUILDDIR»/debian/lziprecover/usr/share/man/man1/lziprecover.1"
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+# removing unused files
+rm -f debian/lziprecover/usr/share/info/dir*
+# alternative handling
+mv debian/lziprecover/usr/bin/lziprecover debian/lziprecover/usr/bin/lzip.recover
+mv debian/lziprecover/usr/share/info/lziprecover.info debian/lziprecover/usr/share/info/lzip.recover.info
+mv debian/lziprecover/usr/share/man/man1/lziprecover.1 debian/lziprecover/usr/share/man/man1/lzip.recover.1
+ln -s /usr/bin/lzip.recover debian/lziprecover/usr/bin/lziprecover
+ln -s /usr/share/info/lzip.recover.info.gz debian/lziprecover/usr/share/info/lziprecover.info.gz
+ln -s /usr/share/man/man1/lzip.recover.1.gz debian/lziprecover/usr/share/man/man1/lziprecover.1.gz
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs -O--parallel
+   dh_installchangelogs -O--parallel
+   dh_installman -O--parallel
+   dh_perl -O--parallel
+   dh_link -O--parallel
+   dh_compress -O--parallel
+   dh_fixperms -O--parallel
+   debian/rules override_dh_strip
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_strip --dbg-package=lziprecover-dbg
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_makeshlibs -O--parallel
+   dh_shlibdeps -O--parallel
+   dh_installdeb -O--parallel
+   dh_gencontrol -O--parallel
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums -O--parallel
+   debian/rules override_dh_builddeb
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_builddeb -- -Zxz
+dpkg-deb: building package `lziprecover' in `../lziprecover_1.16~pre1-1_amd64.deb'.
+dpkg-deb: building package `lziprecover-dbg' in `../lziprecover-dbg_1.16~pre1-1_amd64.deb'.
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ dpkg-genchanges  >../lziprecover_1.16~pre1-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build lziprecover-1.16~pre1
+dpkg-source: info: using options from lziprecover-1.16~pre1/debian/source/options: --compression=xz
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140427-1620
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+lziprecover_1.16~pre1-1_amd64.changes:
+──────────────────────────────────────
+
+Format: 1.8
+Date: Sat, 05 Apr 2014 11:37:58 +0200
+Source: lziprecover
+Binary: lziprecover lziprecover-dbg
+Architecture: source amd64
+Version: 1.16~pre1-1
+Distribution: sid
+Urgency: low
+Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+Changed-By: Daniel Baumann <mail@daniel-baumann.ch>
+Description: 
+ lziprecover - lossless data compressor based on the LZMA algorithm (recovery)
+ lziprecover-dbg - lossless data compressor based on the LZMA algorithm
+Changes: 
+ lziprecover (1.16~pre1-1) unstable; urgency=low
+ .
+   * Merging upstream version 1.16~pre1.
+   * Updating years in copyright file.
+Checksums-Sha1: 
+ bb652a8a94cf3e3c3f5f2d7eb98a332e74001853 1112 lziprecover_1.16~pre1-1.dsc
+ f82ee22bd49d458fb73cb17a035083222673469a 62724 lziprecover_1.16~pre1.orig.tar.xz
+ 1afef6545bcf49e47c6cf75211125355223caf5c 3340 lziprecover_1.16~pre1-1.debian.tar.xz
+ 214f04ec783abb94ddeb57158d346fae5765cd3b 47308 lziprecover_1.16~pre1-1_amd64.deb
+ 89d56add7b0e75c2cf68f4cf2319b5c4219688a9 156614 lziprecover-dbg_1.16~pre1-1_amd64.deb
+Checksums-Sha256: 
+ d94dc905a9ea93ebfffa682bbf1565841e102b68d97a79214e05bc949787bef3 1112 lziprecover_1.16~pre1-1.dsc
+ 5df279c5755a56f52f7a9632b53c4913cc7b16083c18e0a81f8590bbf8e89895 62724 lziprecover_1.16~pre1.orig.tar.xz
+ 11d8aebab1abe3843ebec5f068cf95c9fd6aa5883af2f890274969cfe09ba6c9 3340 lziprecover_1.16~pre1-1.debian.tar.xz
+ 06e358f74e062ab72e8126972ebdae7308df075e3208abce69a96386b3ee7ae1 47308 lziprecover_1.16~pre1-1_amd64.deb
+ 2292e738ba2b10069a578313b544eb0f3965a45b6bc187227babc9ec8928f2c5 156614 lziprecover-dbg_1.16~pre1-1_amd64.deb
+Files: 
+ 734896917f3f83f6cd4b762dbec77c69 47308 utils optional lziprecover_1.16~pre1-1_amd64.deb
+ a914d29e1fcacc1de73e3730edd4d026 156614 debug extra lziprecover-dbg_1.16~pre1-1_amd64.deb
+ 947a2dd2027bc09fcbc11504649e33dc 1112 utils optional lziprecover_1.16~pre1-1.dsc
+ 84e601a638c696fe633e81f9dc26d419 62724 utils optional lziprecover_1.16~pre1.orig.tar.xz
+ 6488674793ac188a468f2be5f913d37a 3340 utils optional lziprecover_1.16~pre1-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+lziprecover_1.16~pre1-1_amd64.deb
+─────────────────────────────────
+
+ new debian package, version 2.0.
+ size 47308 bytes: control archive=1280 bytes.
+     773 bytes,    18 lines      control              
+     554 bytes,     8 lines      md5sums              
+     470 bytes,    25 lines   *  postinst             #!/bin/sh
+     248 bytes,    22 lines   *  prerm                #!/bin/sh
+ Package: lziprecover
+ Version: 1.16~pre1-1
+ Architecture: amd64
+ Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+ Installed-Size: 137
+ Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+ Breaks: lzip (<< 1.15~)
+ Provides: lzip-alternative
+ Section: utils
+ Priority: optional
+ Homepage: http://www.nongnu.org/lzip/lziprecover.html
+ Description: lossless data compressor based on the LZMA algorithm (recovery)
+  Lzip is a lossless data compressor based on the LZMA algorithm, with very safe
+  integrity checking and a user interface similar to the one of gzip or bzip2.
+  Lzip decompresses almost as fast as gzip and compresses better than bzip2,
+  which makes it well suited for software distribution and data archiving.
+  .
+  This package contains the recovery tool.
+
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/bin/
+-rwxr-xr-x root/root     80664 2014-04-27 16:20 ./usr/bin/lzip.recover
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/share/man/man1/
+-rw-r--r-- root/root      1245 2014-04-27 16:20 ./usr/share/man/man1/lzip.recover.1.gz
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/share/doc/lziprecover/
+-rw-r--r-- root/root      1549 2014-04-04 23:57 ./usr/share/doc/lziprecover/changelog.gz
+-rw-r--r-- root/root      1006 2014-04-05 11:38 ./usr/share/doc/lziprecover/changelog.Debian.gz
+-rw-r--r-- root/root      2569 2014-04-05 11:36 ./usr/share/doc/lziprecover/copyright
+-rw-r--r-- root/root      3427 2014-04-03 12:33 ./usr/share/doc/lziprecover/README
+-rw-r--r-- root/root       232 2014-04-03 20:14 ./usr/share/doc/lziprecover/NEWS.gz
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/share/info/
+-rw-r--r-- root/root      7181 2014-04-27 16:20 ./usr/share/info/lzip.recover.info.gz
+lrwxrwxrwx root/root         0 2014-04-27 16:20 ./usr/bin/lziprecover -> lzip.recover
+lrwxrwxrwx root/root         0 2014-04-27 16:20 ./usr/share/man/man1/lziprecover.1.gz -> lzip.recover.1.gz
+lrwxrwxrwx root/root         0 2014-04-27 16:20 ./usr/share/info/lziprecover.info.gz -> lzip.recover.info.gz
+
+
+lziprecover-dbg_1.16~pre1-1_amd64.deb
+─────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 156614 bytes: control archive=822 bytes.
+     703 bytes,    17 lines      control              
+     341 bytes,     4 lines      md5sums              
+ Package: lziprecover-dbg
+ Source: lziprecover
+ Version: 1.16~pre1-1
+ Architecture: amd64
+ Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+ Installed-Size: 206
+ Depends: lziprecover (= 1.16~pre1-1)
+ Section: debug
+ Priority: extra
+ Homepage: http://www.nongnu.org/lzip/lziprecover.html
+ Description: lossless data compressor based on the LZMA algorithm
+  Lzip is a lossless data compressor based on the LZMA algorithm, with very safe
+  integrity checking and a user interface similar to the one of gzip or bzip2.
+  Lzip decompresses almost as fast as gzip and compresses better than bzip2,
+  which makes it well suited for software distribution and data archiving.
+  .
+  This package contains the debugging symbols.
+
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/lib/debug/.build-id/
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/lib/debug/.build-id/00/
+-rw-r--r-- root/root    164524 2014-04-27 16:20 ./usr/lib/debug/.build-id/00/2215fd5f3a018cd07b6229c96ab4071506c636.debug
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 16:20 ./usr/share/doc/lziprecover-dbg/
+-rw-r--r-- root/root      1549 2014-04-04 23:57 ./usr/share/doc/lziprecover-dbg/changelog.gz
+-rw-r--r-- root/root      1006 2014-04-05 11:38 ./usr/share/doc/lziprecover-dbg/changelog.Debian.gz
+-rw-r--r-- root/root      2569 2014-04-05 11:36 ./usr/share/doc/lziprecover-dbg/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 3328
+Build-Time: 7
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 15
+Job: lziprecover_1.16~pre1-1.dsc
+Machine Architecture: amd64
+Package: lziprecover
+Package-Time: 31
+Source-Version: 1.16~pre1-1
+Space: 3328
+Status: successful
+Version: 1.16~pre1-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140427-1620
+Build needed 00:00:31, 3328k disc space

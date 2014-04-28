@@ -1,0 +1,565 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ etl 0.04.17-1 (amd64)                                      27 Apr 2014 22:12 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: etl
+Version: 0.04.17-1
+Source Version: 0.04.17-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/etl-fET53z/etl-0.04.17' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/etl-fET53z' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-5f04025e-5dfc-4d4a-8a86-519f2d543fea' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+etl_0.04.17-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-5VmHHr/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dh-autoreconf
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dh-autoreconf
+dpkg-deb: building package `sbuild-build-depends-etl-dummy' in `/«BUILDDIR»/resolver-ueQW7J/apt_archive/sbuild-build-depends-etl-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install etl build dependencies (apt-based resolver)                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpipeline1 libsigsegv2
+  libtool libunistring0 libxml2 m4 man-db po-debconf
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make gettext-doc groff libtool-doc automaken gfortran
+  fortran95-compiler gcj-jdk less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur libasprintf-dev libgettextpo-dev libglib2.0-data
+  shared-mime-info libltdl-dev xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpipeline1 libsigsegv2
+  libtool libunistring0 libxml2 m4 man-db po-debconf
+  sbuild-build-depends-etl-dummy
+0 upgraded, 25 newly installed, 0 to remove and 8 not upgraded.
+Need to get 10.9 MB/10.9 MB of archives.
+After this operation, 32.3 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main m4 amd64 1.4.17-3 [254 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main autoconf all 2.69-6 [340 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main autopoint all 0.18.3.2-1 [393 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main dh-autoreconf all 9 [15.5 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 10.9 MB in 0s (35.4 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-3_amd64.deb ...
+Unpacking m4 (1.4.17-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-6_all.deb ...
+Unpacking autoconf (2.69-6) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../autopoint_0.18.3.2-1_all.deb ...
+Unpacking autopoint (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../dh-autoreconf_9_all.deb ...
+Unpacking dh-autoreconf (9) ...
+Selecting previously unselected package sbuild-build-depends-etl-dummy.
+Preparing to unpack .../sbuild-build-depends-etl-dummy.deb ...
+Unpacking sbuild-build-depends-etl-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-3) ...
+Setting up autoconf (2.69-6) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up autopoint (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up dh-autoreconf (9) ...
+Setting up sbuild-build-depends-etl-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 autoconf_2.69-6 automake_1:1.14.1-3 autopoint_0.18.3.2-1 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 dh-autoreconf_9 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtool_2.4.2-1.7 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 m4_1.4.17-3 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-etl-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Thu Nov 21 02:39:07 2013 UTC using RSA key ID 53968D1B
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./etl_0.04.17-1.dsc
+dpkg-source: info: extracting etl in etl-0.04.17
+dpkg-source: info: unpacking etl_0.04.17.orig.tar.gz
+dpkg-source: info: unpacking etl_0.04.17-1.debian.tar.xz
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-5f04025e-5dfc-4d4a-8a86-519f2d543fea
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package etl
+dpkg-buildpackage: source version 0.04.17-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Dmitry Smirnov <onlyjob@debian.org>
+ dpkg-source --before-build etl-0.04.17
+dpkg-buildpackage: host architecture amd64
+dpkg-source: info: using options from etl-0.04.17/debian/source/options: --compression=xz
+ fakeroot debian/rules clean
+dh clean --with autoreconf
+   dh_testdir
+   dh_auto_clean
+   dh_autoreconf_clean
+   dh_clean
+ dpkg-source -b etl-0.04.17
+dpkg-source: info: using options from etl-0.04.17/debian/source/options: --compression=xz
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building etl using existing ./etl_0.04.17.orig.tar.gz
+dpkg-source: info: building etl in etl_0.04.17-1.debian.tar.xz
+dpkg-source: info: building etl in etl_0.04.17-1.dsc
+ debian/rules build
+dh build --with autoreconf
+   dh_testdir
+   dh_autoreconf
+configure.ac:64: warning: AC_REQUIRE: `AC_HEADER_STDC' was expanded before it was required
+configure.ac:64: http://www.gnu.org/software/autoconf/manual/autoconf.html#Expanded-Before-Required
+../../lib/autoconf/headers.m4:297: _AC_INCLUDES_DEFAULT_REQUIREMENTS is expanded from...
+../../lib/autoconf/headers.m4:353: AC_INCLUDES_DEFAULT is expanded from...
+../../lib/autoconf/headers.m4:129: _AC_CHECK_HEADER_MONGREL is expanded from...
+../../lib/autoconf/headers.m4:67: AC_CHECK_HEADER is expanded from...
+../../lib/m4sugar/m4sh.m4:607: AS_FOR is expanded from...
+../../lib/autoconf/headers.m4:249: AC_CHECK_HEADERS is expanded from...
+m4/ETL.m4:8: ETL_DEPS is expanded from...
+configure.ac:64: the top level
+configure.ac:64: warning: AC_REQUIRE: `AC_HEADER_STDC' was expanded before it was required
+configure.ac:64: http://www.gnu.org/software/autoconf/manual/autoconf.html#Expanded-Before-Required
+../../lib/autoconf/headers.m4:297: _AC_INCLUDES_DEFAULT_REQUIREMENTS is expanded from...
+../../lib/autoconf/headers.m4:353: AC_INCLUDES_DEFAULT is expanded from...
+../../lib/autoconf/headers.m4:129: _AC_CHECK_HEADER_MONGREL is expanded from...
+../../lib/autoconf/headers.m4:67: AC_CHECK_HEADER is expanded from...
+../../lib/m4sugar/m4sh.m4:607: AS_FOR is expanded from...
+../../lib/autoconf/headers.m4:249: AC_CHECK_HEADERS is expanded from...
+m4/ETL.m4:8: ETL_DEPS is expanded from...
+configure.ac:64: the top level
+configure.ac:64: warning: AC_REQUIRE: `AC_HEADER_STDC' was expanded before it was required
+configure.ac:64: http://www.gnu.org/software/autoconf/manual/autoconf.html#Expanded-Before-Required
+../../lib/autoconf/headers.m4:297: _AC_INCLUDES_DEFAULT_REQUIREMENTS is expanded from...
+../../lib/autoconf/headers.m4:353: AC_INCLUDES_DEFAULT is expanded from...
+../../lib/autoconf/headers.m4:129: _AC_CHECK_HEADER_MONGREL is expanded from...
+../../lib/autoconf/headers.m4:67: AC_CHECK_HEADER is expanded from...
+../../lib/m4sugar/m4sh.m4:607: AS_FOR is expanded from...
+../../lib/autoconf/headers.m4:249: AC_CHECK_HEADERS is expanded from...
+m4/ETL.m4:8: ETL_DEPS is expanded from...
+configure.ac:64: the top level
+configure.ac:64: warning: AC_REQUIRE: `AC_HEADER_STDC' was expanded before it was required
+configure.ac:64: http://www.gnu.org/software/autoconf/manual/autoconf.html#Expanded-Before-Required
+../../lib/autoconf/headers.m4:297: _AC_INCLUDES_DEFAULT_REQUIREMENTS is expanded from...
+../../lib/autoconf/headers.m4:353: AC_INCLUDES_DEFAULT is expanded from...
+../../lib/autoconf/headers.m4:129: _AC_CHECK_HEADER_MONGREL is expanded from...
+../../lib/autoconf/headers.m4:67: AC_CHECK_HEADER is expanded from...
+../../lib/m4sugar/m4sh.m4:607: AS_FOR is expanded from...
+../../lib/autoconf/headers.m4:249: AC_CHECK_HEADERS is expanded from...
+m4/ETL.m4:8: ETL_DEPS is expanded from...
+configure.ac:64: the top level
+configure.ac:64: warning: AC_REQUIRE: `AC_HEADER_STDC' was expanded before it was required
+configure.ac:64: http://www.gnu.org/software/autoconf/manual/autoconf.html#Expanded-Before-Required
+../../lib/autoconf/headers.m4:297: _AC_INCLUDES_DEFAULT_REQUIREMENTS is expanded from...
+../../lib/autoconf/headers.m4:353: AC_INCLUDES_DEFAULT is expanded from...
+../../lib/autoconf/headers.m4:129: _AC_CHECK_HEADER_MONGREL is expanded from...
+../../lib/autoconf/headers.m4:67: AC_CHECK_HEADER is expanded from...
+../../lib/m4sugar/m4sh.m4:607: AS_FOR is expanded from...
+../../lib/autoconf/headers.m4:249: AC_CHECK_HEADERS is expanded from...
+m4/ETL.m4:8: ETL_DEPS is expanded from...
+configure.ac:64: the top level
+configure.ac:28: installing 'config/compile'
+Makefile.am:71: warning: shell find $(top_srcdir: non-POSIX variable name
+Makefile.am:71: (probably a GNU make extension)
+Makefile.am:73: warning: shell find $(top_srcdir: non-POSIX variable name
+Makefile.am:73: (probably a GNU make extension)
+Makefile.am:83: warning: shell find $(top_srcdir: non-POSIX variable name
+Makefile.am:83: (probably a GNU make extension)
+Makefile.am:90: warning: shell find $(top_srcdir: non-POSIX variable name
+Makefile.am:90: (probably a GNU make extension)
+parallel-tests: installing 'config/test-driver'
+   dh_auto_configure
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking for ranlib... ranlib
+checking for compiler warning flags to use... -W -Wall
+checking for debug flags... -DNDEBUG
+checking for optimization flags... -O2
+checking for profiling... no
+checking how to run the C++ preprocessor... g++ -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for main in -luser32... no
+checking for CreateMutex in -lkernel32... no
+checking for pthread_mutex_init in -lpthread... yes
+checking for ANSI C header files... (cached) yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking for pthread_create... yes
+checking for pthread_rwlock_init... yes
+checking for sched_yield... yes
+checking for CreateThread... no
+checking for QueryPerformanceCounter... no
+checking for gettimeofday... yes
+checking for sscanf... yes
+checking for vsscanf... yes
+checking for vsprintf... yes
+checking for vasprintf... yes
+checking for vsnprintf... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating ETL-config
+config.status: creating Makefile
+config.status: creating ETL/Makefile
+config.status: creating test/Makefile
+config.status: creating ETL.pc
+config.status: creating doxygen.cfg
+config.status: creating ETL/etl_profile_.h
+config.status: executing depfiles commands
+
+Extended Template Library v.0.04.17
+Configuration Summary
+- - - - - -
+
+Install Prefix -------------------> /usr
+Target Platform ------------------> x86_64-pc-linux-gnu
+Debug Mode -----------------------> no
+
+$CXX ------------------------------> 'g++'
+$CXXFLAGS -------------------------> ' -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -W -Wall -DNDEBUG -O2'
+
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making all in ETL
+make[2]: Entering directory `/«PKGBUILDDIR»/ETL'
+make  all-am
+make[3]: Entering directory `/«PKGBUILDDIR»/ETL'
+sed "s/PACKAGE/ETL/g;" < ../ETL/etl_profile_.h > ../ETL/etl_profile.h
+make[3]: Leaving directory `/«PKGBUILDDIR»/ETL'
+make[2]: Leaving directory `/«PKGBUILDDIR»/ETL'
+Making all in test
+make[2]: Entering directory `/«PKGBUILDDIR»/test'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/test'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+# do not stop if test(s) failed
+dh_auto_test
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making check in ETL
+make[3]: Entering directory `/«PKGBUILDDIR»/ETL'
+make[3]: Leaving directory `/«PKGBUILDDIR»/ETL'
+Making check in test
+make[3]: Entering directory `/«PKGBUILDDIR»/test'
+make  fixed handle clock angle random hermite stringf pen surface smart_ptr benchmark smach spline value
+make[4]: Entering directory `/«PKGBUILDDIR»/test'
+g++ -DHAVE_CONFIG_H -I. -I../ETL  -I.. -I../ETL -D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -W -Wall -DNDEBUG -O2 -I.. -I../ETL -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -W -Wall -DNDEBUG -O2 -c -o fixed.o fixed.cpp
+In file included from fixed.cpp:27:
+In file included from ../ETL/fixed:32:
+../ETL/_fixed.h:285:8: warning: shift count >= width of type [-Wshift-count-overflow]
+                _data>>=FIXED_BITS;
+                     ^  ~~~~~~~~~~
+../ETL/_fixed.h:308:9: note: in instantiation of member function 'etl::fixed_base<unsigned char, 8>::operator*=' requested here
+        return operator*=(fixed_base<T,FIXED_BITS>(rhs));
+               ^
+fixed.cpp:185:5: note: in instantiation of function template specialization 'etl::fixed_base<unsigned char, 8>::operator*=<double>' requested here
+        fix*=0.7;
+           ^
+E: ABORT: Received INT signal (requesting cleanup and shutdown)
+E: ABORT: Received INT signal (requesting cleanup and shutdown)
+E: ABORT: Received INT signal (requesting cleanup and shutdown)
+clang: error: unable to execute command: Terminated
+clang: error: clang frontend command failed due to signal (use -v to see invocation)
+Debian clang version 3.4-2 (tags/RELEASE_34/final) (based on LLVM 3.4)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+clang: note: diagnostic msg: PLEASE submit a bug report to http://bugs.debian.org/ and include the crash backtrace, preprocessed source, and associated run script.
+clang: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang: note: diagnostic msg: /tmp/fixed-149573.cpp
+clang: note: diagnostic msg: /tmp/fixed-149573.sh
+clang: note: diagnostic msg: 
+
+********************
+make[4]: *** [fixed.o] Error 254
+make[3]: *** [check-am] Error 2
+make[2]: *** [check-recursive] Error 1
+dh_auto_test: make -j1 check returned exit code 2
+make[1]: [override_dh_auto_test] Error 2 (ignored)
+ fakeroot debian/rules binary
+E: Caught signal ‘Terminated’: terminating immediately
+make[4]: Leaving directory `/«PKGBUILDDIR»/test'
+make[3]: Leaving directory `/«PKGBUILDDIR»/test'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140427-2352
+
+Finished
+────────
+
+E: Build failure (dpkg-buildpackage died)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Not cleaning session: cloned chroot in use
+E: Failed to poll file descriptor: Interrupted system call
+E: sid-amd64-sbuild-5f04025e-5dfc-4d4a-8a86-519f2d543fea: Chroot setup failed: stage=setup-stop
+Chroot cleanup failed
+E: Aborting build: Received INT signal
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 2588
+Build-Time: 5957
+Distribution: sid
+Fail-Stage: abort
+Host Architecture: amd64
+Install-Time: 15
+Job: etl_0.04.17-1.dsc
+Machine Architecture: amd64
+Package: etl
+Package-Time: 5982
+Source-Version: 0.04.17-1
+Space: 2588
+Status: attempted
+Version: 0.04.17-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140427-2352
+Build needed 01:39:42, 2588k disc space

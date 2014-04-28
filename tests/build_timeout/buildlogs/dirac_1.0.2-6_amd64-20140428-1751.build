@@ -1,0 +1,299 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ dirac 1.0.2-6 (amd64)                                      28 Apr 2014 17:51 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: dirac
+Version: 1.0.2-6
+Source Version: 1.0.2-6
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/dirac-l4vN7j/dirac-1.0.2' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/dirac-l4vN7j' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-2e515e7a-cde9-4785-b7cc-bb84d025ef60' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+dirac_1.0.2-6.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-9ue_gq/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/820 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), autoconf, debhelper (>= 8.1.3~)
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), autoconf, debhelper (>= 8.1.3~)
+dpkg-deb: building package `sbuild-build-depends-dirac-dummy' in `/«BUILDDIR»/resolver-rsU1Ua/apt_archive/sbuild-build-depends-dirac-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install dirac build dependencies (apt-based resolver)                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf bsdmainutils debhelper file gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpipeline1
+  libsigsegv2 libunistring0 libxml2 m4 man-db po-debconf
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc libtool wamerican
+  wordlist whois vacation dh-make gettext-doc groff less www-browser
+  libmail-box-perl
+Recommended packages:
+  automake automaken curl wget lynx-cur autopoint libasprintf-dev
+  libgettextpo-dev libglib2.0-data shared-mime-info xml-core
+  libmail-sendmail-perl
+The following NEW packages will be installed:
+  autoconf bsdmainutils debhelper file gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpipeline1
+  libsigsegv2 libunistring0 libxml2 m4 man-db po-debconf
+  sbuild-build-depends-dirac-dummy
+0 upgraded, 20 newly installed, 0 to remove and 8 not upgraded.
+Need to get 9239 kB/9240 kB of archives.
+After this operation, 28.5 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main m4 amd64 1.4.17-3 [254 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main autoconf all 2.69-6 [340 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 9239 kB in 0s (66.7 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-3_amd64.deb ...
+Unpacking m4 (1.4.17-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-6_all.deb ...
+Unpacking autoconf (2.69-6) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package sbuild-build-depends-dirac-dummy.
+Preparing to unpack .../sbuild-build-depends-dirac-dummy.deb ...
+Unpacking sbuild-build-depends-dirac-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-3) ...
+Setting up autoconf (2.69-6) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up sbuild-build-depends-dirac-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 autoconf_2.69-6 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 m4_1.4.17-3 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-dirac-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Tue Feb  7 08:44:52 2012 UTC using RSA key ID 311D765A
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./dirac_1.0.2-6.dsc
+dpkg-source: info: extracting dirac in dirac-1.0.2
+dpkg-source: info: unpacking dirac_1.0.2.orig.tar.gz
+dpkg-source: info: unpacking dirac_1.0.2-6.debian.tar.gz
+dpkg-source: info: applying build-system-modifications.patch
+dpkg-source: info: applying bootstrap.patch
+dpkg-source: info: applying gcc45.patch
+dpkg-source: info: applying gcc46.patch
+dpkg-source: info: applying multiarch.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-2e515e7a-cde9-4785-b7cc-bb84d025ef60
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package dirac
+dpkg-buildpackage: source version 1.0.2-6
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Alessio Treglia <alessio@debian.org>
+ dpkg-source --before-build dirac-1.0.2
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-checkbuilddeps: Unmet build dependencies: doxygen-latex graphviz
+dpkg-buildpackage: warning: build dependencies/conflicts unsatisfied; aborting
+dpkg-buildpackage: warning: (Use -d flag to override.)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-1751
+
+Finished
+────────
+
+E: Build failure (dpkg-buildpackage died)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 10820
+Build-Time: 0
+Distribution: sid
+Fail-Stage: build
+Host Architecture: amd64
+Install-Time: 11
+Job: dirac_1.0.2-6.dsc
+Machine Architecture: amd64
+Package: dirac
+Package-Time: 19
+Source-Version: 1.0.2-6
+Space: 10820
+Status: attempted
+Version: 1.0.2-6
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-1751
+Build needed 00:00:19, 10820k disc space

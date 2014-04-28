@@ -1,0 +1,853 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ tinyxml 2.6.2-2 (amd64)                                    28 Apr 2014 20:17 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: tinyxml
+Version: 2.6.2-2
+Source Version: 2.6.2-2
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/tinyxml-tdCvKv/tinyxml-2.6.2' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/tinyxml-tdCvKv' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-cb195cb4-1677-47e4-ae2f-a6f595440af0' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+tinyxml_2.6.2-2.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-7luhRI/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8.1.3~), dpkg-dev (>= 1.16.1~)
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8.1.3~), dpkg-dev (>= 1.16.1~)
+dpkg-deb: building package `sbuild-build-depends-tinyxml-dummy' in `/«BUILDDIR»/resolver-zuRpjX/apt_archive/sbuild-build-depends-tinyxml-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install tinyxml build dependencies (apt-based resolver)                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpipeline1 libunistring0
+  libxml2 man-db po-debconf
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff less www-browser
+  libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpipeline1 libunistring0
+  libxml2 man-db po-debconf sbuild-build-depends-tinyxml-dummy
+0 upgraded, 17 newly installed, 0 to remove and 8 not upgraded.
+Need to get 8615 kB/8616 kB of archives.
+After this operation, 26.1 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 8615 kB in 0s (68.7 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package sbuild-build-depends-tinyxml-dummy.
+Preparing to unpack .../sbuild-build-depends-tinyxml-dummy.deb ...
+Unpacking sbuild-build-depends-tinyxml-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up sbuild-build-depends-tinyxml-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-tinyxml-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Thu May  9 12:47:41 2013 UTC using RSA key ID 83135D45
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./tinyxml_2.6.2-2.dsc
+dpkg-source: info: extracting tinyxml in tinyxml-2.6.2
+dpkg-source: info: unpacking tinyxml_2.6.2.orig.tar.gz
+dpkg-source: info: unpacking tinyxml_2.6.2-2.debian.tar.gz
+dpkg-source: info: applying enforce-use-stl.patch
+dpkg-source: info: applying entity-encoding.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-cb195cb4-1677-47e4-ae2f-a6f595440af0
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package tinyxml
+dpkg-buildpackage: source version 2.6.2-2
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Felix Geyer <fgeyer@debian.org>
+ dpkg-source --before-build tinyxml-2.6.2
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --parallel
+   dh_testdir -O--parallel
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_clean
+make[2]: Entering directory `/«PKGBUILDDIR»'
+rm -f core tinyxml.o tinyxmlparser.o xmltest.o tinyxmlerror.o tinystr.o xmltest
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+rm -f libtinyxml.so* libtinyxml.a
+rm -rf xmltestdir
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_clean -O--parallel
+ dpkg-source -b tinyxml-2.6.2
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building tinyxml using existing ./tinyxml_2.6.2.orig.tar.gz
+dpkg-source: info: building tinyxml in tinyxml_2.6.2-2.debian.tar.xz
+dpkg-source: info: building tinyxml in tinyxml_2.6.2-2.dsc
+ debian/rules build
+dh build --parallel
+   dh_testdir -O--parallel
+   dh_auto_configure -O--parallel
+   debian/rules override_dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_build -- CXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2" LDFLAGS="-Wl,-z,relro"
+make[2]: Entering directory `/«PKGBUILDDIR»'
+g++ -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2  tinyxml.cpp -o tinyxml.o
+g++ -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2  tinyxmlparser.cpp -o tinyxmlparser.o
+g++ -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2  xmltest.cpp -o xmltest.o
+xmltest.cpp:607:6: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+                                        fgets( savedBuf, 256, saved );
+                                        ^~~~~  ~~~~~~~~~~~~~~~~~~~~
+xmltest.cpp:980:4: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+                        fgets( buf, 1024, textfile );
+                        ^~~~~  ~~~~~~~~~~~~~~~~~~~
+xmltest.cpp:1141:27: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        "<<E4>>"
+                          ^~~~
+xmltest.cpp:1142:27: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        "C<F6>nt<E4>nt<DF><E4><F6><FC><C4><D6><DC>"
+                          ^~~~  ~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xmltest.cpp:1143:28: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        "</<E4>>";
+                           ^~~~
+xmltest.cpp:1149:65: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            TiXmlHandle aHandle = docHandle.FirstChildElement( "<E4>" );
+                                                                ^~~~
+xmltest.cpp:1153:47: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            XmlTest( "ISO-8859-1 Parsing.", "C<F6>nt<E4>nt<DF><E4><F6><FC><C4><D6><DC>", tHandle.Text()->Value() );
+                                              ^~~~  ~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7 warnings generated.
+g++ -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2  tinyxmlerror.cpp -o tinyxmlerror.o
+g++ -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2  tinystr.cpp -o tinystr.o
+g++ -o xmltest -Wl,-z,relro tinyxml.o tinyxmlparser.o xmltest.o tinyxmlerror.o tinystr.o  
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+ar rc libtinyxml.a tinyxml.o tinyxmlparser.o tinyxmlerror.o
+rm *.o xmltest
+dh_auto_build -- CXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2 -fPIC" LDFLAGS="-Wl,-z,relro"
+make[2]: Entering directory `/«PKGBUILDDIR»'
+g++ -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2 -fPIC  tinyxml.cpp -o tinyxml.o
+g++ -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2 -fPIC  tinyxmlparser.cpp -o tinyxmlparser.o
+g++ -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2 -fPIC  xmltest.cpp -o xmltest.o
+xmltest.cpp:607:6: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+                                        fgets( savedBuf, 256, saved );
+                                        ^~~~~  ~~~~~~~~~~~~~~~~~~~~
+xmltest.cpp:980:4: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+                        fgets( buf, 1024, textfile );
+                        ^~~~~  ~~~~~~~~~~~~~~~~~~~
+xmltest.cpp:1141:27: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        "<<E4>>"
+                          ^~~~
+xmltest.cpp:1142:27: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        "C<F6>nt<E4>nt<DF><E4><F6><FC><C4><D6><DC>"
+                          ^~~~  ~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xmltest.cpp:1143:28: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                        "</<E4>>";
+                           ^~~~
+xmltest.cpp:1149:65: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            TiXmlHandle aHandle = docHandle.FirstChildElement( "<E4>" );
+                                                                ^~~~
+xmltest.cpp:1153:47: warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+            XmlTest( "ISO-8859-1 Parsing.", "C<F6>nt<E4>nt<DF><E4><F6><FC><C4><D6><DC>", tHandle.Text()->Value() );
+                                              ^~~~  ~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7 warnings generated.
+g++ -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2 -fPIC  tinyxmlerror.cpp -o tinyxmlerror.o
+g++ -c -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DTIXML_USE_STL -D_FORTIFY_SOURCE=2 -fPIC  tinystr.cpp -o tinystr.o
+g++ -o xmltest -Wl,-z,relro tinyxml.o tinyxmlparser.o xmltest.o tinyxmlerror.o tinystr.o  
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+g++ -shared -Wl,-soname,libtinyxml.so.2.6.2 \
+	  -o libtinyxml.so.2.6.2 -Wl,-z,relro \
+	  tinyxml.o tinyxmlparser.o tinyxmlerror.o
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+mkdir xmltestdir
+cp -a utf8test*.xml xmltestdir
+cd xmltestdir && ../xmltest
+** Demo doc read from disk: ** 
+
+** Printing via doc.Print **
+<?xml version="1.0" standalone="no" ?>
+<!-- Our to do list data -->
+<ToDo>
+    <!-- Do I need a secure PDA? -->
+    <Item priority="1" distance="close">Go to the
+        <bold>Toy store!</bold>
+    </Item>
+    <Item priority="2" distance="none">Do bills</Item>
+    <Item priority="2" distance="far &amp; back">Look for Evil Dinosaurs!</Item>
+</ToDo>
+** Printing via TiXmlPrinter **
+<?xml version="1.0" standalone="no" ?>
+<!-- Our to do list data -->
+<ToDo>
+    <!-- Do I need a secure PDA? -->
+    <Item priority="1" distance="close">
+        Go to the
+        <bold>Toy store!</bold>
+    </Item>
+    <Item priority="2" distance="none">Do bills</Item>
+    <Item priority="2" distance="far &amp; back">Look for Evil Dinosaurs!</Item>
+</ToDo>
+** Printing via operator<< **
+<?xml version="1.0" standalone="no" ?><!-- Our to do list data --><ToDo><!-- Do I need a secure PDA? --><Item priority="1" distance="close">Go to the<bold>Toy store!</bold></Item><Item priority="2" distance="none">Do bills</Item><Item priority="2" distance="far &amp; back">Look for Evil Dinosaurs!</Item></ToDo>
+** Demo doc processed: ** 
+
+<?xml version="1.0" standalone="no" ?>
+<!-- Our to do list data -->
+<ToDo>
+    <!-- Do I need a secure PDA? -->
+    <Item priority="2" distance="close">Go to the
+        <bold>Toy store!</bold>
+    </Item>
+    <Item priority="1" distance="far">Talk to:
+        <Meeting where="School">
+            <Attendee name="Marple" position="teacher" />
+            <Attendee name="Voel" position="counselor" />
+        </Meeting>
+        <Meeting where="Lunch" />
+    </Item>
+    <Item priority="2" distance="here">Do bills</Item>
+</ToDo>
+** Demo doc processed to stream: ** 
+
+<?xml version="1.0" standalone="no" ?><!-- Our to do list data --><ToDo><!-- Do I need a secure PDA? --><Item priority="2" distance="close">Go to the<bold>Toy store!</bold></Item><Item priority="1" distance="far">Talk to:<Meeting where="School"><Attendee name="Marple" position="teacher" /><Attendee name="Voel" position="counselor" /></Meeting><Meeting where="Lunch" /></Item><Item priority="2" distance="here">Do bills</Item></ToDo>
+
+** Basic structure. **
+[pass] Output stream correct.
+[pass] Root element exists. [1][1]
+[pass] Root element value is 'ToDo'. [ToDo][ToDo]
+[pass] First child exists & is a comment. [1][1]
+[pass] Sibling element exists & is an element. [1][1]
+[pass] Value is 'Item'. [Item][Item]
+[pass] First child exists. [1][1]
+[pass] Value is 'Go to the'. [Go to the][Go to the]
+
+** Iterators. **
+[pass] Top level nodes, using First / Next. [3][3]
+[pass] Top level nodes, using Last / Previous. [3][3]
+[pass] Top level nodes, using IterateChildren. [3][3]
+[pass] Children of the 'ToDo' element, using First / Next. [3][3]
+[pass] 'Item' children of the 'ToDo' element, using First/Next. [3][3]
+[pass] 'Item' children of the 'ToDo' element, using Last/Previous. [3][3]
+
+** Parsing. **
+[pass] Element parsed, value is 'Element0'. [Element0][Element0]
+[pass] Reads attribute 'attribute0="foo0"'. [foo0][foo0]
+[pass] Reads incorrectly formatted 'attribute1=noquotes'. [noquotes][noquotes]
+[pass] Read attribute with entity value '>'. [>][>]
+[pass] Error row [3][3]
+[pass] Error column [17][17]
+
+** Streaming. **
+[pass] Stream round trip correct.
+[pass] String printing correct.
+[pass] Query attribute: int as double [0][0]
+[pass] Query attribute: int as double [1][1]
+[pass] Query attribute: double as double [2][2]
+[pass] Query attribute: double as int [0][0]
+[pass] Query attribute: double as int [2][2]
+[pass] Query attribute: not a number [2][2]
+[pass] Query attribute: does not exist [1][1]
+[pass] Attribute round trip. c-string. [strValue][strValue]
+[pass] Attribute round trip. int. [1][1]
+[pass] Attribute round trip. double. [-1][-1]
+[pass] Location tracking: Tab 8: room row [1][1]
+[pass] Location tracking: Tab 8: room col [49][49]
+[pass] Location tracking: Tab 8: doors row [1][1]
+[pass] Location tracking: Tab 8: doors col [55][55]
+[pass] Location tracking: Declaration row [1][1]
+[pass] Location tracking: Declaration col [5][5]
+[pass] Location tracking: room row [1][1]
+[pass] Location tracking: room col [45][45]
+[pass] Location tracking: doors row [1][1]
+[pass] Location tracking: doors col [51][51]
+[pass] Location tracking: Comment row [2][2]
+[pass] Location tracking: Comment col [3][3]
+[pass] Location tracking: text row [3][3]
+[pass] Location tracking: text col [24][24]
+[pass] Location tracking: door0 row [3][3]
+[pass] Location tracking: door0 col [5][5]
+[pass] Location tracking: door1 row [4][4]
+[pass] Location tracking: door1 col [5][5]
+
+** UTF-8 **
+[pass] UTF-8: Russian value.
+[pass] UTF-8: Russian value row. [4][4]
+[pass] UTF-8: Russian value column. [5][5]
+[pass] UTF-8: Browsing russian element name.
+[pass] UTF-8: Russian element name row. [7][7]
+[pass] UTF-8: Russian element name column. [47][47]
+[pass] UTF-8: Declaration column. [1][1]
+[pass] UTF-8: Document column. [1][1]
+[pass] UTF-8: Verified multi-language round trip. [1][1]
+[pass] Legacy encoding: Verify text element. [r�sum�][r�sum�]
+
+** Copy and Assignment **
+[pass] Copy/Assign: element copy #1. [element][element]
+[pass] Copy/Assign: element copy #2. [value][value]
+[pass] Copy/Assign: element assign #1. [element][element]
+[pass] Copy/Assign: element assign #2. [value][value]
+[pass] Copy/Assign: element assign #3. [1][1]
+[pass] Copy/Assign: comment copy. [comment][comment]
+[pass] Copy/Assign: comment assign. [comment][comment]
+[pass] Copy/Assign: unknown copy. [[unknown]][[unknown]]
+[pass] Copy/Assign: unknown assign. [[unknown]][[unknown]]
+[pass] Copy/Assign: text copy. [TextNode][TextNode]
+[pass] Copy/Assign: text assign. [TextNode][TextNode]
+[pass] Copy/Assign: declaration copy. [UTF-8][UTF-8]
+[pass] Copy/Assign: text assign. [UTF-8][UTF-8]
+[pass] Copy/Assign: document copy.
+[pass] Copy/Assign: document assign.
+
+** Parsing, no Condense Whitespace **
+[pass] Condense white space OFF.
+[pass] GetText() normal use. [This is text][This is text]
+[pass] GetText() contained element. [1][1]
+[pass] GetText() partial. [This is ][This is ]
+<xmlElement>
+    <![CDATA[I am > the rules!
+...since I make symbolic puns]]>
+</xmlElement>
+[pass] CDATA parse.
+[pass] CDATA stream.
+[pass] CDATA copy.
+[pass] CDATA with all bytes #1.
+[pass] CDATA with all bytes #2.
+<xmlElement>
+    <![CDATA[<b>I am > the rules!</b>
+...since I make symbolic puns]]>
+</xmlElement>
+[pass] CDATA parse. [ 1480107 ]
+[pass] CDATA stream. [ 1480107 ]
+[pass] CDATA copy. [ 1480107 ]
+
+** Fuzzing... **
+** Fuzzing Complete. **
+
+** Bug regression tests **
+[pass] Test InsertBeforeChild on empty node. [1][1]
+[pass] Test InsertAfterChild on empty node.  [1][1]
+[pass] Entity transformation: read. 
+[pass] Entity transformation: write. 
+[pass] dot in element attributes and names [0][0]
+[pass] Entity with one digit. [1][1]
+[pass] Entity with one digit. [1.1 Start easy ignore fin thickness
+][1.1 Start easy ignore fin thickness
+]
+[pass] Correct value of unknown. [!DOCTYPE PLAY SYSTEM 'play.dtd'][!DOCTYPE PLAY SYSTEM 'play.dtd']
+[pass] Correct streaming of unknown. [<!ELEMENT title (#PCDATA)>][<!ELEMENT title (#PCDATA)>]
+[pass] Comment formatting. [ Somewhat<evil> ][ Somewhat<evil> ]
+[pass] Comment streaming. [<!-- Somewhat<evil> -->][<!-- Somewhat<evil> -->]
+[pass] White space kept. [ This has leading and trailing space ][ This has leading and trailing space ]
+[pass] White space kept. [This has  internal space][This has  internal space]
+[pass] White space kept. [ This has leading, trailing, and  internal space ][ This has leading, trailing, and  internal space ]
+[pass] White space condensed. [This has leading and trailing space][This has leading and trailing space]
+[pass] White space condensed. [This has internal space][This has internal space]
+[pass] White space condensed. [This has leading, trailing, and internal space][This has leading, trailing, and internal space]
+[pass] Parsing repeated attributes. [1][1]
+[pass] Embedded null throws error. [1][1]
+[pass] Embedded null throws error. [1][1]
+[pass] ISO-8859-1 Parsing. [C�nt�nt�������][C�nt�nt�������]
+[pass] Empty document error TIXML_ERROR_DOCUMENT_EMPTY [12][12]
+[pass] Test safe error return. [0][0]
+[pass] Low entities. [][]
+<test>&#x0E;</test>
+[pass] Throw error with bad end quotes. [1][1]
+[pass] QueryValueAttribute [0][0]
+[pass] QueryValueAttribute [0][0]
+[pass] QueryValueAttribute [0][0]
+[pass] QueryValueAttribute [2][2]
+[pass] QueryValueAttribute [1][1]
+[pass] QueryValueAttribute [0][0]
+[pass] QueryValueAttribute [1][1]
+[pass] QueryValueAttribute [1][1]
+[pass] QueryValueAttribute [1][1]
+[pass] QueryValueAttribute [1][1]
+[pass] Attribute [0][0]
+[pass] Attribute [1][1]
+[pass] Attribute [1][1]
+[pass] Document only at top level. [1][1]
+[pass] Document only at top level. [15][15]
+[pass] Missing end tag at end of input [1][1]
+[pass] Missing end tag with trailing whitespace [1][1]
+[pass] Comments ignore entities.
+[pass] Comments ignore entities.
+[pass] Comments ignore entities.
+[pass] Comments ignore entities.
+[pass] Comments iterate correctly. [3][3]
+[pass] Handle end tag whitespace [0][0]
+[pass] Infinite loop test. [1][1]
+[pass] Odd XML parsing. [tag][tag]
+[pass] Entity escaping [<foo>foo&amp;#xa+bar</foo>][<foo>foo&amp;#xa+bar</foo>]
+
+Pass 138, Fail 0
+rm -rf xmltestdir
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary --parallel
+   dh_testroot -O--parallel
+   dh_prep -O--parallel
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+mkdir -p debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig
+mkdir -p debian/tmp/usr/include
+install -m 644 -p libtinyxml.so.2.6.2 debian/tmp/usr/lib/x86_64-linux-gnu/
+ln -f -s libtinyxml.so.2.6.2 debian/tmp/usr/lib/x86_64-linux-gnu/libtinyxml.so
+install -m 644 -p libtinyxml.a debian/tmp/usr/lib/x86_64-linux-gnu/
+install -m 644 -p tinyxml.h debian/tmp/usr/include/
+sed -e 's/\${DEB_HOST_MULTIARCH}/x86_64-linux-gnu/' -e 's/\${DEB_VERSION_UPSTREAM}/2.6.2/' \
+	  debian/tinyxml.pc.in > debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig/tinyxml.pc
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_install --fail-missing
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs -O--parallel
+   dh_installchangelogs -O--parallel
+   dh_perl -O--parallel
+   dh_link -O--parallel
+   dh_compress -O--parallel
+   dh_fixperms -O--parallel
+   debian/rules override_dh_strip
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_strip --dbg-package=libtinyxml2.6.2-dbg
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_makeshlibs -O--parallel
+   dh_shlibdeps -O--parallel
+   dh_installdeb -O--parallel
+   dh_gencontrol -O--parallel
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: package libtinyxml2.6.2-dbg: unused substitution variable ${misc:Pre-Depends}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums -O--parallel
+   dh_builddeb -O--parallel
+dpkg-deb: building package `libtinyxml2.6.2' in `../libtinyxml2.6.2_2.6.2-2_amd64.deb'.
+dpkg-deb: building package `libtinyxml2.6.2-dbg' in `../libtinyxml2.6.2-dbg_2.6.2-2_amd64.deb'.
+dpkg-deb: building package `libtinyxml-dev' in `../libtinyxml-dev_2.6.2-2_amd64.deb'.
+dpkg-deb: building package `libtinyxml-doc' in `../libtinyxml-doc_2.6.2-2_all.deb'.
+ dpkg-genchanges  >../tinyxml_2.6.2-2_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build tinyxml-2.6.2
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-2017
+
+Finished
+────────
+
+I: Built successfully
+E: Package builds libtinyxml-doc_2.6.2-2_all.deb when binary-indep target is not called.  This is a bug in the packaging.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+tinyxml_2.6.2-2_amd64.changes:
+──────────────────────────────
+
+Format: 1.8
+Date: Thu, 09 May 2013 14:42:26 +0200
+Source: tinyxml
+Binary: libtinyxml2.6.2 libtinyxml2.6.2-dbg libtinyxml-dev libtinyxml-doc
+Architecture: source amd64 all
+Version: 2.6.2-2
+Distribution: sid
+Urgency: low
+Maintainer: Felix Geyer <fgeyer@debian.org>
+Changed-By: Felix Geyer <fgeyer@debian.org>
+Description: 
+ libtinyxml-dev - TinyXml library - header and static library
+ libtinyxml-doc - TinyXml library - documentation files
+ libtinyxml2.6.2 - C++ XML parsing library
+ libtinyxml2.6.2-dbg - TinyXml library - debug files
+Changes: 
+ tinyxml (2.6.2-2) unstable; urgency=low
+ .
+   * Include /usr/share/dpkg/default.mk to set build flags and simplify
+     debian/rules.
+     - Build-depend on dpkg-dev (>= 1.16.1~).
+   * Enable parallel building.
+   * Convert to multiarch.
+   * Bump Standards-Version to 3.9.4, no changes needed.
+   * Use canonical URIs for Vcs-* fields.
+   * Switch to my @debian.org email address.
+Checksums-Sha1: 
+ 3a91cef65733c166088eb588941b0881daa0073d 1186 tinyxml_2.6.2-2.dsc
+ 40087afea6c61f9c526d700fd98d97721540e3ed 4084 tinyxml_2.6.2-2.debian.tar.xz
+ 2831c23e7bf6795390a697b6665241f37bdd74c4 37918 libtinyxml2.6.2_2.6.2-2_amd64.deb
+ 4a74752b189e5675c9c39f085d3e8f08113bf5b1 75020 libtinyxml2.6.2-dbg_2.6.2-2_amd64.deb
+ 3cab218c94934347e2172bcd4303d85f899d61e8 50618 libtinyxml-dev_2.6.2-2_amd64.deb
+ f11833af305ae7d8dcad36ccd0fe995f82eadbb4 86376 libtinyxml-doc_2.6.2-2_all.deb
+Checksums-Sha256: 
+ 82e6bee765cd5e36bf14a1d4ecd1e43bd42f046c48ae7baa4ac938fdce3b64a5 1186 tinyxml_2.6.2-2.dsc
+ 51af8ce9acd66e887a77d537d38c777a02096fb0f981b012d033400873edc26e 4084 tinyxml_2.6.2-2.debian.tar.xz
+ dcd3c2428f6c5d1f1042819ed027308aab6b70d9dd68ab825d24fd2be08f3b13 37918 libtinyxml2.6.2_2.6.2-2_amd64.deb
+ 74e891d0ef476d0180dfbe2247815cc3072c7e5c490c8874315de877f12a5d46 75020 libtinyxml2.6.2-dbg_2.6.2-2_amd64.deb
+ ec1e92c45376a521dff80cf91ec7a061bbf3c5ba9a5b3d6b9d990994a0b92ce2 50618 libtinyxml-dev_2.6.2-2_amd64.deb
+ e76e0d2573be2932b2b2677ed509672eaea060fb40285c6e4d39d599f67ac923 86376 libtinyxml-doc_2.6.2-2_all.deb
+Files: 
+ 535964e973b25a1c84eff505ec9ec8d4 37918 libs optional libtinyxml2.6.2_2.6.2-2_amd64.deb
+ 773deed9c1e4a66e265fa0bd6d0ca854 75020 debug extra libtinyxml2.6.2-dbg_2.6.2-2_amd64.deb
+ c8f0e104b3f30e6b5ce20f5ed3deca89 50618 libdevel optional libtinyxml-dev_2.6.2-2_amd64.deb
+ fd2b7016bbeefdd0b776b4e6fa28b637 86376 doc extra libtinyxml-doc_2.6.2-2_all.deb
+ 54ae0e90df8476b599ea087fd3b46f96 1186 libs optional tinyxml_2.6.2-2.dsc
+ 023734073ae08c3d0ce00298196341ef 4084 libs optional tinyxml_2.6.2-2.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libtinyxml2.6.2_2.6.2-2_amd64.deb
+─────────────────────────────────
+
+ new debian package, version 2.0.
+ size 37918 bytes: control archive=1021 bytes.
+     681 bytes,    19 lines      control              
+     314 bytes,     4 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      33 bytes,     1 lines      shlibs               
+ Package: libtinyxml2.6.2
+ Source: tinyxml
+ Version: 2.6.2-2
+ Architecture: amd64
+ Maintainer: Felix Geyer <fgeyer@debian.org>
+ Installed-Size: 137
+ Pre-Depends: multiarch-support
+ Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.2.1)
+ Section: libs
+ Priority: optional
+ Multi-Arch: same
+ Homepage: http://www.grinninglizard.com/tinyxml/
+ Description: C++ XML parsing library
+  This package contains the shared version of the TinyXml library.
+  .
+  TinyXml is a simple and small C++ XML parser that can be easily integrating
+  into other programs. It reads XML and creates C++ objects representing
+  the XML document. The objects can be manipulated, changed, and
+  saved again as XML.
+
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     97296 2014-04-28 20:17 ./usr/lib/x86_64-linux-gnu/libtinyxml.so.2.6.2
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/share/doc/libtinyxml2.6.2/
+-rw-r--r-- root/root      6809 2011-05-15 04:24 ./usr/share/doc/libtinyxml2.6.2/changelog.gz
+-rw-r--r-- root/root       756 2013-05-09 14:42 ./usr/share/doc/libtinyxml2.6.2/changelog.Debian.gz
+-rw-r--r-- root/root      1479 2011-05-18 17:43 ./usr/share/doc/libtinyxml2.6.2/copyright
+
+
+libtinyxml2.6.2-dbg_2.6.2-2_amd64.deb
+─────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 75020 bytes: control archive=788 bytes.
+     621 bytes,    18 lines      control              
+     340 bytes,     4 lines      md5sums              
+ Package: libtinyxml2.6.2-dbg
+ Source: tinyxml
+ Version: 2.6.2-2
+ Architecture: amd64
+ Maintainer: Felix Geyer <fgeyer@debian.org>
+ Installed-Size: 352
+ Depends: libtinyxml2.6.2 (= 2.6.2-2)
+ Section: debug
+ Priority: extra
+ Multi-Arch: same
+ Homepage: http://www.grinninglizard.com/tinyxml/
+ Description: TinyXml library - debug files
+  This package contains debug symbols of the TinyXml library.
+  .
+  TinyXml is a simple and small C++ XML parser that can be easily integrating
+  into other programs. It reads XML and creates C++ objects representing
+  the XML document. The objects can be manipulated, changed, and
+  saved again as XML.
+
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/lib/debug/usr/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/lib/debug/usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/lib/debug/usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    306282 2014-04-28 20:17 ./usr/lib/debug/usr/lib/x86_64-linux-gnu/libtinyxml.so.2.6.2
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/share/doc/libtinyxml2.6.2-dbg/
+-rw-r--r-- root/root      6809 2011-05-15 04:24 ./usr/share/doc/libtinyxml2.6.2-dbg/changelog.gz
+-rw-r--r-- root/root       756 2013-05-09 14:42 ./usr/share/doc/libtinyxml2.6.2-dbg/changelog.Debian.gz
+-rw-r--r-- root/root      1479 2011-05-18 17:43 ./usr/share/doc/libtinyxml2.6.2-dbg/copyright
+
+
+libtinyxml-dev_2.6.2-2_amd64.deb
+────────────────────────────────
+
+ new debian package, version 2.0.
+ size 50618 bytes: control archive=873 bytes.
+     685 bytes,    20 lines      control              
+     440 bytes,     6 lines      md5sums              
+ Package: libtinyxml-dev
+ Source: tinyxml
+ Version: 2.6.2-2
+ Architecture: amd64
+ Maintainer: Felix Geyer <fgeyer@debian.org>
+ Installed-Size: 258
+ Depends: libtinyxml2.6.2 (= 2.6.2-2)
+ Suggests: libtinyxml-doc
+ Section: libdevel
+ Priority: optional
+ Multi-Arch: same
+ Homepage: http://www.grinninglizard.com/tinyxml/
+ Description: TinyXml library - header and static library
+  This package contains the header file and a static version of the
+  TinyXml library.
+  .
+  TinyXml is a simple and small C++ XML parser that can be easily integrating
+  into other programs. It reads XML and creates C++ objects representing
+  the XML document. The objects can be manipulated, changed, and
+  saved again as XML.
+
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/lib/x86_64-linux-gnu/pkgconfig/
+-rw-r--r-- root/root       231 2014-04-28 20:17 ./usr/lib/x86_64-linux-gnu/pkgconfig/tinyxml.pc
+-rw-r--r-- root/root    148280 2014-04-28 20:17 ./usr/lib/x86_64-linux-gnu/libtinyxml.a
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/include/
+-rw-r--r-- root/root     64887 2014-04-28 20:17 ./usr/include/tinyxml.h
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 20:17 ./usr/share/doc/libtinyxml-dev/
+-rw-r--r-- root/root      6809 2011-05-15 04:24 ./usr/share/doc/libtinyxml-dev/changelog.gz
+-rw-r--r-- root/root       756 2013-05-09 14:42 ./usr/share/doc/libtinyxml-dev/changelog.Debian.gz
+-rw-r--r-- root/root      1479 2011-05-18 17:43 ./usr/share/doc/libtinyxml-dev/copyright
+lrwxrwxrwx root/root         0 2014-04-28 20:17 ./usr/lib/x86_64-linux-gnu/libtinyxml.so -> libtinyxml.so.2.6.2
+
+
+libtinyxml-doc_2.6.2-2_all.deb
+──────────────────────────────
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/libtinyxml-doc_2.6.2-2_all.deb': No such file or directory
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/libtinyxml-doc_2.6.2-2_all.deb': No such file or directory
+
+mv: cannot stat '/«CHROOT»/«BUILDDIR»/libtinyxml-doc_2.6.2-2_all.deb': No such file or directory
+E: Could not move libtinyxml-doc_2.6.2-2_all.deb to .
+du: cannot access '/mnt/ito/data/projets/debian-clang/tests/build_timeout/builds/tinyxml/libtinyxml-doc_2.6.2-2_all.deb': No such file or directory
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 8352
+Build-Time: 16
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 13
+Job: tinyxml_2.6.2-2.dsc
+Machine Architecture: amd64
+Package: tinyxml
+Package-Time: 35
+Source-Version: 2.6.2-2
+Space: 8352
+Status: successful
+Version: 2.6.2-2
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-2017
+Build needed 00:00:35, 8352k disc space

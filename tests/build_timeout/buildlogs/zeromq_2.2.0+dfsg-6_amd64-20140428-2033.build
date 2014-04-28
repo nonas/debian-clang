@@ -1,0 +1,1052 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ zeromq 2.2.0+dfsg-6 (amd64)                                28 Apr 2014 20:33 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: zeromq
+Version: 2.2.0+dfsg-6
+Source Version: 2.2.0+dfsg-6
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/zeromq-nshWXB/zeromq-2.2.0+dfsg' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/zeromq-nshWXB' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-b91ca52e-781b-4ae7-a0b0-cdcccdaaf1fb' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+zeromq_2.2.0+dfsg-6.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-JmNNG8/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dh-autoreconf, libpgm-dev, pkg-config, uuid-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dh-autoreconf, libpgm-dev, pkg-config, uuid-dev
+dpkg-deb: building package `sbuild-build-depends-zeromq-dummy' in `/«BUILDDIR»/resolver-hwWmtT/apt_archive/sbuild-build-depends-zeromq-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install zeromq build dependencies (apt-based resolver)                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpgm-5.1-0 libpgm-dev
+  libpipeline1 libsigsegv2 libtool libunistring0 libxml2 m4 man-db pkg-config
+  po-debconf uuid-dev
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make gettext-doc groff libtool-doc automaken gfortran
+  fortran95-compiler gcj-jdk less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur libasprintf-dev libgettextpo-dev libglib2.0-data
+  shared-mime-info libltdl-dev xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpgm-5.1-0 libpgm-dev
+  libpipeline1 libsigsegv2 libtool libunistring0 libxml2 m4 man-db pkg-config
+  po-debconf sbuild-build-depends-zeromq-dummy uuid-dev
+0 upgraded, 29 newly installed, 0 to remove and 8 not upgraded.
+Need to get 11.5 MB/11.5 MB of archives.
+After this operation, 33.6 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main m4 amd64 1.4.17-3 [254 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main autoconf all 2.69-6 [340 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main autopoint all 0.18.3.2-1 [393 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main dh-autoreconf all 9 [15.5 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main libpgm-5.1-0 amd64 5.1.118-1~dfsg-0.1 [181 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libpgm-dev amd64 5.1.118-1~dfsg-0.1 [242 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main pkg-config amd64 0.28-1 [57.5 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main uuid-dev amd64 2.20.1-5.7 [70.4 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 11.5 MB in 0s (54.8 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-3_amd64.deb ...
+Unpacking m4 (1.4.17-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-6_all.deb ...
+Unpacking autoconf (2.69-6) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../autopoint_0.18.3.2-1_all.deb ...
+Unpacking autopoint (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../dh-autoreconf_9_all.deb ...
+Unpacking dh-autoreconf (9) ...
+Selecting previously unselected package libpgm-5.1-0.
+Preparing to unpack .../libpgm-5.1-0_5.1.118-1~dfsg-0.1_amd64.deb ...
+Unpacking libpgm-5.1-0 (5.1.118-1~dfsg-0.1) ...
+Selecting previously unselected package libpgm-dev.
+Preparing to unpack .../libpgm-dev_5.1.118-1~dfsg-0.1_amd64.deb ...
+Unpacking libpgm-dev (5.1.118-1~dfsg-0.1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../pkg-config_0.28-1_amd64.deb ...
+Unpacking pkg-config (0.28-1) ...
+Selecting previously unselected package uuid-dev.
+Preparing to unpack .../uuid-dev_2.20.1-5.7_amd64.deb ...
+Unpacking uuid-dev (2.20.1-5.7) ...
+Selecting previously unselected package sbuild-build-depends-zeromq-dummy.
+Preparing to unpack .../sbuild-build-depends-zeromq-dummy.deb ...
+Unpacking sbuild-build-depends-zeromq-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-3) ...
+Setting up autoconf (2.69-6) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up autopoint (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up dh-autoreconf (9) ...
+Setting up libpgm-5.1-0 (5.1.118-1~dfsg-0.1) ...
+Setting up libpgm-dev (5.1.118-1~dfsg-0.1) ...
+Setting up pkg-config (0.28-1) ...
+Setting up uuid-dev (2.20.1-5.7) ...
+Setting up sbuild-build-depends-zeromq-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 autoconf_2.69-6 automake_1:1.14.1-3 autopoint_0.18.3.2-1 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 dh-autoreconf_9 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpgm-5.1-0_5.1.118-1~dfsg-0.1 libpgm-dev_5.1.118-1~dfsg-0.1 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtool_2.4.2-1.7 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 m4_1.4.17-3 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 pkg-config_0.28-1 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-zeromq-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 uuid-dev_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Thu Mar 20 22:50:11 2014 UTC using RSA key ID 864CC8BF
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./zeromq_2.2.0+dfsg-6.dsc
+dpkg-source: info: extracting zeromq in zeromq-2.2.0+dfsg
+dpkg-source: info: unpacking zeromq_2.2.0+dfsg.orig.tar.gz
+dpkg-source: info: unpacking zeromq_2.2.0+dfsg-6.debian.tar.xz
+dpkg-source: info: applying 01_fix-kfreebsd-build.patch
+dpkg-source: info: applying 02_check-for-SO_NOSIGPIPE.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-b91ca52e-781b-4ae7-a0b0-cdcccdaaf1fb
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package zeromq
+dpkg-buildpackage: source version 2.2.0+dfsg-6
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Laszlo Boszormenyi (GCS) <gcs@debian.org>
+ dpkg-source --before-build zeromq-2.2.0+dfsg
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with=autoreconf
+   dh_testdir
+   dh_auto_clean
+   dh_autoreconf_clean
+   dh_clean
+ dpkg-source -b zeromq-2.2.0+dfsg
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building zeromq using existing ./zeromq_2.2.0+dfsg.orig.tar.gz
+dpkg-source: info: building zeromq in zeromq_2.2.0+dfsg-6.debian.tar.xz
+dpkg-source: info: building zeromq in zeromq_2.2.0+dfsg-6.dsc
+ debian/rules build
+dh build --with=autoreconf
+   dh_testdir
+   dh_autoreconf
+aclocal: warning: autoconf input should be named 'configure.ac', not 'configure.in'
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, `config'.
+libtoolize: copying file `config/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `config'.
+libtoolize: copying file `config/libtool.m4'
+libtoolize: copying file `config/ltoptions.m4'
+libtoolize: copying file `config/ltsugar.m4'
+libtoolize: copying file `config/ltversion.m4'
+libtoolize: copying file `config/lt~obsolete.m4'
+aclocal: warning: autoconf input should be named 'configure.ac', not 'configure.in'
+automake: warning: autoconf input should be named 'configure.ac', not 'configure.in'
+perf/Makefile.am:1: warning: 'INCLUDES' is the old name for 'AM_CPPFLAGS' (or '*_CPPFLAGS')
+automake: warning: autoconf input should be named 'configure.ac', not 'configure.in'
+tests/Makefile.am:1: warning: 'INCLUDES' is the old name for 'AM_CPPFLAGS' (or '*_CPPFLAGS')
+parallel-tests: installing 'config/test-driver'
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+dh_auto_configure -- --with-system-pgm
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports nested variables... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking for gcc option to accept ISO C99... none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking for a sed that does not truncate output... /bin/sed
+checking for gawk... (cached) mawk
+checking for xmlto... no
+checking for asciidoc... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether the C compiler works... yes
+checking whether we are using Intel C compiler... no
+checking whether we are using Sun Studio C compiler... no
+checking whether we are using clang C compiler... yes
+checking whether we are using gcc >= 4 C compiler... yes
+checking whether the C++ compiler works... yes
+checking whether we are using Intel C++ compiler... no
+checking whether we are using Sun Studio C++ compiler... no
+checking whether we are using clang C++ compiler... yes
+checking whether we are using gcc >= 4 C++ compiler... yes
+checking whether to enable debugging information... no
+checking whether to enable code coverage... no
+checking for pthread_create in -lpthread... yes
+checking for sem_init in -lrt... yes
+checking for uuid_generate in -luuid... yes
+checking whether C++ compiler supports -fvisibility=hidden... yes
+checking whether C++ compiler supports dso visibility... yes
+checking for asciidoc... no
+checking for xmlto... no
+checking whether to build documentation... no
+checking whether to install manpages... yes
+checking for suitable polling system... using epoll
+checking for ANSI C header files... (cached) yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking netinet/tcp.h usability... yes
+checking netinet/tcp.h presence... yes
+checking for netinet/tcp.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking ifaddrs.h usability... yes
+checking ifaddrs.h presence... yes
+checking for ifaddrs.h... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... no
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking for ssize_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for uint32_t... yes
+checking for working volatile... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for OpenPGM... yes
+checking how to enable additional warnings for C++ compiler... -Wall
+checking how to turn warnings to errors in C++ compiler... -Werror
+checking how to enable strict standards compliance in C++ compiler... -pedantic
+checking return type of signal handlers... void
+checking for perror... yes
+checking for gettimeofday... yes
+checking for clock_gettime... yes
+checking for memset... yes
+checking for socket... yes
+checking for getifaddrs... yes
+checking for freeifaddrs... yes
+checking alloca.h usability... yes
+checking alloca.h presence... yes
+checking for alloca.h... yes
+checking whether SOCK_CLOEXEC is supported... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating doc/Makefile
+config.status: creating perf/Makefile
+config.status: creating src/libzmq.pc
+config.status: creating builds/msvc/Makefile
+config.status: creating tests/Makefile
+config.status: creating foreign/openpgm/Makefile
+config.status: creating builds/redhat/zeromq.spec
+config.status: creating src/platform.hpp
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make[1]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+   dh_auto_build
+make[1]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+Making all in src
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/src'
+make  all-am
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/src'
+  CXX      libzmq_la-clock.lo
+  CXX      libzmq_la-command.lo
+  CXX      libzmq_la-ctx.lo
+  CXX      libzmq_la-connect_session.lo
+  CXX      libzmq_la-decoder.lo
+  CXX      libzmq_la-device.lo
+  CXX      libzmq_la-devpoll.lo
+  CXX      libzmq_la-dist.lo
+  CXX      libzmq_la-encoder.lo
+  CXX      libzmq_la-epoll.lo
+  CXX      libzmq_la-err.lo
+  CXX      libzmq_la-fq.lo
+  CXX      libzmq_la-io_object.lo
+  CXX      libzmq_la-io_thread.lo
+  CXX      libzmq_la-ip.lo
+  CXX      libzmq_la-kqueue.lo
+  CXX      libzmq_la-lb.lo
+  CXX      libzmq_la-mailbox.lo
+  CXX      libzmq_la-named_session.lo
+  CXX      libzmq_la-object.lo
+  CXX      libzmq_la-options.lo
+  CXX      libzmq_la-own.lo
+  CXX      libzmq_la-pair.lo
+  CXX      libzmq_la-pgm_receiver.lo
+  CXX      libzmq_la-pgm_sender.lo
+  CXX      libzmq_la-pgm_socket.lo
+  CXX      libzmq_la-pipe.lo
+  CXX      libzmq_la-poll.lo
+  CXX      libzmq_la-poller_base.lo
+  CXX      libzmq_la-pull.lo
+  CXX      libzmq_la-push.lo
+  CXX      libzmq_la-reaper.lo
+  CXX      libzmq_la-pub.lo
+  CXX      libzmq_la-rep.lo
+  CXX      libzmq_la-req.lo
+  CXX      libzmq_la-select.lo
+  CXX      libzmq_la-session.lo
+  CXX      libzmq_la-signaler.lo
+  CXX      libzmq_la-socket_base.lo
+  CXX      libzmq_la-sub.lo
+  CXX      libzmq_la-swap.lo
+  CXX      libzmq_la-tcp_connecter.lo
+  CXX      libzmq_la-tcp_listener.lo
+  CXX      libzmq_la-tcp_socket.lo
+  CXX      libzmq_la-thread.lo
+  CXX      libzmq_la-transient_session.lo
+  CXX      libzmq_la-trie.lo
+  CXX      libzmq_la-uuid.lo
+  CXX      libzmq_la-xpub.lo
+  CXX      libzmq_la-xrep.lo
+  CXX      libzmq_la-xreq.lo
+  CXX      libzmq_la-xsub.lo
+  CXX      libzmq_la-zmq.lo
+  CXX      libzmq_la-zmq_connecter.lo
+  CXX      libzmq_la-zmq_engine.lo
+  CXX      libzmq_la-zmq_init.lo
+  CXX      libzmq_la-zmq_listener.lo
+  CXXLD    libzmq.la
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/src'
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/src'
+Making all in doc
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/doc'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/doc'
+Making all in perf
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/perf'
+  CXX      local_lat.o
+  CXXLD    local_lat
+  CXX      remote_lat.o
+  CXXLD    remote_lat
+  CXX      local_thr.o
+  CXXLD    local_thr
+  CXX      remote_thr.o
+  CXXLD    remote_thr
+  CXX      inproc_lat.o
+  CXXLD    inproc_lat
+  CXX      inproc_thr.o
+  CXXLD    inproc_thr
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/perf'
+Making all in tests
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+  CXX      test_pair_inproc.o
+  CXXLD    test_pair_inproc
+  CXX      test_pair_tcp.o
+  CXXLD    test_pair_tcp
+  CXX      test_reqrep_inproc.o
+  CXXLD    test_reqrep_inproc
+  CXX      test_reqrep_tcp.o
+  CXXLD    test_reqrep_tcp
+  CXX      test_hwm.o
+  CXXLD    test_hwm
+  CXX      test_shutdown_stress.o
+  CXXLD    test_shutdown_stress
+  CXX      test_pair_ipc.o
+  CXXLD    test_pair_ipc
+  CXX      test_reqrep_ipc.o
+  CXXLD    test_reqrep_ipc
+  CXX      test_timeo.o
+  CXXLD    test_timeo
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+make[1]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+dh_auto_test
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+Making check in src
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/src'
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/src'
+Making check in doc
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/doc'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/doc'
+Making check in perf
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/perf'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/perf'
+Making check in tests
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make  check-TESTS
+make[4]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make[5]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+PASS: test_pair_inproc
+PASS: test_pair_tcp
+PASS: test_reqrep_inproc
+PASS: test_reqrep_tcp
+PASS: test_hwm
+PASS: test_shutdown_stress
+PASS: test_pair_ipc
+PASS: test_reqrep_ipc
+PASS: test_timeo
+make[6]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make[6]: Nothing to be done for `all'.
+make[6]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+============================================================================
+Testsuite summary for zeromq 2.2.0
+============================================================================
+# TOTAL: 9
+# PASS:  9
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make[4]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+make[1]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+ fakeroot debian/rules binary
+dh binary --with=autoreconf
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+Making install in src
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/src'
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/src'
+ /bin/mkdir -p '/«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libzmq.la '/«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/libzmq.so.1.0.1 /«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/libzmq.so.1.0.1
+libtool: install: (cd /«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libzmq.so.1.0.1 libzmq.so.1 || { rm -f libzmq.so.1 && ln -s libzmq.so.1.0.1 libzmq.so.1; }; })
+libtool: install: (cd /«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libzmq.so.1.0.1 libzmq.so || { rm -f libzmq.so && ln -s libzmq.so.1.0.1 libzmq.so; }; })
+libtool: install: /usr/bin/install -c .libs/libzmq.lai /«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/libzmq.la
+libtool: install: /usr/bin/install -c .libs/libzmq.a /«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/libzmq.a
+libtool: install: chmod 644 /«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/libzmq.a
+libtool: install: ranlib /«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/libzmq.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib/x86_64-linux-gnu'
+ /bin/mkdir -p '/«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/include'
+ /usr/bin/install -c -m 644 ../include/zmq.h ../include/zmq.hpp ../include/zmq_utils.h '/«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/include'
+ /bin/mkdir -p '/«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+ /usr/bin/install -c -m 644 libzmq.pc '/«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/src'
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/src'
+Making install in doc
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/doc'
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/doc'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 zmq_bind.3 zmq_close.3 zmq_connect.3 zmq_device.3 zmq_init.3 zmq_msg_close.3 zmq_msg_copy.3 zmq_msg_data.3 zmq_msg_init.3 zmq_msg_init_data.3 zmq_msg_init_size.3 zmq_msg_move.3 zmq_msg_size.3 zmq_poll.3 zmq_recv.3 zmq_send.3 zmq_setsockopt.3 zmq_socket.3 zmq_strerror.3 zmq_term.3 zmq_version.3 zmq_getsockopt.3 zmq_errno.3 '/«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/share/man/man3'
+ /bin/mkdir -p '/«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/share/man/man7'
+ /usr/bin/install -c -m 644 zmq.7 zmq_tcp.7 zmq_pgm.7 zmq_epgm.7 zmq_inproc.7 zmq_ipc.7 zmq_cpp.7 '/«BUILDDIR»/zeromq-2.2.0+dfsg/debian/tmp/usr/share/man/man7'
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/doc'
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/doc'
+Making install in perf
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/perf'
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/perf'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/perf'
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/perf'
+Making install in tests
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg/tests'
+make[2]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+make[3]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+make[2]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+make[1]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   debian/rules override_dh_strip
+make[1]: Entering directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+dh_strip --dbg-package=libzmq-dbg
+make[1]: Leaving directory `/«BUILDDIR»/zeromq-2.2.0+dfsg'
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `libzmq1' in `../libzmq1_2.2.0+dfsg-6_amd64.deb'.
+dpkg-deb: building package `libzmq-dev' in `../libzmq-dev_2.2.0+dfsg-6_amd64.deb'.
+dpkg-deb: building package `libzmq-dbg' in `../libzmq-dbg_2.2.0+dfsg-6_amd64.deb'.
+ dpkg-genchanges  >../zeromq_2.2.0+dfsg-6_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build zeromq-2.2.0+dfsg
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-2034
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+zeromq_2.2.0+dfsg-6_amd64.changes:
+──────────────────────────────────
+
+Format: 1.8
+Date: Thu, 20 Mar 2014 23:22:55 +0100
+Source: zeromq
+Binary: libzmq1 libzmq-dev libzmq-dbg
+Architecture: source amd64
+Version: 2.2.0+dfsg-6
+Distribution: sid
+Urgency: low
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Changed-By: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Description: 
+ libzmq-dbg - lightweight messaging kernel (debugging symbols)
+ libzmq-dev - lightweight messaging kernel (development files)
+ libzmq1    - lightweight messaging kernel (shared library)
+Closes: 741745
+Changes: 
+ zeromq (2.2.0+dfsg-6) unstable; urgency=low
+ .
+   * Make test failures non-fatal on kfreebsd-* .
+   * New maintainer (closes: #741745).
+Checksums-Sha1: 
+ 61ff51b101204cd552e98164e85cc06961712cd3 1126 zeromq_2.2.0+dfsg-6.dsc
+ 453e15f125faf492d8e81a97c9d6dfeba1ba1ad7 6584 zeromq_2.2.0+dfsg-6.debian.tar.xz
+ ea16508d75ffeb2c866d3860590171747f5c56fe 218540 libzmq1_2.2.0+dfsg-6_amd64.deb
+ 97be8be4b8e388c6522fa7a52d495cbd4d5fc083 292868 libzmq-dev_2.2.0+dfsg-6_amd64.deb
+ ea2a837d3f553422e81ce70aa76adb44758a3ab5 545592 libzmq-dbg_2.2.0+dfsg-6_amd64.deb
+Checksums-Sha256: 
+ 2a29847e79066b83486d54b6f9799bf075d3afc8ad7c79d47e1d8ace7fe7afd6 1126 zeromq_2.2.0+dfsg-6.dsc
+ c793bc5e3bb1cffd038bd5f855f1a8b1a036f86f51924f9669d72bae1318f17a 6584 zeromq_2.2.0+dfsg-6.debian.tar.xz
+ a88af531e6b911d9e9969fbf5b5a3fb12316778b92653825a4f0d5b377b3d67f 218540 libzmq1_2.2.0+dfsg-6_amd64.deb
+ bd84e987e37fa01af2e3220681fb6684302bc29708eedd7362b46b249e6c02c6 292868 libzmq-dev_2.2.0+dfsg-6_amd64.deb
+ 252d90e566848f40d7d775f0c6d749398c0e1854edfbd6542aa3fc314569b700 545592 libzmq-dbg_2.2.0+dfsg-6_amd64.deb
+Files: 
+ 9c78e8f4a73d8d5c694e3fea455a72e8 218540 libs optional libzmq1_2.2.0+dfsg-6_amd64.deb
+ a7bf4a2ab3dffe34dc8f4838d9ab058f 292868 libdevel optional libzmq-dev_2.2.0+dfsg-6_amd64.deb
+ 00f3eb6a34f2b26306fd33f6577b3aba 545592 debug extra libzmq-dbg_2.2.0+dfsg-6_amd64.deb
+ ce98fa44e5eeb8aaebcdf5d058d93609 1126 libs optional zeromq_2.2.0+dfsg-6.dsc
+ 2194c683c8770d9b46739784f3ffb16a 6584 libs optional zeromq_2.2.0+dfsg-6.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libzmq1_2.2.0+dfsg-6_amd64.deb
+──────────────────────────────
+
+ new debian package, version 2.0.
+ size 218540 bytes: control archive=1203 bytes.
+     840 bytes,    21 lines      control              
+     477 bytes,     7 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      17 bytes,     1 lines      shlibs               
+ Package: libzmq1
+ Source: zeromq
+ Version: 2.2.0+dfsg-6
+ Architecture: amd64
+ Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+ Installed-Size: 409
+ Pre-Depends: multiarch-support
+ Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libpgm-5.1-0 (>= 5.1.116~dfsg), libstdc++6 (>= 4.2.1), libuuid1 (>= 2.16)
+ Section: libs
+ Priority: optional
+ Multi-Arch: same
+ Homepage: http://www.zeromq.org/
+ Description: lightweight messaging kernel (shared library)
+  ØMQ is a library which extends the standard socket interfaces with features
+  traditionally provided by specialised messaging middleware products.
+  .
+  ØMQ sockets provide an abstraction of asynchronous message queues, multiple
+  messaging patterns, message filtering (subscriptions), seamless access to
+  multiple transport protocols and more.
+  .
+  This package contains the libzmq shared library.
+
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    236736 2014-04-28 20:34 ./usr/lib/x86_64-linux-gnu/libzmq.so.1.0.1
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/doc/libzmq1/
+-rw-r--r-- root/root    133404 2012-04-13 10:34 ./usr/share/doc/libzmq1/changelog.gz
+-rw-r--r-- root/root      2159 2014-03-20 23:34 ./usr/share/doc/libzmq1/changelog.Debian.gz
+-rw-r--r-- root/root      3558 2012-03-20 17:08 ./usr/share/doc/libzmq1/AUTHORS
+-rw-r--r-- root/root      3899 2014-01-12 19:13 ./usr/share/doc/libzmq1/copyright
+-rw-r--r-- root/root      1181 2012-03-20 17:08 ./usr/share/doc/libzmq1/README
+-rw-r--r-- root/root      4366 2012-04-04 12:50 ./usr/share/doc/libzmq1/NEWS.gz
+lrwxrwxrwx root/root         0 2014-04-28 20:34 ./usr/lib/x86_64-linux-gnu/libzmq.so.1 -> libzmq.so.1.0.1
+
+
+libzmq-dev_2.2.0+dfsg-6_amd64.deb
+─────────────────────────────────
+
+ new debian package, version 2.0.
+ size 292868 bytes: control archive=1807 bytes.
+     755 bytes,    20 lines      control              
+    2605 bytes,    38 lines      md5sums              
+ Package: libzmq-dev
+ Source: zeromq
+ Version: 2.2.0+dfsg-6
+ Architecture: amd64
+ Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+ Installed-Size: 987
+ Depends: libzmq1 (= 2.2.0+dfsg-6)
+ Section: libdevel
+ Priority: optional
+ Multi-Arch: same
+ Homepage: http://www.zeromq.org/
+ Description: lightweight messaging kernel (development files)
+  ØMQ is a library which extends the standard socket interfaces with features
+  traditionally provided by specialised messaging middleware products.
+  .
+  ØMQ sockets provide an abstraction of asynchronous message queues, multiple
+  messaging patterns, message filtering (subscriptions), seamless access to
+  multiple transport protocols and more.
+  .
+  This package contains the ZeroMQ development libraries and header files.
+
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/lib/x86_64-linux-gnu/pkgconfig/
+-rw-r--r-- root/root       207 2014-04-28 20:34 ./usr/lib/x86_64-linux-gnu/pkgconfig/libzmq.pc
+-rw-r--r-- root/root    741030 2014-04-28 20:34 ./usr/lib/x86_64-linux-gnu/libzmq.a
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/include/
+-rw-r--r-- root/root      9668 2014-04-28 20:34 ./usr/include/zmq.h
+-rw-r--r-- root/root      8641 2014-04-28 20:34 ./usr/include/zmq.hpp
+-rw-r--r-- root/root      2139 2014-04-28 20:34 ./usr/include/zmq_utils.h
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/man/man3/
+-rw-r--r-- root/root      1657 2014-04-28 20:34 ./usr/share/man/man3/zmq_bind.3.gz
+-rw-r--r-- root/root      1746 2014-04-28 20:34 ./usr/share/man/man3/zmq_connect.3.gz
+-rw-r--r-- root/root      1114 2014-04-28 20:34 ./usr/share/man/man3/zmq_close.3.gz
+-rw-r--r-- root/root       898 2014-04-28 20:34 ./usr/share/man/man3/zmq_msg_size.3.gz
+-rw-r--r-- root/root      4990 2014-04-28 20:34 ./usr/share/man/man3/zmq_getsockopt.3.gz
+-rw-r--r-- root/root       889 2014-04-28 20:34 ./usr/share/man/man3/zmq_msg_data.3.gz
+-rw-r--r-- root/root      2295 2014-04-28 20:34 ./usr/share/man/man3/zmq_poll.3.gz
+-rw-r--r-- root/root      1120 2014-04-28 20:34 ./usr/share/man/man3/zmq_msg_init.3.gz
+-rw-r--r-- root/root      1094 2014-04-28 20:34 ./usr/share/man/man3/zmq_msg_close.3.gz
+-rw-r--r-- root/root      1416 2014-04-28 20:34 ./usr/share/man/man3/zmq_msg_init_data.3.gz
+-rw-r--r-- root/root       959 2014-04-28 20:34 ./usr/share/man/man3/zmq_version.3.gz
+-rw-r--r-- root/root       997 2014-04-28 20:34 ./usr/share/man/man3/zmq_init.3.gz
+-rw-r--r-- root/root      1899 2014-04-28 20:34 ./usr/share/man/man3/zmq_recv.3.gz
+-rw-r--r-- root/root      1921 2014-04-28 20:34 ./usr/share/man/man3/zmq_device.3.gz
+-rw-r--r-- root/root      1288 2014-04-28 20:34 ./usr/share/man/man3/zmq_term.3.gz
+-rw-r--r-- root/root       969 2014-04-28 20:34 ./usr/share/man/man3/zmq_errno.3.gz
+-rw-r--r-- root/root      4158 2014-04-28 20:34 ./usr/share/man/man3/zmq_socket.3.gz
+-rw-r--r-- root/root      1164 2014-04-28 20:34 ./usr/share/man/man3/zmq_msg_init_size.3.gz
+-rw-r--r-- root/root      4734 2014-04-28 20:34 ./usr/share/man/man3/zmq_setsockopt.3.gz
+-rw-r--r-- root/root       958 2014-04-28 20:34 ./usr/share/man/man3/zmq_strerror.3.gz
+-rw-r--r-- root/root      2086 2014-04-28 20:34 ./usr/share/man/man3/zmq_send.3.gz
+-rw-r--r-- root/root      1174 2014-04-28 20:34 ./usr/share/man/man3/zmq_msg_copy.3.gz
+-rw-r--r-- root/root      1060 2014-04-28 20:34 ./usr/share/man/man3/zmq_msg_move.3.gz
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/man/man7/
+-rw-r--r-- root/root      2581 2014-04-28 20:34 ./usr/share/man/man7/zmq_pgm.7.gz
+-rw-r--r-- root/root      1324 2014-04-28 20:34 ./usr/share/man/man7/zmq_ipc.7.gz
+-rw-r--r-- root/root      3129 2014-04-28 20:34 ./usr/share/man/man7/zmq.7.gz
+-rw-r--r-- root/root      2230 2014-04-28 20:34 ./usr/share/man/man7/zmq_tcp.7.gz
+-rw-r--r-- root/root      1433 2014-04-28 20:34 ./usr/share/man/man7/zmq_inproc.7.gz
+-rw-r--r-- root/root      2581 2014-04-28 20:34 ./usr/share/man/man7/zmq_epgm.7.gz
+-rw-r--r-- root/root      2066 2014-04-28 20:34 ./usr/share/man/man7/zmq_cpp.7.gz
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/doc/libzmq-dev/
+-rw-r--r-- root/root    133404 2012-04-13 10:34 ./usr/share/doc/libzmq-dev/changelog.gz
+-rw-r--r-- root/root      2159 2014-03-20 23:34 ./usr/share/doc/libzmq-dev/changelog.Debian.gz
+-rw-r--r-- root/root      3899 2014-01-12 19:13 ./usr/share/doc/libzmq-dev/copyright
+lrwxrwxrwx root/root         0 2014-04-28 20:34 ./usr/lib/x86_64-linux-gnu/libzmq.so -> libzmq.so.1.0.1
+
+
+libzmq-dbg_2.2.0+dfsg-6_amd64.deb
+─────────────────────────────────
+
+ new debian package, version 2.0.
+ size 545592 bytes: control archive=875 bytes.
+     744 bytes,    20 lines      control              
+     326 bytes,     4 lines      md5sums              
+ Package: libzmq-dbg
+ Source: zeromq
+ Version: 2.2.0+dfsg-6
+ Architecture: amd64
+ Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+ Installed-Size: 640
+ Depends: libzmq1 (= 2.2.0+dfsg-6)
+ Section: debug
+ Priority: extra
+ Multi-Arch: same
+ Homepage: http://www.zeromq.org/
+ Description: lightweight messaging kernel (debugging symbols)
+  ØMQ is a library which extends the standard socket interfaces with features
+  traditionally provided by specialised messaging middleware products.
+  .
+  ØMQ sockets provide an abstraction of asynchronous message queues, multiple
+  messaging patterns, message filtering (subscriptions), seamless access to
+  multiple transport protocols and more.
+  .
+  This package contains the debugging symbols for the ZeroMQ library.
+
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/lib/debug/.build-id/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/lib/debug/.build-id/33/
+-rw-r--r-- root/root    474305 2014-04-28 20:34 ./usr/lib/debug/.build-id/33/40f6fdd1862421d2180bdfec5c93219d280f3a.debug
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 20:34 ./usr/share/doc/libzmq-dbg/
+-rw-r--r-- root/root    133404 2012-04-13 10:34 ./usr/share/doc/libzmq-dbg/changelog.gz
+-rw-r--r-- root/root      2159 2014-03-20 23:34 ./usr/share/doc/libzmq-dbg/changelog.Debian.gz
+-rw-r--r-- root/root      3899 2014-01-12 19:13 ./usr/share/doc/libzmq-dbg/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 34844
+Build-Time: 37
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 13
+Job: zeromq_2.2.0+dfsg-6.dsc
+Machine Architecture: amd64
+Package: zeromq
+Package-Time: 55
+Source-Version: 2.2.0+dfsg-6
+Space: 34844
+Status: successful
+Version: 2.2.0+dfsg-6
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-2034
+Build needed 00:00:55, 34844k disc space

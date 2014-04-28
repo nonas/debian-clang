@@ -1,0 +1,1630 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ marisa 0.2.4-6 (amd64)                                     27 Apr 2014 16:15 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: marisa
+Version: 0.2.4-6
+Source Version: 0.2.4-6
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/marisa-tvPFYr/marisa-0.2.4' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/marisa-tvPFYr' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-d96eb12a-c8bb-435e-8839-bf270ed4b337' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+marisa_0.2.4-6.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-J9ZPO8/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/820 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dh-autoreconf, python-all-dev (>= 2.6.6-3), python3-all-dev (>= 3.1.3-12), perl, ruby, ruby-dev, swig
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dh-autoreconf, python-all-dev (>= 2.6.6-3), python3-all-dev (>= 3.1.3-12), perl, ruby, ruby-dev, swig
+dpkg-deb: building package `sbuild-build-depends-marisa-dummy' in `/«BUILDDIR»/resolver-MpWmwA/apt_archive/sbuild-build-depends-marisa-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install marisa build dependencies (apt-based resolver)                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf dh-python file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libexpat1 libexpat1-dev libglib2.0-0 libjs-jquery
+  libmagic1 libmpdec2 libpipeline1 libpython-all-dev libpython-dev
+  libpython-stdlib libpython2.7 libpython2.7-dev libpython2.7-minimal
+  libpython2.7-stdlib libpython3-all-dev libpython3-dev libpython3-stdlib
+  libpython3.3 libpython3.3-dev libpython3.3-minimal libpython3.3-stdlib
+  libpython3.4 libpython3.4-dev libpython3.4-minimal libpython3.4-stdlib
+  libruby2.0 libsigsegv2 libsqlite3-0 libssl1.0.0 libtool libunistring0
+  libxml2 libyaml-0-2 m4 man-db mime-support po-debconf python python-all
+  python-all-dev python-dev python-minimal python2.7 python2.7-dev
+  python2.7-minimal python3 python3-all python3-all-dev python3-dev
+  python3-minimal python3.3 python3.3-dev python3.3-minimal python3.4
+  python3.4-dev python3.4-minimal ruby ruby-dev ruby2.0 ruby2.0-dev
+  rubygems-integration swig swig2.0
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make gettext-doc groff libtool-doc automaken gfortran
+  fortran95-compiler gcj-jdk less www-browser libmail-box-perl python-doc
+  python-tk python2.7-doc binfmt-support python3-doc python3-tk python3.3-doc
+  python3.4-doc ri bundler swig-doc swig-examples swig2.0-examples swig2.0-doc
+Recommended packages:
+  curl wget lynx-cur libasprintf-dev libgettextpo-dev libglib2.0-data
+  shared-mime-info javascript-common libltdl-dev xml-core
+  libmail-sendmail-perl
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf dh-python file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libexpat1 libexpat1-dev libglib2.0-0 libjs-jquery
+  libmagic1 libmpdec2 libpipeline1 libpython-all-dev libpython-dev
+  libpython-stdlib libpython2.7 libpython2.7-dev libpython2.7-minimal
+  libpython2.7-stdlib libpython3-all-dev libpython3-dev libpython3-stdlib
+  libpython3.3 libpython3.3-dev libpython3.3-minimal libpython3.3-stdlib
+  libpython3.4 libpython3.4-dev libpython3.4-minimal libpython3.4-stdlib
+  libruby2.0 libsigsegv2 libsqlite3-0 libssl1.0.0 libtool libunistring0
+  libxml2 libyaml-0-2 m4 man-db mime-support po-debconf python python-all
+  python-all-dev python-dev python-minimal python2.7 python2.7-dev
+  python2.7-minimal python3 python3-all python3-all-dev python3-dev
+  python3-minimal python3.3 python3.3-dev python3.3-minimal python3.4
+  python3.4-dev python3.4-minimal ruby ruby-dev ruby2.0 ruby2.0-dev
+  rubygems-integration sbuild-build-depends-marisa-dummy swig swig2.0
+0 upgraded, 79 newly installed, 0 to remove and 8 not upgraded.
+Need to get 111 MB/111 MB of archives.
+After this operation, 240 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libssl1.0.0 amd64 1.0.1g-3 [1012 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libsqlite3-0 amd64 3.8.4.3-2 [409 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libexpat1 amd64 2.1.0-4 [138 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libmpdec2 amd64 2.4.0-6 [82.0 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libpython2.7-minimal amd64 2.7.6-8 [349 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main mime-support all 3.54 [36.4 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libpython2.7-stdlib amd64 2.7.6-8 [1872 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libpython2.7 amd64 2.7.6-8 [1045 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libexpat1-dev amd64 2.1.0-4 [223 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libpython2.7-dev amd64 2.7.6-8 [22.0 MB]
+Get:20 http://debian.proxad.net/debian/ sid/main libpython3.3-minimal amd64 3.3.5-1 [424 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libpython3.3-stdlib amd64 3.3.5-1 [2000 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libpython3.3 amd64 3.3.5-1 [1263 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libpython3.3-dev amd64 3.3.5-1 [25.8 MB]
+Get:24 http://debian.proxad.net/debian/ sid/main libpython3.4-minimal amd64 3.4.0+20140425-1 [485 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main libpython3.4-stdlib amd64 3.4.0+20140425-1 [2008 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libpython3.4 amd64 3.4.0+20140425-1 [1305 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main libpython3.4-dev amd64 3.4.0+20140425-1 [27.0 MB]
+Get:28 http://debian.proxad.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main libyaml-0-2 amd64 0.1.4-3.2 [48.0 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main python2.7-minimal amd64 2.7.6-8 [1227 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main python3.3-minimal amd64 3.3.5-1 [1395 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main python3.4-minimal amd64 3.4.0+20140425-1 [1303 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main m4 amd64 1.4.17-3 [254 kB]
+Get:37 http://debian.proxad.net/debian/ sid/main python2.7 amd64 2.7.6-8 [239 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main python-minimal amd64 2.7.5-5 [39.3 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main libpython-stdlib amd64 2.7.5-5 [18.7 kB]
+Get:40 http://debian.proxad.net/debian/ sid/main python amd64 2.7.5-5 [146 kB]
+Get:41 http://debian.proxad.net/debian/ sid/main autoconf all 2.69-6 [340 kB]
+Get:42 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:43 http://debian.proxad.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:44 http://debian.proxad.net/debian/ sid/main autopoint all 0.18.3.2-1 [393 kB]
+Get:45 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:46 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:47 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:48 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:49 http://debian.proxad.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:50 http://debian.proxad.net/debian/ sid/main dh-autoreconf all 9 [15.5 kB]
+Get:51 http://debian.proxad.net/debian/ sid/main python3.3 amd64 3.3.5-1 [164 kB]
+Get:52 http://debian.proxad.net/debian/ sid/main python3-minimal amd64 3.3.4-1 [34.1 kB]
+Get:53 http://debian.proxad.net/debian/ sid/main libpython3-stdlib amd64 3.3.4-1 [17.7 kB]
+Get:54 http://debian.proxad.net/debian/ sid/main python3 amd64 3.3.4-1 [20.8 kB]
+Get:55 http://debian.proxad.net/debian/ sid/main dh-python all 1.20140128-1 [52.4 kB]
+Get:56 http://debian.proxad.net/debian/ sid/main libjs-jquery all 1.7.2+dfsg-3 [96.9 kB]
+Get:57 http://debian.proxad.net/debian/ sid/main libpython-dev amd64 2.7.5-5 [18.7 kB]
+Get:58 http://debian.proxad.net/debian/ sid/main libpython-all-dev amd64 2.7.5-5 [948 B]
+Get:59 http://debian.proxad.net/debian/ sid/main libpython3-dev amd64 3.3.4-1 [17.8 kB]
+Get:60 http://debian.proxad.net/debian/ sid/main libpython3-all-dev amd64 3.3.4-1 [1012 B]
+Get:61 http://debian.proxad.net/debian/ sid/main python-all amd64 2.7.5-5 [930 B]
+Get:62 http://debian.proxad.net/debian/ sid/main python2.7-dev amd64 2.7.6-8 [277 kB]
+Get:63 http://debian.proxad.net/debian/ sid/main python-dev amd64 2.7.5-5 [1124 B]
+Get:64 http://debian.proxad.net/debian/ sid/main python-all-dev amd64 2.7.5-5 [952 B]
+Get:65 http://debian.proxad.net/debian/ sid/main python3.4 amd64 3.4.0+20140425-1 [195 kB]
+Get:66 http://debian.proxad.net/debian/ sid/main python3-all amd64 3.3.4-1 [988 B]
+Get:67 http://debian.proxad.net/debian/ sid/main python3.3-dev amd64 3.3.5-1 [368 kB]
+Get:68 http://debian.proxad.net/debian/ sid/main python3-dev amd64 3.3.4-1 [1188 B]
+Get:69 http://debian.proxad.net/debian/ sid/main python3.4-dev amd64 3.4.0+20140425-1 [418 kB]
+Get:70 http://debian.proxad.net/debian/ sid/main python3-all-dev amd64 3.3.4-1 [1020 B]
+Get:71 http://debian.proxad.net/debian/ sid/main rubygems-integration all 1.6 [4052 B]
+Get:72 http://debian.proxad.net/debian/ sid/main libruby2.0 amd64 2.0.0.484+really457-3 [3091 kB]
+Get:73 http://debian.proxad.net/debian/ sid/main ruby2.0 amd64 2.0.0.484+really457-3 [349 kB]
+Get:74 http://debian.proxad.net/debian/ sid/main ruby all 1:2.0.0.2 [8528 B]
+Get:75 http://debian.proxad.net/debian/ sid/main ruby2.0-dev amd64 2.0.0.484+really457-3 [1190 kB]
+Get:76 http://debian.proxad.net/debian/ sid/main ruby-dev all 1:2.0.0.2 [7358 B]
+Get:77 http://debian.proxad.net/debian/ sid/main swig2.0 amd64 2.0.11-1 [1148 kB]
+Get:78 http://debian.proxad.net/debian/ sid/main swig amd64 2.0.11-1 [283 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 111 MB in 3s (29.0 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.1g-3_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1g-3) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.8.4.3-2_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.8.4.3-2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-4) ...
+Selecting previously unselected package libmpdec2:amd64.
+Preparing to unpack .../libmpdec2_2.4.0-6_amd64.deb ...
+Unpacking libmpdec2:amd64 (2.4.0-6) ...
+Selecting previously unselected package libpython2.7-minimal:amd64.
+Preparing to unpack .../libpython2.7-minimal_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.6-8) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../mime-support_3.54_all.deb ...
+Unpacking mime-support (3.54) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.6-8) ...
+Selecting previously unselected package libpython2.7:amd64.
+Preparing to unpack .../libpython2.7_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7:amd64 (2.7.6-8) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../libexpat1-dev_2.1.0-4_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.1.0-4) ...
+Selecting previously unselected package libpython2.7-dev:amd64.
+Preparing to unpack .../libpython2.7-dev_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-dev:amd64 (2.7.6-8) ...
+Selecting previously unselected package libpython3.3-minimal:amd64.
+Preparing to unpack .../libpython3.3-minimal_3.3.5-1_amd64.deb ...
+Unpacking libpython3.3-minimal:amd64 (3.3.5-1) ...
+Selecting previously unselected package libpython3.3-stdlib:amd64.
+Preparing to unpack .../libpython3.3-stdlib_3.3.5-1_amd64.deb ...
+Unpacking libpython3.3-stdlib:amd64 (3.3.5-1) ...
+Selecting previously unselected package libpython3.3:amd64.
+Preparing to unpack .../libpython3.3_3.3.5-1_amd64.deb ...
+Unpacking libpython3.3:amd64 (3.3.5-1) ...
+Selecting previously unselected package libpython3.3-dev:amd64.
+Preparing to unpack .../libpython3.3-dev_3.3.5-1_amd64.deb ...
+Unpacking libpython3.3-dev:amd64 (3.3.5-1) ...
+Selecting previously unselected package libpython3.4-minimal:amd64.
+Preparing to unpack .../libpython3.4-minimal_3.4.0+20140425-1_amd64.deb ...
+Unpacking libpython3.4-minimal:amd64 (3.4.0+20140425-1) ...
+Selecting previously unselected package libpython3.4-stdlib:amd64.
+Preparing to unpack .../libpython3.4-stdlib_3.4.0+20140425-1_amd64.deb ...
+Unpacking libpython3.4-stdlib:amd64 (3.4.0+20140425-1) ...
+Selecting previously unselected package libpython3.4:amd64.
+Preparing to unpack .../libpython3.4_3.4.0+20140425-1_amd64.deb ...
+Unpacking libpython3.4:amd64 (3.4.0+20140425-1) ...
+Selecting previously unselected package libpython3.4-dev:amd64.
+Preparing to unpack .../libpython3.4-dev_3.4.0+20140425-1_amd64.deb ...
+Unpacking libpython3.4-dev:amd64 (3.4.0+20140425-1) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package libyaml-0-2:amd64.
+Preparing to unpack .../libyaml-0-2_0.1.4-3.2_amd64.deb ...
+Unpacking libyaml-0-2:amd64 (0.1.4-3.2) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.6-8_amd64.deb ...
+Unpacking python2.7-minimal (2.7.6-8) ...
+Selecting previously unselected package python3.3-minimal.
+Preparing to unpack .../python3.3-minimal_3.3.5-1_amd64.deb ...
+Unpacking python3.3-minimal (3.3.5-1) ...
+Selecting previously unselected package python3.4-minimal.
+Preparing to unpack .../python3.4-minimal_3.4.0+20140425-1_amd64.deb ...
+Unpacking python3.4-minimal (3.4.0+20140425-1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-3_amd64.deb ...
+Unpacking m4 (1.4.17-3) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.6-8_amd64.deb ...
+Unpacking python2.7 (2.7.6-8) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.5-5_amd64.deb ...
+Unpacking python-minimal (2.7.5-5) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.5-5_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.5-5) ...
+Selecting previously unselected package python.
+Preparing to unpack .../python_2.7.5-5_amd64.deb ...
+Unpacking python (2.7.5-5) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-6_all.deb ...
+Unpacking autoconf (2.69-6) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../autopoint_0.18.3.2-1_all.deb ...
+Unpacking autopoint (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../dh-autoreconf_9_all.deb ...
+Unpacking dh-autoreconf (9) ...
+Selecting previously unselected package python3.3.
+Preparing to unpack .../python3.3_3.3.5-1_amd64.deb ...
+Unpacking python3.3 (3.3.5-1) ...
+Selecting previously unselected package python3-minimal.
+Preparing to unpack .../python3-minimal_3.3.4-1_amd64.deb ...
+Unpacking python3-minimal (3.3.4-1) ...
+Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../libpython3-stdlib_3.3.4-1_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.3.4-1) ...
+Selecting previously unselected package python3.
+Preparing to unpack .../python3_3.3.4-1_amd64.deb ...
+Unpacking python3 (3.3.4-1) ...
+Selecting previously unselected package dh-python.
+Preparing to unpack .../dh-python_1.20140128-1_all.deb ...
+Unpacking dh-python (1.20140128-1) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../libjs-jquery_1.7.2+dfsg-3_all.deb ...
+Unpacking libjs-jquery (1.7.2+dfsg-3) ...
+Selecting previously unselected package libpython-dev:amd64.
+Preparing to unpack .../libpython-dev_2.7.5-5_amd64.deb ...
+Unpacking libpython-dev:amd64 (2.7.5-5) ...
+Selecting previously unselected package libpython-all-dev:amd64.
+Preparing to unpack .../libpython-all-dev_2.7.5-5_amd64.deb ...
+Unpacking libpython-all-dev:amd64 (2.7.5-5) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../libpython3-dev_3.3.4-1_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.3.4-1) ...
+Selecting previously unselected package libpython3-all-dev:amd64.
+Preparing to unpack .../libpython3-all-dev_3.3.4-1_amd64.deb ...
+Unpacking libpython3-all-dev:amd64 (3.3.4-1) ...
+Selecting previously unselected package python-all.
+Preparing to unpack .../python-all_2.7.5-5_amd64.deb ...
+Unpacking python-all (2.7.5-5) ...
+Selecting previously unselected package python2.7-dev.
+Preparing to unpack .../python2.7-dev_2.7.6-8_amd64.deb ...
+Unpacking python2.7-dev (2.7.6-8) ...
+Selecting previously unselected package python-dev.
+Preparing to unpack .../python-dev_2.7.5-5_amd64.deb ...
+Unpacking python-dev (2.7.5-5) ...
+Selecting previously unselected package python-all-dev.
+Preparing to unpack .../python-all-dev_2.7.5-5_amd64.deb ...
+Unpacking python-all-dev (2.7.5-5) ...
+Selecting previously unselected package python3.4.
+Preparing to unpack .../python3.4_3.4.0+20140425-1_amd64.deb ...
+Unpacking python3.4 (3.4.0+20140425-1) ...
+Selecting previously unselected package python3-all.
+Preparing to unpack .../python3-all_3.3.4-1_amd64.deb ...
+Unpacking python3-all (3.3.4-1) ...
+Selecting previously unselected package python3.3-dev.
+Preparing to unpack .../python3.3-dev_3.3.5-1_amd64.deb ...
+Unpacking python3.3-dev (3.3.5-1) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../python3-dev_3.3.4-1_amd64.deb ...
+Unpacking python3-dev (3.3.4-1) ...
+Selecting previously unselected package python3.4-dev.
+Preparing to unpack .../python3.4-dev_3.4.0+20140425-1_amd64.deb ...
+Unpacking python3.4-dev (3.4.0+20140425-1) ...
+Selecting previously unselected package python3-all-dev.
+Preparing to unpack .../python3-all-dev_3.3.4-1_amd64.deb ...
+Unpacking python3-all-dev (3.3.4-1) ...
+Selecting previously unselected package rubygems-integration.
+Preparing to unpack .../rubygems-integration_1.6_all.deb ...
+Unpacking rubygems-integration (1.6) ...
+Selecting previously unselected package libruby2.0:amd64.
+Preparing to unpack .../libruby2.0_2.0.0.484+really457-3_amd64.deb ...
+Unpacking libruby2.0:amd64 (2.0.0.484+really457-3) ...
+Selecting previously unselected package ruby2.0.
+Preparing to unpack .../ruby2.0_2.0.0.484+really457-3_amd64.deb ...
+Unpacking ruby2.0 (2.0.0.484+really457-3) ...
+Selecting previously unselected package ruby.
+Preparing to unpack .../ruby_1%3a2.0.0.2_all.deb ...
+Unpacking ruby (1:2.0.0.2) ...
+Selecting previously unselected package ruby2.0-dev:amd64.
+Preparing to unpack .../ruby2.0-dev_2.0.0.484+really457-3_amd64.deb ...
+Unpacking ruby2.0-dev:amd64 (2.0.0.484+really457-3) ...
+Selecting previously unselected package ruby-dev.
+Preparing to unpack .../ruby-dev_1%3a2.0.0.2_all.deb ...
+Unpacking ruby-dev (1:2.0.0.2) ...
+Selecting previously unselected package swig2.0.
+Preparing to unpack .../swig2.0_2.0.11-1_amd64.deb ...
+Unpacking swig2.0 (2.0.11-1) ...
+Selecting previously unselected package swig.
+Preparing to unpack .../swig_2.0.11-1_amd64.deb ...
+Unpacking swig (2.0.11-1) ...
+Selecting previously unselected package sbuild-build-depends-marisa-dummy.
+Preparing to unpack .../sbuild-build-depends-marisa-dummy.deb ...
+Unpacking sbuild-build-depends-marisa-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libssl1.0.0:amd64 (1.0.1g-3) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libsqlite3-0:amd64 (3.8.4.3-2) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libmpdec2:amd64 (2.4.0-6) ...
+Setting up libpython2.7-minimal:amd64 (2.7.6-8) ...
+Setting up mime-support (3.54) ...
+update-alternatives: using /usr/bin/see to provide /usr/bin/view (view) in auto mode
+Setting up libpython2.7-stdlib:amd64 (2.7.6-8) ...
+Setting up libpython2.7:amd64 (2.7.6-8) ...
+Setting up libexpat1-dev:amd64 (2.1.0-4) ...
+Setting up libpython2.7-dev:amd64 (2.7.6-8) ...
+Setting up libpython3.3-minimal:amd64 (3.3.5-1) ...
+Setting up libpython3.3-stdlib:amd64 (3.3.5-1) ...
+Setting up libpython3.3:amd64 (3.3.5-1) ...
+Setting up libpython3.3-dev:amd64 (3.3.5-1) ...
+Setting up libpython3.4-minimal:amd64 (3.4.0+20140425-1) ...
+Setting up libpython3.4-stdlib:amd64 (3.4.0+20140425-1) ...
+Setting up libpython3.4:amd64 (3.4.0+20140425-1) ...
+Setting up libpython3.4-dev:amd64 (3.4.0+20140425-1) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libyaml-0-2:amd64 (0.1.4-3.2) ...
+Setting up python2.7-minimal (2.7.6-8) ...
+Setting up python3.3-minimal (3.3.5-1) ...
+Setting up python3.4-minimal (3.4.0+20140425-1) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-3) ...
+Setting up python2.7 (2.7.6-8) ...
+Setting up python-minimal (2.7.5-5) ...
+Setting up libpython-stdlib:amd64 (2.7.5-5) ...
+Setting up python (2.7.5-5) ...
+Setting up autoconf (2.69-6) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up autopoint (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up dh-autoreconf (9) ...
+Setting up python3.3 (3.3.5-1) ...
+Setting up python3-minimal (3.3.4-1) ...
+Setting up libpython3-stdlib:amd64 (3.3.4-1) ...
+Setting up libjs-jquery (1.7.2+dfsg-3) ...
+Setting up libpython-dev:amd64 (2.7.5-5) ...
+Setting up libpython-all-dev:amd64 (2.7.5-5) ...
+Setting up libpython3-dev:amd64 (3.3.4-1) ...
+Setting up libpython3-all-dev:amd64 (3.3.4-1) ...
+Setting up python-all (2.7.5-5) ...
+Setting up python2.7-dev (2.7.6-8) ...
+Setting up python-dev (2.7.5-5) ...
+Setting up python-all-dev (2.7.5-5) ...
+Setting up python3.4 (3.4.0+20140425-1) ...
+Setting up python3.3-dev (3.3.5-1) ...
+Setting up python3.4-dev (3.4.0+20140425-1) ...
+Setting up swig2.0 (2.0.11-1) ...
+Setting up swig (2.0.11-1) ...
+Setting up python3 (3.3.4-1) ...
+Setting up dh-python (1.20140128-1) ...
+Setting up python3-all (3.3.4-1) ...
+Setting up python3-dev (3.3.4-1) ...
+Setting up python3-all-dev (3.3.4-1) ...
+Setting up rubygems-integration (1.6) ...
+Setting up ruby2.0 (2.0.0.484+really457-3) ...
+Setting up libruby2.0:amd64 (2.0.0.484+really457-3) ...
+Setting up ruby2.0-dev:amd64 (2.0.0.484+really457-3) ...
+Setting up ruby-dev (1:2.0.0.2) ...
+Setting up ruby (1:2.0.0.2) ...
+Setting up sbuild-build-depends-marisa-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 autoconf_2.69-6 automake_1:1.14.1-3 autopoint_0.18.3.2-1 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 dh-autoreconf_9 dh-python_1.20140128-1 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libexpat1_2.1.0-4 libexpat1-dev_2.1.0-4 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libjs-jquery_1.7.2+dfsg-3 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpdec2_2.4.0-6 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libpython-all-dev_2.7.5-5 libpython-dev_2.7.5-5 libpython-stdlib_2.7.5-5 libpython2.7_2.7.6-8 libpython2.7-dev_2.7.6-8 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libpython3-all-dev_3.3.4-1 libpython3-dev_3.3.4-1 libpython3-stdlib_3.3.4-1 libpython3.3_3.3.5-1 libpython3.3-dev_3.3.5-1 libpython3.3-minimal_3.3.5-1 libpython3.3-stdlib_3.3.5-1 libpython3.4_3.4.0+20140425-1 libpython3.4-dev_3.4.0+20140425-1 libpython3.4-minimal_3.4.0+20140425-1 libpython3.4-stdlib_3.4.0+20140425-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libruby2.0_2.0.0.484+really457-3 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libsqlite3-0_3.8.4.3-2 libss2_1.42.9-3 libssl1.0.0_1.0.1g-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtool_2.4.2-1.7 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 libyaml-0-2_0.1.4-3.2 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 m4_1.4.17-3 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-all_2.7.5-5 python-all-dev_2.7.5-5 python-dev_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-dev_2.7.6-8 python2.7-minimal_2.7.6-8 python3_3.3.4-1 python3-all_3.3.4-1 python3-all-dev_3.3.4-1 python3-dev_3.3.4-1 python3-minimal_3.3.4-1 python3.3_3.3.5-1 python3.3-dev_3.3.5-1 python3.3-minimal_3.3.5-1 python3.4_3.4.0+20140425-1 python3.4-dev_3.4.0+20140425-1 python3.4-minimal_3.4.0+20140425-1 readline-common_6.3-6 ruby_1:2.0.0.2 ruby-dev_1:2.0.0.2 ruby2.0_2.0.0.484+really457-3 ruby2.0-dev_2.0.0.484+really457-3 rubygems-integration_1.6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-marisa-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 swig_2.0.11-1 swig2.0_2.0.11-1 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Sun Apr 20 05:25:01 2014 UTC using RSA key ID 2AAAB140
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./marisa_0.2.4-6.dsc
+dpkg-source: info: extracting marisa in marisa-0.2.4
+dpkg-source: info: unpacking marisa_0.2.4.orig.tar.gz
+dpkg-source: info: unpacking marisa_0.2.4-6.debian.tar.xz
+dpkg-source: info: applying module-version-for-egg-inof.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-d96eb12a-c8bb-435e-8839-bf270ed4b337
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package marisa
+dpkg-buildpackage: source version 0.2.4-6
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Mitsuya Shibata <mty.shibata@gmail.com>
+ dpkg-source --before-build marisa-0.2.4
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+py3versions: no X-Python3-Version in control file, using supported versions
+dh clean  --with autoreconf --with python2,python3
+   dh_testdir
+   dh_auto_clean
+   dh_autoreconf_clean
+   dh_clean
+ dpkg-source -b marisa-0.2.4
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building marisa using existing ./marisa_0.2.4.orig.tar.gz
+dpkg-source: info: building marisa in marisa_0.2.4-6.debian.tar.xz
+dpkg-source: info: building marisa in marisa_0.2.4-6.dsc
+ debian/rules build
+py3versions: no X-Python3-Version in control file, using supported versions
+dh build  --with autoreconf --with python2,python3
+   dh_testdir
+   dh_autoreconf
+libtoolize: putting auxiliary files in `.'.
+libtoolize: copying file `./ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: copying file `m4/libtool.m4'
+libtoolize: copying file `m4/ltoptions.m4'
+libtoolize: copying file `m4/ltsugar.m4'
+libtoolize: copying file `m4/ltversion.m4'
+libtoolize: copying file `m4/lt~obsolete.m4'
+configure.ac:10: installing './compile'
+lib/Makefile.am:6: warning: source file 'marisa/keyset.cc' is in a subdirectory,
+lib/Makefile.am:6: but option 'subdir-objects' is disabled
+automake: warning: possible forward-incompatibility.
+automake: At least a source file is in a subdirectory, but the 'subdir-objects'
+automake: automake option hasn't been enabled.  For now, the corresponding output
+automake: object file(s) will be placed in the top-level directory.  However,
+automake: this behaviour will change in future Automake versions: they will
+automake: unconditionally cause object files to be placed in the same subdirectory
+automake: of the corresponding sources.
+automake: You are advised to start using 'subdir-objects' option throughout your
+automake: project, to avoid future incompatibilities.
+lib/Makefile.am:6: warning: source file 'marisa/agent.cc' is in a subdirectory,
+lib/Makefile.am:6: but option 'subdir-objects' is disabled
+lib/Makefile.am:6: warning: source file 'marisa/trie.cc' is in a subdirectory,
+lib/Makefile.am:6: but option 'subdir-objects' is disabled
+lib/Makefile.am:6: warning: source file 'marisa/grimoire/io/mapper.cc' is in a subdirectory,
+lib/Makefile.am:6: but option 'subdir-objects' is disabled
+lib/Makefile.am:6: warning: source file 'marisa/grimoire/io/reader.cc' is in a subdirectory,
+lib/Makefile.am:6: but option 'subdir-objects' is disabled
+lib/Makefile.am:6: warning: source file 'marisa/grimoire/io/writer.cc' is in a subdirectory,
+lib/Makefile.am:6: but option 'subdir-objects' is disabled
+lib/Makefile.am:6: warning: source file 'marisa/grimoire/vector/bit-vector.cc' is in a subdirectory,
+lib/Makefile.am:6: but option 'subdir-objects' is disabled
+lib/Makefile.am:6: warning: source file 'marisa/grimoire/trie/tail.cc' is in a subdirectory,
+lib/Makefile.am:6: but option 'subdir-objects' is disabled
+lib/Makefile.am:6: warning: source file 'marisa/grimoire/trie/louds-trie.cc' is in a subdirectory,
+lib/Makefile.am:6: but option 'subdir-objects' is disabled
+parallel-tests: installing './test-driver'
+   debian/rules override_dh_auto_configure
+py3versions: no X-Python3-Version in control file, using supported versions
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_configure
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether to use SSE2... no
+checking whether to use SSE3... no
+checking whether to use SSSE3... no
+checking whether to use SSE4.1... no
+checking whether to use SSE4.2... no
+checking whether to use SSE4... no
+checking whether to use SSE4a... no
+checking whether to use popcnt... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating marisa.pc
+config.status: creating lib/Makefile
+config.status: creating tests/Makefile
+config.status: creating tools/Makefile
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+
+marisa 0.2.4 configuration:
+-------------------------------
+  HOST:      x86_64-pc-linux-gnu
+  CXX:       g++
+  CXXFLAGS:  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security
+  LDFLAGS:   -Wl,-z,relro
+  PREFIX:    /usr
+
+  SSE2:      no
+  SSE3:      no
+  SSSE3:     no
+  SSE4.1:    no
+  SSE4.2:    no
+  SSE4a:     no
+  POPCNT:    no
+
+make -C bindings
+make[2]: Entering directory `/«PKGBUILDDIR»/bindings'
+swig -Wall -c++ -perl -outdir perl marisa-swig.i
+mv marisa-swig_wrap.cxx perl
+cp marisa-swig.cxx marisa-swig.h perl
+swig -Wall -c++ -python -outdir python marisa-swig.i
+marisa-swig.h:55: Warning 321: 'str' conflicts with a built-in name in python
+marisa-swig.h:56: Warning 321: 'id' conflicts with a built-in name in python
+marisa-swig.h:69: Warning 321: 'str' conflicts with a built-in name in python
+marisa-swig.h:70: Warning 321: 'id' conflicts with a built-in name in python
+mv marisa-swig_wrap.cxx python
+cp marisa-swig.cxx marisa-swig.h python
+swig -Wall -c++ -ruby -outdir ruby marisa-swig.i
+mv marisa-swig_wrap.cxx ruby
+cp marisa-swig.cxx marisa-swig.h ruby
+make[2]: Leaving directory `/«PKGBUILDDIR»/bindings'
+cd bindings/python; sed -i "s/__version__/0.2.4/" setup.py
+cd bindings/perl; perl Makefile.PL \
+	    INSTALL_BASE=/«PKGBUILDDIR»/debian/libmarisa-perl/usr \
+	    INSTALLARCHLIB=/«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5 \
+	    INSTALLSITEARCH=/«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5 \
+	    INSTALLVENDORARCH=/«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5 \
+	    INC="-I../../lib" \
+	    LIBS="-L../../lib/.libs" \
+	    CCFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2" \
+	    LDDLFLAGS="-shared -L/usr/local/lib -fstack-protector -Wl,-z,relro"
+Writing Makefile for marisa
+Writing MYMETA.yml and MYMETA.json
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_build
+py3versions: no X-Python3-Version in control file, using supported versions
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_build
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making all in lib
+make[3]: Entering directory `/«PKGBUILDDIR»/lib'
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o keyset.lo `test -f 'marisa/keyset.cc' || echo './'`marisa/keyset.cc
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/keyset.cc  -fPIC -DPIC -o .libs/keyset.o
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/keyset.cc -o keyset.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o agent.lo `test -f 'marisa/agent.cc' || echo './'`marisa/agent.cc
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/agent.cc  -fPIC -DPIC -o .libs/agent.o
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/agent.cc -o agent.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o trie.lo `test -f 'marisa/trie.cc' || echo './'`marisa/trie.cc
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/trie.cc  -fPIC -DPIC -o .libs/trie.o
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/trie.cc -o trie.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o mapper.lo `test -f 'marisa/grimoire/io/mapper.cc' || echo './'`marisa/grimoire/io/mapper.cc
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/io/mapper.cc  -fPIC -DPIC -o .libs/mapper.o
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/io/mapper.cc -o mapper.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o reader.lo `test -f 'marisa/grimoire/io/reader.cc' || echo './'`marisa/grimoire/io/reader.cc
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/io/reader.cc  -fPIC -DPIC -o .libs/reader.o
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/io/reader.cc -o reader.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o writer.lo `test -f 'marisa/grimoire/io/writer.cc' || echo './'`marisa/grimoire/io/writer.cc
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/io/writer.cc  -fPIC -DPIC -o .libs/writer.o
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/io/writer.cc -o writer.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o bit-vector.lo `test -f 'marisa/grimoire/vector/bit-vector.cc' || echo './'`marisa/grimoire/vector/bit-vector.cc
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/vector/bit-vector.cc  -fPIC -DPIC -o .libs/bit-vector.o
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/vector/bit-vector.cc -o bit-vector.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o tail.lo `test -f 'marisa/grimoire/trie/tail.cc' || echo './'`marisa/grimoire/trie/tail.cc
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/trie/tail.cc  -fPIC -DPIC -o .libs/tail.o
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/trie/tail.cc -o tail.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o louds-trie.lo `test -f 'marisa/grimoire/trie/louds-trie.cc' || echo './'`marisa/grimoire/trie/louds-trie.cc
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/trie/louds-trie.cc  -fPIC -DPIC -o .libs/louds-trie.o
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c marisa/grimoire/trie/louds-trie.cc -o louds-trie.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o libmarisa.la -rpath /usr/lib/x86_64-linux-gnu keyset.lo agent.lo trie.lo mapper.lo reader.lo writer.lo bit-vector.lo tail.lo louds-trie.lo  
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  .libs/keyset.o .libs/agent.o .libs/trie.o .libs/mapper.o .libs/reader.o .libs/writer.o .libs/bit-vector.o .libs/tail.o .libs/louds-trie.o   -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro   -Wl,-soname -Wl,libmarisa.so.0 -o .libs/libmarisa.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libmarisa.so.0" && ln -s "libmarisa.so.0.0.0" "libmarisa.so.0")
+libtool: link: (cd ".libs" && rm -f "libmarisa.so" && ln -s "libmarisa.so.0.0.0" "libmarisa.so")
+libtool: link: ar cru .libs/libmarisa.a  keyset.o agent.o trie.o mapper.o reader.o writer.o bit-vector.o tail.o louds-trie.o
+libtool: link: ranlib .libs/libmarisa.a
+libtool: link: ( cd ".libs" && rm -f "libmarisa.la" && ln -s "../libmarisa.la" "libmarisa.la" )
+make[3]: Leaving directory `/«PKGBUILDDIR»/lib'
+Making all in tools
+make[3]: Entering directory `/«PKGBUILDDIR»/tools'
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o cmdopt.lo cmdopt.cc
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c cmdopt.cc  -fPIC -DPIC -o .libs/cmdopt.o
+libtool: compile:  g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" "-DPACKAGE_STRING=\"marisa 0.2.4\"" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I. -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c cmdopt.cc -o cmdopt.o >/dev/null 2>&1
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o libcmdopt.la  cmdopt.lo  
+libtool: link: ar cru .libs/libcmdopt.a .libs/cmdopt.o 
+libtool: link: ranlib .libs/libcmdopt.a
+libtool: link: ( cd ".libs" && rm -f "libcmdopt.la" && ln -s "../libcmdopt.la" "libcmdopt.la" )
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o marisa-build.o marisa-build.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o marisa-build marisa-build.o ../lib/libmarisa.la libcmdopt.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/marisa-build marisa-build.o  ../lib/.libs/libmarisa.so ./.libs/libcmdopt.a
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o marisa-lookup.o marisa-lookup.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o marisa-lookup marisa-lookup.o ../lib/libmarisa.la libcmdopt.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/marisa-lookup marisa-lookup.o  ../lib/.libs/libmarisa.so ./.libs/libcmdopt.a
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o marisa-reverse-lookup.o marisa-reverse-lookup.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o marisa-reverse-lookup marisa-reverse-lookup.o ../lib/libmarisa.la libcmdopt.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/marisa-reverse-lookup marisa-reverse-lookup.o  ../lib/.libs/libmarisa.so ./.libs/libcmdopt.a
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o marisa-common-prefix-search.o marisa-common-prefix-search.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o marisa-common-prefix-search marisa-common-prefix-search.o ../lib/libmarisa.la libcmdopt.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/marisa-common-prefix-search marisa-common-prefix-search.o  ../lib/.libs/libmarisa.so ./.libs/libcmdopt.a
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o marisa-predictive-search.o marisa-predictive-search.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o marisa-predictive-search marisa-predictive-search.o ../lib/libmarisa.la libcmdopt.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/marisa-predictive-search marisa-predictive-search.o  ../lib/.libs/libmarisa.so ./.libs/libcmdopt.a
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o marisa-dump.o marisa-dump.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o marisa-dump marisa-dump.o ../lib/libmarisa.la libcmdopt.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/marisa-dump marisa-dump.o  ../lib/.libs/libmarisa.so ./.libs/libcmdopt.a
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o marisa-benchmark.o marisa-benchmark.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o marisa-benchmark marisa-benchmark.o ../lib/libmarisa.la libcmdopt.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/marisa-benchmark marisa-benchmark.o  ../lib/.libs/libmarisa.so ./.libs/libcmdopt.a
+make[3]: Leaving directory `/«PKGBUILDDIR»/tools'
+Making all in tests
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+# Build for each Python 3 version
+cd bindings/python; \
+	    set -ex; for python in python3.4 python3; do \
+	    $python setup.py build_ext --include-dirs=../../lib \
+	        --library-dirs=../../lib/.libs; \
+	    done
++ python3.4 setup.py build_ext --include-dirs=../../lib --library-dirs=../../lib/.libs
+running build_ext
+building '_marisa' extension
+creating build
+creating build/temp.linux-x86_64-3.4
+x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -I../../lib -I/usr/include/python3.4m -c marisa-swig_wrap.cxx -o build/temp.linux-x86_64-3.4/marisa-swig_wrap.o
+x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -I../../lib -I/usr/include/python3.4m -c marisa-swig.cxx -o build/temp.linux-x86_64-3.4/marisa-swig.o
+creating build/lib.linux-x86_64-3.4
+x86_64-linux-gnu-g++ -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,relro -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 build/temp.linux-x86_64-3.4/marisa-swig_wrap.o build/temp.linux-x86_64-3.4/marisa-swig.o -L../../lib/.libs -lmarisa -o build/lib.linux-x86_64-3.4/_marisa.cpython-34m.so
++ python3 setup.py build_ext --include-dirs=../../lib --library-dirs=../../lib/.libs
+running build_ext
+building '_marisa' extension
+creating build/temp.linux-x86_64-3.3
+x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -I../../lib -I/usr/include/python3.3m -c marisa-swig_wrap.cxx -o build/temp.linux-x86_64-3.3/marisa-swig_wrap.o
+x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -I../../lib -I/usr/include/python3.3m -c marisa-swig.cxx -o build/temp.linux-x86_64-3.3/marisa-swig.o
+creating build/lib.linux-x86_64-3.3
+x86_64-linux-gnu-g++ -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,relro -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 build/temp.linux-x86_64-3.3/marisa-swig_wrap.o build/temp.linux-x86_64-3.3/marisa-swig.o -L../../lib/.libs -lmarisa -o build/lib.linux-x86_64-3.3/_marisa.cpython-33m.so
+cd bindings/python; \
+	    python2 setup.py build_ext --include-dirs=../../lib \
+	        --library-dirs=../../lib/.libs
+running build_ext
+building '_marisa' extension
+creating build/temp.linux-x86_64-2.7
+x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -I../../lib -I/usr/include/python2.7 -c marisa-swig_wrap.cxx -o build/temp.linux-x86_64-2.7/marisa-swig_wrap.o
+x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -I../../lib -I/usr/include/python2.7 -c marisa-swig.cxx -o build/temp.linux-x86_64-2.7/marisa-swig.o
+creating build/lib.linux-x86_64-2.7
+c++ -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -D_FORTIFY_SOURCE=2 -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z,relro -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 build/temp.linux-x86_64-2.7/marisa-swig_wrap.o build/temp.linux-x86_64-2.7/marisa-swig.o -L../../lib/.libs -lmarisa -o build/lib.linux-x86_64-2.7/_marisa.so
+cd bindings/perl; make
+make[2]: Entering directory `/«PKGBUILDDIR»/bindings/perl'
+cp sample.pl blib/lib/sample.pl
+cp marisa.pm blib/lib/marisa.pm
+cc -c  -I../../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -O2 -g   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/usr/lib/perl/5.18/CORE"   marisa-swig.cxx
+cc -c  -I../../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -O2 -g   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/usr/lib/perl/5.18/CORE"   marisa-swig_wrap.cxx
+marisa-swig_wrap.cxx:4992:1: warning: duplicate 'extern' declaration specifier [-Wduplicate-decl-specifier]
+XS(SWIG_init) {
+^
+/usr/lib/perl/5.18/CORE/XSUB.h:156:18: note: expanded from macro 'XS'
+#define XS(name) XS_EXTERNAL(name)
+                 ^
+/usr/lib/perl/5.18/CORE/XSUB.h:145:33: note: expanded from macro 'XS_EXTERNAL'
+#      define XS_EXTERNAL(name) extern "C" XSPROTO(name)
+                                ^
+1 warning generated.
+Running Mkbootstrap for marisa ()
+chmod 644 marisa.bs
+rm -f blib/arch/auto/marisa/marisa.so
+cc  -shared -L/usr/local/lib -fstack-protector -Wl,-z,relro marisa-swig.o marisa-swig_wrap.o  -o blib/arch/auto/marisa/marisa.so 	\
+	     	\
+	  
+chmod 755 blib/arch/auto/marisa/marisa.so
+cp marisa.bs blib/arch/auto/marisa/marisa.bs
+chmod 644 blib/arch/auto/marisa/marisa.bs
+make[2]: Leaving directory `/«PKGBUILDDIR»/bindings/perl'
+# extconf.rb needs to exist library when configure
+cd bindings/ruby; ruby extconf.rb --with-opt-include=../../lib \
+	    --with-opt-lib=../../lib/.libs
+checking for main() in -lmarisa... yes
+creating Makefile
+# set verbose option for compiling
+sed -i 's/^V = 0/V = 1/' bindings/ruby/Makefile
+sed -i 's%^sitearchdir = .*%sitearchdir = $(exec_prefix)/lib/x86_64-linux-gnu/ruby/$(ruby_version)%' bindings/ruby/Makefile
+cd bindings/ruby; make
+make[2]: Entering directory `/«PKGBUILDDIR»/bindings/ruby'
+g++ -I. -I/usr/include/x86_64-linux-gnu/ruby-2.0.0 -I/usr/include/ruby-2.0.0/ruby/backward -I/usr/include/ruby-2.0.0 -I. -I../../lib -D_FORTIFY_SOURCE=2   -fPIC -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -o marisa-swig_wrap.o -c marisa-swig_wrap.cxx
+g++ -I. -I/usr/include/x86_64-linux-gnu/ruby-2.0.0 -I/usr/include/ruby-2.0.0/ruby/backward -I/usr/include/ruby-2.0.0 -I. -I../../lib -D_FORTIFY_SOURCE=2   -fPIC -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -o marisa-swig.o -c marisa-swig.cxx
+rm -f marisa.so
+g++ -shared -o marisa.so marisa-swig_wrap.o marisa-swig.o -L. -L/usr/lib -L../../lib/.libs -L. -Wl,-z,relro -L/build/ruby2.0-0uKpS5/ruby2.0-2.0.0.484+really457/debian/lib -fstack-protector -rdynamic -Wl,-export-dynamic    -lruby-2.0 -lmarisa  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[2]: Leaving directory `/«PKGBUILDDIR»/bindings/ruby'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making check in lib
+make[2]: Entering directory `/«PKGBUILDDIR»/lib'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/lib'
+Making check in tools
+make[2]: Entering directory `/«PKGBUILDDIR»/tools'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/tools'
+Making check in tests
+make[2]: Entering directory `/«PKGBUILDDIR»/tests'
+make  base-test io-test vector-test trie-test marisa-test
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o base-test.o base-test.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o base-test base-test.o ../lib/libmarisa.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/base-test base-test.o  ../lib/.libs/libmarisa.so
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o io-test.o io-test.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o io-test io-test.o ../lib/libmarisa.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/io-test io-test.o  ../lib/.libs/libmarisa.so
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o vector-test.o vector-test.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o vector-test vector-test.o ../lib/libmarisa.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/vector-test vector-test.o  ../lib/.libs/libmarisa.so
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o trie-test.o trie-test.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o trie-test trie-test.o ../lib/libmarisa.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/trie-test trie-test.o  ../lib/.libs/libmarisa.so
+g++ -DPACKAGE_NAME=\"marisa\" -DPACKAGE_TARNAME=\"marisa\" -DPACKAGE_VERSION=\"0.2.4\" -DPACKAGE_STRING=\"marisa\ 0.2.4\" -DPACKAGE_BUGREPORT=\"syata@acm.org\" -DPACKAGE_URL=\"\" -DPACKAGE=\"marisa\" -DVERSION=\"0.2.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -I.   -D_FORTIFY_SOURCE=2 -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o marisa-test.o marisa-test.cc
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -o marisa-test marisa-test.o ../lib/libmarisa.la 
+libtool: link: g++ -Wall -Weffc++ -Wextra -D_DEBUG -I../lib -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wl,-z -Wl,relro -o .libs/marisa-test marisa-test.o  ../lib/.libs/libmarisa.so
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make  check-TESTS
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
+make[4]: Entering directory `/«PKGBUILDDIR»/tests'
+PASS: base-test
+PASS: io-test
+PASS: vector-test
+PASS: trie-test
+PASS: marisa-test
+make[5]: Entering directory `/«PKGBUILDDIR»/tests'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/tests'
+============================================================================
+Testsuite summary for marisa 0.2.4
+============================================================================
+# TOTAL: 5
+# PASS:  5
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Nothing to be done for `check-am'.
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+py3versions: no X-Python3-Version in control file, using supported versions
+dh binary  --with autoreconf --with python2,python3
+   dh_testroot
+   dh_prep
+   debian/rules override_dh_auto_install
+py3versions: no X-Python3-Version in control file, using supported versions
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_install
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making install in lib
+make[3]: Entering directory `/«PKGBUILDDIR»/lib'
+make[4]: Entering directory `/«PKGBUILDDIR»/lib'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libmarisa.la '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/libmarisa.so.0.0.0 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libmarisa.so.0.0.0
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libmarisa.so.0.0.0 libmarisa.so.0 || { rm -f libmarisa.so.0 && ln -s libmarisa.so.0.0.0 libmarisa.so.0; }; })
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libmarisa.so.0.0.0 libmarisa.so || { rm -f libmarisa.so && ln -s libmarisa.so.0.0.0 libmarisa.so; }; })
+libtool: install: /usr/bin/install -c .libs/libmarisa.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libmarisa.la
+libtool: install: /usr/bin/install -c .libs/libmarisa.a /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libmarisa.a
+libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libmarisa.a
+libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libmarisa.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib/x86_64-linux-gnu'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/include'
+ /usr/bin/install -c -m 644 marisa.h '/«PKGBUILDDIR»/debian/tmp/usr/include'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/include/marisa'
+ /usr/bin/install -c -m 644 marisa/base.h marisa/exception.h marisa/scoped-ptr.h marisa/scoped-array.h marisa/key.h marisa/keyset.h marisa/query.h marisa/agent.h marisa/stdio.h marisa/iostream.h marisa/trie.h '/«PKGBUILDDIR»/debian/tmp/usr/include/marisa'
+make[4]: Leaving directory `/«PKGBUILDDIR»/lib'
+make[3]: Leaving directory `/«PKGBUILDDIR»/lib'
+Making install in tools
+make[3]: Entering directory `/«PKGBUILDDIR»/tools'
+make[4]: Entering directory `/«PKGBUILDDIR»/tools'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c marisa-build marisa-lookup marisa-reverse-lookup marisa-common-prefix-search marisa-predictive-search marisa-dump marisa-benchmark '/«PKGBUILDDIR»/debian/tmp/usr/bin'
+libtool: install: warning: `../lib/libmarisa.la' has not been installed in `/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/marisa-build /«PKGBUILDDIR»/debian/tmp/usr/bin/marisa-build
+libtool: install: warning: `../lib/libmarisa.la' has not been installed in `/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/marisa-lookup /«PKGBUILDDIR»/debian/tmp/usr/bin/marisa-lookup
+libtool: install: warning: `../lib/libmarisa.la' has not been installed in `/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/marisa-reverse-lookup /«PKGBUILDDIR»/debian/tmp/usr/bin/marisa-reverse-lookup
+libtool: install: warning: `../lib/libmarisa.la' has not been installed in `/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/marisa-common-prefix-search /«PKGBUILDDIR»/debian/tmp/usr/bin/marisa-common-prefix-search
+libtool: install: warning: `../lib/libmarisa.la' has not been installed in `/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/marisa-predictive-search /«PKGBUILDDIR»/debian/tmp/usr/bin/marisa-predictive-search
+libtool: install: warning: `../lib/libmarisa.la' has not been installed in `/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/marisa-dump /«PKGBUILDDIR»/debian/tmp/usr/bin/marisa-dump
+libtool: install: warning: `../lib/libmarisa.la' has not been installed in `/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/marisa-benchmark /«PKGBUILDDIR»/debian/tmp/usr/bin/marisa-benchmark
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/tools'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tools'
+Making install in tests
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
+make[4]: Entering directory `/«PKGBUILDDIR»/tests'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[4]: Entering directory `/«PKGBUILDDIR»'
+make[4]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+ /usr/bin/install -c -m 644 marisa.pc '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+make[4]: Leaving directory `/«PKGBUILDDIR»'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+# The same for install; note the --install-layout=deb option
+cd bindings/python; \
+	    set -ex; for python in python3.4 python3; do \
+	    $python setup.py install \
+	        --root=/«PKGBUILDDIR»/debian/python3-marisa --install-layout=deb; \
+	    done
++ python3.4 setup.py install --root=/«PKGBUILDDIR»/debian/python3-marisa --install-layout=deb
+running install
+running build
+running build_py
+copying marisa.py -> build/lib.linux-x86_64-3.4
+running build_ext
+running install_lib
+creating /«PKGBUILDDIR»/debian/python3-marisa/usr
+creating /«PKGBUILDDIR»/debian/python3-marisa/usr/lib
+creating /«PKGBUILDDIR»/debian/python3-marisa/usr/lib/python3
+creating /«PKGBUILDDIR»/debian/python3-marisa/usr/lib/python3/dist-packages
+copying build/lib.linux-x86_64-3.4/marisa.py -> /«PKGBUILDDIR»/debian/python3-marisa/usr/lib/python3/dist-packages
+renaming extension _marisa.cpython-34m.so -> _marisa.cpython-34m-x86_64-linux-gnu.so
+copying build/lib.linux-x86_64-3.4/_marisa.cpython-34m.so -> /«PKGBUILDDIR»/debian/python3-marisa/usr/lib/python3/dist-packages/_marisa.cpython-34m-x86_64-linux-gnu.so
+byte-compiling /«PKGBUILDDIR»/debian/python3-marisa/usr/lib/python3/dist-packages/marisa.py to marisa.cpython-34.pyc
+running install_egg_info
+Writing /«PKGBUILDDIR»/debian/python3-marisa/usr/lib/python3/dist-packages/marisa-0.2.4.egg-info
++ python3 setup.py install --root=/«PKGBUILDDIR»/debian/python3-marisa --install-layout=deb
+running install
+running build
+running build_py
+copying marisa.py -> build/lib.linux-x86_64-3.3
+running build_ext
+running install_lib
+renaming extension _marisa.cpython-33m.so -> _marisa.cpython-33m-x86_64-linux-gnu.so
+copying build/lib.linux-x86_64-3.3/_marisa.cpython-33m.so -> /«PKGBUILDDIR»/debian/python3-marisa/usr/lib/python3/dist-packages/_marisa.cpython-33m-x86_64-linux-gnu.so
+byte-compiling /«PKGBUILDDIR»/debian/python3-marisa/usr/lib/python3/dist-packages/marisa.py to marisa.cpython-33.pyc
+running install_egg_info
+Removing /«PKGBUILDDIR»/debian/python3-marisa/usr/lib/python3/dist-packages/marisa-0.2.4.egg-info
+Writing /«PKGBUILDDIR»/debian/python3-marisa/usr/lib/python3/dist-packages/marisa-0.2.4.egg-info
+cd bindings/python; \
+	    python2 setup.py install \
+	        --root=/«PKGBUILDDIR»/debian/python-marisa --install-layout=deb
+running install
+running build
+running build_py
+copying marisa.py -> build/lib.linux-x86_64-2.7
+running build_ext
+running install_lib
+creating /«PKGBUILDDIR»/debian/python-marisa/usr
+creating /«PKGBUILDDIR»/debian/python-marisa/usr/lib
+creating /«PKGBUILDDIR»/debian/python-marisa/usr/lib/python2.7
+creating /«PKGBUILDDIR»/debian/python-marisa/usr/lib/python2.7/dist-packages
+copying build/lib.linux-x86_64-2.7/marisa.py -> /«PKGBUILDDIR»/debian/python-marisa/usr/lib/python2.7/dist-packages
+copying build/lib.linux-x86_64-2.7/_marisa.so -> /«PKGBUILDDIR»/debian/python-marisa/usr/lib/python2.7/dist-packages
+byte-compiling /«PKGBUILDDIR»/debian/python-marisa/usr/lib/python2.7/dist-packages/marisa.py to marisa.pyc
+running install_egg_info
+Writing /«PKGBUILDDIR»/debian/python-marisa/usr/lib/python2.7/dist-packages/marisa-0.2.4.egg-info
+# install perl modules
+cd bindings/perl; make install
+make[2]: Entering directory `/«PKGBUILDDIR»/bindings/perl'
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5/auto/marisa/marisa.bs
+Installing /«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5/auto/marisa/marisa.so
+Installing /«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5/marisa.pm
+Installing /«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5/sample.pl
+Appending installation info to /«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5/perllocal.pod
+make[2]: Leaving directory `/«PKGBUILDDIR»/bindings/perl'
+rm /«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5/auto/marisa/.packlist
+rm /«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5/perllocal.pod
+rm /«PKGBUILDDIR»/debian/libmarisa-perl/usr/lib/perl5/sample.pl
+# install ruby modules
+cd bindings/ruby; make install DESTDIR=/«PKGBUILDDIR»/debian/ruby-marisa
+make[2]: Entering directory `/«PKGBUILDDIR»/bindings/ruby'
+/bin/mkdir -p /«PKGBUILDDIR»/debian/ruby-marisa/usr/lib/x86_64-linux-gnu/ruby/2.0.0
+exit > .RUBYARCHDIR.time
+/usr/bin/install -c -m 0755 marisa.so /«PKGBUILDDIR»/debian/ruby-marisa/usr/lib/x86_64-linux-gnu/ruby/2.0.0
+make[2]: Leaving directory `/«PKGBUILDDIR»/bindings/ruby'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_python2
+   dh_python3
+E: dh_python3 tools:93: fix_shebang (debian/marisa/usr/bin/marisa-reverse-lookup): cannot parse binary file
+E: dh_python3 tools:93: fix_shebang (debian/marisa/usr/bin/marisa-predictive-search): cannot parse binary file
+E: dh_python3 tools:93: fix_shebang (debian/marisa/usr/bin/marisa-build): cannot parse binary file
+E: dh_python3 tools:93: fix_shebang (debian/marisa/usr/bin/marisa-benchmark): cannot parse binary file
+E: dh_python3 tools:93: fix_shebang (debian/marisa/usr/bin/marisa-dump): cannot parse binary file
+E: dh_python3 tools:93: fix_shebang (debian/marisa/usr/bin/marisa-lookup): cannot parse binary file
+E: dh_python3 tools:93: fix_shebang (debian/marisa/usr/bin/marisa-common-prefix-search): cannot parse binary file
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/python-marisa/usr/lib/python2.7/dist-packages/_marisa.so was not linked against libpthread.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/python3-marisa/usr/lib/python3/dist-packages/_marisa.cpython-33m-x86_64-linux-gnu.so debian/python3-marisa/usr/lib/python3/dist-packages/_marisa.cpython-34m-x86_64-linux-gnu.so were not linked against libpthread.so.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/ruby-marisa/usr/lib/x86_64-linux-gnu/ruby/2.0.0/marisa.so was not linked against librt.so.1 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/ruby-marisa/usr/lib/x86_64-linux-gnu/ruby/2.0.0/marisa.so was not linked against libpthread.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/ruby-marisa/usr/lib/x86_64-linux-gnu/ruby/2.0.0/marisa.so was not linked against libcrypt.so.1 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/ruby-marisa/usr/lib/x86_64-linux-gnu/ruby/2.0.0/marisa.so was not linked against libdl.so.2 (it uses none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: package python-marisa: unused substitution variable ${python:Versions}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: package python3-marisa: unused substitution variable ${python3:Versions}
+dpkg-gencontrol: warning: package python3-marisa: unused substitution variable ${python3:Provides}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: package ruby-marisa: unused substitution variable ${misc:Pre-Depends}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `marisa' in `../marisa_0.2.4-6_amd64.deb'.
+dpkg-deb: building package `libmarisa0' in `../libmarisa0_0.2.4-6_amd64.deb'.
+dpkg-deb: building package `libmarisa-dev' in `../libmarisa-dev_0.2.4-6_amd64.deb'.
+dpkg-deb: building package `python-marisa' in `../python-marisa_0.2.4-6_amd64.deb'.
+dpkg-deb: building package `python3-marisa' in `../python3-marisa_0.2.4-6_amd64.deb'.
+dpkg-deb: building package `libmarisa-perl' in `../libmarisa-perl_0.2.4-6_amd64.deb'.
+dpkg-deb: building package `ruby-marisa' in `../ruby-marisa_0.2.4-6_amd64.deb'.
+ dpkg-genchanges  >../marisa_0.2.4-6_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build marisa-0.2.4
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140427-1616
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+marisa_0.2.4-6_amd64.changes:
+─────────────────────────────
+
+Format: 1.8
+Date: Sun, 13 Apr 2014 23:27:56 +0900
+Source: marisa
+Binary: marisa libmarisa0 libmarisa-dev python-marisa python3-marisa libmarisa-perl ruby-marisa
+Architecture: source amd64
+Version: 0.2.4-6
+Distribution: sid
+Urgency: medium
+Maintainer: Mitsuya Shibata <mty.shibata@gmail.com>
+Changed-By: Mitsuya Shibata <mty.shibata@gmail.com>
+Description: 
+ libmarisa-dev - developement files for libmarisa
+ libmarisa-perl - Perl bindings for MARISA
+ libmarisa0 - C++ library to provide an implementation of MARISA
+ marisa     - commmand line tools for libmarisa
+ python-marisa - Python bindings for MARISA
+ python3-marisa - Python3 bindings for MARISA
+ ruby-marisa - Ruby bindings for MARISA
+Closes: 743989
+Changes: 
+ marisa (0.2.4-6) unstable; urgency=medium
+ .
+   * support building with Ruby 2.0/2.1 (Closes:  #743989)
+     Thanks to Christian Hofstaedtler for the report.
+Checksums-Sha1: 
+ 1f5b622318042b23d28bb23baa59c2320c6af15d 1352 marisa_0.2.4-6.dsc
+ 888bb8b3db09e818dc53defe5f69dc01e8ae46e7 6240 marisa_0.2.4-6.debian.tar.xz
+ cefb1c5f97a8f90946866b6b8b52d1d3f82b35e4 31354 marisa_0.2.4-6_amd64.deb
+ e805301d9787e45041a6f71813e3c811c2d72669 45514 libmarisa0_0.2.4-6_amd64.deb
+ e2d1889b6d415d6152efecc1b116eee6d191eb3b 69116 libmarisa-dev_0.2.4-6_amd64.deb
+ 3e94bf2bba6d6dcd0a0da6267b8668224f5ac4c5 28584 python-marisa_0.2.4-6_amd64.deb
+ 0de87d2824938dd1e303a7e926ab0c6c3eb0e17c 31566 python3-marisa_0.2.4-6_amd64.deb
+ 70f6497db186b1b4d329d517de1ff4c4dfe222cd 30966 libmarisa-perl_0.2.4-6_amd64.deb
+ 8533975de6d157890dfb2ad67356708c8ee26c51 27550 ruby-marisa_0.2.4-6_amd64.deb
+Checksums-Sha256: 
+ c91911b87ee8f0bcec9e45c2e88ab1e79d54d00c44f37d6735b7184494cdf193 1352 marisa_0.2.4-6.dsc
+ a2ec33df84afe1688b6f77799e5ccb5ec51b20f5b557a0ed6689c5b710962a5f 6240 marisa_0.2.4-6.debian.tar.xz
+ 28d5265346fb9bb7d06bb72ebf091d00be1b5f382ca270511776bfe1f64aa0f4 31354 marisa_0.2.4-6_amd64.deb
+ 75bfe4c246a6bd1eed4187f4e1683354f3b1da6be83aa2c13b6a422b8dcdf364 45514 libmarisa0_0.2.4-6_amd64.deb
+ ed73a12002fbd1c20422596203252ee9866919eb9c33b69454b34c70c4365033 69116 libmarisa-dev_0.2.4-6_amd64.deb
+ c6b729dcfc85b03a82f8b7cd141b21a1ba2e9f9356d1f3778269e2b8f356da10 28584 python-marisa_0.2.4-6_amd64.deb
+ 518ad0dbd998bab6317f552b913e5039531013b6db5565e799d7235506c57110 31566 python3-marisa_0.2.4-6_amd64.deb
+ e72ad96b28163923c0d0fb337e49fff77ce3a01a5dc8c6577594f596cc38fe27 30966 libmarisa-perl_0.2.4-6_amd64.deb
+ 10229a79c3cb59142a95ba341b834ca5cf5eb653530ebdc8b422323c35556d3b 27550 ruby-marisa_0.2.4-6_amd64.deb
+Files: 
+ 7180b6fa3103ce8cae546a6f6cfab144 31354 utils extra marisa_0.2.4-6_amd64.deb
+ 0e6404bb9c78ea5eec0882eff386ce5f 45514 libs extra libmarisa0_0.2.4-6_amd64.deb
+ 53e7568e708374fc35d5866022616931 69116 libdevel extra libmarisa-dev_0.2.4-6_amd64.deb
+ d8ca5fe2315edea77f3944ff6a526420 28584 python extra python-marisa_0.2.4-6_amd64.deb
+ 56c9682388f1a3ee3bcb29cdc20721de 31566 python extra python3-marisa_0.2.4-6_amd64.deb
+ 1a4eba0a4d930845e5b6f2ea53e03c4c 30966 perl extra libmarisa-perl_0.2.4-6_amd64.deb
+ e451a7cf6e6734252fb525939514c8a9 27550 ruby extra ruby-marisa_0.2.4-6_amd64.deb
+ 5c6185b3faaff1e5d3c04c09f91dbd0f 1352 libs extra marisa_0.2.4-6.dsc
+ a31e6949079fbb87a5c56997d2178226 6240 libs extra marisa_0.2.4-6.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+marisa_0.2.4-6_amd64.deb
+────────────────────────
+
+ new debian package, version 2.0.
+ size 31354 bytes: control archive=1141 bytes.
+     527 bytes,    14 lines      control              
+    1227 bytes,    18 lines      md5sums              
+ Package: marisa
+ Version: 0.2.4-6
+ Architecture: amd64
+ Maintainer: Mitsuya Shibata <mty.shibata@gmail.com>
+ Installed-Size: 172
+ Depends: libmarisa0 (= 0.2.4-6), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
+ Section: utils
+ Priority: extra
+ Homepage: https://code.google.com/p/marisa-trie/
+ Description: commmand line tools for libmarisa
+  Matching Algorithm with Recursively Implemented StorAge (MARISA) is a static
+  and space-efficient trie data structure.
+  .
+  This package conteins commmand line tools for libmarisa.
+
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/bin/
+-rwxr-xr-x root/root     14688 2014-04-27 16:16 ./usr/bin/marisa-reverse-lookup
+-rwxr-xr-x root/root     18848 2014-04-27 16:16 ./usr/bin/marisa-predictive-search
+-rwxr-xr-x root/root     18888 2014-04-27 16:16 ./usr/bin/marisa-build
+-rwxr-xr-x root/root     27192 2014-04-27 16:16 ./usr/bin/marisa-benchmark
+-rwxr-xr-x root/root     14704 2014-04-27 16:16 ./usr/bin/marisa-dump
+-rwxr-xr-x root/root     14688 2014-04-27 16:16 ./usr/bin/marisa-lookup
+-rwxr-xr-x root/root     18848 2014-04-27 16:16 ./usr/bin/marisa-common-prefix-search
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/man/man1/
+-rw-r--r-- root/root       656 2014-04-27 16:16 ./usr/share/man/man1/marisa-dump.1.gz
+-rw-r--r-- root/root       702 2014-04-27 16:16 ./usr/share/man/man1/marisa-common-prefix-search.1.gz
+-rw-r--r-- root/root       690 2014-04-27 16:16 ./usr/share/man/man1/marisa-predictive-search.1.gz
+-rw-r--r-- root/root       801 2014-04-27 16:16 ./usr/share/man/man1/marisa-benchmark.1.gz
+-rw-r--r-- root/root       670 2014-04-27 16:16 ./usr/share/man/man1/marisa-lookup.1.gz
+-rw-r--r-- root/root       820 2014-04-27 16:16 ./usr/share/man/man1/marisa-build.1.gz
+-rw-r--r-- root/root       737 2014-04-27 16:16 ./usr/share/man/man1/marisa-reverse-lookup.1.gz
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/marisa/
+-rw-r--r-- root/root       768 2014-04-13 16:30 ./usr/share/doc/marisa/changelog.Debian.gz
+-rw-r--r-- root/root        28 2011-05-14 07:20 ./usr/share/doc/marisa/AUTHORS
+-rw-r--r-- root/root      3383 2014-04-13 16:30 ./usr/share/doc/marisa/copyright
+-rw-r--r-- root/root      2065 2013-04-13 02:08 ./usr/share/doc/marisa/README
+
+
+libmarisa0_0.2.4-6_amd64.deb
+────────────────────────────
+
+ new debian package, version 2.0.
+ size 45514 bytes: control archive=938 bytes.
+     602 bytes,    17 lines      control              
+     226 bytes,     3 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      23 bytes,     1 lines      shlibs               
+ Package: libmarisa0
+ Source: marisa
+ Version: 0.2.4-6
+ Architecture: amd64
+ Maintainer: Mitsuya Shibata <mty.shibata@gmail.com>
+ Installed-Size: 177
+ Pre-Depends: multiarch-support
+ Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+ Section: libs
+ Priority: extra
+ Multi-Arch: same
+ Homepage: https://code.google.com/p/marisa-trie/
+ Description: C++ library to provide an implementation of MARISA
+  Matching Algorithm with Recursively Implemented StorAge (MARISA) is a static
+  and space-efficient trie data structure.
+  .
+  This package contains C++ library to provide an implementation of MARISA.
+
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    143000 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/libmarisa.so.0.0.0
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/libmarisa0/
+-rw-r--r-- root/root       768 2014-04-13 16:30 ./usr/share/doc/libmarisa0/changelog.Debian.gz
+-rw-r--r-- root/root      3383 2014-04-13 16:30 ./usr/share/doc/libmarisa0/copyright
+lrwxrwxrwx root/root         0 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/libmarisa.so.0 -> libmarisa.so.0.0.0
+
+
+libmarisa-dev_0.2.4-6_amd64.deb
+───────────────────────────────
+
+ new debian package, version 2.0.
+ size 69116 bytes: control archive=1256 bytes.
+     538 bytes,    17 lines      control              
+    1411 bytes,    21 lines      md5sums              
+ Package: libmarisa-dev
+ Source: marisa
+ Version: 0.2.4-6
+ Architecture: amd64
+ Maintainer: Mitsuya Shibata <mty.shibata@gmail.com>
+ Installed-Size: 446
+ Depends: libmarisa0 (= 0.2.4-6)
+ Section: libdevel
+ Priority: extra
+ Multi-Arch: same
+ Homepage: https://code.google.com/p/marisa-trie/
+ Description: developement files for libmarisa
+  Matching Algorithm with Recursively Implemented StorAge (MARISA) is a static
+  and space-efficient trie data structure.
+  .
+  This package contains the files necessary for compiling programs that
+  depend on MARISA.
+
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/pkgconfig/
+-rw-r--r-- root/root       276 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/pkgconfig/marisa.pc
+-rw-r--r-- root/root    299580 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/libmarisa.a
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/include/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/include/marisa/
+-rw-r--r-- root/root       946 2014-04-27 16:16 ./usr/include/marisa/scoped-array.h
+-rw-r--r-- root/root      2497 2014-04-27 16:16 ./usr/include/marisa/exception.h
+-rw-r--r-- root/root       242 2014-04-27 16:16 ./usr/include/marisa/stdio.h
+-rw-r--r-- root/root      1237 2014-04-27 16:16 ./usr/include/marisa/trie.h
+-rw-r--r-- root/root       404 2014-04-27 16:16 ./usr/include/marisa/iostream.h
+-rw-r--r-- root/root      6492 2014-04-27 16:16 ./usr/include/marisa/base.h
+-rw-r--r-- root/root      1810 2014-04-27 16:16 ./usr/include/marisa/key.h
+-rw-r--r-- root/root       969 2014-04-27 16:16 ./usr/include/marisa/scoped-ptr.h
+-rw-r--r-- root/root      1781 2014-04-27 16:16 ./usr/include/marisa/keyset.h
+-rw-r--r-- root/root      1442 2014-04-27 16:16 ./usr/include/marisa/agent.h
+-rw-r--r-- root/root      1406 2014-04-27 16:16 ./usr/include/marisa/query.h
+-rw-r--r-- root/root       422 2014-04-27 16:16 ./usr/include/marisa.h
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/libmarisa-dev/
+-rw-r--r-- root/root     36588 2013-04-13 01:51 ./usr/share/doc/libmarisa-dev/readme.en.html
+-rw-r--r-- root/root      3901 2012-02-10 10:20 ./usr/share/doc/libmarisa-dev/style.css
+-rw-r--r-- root/root       768 2014-04-13 16:30 ./usr/share/doc/libmarisa-dev/changelog.Debian.gz
+-rw-r--r-- root/root        28 2011-05-14 07:20 ./usr/share/doc/libmarisa-dev/AUTHORS
+-rw-r--r-- root/root      3383 2014-04-13 16:30 ./usr/share/doc/libmarisa-dev/copyright
+-rw-r--r-- root/root      2065 2013-04-13 02:08 ./usr/share/doc/libmarisa-dev/README
+-rw-r--r-- root/root     44423 2013-04-13 02:09 ./usr/share/doc/libmarisa-dev/readme.ja.html
+lrwxrwxrwx root/root         0 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/libmarisa.so -> libmarisa.so.0.0.0
+
+
+python-marisa_0.2.4-6_amd64.deb
+───────────────────────────────
+
+ new debian package, version 2.0.
+ size 28584 bytes: control archive=1047 bytes.
+     597 bytes,    16 lines      control              
+     369 bytes,     5 lines      md5sums              
+     163 bytes,     9 lines   *  postinst             #!/bin/sh
+     263 bytes,    14 lines   *  prerm                #!/bin/sh
+ Package: python-marisa
+ Source: marisa
+ Version: 0.2.4-6
+ Architecture: amd64
+ Maintainer: Mitsuya Shibata <mty.shibata@gmail.com>
+ Installed-Size: 152
+ Depends: libmarisa0 (= 0.2.4-6), python (>= 2.7), python (<< 2.8), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+ Provides: python2.7-marisa
+ Section: python
+ Priority: extra
+ Homepage: https://code.google.com/p/marisa-trie/
+ Description: Python bindings for MARISA
+  Matching Algorithm with Recursively Implemented StorAge (MARISA) is a static
+  and space-efficient trie data structure.
+  .
+  This package contains Python bindings for MARISA.
+
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/pyshared/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/pyshared/python2.7/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/python2.7/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/python2.7/dist-packages/
+-rw-r--r-- root/root     92616 2014-04-27 16:16 ./usr/lib/python2.7/dist-packages/_marisa.so
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/pyshared/
+-rw-r--r-- root/root      8171 2014-04-27 16:16 ./usr/share/pyshared/marisa.py
+-rw-r--r-- root/root       180 2014-04-27 16:16 ./usr/share/pyshared/marisa-0.2.4.egg-info
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/python-marisa/
+-rw-r--r-- root/root       768 2014-04-13 16:30 ./usr/share/doc/python-marisa/changelog.Debian.gz
+-rw-r--r-- root/root      3383 2014-04-13 16:30 ./usr/share/doc/python-marisa/copyright
+lrwxrwxrwx root/root         0 2014-04-27 16:16 ./usr/lib/pyshared/python2.7/_marisa.so -> ../../python2.7/dist-packages/_marisa.so
+lrwxrwxrwx root/root         0 2014-04-27 16:16 ./usr/lib/python2.7/dist-packages/marisa.py -> ../../../share/pyshared/marisa.py
+lrwxrwxrwx root/root         0 2014-04-27 16:16 ./usr/lib/python2.7/dist-packages/marisa-0.2.4.egg-info -> ../../../share/pyshared/marisa-0.2.4.egg-info
+
+
+python3-marisa_0.2.4-6_amd64.deb
+────────────────────────────────
+
+ new debian package, version 2.0.
+ size 31566 bytes: control archive=1177 bytes.
+     604 bytes,    15 lines      control              
+     524 bytes,     6 lines      md5sums              
+     164 bytes,     9 lines   *  postinst             #!/bin/sh
+     401 bytes,    12 lines   *  prerm                #!/bin/sh
+ Package: python3-marisa
+ Source: marisa
+ Version: 0.2.4-6
+ Architecture: amd64
+ Maintainer: Mitsuya Shibata <mty.shibata@gmail.com>
+ Installed-Size: 222
+ Depends: libmarisa0 (= 0.2.4-6), python3:any (>= 3.3.2-2~), python3 (<< 3.5), python3 (>= 3.3~), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+ Section: python
+ Priority: extra
+ Homepage: https://code.google.com/p/marisa-trie/
+ Description: Python3 bindings for MARISA
+  Matching Algorithm with Recursively Implemented StorAge (MARISA) is a static
+  and space-efficient trie data structure.
+  .
+  This package contains Python 3 bindings for MARISA.
+
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/python3/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/python3/dist-packages/
+-rw-r--r-- root/root      8171 2014-04-27 16:16 ./usr/lib/python3/dist-packages/marisa.py
+-rw-r--r-- root/root     88568 2014-04-27 16:16 ./usr/lib/python3/dist-packages/_marisa.cpython-34m-x86_64-linux-gnu.so
+-rw-r--r-- root/root     88568 2014-04-27 16:16 ./usr/lib/python3/dist-packages/_marisa.cpython-33m-x86_64-linux-gnu.so
+-rw-r--r-- root/root       180 2014-04-27 16:16 ./usr/lib/python3/dist-packages/marisa-0.2.4.egg-info
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/python3-marisa/
+-rw-r--r-- root/root       768 2014-04-13 16:30 ./usr/share/doc/python3-marisa/changelog.Debian.gz
+-rw-r--r-- root/root      3383 2014-04-13 16:30 ./usr/share/doc/python3-marisa/copyright
+
+
+libmarisa-perl_0.2.4-6_amd64.deb
+────────────────────────────────
+
+ new debian package, version 2.0.
+ size 30966 bytes: control archive=777 bytes.
+     567 bytes,    16 lines      control              
+     354 bytes,     5 lines      md5sums              
+ Package: libmarisa-perl
+ Source: marisa
+ Version: 0.2.4-6
+ Architecture: amd64
+ Maintainer: Mitsuya Shibata <mty.shibata@gmail.com>
+ Installed-Size: 164
+ Depends: libmarisa0 (= 0.2.4-6), perl (>= 5.18.2-2+b1), perlapi-5.18.2, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1)
+ Section: perl
+ Priority: extra
+ Multi-Arch: foreign
+ Homepage: https://code.google.com/p/marisa-trie/
+ Description: Perl bindings for MARISA
+  Matching Algorithm with Recursively Implemented StorAge (MARISA) is a static
+  and space-efficient trie data structure.
+  .
+  This package contains Perl bindings for MARISA.
+
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/perl5/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/perl5/auto/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/perl5/auto/marisa/
+-rw-r--r-- root/root         0 2014-04-27 16:16 ./usr/lib/perl5/auto/marisa/marisa.bs
+-rw-r--r-- root/root    115088 2014-04-27 16:16 ./usr/lib/perl5/auto/marisa/marisa.so
+-rw-r--r-- root/root      6802 2014-04-27 16:16 ./usr/lib/perl5/marisa.pm
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/libmarisa-perl/
+-rw-r--r-- root/root       768 2014-04-13 16:30 ./usr/share/doc/libmarisa-perl/changelog.Debian.gz
+-rw-r--r-- root/root      3383 2014-04-13 16:30 ./usr/share/doc/libmarisa-perl/copyright
+
+
+ruby-marisa_0.2.4-6_amd64.deb
+─────────────────────────────
+
+ new debian package, version 2.0.
+ size 27550 bytes: control archive=730 bytes.
+     571 bytes,    16 lines      control              
+     230 bytes,     3 lines      md5sums              
+ Package: ruby-marisa
+ Source: marisa
+ Version: 0.2.4-6
+ Architecture: amd64
+ Maintainer: Mitsuya Shibata <mty.shibata@gmail.com>
+ Installed-Size: 141
+ Depends: libmarisa0 (= 0.2.4-6), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libruby2.0 (>= 2.0.0), libstdc++6 (>= 4.1.1)
+ Section: ruby
+ Priority: extra
+ Multi-Arch: foreign
+ Homepage: https://code.google.com/p/marisa-trie/
+ Description: Ruby bindings for MARISA
+  Matching Algorithm with Recursively Implemented StorAge (MARISA) is a static
+  and space-efficient trie data structure.
+  .
+  This package contains Ruby bindings for MARISA.
+
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/ruby/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/ruby/2.0.0/
+-rw-r--r-- root/root     98728 2014-04-27 16:16 ./usr/lib/x86_64-linux-gnu/ruby/2.0.0/marisa.so
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 16:16 ./usr/share/doc/ruby-marisa/
+-rw-r--r-- root/root       768 2014-04-13 16:30 ./usr/share/doc/ruby-marisa/changelog.Debian.gz
+-rw-r--r-- root/root      3383 2014-04-13 16:30 ./usr/share/doc/ruby-marisa/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 25872
+Build-Time: 27
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 25
+Job: marisa_0.2.4-6.dsc
+Machine Architecture: amd64
+Package: marisa
+Package-Time: 76
+Source-Version: 0.2.4-6
+Space: 25872
+Status: successful
+Version: 0.2.4-6
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140427-1616
+Build needed 00:01:16, 25872k disc space

@@ -1,0 +1,914 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ drawtiming 0.7.1-5 (amd64)                                 28 Apr 2014 17:51 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: drawtiming
+Version: 0.7.1-5
+Source Version: 0.7.1-5
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/drawtiming-nXv91c/drawtiming-0.7.1' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/drawtiming-nXv91c' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-2c45570a-25c1-41e2-83ea-4f7ce71e47e9' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+drawtiming_0.7.1-5.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-jkN5_H/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), graphicsmagick-libmagick-dev-compat, pkg-config, gsfonts
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), graphicsmagick-libmagick-dev-compat, pkg-config, gsfonts
+dpkg-deb: building package `sbuild-build-depends-drawtiming-dummy' in `/«BUILDDIR»/resolver-QVKt72/apt_archive/sbuild-build-depends-drawtiming-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install drawtiming build dependencies (apt-based resolver)                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base
+  graphicsmagick-libmagick-dev-compat groff-base gsfonts intltool-debian
+  libasprintf0c2 libbz2-dev libcroco3 libexif-dev libexif12 libexpat1
+  libfreetype6 libfreetype6-dev libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libglib2.0-0 libgraphics-magick-perl libgraphicsmagick++1-dev
+  libgraphicsmagick++3 libgraphicsmagick1-dev libgraphicsmagick3 libice-dev
+  libice6 libjasper-dev libjasper1 libjbig-dev libjbig0 libjpeg8 libjpeg8-dev
+  libjs-jquery liblcms2-2 liblcms2-dev libltdl-dev libltdl7 liblzma-dev
+  libmagic1 libpipeline1 libpng12-0 libpng12-dev libpthread-stubs0-dev
+  libsm-dev libsm6 libtiff4-dev libtiff5 libtiff5-dev libtiffxx5 libunistring0
+  libwmf-dev libwmf0.2-7 libx11-6 libx11-data libx11-dev libxau-dev libxau6
+  libxcb1 libxcb1-dev libxdmcp-dev libxdmcp6 libxext-dev libxext6 libxml2
+  libxml2-dev man-db pkg-config po-debconf x11-common x11proto-core-dev
+  x11proto-input-dev x11proto-kb-dev x11proto-xext-dev xorg-sgml-doctools
+  xtrans-dev zlib1g-dev
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff
+  graphicsmagick-dbg graphicsmagick libice-doc libjasper-runtime
+  liblcms2-utils libtool-doc liblzma-doc libsm-doc libwmf-doc libxcb-doc
+  libxext-doc less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info ghostscript javascript-common libtool
+  libx11-doc xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base
+  graphicsmagick-libmagick-dev-compat groff-base gsfonts intltool-debian
+  libasprintf0c2 libbz2-dev libcroco3 libexif-dev libexif12 libexpat1
+  libfreetype6 libfreetype6-dev libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libglib2.0-0 libgraphics-magick-perl libgraphicsmagick++1-dev
+  libgraphicsmagick++3 libgraphicsmagick1-dev libgraphicsmagick3 libice-dev
+  libice6 libjasper-dev libjasper1 libjbig-dev libjbig0 libjpeg8 libjpeg8-dev
+  libjs-jquery liblcms2-2 liblcms2-dev libltdl-dev libltdl7 liblzma-dev
+  libmagic1 libpipeline1 libpng12-0 libpng12-dev libpthread-stubs0-dev
+  libsm-dev libsm6 libtiff4-dev libtiff5 libtiff5-dev libtiffxx5 libunistring0
+  libwmf-dev libwmf0.2-7 libx11-6 libx11-data libx11-dev libxau-dev libxau6
+  libxcb1 libxcb1-dev libxdmcp-dev libxdmcp6 libxext-dev libxext6 libxml2
+  libxml2-dev man-db pkg-config po-debconf
+  sbuild-build-depends-drawtiming-dummy x11-common x11proto-core-dev
+  x11proto-input-dev x11proto-kb-dev x11proto-xext-dev xorg-sgml-doctools
+  xtrans-dev zlib1g-dev
+0 upgraded, 78 newly installed, 0 to remove and 8 not upgraded.
+Need to get 31.3 MB/31.3 MB of archives.
+After this operation, 87.7 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libexif12 amd64 0.6.21-1 [686 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libexpat1 amd64 2.1.0-4 [138 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libpng12-0 amd64 1.2.50-1 [189 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libfreetype6 amd64 2.5.2-1 [454 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libjpeg8 amd64 8d-2 [120 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libjasper1 amd64 1.900.1-debian1-1 [132 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libjbig0 amd64 2.0-2.1 [29.3 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libtiff5 amd64 4.0.3-8 [209 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libxau6 amd64 1:1.0.8-1 [20.7 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libxdmcp6 amd64 1:1.1.1-1 [26.3 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libxcb1 amd64 1.10-2 [41.8 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libx11-data all 2:1.6.2-1 [125 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libx11-6 amd64 2:1.6.2-1 [716 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libgdk-pixbuf2.0-common all 2.30.7-1 [293 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main libgdk-pixbuf2.0-0 amd64 2.30.7-1 [163 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main x11-common all 1:7.7+7 [287 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libice6 amd64 2:1.0.8-2 [63.1 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main liblcms2-2 amd64 2.5-1 [134 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main libltdl7 amd64 2.4.2-1.7 [352 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libsm6 amd64 2:1.2.1-2 [34.2 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main libtiffxx5 amd64 4.0.3-8 [73.8 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main libwmf0.2-7 amd64 0.2.8.4-10.3 [193 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main libxext6 amd64 2:1.3.2-1 [56.5 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main libjbig-dev amd64 2.0-2.1 [10.6 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:37 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:40 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:41 http://debian.proxad.net/debian/ sid/main gsfonts all 1:8.11+urwcyr1.0.7~pre44-4.2 [3364 kB]
+Get:42 http://debian.proxad.net/debian/ sid/main libbz2-dev amd64 1.0.6-5 [28.7 kB]
+Get:43 http://debian.proxad.net/debian/ sid/main libjs-jquery all 1.7.2+dfsg-3 [96.9 kB]
+Get:44 http://debian.proxad.net/debian/ sid/main libexif-dev amd64 0.6.21-1 [440 kB]
+Get:45 http://debian.proxad.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-1 [217 kB]
+Get:46 http://debian.proxad.net/debian/ sid/main libpng12-dev amd64 1.2.50-1 [267 kB]
+Get:47 http://debian.proxad.net/debian/ sid/main libfreetype6-dev amd64 2.5.2-1 [629 kB]
+Get:48 http://debian.proxad.net/debian/ sid/main libgraphicsmagick3 amd64 1.3.18-2 [1053 kB]
+Get:49 http://debian.proxad.net/debian/ sid/main libgraphics-magick-perl amd64 1.3.18-2 [66.0 kB]
+Get:50 http://debian.proxad.net/debian/ sid/main libgraphicsmagick++3 amd64 1.3.18-2 [108 kB]
+Get:51 http://debian.proxad.net/debian/ sid/main libjpeg8-dev amd64 8d-2 [217 kB]
+Get:52 http://debian.proxad.net/debian/ sid/main libjasper-dev amd64 1.900.1-debian1-1 [520 kB]
+Get:53 http://debian.proxad.net/debian/ sid/main liblcms2-dev amd64 2.5-1 [5101 kB]
+Get:54 http://debian.proxad.net/debian/ sid/main xorg-sgml-doctools all 1:1.11-1 [21.9 kB]
+Get:55 http://debian.proxad.net/debian/ sid/main x11proto-core-dev all 7.0.26-1 [729 kB]
+Get:56 http://debian.proxad.net/debian/ sid/main libxau-dev amd64 1:1.0.8-1 [23.6 kB]
+Get:57 http://debian.proxad.net/debian/ sid/main libxdmcp-dev amd64 1:1.1.1-1 [42.3 kB]
+Get:58 http://debian.proxad.net/debian/ sid/main x11proto-input-dev all 2.3-1 [177 kB]
+Get:59 http://debian.proxad.net/debian/ sid/main x11proto-kb-dev all 1.0.6-2 [269 kB]
+Get:60 http://debian.proxad.net/debian/ sid/main xtrans-dev all 1.3.4-1 [99.3 kB]
+Get:61 http://debian.proxad.net/debian/ sid/main libpthread-stubs0-dev amd64 0.3-4 [3866 B]
+Get:62 http://debian.proxad.net/debian/ sid/main libxcb1-dev amd64 1.10-2 [82.0 kB]
+Get:63 http://debian.proxad.net/debian/ sid/main libx11-dev amd64 2:1.6.2-1 [785 kB]
+Get:64 http://debian.proxad.net/debian/ sid/main libwmf-dev amd64 0.2.8.4-10.3 [231 kB]
+Get:65 http://debian.proxad.net/debian/ sid/main libice-dev amd64 2:1.0.8-2 [74.1 kB]
+Get:66 http://debian.proxad.net/debian/ sid/main libsm-dev amd64 2:1.2.1-2 [37.0 kB]
+Get:67 http://debian.proxad.net/debian/ sid/main x11proto-xext-dev all 7.3.0-1 [212 kB]
+Get:68 http://debian.proxad.net/debian/ sid/main libxext-dev amd64 2:1.3.2-1 [116 kB]
+Get:69 http://debian.proxad.net/debian/ sid/main libxml2-dev amd64 2.9.1+dfsg1-3 [685 kB]
+Get:70 http://debian.proxad.net/debian/ sid/main liblzma-dev amd64 5.1.1alpha+20120614-2 [277 kB]
+Get:71 http://debian.proxad.net/debian/ sid/main libtiff5-dev amd64 4.0.3-8 [331 kB]
+Get:72 http://debian.proxad.net/debian/ sid/main libtiff4-dev amd64 4.0.3-8 [70.5 kB]
+Get:73 http://debian.proxad.net/debian/ sid/main libltdl-dev amd64 2.4.2-1.7 [157 kB]
+Get:74 http://debian.proxad.net/debian/ sid/main libgraphicsmagick1-dev amd64 1.3.18-2 [1274 kB]
+Get:75 http://debian.proxad.net/debian/ sid/main libgraphicsmagick++1-dev amd64 1.3.18-2 [291 kB]
+Get:76 http://debian.proxad.net/debian/ sid/main pkg-config amd64 0.28-1 [57.5 kB]
+Get:77 http://debian.proxad.net/debian/ sid/main graphicsmagick-libmagick-dev-compat all 1.3.18-2 [21.5 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 31.3 MB in 2s (13.7 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libexif12:amd64.
+Preparing to unpack .../libexif12_0.6.21-1_amd64.deb ...
+Unpacking libexif12:amd64 (0.6.21-1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-4) ...
+Selecting previously unselected package libpng12-0:amd64.
+Preparing to unpack .../libpng12-0_1.2.50-1_amd64.deb ...
+Unpacking libpng12-0:amd64 (1.2.50-1) ...
+Selecting previously unselected package libfreetype6:amd64.
+Preparing to unpack .../libfreetype6_2.5.2-1_amd64.deb ...
+Unpacking libfreetype6:amd64 (2.5.2-1) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../libjpeg8_8d-2_amd64.deb ...
+Unpacking libjpeg8:amd64 (8d-2) ...
+Selecting previously unselected package libjasper1:amd64.
+Preparing to unpack .../libjasper1_1.900.1-debian1-1_amd64.deb ...
+Unpacking libjasper1:amd64 (1.900.1-debian1-1) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../libjbig0_2.0-2.1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.0-2.1) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../libtiff5_4.0.3-8_amd64.deb ...
+Unpacking libtiff5:amd64 (4.0.3-8) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../libxau6_1%3a1.0.8-1_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.8-1) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../libxdmcp6_1%3a1.1.1-1_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.1-1) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../libxcb1_1.10-2_amd64.deb ...
+Unpacking libxcb1:amd64 (1.10-2) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../libx11-data_2%3a1.6.2-1_all.deb ...
+Unpacking libx11-data (2:1.6.2-1) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../libx11-6_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package libgdk-pixbuf2.0-common.
+Preparing to unpack .../libgdk-pixbuf2.0-common_2.30.7-1_all.deb ...
+Unpacking libgdk-pixbuf2.0-common (2.30.7-1) ...
+Selecting previously unselected package libgdk-pixbuf2.0-0:amd64.
+Preparing to unpack .../libgdk-pixbuf2.0-0_2.30.7-1_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-0:amd64 (2.30.7-1) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../x11-common_1%3a7.7+7_all.deb ...
+Unpacking x11-common (1:7.7+7) ...
+Selecting previously unselected package libice6:amd64.
+Preparing to unpack .../libice6_2%3a1.0.8-2_amd64.deb ...
+Unpacking libice6:amd64 (2:1.0.8-2) ...
+Selecting previously unselected package liblcms2-2:amd64.
+Preparing to unpack .../liblcms2-2_2.5-1_amd64.deb ...
+Unpacking liblcms2-2:amd64 (2.5-1) ...
+Selecting previously unselected package libltdl7:amd64.
+Preparing to unpack .../libltdl7_2.4.2-1.7_amd64.deb ...
+Unpacking libltdl7:amd64 (2.4.2-1.7) ...
+Selecting previously unselected package libsm6:amd64.
+Preparing to unpack .../libsm6_2%3a1.2.1-2_amd64.deb ...
+Unpacking libsm6:amd64 (2:1.2.1-2) ...
+Selecting previously unselected package libtiffxx5:amd64.
+Preparing to unpack .../libtiffxx5_4.0.3-8_amd64.deb ...
+Unpacking libtiffxx5:amd64 (4.0.3-8) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package libwmf0.2-7:amd64.
+Preparing to unpack .../libwmf0.2-7_0.2.8.4-10.3_amd64.deb ...
+Unpacking libwmf0.2-7:amd64 (0.2.8.4-10.3) ...
+Selecting previously unselected package libxext6:amd64.
+Preparing to unpack .../libxext6_2%3a1.3.2-1_amd64.deb ...
+Unpacking libxext6:amd64 (2:1.3.2-1) ...
+Selecting previously unselected package libjbig-dev:amd64.
+Preparing to unpack .../libjbig-dev_2.0-2.1_amd64.deb ...
+Unpacking libjbig-dev:amd64 (2.0-2.1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package gsfonts.
+Preparing to unpack .../gsfonts_1%3a8.11+urwcyr1.0.7~pre44-4.2_all.deb ...
+Unpacking gsfonts (1:8.11+urwcyr1.0.7~pre44-4.2) ...
+Selecting previously unselected package libbz2-dev:amd64.
+Preparing to unpack .../libbz2-dev_1.0.6-5_amd64.deb ...
+Unpacking libbz2-dev:amd64 (1.0.6-5) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../libjs-jquery_1.7.2+dfsg-3_all.deb ...
+Unpacking libjs-jquery (1.7.2+dfsg-3) ...
+Selecting previously unselected package libexif-dev.
+Preparing to unpack .../libexif-dev_0.6.21-1_amd64.deb ...
+Unpacking libexif-dev (0.6.21-1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Selecting previously unselected package libpng12-dev.
+Preparing to unpack .../libpng12-dev_1.2.50-1_amd64.deb ...
+Unpacking libpng12-dev (1.2.50-1) ...
+Selecting previously unselected package libfreetype6-dev.
+Preparing to unpack .../libfreetype6-dev_2.5.2-1_amd64.deb ...
+Unpacking libfreetype6-dev (2.5.2-1) ...
+Selecting previously unselected package libgraphicsmagick3.
+Preparing to unpack .../libgraphicsmagick3_1.3.18-2_amd64.deb ...
+Unpacking libgraphicsmagick3 (1.3.18-2) ...
+Selecting previously unselected package libgraphics-magick-perl.
+Preparing to unpack .../libgraphics-magick-perl_1.3.18-2_amd64.deb ...
+Unpacking libgraphics-magick-perl (1.3.18-2) ...
+Selecting previously unselected package libgraphicsmagick++3.
+Preparing to unpack .../libgraphicsmagick++3_1.3.18-2_amd64.deb ...
+Unpacking libgraphicsmagick++3 (1.3.18-2) ...
+Selecting previously unselected package libjpeg8-dev:amd64.
+Preparing to unpack .../libjpeg8-dev_8d-2_amd64.deb ...
+Unpacking libjpeg8-dev:amd64 (8d-2) ...
+Selecting previously unselected package libjasper-dev.
+Preparing to unpack .../libjasper-dev_1.900.1-debian1-1_amd64.deb ...
+Unpacking libjasper-dev (1.900.1-debian1-1) ...
+Selecting previously unselected package liblcms2-dev:amd64.
+Preparing to unpack .../liblcms2-dev_2.5-1_amd64.deb ...
+Unpacking liblcms2-dev:amd64 (2.5-1) ...
+Selecting previously unselected package xorg-sgml-doctools.
+Preparing to unpack .../xorg-sgml-doctools_1%3a1.11-1_all.deb ...
+Unpacking xorg-sgml-doctools (1:1.11-1) ...
+Selecting previously unselected package x11proto-core-dev.
+Preparing to unpack .../x11proto-core-dev_7.0.26-1_all.deb ...
+Unpacking x11proto-core-dev (7.0.26-1) ...
+Selecting previously unselected package libxau-dev:amd64.
+Preparing to unpack .../libxau-dev_1%3a1.0.8-1_amd64.deb ...
+Unpacking libxau-dev:amd64 (1:1.0.8-1) ...
+Selecting previously unselected package libxdmcp-dev:amd64.
+Preparing to unpack .../libxdmcp-dev_1%3a1.1.1-1_amd64.deb ...
+Unpacking libxdmcp-dev:amd64 (1:1.1.1-1) ...
+Selecting previously unselected package x11proto-input-dev.
+Preparing to unpack .../x11proto-input-dev_2.3-1_all.deb ...
+Unpacking x11proto-input-dev (2.3-1) ...
+Selecting previously unselected package x11proto-kb-dev.
+Preparing to unpack .../x11proto-kb-dev_1.0.6-2_all.deb ...
+Unpacking x11proto-kb-dev (1.0.6-2) ...
+Selecting previously unselected package xtrans-dev.
+Preparing to unpack .../xtrans-dev_1.3.4-1_all.deb ...
+Unpacking xtrans-dev (1.3.4-1) ...
+Selecting previously unselected package libpthread-stubs0-dev:amd64.
+Preparing to unpack .../libpthread-stubs0-dev_0.3-4_amd64.deb ...
+Unpacking libpthread-stubs0-dev:amd64 (0.3-4) ...
+Selecting previously unselected package libxcb1-dev:amd64.
+Preparing to unpack .../libxcb1-dev_1.10-2_amd64.deb ...
+Unpacking libxcb1-dev:amd64 (1.10-2) ...
+Selecting previously unselected package libx11-dev:amd64.
+Preparing to unpack .../libx11-dev_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-dev:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package libwmf-dev.
+Preparing to unpack .../libwmf-dev_0.2.8.4-10.3_amd64.deb ...
+Unpacking libwmf-dev (0.2.8.4-10.3) ...
+Selecting previously unselected package libice-dev:amd64.
+Preparing to unpack .../libice-dev_2%3a1.0.8-2_amd64.deb ...
+Unpacking libice-dev:amd64 (2:1.0.8-2) ...
+Selecting previously unselected package libsm-dev:amd64.
+Preparing to unpack .../libsm-dev_2%3a1.2.1-2_amd64.deb ...
+Unpacking libsm-dev:amd64 (2:1.2.1-2) ...
+Selecting previously unselected package x11proto-xext-dev.
+Preparing to unpack .../x11proto-xext-dev_7.3.0-1_all.deb ...
+Unpacking x11proto-xext-dev (7.3.0-1) ...
+Selecting previously unselected package libxext-dev:amd64.
+Preparing to unpack .../libxext-dev_2%3a1.3.2-1_amd64.deb ...
+Unpacking libxext-dev:amd64 (2:1.3.2-1) ...
+Selecting previously unselected package libxml2-dev:amd64.
+Preparing to unpack .../libxml2-dev_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2-dev:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package liblzma-dev:amd64.
+Preparing to unpack .../liblzma-dev_5.1.1alpha+20120614-2_amd64.deb ...
+Unpacking liblzma-dev:amd64 (5.1.1alpha+20120614-2) ...
+Selecting previously unselected package libtiff5-dev:amd64.
+Preparing to unpack .../libtiff5-dev_4.0.3-8_amd64.deb ...
+Unpacking libtiff5-dev:amd64 (4.0.3-8) ...
+Selecting previously unselected package libtiff4-dev:amd64.
+Preparing to unpack .../libtiff4-dev_4.0.3-8_amd64.deb ...
+Unpacking libtiff4-dev:amd64 (4.0.3-8) ...
+Selecting previously unselected package libltdl-dev:amd64.
+Preparing to unpack .../libltdl-dev_2.4.2-1.7_amd64.deb ...
+Unpacking libltdl-dev:amd64 (2.4.2-1.7) ...
+Selecting previously unselected package libgraphicsmagick1-dev.
+Preparing to unpack .../libgraphicsmagick1-dev_1.3.18-2_amd64.deb ...
+Unpacking libgraphicsmagick1-dev (1.3.18-2) ...
+Selecting previously unselected package libgraphicsmagick++1-dev.
+Preparing to unpack .../libgraphicsmagick++1-dev_1.3.18-2_amd64.deb ...
+Unpacking libgraphicsmagick++1-dev (1.3.18-2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../pkg-config_0.28-1_amd64.deb ...
+Unpacking pkg-config (0.28-1) ...
+Selecting previously unselected package graphicsmagick-libmagick-dev-compat.
+Preparing to unpack .../graphicsmagick-libmagick-dev-compat_1.3.18-2_all.deb ...
+Unpacking graphicsmagick-libmagick-dev-compat (1.3.18-2) ...
+Selecting previously unselected package sbuild-build-depends-drawtiming-dummy.
+Preparing to unpack .../sbuild-build-depends-drawtiming-dummy.deb ...
+Unpacking sbuild-build-depends-drawtiming-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libexif12:amd64 (0.6.21-1) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libpng12-0:amd64 (1.2.50-1) ...
+Setting up libfreetype6:amd64 (2.5.2-1) ...
+Setting up libjpeg8:amd64 (8d-2) ...
+Setting up libjasper1:amd64 (1.900.1-debian1-1) ...
+Setting up libjbig0:amd64 (2.0-2.1) ...
+Setting up libtiff5:amd64 (4.0.3-8) ...
+Setting up libxau6:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp6:amd64 (1:1.1.1-1) ...
+Setting up libxcb1:amd64 (1.10-2) ...
+Setting up libx11-data (2:1.6.2-1) ...
+Setting up libx11-6:amd64 (2:1.6.2-1) ...
+Setting up libgdk-pixbuf2.0-common (2.30.7-1) ...
+Setting up libgdk-pixbuf2.0-0:amd64 (2.30.7-1) ...
+Setting up x11-common (1:7.7+7) ...
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+All runlevel operations denied by policy
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libice6:amd64 (2:1.0.8-2) ...
+Setting up liblcms2-2:amd64 (2.5-1) ...
+Setting up libltdl7:amd64 (2.4.2-1.7) ...
+Setting up libsm6:amd64 (2:1.2.1-2) ...
+Setting up libtiffxx5:amd64 (4.0.3-8) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libwmf0.2-7:amd64 (0.2.8.4-10.3) ...
+Setting up libxext6:amd64 (2:1.3.2-1) ...
+Setting up libjbig-dev:amd64 (2.0-2.1) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up gsfonts (1:8.11+urwcyr1.0.7~pre44-4.2) ...
+Setting up libbz2-dev:amd64 (1.0.6-5) ...
+Setting up libjs-jquery (1.7.2+dfsg-3) ...
+Setting up libexif-dev (0.6.21-1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Setting up libpng12-dev (1.2.50-1) ...
+Setting up libfreetype6-dev (2.5.2-1) ...
+Setting up libgraphicsmagick3 (1.3.18-2) ...
+Setting up libgraphics-magick-perl (1.3.18-2) ...
+Setting up libgraphicsmagick++3 (1.3.18-2) ...
+Setting up libjpeg8-dev:amd64 (8d-2) ...
+Setting up libjasper-dev (1.900.1-debian1-1) ...
+Setting up liblcms2-dev:amd64 (2.5-1) ...
+Setting up xorg-sgml-doctools (1:1.11-1) ...
+Setting up x11proto-core-dev (7.0.26-1) ...
+Setting up libxau-dev:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp-dev:amd64 (1:1.1.1-1) ...
+Setting up x11proto-input-dev (2.3-1) ...
+Setting up x11proto-kb-dev (1.0.6-2) ...
+Setting up xtrans-dev (1.3.4-1) ...
+Setting up libpthread-stubs0-dev:amd64 (0.3-4) ...
+Setting up libxcb1-dev:amd64 (1.10-2) ...
+Setting up libx11-dev:amd64 (2:1.6.2-1) ...
+Setting up libwmf-dev (0.2.8.4-10.3) ...
+Setting up libice-dev:amd64 (2:1.0.8-2) ...
+Setting up libsm-dev:amd64 (2:1.2.1-2) ...
+Setting up x11proto-xext-dev (7.3.0-1) ...
+Setting up libxext-dev:amd64 (2:1.3.2-1) ...
+Setting up libxml2-dev:amd64 (2.9.1+dfsg1-3) ...
+Setting up liblzma-dev:amd64 (5.1.1alpha+20120614-2) ...
+Setting up libtiff5-dev:amd64 (4.0.3-8) ...
+Setting up libtiff4-dev:amd64 (4.0.3-8) ...
+Setting up libltdl-dev:amd64 (2.4.2-1.7) ...
+Setting up libgraphicsmagick1-dev (1.3.18-2) ...
+Setting up libgraphicsmagick++1-dev (1.3.18-2) ...
+Setting up pkg-config (0.28-1) ...
+Setting up graphicsmagick-libmagick-dev-compat (1.3.18-2) ...
+Setting up sbuild-build-depends-drawtiming-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 graphicsmagick-libmagick-dev-compat_1.3.18-2 grep_2.18-2 groff-base_1.22.2-5 gsfonts_1:8.11+urwcyr1.0.7~pre44-4.2 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libbz2-dev_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libexif-dev_0.6.21-1 libexif12_0.6.21-1 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libfreetype6_2.5.2-1 libfreetype6-dev_2.5.2-1 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libgdk-pixbuf2.0-0_2.30.7-1 libgdk-pixbuf2.0-common_2.30.7-1 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libgraphics-magick-perl_1.3.18-2 libgraphicsmagick++1-dev_1.3.18-2 libgraphicsmagick++3_1.3.18-2 libgraphicsmagick1-dev_1.3.18-2 libgraphicsmagick3_1.3.18-2 libice-dev_2:1.0.8-2 libice6_2:1.0.8-2 libisl10_0.12.2-1 libitm1_4.9.0-1 libjasper-dev_1.900.1-debian1-1 libjasper1_1.900.1-debian1-1 libjbig-dev_2.0-2.1 libjbig0_2.0-2.1 libjpeg8_8d-2 libjpeg8-dev_8d-2 libjs-jquery_1.7.2+dfsg-3 liblcms2-2_2.5-1 liblcms2-dev_2.5-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 libltdl-dev_2.4.2-1.7 libltdl7_2.4.2-1.7 liblzma-dev_5.1.1alpha+20120614-2 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libpng12-0_1.2.50-1 libpng12-dev_1.2.50-1 libpthread-stubs0-dev_0.3-4 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libsm-dev_2:1.2.1-2 libsm6_2:1.2.1-2 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtiff4-dev_4.0.3-8 libtiff5_4.0.3-8 libtiff5-dev_4.0.3-8 libtiffxx5_4.0.3-8 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libwmf-dev_0.2.8.4-10.3 libwmf0.2-7_0.2.8.4-10.3 libx11-6_2:1.6.2-1 libx11-data_2:1.6.2-1 libx11-dev_2:1.6.2-1 libxau-dev_1:1.0.8-1 libxau6_1:1.0.8-1 libxcb1_1.10-2 libxcb1-dev_1.10-2 libxdmcp-dev_1:1.1.1-1 libxdmcp6_1:1.1.1-1 libxext-dev_2:1.3.2-1 libxext6_2:1.3.2-1 libxml2_2.9.1+dfsg1-3 libxml2-dev_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 pkg-config_0.28-1 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-drawtiming-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 x11-common_1:7.7+7 x11proto-core-dev_7.0.26-1 x11proto-input-dev_2.3-1 x11proto-kb-dev_1.0.6-2 x11proto-xext-dev_7.3.0-1 xorg-sgml-doctools_1:1.11-1 xtrans-dev_1.3.4-1 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1 zlib1g-dev_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Sun Jun  3 08:51:59 2012 UTC using RSA key ID EDDDA1B7
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./drawtiming_0.7.1-5.dsc
+dpkg-source: info: extracting drawtiming in drawtiming-0.7.1
+dpkg-source: info: unpacking drawtiming_0.7.1.orig.tar.gz
+dpkg-source: info: unpacking drawtiming_0.7.1-5.debian.tar.gz
+dpkg-source: info: applying InitializeMagick.diff
+dpkg-source: info: applying manpage-fix.diff
+dpkg-source: info: applying missing-includes.diff
+dpkg-source: info: applying switch_LDFLAGS_LDADD.diff
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-2c45570a-25c1-41e2-83ea-4f7ce71e47e9
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package drawtiming
+dpkg-buildpackage: source version 0.7.1-5
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by أحمد المحمودي (Ahmed El-Mahmoudy) <aelmahmoudy@sabily.org>
+ dpkg-source --before-build drawtiming-0.7.1
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b drawtiming-0.7.1
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building drawtiming using existing ./drawtiming_0.7.1.orig.tar.gz
+dpkg-source: info: building drawtiming in drawtiming_0.7.1-5.debian.tar.xz
+dpkg-source: info: building drawtiming in drawtiming_0.7.1-5.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_configure -- LDFLAGS="-Wl,-z,relro -Wl,--as-needed"
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking for bison... no
+checking for byacc... no
+checking for flex... no
+checking for lex... no
+checking for yywrap in -lfl... no
+checking for yywrap in -ll... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for an ANSI C-conforming const... yes
+checking for getopt_long in -lgnugetopt... no
+checking how to run the C preprocessor... gcc -E
+checking for egrep... grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for MAGICK... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating drawtiming.spec
+config.status: creating src/Makefile
+config.status: creating doc/Makefile
+config.status: creating samples/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make  all-recursive
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making all in src
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+make  all-am
+make[4]: Entering directory `/«PKGBUILDDIR»/src'
+g++ -DHAVE_CONFIG_H -I. -I. -I..   -D_FORTIFY_SOURCE=2 -I/usr/include/GraphicsMagick  -DYYDEBUG=1 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o main.o main.cc
+g++ -DHAVE_CONFIG_H -I. -I. -I..   -D_FORTIFY_SOURCE=2 -I/usr/include/GraphicsMagick  -DYYDEBUG=1 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o parser.o parser.cc
+g++ -DHAVE_CONFIG_H -I. -I. -I..   -D_FORTIFY_SOURCE=2 -I/usr/include/GraphicsMagick  -DYYDEBUG=1 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o scanner.o scanner.cc
+g++ -DHAVE_CONFIG_H -I. -I. -I..   -D_FORTIFY_SOURCE=2 -I/usr/include/GraphicsMagick  -DYYDEBUG=1 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o timing.o timing.cc
+g++ -I/usr/include/GraphicsMagick  -DYYDEBUG=1 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -Wl,--as-needed -o drawtiming -Wl,-z,relro -Wl,--as-needed main.o parser.o scanner.o timing.o -lGraphicsMagick++ -lGraphicsMagick   
+make[4]: Leaving directory `/«PKGBUILDDIR»/src'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+Making all in doc
+make[3]: Entering directory `/«PKGBUILDDIR»/doc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/doc'
+Making all in samples
+make[3]: Entering directory `/«PKGBUILDDIR»/samples'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/samples'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making check in src
+make[2]: Entering directory `/«PKGBUILDDIR»/src'
+make  check-am
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+make[2]: Leaving directory `/«PKGBUILDDIR»/src'
+Making check in doc
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
+Making check in samples
+make[2]: Entering directory `/«PKGBUILDDIR»/samples'
+make  check-TESTS
+make[3]: Entering directory `/«PKGBUILDDIR»/samples'
++ ../src/drawtiming -o sample.gif ./sample.txt
++ ../src/drawtiming -o statement1.gif ./statement1.txt
++ ../src/drawtiming -x 1.5 -o memory.gif ./memory.txt
++ ../src/drawtiming -p 640x480 -o sample640x480.gif ./sample.txt
++ ../src/drawtiming -o guenter.gif ./guenter.txt
+PASS: runsamples.sh
+==================
+All 1 tests passed
+==================
+make[3]: Leaving directory `/«PKGBUILDDIR»/samples'
+make[2]: Leaving directory `/«PKGBUILDDIR»/samples'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making install in src
+make[2]: Entering directory `/«PKGBUILDDIR»/src'
+make  install-am
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+make[4]: Entering directory `/«PKGBUILDDIR»/src'
+test -z "/usr/bin" || mkdir -p -- "/«PKGBUILDDIR»/debian/drawtiming/usr/bin"
+  /usr/bin/install -c 'drawtiming' '/«PKGBUILDDIR»/debian/drawtiming/usr/bin/drawtiming'
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/src'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+make[2]: Leaving directory `/«PKGBUILDDIR»/src'
+Making install in doc
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
+make[3]: Entering directory `/«PKGBUILDDIR»/doc'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || mkdir -p -- "/«PKGBUILDDIR»/debian/drawtiming/usr/share/man/man1"
+ /usr/bin/install -c -m 644 './drawtiming.1' '/«PKGBUILDDIR»/debian/drawtiming/usr/share/man/man1/drawtiming.1'
+make[3]: Leaving directory `/«PKGBUILDDIR»/doc'
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
+Making install in samples
+make[2]: Entering directory `/«PKGBUILDDIR»/samples'
+make[3]: Entering directory `/«PKGBUILDDIR»/samples'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/samples'
+make[2]: Leaving directory `/«PKGBUILDDIR»/samples'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs
+   dh_installchangelogs
+   debian/rules override_dh_installexamples
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_installexamples
+sed -e 's/\.\.\/src\///;s/\$srcdir/\/usr\/share\/doc\/drawtiming\/examples/' \
+		samples/runsamples.sh > \
+		/«PKGBUILDDIR»/debian/drawtiming/usr/share/doc/drawtiming/examples/runsamples.sh
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `drawtiming' in `../drawtiming_0.7.1-5_amd64.deb'.
+ dpkg-genchanges  >../drawtiming_0.7.1-5_amd64.changes
+dpkg-genchanges: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build drawtiming-0.7.1
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-1751
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+drawtiming_0.7.1-5_amd64.changes:
+─────────────────────────────────
+
+Format: 1.8
+Date: Sun, 03 Jun 2012 10:47:56 +0200
+Source: drawtiming
+Binary: drawtiming
+Architecture: source amd64
+Version: 0.7.1-5
+Distribution: sid
+Urgency: low
+Maintainer: Debian Electronics Team <pkg-electronics-devel@lists.alioth.debian.org>
+Changed-By: أحمد المحمودي (Ahmed El-Mahmoudy) <aelmahmoudy@sabily.org>
+Description: 
+ drawtiming - tool for documenting hardware designs through timing diagrams
+Changes: 
+ drawtiming (0.7.1-5) unstable; urgency=low
+ .
+   * Upload to unstable.
+   * Bumped compat level to 9
+   * debian/control: Bumped Standards-Version to 3.9.3
+   * debian/copyright: Updated copyright format & years.
+   * debian/rules: Override dh_auto_configure to add -Wl,--as-needed to LDFLAGS
+Checksums-Sha1: 
+ d79214dc3edb5b8a836e38ce94e60281a68633af 1240 drawtiming_0.7.1-5.dsc
+ 5fa849efa0563851b07b5fb522418c0c6b3827bf 5160 drawtiming_0.7.1-5.debian.tar.xz
+ 4fcd21b2d07ffc2c1e8bf8c987166a205f9431ab 38114 drawtiming_0.7.1-5_amd64.deb
+Checksums-Sha256: 
+ 6ee090c47b8af02696a37118d070d645b01e5fe2d5794b8d91fc7f6fb46c2b0a 1240 drawtiming_0.7.1-5.dsc
+ 5b3063c0417c01c4a006954c0e9456283e14f3e30c7d7a2e9fe15c4be5db806c 5160 drawtiming_0.7.1-5.debian.tar.xz
+ 10a85948e426f4b5fc0136756754fb5497f6e1a2866b384241964b56f48ec925 38114 drawtiming_0.7.1-5_amd64.deb
+Files: 
+ a7963c9a7a287e2c10c2a9470ba29113 38114 electronics optional drawtiming_0.7.1-5_amd64.deb
+ 2d00b067fa9d18e51c64895ff3a36679 1240 electronics optional drawtiming_0.7.1-5.dsc
+ bbb742a8fa3633341c9c1c16c342c48d 5160 electronics optional drawtiming_0.7.1-5.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+drawtiming_0.7.1-5_amd64.deb
+────────────────────────────
+
+ new debian package, version 2.0.
+ size 38114 bytes: control archive=994 bytes.
+     604 bytes,    13 lines      control              
+     944 bytes,    13 lines      md5sums              
+ Package: drawtiming
+ Version: 0.7.1-5
+ Architecture: amd64
+ Maintainer: Debian Electronics Team <pkg-electronics-devel@lists.alioth.debian.org>
+ Installed-Size: 139
+ Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libgraphicsmagick++3, libstdc++6 (>= 4.6)
+ Section: electronics
+ Priority: optional
+ Homepage: http://drawtiming.sourceforge.net/
+ Description: tool for documenting hardware designs through timing diagrams
+  Drawtiming is a command-line tool for documenting hardware designs through
+  timing diagrams. In inputs textual signal descriptions and outputs image
+  timing diagrams in many possible formats.
+
+drwxr-xr-x root/root         0 2014-04-28 17:51 ./
+drwxr-xr-x root/root         0 2014-04-28 17:51 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 17:51 ./usr/bin/
+-rwxr-xr-x root/root     89528 2014-04-28 17:51 ./usr/bin/drawtiming
+drwxr-xr-x root/root         0 2014-04-28 17:51 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 17:51 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-28 17:51 ./usr/share/man/man1/
+-rw-r--r-- root/root      2925 2014-04-28 17:51 ./usr/share/man/man1/drawtiming.1.gz
+drwxr-xr-x root/root         0 2014-04-28 17:51 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 17:51 ./usr/share/doc/drawtiming/
+-rw-r--r-- root/root       825 2009-04-03 04:59 ./usr/share/doc/drawtiming/changelog.gz
+-rw-r--r-- root/root       359 2009-04-03 05:00 ./usr/share/doc/drawtiming/THANKS
+-rw-r--r-- root/root      1847 2012-06-03 10:48 ./usr/share/doc/drawtiming/changelog.Debian.gz
+-rw-r--r-- root/root      1756 2012-06-03 10:48 ./usr/share/doc/drawtiming/copyright
+-rw-r--r-- root/root      1752 2009-03-28 16:29 ./usr/share/doc/drawtiming/README
+drwxr-xr-x root/root         0 2014-04-28 17:51 ./usr/share/doc/drawtiming/examples/
+-rw-r--r-- root/root        40 2009-03-28 16:29 ./usr/share/doc/drawtiming/examples/guenter.txt
+-rw-r--r-- root/root       152 2009-03-28 16:29 ./usr/share/doc/drawtiming/examples/sample.txt
+-rw-r--r-- root/root       468 2014-04-28 17:51 ./usr/share/doc/drawtiming/examples/runsamples.sh
+-rw-r--r-- root/root       200 2009-03-28 16:29 ./usr/share/doc/drawtiming/examples/memory.txt
+-rw-r--r-- root/root       168 2009-03-28 16:29 ./usr/share/doc/drawtiming/examples/statement1.txt
+-rw-r--r-- root/root       358 2009-03-28 16:29 ./usr/share/doc/drawtiming/NEWS.gz
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 3084
+Build-Time: 8
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 17
+Job: drawtiming_0.7.1-5.dsc
+Machine Architecture: amd64
+Package: drawtiming
+Package-Time: 36
+Source-Version: 0.7.1-5
+Space: 3084
+Status: successful
+Version: 0.7.1-5
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-1751
+Build needed 00:00:36, 3084k disc space

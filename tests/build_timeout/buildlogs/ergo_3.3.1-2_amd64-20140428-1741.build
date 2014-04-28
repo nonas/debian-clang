@@ -1,0 +1,3085 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ ergo 3.3.1-2 (amd64)                                       28 Apr 2014 17:41 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: ergo
+Version: 3.3.1-2
+Source Version: 3.3.1-2
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/ergo-WljbPu/ergo-3.3.1' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/ergo-WljbPu' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-9a3200c4-11fd-4feb-977e-a5813f014394' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+ergo_3.3.1-2.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-F3hhZF/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), autotools-dev (>> 20100122.1~), bc, debhelper (>= 7.0.50~), libatlas-base-dev, libblas-dev, liblapack-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), autotools-dev (>> 20100122.1~), bc, debhelper (>= 7.0.50~), libatlas-base-dev, libblas-dev, liblapack-dev
+dpkg-deb: building package `sbuild-build-depends-ergo-dummy' in `/«BUILDDIR»/resolver-HCPCq5/apt_archive/sbuild-build-depends-ergo-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install ergo build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autotools-dev bc bsdmainutils debhelper file gettext gettext-base groff-base
+  install-info intltool-debian libasprintf0c2 libatlas-base-dev libatlas-dev
+  libatlas3-base libblas-dev libblas3 libcroco3 libgfortran3 libglib2.0-0
+  liblapack-dev liblapack3 libmagic1 libpipeline1 libunistring0 libxml2 man-db
+  po-debconf
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff libblas-doc
+  liblapack-doc less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  autotools-dev bc bsdmainutils debhelper file gettext gettext-base groff-base
+  install-info intltool-debian libasprintf0c2 libatlas-base-dev libatlas-dev
+  libatlas3-base libblas-dev libblas3 libcroco3 libgfortran3 libglib2.0-0
+  liblapack-dev liblapack3 libmagic1 libpipeline1 libunistring0 libxml2 man-db
+  po-debconf sbuild-build-depends-ergo-dummy
+0 upgraded, 28 newly installed, 0 to remove and 8 not upgraded.
+Need to get 19.3 MB/19.3 MB of archives.
+After this operation, 92.0 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main install-info amd64 5.2.0.dfsg.1-2 [195 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libgfortran3 amd64 4.9.0-1 [254 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main bc amd64 1.06.95-8 [111 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libatlas3-base amd64 3.10.1-4 [3149 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libblas3 amd64 1.2.20110419-7 [159 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libblas-dev amd64 1.2.20110419-7 [154 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main libatlas-dev all 3.10.1-4 [67.4 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main libatlas-base-dev amd64 3.10.1-4 [3033 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main liblapack3 amd64 3.5.0-2 [1735 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main liblapack-dev amd64 3.5.0-2 [1747 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 19.3 MB in 5s (3672 kB/s)
+Selecting previously unselected package install-info.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../install-info_5.2.0.dfsg.1-2_amd64.deb ...
+Unpacking install-info (5.2.0.dfsg.1-2) ...
+Setting up install-info (5.2.0.dfsg.1-2) ...
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11470 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libgfortran3:amd64.
+Preparing to unpack .../libgfortran3_4.9.0-1_amd64.deb ...
+Unpacking libgfortran3:amd64 (4.9.0-1) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package bc.
+Preparing to unpack .../bc_1.06.95-8_amd64.deb ...
+Unpacking bc (1.06.95-8) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libatlas3-base.
+Preparing to unpack .../libatlas3-base_3.10.1-4_amd64.deb ...
+Unpacking libatlas3-base (3.10.1-4) ...
+Selecting previously unselected package libblas3.
+Preparing to unpack .../libblas3_1.2.20110419-7_amd64.deb ...
+Unpacking libblas3 (1.2.20110419-7) ...
+Selecting previously unselected package libblas-dev.
+Preparing to unpack .../libblas-dev_1.2.20110419-7_amd64.deb ...
+Unpacking libblas-dev (1.2.20110419-7) ...
+Selecting previously unselected package libatlas-dev.
+Preparing to unpack .../libatlas-dev_3.10.1-4_all.deb ...
+Unpacking libatlas-dev (3.10.1-4) ...
+Selecting previously unselected package libatlas-base-dev.
+Preparing to unpack .../libatlas-base-dev_3.10.1-4_amd64.deb ...
+Unpacking libatlas-base-dev (3.10.1-4) ...
+Selecting previously unselected package liblapack3.
+Preparing to unpack .../liblapack3_3.5.0-2_amd64.deb ...
+Unpacking liblapack3 (3.5.0-2) ...
+Selecting previously unselected package liblapack-dev.
+Preparing to unpack .../liblapack-dev_3.5.0-2_amd64.deb ...
+Unpacking liblapack-dev (3.5.0-2) ...
+Selecting previously unselected package sbuild-build-depends-ergo-dummy.
+Preparing to unpack .../sbuild-build-depends-ergo-dummy.deb ...
+Unpacking sbuild-build-depends-ergo-dummy (0.invalid.0) ...
+Processing triggers for install-info (5.2.0.dfsg.1-2) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libgfortran3:amd64 (4.9.0-1) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up bc (1.06.95-8) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libatlas3-base (3.10.1-4) ...
+update-alternatives: using /usr/lib/atlas-base/atlas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
+update-alternatives: using /usr/lib/atlas-base/atlas/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
+Setting up libblas3 (1.2.20110419-7) ...
+Setting up libblas-dev (1.2.20110419-7) ...
+update-alternatives: using /usr/lib/libblas/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
+Setting up libatlas-dev (3.10.1-4) ...
+Setting up libatlas-base-dev (3.10.1-4) ...
+update-alternatives: using /usr/lib/atlas-base/atlas/libblas.so to provide /usr/lib/libblas.so (libblas.so) in auto mode
+update-alternatives: using /usr/lib/atlas-base/atlas/liblapack.so to provide /usr/lib/liblapack.so (liblapack.so) in auto mode
+Setting up liblapack3 (3.5.0-2) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
+Setting up liblapack-dev (3.5.0-2) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so to provide /usr/lib/liblapack.so (liblapack.so) in auto mode
+Setting up sbuild-build-depends-ergo-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 bc_1.06.95-8 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 install-info_5.2.0.dfsg.1-2 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatlas-base-dev_3.10.1-4 libatlas-dev_3.10.1-4 libatlas3-base_3.10.1-4 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblas-dev_1.2.20110419-7 libblas3_1.2.20110419-7 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libgfortran3_4.9.0-1 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 liblapack-dev_3.5.0-2 liblapack3_3.5.0-2 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-ergo-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Sat Oct 26 10:04:50 2013 UTC using DSA key ID 9ED101BF
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./ergo_3.3.1-2.dsc
+dpkg-source: info: extracting ergo in ergo-3.3.1
+dpkg-source: info: unpacking ergo_3.3.1.orig.tar.gz
+dpkg-source: info: unpacking ergo_3.3.1-2.debian.tar.gz
+dpkg-source: info: applying basis_skip_makefiles.patch
+dpkg-source: info: applying integrals_hermite_mips.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-9a3200c4-11fd-4feb-977e-a5813f014394
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package ergo
+dpkg-buildpackage: source version 3.3.1-2
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Michael Banck <mbanck@debian.org>
+ dpkg-source --before-build ergo-3.3.1
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with autotools_dev --parallel
+   dh_testdir -O--parallel
+   dh_auto_clean -O--parallel
+   dh_autotools-dev_restoreconfig -O--parallel
+   dh_clean -O--parallel
+ dpkg-source -b ergo-3.3.1
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building ergo using existing ./ergo_3.3.1.orig.tar.gz
+dpkg-source: info: building ergo in ergo_3.3.1-2.debian.tar.xz
+dpkg-source: info: building ergo in ergo_3.3.1-2.dsc
+ debian/rules build
+dh build --with autotools_dev --parallel
+   dh_testdir -O--parallel
+   dh_autotools-dev_updateconfig -O--parallel
+   dh_auto_configure -O--parallel
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking which precision to use... DOUBLE
+checking whether to use internal linear algebra template library... no
+checking whether to use SSE intrinsics to generate efficient computational kernels... no
+checking for icc... no
+checking for pgcc... no
+checking for cc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether cc accepts -g... yes
+checking for cc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of cc... none
+checking for icpc... no
+checking for pgcpp... no
+checking for c++... c++
+checking whether we are using the GNU C++ compiler... yes
+checking whether c++ accepts -g... yes
+checking dependency style of c++... none
+checking for ranlib... ranlib
+checking for flex... no
+checking for lex... no
+checking for bison... no
+checking for byacc... no
+checking how to run the C preprocessor... cc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for memory.h... (cached) yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking for C/C++ restrict keyword... __restrict
+checking for working volatile... yes
+checking for size_t... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for atexit... yes
+checking for floor... no
+checking for memset... yes
+checking for rint... no
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strncasecmp... yes
+checking for pow... no
+checking for pow in -lm... yes
+checking for pow... (cached) no
+checking for powf... yes
+checking for powl... yes
+checking for sqrt... yes
+checking for sqrtf... yes
+checking for sqrtl... yes
+checking for fabs... yes
+checking for fabsf... yes
+checking for fabsl... yes
+checking for exp... yes
+checking for expf... yes
+checking for expl... yes
+checking for log... yes
+checking for logf... yes
+checking for logl... yes
+checking for erf... yes
+checking for erff... yes
+checking for erfl... yes
+checking for erfc... yes
+checking for erfcf... yes
+checking for erfcl... yes
+checking for pthread_create in -lpthread... yes
+checking for dposv_... no
+checking for main in -lacml... no
+checking for main in -lmkl... no
+checking for main in -lessl... no
+checking for main in -latlas... yes
+checking for dswap_ in -lf77blas... yes
+checking for main in -lmkl_lapack... no
+checking for dposv_ in -llapack... yes
+checking for 10.0 icpc bug... ok
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating source/Makefile
+config.status: creating source/basisset/Makefile
+config.status: creating source/ci/Makefile
+config.status: creating source/dft/Makefile
+config.status: creating source/electron_dynamics/Makefile
+config.status: creating source/integrals/Makefile
+config.status: creating source/matrix/Makefile
+config.status: creating source/matrix/template_lapack/Makefile
+config.status: creating source/matrix/template_lapack/blas/Makefile
+config.status: creating source/matrix/template_lapack/lapack/Makefile
+config.status: creating source/densfromf/Makefile
+config.status: creating source/densfromf/purification/Makefile
+config.status: creating source/scf/Makefile
+config.status: creating source/tddft/Makefile
+config.status: creating source/test/Makefile
+config.status: creating source/utilities/Makefile
+config.status: creating source/utilities_basic/Makefile
+config.status: creating source/utilities_cht/Makefile
+config.status: creating basis/Makefile
+config.status: creating documentation/source/Makefile
+config.status: creating params/Makefile
+config.status: creating mol/Makefile
+config.status: creating test/Makefile
+config.status: creating source/config.h
+config.status: executing depfiles commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+
+Selected precision : DOUBLE
+Critical warnings  : no
+Linear Algebra Lib : ATLAS
+
+   dh_auto_build -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making all in source
+make[2]: Entering directory `/«PKGBUILDDIR»/source'
+make  all-recursive
+make[3]: Entering directory `/«PKGBUILDDIR»/source'
+Making all in basisset
+make[4]: Entering directory `/«PKGBUILDDIR»/source/basisset'
+  CXX    basisinfo.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    basisset.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libbasisset.a
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/basisset'
+Making all in ci
+make[4]: Entering directory `/«PKGBUILDDIR»/source/ci'
+  CXX    ci.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libci.a
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/ci'
+Making all in matrix
+make[4]: Entering directory `/«PKGBUILDDIR»/source/matrix'
+Making all in template_lapack
+make[5]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+Making all in blas
+make[6]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack/blas'
+  CXX    template_blas_basicmath.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    template_blas_common.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    template_blas_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libtemplateblas.a
+  CXXLD  templateblastest
+  CXX    template_blas_test_threaded.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  templateblastest_threaded
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack/blas'
+Making all in lapack
+make[6]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack/lapack'
+  CXX    template_lapack_common.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    template_lapack_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libtemplatelapack.a
+  CXXLD  templatelapacktest
+  CXX    template_lapack_test_threaded.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  templatelapacktest_threaded
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack/lapack'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[6]: Nothing to be done for `all-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[5]: Entering directory `/«PKGBUILDDIR»/source/matrix'
+  CXX    SizesAndBlocks.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    gblas.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    FileWritable.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    matInclude.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    AllocatorManager.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    allocate.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    Memory_buffer_thread.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libmat.a
+  CXX    API_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  mattest
+  CXX    testOmpFail.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  omptest
+  CXX    bench.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  matbench
+  CXX    bench_gemm_only.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  matbenchgemm
+  CXX    blastime.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  blastime
+  CXX    Perturb_Test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  perturbtest
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/matrix'
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/matrix'
+Making all in densfromf
+make[4]: Entering directory `/«PKGBUILDDIR»/source/densfromf'
+Making all in purification
+make[5]: Entering directory `/«PKGBUILDDIR»/source/densfromf/purification'
+  CXX    test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  test
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/densfromf/purification'
+make[5]: Entering directory `/«PKGBUILDDIR»/source/densfromf'
+  CXX    densfromf_full.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    densfromf_general.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    densfromf_sparse.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    puri_mmul_tests.o
+clang: warning: argument unused during compilation: '-fopenmp'
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    simple_purification.o
+  AR     libdensfromf.a
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/densfromf'
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/densfromf'
+Making all in dft
+make[4]: Entering directory `/«PKGBUILDDIR»/source/dft'
+  CXX    aos.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    cubature_rules.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    dft_common.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-becke.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-cam.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-gga.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-kt.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-lb94.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-lyp.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-optx.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-p86c.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-pbec.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-pbex.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-pw86x.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-pw91c.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-pw91x.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-pw92c.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-pz81.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-slater.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    fun-tester.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     fun-vwn.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     functionals.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    grid_atomic.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    grid_hicu.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    grid_reader.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    grid_stream.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrator.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    lebedev_laikov.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    lin_trans.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    rho-mat.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    sparse_matrix.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    sparse_pattern.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    xc_matrix.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    xc_matrix_sparse.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libdft.a
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/dft'
+Making all in electron_dynamics
+make[4]: Entering directory `/«PKGBUILDDIR»/source/electron_dynamics'
+  CXX    tdhf_dynamics.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libelectron_dynamics.a
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/electron_dynamics'
+Making all in integrals
+make[4]: Entering directory `/«PKGBUILDDIR»/source/integrals'
+  CXX    basis_func_extent.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    basis_func_extent_1el.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    basis_func_pair_list.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    basis_func_pair_list_1el.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    box_system.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    boysfunction.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    densityfitting.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    exponent_list.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    hermite_conversion_explicit.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    hermite_conversion_prep.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    hermite_conversion_symb.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integral_info.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_1el.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_1el_kinetic.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_1el_potential.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_1el_single.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_2el_boxed.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_2el_coulomb.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_2el_exchange.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_2el_exchange_prep.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_2el_explicit.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_2el_layer.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_2el_repeating.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_2el_single.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_2el_utils.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_general.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    integrals_hermite.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    matrix_norm.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    mm_limit_table.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    monomial_info.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    multipole.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    operator_matrix.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    organize_distrs.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libintegrals.a
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/integrals'
+Making all in scf
+make[4]: Entering directory `/«PKGBUILDDIR»/source/scf'
+  CXX    diis_general.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    diis_restricted.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    diis_unrestricted.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    scf_utils.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    SCF_general.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    SCF_restricted.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    SCF_unrestricted.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    SCF_statistics.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    scf.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libscf.a
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/scf'
+Making all in utilities
+make[4]: Entering directory `/«PKGBUILDDIR»/source/utilities'
+  CXX    integral_matrix_wrappers.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    matrix_utilities.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    matrix_utilities_gao.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    density_description_file_2.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    density_projection.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    densitymanager.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     atom_labels.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    xyz_file_parser.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    molecule.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libutilities.a
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/utilities'
+Making all in utilities_basic
+make[4]: Entering directory `/«PKGBUILDDIR»/source/utilities_basic'
+  CC     barrier.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    csr_matrix.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    ergo_math.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    machine_epsilon.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    matrix_algebra.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    memorymanag.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    output.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    solve_lin_eq_syst.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    utilities.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libutilities_basic.a
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/utilities_basic'
+Making all in utilities_cht
+make[4]: Entering directory `/«PKGBUILDDIR»/source/utilities_cht'
+  CXX    BasisInfoStructChunk.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    DistrBasisSetChunk.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    IntegralInfoChunk.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    CreateAtomCenteredBasisSet.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    ComputeOverlapMatRecursive.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    MoleculeChunk.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    compute_overlap_task_implementations.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    compute_overlap_mat_using_cht.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  AR     libutilities_cht.a
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/utilities_cht'
+Making all in .
+make[4]: Entering directory `/«PKGBUILDDIR»/source'
+  CC     ergo_input_processor.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CC     ergo_input_parser.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    ergo_scripted.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    slr.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  ergo
+  CXX    fermi_contact.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  fermi_contact
+  CXX    bin2m.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  bin2m
+make[4]: Leaving directory `/«PKGBUILDDIR»/source'
+Making all in tddft
+make[4]: Entering directory `/«PKGBUILDDIR»/source/tddft'
+  CXX    tddft.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXX    tddft_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  tddft_test
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/tddft'
+Making all in test
+make[4]: Entering directory `/«PKGBUILDDIR»/source/test'
+  CXX    basicmath_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  basicmath_test
+  CXX    lapack_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  lapack_test
+  CXX    grid_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  grid_test
+  CXX    stream_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  stream_test
+  CXX    tmat_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  tmat_test
+  CXX    cht_overlapmat_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  cht_overlapmat_test
+  CXX    cht_overlapmat_distr_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  cht_overlapmat_distr_test
+  CXX    vmat_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  vmat_test
+  CXX    mat_thread_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  mat_thread_test
+  CXX    mat_performance_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  mat_performance_test
+  CXX    jmat_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  jmat_test
+  CXX    jmat_extrapolate_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  jmat_extrapolate_test
+  CXX    kmat_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  kmat_test
+  CXX    kmat_symm_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  kmat_symm_test
+  CXX    kmat_nosymm_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  kmat_nosymm_test
+  CXX    explicit_integral_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  explicit_integral_test
+  CXX    xcmat_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  xcmat_test
+  CXX    xcmat_sparse_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  xcmat_sparse_test
+  CXX    xcmat_nan_inf_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  xcmat_nan_inf_test
+  CXX    matmem_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  matmem_test
+  CXX    mmul_simple_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  mmul_simple_test
+  CXX    mmul_simple_many_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  mmul_simple_many_test
+  CXX    mmul_rectangular_test.o
+clang: warning: argument unused during compilation: '-fopenmp'
+  CXXLD  mmul_rectangular_test
+make[4]: Leaving directory `/«PKGBUILDDIR»/source/test'
+make[3]: Leaving directory `/«PKGBUILDDIR»/source'
+make[2]: Leaving directory `/«PKGBUILDDIR»/source'
+Making all in basis
+make[2]: Entering directory `/«PKGBUILDDIR»/basis'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/basis'
+Making all in params
+make[2]: Entering directory `/«PKGBUILDDIR»/params'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/params'
+Making all in mol
+make[2]: Entering directory `/«PKGBUILDDIR»/mol'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/mol'
+Making all in test
+make[2]: Entering directory `/«PKGBUILDDIR»/test'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/test'
+Making all in documentation/source
+make[2]: Entering directory `/«PKGBUILDDIR»/documentation/source'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/documentation/source'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_test
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making check in source
+make[3]: Entering directory `/«PKGBUILDDIR»/source'
+make  check-recursive
+make[4]: Entering directory `/«PKGBUILDDIR»/source'
+Making check in basisset
+make[5]: Entering directory `/«PKGBUILDDIR»/source/basisset'
+make[5]: Nothing to be done for `check'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/basisset'
+Making check in ci
+make[5]: Entering directory `/«PKGBUILDDIR»/source/ci'
+make[5]: Nothing to be done for `check'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/ci'
+Making check in matrix
+make[5]: Entering directory `/«PKGBUILDDIR»/source/matrix'
+Making check in template_lapack
+make[6]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+Making check in blas
+make[7]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack/blas'
+make  check-TESTS
+make[8]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack/blas'
+
+Testing template_blas
+template_blas_nrm2 returned 1.41421
+template_blas_gemm finished.
+pi = 3.14159
+pi =      3.141592653589793
+template_blas test OK
+
+Testing template_blas with threads
+Thread 47064907671296 finished OK.
+Thread 47064909772544 finished OK.
+Thread 47064905570048 finished OK.
+Thread 47064920278784 finished OK.
+Thread 47064918177536 finished OK.
+Thread 47064911873792 finished OK.
+Thread 47064913975040 finished OK.
+Thread 47064916076288 finished OK.
+pi =      3.141592653589793
+template_blas_test_threaded test ended OK.
+template_blas with threads test OK
+PASS: test.sh
+=============
+1 test passed
+=============
+make[8]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack/blas'
+make[7]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack/blas'
+Making check in lapack
+make[7]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack/lapack'
+make  check-TESTS
+make[8]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack/lapack'
+
+Testing template_lapack
+template_blas_gemm finished.
+calling template_lapack_spgst
+calling template_lapack_tptri
+calling template_lapack_sygv
+calling template_lapack_trtri
+testing template_lapack_gesv()..
+OK
+solution:    -2    0.333333    3    
+template_lapack tests finished OK.
+template_lapack test OK
+
+Testing template_lapack with threads
+Thread 47498638796544 finished OK.
+Thread 47498642999040 finished OK.
+Thread 47498634594048 finished OK.
+Thread 47498645100288 finished OK.
+Thread 47498636695296 finished OK.
+Thread 47498647201536 finished OK.
+Thread 47498640897792 finished OK.
+Thread 47498649302784 finished OK.
+template_lapack_threaded test finished OK.
+template_lapack with threads test OK
+PASS: test.sh
+=============
+1 test passed
+=============
+make[8]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack/lapack'
+make[7]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack/lapack'
+make[7]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[7]: Nothing to be done for `check-am'.
+make[7]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/matrix'
+make  check-TESTS
+make[7]: Entering directory `/«PKGBUILDDIR»/source/matrix'
+Testing code sensitive for some compilers when OpenMP is used
+ Testing code sensitive when certain compilers are used with OpenMP: 
+  OpenMP is used?   NO
+  Test OK
+OpenMP test OK
+
+Testing matrix library
+=========================================================
+Testing matrix library with double precision:
+=========================================================
+Running tests with blocksize vector: 5  1  1  
+Matrix has 682 nonzero elements out of 7569 possible.
+ Max Absolute Error:               0
+Matrix multiply test:  
+ Max Absolute Error: 8.881784197e-16   OK
+
+Transposed matrix multiply test:  
+ Max Absolute Error: 8.881784197e-16   OK
+
+Symmetric matrix mul (symm) test: 
+ Max Absolute Error: 1.776356839e-15   OK
+
+Symmetric rank-k update (syrk) test: 
+ Max Absolute Error: 3.552713679e-15   OK
+
+Symmetric matrix square test: 
+ Max Absolute Error: 3.552713679e-15   OK
+
+Symmetric-symmetric matrix multiply test: 
+ Max Absolute Error: 1.776356839e-15   OK
+
+Triangular-general matrix multiply test 1: 
+ Max Absolute Error: 3.552713679e-15   OK
+
+Triangular-general matrix multiply test 2: 
+ Max Absolute Error: 5.329070518e-15   OK
+
+Frobenius norm (general matrix) test: 
+ Absolute Difference: 5.329070518e-15   OK
+
+Frobenius norm (symmetric matrix) test: 
+ Absolute Difference: 3.552713679e-15   OK
+
+Frobenius norm (triangular matrix) test: 
+ Absolute Difference: 7.105427358e-14   OK
+
+Frobenius norm diff (general matrix) test: 
+ Absolute Error:               0   OK
+
+Frobenius norm diff (symmetric matrix) test: 
+ Absolute Error:               0   OK
+
+Write to file (general matrix) test: 
+ Absolute Error:               0   OK
+
+Trace (general matrix) test: 
+ Absolute Difference:               0   OK
+
+Addition (general matrix) test: 
+ Absolute Difference:               0   OK
+
+Addition (symmetric matrix) test: 
+ Absolute Difference:               0   OK
+
+Triple matrix multiply test 1: 
+ Max Absolute Error:  4.97379915e-14   OK
+
+Triple matrix multiply test 2: 
+ Max Absolute Error: 5.684341886e-14   OK
+
+Frobenius thresholding test 1: 
+ Requested threshold:           0.01
+ Received Error:      0.009373231488   OK
+
+Frobenius thresholding test 2: 
+ Requested threshold:            0.1
+ Received Error:       0.09850751309   OK
+
+Frobenius thresholding test 3: 
+ Requested threshold:              1
+ Received Error:         0.999078585   OK
+
+Frobenius thresholding test 4: 
+ Requested threshold:             10
+ Received Error:         9.996607941   OK
+
+Inverse Cholesky test: 
+ Max Absolute Error: 2.775557562e-17   OK
+
+Gersgorin eigenvalue bounds test: 
+Reference:    -41.78708166, 42.67244397
+ Computed:    -41.78708166, 42.67244397   OK
+
+Memory usage function test: 
+General matrix memory usage  :           60552 bytes   OK
+Symmetric matrix memory usage:           30624 bytes   OK
+
+Accumulate test OK.
+
+Vector contructors, copy, and assignment test: OK
+
+Dot product test: 
+ Error:                            0   OK
+
+Euclidean norm (vector) test: 
+ Error:              1.110223025e-16   OK
+
+axpy test: 
+ Error:                            0   OK
+
+Matrix-vector product test 1: 
+ Max Absolute Error: 4.440892099e-16   OK
+
+Matrix-vector product test 2: 
+ Max Absolute Error: 4.440892099e-16   OK
+
+Matrix-vector product test 3: 
+ Max Absolute Error: 8.881784197e-16   OK
+
+Symm Matrix-vector product test 1: 
+ Max Absolute Error: 6.661338148e-16   OK
+
+Symm Matrix-vector product test 2: 
+ Max Absolute Error: 4.440892099e-16   OK
+
+Symm Matrix-vector product test 3: 
+ Max Absolute Error:  1.33226763e-15   OK
+
+Triang Matrix-vector product test 1: 
+ Max Absolute Error:               0   OK
+
+Triang Matrix-vector product test 2: 
+ Max Absolute Error:  1.33226763e-15   OK
+
+Lanczos largest magnitude test : 
+ Requested accuracy: 1.490116119e-09
+ Indicated Error:    2.790764289e-10
+ Actual Error:       2.511693525e-10   OK
+
+Lanczos largest magnitude test again (0) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:               6.75069525e-14
+ 'Actual Error' (resVec norm): 6.075850052e-14
+ Actual Error (really):         5.97577543e-14   OK
+
+Lanczos largest magnitude test again (1) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.664682977e-14
+ 'Actual Error' (resVec norm): 5.998792179e-14
+ Actual Error (really):        5.102862577e-14   OK
+
+Lanczos largest magnitude test again (2) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.658074696e-14
+ 'Actual Error' (resVec norm):  5.99196809e-14
+ Actual Error (really):        7.087386233e-14   OK
+
+Lanczos largest magnitude test again (3) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.738192496e-14
+ 'Actual Error' (resVec norm): 6.064114041e-14
+ Actual Error (really):         5.68017855e-14   OK
+
+Lanczos largest magnitude test again (4) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.569335046e-14
+ 'Actual Error' (resVec norm): 5.912584827e-14
+ Actual Error (really):        7.480127628e-14   OK
+
+Lanczos largest magnitude test again (5) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              5.230529277e-14
+ 'Actual Error' (resVec norm): 4.708031705e-14
+ Actual Error (really):        2.235711616e-14   OK
+
+Lanczos largest magnitude test again (6) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.708455183e-14
+ 'Actual Error' (resVec norm):   6.0371857e-14
+ Actual Error (really):        5.387357227e-14   OK
+
+Lanczos largest magnitude test again (7) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:                6.7321229e-14
+ 'Actual Error' (resVec norm): 6.058521283e-14
+ Actual Error (really):        6.541295283e-14   OK
+
+Lanczos largest magnitude test again (8) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.722707892e-14
+ 'Actual Error' (resVec norm): 6.050477482e-14
+ Actual Error (really):        5.512257317e-14   OK
+
+Lanczos largest magnitude test again (9) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.746662127e-14
+ 'Actual Error' (resVec norm): 6.072381915e-14
+ Actual Error (really):         5.83977311e-14   OK
+
+Lanczos largest magnitude test again (10) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              5.162948215e-14
+ 'Actual Error' (resVec norm): 4.646711043e-14
+ Actual Error (really):        2.161465451e-14   OK
+
+Lanczos largest magnitude test again (11) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.651595876e-14
+ 'Actual Error' (resVec norm): 5.986106699e-14
+ Actual Error (really):        5.032085859e-14   OK
+
+Lanczos largest magnitude test again (12) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.073389512e-14
+ 'Actual Error' (resVec norm):  5.46631763e-14
+ Actual Error (really):        8.731210199e-14   OK
+
+Lanczos largest magnitude test again (13) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.697947057e-14
+ 'Actual Error' (resVec norm): 6.028198499e-14
+ Actual Error (really):        5.309641615e-14   OK
+
+Lanczos largest magnitude test again (14) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              4.147710589e-14
+ 'Actual Error' (resVec norm): 3.732949014e-14
+ Actual Error (really):        1.283001483e-14   OK
+
+Lanczos largest magnitude test again (15) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.740389738e-14
+ 'Actual Error' (resVec norm): 6.066079167e-14
+ Actual Error (really):        6.434436317e-14   OK
+
+Lanczos largest magnitude test again (16) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.276557162e-14
+ 'Actual Error' (resVec norm): 5.649079653e-14
+ Actual Error (really):        3.837208329e-14   OK
+
+Lanczos largest magnitude test again (17) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:               6.58429213e-14
+ 'Actual Error' (resVec norm): 5.925746898e-14
+ Actual Error (really):        7.422534809e-14   OK
+
+Lanczos largest magnitude test again (18) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.743015376e-14
+ 'Actual Error' (resVec norm): 6.069365836e-14
+ Actual Error (really):        6.387251839e-14   OK
+
+Lanczos largest magnitude test again (19) : 
+ Requested accuracy:                     1e-13
+ Indicated Error:              6.704715482e-14
+ 'Actual Error' (resVec norm): 6.034123829e-14
+ Actual Error (really):        5.358907762e-14   OK
+
+Lanczos largest magnitude test (Diff matrix) : 
+ Requested accuracy: 1.490116119e-09
+ Indicated Error:    4.440892099e-16
+ Actual Error:       -2.220446049e-16   OK
+
+Euclidean  truncation test, symmetric matrices 1: 
+ Requested threshold:           0.01
+ Received Error:      0.009579419527   OK
+
+Euclidean  truncation test, symmetric matrices 2: 
+ Requested threshold:            0.1
+ Received Error:       0.06121431858   OK
+
+Euclidean  truncation test, symmetric matrices 3: 
+ Requested threshold:              1
+ Received Error:        0.9850758515   OK
+
+Euclidean  truncation test, symmetric matrices 4: 
+ Requested threshold:             10
+ Received Error:         1.371169877   OK
+mixed norm res: 0.009368583232
+
+Mixed norm truncation test, symmetric matrices 1: 
+ Requested threshold:           0.01
+ Received Error (Euclidean norm):      0.009268583259   OK
+mixed norm res: 0.09843459291
+
+Mixed norm truncation test, symmetric matrices 2: 
+ Requested threshold:            0.1
+ Received Error (Euclidean norm):       0.09743459317   OK
+mixed norm res: 0.7195938289
+
+Mixed norm truncation test, symmetric matrices 3: 
+ Requested threshold:              1
+ Received Error (Euclidean norm):        0.7095938354   OK
+mixed norm res: 1.511691098
+
+Mixed norm truncation test, symmetric matrices 4: 
+ Requested threshold:             10
+ Received Error (Euclidean norm):         1.411691187   OK
+
+Euclidean truncation test, triangular matrices 1: 
+ Requested threshold:           0.01
+ Received Error:      0.002535339278   OK
+
+Euclidean truncation test, triangular matrices 2: 
+ Requested threshold:            0.1
+ Received Error:       0.02466599259   OK
+
+Euclidean truncation test, triangular matrices 3: 
+ Requested threshold:              1
+ Received Error:        0.2476925998   OK
+
+Euclidean truncation test, triangular matrices 4: 
+ Requested threshold:             10
+ Received Error:         1.168702475   OK
+
+Euclidean truncation test, general matrices 1: 
+ Requested threshold:           0.01
+ Received Error:      0.003015079655   OK
+
+Euclidean truncation test, general matrices 2: 
+ Requested threshold:            0.1
+ Received Error:       0.02651574925   OK
+
+Euclidean truncation test, general matrices 3: 
+ Requested threshold:              1
+ Received Error:        0.2393536839   OK
+
+Euclidean truncation test, general matrices 4: 
+ Requested threshold:             10
+ Received Error:         1.421197989   OK
+
+Test truncation with triple matrix measure: 
+
+ Requested threshold:           0.01
+ Received Error:      0.008476391353
+ Reported Error:      0.008566871985   OK
+Running tests with blocksize vector: 32  1  1  
+
+Test truncation with triple matrix measure again: 
+
+ Requested threshold:           0.01
+ Received Error:      0.006468852161
+ Reported Error:      0.006559998112   OK
+
+Test timers in FileWritable: 
+ Initial values         :  
+  Write           : 0 s
+  Read            : 0 s
+  Copy and assign : 0 s
+ After 1st writeToFile  :  
+  Write           : 0 s (MatrixSymmetric) = 0 s
+  Read            : 0 s
+  Copy and assign : 0 s
+ After 1st readFromFile :  
+  Write           : 0 s (MatrixSymmetric) = 0 s
+  Read            : 0 s (MatrixSymmetric) = 0 s
+  Copy and assign : 0 s
+ After 2nd writeToFile  :  
+  Write           : 0 s (MatrixSymmetric) + 0 s (VectorGeneral) = 0 s
+  Read            : 0 s (MatrixSymmetric) = 0 s
+  Copy and assign : 0 s
+ After 2nd readFromFile :  
+  Write           : 0 s (MatrixSymmetric) + 0 s (VectorGeneral) = 0 s
+  Read            : 0 s (MatrixSymmetric) + 0 s (VectorGeneral) = 0 s
+  Copy and assign : 0 s
+ Total counts :  
+  Write           : 1 (MatrixSymmetric) + 1 (VectorGeneral) = 2 
+  Read            : 1 (MatrixSymmetric) + 1 (VectorGeneral) = 2 
+  Copy and assign : 0 
+Matrix library tests with double precision completed successfully!
+
+=========================================================
+Testing matrix library with single precision:
+=========================================================
+Running tests with blocksize vector: 5  1  1  
+Matrix has 744 nonzero elements out of 7569 possible.
+ Max Absolute Error:               0
+Matrix multiply test:  
+ Max Absolute Error: 1.430511475e-06   OK
+
+Transposed matrix multiply test:  
+ Max Absolute Error: 9.536743164e-07   OK
+
+Symmetric matrix mul (symm) test: 
+ Max Absolute Error: 9.536743164e-07   OK
+
+Symmetric rank-k update (syrk) test: 
+ Max Absolute Error: 1.907348633e-06   OK
+
+Symmetric matrix square test: 
+ Max Absolute Error: 9.536743164e-07   OK
+
+Symmetric-symmetric matrix multiply test: 
+ Max Absolute Error: 1.907348633e-06   OK
+
+Triangular-general matrix multiply test 1: 
+ Max Absolute Error: 5.722045898e-06   OK
+
+Triangular-general matrix multiply test 2: 
+ Max Absolute Error: 2.861022949e-06   OK
+
+Frobenius norm (general matrix) test: 
+ Absolute Difference: 9.536743164e-07   OK
+
+Frobenius norm (symmetric matrix) test: 
+ Absolute Difference: 1.907348633e-06   OK
+
+Frobenius norm (triangular matrix) test: 
+ Absolute Difference:  1.14440918e-05   OK
+
+Frobenius norm diff (general matrix) test: 
+ Absolute Error:               0   OK
+
+Frobenius norm diff (symmetric matrix) test: 
+ Absolute Error:               0   OK
+
+Write to file (general matrix) test: 
+ Absolute Error:               0   OK
+
+Trace (general matrix) test: 
+ Absolute Difference: 2.384185791e-07   OK
+
+Addition (general matrix) test: 
+ Absolute Difference:               0   OK
+
+Addition (symmetric matrix) test: 
+ Absolute Difference:               0   OK
+
+Triple matrix multiply test 1: 
+ Max Absolute Error: 5.340576172e-05   OK
+
+Triple matrix multiply test 2: 
+ Max Absolute Error: 3.814697266e-05   OK
+
+Frobenius thresholding test 1: 
+ Requested threshold: 0.009999999776
+ Received Error:      0.009735103697   OK
+
+Frobenius thresholding test 2: 
+ Requested threshold:   0.1000000015
+ Received Error:       0.09890193492   OK
+
+Frobenius thresholding test 3: 
+ Requested threshold:              1
+ Received Error:        0.9983443022   OK
+
+Frobenius thresholding test 4: 
+ Requested threshold:             10
+ Received Error:         9.994821548   OK
+
+Skipping inverse Cholesky test since lapack 
+single precision Cholesky (spptrf) is unstable. 
+
+Gersgorin eigenvalue bounds test: 
+Reference:     -43.1345253, 43.51402664
+ Computed:     -43.1345253, 43.51402664   OK
+
+Memory usage function test: 
+General matrix memory usage  :           30276 bytes   OK
+Symmetric matrix memory usage:           15312 bytes   OK
+
+Accumulate test OK.
+
+Vector contructors, copy, and assignment test: OK
+
+Dot product test: 
+ Error:              5.960464478e-08   OK
+
+Euclidean norm (vector) test: 
+ Error:              5.960464478e-08   OK
+
+axpy test: 
+ Error:                            0   OK
+
+Matrix-vector product test 1: 
+ Max Absolute Error: 3.576278687e-07   OK
+
+Matrix-vector product test 2: 
+ Max Absolute Error: 3.576278687e-07   OK
+
+Matrix-vector product test 3: 
+ Max Absolute Error: 2.384185791e-07   OK
+
+Symm Matrix-vector product test 1: 
+ Max Absolute Error: 2.384185791e-07   OK
+
+Symm Matrix-vector product test 2: 
+ Max Absolute Error: 2.384185791e-07   OK
+
+Symm Matrix-vector product test 3: 
+ Max Absolute Error: 2.384185791e-07   OK
+
+Triang Matrix-vector product test 1: 
+ Max Absolute Error:               0   OK
+
+Triang Matrix-vector product test 2: 
+ Max Absolute Error: 9.536743164e-07   OK
+
+Skipping Lanczos test for single precision. 
+
+Skipping Lanczos test for single precision. 
+
+Skipping Lanczos (Diff) test for single precision. 
+
+Euclidean  truncation test, symmetric matrices 1: 
+ Requested threshold: 0.009999999776
+ Received Error:       0.00864274893   OK
+
+Euclidean  truncation test, symmetric matrices 2: 
+ Requested threshold:   0.1000000015
+ Received Error:         0.096706599   OK
+
+Euclidean  truncation test, symmetric matrices 3: 
+ Requested threshold:              1
+ Received Error:        0.7356683612   OK
+
+Euclidean  truncation test, symmetric matrices 4: 
+ Requested threshold:             10
+ Received Error:         1.407218099   OK
+mixed norm res: 0.008133337833
+
+Mixed norm truncation test, symmetric matrices 1: 
+ Requested threshold: 0.009999999776
+ Received Error (Euclidean norm):      0.008033775724   OK
+mixed norm res: 0.08467189223
+
+Mixed norm truncation test, symmetric matrices 2: 
+ Requested threshold:   0.1000000015
+ Received Error (Euclidean norm):       0.08367676288   OK
+mixed norm res: 0.8579815626
+
+Mixed norm truncation test, symmetric matrices 3: 
+ Requested threshold:              1
+ Received Error (Euclidean norm):        0.8480416536   OK
+mixed norm res: 1.416350603
+
+Mixed norm truncation test, symmetric matrices 4: 
+ Requested threshold:             10
+ Received Error (Euclidean norm):          1.32165277   OK
+
+Euclidean truncation test, triangular matrices 1: 
+ Requested threshold: 0.009999999776
+ Received Error:      0.002315063495   OK
+
+Euclidean truncation test, triangular matrices 2: 
+ Requested threshold:   0.1000000015
+ Received Error:        0.0249307286   OK
+
+Euclidean truncation test, triangular matrices 3: 
+ Requested threshold:              1
+ Received Error:        0.2404652536   OK
+
+Euclidean truncation test, triangular matrices 4: 
+ Requested threshold:             10
+ Received Error:         1.136809349   OK
+
+Euclidean truncation test, general matrices 1: 
+ Requested threshold: 0.009999999776
+ Received Error:      0.002675515134   OK
+
+Euclidean truncation test, general matrices 2: 
+ Requested threshold:   0.1000000015
+ Received Error:       0.02617264539   OK
+
+Euclidean truncation test, general matrices 3: 
+ Requested threshold:              1
+ Received Error:        0.2505856156   OK
+
+Euclidean truncation test, general matrices 4: 
+ Requested threshold:             10
+ Received Error:         1.220744491   OK
+
+Test truncation with triple matrix measure: 
+
+ Requested threshold: 0.009999999776
+ Received Error:      0.009537162259
+ Reported Error:      0.009623105638   OK
+Running tests with blocksize vector: 32  1  1  
+
+Test truncation with triple matrix measure again: 
+
+ Requested threshold: 0.009999999776
+ Received Error:      0.006416807882
+ Reported Error:      0.006504043937   OK
+
+Test timers in FileWritable: 
+ Initial values         :  
+  Write           : 0 s
+  Read            : 0 s
+  Copy and assign : 0 s
+ After 1st writeToFile  :  
+  Write           : 9.5e-07 s (MatrixSymmetric) = 9.5e-07 s
+  Read            : 0 s
+  Copy and assign : 0 s
+ After 1st readFromFile :  
+  Write           : 9.5e-07 s (MatrixSymmetric) = 9.5e-07 s
+  Read            : 0 s (MatrixSymmetric) = 0 s
+  Copy and assign : 0 s
+ After 2nd writeToFile  :  
+  Write           : 9.5e-07 s (MatrixSymmetric) + 0 s (VectorGeneral) = 9.5e-07 s
+  Read            : 0 s (MatrixSymmetric) = 0 s
+  Copy and assign : 0 s
+ After 2nd readFromFile :  
+  Write           : 9.5e-07 s (MatrixSymmetric) + 0 s (VectorGeneral) = 9.5e-07 s
+  Read            : 0 s (MatrixSymmetric) + 0 s (VectorGeneral) = 0 s
+  Copy and assign : 0 s
+ Total counts :  
+  Write           : 1 (MatrixSymmetric) + 1 (VectorGeneral) = 2 
+  Read            : 1 (MatrixSymmetric) + 1 (VectorGeneral) = 2 
+  Copy and assign : 0 
+Matrix library tests with single precision completed successfully!
+
+All matrix library tests OK
+Skipping matrix library benchmark
+To run benchmark, run check as: make check RUN_BENCHMARK=1
+PASS: test.sh
+=============
+1 test passed
+=============
+make[7]: Leaving directory `/«PKGBUILDDIR»/source/matrix'
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/matrix'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/matrix'
+Making check in densfromf
+make[5]: Entering directory `/«PKGBUILDDIR»/source/densfromf'
+Making check in purification
+make[6]: Entering directory `/«PKGBUILDDIR»/source/densfromf/purification'
+make[6]: Nothing to be done for `check'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/densfromf/purification'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/densfromf'
+make[6]: Nothing to be done for `check-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/densfromf'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/densfromf'
+Making check in dft
+make[5]: Entering directory `/«PKGBUILDDIR»/source/dft'
+make[5]: Nothing to be done for `check'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/dft'
+Making check in electron_dynamics
+make[5]: Entering directory `/«PKGBUILDDIR»/source/electron_dynamics'
+make[5]: Nothing to be done for `check'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/electron_dynamics'
+Making check in integrals
+make[5]: Entering directory `/«PKGBUILDDIR»/source/integrals'
+make[5]: Nothing to be done for `check'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/integrals'
+Making check in scf
+make[5]: Entering directory `/«PKGBUILDDIR»/source/scf'
+make[5]: Nothing to be done for `check'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/scf'
+Making check in utilities
+make[5]: Entering directory `/«PKGBUILDDIR»/source/utilities'
+make[5]: Nothing to be done for `check'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/utilities'
+Making check in utilities_basic
+make[5]: Entering directory `/«PKGBUILDDIR»/source/utilities_basic'
+make[5]: Nothing to be done for `check'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/utilities_basic'
+Making check in utilities_cht
+make[5]: Entering directory `/«PKGBUILDDIR»/source/utilities_cht'
+make[5]: Nothing to be done for `check'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/utilities_cht'
+Making check in .
+make[5]: Entering directory `/«PKGBUILDDIR»/source'
+make[5]: Nothing to be done for `check-am'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source'
+Making check in tddft
+make[5]: Entering directory `/«PKGBUILDDIR»/source/tddft'
+make[5]: Nothing to be done for `check'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/tddft'
+Making check in test
+make[5]: Entering directory `/«PKGBUILDDIR»/source/test'
+make  check-TESTS
+make[6]: Entering directory `/«PKGBUILDDIR»/source/test'
+machine_epsilon = 2.22045e-16 Run with env VERBOSE for more info.
+Basic math functions test succeeded.
+PASS: basicmath_test
+machine_epsilon = 2.22045e-16 Run with env VERBOSE for more info.
+LAPACK test succeeded.
+PASS: lapack_test
+Default number of threads: 4
+Grid generation 500 times succeeded.
+PASS: grid_test
+PASS: stream_test
+ XC GC2   LDA/SVWN5 test OK
+ XC Turbo LDA/SVWN5 test OK
+ XC LMG   LDA/SVWN5 test OK
+ XC LMG   GGA/BP86 test OK
+ XC Turbo GGA/BP86 test OK
+ XC LMG   LDA/Combine Slater=1 PZ81=1 test OK
+ XC LMG   GGA/BLYP test OK
+PASS: xcmat_test
+Sparse XC BLYP       (grid std ) test OK
+Sparse XC SVWN5      (grid std ) test OK
+Sparse XC BLYP       (grid HiCu) test OK
+Sparse XC SVWN5      (grid HiCu) test OK
+Success: YES
+PASS: xcmat_sparse_test
+ XC Turbo GGA/LB94 simple inf/nan test OK
+ XC Turbo GGA/PW91X simple inf/nan test OK
+ XC Turbo GGA/Pbex simple inf/nan test OK
+ XC Turbo LDA/Slater simple inf/nan test OK
+ XC Turbo GGA/B3LYP simple inf/nan test OK
+ XC Turbo GGA/B3LYP-G simple inf/nan test OK
+ XC Turbo GGA/B3P86 simple inf/nan test OK
+ XC Turbo GGA/B3P86-G simple inf/nan test OK
+ XC Turbo GGA/B3PW91 simple inf/nan test OK
+ XC Turbo GGA/BLYP simple inf/nan test OK
+ XC Turbo GGA/BP86 simple inf/nan test OK
+ XC Turbo GGA/BPW91 simple inf/nan test OK
+ XC Turbo GGA/Camb3lyp simple inf/nan test OK
+ XC Turbo GGA/HSE simple inf/nan test OK
+ XC Turbo GGA/KT1 simple inf/nan test OK
+ XC Turbo GGA/KT2 simple inf/nan test OK
+ XC Turbo GGA/KT3 simple inf/nan test OK
+ XC Turbo LDA/LDA simple inf/nan test OK
+ XC Turbo GGA/OLYP simple inf/nan test OK
+ XC Turbo GGA/PBE0 simple inf/nan test OK
+ XC Turbo GGA/PBE simple inf/nan test OK
+ XC Turbo LDA/SVWN3 simple inf/nan test OK
+ XC Turbo LDA/SVWN5 simple inf/nan test OK
+PASS: xcmat_nan_inf_test
+T test succeeded.
+PASS: tmat_test
+Skipping Chunks&Tasks overlap matrix creation test since USE_CHUNKS_AND_TASKS macro not defined.
+PASS: cht_overlapmat_test
+Skipping Chunks&Tasks overlap matrix creation test since USE_CHUNKS_AND_TASKS macro not defined.
+PASS: cht_overlapmat_distr_test
+diff =          0.00020431877
+S vs V comparison test OK.
+maxAbsDiff =      0.000000001432081
+maxAbsDiff2 =      0.000000001432081
+test_V_by_explicit_comparison OK.
+test_V_by_explicit_comparison_tight test repeated, 100 times, errorCount = 0
+V matrix tests OK.
+PASS: vmat_test
+A2 = 1.0 * A * A operation took          0.007 wall seconds.
+inch operation took                      0.005 wall seconds.
+X = transpose(Z) * X * Z operation took  0.003 wall seconds.
+mat_thread_test finished OK.
+PASS: mat_thread_test
+n = 50
+blockSize_min = 12
+blockSize_max = 32
+blockSize_step = 2
+C = A * B operation using blockSize      12 took      0.00011 wall seconds.
+C = A * B operation using blockSize      14 took      0.00007 wall seconds.
+C = A * B operation using blockSize      16 took      0.00007 wall seconds.
+C = A * B operation using blockSize      18 took      0.00006 wall seconds.
+C = A * B operation using blockSize      20 took      0.00006 wall seconds.
+C = A * B operation using blockSize      22 took      0.00006 wall seconds.
+C = A * B operation using blockSize      24 took      0.00006 wall seconds.
+C = A * B operation using blockSize      26 took      0.00005 wall seconds.
+C = A * B operation using blockSize      28 took      0.00005 wall seconds.
+C = A * B operation using blockSize      30 took      0.00005 wall seconds.
+C = A * B operation using blockSize      32 took      0.00005 wall seconds.
+mat_performance_test finished OK.
+PASS: mat_performance_test
+J test OK, diffNorm = 1.867e-06
+PASS: jmat_test
+Scan result:
+1.3335e-08 5.5697e-06 1.9085e-06 8.0484e-07
+1.7783e-08 8.6979e-06 3.2486e-06 1.0667e-06
+2.3714e-08 1.4644e-05 5.8201e-06 1.7157e-06
+3.1623e-08 2.1293e-05 7.7484e-06 2.0547e-06
+J extrapolate test OK
+PASS: jmat_extrapolate_test
+K test OK, diffNorm = 2.073e-07
+PASS: kmat_test
+K test OK, maxabsdiff_explicitcheck = 3.846e-08
+PASS: kmat_symm_test
+K nosymm test OK, maxabsdiff_explicitcheck = 3.916e-08
+PASS: kmat_nosymm_test
+machine_epsilon = 2.2204e-16, using h = 2.2204e-12
+try_integral_diffs finished OK, count = 560.
+PASS: explicit_integral_test
+Matrix mem usage test OK
+PASS: matmem_test
+mmul_simple_test start, matrix size n =    500, do_naive_mmul_comparison = 1.
+random matrices A and B generated OK.
+do_naive_mmul took    0.136 wall seconds.
+verify_mmul_result, verified 212 elements, maxabsdiff = 0
+BLAS gemm call took    0.022 wall seconds.
+Max abs diff (elementwise) between naive and BLAS gemm results: 3.41e-13
+verify_mmul_result, verified 250 elements, maxabsdiff = 2.13163e-13
+BLAS gemm call took    0.022 wall seconds.
+Max abs diff (elementwise) between naive and BLAS gemm results: 3.41e-13
+verify_mmul_result, verified 251 elements, maxabsdiff = 1.98952e-13
+mmul_simple_test finished OK.
+PASS: mmul_simple_test
+mmul_simple_many_test start, m =    10, matrix size n =    500.
+random matrix lists A and B generated OK.
+do_naive_mmul took    1.344 wall seconds.
+BLAS gemm call took    0.211 wall seconds.
+Max abs diff (elementwise) between naive and BLAS gemm results: 3.55e-13
+BLAS gemm call took    0.204 wall seconds.
+Max abs diff (elementwise) between naive and BLAS gemm results:      0
+mmul_simple_many_test finished OK.
+PASS: mmul_simple_many_test
+mmul_simple_test start, matrix sizes n =    500, m =    500, p =    500.
+random matrices A and B generated OK.
+do_naive_mmul took    0.128 wall seconds.
+verify_mmul_result, verified 212 elements, maxabsdiff = 0
+BLAS gemm call took    0.023 wall seconds.
+Max abs diff (elementwise) between naive and BLAS gemm results: 3.41e-13
+verify_mmul_result, verified 250 elements, maxabsdiff = 2.13163e-13
+BLAS gemm call took    0.022 wall seconds.
+Max abs diff (elementwise) between naive and BLAS gemm results: 3.41e-13
+verify_mmul_result, verified 251 elements, maxabsdiff = 1.98952e-13
+mmul_simple_test finished OK.
+PASS: mmul_rectangular_test
+===================
+All 23 tests passed
+===================
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/test'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/test'
+make[4]: Leaving directory `/«PKGBUILDDIR»/source'
+make[3]: Leaving directory `/«PKGBUILDDIR»/source'
+Making check in basis
+make[3]: Entering directory `/«PKGBUILDDIR»/basis'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/basis'
+Making check in params
+make[3]: Entering directory `/«PKGBUILDDIR»/params'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/params'
+Making check in mol
+make[3]: Entering directory `/«PKGBUILDDIR»/mol'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/mol'
+Making check in test
+make[3]: Entering directory `/«PKGBUILDDIR»/test'
+make  check-TESTS
+make[4]: Entering directory `/«PKGBUILDDIR»/test'
+
+Testing H2 HF/6-311++Gss followed by TDHF electron dynamics
+Inline main molecule with 2 atoms.
+computed     -1.132507430
+reference    -1.132507400
+Energy OK
+computed     -0.000000009
+reference     0.000000000
+Dipole value at time 0 OK
+computed     -0.108469551
+reference    -0.108660000
+Dipole value at time 14 OK
+computed     -0.138050427
+reference    -0.141730000
+Dipole value at time 21 OK
+computed     -0.074787991
+reference    -0.085040000
+Dipole value at time 28 OK
+computed      0.342383899
+reference     0.340160000
+Dipole value at time 45 OK
+computed      0.377960469
+reference     0.373230000
+Dipole value at time 49 OK
+computed      0.325377425
+reference     0.340160000
+Dipole value at time 54 OK
+computed     -0.471931908
+reference    -0.477170000
+Dipole value at time 75 OK
+computed     -0.497907938
+reference    -0.500790000
+Dipole value at time 79 OK
+computed     -0.455967084
+reference    -0.462990000
+Dipole value at time 83 OK
+computed      0.464051827
+reference     0.444090000
+Dipole value at time 105 OK
+computed      0.481477753
+reference     0.477170000
+Dipole value at time 107 OK
+computed      0.459144369
+reference     0.453540000
+Dipole value at time 110 OK
+computed      0.485466901
+reference     0.481890000
+Dipole value at time 114 OK
+computed      0.447804314
+reference     0.434650000
+Dipole value at time 116 OK
+
+TDHF-dynamics tests completed successfully!
+
+PASS: test_tdhf_dynamics.sh
+
+Testing H UHF STO-3G
+computed     -0.466581855
+reference    -0.466581900
+OK
+Testing H UHF 6-31G**
+computed     -0.498232518
+reference    -0.498232900
+OK
+Testing H2[+] UHF STO-3G
+computed     -0.538511301
+reference    -0.538511300
+OK
+Testing h2o HF 6-31G**
+computed    -76.022640894
+reference   -76.022643100
+OK
+Testing Be[-] UHF STO-2G
+computed    -13.662578151
+reference   -13.662579200
+OK
+Testing Be[-] UHF 6-31G*
+computed    -14.493898166
+reference   -14.493903900
+OK
+
+Low accuracy tests completed successfully!
+
+PASS: test_lowacc.sh
+
+Testing h2o B3LYP/6-31G** using g03-style B3LYP
+computed    -76.418054212
+reference   -76.418048700
+OK
+Testing cnof B3LYP/6-31G using g03-style B3LYP
+computed   -265.391322538
+reference  -265.391329000
+OK
+Testing nh3[+] UB3LYP/6-31G** using g03-style B3LYP
+computed    -56.163583557
+reference   -56.163575000
+OK
+computed      0.752351760
+reference     0.752352000
+OK
+
+Hybrid DFT tests completed successfully!
+
+PASS: test_dft_hybrid.sh
+
+Testing cnof BLYP/STO-2G
+computed   -253.073104481
+reference  -253.073095400
+OK
+Testing h2o BLYP/6-31G**
+computed    -76.396253202
+reference   -76.396247000
+OK
+Testing cnof BLYP/6-31G
+computed   -265.352225112
+reference  -265.352229094
+OK
+Testing nh3[+] UBLYP/6-31G**
+computed    -56.138236791
+reference   -56.138227200
+OK
+computed      0.752002207
+reference     0.752002000
+OK
+
+Pure DFT tests completed successfully!
+
+PASS: test_dft_pure.sh
+
+Testing twisted h2o BLYP/6-31G** with HiCu grid
+computed    -76.347433146
+reference   -76.347465600
+OK
+Testing H4 BHandHLYP/cc-pVDZ with HiCu grid
+computed     -0.261445007
+reference    -0.261429400
+OK
+Testing H2 BPW91/cc-pVTZ with HiCu grid
+computed     -0.704247412
+reference    -0.704259300
+OK
+Testing c2h8 LDA/4-31G with sparse XC and HiCu grid
+computed    -80.097355915
+reference   -80.097373423
+OK
+
+DFT HiCu grid tests completed successfully!
+
+PASS: test_dft_hicu.sh
+
+Testing c2h8 LDA/6-31G*
+computed    -80.097376765
+reference   -80.097373423
+OK
+Testing h2o BLYP/6-31G**
+computed    -76.396253202
+reference   -76.396247000
+OK
+
+Sparse DFT tests completed successfully!
+
+PASS: test_dft_sparse.sh
+
+Testing cnof BHANDHLYP/6-31G
+computed   -265.266735806
+reference  -265.266739400
+Energy OK
+computed      0.010086800
+reference     0.010101500
+Dipole X OK
+computed     -0.016956000
+reference    -0.016942400
+Dipole Y OK
+computed     -0.503510800
+reference    -0.503515700
+Dipole Z OK
+computed     -0.068199800
+reference    -0.068157000
+Mulliken charge OK
+computed      0.579865400
+reference     0.579839000
+Mulliken charge OK
+computed     -0.321492100
+reference    -0.321502000
+Mulliken charge OK
+computed     -0.190173500
+reference    -0.190181000
+Mulliken charge OK
+Testing nh3-triplet BHANDHLYP/6-31G**
+computed    -56.244489193
+reference   -56.244485400
+OK
+computed      2.001894127
+reference     2.001894000
+OK
+computed     -0.069203000
+reference    -0.069211200
+Dipole X OK
+computed     -0.106022800
+reference    -0.106011100
+Dipole Y OK
+computed     -0.051484600
+reference    -0.051525700
+Dipole Z OK
+computed      0.087433500
+reference     0.087443000
+Mulliken charge OK
+computed     -0.029128500
+reference    -0.029146000
+Mulliken charge OK
+computed     -0.029148900
+reference    -0.029148000
+Mulliken charge OK
+computed     -0.029156100
+reference    -0.029149000
+Mulliken charge OK
+computed      0.744608500
+reference     0.744599000
+Mulliken spin density OK
+computed      0.418440900
+reference     0.418462000
+Mulliken spin density OK
+computed      0.418477100
+reference     0.418473000
+Mulliken spin density OK
+computed      0.418473500
+reference     0.418465000
+Mulliken spin density OK
+
+Dipole moment and Mulliken pop tests completed successfully!
+
+PASS: test_dipole_moment.sh
+
+Testing cnof HF/STO-3G, no field
+computed   -260.048429469
+reference  -260.048429600
+OK
+Testing cnof HF/STO-3G, field in X direction
+computed   -260.052282132
+reference  -260.052282300
+OK
+Testing cnof HF/STO-3G, field in Y direction
+computed   -260.044512598
+reference  -260.044512700
+OK
+Testing cnof HF/STO-3G, field in Z direction
+computed   -260.049829286
+reference  -260.049829400
+OK
+
+External electric field tests completed successfully!
+
+PASS: test_ext_elec_field.sh
+
+Testing H2 HF/cc-pVTZ with one of the H atoms given as extra charge
+computed     -2.121661189
+reference    -2.121661189
+OK
+
+Testing two-h2o PBE0/3-21G with one of the molecules given as extra charges
+computed   -186.359128100
+reference  -186.359112090
+OK
+
+extra-charges tests completed successfully!
+
+PASS: test_extracharges.sh
+
+Testing four_h2o HF/6-31G using FMM
+computed   -303.760652168
+reference  -303.760652100
+OK
+Testing four_h2o HF/6-31G* using FMM
+computed   -303.835270364
+reference  -303.835270400
+OK
+
+FMM tests completed successfully!
+
+PASS: test_fmm.sh
+
+Testing four_h2o B3LYP/6-31G using FMM and g03-style B3LYP
+computed   -305.389363916
+reference  -305.389359800
+OK
+
+FMM B3LYP tests completed successfully!
+
+PASS: test_fmm_b3lyp.sh
+
+Testing four_h2o CAMB3LYP/6-31G using FMM
+computed   -305.279056048
+reference  -305.279060700
+OK
+Testing cnof CAMB3LYP/6-31G using FMM
+computed   -265.311289973
+reference  -265.311290620
+OK
+Testing h2o CAMB3LYP/cc-pVDZ using FMM
+computed    -76.391781792
+reference   -76.391777086
+OK
+
+FMM CAMB3LYP tests completed successfully!
+
+PASS: test_fmm_camb3lyp.sh
+
+Testing h2o HF/6-31G** with extra basis funcs from ghost molecule
+computed    -76.025973510
+reference   -76.025973506
+OK
+
+Ghost-molecule tests completed successfully!
+
+PASS: test_ghost.sh
+
+Testing h2 with bond distance 1 au, HF/STO-3G
+computed     -1.065999459
+reference    -1.065999500
+OK
+Testing h2o HF/6-31G**
+computed    -76.022643114
+reference   -76.022643100
+OK
+Testing h2o HF/6-31++G**
+computed    -76.030489134
+reference   -76.030489100
+OK
+Testing h2o HF/cc-pVTZ
+computed    -76.057163033
+reference   -76.057163000
+OK
+Testing cnof HF/6-31G
+computed   -264.054267894
+reference  -264.054268200
+OK
+Testing nh3[+] UHF/6-31G**
+computed    -55.854623576
+reference   -55.854623500
+OK
+computed      0.757013227
+reference     0.757013000
+OK
+
+Hartree-Fock tests completed successfully!
+
+PASS: test_hf.sh
+
+Testing h2o HF/6-31G** with 6 d-functions
+computed    -76.023158691
+reference   -76.023158700
+OK
+Testing h2o HF/6-31++G** with 6 d-functions
+computed    -76.030771898
+reference   -76.030771900
+OK
+Testing nh3[+] UHF/6-31G** with 6 d-functions
+computed    -55.854792516
+reference   -55.854792400
+OK
+computed      0.757024841
+reference     0.757025000
+OK
+
+6-d-function tests completed successfully!
+
+PASS: test_6_d_funcs.sh
+
+Testing h2o HF/6-31G** with matrix blocksize = 1
+computed    -76.022643114
+reference   -76.022643100
+OK
+Testing cnof HF/6-31G with matrix blocksize = 1
+computed   -264.054267894
+reference  -264.054268200
+OK
+Testing nh3[+] UHF/6-31G** with matrix blocksize = 1
+computed    -55.854623576
+reference   -55.854623500
+OK
+computed      0.757013227
+reference     0.757013000
+OK
+
+Block size 1 tests completed successfully!
+
+PASS: test_hf_blsz1.sh
+
+Testing h2o HF/6-31G** with matrix blocksize = 2
+computed    -76.022643114
+reference   -76.022643100
+OK
+Testing cnof HF/6-31G with matrix blocksize = 2
+computed   -264.054267894
+reference  -264.054268200
+OK
+Testing nh3[+] UHF/6-31G** with matrix blocksize = 2
+computed    -55.854623576
+reference   -55.854623500
+OK
+computed      0.757013227
+reference     0.757013000
+OK
+
+Block size 2 tests completed successfully!
+
+PASS: test_hf_blsz2.sh
+
+Testing h2o HF/Ahlrichs-VTZ with Fermi-Dirac smearing at T=20000K
+computed    -76.008385779
+reference   -76.008385440
+OK
+Testing cnof HF/6-31G with Fermi-Dirac smearing at T=20000K
+computed   -264.029586865
+reference  -264.029586180
+OK
+
+Hartree-Fock Fermi-Dirac T tests completed successfully!
+
+PASS: test_hf_fd.sh
+
+Testing CO PBE/6-31Gss
+Inline main molecule with 2 atoms.
+Step  1: ssize:   8 |r|=     0.203653 shift=  0.296593
+Step  2: ssize:  16 |r|=    0.0429662 shift=  0.282297
+Step  3: ssize:  24 |r|=    0.0082135 shift=  0.281877
+Step  4: ssize:  32 |r|=  0.000828507 shift=  0.281849
+Step  5: ssize:  40 |r|=  4.57534e-05 shift=  0.281849
+Step  6: ssize:  48 |r|=  0.000679423 shift=  0.323975
+Step  7: ssize:  50 |r|=  2.74201e-05 shift=  0.323975
+STATE 1 TRANSITION MOMENT:             -0.08012 ENERGY             7.669318 eV
+STATE 2 TRANSITION MOMENT:             0.476693 ENERGY             7.669318 eV
+STATE 3 TRANSITION MOMENT:          2.98276e-15 ENERGY             8.420662 eV
+STATE 4 TRANSITION MOMENT:         -3.99884e-16 ENERGY             8.815585 eV
+STATE 1 TRANSITION MOMENT:             0.478123 ENERGY             7.669318 eV
+STATE 2 TRANSITION MOMENT:            0.0882306 ENERGY             7.669318 eV
+STATE 3 TRANSITION MOMENT:           4.8203e-15 ENERGY             8.420662 eV
+STATE 4 TRANSITION MOMENT:          -1.6767e-15 ENERGY             8.815585 eV
+STATE 1 TRANSITION MOMENT:          1.26586e-15 ENERGY             7.669318 eV
+STATE 2 TRANSITION MOMENT:         -6.86986e-17 ENERGY             7.669318 eV
+STATE 3 TRANSITION MOMENT:          1.36225e-07 ENERGY             8.420662 eV
+STATE 4 TRANSITION MOMENT:         -1.05917e-07 ENERGY             8.815585 eV
+Eigenvalue  1:     0.281848988 Tran.Mom.:     0.484789256
+Eigenvalue  2:     0.281848988 Tran.Mom.:     0.484789256
+Eigenvalue  3:     0.309461005 Tran.Mom.:  1.36224975e-07
+Eigenvalue  4:     0.323974518 Tran.Mom.:  1.05916908e-07
+
+computed   -113.172411039
+reference  -113.172417359
+Energy OK
+computed      0.281848988
+reference     0.281814700
+Eigenvalue 1 OK
+computed      0.281848988
+reference     0.281814700
+Eigenvalue 2 OK
+computed      0.309461005
+reference     0.309447904
+Eigenvalue 3 OK
+
+Pure TD-DFT tests completed successfully!
+
+PASS: test_lr_exc.sh
+
+Testing CNOF HF/STO-2G
+Inline main molecule with 4 atoms.
+Step  1: ssize:   8 |r|=     0.179368 shift=  0.131918
+Step  2: ssize:  16 |r|=     0.044901 shift=  0.114581
+Step  3: ssize:  24 |r|=   0.00853825 shift=  0.113678
+Step  4: ssize:  32 |r|=   0.00237298 shift=  0.113642
+Step  5: ssize:  40 |r|=  0.000390658 shift=  0.113641
+Step  6: ssize:  48 |r|=  5.06271e-05 shift=  0.113641
+Step  7: ssize:  56 |r|=  5.10004e-05 shift=  0.239561
+Step  8: ssize:  62 |r|=  2.34438e-05 shift=  0.313192
+Step  9: ssize:  66 |r|=  2.34496e-05 shift=  0.378067
+STATE 1 TRANSITION MOMENT:             0.132348 ENERGY             3.092263 eV
+STATE 2 TRANSITION MOMENT:             0.246215 ENERGY             6.518643 eV
+STATE 3 TRANSITION MOMENT:            -0.219893 ENERGY             8.522195 eV
+STATE 4 TRANSITION MOMENT:             0.394737 ENERGY            10.287478 eV
+STATE 1 TRANSITION MOMENT:            -0.183985 ENERGY             3.092263 eV
+STATE 2 TRANSITION MOMENT:            0.0709556 ENERGY             6.518643 eV
+STATE 3 TRANSITION MOMENT:            -0.144949 ENERGY             8.522195 eV
+STATE 4 TRANSITION MOMENT:            0.0830352 ENERGY            10.287478 eV
+STATE 1 TRANSITION MOMENT:            0.0275899 ENERGY             3.092263 eV
+STATE 2 TRANSITION MOMENT:            -0.110648 ENERGY             6.518643 eV
+STATE 3 TRANSITION MOMENT:             0.213145 ENERGY             8.522195 eV
+STATE 4 TRANSITION MOMENT:              0.42368 ENERGY            10.287478 eV
+Eigenvalue  1:     0.113641288 Tran.Mom.:     0.228314985
+Eigenvalue  2:     0.239561431 Tran.Mom.:     0.279104885
+Eigenvalue  3:     0.313192384 Tran.Mom.:     0.338813081
+Eigenvalue  4:     0.378066892 Tran.Mom.:     0.584993537
+computed   -252.028041451
+reference  -252.028041455
+Energy OK
+computed      0.113641288
+reference     0.113641340
+Eigenvalue 1 OK
+computed      0.239561431
+reference     0.239561530
+Eigenvalue 2 OK
+computed      0.313192384
+reference     0.313192480
+Eigenvalue 3 OK
+
+TD-HF tests completed successfully!
+
+PASS: test_lr_exc_hf.sh
+
+Testing CO SVWN5/4-31G polarizability
+Inline main molecule with 4 atoms.
+Step  1: ssize:   2 |r|=     0.665646 shift=  0.000000
+Step  2: ssize:   4 |r|=    0.0353372 shift=  0.000000
+Step  3: ssize:   6 |r|=   0.00129968 shift=  0.000000
+Step  4: ssize:   8 |r|=  9.22839e-05 shift=  0.000000
+Response << X | X >> at freq     0.000000000:    -7.877236203
+Response << Y | X >> at freq     0.000000000: 8.691014969e-14
+Response << Z | X >> at freq     0.000000000: 4.245129935e-14
+Step  1: ssize:   2 |r|=     0.683934 shift=  0.000000
+Step  2: ssize:   4 |r|=     0.188612 shift=  0.000000
+Step  3: ssize:   6 |r|=    0.0206612 shift=  0.000000
+Step  4: ssize:   8 |r|=  0.000508812 shift=  0.000000
+Step  5: ssize:  10 |r|=  3.88773e-05 shift=  0.000000
+Response << X | Y >> at freq     0.000000000: 1.320705406e-13
+Response << Y | Y >> at freq     0.000000000:    -7.936293526
+Response << Z | Y >> at freq     0.000000000:    0.2016009547
+Step  1: ssize:   2 |r|=     0.125831 shift=  0.000000
+Step  2: ssize:   4 |r|=    0.0534551 shift=  0.000000
+Step  3: ssize:   6 |r|=   0.00714745 shift=  0.000000
+Step  4: ssize:   8 |r|=  0.000178387 shift=  0.000000
+Step  5: ssize:  10 |r|=  2.50874e-05 shift=  0.000000
+Response << X | Z >> at freq     0.000000000:  2.68550428e-12
+Response << Y | Z >> at freq     0.000000000:    0.2016010497
+Response << Z | Z >> at freq     0.000000000:    -2.458870529
+Step  1: ssize:   2 |r|=      1.05538 shift=  0.200000
+Step  2: ssize:   4 |r|=    0.0871235 shift=  0.200000
+Step  3: ssize:   6 |r|=   0.00750815 shift=  0.200000
+Step  4: ssize:   8 |r|=  0.000760225 shift=  0.200000
+Step  5: ssize:  10 |r|=  8.60762e-05 shift=  0.200000
+Step  6: ssize:  12 |r|=  1.02508e-05 shift=  0.200000
+Response << X | X >> at freq     0.200000000:    -8.774082774
+Response << Y | X >> at freq     0.200000000: -4.564348189e-13
+Response << Z | X >> at freq     0.200000000: 1.799941927e-14
+Step  1: ssize:   2 |r|=      1.12037 shift=  0.200000
+Step  2: ssize:   4 |r|=     0.304967 shift=  0.200000
+Step  3: ssize:   6 |r|=    0.0441749 shift=  0.200000
+Step  4: ssize:   8 |r|=   0.00474827 shift=  0.200000
+Step  5: ssize:  10 |r|=   0.00141248 shift=  0.200000
+Step  6: ssize:  12 |r|=  0.000547612 shift=  0.200000
+Step  7: ssize:  14 |r|=  7.72445e-05 shift=  0.200000
+Response << X | Y >> at freq     0.200000000: -4.336981774e-14
+Response << Y | Y >> at freq     0.200000000:    -8.880467471
+Response << Z | Y >> at freq     0.200000000:    0.2234719348
+Step  1: ssize:   2 |r|=      1.70255 shift=  0.200000
+Step  2: ssize:   4 |r|=     0.129137 shift=  0.200000
+Step  3: ssize:   6 |r|=     0.030532 shift=  0.200000
+Step  4: ssize:   8 |r|=   0.00885443 shift=  0.200000
+Step  5: ssize:  10 |r|=  0.000751002 shift=  0.200000
+Step  6: ssize:  12 |r|=  0.000214355 shift=  0.200000
+Step  7: ssize:  14 |r|=  4.44382e-05 shift=  0.200000
+Response << X | Z >> at freq     0.200000000: -3.942930299e-15
+Response << Y | Z >> at freq     0.200000000:    0.2234696162
+Response << Z | Z >> at freq     0.200000000:    -2.849382703
+
+computed    -55.985633367
+reference   -55.985633009
+Energy OK
+Polarisability X X at frequency 0.0 OK
+Polarisability Y X at frequency 0.0 OK
+Polarisability Z X at frequency 0.0 OK
+Polarisability X Y at frequency 0.0 OK
+Polarisability Y Y at frequency 0.0 OK
+Polarisability Z Y at frequency 0.0 OK
+Polarisability X Z at frequency 0.0 OK
+Polarisability Y Z at frequency 0.0 OK
+Polarisability Z Z at frequency 0.0 OK
+Polarisability X X at frequency 0.2 OK
+Polarisability Y X at frequency 0.2 OK
+Polarisability Z X at frequency 0.2 OK
+Polarisability X Y at frequency 0.2 OK
+Polarisability Y Y at frequency 0.2 OK
+Polarisability Z Y at frequency 0.2 OK
+Polarisability X Z at frequency 0.2 OK
+Polarisability Y Z at frequency 0.2 OK
+Polarisability Z Z at frequency 0.2 OK
+Testing HF CAM-B3LYP/aug-cc-pVDZ polarizability
+Inline main molecule with 2 atoms.
+Step  1: ssize:   2 |r|=     0.773554 shift=  0.000000
+Step  2: ssize:   4 |r|=     0.195947 shift=  0.000000
+Step  3: ssize:   6 |r|=    0.0167043 shift=  0.000000
+Step  4: ssize:   8 |r|=   0.00223267 shift=  0.000000
+Step  5: ssize:  10 |r|=  0.000285376 shift=  0.000000
+Step  6: ssize:  12 |r|=  1.62208e-05 shift=  0.000000
+Response << X | X >> at freq     0.000000000:    -4.458511951
+Response << Y | X >> at freq     0.000000000:  7.26851432e-15
+Response << Z | X >> at freq     0.000000000: 5.535870415e-13
+Step  1: ssize:   2 |r|=     0.773554 shift=  0.000000
+Step  2: ssize:   4 |r|=     0.195947 shift=  0.000000
+Step  3: ssize:   6 |r|=    0.0167043 shift=  0.000000
+Step  4: ssize:   8 |r|=   0.00223267 shift=  0.000000
+Step  5: ssize:  10 |r|=  0.000285376 shift=  0.000000
+Step  6: ssize:  12 |r|=  1.62208e-05 shift=  0.000000
+Response << X | Y >> at freq     0.000000000: 7.533225109e-15
+Response << Y | Y >> at freq     0.000000000:    -4.458511951
+Response << Z | Y >> at freq     0.000000000: 7.198864742e-14
+Step  1: ssize:   2 |r|=       1.7161 shift=  0.000000
+Step  2: ssize:   4 |r|=     0.476422 shift=  0.000000
+Step  3: ssize:   6 |r|=    0.0973386 shift=  0.000000
+Step  4: ssize:   8 |r|=   0.00800128 shift=  0.000000
+Step  5: ssize:  10 |r|=  0.000902639 shift=  0.000000
+Step  6: ssize:  12 |r|=  5.64239e-05 shift=  0.000000
+Response << X | Z >> at freq     0.000000000: -6.348210531e-16
+Response << Y | Z >> at freq     0.000000000: -1.471613152e-15
+Response << Z | Z >> at freq     0.000000000:    -6.444213289
+Step  1: ssize:   2 |r|=      1.18922 shift=  0.100000
+Step  2: ssize:   4 |r|=       0.2247 shift=  0.100000
+Step  3: ssize:   6 |r|=    0.0201179 shift=  0.100000
+Step  4: ssize:   8 |r|=   0.00200545 shift=  0.100000
+Step  5: ssize:  10 |r|=  0.000281116 shift=  0.100000
+Step  6: ssize:  12 |r|=  4.22725e-05 shift=  0.100000
+Response << X | X >> at freq     0.100000000:    -4.583028294
+Response << Y | X >> at freq     0.100000000: -2.593100374e-14
+Response << Z | X >> at freq     0.100000000:  1.10862094e-12
+Step  1: ssize:   2 |r|=      1.18922 shift=  0.100000
+Step  2: ssize:   4 |r|=       0.2247 shift=  0.100000
+Step  3: ssize:   6 |r|=    0.0201179 shift=  0.100000
+Step  4: ssize:   8 |r|=   0.00200545 shift=  0.100000
+Step  5: ssize:  10 |r|=  0.000281116 shift=  0.100000
+Step  6: ssize:  12 |r|=  4.22725e-05 shift=  0.100000
+Response << X | Y >> at freq     0.100000000: -2.627070056e-14
+Response << Y | Y >> at freq     0.100000000:    -4.583028294
+Response << Z | Y >> at freq     0.100000000: -1.13194749e-12
+Step  1: ssize:   2 |r|=      2.01393 shift=  0.100000
+Step  2: ssize:   4 |r|=     0.346064 shift=  0.100000
+Step  3: ssize:   6 |r|=    0.0285336 shift=  0.100000
+Step  4: ssize:   8 |r|=   0.00521687 shift=  0.100000
+Step  5: ssize:  10 |r|=  0.000647897 shift=  0.100000
+Step  6: ssize:  12 |r|=  7.11544e-05 shift=  0.100000
+Response << X | Z >> at freq     0.100000000: -3.206195095e-16
+Response << Y | Z >> at freq     0.100000000:    4.527026e-16
+Response << Z | Z >> at freq     0.100000000:    -6.584667899
+
+computed   -100.435402198
+reference  -100.435400640
+Energy OK
+Polarisability X X at frequency 0.000000000 OK
+Polarisability Y X at frequency 0.000000000 OK
+Polarisability Z X at frequency 0.000000000 OK
+Polarisability X Y at frequency 0.000000000 OK
+Polarisability Y Y at frequency 0.000000000 OK
+Polarisability Z Y at frequency 0.000000000 OK
+Polarisability X Z at frequency 0.000000000 OK
+Polarisability Y Z at frequency 0.000000000 OK
+Polarisability Z Z at frequency 0.000000000 OK
+Polarisability X X at frequency 0.100000000 OK
+Polarisability Y X at frequency 0.100000000 OK
+Polarisability Z X at frequency 0.100000000 OK
+Polarisability X Y at frequency 0.100000000 OK
+Polarisability Y Y at frequency 0.100000000 OK
+Polarisability Z Y at frequency 0.100000000 OK
+Polarisability X Z at frequency 0.100000000 OK
+Polarisability Y Z at frequency 0.100000000 OK
+Polarisability Z Z at frequency 0.100000000 OK
+
+LR polarizability tests completed successfully!
+
+PASS: test_lr_pol.sh
+
+Testing three h2o with HF and mixed basis 6-31G 6-31G* 6-31G**
+Inline main molecule with 9 atoms.
+Assigning range MAIN 0 [0:2] = 6-31G
+Assigning range MAIN 1 [3:5] = 6-31Gs
+computed   -228.016771306
+reference  -228.016771000
+OK
+
+Mixed basis set tests completed successfully!
+
+PASS: test_mixedbasis.sh
+
+Testing Li ROHF 3-21G
+computed     -7.381510983
+reference    -7.381510983
+OK
+Testing O2 SVWN5/6-31Gss
+computed   -149.250773842
+reference  -149.250773843
+OK
+Testing H2O[+] B3LYP/6-31Gss
+computed    -75.860561653
+reference   -75.860561961
+OK
+
+Restricted Open-shell tests completed successfully!
+
+PASS: test_roks.sh
+
+Testing H UHF STO-3G
+computed     -0.466581855
+reference    -0.466581900
+OK
+Testing H UHF 6-31G**
+computed     -0.498232911
+reference    -0.498232900
+OK
+Testing H2[+] UHF STO-3G
+computed     -0.538511345
+reference    -0.538511300
+OK
+Testing Be[-] UHF STO-2G
+computed    -13.662578159
+reference   -13.662579200
+OK
+Testing Be[-] UHF 6-31G*
+computed    -14.493903834
+reference   -14.493903900
+OK
+computed      0.752685357
+reference     0.752685000
+OK
+
+Unrestricted Hartree-Fock tests completed successfully!
+
+PASS: test_uhf.sh
+
+Testing h2 FCI 6-31G**
+computed     -0.033869092
+reference    -0.033870000
+OK
+Testing h2o FCI STO-3G
+computed    -75.012425819
+reference   -75.012425800
+OK
+Testing h2o[+] FCI STO-3G
+computed    -74.694771329
+reference   -74.694771300
+OK
+
+Configuration Interaction [CI] tests completed successfully!
+
+PASS: test_ci.sh
+===================
+All 25 tests passed
+===================
+make[4]: Leaving directory `/«PKGBUILDDIR»/test'
+make[3]: Leaving directory `/«PKGBUILDDIR»/test'
+Making check in documentation/source
+make[3]: Entering directory `/«PKGBUILDDIR»/documentation/source'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/documentation/source'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary --with autotools_dev --parallel
+   dh_testroot -O--parallel
+   dh_prep -O--parallel
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_install
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making install in source
+make[3]: Entering directory `/«PKGBUILDDIR»/source'
+make  install-recursive
+make[4]: Entering directory `/«PKGBUILDDIR»/source'
+Making install in basisset
+make[5]: Entering directory `/«PKGBUILDDIR»/source/basisset'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/basisset'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/basisset'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/basisset'
+Making install in ci
+make[5]: Entering directory `/«PKGBUILDDIR»/source/ci'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/ci'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/ci'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/ci'
+Making install in matrix
+make[5]: Entering directory `/«PKGBUILDDIR»/source/matrix'
+Making install in template_lapack
+make[6]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+Making install in blas
+make[7]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack/blas'
+make[8]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack/blas'
+make[8]: Nothing to be done for `install-exec-am'.
+make[8]: Nothing to be done for `install-data-am'.
+make[8]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack/blas'
+make[7]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack/blas'
+Making install in lapack
+make[7]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack/lapack'
+make[8]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack/lapack'
+make[8]: Nothing to be done for `install-exec-am'.
+make[8]: Nothing to be done for `install-data-am'.
+make[8]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack/lapack'
+make[7]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack/lapack'
+make[7]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[8]: Entering directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[8]: Nothing to be done for `install-exec-am'.
+make[8]: Nothing to be done for `install-data-am'.
+make[8]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[7]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/matrix/template_lapack'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/matrix'
+make[7]: Entering directory `/«PKGBUILDDIR»/source/matrix'
+make[7]: Nothing to be done for `install-exec-am'.
+make[7]: Nothing to be done for `install-data-am'.
+make[7]: Leaving directory `/«PKGBUILDDIR»/source/matrix'
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/matrix'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/matrix'
+Making install in densfromf
+make[5]: Entering directory `/«PKGBUILDDIR»/source/densfromf'
+Making install in purification
+make[6]: Entering directory `/«PKGBUILDDIR»/source/densfromf/purification'
+make[7]: Entering directory `/«PKGBUILDDIR»/source/densfromf/purification'
+make[7]: Nothing to be done for `install-exec-am'.
+make[7]: Nothing to be done for `install-data-am'.
+make[7]: Leaving directory `/«PKGBUILDDIR»/source/densfromf/purification'
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/densfromf/purification'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/densfromf'
+make[7]: Entering directory `/«PKGBUILDDIR»/source/densfromf'
+make[7]: Nothing to be done for `install-exec-am'.
+make[7]: Nothing to be done for `install-data-am'.
+make[7]: Leaving directory `/«PKGBUILDDIR»/source/densfromf'
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/densfromf'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/densfromf'
+Making install in dft
+make[5]: Entering directory `/«PKGBUILDDIR»/source/dft'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/dft'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/dft'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/dft'
+Making install in electron_dynamics
+make[5]: Entering directory `/«PKGBUILDDIR»/source/electron_dynamics'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/electron_dynamics'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/electron_dynamics'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/electron_dynamics'
+Making install in integrals
+make[5]: Entering directory `/«PKGBUILDDIR»/source/integrals'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/integrals'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/integrals'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/integrals'
+Making install in scf
+make[5]: Entering directory `/«PKGBUILDDIR»/source/scf'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/scf'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/scf'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/scf'
+Making install in utilities
+make[5]: Entering directory `/«PKGBUILDDIR»/source/utilities'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/utilities'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/utilities'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/utilities'
+Making install in utilities_basic
+make[5]: Entering directory `/«PKGBUILDDIR»/source/utilities_basic'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/utilities_basic'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/utilities_basic'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/utilities_basic'
+Making install in utilities_cht
+make[5]: Entering directory `/«PKGBUILDDIR»/source/utilities_cht'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/utilities_cht'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/utilities_cht'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/utilities_cht'
+Making install in .
+make[5]: Entering directory `/«PKGBUILDDIR»/source'
+make[6]: Entering directory `/«PKGBUILDDIR»/source'
+test -z "/usr/bin" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/ergo/usr/bin"
+  /usr/bin/install -c ergo '/«PKGBUILDDIR»/debian/ergo/usr/bin'
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source'
+Making install in tddft
+make[5]: Entering directory `/«PKGBUILDDIR»/source/tddft'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/tddft'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/tddft'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/tddft'
+Making install in test
+make[5]: Entering directory `/«PKGBUILDDIR»/source/test'
+make[6]: Entering directory `/«PKGBUILDDIR»/source/test'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/source/test'
+make[5]: Leaving directory `/«PKGBUILDDIR»/source/test'
+make[4]: Leaving directory `/«PKGBUILDDIR»/source'
+make[3]: Leaving directory `/«PKGBUILDDIR»/source'
+Making install in basis
+make[3]: Entering directory `/«PKGBUILDDIR»/basis'
+make[4]: Entering directory `/«PKGBUILDDIR»/basis'
+make[4]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/ergo/basis" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/ergo/usr/share/ergo/basis"
+ /usr/bin/install -c -m 644 hybrid-guess-basis 3-21G 3-21++G 4-31G 6-311G 6-31G 6-31Gs 6-31Gss 6-31+G 6-31++G 6-31++Gs 6-31++Gss 6-311++Gss 6-31Gfixed Ahlrichs-Coulomb-Fit AhlrichsDenFit Ahlrichs-pVDZ Ahlrichs-TZV AhlrichsVDZ Ahlrichs-VDZ AhlrichsVTZ Ahlrichs-VTZ Almlof-Taylor-ANO ano-1 ano-2 ano-3 ano-4 ano-5 aug-cc-pCV5Z aug-cc-pCVDZ aug-cc-pCVQZ aug-cc-pCVTZ aug-cc-pCVTZ-CTOCD-uc aug-cc-pV5Z aug-cc-pV6Z aug-cc-pVDZ aug-cc-pVQZ aug-cc-pVTZ aug-cc-pVTZ-J aug-pV7Z '/«PKGBUILDDIR»/debian/ergo/usr/share/ergo/basis'
+ /usr/bin/install -c -m 644 cc-pCV5Z cc-pCVDZ cc-pCVQZ cc-pCVTZ cc-pV(5+d)Z cc-pV5Z cc-pV5Zdenfit cc-pV5Z-DK cc-pV(6+d)Z cc-pV6Z cc-pV(D+d)Z cc-pVDZ cc-pVDZ-DK cc-pV(Q+d)Z cc-pVQZ cc-pVQZdenfit cc-pVQZ-DK cc-pV(T+d)Z cc-pVTZ cc-pVTZdenfit cc-pVTZ-DK cc-pwCV5Z cc-pwCVDZ cc-pwCVQZ cc-pwCVTZ DunningDZ DunningTZ ECP ECP_pseudo ecp-sdd-DZ ecp-sdd-pseudo GAMESS-PVTZ GAMESS-VTZ Huckel Huz-II Huz-III Huz-IIIsu3 Huz-IIsu2 Huz-IV Huz-IVsu4 '/«PKGBUILDDIR»/debian/ergo/usr/share/ergo/basis'
+ /usr/bin/install -c -m 644 japrtano McLean-Chandler-VTZ MIDI NASA-Ames-ANO NQvD pV6Z pV7Z raf-r RoosAugDZANO sad-J sadlej Sadlej-pVTZ Sadlej-pVTZ-J STO-1G STO-2G STO-3G STO-6G Turbomole-DZ Turbomole-DZP Turbomole-QZV Turbomole-QZVP Turbomole-QZVPP Turbomole-SV Turbomole-SVP Turbomole-TZ Turbomole-TZP Turbomole-TZV Turbomole-TZVP Turbomole-TZVPP Turbomole-TZVPPP Wachtersa+f '/«PKGBUILDDIR»/debian/ergo/usr/share/ergo/basis'
+make[4]: Leaving directory `/«PKGBUILDDIR»/basis'
+make[3]: Leaving directory `/«PKGBUILDDIR»/basis'
+Making install in params
+make[3]: Entering directory `/«PKGBUILDDIR»/params'
+make[4]: Entering directory `/«PKGBUILDDIR»/params'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/params'
+make[3]: Leaving directory `/«PKGBUILDDIR»/params'
+Making install in mol
+make[3]: Entering directory `/«PKGBUILDDIR»/mol'
+make[4]: Entering directory `/«PKGBUILDDIR»/mol'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/mol'
+make[3]: Leaving directory `/«PKGBUILDDIR»/mol'
+Making install in test
+make[3]: Entering directory `/«PKGBUILDDIR»/test'
+make[4]: Entering directory `/«PKGBUILDDIR»/test'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/test'
+make[3]: Leaving directory `/«PKGBUILDDIR»/test'
+Making install in documentation/source
+make[3]: Entering directory `/«PKGBUILDDIR»/documentation/source'
+make[4]: Entering directory `/«PKGBUILDDIR»/documentation/source'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/documentation/source'
+make[3]: Leaving directory `/«PKGBUILDDIR»/documentation/source'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[4]: Entering directory `/«PKGBUILDDIR»'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+rm -f /«PKGBUILDDIR»/debian/ergo/usr/bin/test
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs -O--parallel
+   debian/rules override_dh_installchangelogs
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_installchangelogs ergo_release_notes_*.txt
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_perl -O--parallel
+   dh_link -O--parallel
+   dh_compress -O--parallel
+   dh_fixperms -O--parallel
+   dh_strip -O--parallel
+   dh_makeshlibs -O--parallel
+   dh_shlibdeps -O--parallel
+   dh_installdeb -O--parallel
+   dh_gencontrol -O--parallel
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums -O--parallel
+   dh_builddeb -O--parallel
+dpkg-deb: building package `ergo' in `../ergo_3.3.1-2_amd64.deb'.
+ dpkg-genchanges  >../ergo_3.3.1-2_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build ergo-3.3.1
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-1747
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+ergo_3.3.1-2_amd64.changes:
+───────────────────────────
+
+Format: 1.8
+Date: Sat, 26 Oct 2013 11:05:49 +0200
+Source: ergo
+Binary: ergo
+Architecture: source amd64
+Version: 3.3.1-2
+Distribution: sid
+Urgency: low
+Maintainer: Debichem Team <debichem-devel@lists.alioth.debian.org>
+Changed-By: Michael Banck <mbanck@debian.org>
+Description: 
+ ergo       - Quantum chemistry program for large-scale calculations
+Changes: 
+ ergo (3.3.1-2) unstable; urgency=low
+ .
+   * debian/patches/integrals_hermite_mips.patch: New patch, fixes a FTBFS error
+     on mips/mipsel by undefining the R3000 identifier which is already defined
+     on those architectures, by Jurica Stanojkovic.
+Checksums-Sha1: 
+ 0538cb2490c64c657e686582c7c04d2797705550 1065 ergo_3.3.1-2.dsc
+ 6f8c8a64cb920209e312381ba3811cf4b60f2b2a 3360 ergo_3.3.1-2.debian.tar.xz
+ cacc40f6b1f8cfbf548a74757178786265ff247d 1178652 ergo_3.3.1-2_amd64.deb
+Checksums-Sha256: 
+ 6c73f0991ee025ac927c3d42d6b92ce89741148d8ae4ea639fe7a614b2ea10de 1065 ergo_3.3.1-2.dsc
+ f7b8523c7520ea72c541fc9605431c6ef2411f788acecdb7dd6fd51095c14b2e 3360 ergo_3.3.1-2.debian.tar.xz
+ a15ca4847e41cb99728df9ec916527a0fa4aca37e1542a8149c632ed5dd3c962 1178652 ergo_3.3.1-2_amd64.deb
+Files: 
+ 98e68652208e4496b730624941d1ae59 1178652 science optional ergo_3.3.1-2_amd64.deb
+ 43631972647a9ee6690e6322265a15e0 1065 science optional ergo_3.3.1-2.dsc
+ af87e7b18b2d4e8e9e71e9ea9d6bdcbb 3360 science optional ergo_3.3.1-2.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+ergo_3.3.1-2_amd64.deb
+──────────────────────
+
+ new debian package, version 2.0.
+ size 1178652 bytes: control archive=4359 bytes.
+    1495 bytes,    31 lines      control              
+    7550 bytes,   115 lines      md5sums              
+ Package: ergo
+ Version: 3.3.1-2
+ Architecture: amd64
+ Maintainer: Debichem Team <debichem-devel@lists.alioth.debian.org>
+ Installed-Size: 7664
+ Depends: libatlas3-base, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), liblapack3 | liblapack.so.3, libstdc++6 (>= 4.6)
+ Section: science
+ Priority: optional
+ Homepage: http://ergoscf.org/
+ Description: Quantum chemistry program for large-scale calculations
+  ErgoSCF is a quantum chemistry program for large-scale self-consistent field
+  calculations.  It employs modern linear scaling techniques like fast multipole
+  methods, hierarchic sparse matrix algebra, density matrix purification, and
+  efficient integral screening.  Linear scaling is achieved not only in terms of
+  CPU usage but also memory utilization.  It uses Gaussian basis sets.
+  .
+  It can compute single-point energies for the following methods:
+   * Restricted and unrestricted Hartree-Fock (HF) theory
+   * Restricted and unrestricted Kohn-Sham density functional theory (DFT)
+   * Full Configuration-Interaction (FCI)
+  .
+  The following Exchange-Correlational (XC) density functionals are included:
+   * Local Density Approximation (LDA)
+   * Gradient-corrected (GGA) XC functionals BLYP, BP86, PW91 and PBE
+   * Hybrid XC functionals B3LYP, BHandHLYP, PBE0 and CAMB3LYP
+  .
+  Further features include:
+   * Linear response calculations (polarizabilities and excitation energies) for
+     restricted reference densities
+   * External electric fields
+   * Electron dynamics via Time-Dependent Hartree-Fock (TDHF)
+
+drwxr-xr-x root/root         0 2014-04-28 17:47 ./
+drwxr-xr-x root/root         0 2014-04-28 17:47 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 17:47 ./usr/bin/
+-rwxr-xr-x root/root   2330048 2014-04-28 17:47 ./usr/bin/ergo
+drwxr-xr-x root/root         0 2014-04-28 17:47 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 17:47 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 17:47 ./usr/share/doc/ergo/
+-rw-r--r-- root/root       312 2013-09-25 03:56 ./usr/share/doc/ergo/changelog.gz
+-rw-r--r-- root/root       563 2013-10-26 11:06 ./usr/share/doc/ergo/changelog.Debian.gz
+-rw-r--r-- root/root      1272 2013-02-24 14:38 ./usr/share/doc/ergo/copyright
+drwxr-xr-x root/root         0 2014-04-28 17:47 ./usr/share/ergo/
+drwxr-xr-x root/root         0 2014-04-28 17:47 ./usr/share/ergo/basis/
+-rw-r--r-- root/root    102429 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pV5Z
+-rw-r--r-- root/root     94023 2014-04-28 17:47 ./usr/share/ergo/basis/3-21G
+-rw-r--r-- root/root     41650 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pCVTZ
+-rw-r--r-- root/root     93740 2014-04-28 17:47 ./usr/share/ergo/basis/hybrid-guess-basis
+-rw-r--r-- root/root     39634 2014-04-28 17:47 ./usr/share/ergo/basis/ano-1
+-rw-r--r-- root/root     74754 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-DZP
+-rw-r--r-- root/root     38376 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pVDZ
+-rw-r--r-- root/root     28512 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pVDZ-DK
+-rw-r--r-- root/root     19464 2014-04-28 17:47 ./usr/share/ergo/basis/Almlof-Taylor-ANO
+-rw-r--r-- root/root     28606 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-TZP
+-rw-r--r-- root/root     37842 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pCV5Z
+-rw-r--r-- root/root     55415 2014-04-28 17:47 ./usr/share/ergo/basis/Ahlrichs-pVDZ
+-rw-r--r-- root/root     65837 2014-04-28 17:47 ./usr/share/ergo/basis/Huckel
+-rw-r--r-- root/root      9154 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pV(D+d)Z
+-rw-r--r-- root/root      9390 2014-04-28 17:47 ./usr/share/ergo/basis/Huz-II
+-rw-r--r-- root/root     53191 2014-04-28 17:47 ./usr/share/ergo/basis/STO-6G
+-rw-r--r-- root/root     96383 2014-04-28 17:47 ./usr/share/ergo/basis/raf-r
+-rw-r--r-- root/root     18820 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pVTZ-J
+-rw-r--r-- root/root     36740 2014-04-28 17:47 ./usr/share/ergo/basis/ano-2
+-rw-r--r-- root/root     59538 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pVQZ-DK
+-rw-r--r-- root/root     70764 2014-04-28 17:47 ./usr/share/ergo/basis/Ahlrichs-TZV
+-rw-r--r-- root/root     55690 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pwCVQZ
+-rw-r--r-- root/root     17443 2014-04-28 17:47 ./usr/share/ergo/basis/RoosAugDZANO
+-rw-r--r-- root/root      4058 2014-04-28 17:47 ./usr/share/ergo/basis/MIDI
+-rw-r--r-- root/root     81335 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-TZVPP
+-rw-r--r-- root/root     21715 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pVTZ
+-rw-r--r-- root/root      4553 2014-04-28 17:47 ./usr/share/ergo/basis/STO-1G
+-rw-r--r-- root/root     74338 2014-04-28 17:47 ./usr/share/ergo/basis/Sadlej-pVTZ
+-rw-r--r-- root/root     75775 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pVQZ
+-rw-r--r-- root/root     24093 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pCVDZ
+-rw-r--r-- root/root     28980 2014-04-28 17:47 ./usr/share/ergo/basis/6-31++G
+-rw-r--r-- root/root     56070 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pVTZ
+-rw-r--r-- root/root     16076 2014-04-28 17:47 ./usr/share/ergo/basis/McLean-Chandler-VTZ
+-rw-r--r-- root/root     14695 2014-04-28 17:47 ./usr/share/ergo/basis/DunningDZ
+-rw-r--r-- root/root     66709 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pCVQZ
+-rw-r--r-- root/root     64107 2014-04-28 17:47 ./usr/share/ergo/basis/NQvD
+-rw-r--r-- root/root     13179 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pV(T+d)Z
+-rw-r--r-- root/root    108711 2014-04-28 17:47 ./usr/share/ergo/basis/ano-4
+-rw-r--r-- root/root     25568 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pCVDZ
+-rw-r--r-- root/root     10807 2014-04-28 17:47 ./usr/share/ergo/basis/GAMESS-PVTZ
+-rw-r--r-- root/root     20554 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pwCVDZ
+-rw-r--r-- root/root     54144 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pVQZ
+-rw-r--r-- root/root     32047 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pV(6+d)Z
+-rw-r--r-- root/root     14236 2014-04-28 17:47 ./usr/share/ergo/basis/Sadlej-pVTZ-J
+-rw-r--r-- root/root     15287 2014-04-28 17:47 ./usr/share/ergo/basis/6-311++Gss
+-rw-r--r-- root/root     19214 2014-04-28 17:47 ./usr/share/ergo/basis/japrtano
+-rw-r--r-- root/root     31180 2014-04-28 17:47 ./usr/share/ergo/basis/6-31++Gss
+-rw-r--r-- root/root     30061 2014-04-28 17:47 ./usr/share/ergo/basis/Wachtersa+f
+-rw-r--r-- root/root    121897 2014-04-28 17:47 ./usr/share/ergo/basis/Ahlrichs-Coulomb-Fit
+-rw-r--r-- root/root     89620 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pV5Z
+-rw-r--r-- root/root     11015 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pVTZdenfit
+-rw-r--r-- root/root     66108 2014-04-28 17:47 ./usr/share/ergo/basis/STO-3G
+-rw-r--r-- root/root     29950 2014-04-28 17:47 ./usr/share/ergo/basis/6-31G
+-rw-r--r-- root/root     31831 2014-04-28 17:47 ./usr/share/ergo/basis/pV7Z
+-rw-r--r-- root/root     14666 2014-04-28 17:47 ./usr/share/ergo/basis/pV6Z
+-rw-r--r-- root/root     46244 2014-04-28 17:47 ./usr/share/ergo/basis/6-31Gs
+-rw-r--r-- root/root     79293 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pwCV5Z
+-rw-r--r-- root/root     32912 2014-04-28 17:47 ./usr/share/ergo/basis/6-311G
+-rw-r--r-- root/root     71440 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-TZV
+-rw-r--r-- root/root     26673 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-TZ
+-rw-r--r-- root/root     34720 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pwCVTZ
+-rw-r--r-- root/root     65122 2014-04-28 17:47 ./usr/share/ergo/basis/ECP_pseudo
+-rw-r--r-- root/root     83216 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pV5Z-DK
+-rw-r--r-- root/root     10810 2014-04-28 17:47 ./usr/share/ergo/basis/4-31G
+-rw-r--r-- root/root    176256 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-QZVPP
+-rw-r--r-- root/root     76951 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-TZVP
+-rw-r--r-- root/root     32067 2014-04-28 17:47 ./usr/share/ergo/basis/Huz-IVsu4
+-rw-r--r-- root/root     30292 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pVDZ
+-rw-r--r-- root/root     48123 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-SV
+-rw-r--r-- root/root     44986 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pCVTZ
+-rw-r--r-- root/root    158519 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-QZV
+-rw-r--r-- root/root     12251 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pVQZdenfit
+-rw-r--r-- root/root     11924 2014-04-28 17:47 ./usr/share/ergo/basis/STO-2G
+-rw-r--r-- root/root     56797 2014-04-28 17:47 ./usr/share/ergo/basis/AhlrichsVTZ
+-rw-r--r-- root/root     55447 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-SVP
+-rw-r--r-- root/root     42739 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pVTZ-DK
+-rw-r--r-- root/root     58754 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pV6Z
+-rw-r--r-- root/root     16623 2014-04-28 17:47 ./usr/share/ergo/basis/Huz-IV
+-rw-r--r-- root/root     29912 2014-04-28 17:47 ./usr/share/ergo/basis/6-31Gfixed
+-rw-r--r-- root/root     35511 2014-04-28 17:47 ./usr/share/ergo/basis/6-31Gss
+-rw-r--r-- root/root     68919 2014-04-28 17:47 ./usr/share/ergo/basis/ano-3
+-rw-r--r-- root/root     31057 2014-04-28 17:47 ./usr/share/ergo/basis/6-31++Gs
+-rw-r--r-- root/root     17637 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pV(Q+d)Z
+-rw-r--r-- root/root     69048 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pCVQZ
+-rw-r--r-- root/root     14575 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pCVTZ-CTOCD-uc
+-rw-r--r-- root/root     43535 2014-04-28 17:47 ./usr/share/ergo/basis/AhlrichsVDZ
+-rw-r--r-- root/root     43541 2014-04-28 17:47 ./usr/share/ergo/basis/Ahlrichs-VDZ
+-rw-r--r-- root/root     25851 2014-04-28 17:47 ./usr/share/ergo/basis/GAMESS-VTZ
+-rw-r--r-- root/root     39681 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pCV5Z
+-rw-r--r-- root/root     19880 2014-04-28 17:47 ./usr/share/ergo/basis/AhlrichsDenFit
+-rw-r--r-- root/root     69273 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-DZ
+-rw-r--r-- root/root     14157 2014-04-28 17:47 ./usr/share/ergo/basis/Huz-III
+-rw-r--r-- root/root    456735 2014-04-28 17:47 ./usr/share/ergo/basis/ano-5
+-rw-r--r-- root/root     25724 2014-04-28 17:47 ./usr/share/ergo/basis/Huz-IIIsu3
+-rw-r--r-- root/root     40456 2014-04-28 17:47 ./usr/share/ergo/basis/aug-pV7Z
+-rw-r--r-- root/root     65122 2014-04-28 17:47 ./usr/share/ergo/basis/ecp-sdd-pseudo
+-rw-r--r-- root/root     14130 2014-04-28 17:47 ./usr/share/ergo/basis/sad-J
+-rw-r--r-- root/root     74924 2014-04-28 17:47 ./usr/share/ergo/basis/aug-cc-pV6Z
+-rw-r--r-- root/root     28837 2014-04-28 17:47 ./usr/share/ergo/basis/6-31+G
+-rw-r--r-- root/root     73715 2014-04-28 17:47 ./usr/share/ergo/basis/sadlej
+-rw-r--r-- root/root    172880 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-QZVP
+-rw-r--r-- root/root     56038 2014-04-28 17:47 ./usr/share/ergo/basis/ecp-sdd-DZ
+-rw-r--r-- root/root     20109 2014-04-28 17:47 ./usr/share/ergo/basis/3-21++G
+-rw-r--r-- root/root     16427 2014-04-28 17:47 ./usr/share/ergo/basis/Huz-IIsu2
+-rw-r--r-- root/root     24990 2014-04-28 17:47 ./usr/share/ergo/basis/Turbomole-TZVPPP
+-rw-r--r-- root/root      9940 2014-04-28 17:47 ./usr/share/ergo/basis/DunningTZ
+-rw-r--r-- root/root     52056 2014-04-28 17:47 ./usr/share/ergo/basis/ECP
+-rw-r--r-- root/root     24878 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pV(5+d)Z
+-rw-r--r-- root/root     57049 2014-04-28 17:47 ./usr/share/ergo/basis/Ahlrichs-VTZ
+-rw-r--r-- root/root     36051 2014-04-28 17:47 ./usr/share/ergo/basis/NASA-Ames-ANO
+-rw-r--r-- root/root     13906 2014-04-28 17:47 ./usr/share/ergo/basis/cc-pV5Zdenfit
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 229616
+Build-Time: 350
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 17
+Job: ergo_3.3.1-2.dsc
+Machine Architecture: amd64
+Package: ergo
+Package-Time: 377
+Source-Version: 3.3.1-2
+Space: 229616
+Status: successful
+Version: 3.3.1-2
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-1747
+Build needed 00:06:17, 229616k disc space

@@ -1,0 +1,3114 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ cppcheck 1.61-1 (amd64)                                    28 Apr 2014 17:58 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: cppcheck
+Version: 1.61-1
+Source Version: 1.61-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/cppcheck-Yd796w/cppcheck-1.61' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/cppcheck-Yd796w' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-b7b7b728-7f0a-427d-bdc7-f6175ac11a4c' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+cppcheck_1.61-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-jClgoQ/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/820 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dpkg-dev (>= 1.15.7~), xsltproc, docbook-xsl, docbook-xml, libpcre3-dev, libtinyxml2-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), dpkg-dev (>= 1.15.7~), xsltproc, docbook-xsl, docbook-xml, libpcre3-dev, libtinyxml2-dev
+dpkg-deb: building package `sbuild-build-depends-cppcheck-dummy' in `/«BUILDDIR»/resolver-QPxNek/apt_archive/sbuild-build-depends-cppcheck-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install cppcheck build dependencies (apt-based resolver)                     │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper docbook-xml docbook-xsl file gettext gettext-base
+  groff-base intltool-debian libasprintf0c2 libcroco3 libgcrypt11 libglib2.0-0
+  libgpg-error0 libmagic1 libpcre3-dev libpcrecpp0 libpipeline1 libtinyxml2-2
+  libtinyxml2-dev libunistring0 libxml2 libxslt1.1 man-db po-debconf sgml-base
+  sgml-data xml-core xsltproc
+Suggested packages:
+  wamerican wordlist whois vacation dh-make docbook docbook-dsssl
+  docbook-defguide dbtoepub docbook-xsl-doc-html docbook-xsl-doc-pdf
+  docbook-xsl-doc-text docbook-xsl-doc docbook-xsl-saxon fop libsaxon-java
+  libxalan2-java libxslthl-java xalan gettext-doc groff rng-tools less
+  www-browser libmail-box-perl sgml-base-doc perlsgml w3-recs opensp
+  libxml2-utils
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper docbook-xml docbook-xsl file gettext gettext-base
+  groff-base intltool-debian libasprintf0c2 libcroco3 libgcrypt11 libglib2.0-0
+  libgpg-error0 libmagic1 libpcre3-dev libpcrecpp0 libpipeline1 libtinyxml2-2
+  libtinyxml2-dev libunistring0 libxml2 libxslt1.1 man-db po-debconf
+  sbuild-build-depends-cppcheck-dummy sgml-base sgml-data xml-core xsltproc
+0 upgraded, 30 newly installed, 0 to remove and 8 not upgraded.
+Need to get 12.9 MB/12.9 MB of archives.
+After this operation, 47.9 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libgpg-error0 amd64 1.12-0.2 [56.5 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libgcrypt11 amd64 1.5.3-4 [250 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libpcrecpp0 amd64 1:8.31-5 [128 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libxslt1.1 amd64 1.1.28-2 [230 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main sgml-base all 1.26+nmu4 [14.6 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libtinyxml2-2 amd64 2.0.2-1 [25.3 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main xml-core all 0.13+nmu2 [24.2 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main sgml-data all 2.0.9-1 [281 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main docbook-xml all 4.5-7.2 [347 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main docbook-xsl all 1.78.1+dfsg-1 [2339 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main libpcre3-dev amd64 1:8.31-5 [407 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main xsltproc amd64 1.1.28-2 [118 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libtinyxml2-dev amd64 2.0.2-1 [35.6 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 12.9 MB in 1s (7192 kB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libgpg-error0:amd64.
+Preparing to unpack .../libgpg-error0_1.12-0.2_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.12-0.2) ...
+Selecting previously unselected package libgcrypt11:amd64.
+Preparing to unpack .../libgcrypt11_1.5.3-4_amd64.deb ...
+Unpacking libgcrypt11:amd64 (1.5.3-4) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Preparing to unpack .../libpcrecpp0_1%3a8.31-5_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-5) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package libxslt1.1:amd64.
+Preparing to unpack .../libxslt1.1_1.1.28-2_amd64.deb ...
+Unpacking libxslt1.1:amd64 (1.1.28-2) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../sgml-base_1.26+nmu4_all.deb ...
+Unpacking sgml-base (1.26+nmu4) ...
+Selecting previously unselected package libtinyxml2-2:amd64.
+Preparing to unpack .../libtinyxml2-2_2.0.2-1_amd64.deb ...
+Unpacking libtinyxml2-2:amd64 (2.0.2-1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../xml-core_0.13+nmu2_all.deb ...
+Unpacking xml-core (0.13+nmu2) ...
+Selecting previously unselected package sgml-data.
+Preparing to unpack .../sgml-data_2.0.9-1_all.deb ...
+Unpacking sgml-data (2.0.9-1) ...
+Selecting previously unselected package docbook-xml.
+Preparing to unpack .../docbook-xml_4.5-7.2_all.deb ...
+Unpacking docbook-xml (4.5-7.2) ...
+Selecting previously unselected package docbook-xsl.
+Preparing to unpack .../docbook-xsl_1.78.1+dfsg-1_all.deb ...
+Unpacking docbook-xsl (1.78.1+dfsg-1) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-5_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-5) ...
+Selecting previously unselected package xsltproc.
+Preparing to unpack .../xsltproc_1.1.28-2_amd64.deb ...
+Unpacking xsltproc (1.1.28-2) ...
+Selecting previously unselected package libtinyxml2-dev:amd64.
+Preparing to unpack .../libtinyxml2-dev_2.0.2-1_amd64.deb ...
+Unpacking libtinyxml2-dev:amd64 (2.0.2-1) ...
+Selecting previously unselected package sbuild-build-depends-cppcheck-dummy.
+Preparing to unpack .../sbuild-build-depends-cppcheck-dummy.deb ...
+Unpacking sbuild-build-depends-cppcheck-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libgpg-error0:amd64 (1.12-0.2) ...
+Setting up libgcrypt11:amd64 (1.5.3-4) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libpcrecpp0:amd64 (1:8.31-5) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libxslt1.1:amd64 (1.1.28-2) ...
+Setting up sgml-base (1.26+nmu4) ...
+Setting up libtinyxml2-2:amd64 (2.0.2-1) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up xml-core (0.13+nmu2) ...
+Setting up libpcre3-dev:amd64 (1:8.31-5) ...
+Setting up xsltproc (1.1.28-2) ...
+Setting up libtinyxml2-dev:amd64 (2.0.2-1) ...
+Processing triggers for sgml-base (1.26+nmu4) ...
+Setting up docbook-xsl (1.78.1+dfsg-1) ...
+Setting up sgml-data (2.0.9-1) ...
+Processing triggers for sgml-base (1.26+nmu4) ...
+Setting up docbook-xml (4.5-7.2) ...
+Processing triggers for sgml-base (1.26+nmu4) ...
+Setting up sbuild-build-depends-cppcheck-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 docbook-xml_4.5-7.2 docbook-xsl_1.78.1+dfsg-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgcrypt11_1.5.3-4 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpg-error0_1.12-0.2 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpcre3-dev_1:8.31-5 libpcrecpp0_1:8.31-5 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtinyxml2-2_2.0.2-1 libtinyxml2-dev_2.0.2-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 libxslt1.1_1.1.28-2 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-cppcheck-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sgml-base_1.26+nmu4 sgml-data_2.0.9-1 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xml-core_0.13+nmu2 xsltproc_1.1.28-2 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Sun Aug  4 17:25:54 2013 UTC using DSA key ID 153FF940
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./cppcheck_1.61-1.dsc
+dpkg-source: info: extracting cppcheck in cppcheck-1.61
+dpkg-source: info: unpacking cppcheck_1.61.orig.tar.gz
+dpkg-source: info: unpacking cppcheck_1.61-1.debian.tar.gz
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-b7b7b728-7f0a-427d-bdc7-f6175ac11a4c
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package cppcheck
+dpkg-buildpackage: source version 1.61-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Reijo Tomperi <aggro80@users.sourceforge.net>
+ dpkg-source --before-build cppcheck-1.61
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_clean
+make[2]: Entering directory `/«PKGBUILDDIR»'
+rm -f build/*.o lib/*.o cli/*.o test/*.o externals/tinyxml/*.o testrunner reduce cppcheck cppcheck.1
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+[ ! -f Makefile.nocppflags ] || mv -f Makefile.nocppflags Makefile
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_clean
+ dpkg-source -b cppcheck-1.61
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building cppcheck using existing ./cppcheck_1.61.orig.tar.gz
+dpkg-source: info: building cppcheck in cppcheck_1.61-1.debian.tar.xz
+dpkg-source: info: building cppcheck in cppcheck_1.61-1.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_auto_configure
+   debian/rules override_dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+sed -i.nocppflags -e 's/\$(CXX) \$(CXXFLAGS)/$(CXX) $(CPPFLAGS) $(CXXFLAGS)/' Makefile
+dh_auto_build -- HAVE_RULES=yes TINYXML=-ltinyxml2 INCLUDE_FOR_LIB=-Ilib INCLUDE_FOR_CLI=-Ilib INCLUDE_FOR_TEST="-Ilib -Icli"
+make[2]: Entering directory `/«PKGBUILDDIR»'
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/check64bit.o lib/check64bit.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkassert.o lib/checkassert.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkassignif.o lib/checkassignif.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkautovariables.o lib/checkautovariables.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkbool.o lib/checkbool.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkboost.o lib/checkboost.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkbufferoverrun.o lib/checkbufferoverrun.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkclass.o lib/checkclass.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkexceptionsafety.o lib/checkexceptionsafety.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkinternal.o lib/checkinternal.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkio.o lib/checkio.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkleakautovar.o lib/checkleakautovar.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkmemoryleak.o lib/checkmemoryleak.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checknonreentrantfunctions.o lib/checknonreentrantfunctions.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checknullpointer.o lib/checknullpointer.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkobsoletefunctions.o lib/checkobsoletefunctions.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkother.o lib/checkother.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkpostfixoperator.o lib/checkpostfixoperator.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checksizeof.o lib/checksizeof.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkstl.o lib/checkstl.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkuninitvar.o lib/checkuninitvar.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkunusedfunctions.o lib/checkunusedfunctions.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/checkunusedvar.o lib/checkunusedvar.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/cppcheck.o lib/cppcheck.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/errorlogger.o lib/errorlogger.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/executionpath.o lib/executionpath.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/library.o lib/library.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/mathlib.o lib/mathlib.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/path.o lib/path.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/preprocessor.o lib/preprocessor.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/settings.o lib/settings.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/suppressions.o lib/suppressions.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/symboldatabase.o lib/symboldatabase.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/templatesimplifier.o lib/templatesimplifier.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/timer.o lib/timer.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/token.o lib/token.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/tokenize.o lib/tokenize.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o lib/tokenlist.o lib/tokenlist.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o cli/cmdlineparser.o cli/cmdlineparser.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o cli/cppcheckexecutor.o cli/cppcheckexecutor.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o cli/filelister.o cli/filelister.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o cli/main.o cli/main.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o cli/pathmatch.o cli/pathmatch.cpp
+g++ -Ilib -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o cli/threadexecutor.o cli/threadexecutor.cpp
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -o cppcheck cli/cmdlineparser.o cli/cppcheckexecutor.o cli/filelister.o cli/main.o cli/pathmatch.o cli/threadexecutor.o lib/check64bit.o lib/checkassert.o lib/checkassignif.o lib/checkautovariables.o lib/checkbool.o lib/checkboost.o lib/checkbufferoverrun.o lib/checkclass.o lib/checkexceptionsafety.o lib/checkinternal.o lib/checkio.o lib/checkleakautovar.o lib/checkmemoryleak.o lib/checknonreentrantfunctions.o lib/checknullpointer.o lib/checkobsoletefunctions.o lib/checkother.o lib/checkpostfixoperator.o lib/checksizeof.o lib/checkstl.o lib/checkuninitvar.o lib/checkunusedfunctions.o lib/checkunusedvar.o lib/cppcheck.o lib/errorlogger.o lib/executionpath.o lib/library.o lib/mathlib.o lib/path.o lib/preprocessor.o lib/settings.o lib/suppressions.o lib/symboldatabase.o lib/templatesimplifier.o lib/timer.o lib/token.o lib/tokenize.o lib/tokenlist.o -ltinyxml2 -lpcre -Wl,-z,relro
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+xsltproc -''-nonet -''-param man.charmap.use.subset "0" /usr/share/sgml/docbook/stylesheet/xsl/nwalsh/manpages/docbook.xsl man/cppcheck.1.xml
+Note: Writing cppcheck.1
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_test -- HAVE_RULES=yes TINYXML=-ltinyxml2 INCLUDE_FOR_LIB=-Ilib INCLUDE_FOR_CLI=-Ilib INCLUDE_FOR_TEST="-Ilib -Icli"
+make[2]: Entering directory `/«PKGBUILDDIR»'
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/options.o test/options.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/test64bit.o test/test64bit.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testassert.o test/testassert.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testassignif.o test/testassignif.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testautovariables.o test/testautovariables.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testbool.o test/testbool.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testboost.o test/testboost.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testbufferoverrun.o test/testbufferoverrun.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testcharvar.o test/testcharvar.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testclass.o test/testclass.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testcmdlineparser.o test/testcmdlineparser.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testconstructors.o test/testconstructors.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testcppcheck.o test/testcppcheck.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testdivision.o test/testdivision.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testerrorlogger.o test/testerrorlogger.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testexceptionsafety.o test/testexceptionsafety.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testfilelister.o test/testfilelister.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testincompletestatement.o test/testincompletestatement.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testinternal.o test/testinternal.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testio.o test/testio.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testleakautovar.o test/testleakautovar.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testmathlib.o test/testmathlib.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testmemleak.o test/testmemleak.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testnonreentrantfunctions.o test/testnonreentrantfunctions.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testnullpointer.o test/testnullpointer.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testobsoletefunctions.o test/testobsoletefunctions.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testoptions.o test/testoptions.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testother.o test/testother.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testpath.o test/testpath.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testpathmatch.o test/testpathmatch.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testpostfixoperator.o test/testpostfixoperator.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testpreprocessor.o test/testpreprocessor.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testrunner.o test/testrunner.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testsimplifytokens.o test/testsimplifytokens.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testsizeof.o test/testsizeof.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/teststl.o test/teststl.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testsuite.o test/testsuite.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testsuppressions.o test/testsuppressions.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testsymboldatabase.o test/testsymboldatabase.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testthreadexecutor.o test/testthreadexecutor.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testtimer.o test/testtimer.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testtoken.o test/testtoken.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testtokenize.o test/testtokenize.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testuninitvar.o test/testuninitvar.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testunusedfunctions.o test/testunusedfunctions.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testunusedprivfunc.o test/testunusedprivfunc.cpp
+g++ -Ilib -Icli -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -c -o test/testunusedvar.o test/testunusedvar.cpp
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DHAVE_RULES -DTIXML_USE_STL  -o testrunner test/options.o test/test64bit.o test/testassert.o test/testassignif.o test/testautovariables.o test/testbool.o test/testboost.o test/testbufferoverrun.o test/testcharvar.o test/testclass.o test/testcmdlineparser.o test/testconstructors.o test/testcppcheck.o test/testdivision.o test/testerrorlogger.o test/testexceptionsafety.o test/testfilelister.o test/testincompletestatement.o test/testinternal.o test/testio.o test/testleakautovar.o test/testmathlib.o test/testmemleak.o test/testnonreentrantfunctions.o test/testnullpointer.o test/testobsoletefunctions.o test/testoptions.o test/testother.o test/testpath.o test/testpathmatch.o test/testpostfixoperator.o test/testpreprocessor.o test/testrunner.o test/testsimplifytokens.o test/testsizeof.o test/teststl.o test/testsuite.o test/testsuppressions.o test/testsymboldatabase.o test/testthreadexecutor.o test/testtimer.o test/testtoken.o test/testtokenize.o test/testuninitvar.o test/testunusedfunctions.o test/testunusedprivfunc.o test/testunusedvar.o lib/check64bit.o lib/checkassert.o lib/checkassignif.o lib/checkautovariables.o lib/checkbool.o lib/checkboost.o lib/checkbufferoverrun.o lib/checkclass.o lib/checkexceptionsafety.o lib/checkinternal.o lib/checkio.o lib/checkleakautovar.o lib/checkmemoryleak.o lib/checknonreentrantfunctions.o lib/checknullpointer.o lib/checkobsoletefunctions.o lib/checkother.o lib/checkpostfixoperator.o lib/checksizeof.o lib/checkstl.o lib/checkuninitvar.o lib/checkunusedfunctions.o lib/checkunusedvar.o lib/cppcheck.o lib/errorlogger.o lib/executionpath.o lib/library.o lib/mathlib.o lib/path.o lib/preprocessor.o lib/settings.o lib/suppressions.o lib/symboldatabase.o lib/templatesimplifier.o lib/timer.o lib/token.o lib/tokenize.o lib/tokenlist.o cli/threadexecutor.o cli/cppcheckexecutor.o cli/cmdlineparser.o cli/filelister.o cli/pathmatch.o -ltinyxml2 -lpcre -Wl,-z,relro
+./testrunner
+Test64BitPortability::novardecl
+Test64BitPortability::functionpar
+Test64BitPortability::structmember
+Test64BitPortability::ptrcompare
+Test64BitPortability::ptrarithmetic
+Test64BitPortability::returnIssues
+TestAsserts::assignmentInAssert
+TestAsserts::functionCallInAssert
+TestAsserts::safeFunctionCallInAssert
+TestAssignIf::assignAndCompare
+TestAssignIf::mismatchingBitAnd
+TestAssignIf::compare
+TestAssignIf::multicompare
+TestAutoVariables::testautovar1
+TestAutoVariables::testautovar2
+TestAutoVariables::testautovar3
+TestAutoVariables::testautovar4
+TestAutoVariables::testautovar5
+TestAutoVariables::testautovar6
+TestAutoVariables::testautovar7
+TestAutoVariables::testautovar8
+TestAutoVariables::testautovar9
+TestAutoVariables::testautovar10
+TestAutoVariables::testautovar11
+TestAutoVariables::testautovar_array1
+TestAutoVariables::testautovar_array2
+TestAutoVariables::testautovar_return1
+TestAutoVariables::testautovar_return2
+TestAutoVariables::testautovar_return3
+TestAutoVariables::testautovar_return4
+TestAutoVariables::testautovar_extern
+TestAutoVariables::testinvaliddealloc
+TestAutoVariables::testassign1
+TestAutoVariables::testassign2
+TestAutoVariables::returnLocalVariable1
+TestAutoVariables::returnLocalVariable2
+TestAutoVariables::returnReference1
+TestAutoVariables::returnReference2
+TestAutoVariables::returnReference3
+TestAutoVariables::returnReference4
+TestAutoVariables::returnReference5
+TestAutoVariables::returnReference6
+TestAutoVariables::returnReference7
+TestAutoVariables::testglobalnamespace
+TestAutoVariables::returnParameterAddress
+TestBool::bitwiseOnBoolean
+TestBool::incrementBoolean
+TestBool::assignBoolToPointer
+TestBool::comparisonOfBoolExpressionWithInt1
+TestBool::comparisonOfBoolExpressionWithInt2
+TestBool::comparisonOfBoolExpressionWithInt3
+TestBool::comparisonOfBoolWithInt1
+TestBool::comparisonOfBoolWithInt2
+TestBool::comparisonOfBoolWithInt3
+TestBool::comparisonOfBoolWithInt4
+TestBool::comparisonOfBoolWithInt5
+TestBool::comparisonOfBoolWithInt6
+TestBool::checkComparisonOfFuncReturningBool1
+TestBool::checkComparisonOfFuncReturningBool2
+TestBool::checkComparisonOfFuncReturningBool3
+TestBool::checkComparisonOfFuncReturningBool4
+TestBool::checkComparisonOfFuncReturningBool5
+TestBool::checkComparisonOfFuncReturningBool6
+TestBoost::BoostForeachContainerModification
+TestBufferOverrun::noerr1
+TestBufferOverrun::noerr2
+TestBufferOverrun::noerr3
+TestBufferOverrun::noerr4
+TestBufferOverrun::sizeof3
+TestBufferOverrun::array_index_1
+TestBufferOverrun::array_index_2
+TestBufferOverrun::array_index_3
+TestBufferOverrun::array_index_6
+TestBufferOverrun::array_index_7
+TestBufferOverrun::array_index_9
+TestBufferOverrun::array_index_11
+TestBufferOverrun::array_index_12
+TestBufferOverrun::array_index_13
+TestBufferOverrun::array_index_14
+TestBufferOverrun::array_index_15
+TestBufferOverrun::array_index_16
+TestBufferOverrun::array_index_17
+TestBufferOverrun::array_index_18
+TestBufferOverrun::array_index_19
+TestBufferOverrun::array_index_20
+TestBufferOverrun::array_index_21
+TestBufferOverrun::array_index_22
+TestBufferOverrun::array_index_23
+TestBufferOverrun::array_index_24
+TestBufferOverrun::array_index_25
+TestBufferOverrun::array_index_26
+TestBufferOverrun::array_index_27
+TestBufferOverrun::array_index_28
+TestBufferOverrun::array_index_29
+TestBufferOverrun::array_index_30
+TestBufferOverrun::array_index_31
+TestBufferOverrun::array_index_32
+TestBufferOverrun::array_index_33
+TestBufferOverrun::array_index_34
+TestBufferOverrun::array_index_35
+TestBufferOverrun::array_index_36
+TestBufferOverrun::array_index_37
+TestBufferOverrun::array_index_38
+TestBufferOverrun::array_index_39
+TestBufferOverrun::array_index_40
+TestBufferOverrun::array_index_41
+TestBufferOverrun::array_index_42
+TestBufferOverrun::array_index_43
+TestBufferOverrun::array_index_44
+TestBufferOverrun::array_index_45
+TestBufferOverrun::array_index_46
+TestBufferOverrun::array_index_multidim
+TestBufferOverrun::array_index_switch_in_for
+TestBufferOverrun::array_index_for_in_for
+TestBufferOverrun::array_index_calculation
+TestBufferOverrun::array_index_negative1
+TestBufferOverrun::array_index_negative2
+TestBufferOverrun::array_index_for_decr
+TestBufferOverrun::array_index_varnames
+TestBufferOverrun::array_index_for_break
+TestBufferOverrun::array_index_for_continue
+TestBufferOverrun::array_index_for
+TestBufferOverrun::array_index_for_neq
+TestBufferOverrun::array_index_for_question
+TestBufferOverrun::array_index_for_andand_oror
+TestBufferOverrun::array_index_for_varid0
+TestBufferOverrun::array_index_vla_for
+TestBufferOverrun::array_index_extern
+TestBufferOverrun::array_index_cast
+TestBufferOverrun::array_index_string_literal
+TestBufferOverrun::array_index_same_struct_and_var_name
+TestBufferOverrun::buffer_overrun_1_standard_functions
+TestBufferOverrun::buffer_overrun_2_struct
+TestBufferOverrun::buffer_overrun_3
+TestBufferOverrun::buffer_overrun_4
+TestBufferOverrun::buffer_overrun_5
+TestBufferOverrun::buffer_overrun_6
+TestBufferOverrun::buffer_overrun_7
+TestBufferOverrun::buffer_overrun_8
+TestBufferOverrun::buffer_overrun_9
+TestBufferOverrun::buffer_overrun_10
+TestBufferOverrun::buffer_overrun_11
+TestBufferOverrun::buffer_overrun_12
+TestBufferOverrun::buffer_overrun_13
+TestBufferOverrun::buffer_overrun_14
+TestBufferOverrun::buffer_overrun_15
+TestBufferOverrun::buffer_overrun_16
+TestBufferOverrun::buffer_overrun_17
+TestBufferOverrun::buffer_overrun_18
+TestBufferOverrun::buffer_overrun_19
+TestBufferOverrun::buffer_overrun_20
+TestBufferOverrun::buffer_overrun_21
+TestBufferOverrun::buffer_overrun_22
+TestBufferOverrun::buffer_overrun_23
+TestBufferOverrun::buffer_overrun_24
+TestBufferOverrun::buffer_overrun_25
+TestBufferOverrun::buffer_overrun_26
+TestBufferOverrun::buffer_overrun_27
+TestBufferOverrun::buffer_overrun_bailoutIfSwitch
+TestBufferOverrun::buffer_overrun_function_array_argument
+TestBufferOverrun::possible_buffer_overrun_1
+TestBufferOverrun::pointer_out_of_bounds_1
+TestBufferOverrun::pointer_out_of_bounds_2
+TestBufferOverrun::sprintf1
+TestBufferOverrun::sprintf2
+TestBufferOverrun::sprintf3
+TestBufferOverrun::sprintf4
+TestBufferOverrun::sprintf5
+TestBufferOverrun::sprintf6
+TestBufferOverrun::sprintf7
+TestBufferOverrun::sprintf8
+TestBufferOverrun::sprintf9
+TestBufferOverrun::sprintf10
+TestBufferOverrun::snprintf1
+TestBufferOverrun::snprintf2
+TestBufferOverrun::snprintf4
+TestBufferOverrun::snprintf5
+TestBufferOverrun::snprintf6
+TestBufferOverrun::snprintf7
+TestBufferOverrun::strncat1
+TestBufferOverrun::strncat2
+TestBufferOverrun::strncat3
+TestBufferOverrun::strncat4
+TestBufferOverrun::strcat1
+TestBufferOverrun::strcat2
+TestBufferOverrun::strcat3
+TestBufferOverrun::memfunc1
+TestBufferOverrun::memfunc2
+TestBufferOverrun::memfunc3
+TestBufferOverrun::varid1
+TestBufferOverrun::varid2
+TestBufferOverrun::assign1
+TestBufferOverrun::alloc1
+TestBufferOverrun::alloc2
+TestBufferOverrun::alloc3
+TestBufferOverrun::alloc4
+TestBufferOverrun::malloc_memset
+TestBufferOverrun::memset1
+TestBufferOverrun::memset2
+TestBufferOverrun::counter_test
+TestBufferOverrun::strncpy1
+TestBufferOverrun::unknownType
+TestBufferOverrun::terminateStrncpy1
+TestBufferOverrun::terminateStrncpy2
+TestBufferOverrun::terminateStrncpy3
+TestBufferOverrun::recursive_long_time
+TestBufferOverrun::crash1
+TestBufferOverrun::crash2
+TestBufferOverrun::crash3
+TestBufferOverrun::executionPaths1
+TestBufferOverrun::executionPaths2
+TestBufferOverrun::executionPaths3
+TestBufferOverrun::executionPaths4
+TestBufferOverrun::executionPaths5
+TestBufferOverrun::executionPaths6
+TestBufferOverrun::cmdLineArgs1
+TestBufferOverrun::scope
+TestBufferOverrun::getErrorMessages
+TestBufferOverrun::unknownMacroNoDecl
+TestBufferOverrun::arrayIndexThenCheck
+TestBufferOverrun::bufferNotZeroTerminated
+TestBufferOverrun::readlink
+TestBufferOverrun::readlinkat
+TestBufferOverrun::writeOutsideBufferSize
+TestCharVar::array_index_1
+TestCharVar::array_index_2
+TestCharVar::array_index_3
+TestCharVar::bitop1
+TestCharVar::bitop2
+TestCharVar::bitop3
+TestCharVar::return1
+TestCharVar::assignChar
+TestCharVar::and03
+TestCharVar::pointer
+TestClass::virtualDestructor1
+TestClass::virtualDestructor2
+TestClass::virtualDestructor3
+TestClass::virtualDestructor4
+TestClass::virtualDestructor5
+TestClass::virtualDestructor6
+TestClass::virtualDestructorProtected
+TestClass::virtualDestructorInherited
+TestClass::virtualDestructorTemplate
+TestClass::copyConstructor1
+TestClass::copyConstructor2
+TestClass::noConstructor1
+TestClass::noConstructor2
+TestClass::noConstructor3
+TestClass::noConstructor4
+TestClass::noConstructor5
+TestClass::noConstructor6
+TestClass::noConstructor7
+TestClass::noConstructor8
+TestClass::noConstructor9
+TestClass::operatorEq1
+TestClass::operatorEq2
+TestClass::operatorEq3
+TestClass::operatorEq4
+TestClass::operatorEq5
+TestClass::operatorEqRetRefThis1
+TestClass::operatorEqRetRefThis2
+TestClass::operatorEqRetRefThis3
+TestClass::operatorEqRetRefThis4
+TestClass::operatorEqRetRefThis5
+TestClass::operatorEqRetRefThis6
+TestClass::operatorEqToSelf1
+TestClass::operatorEqToSelf2
+TestClass::operatorEqToSelf3
+TestClass::operatorEqToSelf4
+TestClass::operatorEqToSelf5
+TestClass::operatorEqToSelf6
+TestClass::operatorEqToSelf7
+TestClass::operatorEqToSelf8
+TestClass::operatorEqToSelf9
+TestClass::memsetOnStruct
+TestClass::memsetVector
+TestClass::memsetOnClass
+TestClass::mallocOnClass
+TestClass::this_subtraction
+TestClass::const1
+TestClass::const2
+TestClass::const3
+TestClass::const4
+TestClass::const5
+TestClass::const6
+TestClass::const7
+TestClass::const8
+TestClass::const9
+TestClass::const10
+TestClass::const11
+TestClass::const12
+TestClass::const13
+TestClass::const14
+TestClass::const15
+TestClass::const16
+TestClass::const17
+TestClass::const18
+TestClass::const19
+TestClass::const20
+TestClass::const21
+TestClass::const22
+TestClass::const23
+TestClass::const24
+TestClass::const25
+TestClass::const26
+TestClass::const27
+TestClass::const28
+TestClass::const29
+TestClass::const30
+TestClass::const31
+TestClass::const32
+TestClass::const33
+TestClass::const34
+TestClass::const35
+TestClass::const36
+TestClass::const37
+TestClass::const38
+TestClass::const39
+TestClass::const40
+TestClass::const41
+TestClass::const42
+TestClass::const43
+TestClass::const44
+TestClass::const45
+TestClass::const46
+TestClass::const47
+TestClass::const48
+TestClass::const49
+TestClass::const50
+TestClass::const51
+TestClass::const52
+TestClass::const53
+TestClass::const54
+TestClass::const55
+TestClass::const56
+TestClass::const57
+TestClass::const58
+TestClass::const59
+TestClass::const_handleDefaultParameters
+TestClass::const_passThisToMemberOfOtherClass
+TestClass::assigningPointerToPointerIsNotAConstOperation
+TestClass::assigningArrayElementIsNotAConstOperation
+TestClass::constoperator1
+TestClass::constoperator2
+TestClass::constoperator3
+TestClass::constoperator4
+TestClass::constoperator5
+TestClass::constincdec
+TestClass::constassign1
+TestClass::constassign2
+TestClass::constincdecarray
+TestClass::constassignarray
+TestClass::constReturnReference
+TestClass::constDelete
+TestClass::constLPVOID
+TestClass::constFunc
+TestClass::constVirtualFunc
+TestClass::constIfCfg
+TestClass::constFriend
+TestClass::constUnion
+TestClass::constArrayOperator
+TestClass::initializerListOrder
+TestClass::initializerListUsage
+TestClass::forwardDeclaration
+TestClass::pureVirtualFunctionCall
+TestClass::pureVirtualFunctionCallOtherClass
+TestClass::pureVirtualFunctionCallWithBody
+TestCmdlineParser::nooptions
+TestCmdlineParser::helpshort
+TestCmdlineParser::helplong
+TestCmdlineParser::showversion
+TestCmdlineParser::onefile
+TestCmdlineParser::onepath
+TestCmdlineParser::optionwithoutfile
+TestCmdlineParser::verboseshort
+TestCmdlineParser::verboselong
+TestCmdlineParser::debug
+TestCmdlineParser::debugwarnings
+TestCmdlineParser::forceshort
+TestCmdlineParser::forcelong
+TestCmdlineParser::relativePaths
+TestCmdlineParser::quietshort
+TestCmdlineParser::quietlong
+TestCmdlineParser::defines_noarg
+TestCmdlineParser::defines_noarg2
+TestCmdlineParser::defines_noarg3
+TestCmdlineParser::defines
+TestCmdlineParser::defines2
+TestCmdlineParser::defines3
+TestCmdlineParser::defines4
+TestCmdlineParser::enforceLanguage
+TestCmdlineParser::includesnopath
+TestCmdlineParser::includes
+TestCmdlineParser::includesslash
+TestCmdlineParser::includesbackslash
+TestCmdlineParser::includesnospace
+TestCmdlineParser::includes2
+TestCmdlineParser::includesFile
+TestCmdlineParser::enabledAll
+TestCmdlineParser::enabledStyle
+TestCmdlineParser::enabledPerformance
+TestCmdlineParser::enabledPortability
+TestCmdlineParser::enabledUnusedFunction
+TestCmdlineParser::enabledMissingInclude
+TestCmdlineParser::enabledInternal
+TestCmdlineParser::enabledMultiple
+TestCmdlineParser::errorExitcode
+TestCmdlineParser::errorExitcodeMissing
+TestCmdlineParser::errorExitcodeStr
+TestCmdlineParser::exitcodeSuppressionsOld
+TestCmdlineParser::exitcodeSuppressions
+TestCmdlineParser::exitcodeSuppressionsNoFile
+TestCmdlineParser::fileList
+TestCmdlineParser::inlineSuppr
+TestCmdlineParser::jobs
+TestCmdlineParser::jobsMissingCount
+TestCmdlineParser::jobsInvalid
+TestCmdlineParser::maxConfigs
+TestCmdlineParser::maxConfigsMissingCount
+TestCmdlineParser::maxConfigsInvalid
+TestCmdlineParser::maxConfigsTooSmall
+TestCmdlineParser::reportProgressTest
+TestCmdlineParser::stdposix
+TestCmdlineParser::stdc99
+TestCmdlineParser::stdcpp11
+TestCmdlineParser::suppressionsOld
+TestCmdlineParser::suppressions
+TestCmdlineParser::suppressionsNoFile
+TestCmdlineParser::suppressionSingle
+TestCmdlineParser::suppressionSingleFile
+TestCmdlineParser::suppressionTwo
+TestCmdlineParser::suppressionTwoSeparate
+TestCmdlineParser::templates
+TestCmdlineParser::templatesGcc
+TestCmdlineParser::templatesVs
+TestCmdlineParser::templatesEdit
+TestCmdlineParser::xml
+TestCmdlineParser::xmlver1
+TestCmdlineParser::xmlver2
+TestCmdlineParser::xmlver2both
+TestCmdlineParser::xmlver2both2
+TestCmdlineParser::xmlverunknown
+TestCmdlineParser::xmlverinvalid
+TestCmdlineParser::errorlist1
+TestCmdlineParser::errorlistverbose1
+TestCmdlineParser::errorlistverbose2
+TestCmdlineParser::ignorepathsnopath
+TestCmdlineParser::checkconfig
+TestCmdlineParser::unknownParam
+TestCmdlineParser::undefs_noarg
+TestCmdlineParser::undefs_noarg2
+TestCmdlineParser::undefs_noarg3
+TestCmdlineParser::undefs
+TestCmdlineParser::undefs2
+TestConstructors::simple1
+TestConstructors::simple2
+TestConstructors::simple3
+TestConstructors::simple4
+TestConstructors::simple5
+TestConstructors::simple6
+TestConstructors::simple7
+TestConstructors::simple8
+TestConstructors::simple9
+TestConstructors::simple10
+TestConstructors::simple11
+TestConstructors::simple12
+TestConstructors::initvar_with_this
+TestConstructors::initvar_if
+TestConstructors::initvar_operator_eq1
+TestConstructors::initvar_operator_eq2
+TestConstructors::initvar_operator_eq3
+TestConstructors::initvar_operator_eq4
+TestConstructors::initvar_operator_eq5
+TestConstructors::initvar_same_classname
+TestConstructors::initvar_chained_assign
+TestConstructors::initvar_2constructors
+TestConstructors::initvar_constvar
+TestConstructors::initvar_staticvar
+TestConstructors::initvar_union
+TestConstructors::initvar_delegate
+TestConstructors::initvar_private_constructor
+TestConstructors::initvar_copy_constructor
+TestConstructors::initvar_nested_constructor
+TestConstructors::initvar_nocopy1
+TestConstructors::initvar_nocopy2
+TestConstructors::initvar_nocopy3
+TestConstructors::initvar_with_member_function_this
+TestConstructors::initvar_destructor
+TestConstructors::initvar_func_ret_func_ptr
+TestConstructors::operatorEqSTL
+TestConstructors::uninitVar1
+TestConstructors::uninitVar2
+TestConstructors::uninitVar3
+TestConstructors::uninitVar4
+TestConstructors::uninitVar5
+TestConstructors::uninitVar6
+TestConstructors::uninitVar7
+TestConstructors::uninitVar8
+TestConstructors::uninitVar9
+TestConstructors::uninitVar10
+TestConstructors::uninitVar11
+TestConstructors::uninitVar12
+TestConstructors::uninitVar13
+TestConstructors::uninitVar14
+TestConstructors::uninitVar15
+TestConstructors::uninitVar16
+TestConstructors::uninitVar17
+TestConstructors::uninitVar18
+TestConstructors::uninitVar19
+TestConstructors::uninitVar20
+TestConstructors::uninitVar21
+TestConstructors::uninitVar22
+TestConstructors::uninitVar23
+TestConstructors::uninitVar24
+TestConstructors::uninitVar25
+TestConstructors::uninitVar26
+TestConstructors::uninitVarEnum
+TestConstructors::uninitVarStream
+TestConstructors::uninitVarTypedef
+TestConstructors::uninitVarMemset
+TestConstructors::uninitVarArray1
+TestConstructors::uninitVarArray2
+TestConstructors::uninitVarArray3
+TestConstructors::uninitVarArray4
+TestConstructors::uninitVarArray5
+TestConstructors::uninitVarArray6
+TestConstructors::uninitVarArray7
+TestConstructors::uninitVarArray8
+TestConstructors::uninitVarArray2D
+TestConstructors::uninitVarArray3D
+TestConstructors::uninitVarCpp11Init1
+TestConstructors::uninitVarCpp11Init2
+TestConstructors::uninitVarStruct1
+TestConstructors::uninitVarStruct2
+TestConstructors::uninitVarUnion1
+TestConstructors::uninitVarUnion2
+TestConstructors::uninitMissingFuncDef
+TestConstructors::privateCtor1
+TestConstructors::privateCtor2
+TestConstructors::function
+TestConstructors::uninitVarHeader1
+TestConstructors::uninitVarHeader2
+TestConstructors::uninitVarHeader3
+TestConstructors::uninitVarPublished
+TestConstructors::uninitOperator
+TestConstructors::uninitFunction1
+TestConstructors::uninitFunction2
+TestConstructors::uninitFunction3
+TestConstructors::uninitFunction4
+TestConstructors::uninitFunction5
+TestConstructors::uninitSameClassName
+TestConstructors::uninitFunctionOverload
+TestConstructors::uninitVarOperatorEqual
+TestConstructors::uninitVarPointer
+TestConstructors::uninitConstVar
+TestCppcheck::instancesSorted
+TestCppcheck::classInfoFormat
+TestCppcheck::getErrorMessages
+TestDivision::division1
+TestDivision::division2
+TestDivision::division4
+TestDivision::division5
+TestDivision::division6
+TestDivision::division7
+TestDivision::division8
+TestDivision::division9
+TestDivision::division10
+TestDivision::division11
+TestErrorLogger::FileLocationDefaults
+TestErrorLogger::FileLocationSetFile
+TestErrorLogger::ErrorMessageConstruct
+TestErrorLogger::ErrorMessageConstructLocations
+TestErrorLogger::ErrorMessageVerbose
+TestErrorLogger::ErrorMessageVerboseLocations
+TestErrorLogger::CustomFormat
+TestErrorLogger::CustomFormat2
+TestErrorLogger::CustomFormatLocations
+TestErrorLogger::ToXml
+TestErrorLogger::ToXmlLocations
+TestErrorLogger::ToVerboseXml
+TestErrorLogger::ToVerboseXmlLocations
+TestErrorLogger::ToXmlV2
+TestErrorLogger::ToXmlV2Locations
+TestErrorLogger::InconclusiveXml
+TestErrorLogger::SerializeInconclusiveMessage
+TestErrorLogger::suppressUnmatchedSuppressions
+TestExceptionSafety::destructors
+TestExceptionSafety::deallocThrow1
+TestExceptionSafety::deallocThrow2
+TestExceptionSafety::deallocThrow3
+TestExceptionSafety::rethrowCopy1
+TestExceptionSafety::rethrowCopy2
+TestExceptionSafety::rethrowCopy3
+TestExceptionSafety::rethrowCopy4
+TestExceptionSafety::rethrowCopy5
+TestExceptionSafety::catchExceptionByValue
+TestFileLister::isDirectory
+TestFileLister::absolutePath
+TestFileLister::recursiveAddFiles
+TestIncompleteStatement::test1
+TestIncompleteStatement::test2
+TestIncompleteStatement::test3
+TestIncompleteStatement::test4
+TestIncompleteStatement::test5
+TestIncompleteStatement::test_numeric
+TestIncompleteStatement::intarray
+TestIncompleteStatement::structarraynull
+TestIncompleteStatement::structarray
+TestIncompleteStatement::conditionalcall
+TestIncompleteStatement::structinit
+TestIncompleteStatement::returnstruct
+TestIncompleteStatement::cast
+TestIncompleteStatement::increment
+TestInternal::simplePatternInTokenMatch
+TestInternal::complexPatternInTokenSimpleMatch
+TestInternal::simplePatternSquareBrackets
+TestInternal::simplePatternAlternatives
+TestInternal::missingPercentCharacter
+TestInternal::unknownPattern
+TestInternal::redundantNextPrevious
+TestInternal::internalError
+TestIO::coutCerrMisusage
+TestIO::wrongMode_simple
+TestIO::wrongMode_complex
+TestIO::useClosedFile
+TestIO::fileIOwithoutPositioning
+TestIO::fflushOnInputStream
+TestIO::testScanf1
+TestIO::testScanf2
+TestIO::testScanf3
+TestIO::testScanf4
+TestIO::testScanfArgument
+TestIO::testPrintfArgument
+TestIO::testPosixPrintfScanfParameterPosition
+TestIO::testMicrosoftPrintfArgument
+TestIO::testlibrarycfg
+TestLeakAutoVar::assign1
+TestLeakAutoVar::assign2
+TestLeakAutoVar::assign3
+TestLeakAutoVar::assign4
+TestLeakAutoVar::assign5
+TestLeakAutoVar::assign6
+TestLeakAutoVar::assign7
+TestLeakAutoVar::assign8
+TestLeakAutoVar::assign9
+TestLeakAutoVar::assign10
+TestLeakAutoVar::assign11
+TestLeakAutoVar::assign12
+TestLeakAutoVar::assign13
+TestLeakAutoVar::deallocuse1
+TestLeakAutoVar::deallocuse2
+TestLeakAutoVar::deallocuse3
+TestLeakAutoVar::deallocuse4
+TestLeakAutoVar::deallocuse5
+TestLeakAutoVar::deallocuse6
+TestLeakAutoVar::doublefree1
+TestLeakAutoVar::doublefree2
+TestLeakAutoVar::doublefree3
+TestLeakAutoVar::exit1
+TestLeakAutoVar::exit2
+TestLeakAutoVar::goto1
+TestLeakAutoVar::goto2
+TestLeakAutoVar::ifelse1
+TestLeakAutoVar::ifelse2
+TestLeakAutoVar::ifelse3
+TestLeakAutoVar::ifelse4
+TestLeakAutoVar::ifelse5
+TestLeakAutoVar::ifelse6
+TestLeakAutoVar::switch1
+TestLeakAutoVar::loop1
+TestLeakAutoVar::mismatch_fopen_free
+TestLeakAutoVar::return1
+TestLeakAutoVar::return2
+TestLeakAutoVar::return3
+TestLeakAutoVar::return4
+TestLeakAutoVar::test1
+TestLeakAutoVar::test2
+TestLeakAutoVar::test3
+TestLeakAutoVar::throw1
+TestLeakAutoVar::configuration1
+TestLeakAutoVar::configuration2
+TestLeakAutoVar::configuration3
+TestLeakAutoVar::configuration4
+TestLeakAutoVar::ptrptr
+TestMathLib::calculate
+TestMathLib::calculate1
+TestMathLib::convert
+TestMathLib::isint
+TestMathLib::isnegative
+TestMathLib::isfloat
+TestMathLib::isGreater
+TestMathLib::isGreaterEqual
+TestMathLib::isEqual
+TestMathLib::isNotEqual
+TestMathLib::isLess
+TestMathLib::isLessEqual
+TestMathLib::naninf
+TestMemleak::testFunctionReturnType
+TestMemleak::open
+TestMemleakInFunction::testgetcode
+TestMemleakInFunction::call_func
+TestMemleakInFunction::simplifycode
+TestMemleakInFunction::findleak
+TestMemleakInFunction::simple5
+TestMemleakInFunction::simple7
+TestMemleakInFunction::simple9
+TestMemleakInFunction::simple11
+TestMemleakInFunction::new_nothrow
+TestMemleakInFunction::staticvar
+TestMemleakInFunction::externvar
+TestMemleakInFunction::referencevar
+TestMemleakInFunction::alloc_alloc_1
+TestMemleakInFunction::ifelse6
+TestMemleakInFunction::ifelse7
+TestMemleakInFunction::ifelse8
+TestMemleakInFunction::ifelse10
+TestMemleakInFunction::if4
+TestMemleakInFunction::if7
+TestMemleakInFunction::if8
+TestMemleakInFunction::if9
+TestMemleakInFunction::if10
+TestMemleakInFunction::if11
+TestMemleakInFunction::forwhile5
+TestMemleakInFunction::forwhile6
+TestMemleakInFunction::forwhile8
+TestMemleakInFunction::forwhile9
+TestMemleakInFunction::forwhile10
+TestMemleakInFunction::forwhile11
+TestMemleakInFunction::switch2
+TestMemleakInFunction::switch3
+TestMemleakInFunction::switch4
+TestMemleakInFunction::ret5
+TestMemleakInFunction::ret6
+TestMemleakInFunction::ret7
+TestMemleakInFunction::ret8
+TestMemleakInFunction::mismatch1
+TestMemleakInFunction::mismatch2
+TestMemleakInFunction::mismatch3
+TestMemleakInFunction::mismatch4
+TestMemleakInFunction::mismatch5
+TestMemleakInFunction::mismatch6
+TestMemleakInFunction::mismatchSize
+TestMemleakInFunction::func3
+TestMemleakInFunction::func4
+TestMemleakInFunction::func5
+TestMemleakInFunction::func6
+TestMemleakInFunction::func7
+TestMemleakInFunction::func9
+TestMemleakInFunction::func10
+TestMemleakInFunction::func11
+TestMemleakInFunction::func12
+TestMemleakInFunction::func13
+TestMemleakInFunction::func14
+TestMemleakInFunction::func15
+TestMemleakInFunction::func16
+TestMemleakInFunction::func17
+TestMemleakInFunction::func18
+TestMemleakInFunction::func19
+TestMemleakInFunction::func20
+TestMemleakInFunction::func21
+TestMemleakInFunction::func22
+TestMemleakInFunction::func23
+TestMemleakInFunction::func24
+TestMemleakInFunction::func25
+TestMemleakInFunction::func26
+TestMemleakInFunction::func27
+TestMemleakInFunction::allocfunc1
+TestMemleakInFunction::allocfunc2
+TestMemleakInFunction::allocfunc3
+TestMemleakInFunction::allocfunc4
+TestMemleakInFunction::allocfunc5
+TestMemleakInFunction::allocfunc6
+TestMemleakInFunction::allocfunc7
+TestMemleakInFunction::allocfunc8
+TestMemleakInFunction::allocfunc9
+TestMemleakInFunction::allocfunc10
+TestMemleakInFunction::allocfunc11
+TestMemleakInFunction::allocfunc12
+TestMemleakInFunction::allocfunc13
+TestMemleakInFunction::throw1
+TestMemleakInFunction::throw2
+TestMemleakInFunction::linux_list_1
+TestMemleakInFunction::sizeof1
+TestMemleakInFunction::realloc1
+TestMemleakInFunction::realloc2
+TestMemleakInFunction::realloc3
+TestMemleakInFunction::realloc4
+TestMemleakInFunction::realloc5
+TestMemleakInFunction::realloc6
+TestMemleakInFunction::realloc7
+TestMemleakInFunction::realloc8
+TestMemleakInFunction::realloc9
+TestMemleakInFunction::realloc10
+TestMemleakInFunction::realloc11
+TestMemleakInFunction::realloc12
+TestMemleakInFunction::realloc13
+TestMemleakInFunction::realloc14
+TestMemleakInFunction::realloc15
+TestMemleakInFunction::assign1
+TestMemleakInFunction::assign2
+TestMemleakInFunction::varid
+TestMemleakInFunction::cast1
+TestMemleakInFunction::dealloc_use
+TestMemleakInFunction::dealloc_use_2
+TestMemleakInFunction::dealloc_use_3
+TestMemleakInFunction::freefree1
+TestMemleakInFunction::freefree2
+TestMemleakInFunction::freefree3
+TestMemleakInFunction::strcpy_result_assignment
+TestMemleakInFunction::strcat_result_assignment
+TestMemleakInFunction::all1
+TestMemleakInFunction::malloc_constant_1
+TestMemleakInFunction::unknownFunction1
+TestMemleakInFunction::unknownFunction2
+TestMemleakInFunction::unknownFunction4
+TestMemleakInFunction::unknownFunction5
+TestMemleakInFunction::class1
+TestMemleakInFunction::class2
+TestMemleakInFunction::autoptr1
+TestMemleakInFunction::if_with_and
+TestMemleakInFunction::assign_pclose
+TestMemleakInFunction::exit2
+TestMemleakInFunction::exit4
+TestMemleakInFunction::exit5
+TestMemleakInFunction::exit6
+TestMemleakInFunction::exit7
+TestMemleakInFunction::noreturn
+TestMemleakInFunction::stdstring
+TestMemleakInFunction::strndup_function
+TestMemleakInFunction::tmpfile_function
+TestMemleakInFunction::fcloseall_function
+TestMemleakInFunction::file_functions
+TestMemleakInFunction::getc_function
+TestMemleakInFunction::open_function
+TestMemleakInFunction::open_fdopen
+TestMemleakInFunction::creat_function
+TestMemleakInFunction::close_function
+TestMemleakInFunction::fd_functions
+TestMemleakInFunction::opendir_function
+TestMemleakInFunction::fdopendir_function
+TestMemleakInFunction::closedir_function
+TestMemleakInFunction::dir_functions
+TestMemleakInFunction::pointer_to_pointer
+TestMemleakInFunction::dealloc_and_alloc_in_func
+TestMemleakInFunction::unknownSyntax1
+TestMemleakInFunction::knownFunctions
+TestMemleakInFunction::same_function_name
+TestMemleakInFunction::functionParameter
+TestMemleakInFunction::jmp
+TestMemleakInFunction::trac1949
+TestMemleakInFunction::trac2540
+TestMemleakInFunction::trac2662
+TestMemleakInFunction::trac1879
+TestMemleakInFunction::garbageCode
+TestMemleakInFunction::ptrptr
+TestMemleakInClass::class1
+TestMemleakInClass::class2
+TestMemleakInClass::class3
+TestMemleakInClass::class4
+TestMemleakInClass::class6
+TestMemleakInClass::class7
+TestMemleakInClass::class8
+TestMemleakInClass::class9
+TestMemleakInClass::class10
+TestMemleakInClass::class11
+TestMemleakInClass::class12
+TestMemleakInClass::class13
+TestMemleakInClass::class14
+TestMemleakInClass::class15
+TestMemleakInClass::class16
+TestMemleakInClass::class17
+TestMemleakInClass::class18
+TestMemleakInClass::class19
+TestMemleakInClass::class20
+TestMemleakInClass::class21
+TestMemleakInClass::class22
+TestMemleakInClass::class23
+TestMemleakInClass::class24
+TestMemleakInClass::class25
+TestMemleakInClass::staticvar
+TestMemleakInClass::free_member_in_sub_func
+TestMemleakInClass::mismatch1
+TestMemleakInClass::func1
+TestMemleakInClass::func2
+TestMemleakStructMember::err
+TestMemleakStructMember::goto_
+TestMemleakStructMember::ret1
+TestMemleakStructMember::ret2
+TestMemleakStructMember::assign1
+TestMemleakStructMember::assign2
+TestMemleakStructMember::assign3
+TestMemleakStructMember::failedAllocation
+TestMemleakStructMember::function1
+TestMemleakStructMember::function2
+TestMemleakStructMember::function3
+TestMemleakStructMember::function4
+TestMemleakStructMember::ifelse
+TestMemleakStructMember::linkedlist
+TestMemleakStructMember::globalvar
+TestMemleakStructMember::localvars
+TestMemleakNoVar::functionParameter
+TestMemleakNoVar::missingAssignement
+TestNonReentrantFunctions::test_crypt
+TestNonReentrantFunctions::test_namespace_handling
+TestNullPointer::nullpointerAfterLoop
+TestNullPointer::nullpointer1
+TestNullPointer::nullpointer2
+TestNullPointer::structDerefAndCheck
+TestNullPointer::pointerDerefAndCheck
+TestNullPointer::nullpointer5
+TestNullPointer::nullpointerExecutionPaths
+TestNullPointer::nullpointerExecutionPathsLoop
+TestNullPointer::nullpointer7
+TestNullPointer::nullpointer8
+TestNullPointer::nullpointer9
+TestNullPointer::nullpointer10
+TestNullPointer::nullpointer11
+TestNullPointer::nullpointer12
+TestNullPointer::nullpointer14
+TestNullPointer::nullpointer15
+TestNullPointer::nullpointer16
+TestNullPointer::nullpointer17
+TestNullPointer::nullpointer18
+TestNullPointer::nullpointer19
+TestNullPointer::nullpointer20
+TestNullPointer::nullpointer21
+TestNullPointer::nullpointer23
+TestNullPointer::nullpointer_cast
+TestNullPointer::nullpointer_castToVoid
+TestNullPointer::pointerCheckAndDeRef
+TestNullPointer::nullConstantDereference
+TestNullPointer::gcc_statement_expression
+TestNullPointer::snprintf_with_zero_size
+TestNullPointer::snprintf_with_non_zero_size
+TestNullPointer::printf_with_invalid_va_argument
+TestNullPointer::scanf_with_invalid_va_argument
+TestNullPointer::nullpointer_in_return
+TestNullPointer::nullpointer_in_typeid
+TestNullPointer::nullpointer_in_for_loop
+TestNullPointer::nullpointerDelete
+TestNullPointer::nullpointerExit
+TestNullPointer::nullpointerStdString
+TestNullPointer::nullpointerStdStream
+TestNullPointer::functioncall
+TestNullPointer::functioncalllibrary
+TestNullPointer::crash1
+TestNullPointer::functioncallDefaultArguments
+TestObsoleteFunctions::testbsd_signal
+TestObsoleteFunctions::testgethostbyname
+TestObsoleteFunctions::testgethostbyaddr
+TestObsoleteFunctions::testusleep
+TestObsoleteFunctions::testindex
+TestObsoleteFunctions::test_qt_index
+TestObsoleteFunctions::testrindex
+TestObsoleteFunctions::testvar
+TestObsoleteFunctions::testgets
+TestObsoleteFunctions::testalloca
+TestObsoleteFunctions::test_declared_function
+TestObsoleteFunctions::test_std_gets
+TestObsoleteFunctions::test_multiple
+TestObsoleteFunctions::test_c_declaration
+TestObsoleteFunctions::test_function_with_body
+TestObsoleteFunctions::ticket3238
+TestOptions::which_test
+TestOptions::which_test_method
+TestOptions::no_test_method
+TestOptions::not_quiet
+TestOptions::quiet
+TestOptions::gcc_errors
+TestOptions::multiple_testcases
+TestOptions::invalid_switches
+TestOther::oppositeInnerCondition
+TestOther::emptyBrackets
+TestOther::zeroDiv1
+TestOther::zeroDiv2
+TestOther::zeroDiv3
+TestOther::zeroDiv4
+TestOther::zeroDiv5
+TestOther::zeroDiv6
+TestOther::zeroDiv7
+TestOther::nanInArithmeticExpression
+TestOther::sprintf1
+TestOther::sprintf2
+TestOther::sprintf3
+TestOther::sprintf4
+TestOther::strPlusChar1
+TestOther::strPlusChar2
+TestOther::strPlusChar3
+TestOther::varScope1
+TestOther::varScope2
+TestOther::varScope3
+TestOther::varScope4
+TestOther::varScope5
+TestOther::varScope6
+TestOther::varScope7
+TestOther::varScope8
+TestOther::varScope9
+TestOther::varScope10
+TestOther::varScope11
+TestOther::varScope12
+TestOther::varScope13
+TestOther::varScope14
+TestOther::varScope15
+TestOther::varScope16
+TestOther::varScope17
+TestOther::varScope18
+TestOther::oldStylePointerCast
+TestOther::invalidPointerCast
+TestOther::dangerousStrolUsage
+TestOther::passedByValue
+TestOther::mathfunctionCall1
+TestOther::cctypefunctionCall
+TestOther::switchRedundantAssignmentTest
+TestOther::switchRedundantOperationTest
+TestOther::switchRedundantBitwiseOperationTest
+TestOther::switchFallThroughCase
+TestOther::unreachableCode
+TestOther::suspiciousCase
+TestOther::suspiciousEqualityComparison
+TestOther::selfAssignment
+TestOther::trac1132
+TestOther::testMisusedScopeObjectDoesNotPickFunction1
+TestOther::testMisusedScopeObjectDoesNotPickFunction2
+TestOther::testMisusedScopeObjectPicksClass
+TestOther::testMisusedScopeObjectPicksStruct
+TestOther::testMisusedScopeObjectDoesNotPickIf
+TestOther::testMisusedScopeObjectDoesNotPickConstructorDeclaration
+TestOther::testMisusedScopeObjectDoesNotPickFunctor
+TestOther::testMisusedScopeObjectDoesNotPickLocalClassConstructors
+TestOther::testMisusedScopeObjectDoesNotPickUsedObject
+TestOther::testMisusedScopeObjectDoesNotPickPureC
+TestOther::testMisusedScopeObjectDoesNotPickNestedClass
+TestOther::testMisusedScopeObjectInConstructor
+TestOther::trac2071
+TestOther::trac2084
+TestOther::trac3693
+TestOther::modulo
+TestOther::incorrectLogicOperator1
+TestOther::incorrectLogicOperator2
+TestOther::incorrectLogicOperator3
+TestOther::secondAlwaysTrueFalseWhenFirstTrueError
+TestOther::incorrectLogicOp_condSwapping
+TestOther::sameExpression
+TestOther::memsetZeroBytes
+TestOther::redundantGetAndSetUserId
+TestOther::clarifyCalculation
+TestOther::clarifyStatement
+TestOther::clarifyCondition1
+TestOther::clarifyCondition2
+TestOther::clarifyCondition3
+TestOther::clarifyCondition4
+TestOther::clarifyCondition5
+TestOther::clarifyCondition6
+TestOther::incorrectStringCompare
+TestOther::duplicateIf
+TestOther::duplicateIf1
+TestOther::duplicateBranch
+TestOther::duplicateBranch1
+TestOther::duplicateBranch2
+TestOther::duplicateExpression1
+TestOther::duplicateExpression2
+TestOther::duplicateExpression3
+TestOther::duplicateExpression4
+TestOther::duplicateExpression5
+TestOther::duplicateExpression6
+TestOther::alwaysTrueFalseStringCompare
+TestOther::suspiciousStringCompare
+TestOther::checkSignOfUnsignedVariable
+TestOther::checkSignOfPointer
+TestOther::checkForSuspiciousSemicolon1
+TestOther::checkForSuspiciousSemicolon2
+TestOther::checkDoubleFree
+TestOther::checkInvalidFree
+TestOther::checkRedundantCopy
+TestOther::checkNegativeShift
+TestOther::incompleteArrayFill
+TestOther::redundantVarAssignment
+TestOther::redundantMemWrite
+TestOther::varFuncNullUB
+TestOther::checkPipeParameterSize
+TestOther::checkCastIntToCharAndBack
+TestOther::checkSleepTimeIntervall
+TestOther::checkCommaSeparatedReturn
+TestPath::simplify_path
+TestPath::accept_file
+TestPath::getRelative
+TestPath::is_c
+TestPath::is_cpp
+TestPath::get_path_from_filename
+TestPathMatch::emptymaskemptyfile
+TestPathMatch::emptymaskpath1
+TestPathMatch::emptymaskpath2
+TestPathMatch::emptymaskpath3
+TestPathMatch::onemaskemptypath
+TestPathMatch::onemasksamepath
+TestPathMatch::onemasksamepathdifferentcase
+TestPathMatch::onemasksamepathwithfile
+TestPathMatch::onemaskdifferentdir1
+TestPathMatch::onemaskdifferentdir2
+TestPathMatch::onemaskdifferentdir3
+TestPathMatch::onemaskdifferentdir4
+TestPathMatch::onemasklongerpath1
+TestPathMatch::onemasklongerpath2
+TestPathMatch::onemasklongerpath3
+TestPathMatch::twomasklongerpath1
+TestPathMatch::twomasklongerpath2
+TestPathMatch::twomasklongerpath3
+TestPathMatch::twomasklongerpath4
+TestPathMatch::filemask1
+TestPathMatch::filemaskdifferentcase
+TestPathMatch::filemask2
+TestPathMatch::filemask3
+TestPathMatch::filemaskpath1
+TestPathMatch::filemaskpath2
+TestPathMatch::filemaskpath3
+TestPathMatch::filemaskpath4
+TestPostfixOperator::testsimple
+TestPostfixOperator::testfor
+TestPostfixOperator::testvolatile
+TestPostfixOperator::testiterator
+TestPostfixOperator::test2168
+TestPostfixOperator::pointer
+TestPostfixOperator::testHangWithInvalidCode
+TestPostfixOperator::testtemplate
+TestPostfixOperator::testmember
+TestPostfixOperator::testcomma
+TestPreprocessor::readCode1
+TestPreprocessor::readCode2
+TestPreprocessor::readCode3
+TestPreprocessor::readCode4
+TestPreprocessor::utf16
+TestPreprocessor::removeComments
+TestPreprocessor::Bug2190219
+TestPreprocessor::test1
+TestPreprocessor::test2
+TestPreprocessor::test3
+TestPreprocessor::test4
+TestPreprocessor::test5
+TestPreprocessor::test6
+TestPreprocessor::test7
+TestPreprocessor::test7a
+TestPreprocessor::test7b
+TestPreprocessor::test7c
+TestPreprocessor::test7d
+TestPreprocessor::test7e
+TestPreprocessor::test8
+TestPreprocessor::error1
+TestPreprocessor::error2
+TestPreprocessor::error3
+TestPreprocessor::error4
+TestPreprocessor::if0_exclude
+TestPreprocessor::if0_whitespace
+TestPreprocessor::if0_else
+TestPreprocessor::if0_elif
+TestPreprocessor::if0_include_1
+TestPreprocessor::if0_include_2
+TestPreprocessor::includeguard1
+TestPreprocessor::includeguard2
+TestPreprocessor::newlines
+TestPreprocessor::comments1
+TestPreprocessor::if0
+TestPreprocessor::if1
+TestPreprocessor::elif
+TestPreprocessor::match_cfg_def
+TestPreprocessor::if_cond1
+TestPreprocessor::if_cond2
+TestPreprocessor::if_cond3
+TestPreprocessor::if_cond4
+TestPreprocessor::if_cond5
+TestPreprocessor::if_cond6
+TestPreprocessor::if_cond8
+TestPreprocessor::if_cond9
+TestPreprocessor::if_cond10
+TestPreprocessor::if_cond11
+TestPreprocessor::if_cond12
+TestPreprocessor::if_cond13
+TestPreprocessor::if_cond14
+TestPreprocessor::if_cond15
+TestPreprocessor::if_or_1
+TestPreprocessor::if_or_2
+TestPreprocessor::if_macro_eq_macro
+TestPreprocessor::ticket_3675
+TestPreprocessor::ticket_3699
+TestPreprocessor::multiline1
+TestPreprocessor::multiline2
+TestPreprocessor::multiline3
+TestPreprocessor::multiline4
+TestPreprocessor::multiline5
+TestPreprocessor::remove_asm
+TestPreprocessor::if_defined
+TestPreprocessor::if_not_defined
+TestPreprocessor::macro_simple1
+TestPreprocessor::macro_simple2
+TestPreprocessor::macro_simple3
+TestPreprocessor::macro_simple4
+TestPreprocessor::macro_simple5
+TestPreprocessor::macro_simple6
+TestPreprocessor::macro_simple7
+TestPreprocessor::macro_simple8
+TestPreprocessor::macro_simple9
+TestPreprocessor::macro_simple10
+TestPreprocessor::macro_simple11
+TestPreprocessor::macro_simple12
+TestPreprocessor::macro_simple13
+TestPreprocessor::macro_simple14
+TestPreprocessor::macro_simple15
+TestPreprocessor::macroInMacro1
+TestPreprocessor::macroInMacro2
+TestPreprocessor::macro_mismatch
+TestPreprocessor::macro_linenumbers
+TestPreprocessor::macro_nopar
+TestPreprocessor::macro_switchCase
+TestPreprocessor::macro_NULL
+TestPreprocessor::string1
+TestPreprocessor::string2
+TestPreprocessor::string3
+TestPreprocessor::preprocessor_undef
+TestPreprocessor::defdef
+TestPreprocessor::preprocessor_doublesharp
+TestPreprocessor::preprocessor_include_in_str
+TestPreprocessor::va_args_1
+TestPreprocessor::va_args_2
+TestPreprocessor::va_args_3
+TestPreprocessor::va_args_4
+TestPreprocessor::multi_character_character
+TestPreprocessor::stringify
+TestPreprocessor::stringify2
+TestPreprocessor::stringify3
+TestPreprocessor::stringify4
+TestPreprocessor::stringify5
+TestPreprocessor::ifdefwithfile
+TestPreprocessor::pragma
+TestPreprocessor::pragma_asm_1
+TestPreprocessor::pragma_asm_2
+TestPreprocessor::endifsemicolon
+TestPreprocessor::missing_doublequote
+TestPreprocessor::handle_error
+TestPreprocessor::dup_defines
+TestPreprocessor::unicodeInCode
+TestPreprocessor::unicodeInComment
+TestPreprocessor::unicodeInString
+TestPreprocessor::define_part_of_func
+TestPreprocessor::conditionalDefine
+TestPreprocessor::multiline_comment
+TestPreprocessor::macro_parameters
+TestPreprocessor::newline_in_macro
+TestPreprocessor::includes
+TestPreprocessor::ifdef_ifdefined
+TestPreprocessor::define_if1
+TestPreprocessor::define_if2
+TestPreprocessor::define_if3
+TestPreprocessor::define_if4
+TestPreprocessor::define_if5
+TestPreprocessor::define_if6
+TestPreprocessor::define_ifdef
+TestPreprocessor::define_ifndef1
+TestPreprocessor::define_ifndef2
+TestPreprocessor::ifndef_define
+TestPreprocessor::undef_ifdef
+TestPreprocessor::endfile
+TestPreprocessor::redundant_config
+TestPreprocessor::testPreprocessorRead1
+TestPreprocessor::testPreprocessorRead2
+TestPreprocessor::testPreprocessorRead3
+TestPreprocessor::testPreprocessorRead4
+TestPreprocessor::invalid_define_1
+TestPreprocessor::invalid_define_2
+TestPreprocessor::missingInclude
+TestPreprocessor::inline_suppression_for_missing_include
+TestPreprocessor::predefine1
+TestPreprocessor::predefine2
+TestPreprocessor::predefine3
+TestPreprocessor::predefine4
+TestPreprocessor::predefine5
+TestPreprocessor::predefine6
+TestPreprocessor::simplifyCondition
+TestPreprocessor::invalidElIf
+TestPreprocessor::def_handleIncludes
+TestPreprocessor::def_missingInclude
+TestPreprocessor::def_handleIncludes_ifelse1
+TestPreprocessor::def_handleIncludes_ifelse2
+TestPreprocessor::def_handleIncludes_ifelse3
+TestPreprocessor::def_valueWithParentheses
+TestPreprocessor::undef1
+TestPreprocessor::undef2
+TestPreprocessor::undef3
+TestPreprocessor::undef4
+TestPreprocessor::undef5
+TestPreprocessor::undef6
+TestPreprocessor::undef7
+TestPreprocessor::undef8
+TestPreprocessor::undef9
+TestPreprocessor::undef10
+TestPreprocessor::handleUndef
+TestPreprocessor::macroChar
+TestPreprocessor::validateCfg
+TestPreprocessor::if_sizeof
+TestSimplifyTokens::simplifyTokenList1
+TestSimplifyTokens::cast
+TestSimplifyTokens::iftruefalse
+TestSimplifyTokens::combine_strings
+TestSimplifyTokens::double_plus
+TestSimplifyTokens::redundant_plus
+TestSimplifyTokens::redundant_plus_numbers
+TestSimplifyTokens::parentheses1
+TestSimplifyTokens::parenthesesVar
+TestSimplifyTokens::declareVar
+TestSimplifyTokens::declareArray
+TestSimplifyTokens::dontRemoveIncrement
+TestSimplifyTokens::removePostIncrement
+TestSimplifyTokens::removePreIncrement
+TestSimplifyTokens::elseif1
+TestSimplifyTokens::ifa_ifa
+TestSimplifyTokens::sizeof2
+TestSimplifyTokens::sizeof3
+TestSimplifyTokens::sizeof4
+TestSimplifyTokens::sizeof5
+TestSimplifyTokens::sizeof6
+TestSimplifyTokens::sizeof7
+TestSimplifyTokens::sizeof8
+TestSimplifyTokens::sizeof9
+TestSimplifyTokens::sizeof10
+TestSimplifyTokens::sizeof11
+TestSimplifyTokens::sizeof12
+TestSimplifyTokens::sizeof13
+TestSimplifyTokens::sizeof14
+TestSimplifyTokens::sizeof15
+TestSimplifyTokens::sizeof16
+TestSimplifyTokens::sizeof17
+TestSimplifyTokens::sizeof18
+TestSimplifyTokens::sizeof19
+TestSimplifyTokens::sizeof20
+TestSimplifyTokens::sizeof21
+TestSimplifyTokens::sizeof22
+TestSimplifyTokens::sizeof23
+TestSimplifyTokens::sizeofsizeof
+TestSimplifyTokens::casting
+TestSimplifyTokens::strlen1
+TestSimplifyTokens::strlen2
+TestSimplifyTokens::template1
+TestSimplifyTokens::template2
+TestSimplifyTokens::template3
+TestSimplifyTokens::template4
+TestSimplifyTokens::template5
+TestSimplifyTokens::template6
+TestSimplifyTokens::template7
+TestSimplifyTokens::template8
+TestSimplifyTokens::template9
+TestSimplifyTokens::template10
+TestSimplifyTokens::template11
+TestSimplifyTokens::template12
+TestSimplifyTokens::template13
+TestSimplifyTokens::template14
+TestSimplifyTokens::template15
+TestSimplifyTokens::template16
+TestSimplifyTokens::template17
+TestSimplifyTokens::template18
+TestSimplifyTokens::template19
+TestSimplifyTokens::template20
+TestSimplifyTokens::template21
+TestSimplifyTokens::template22
+TestSimplifyTokens::template23
+TestSimplifyTokens::template24
+TestSimplifyTokens::template25
+TestSimplifyTokens::template26
+TestSimplifyTokens::template27
+TestSimplifyTokens::template28
+TestSimplifyTokens::template29
+TestSimplifyTokens::template30
+TestSimplifyTokens::template31
+TestSimplifyTokens::template32
+TestSimplifyTokens::template33
+TestSimplifyTokens::template34
+TestSimplifyTokens::template35
+TestSimplifyTokens::template36
+TestSimplifyTokens::template37
+TestSimplifyTokens::template38
+TestSimplifyTokens::template39
+TestSimplifyTokens::template_unhandled
+TestSimplifyTokens::template_default_parameter
+TestSimplifyTokens::template_default_type
+TestSimplifyTokens::template_typename
+TestSimplifyTokens::template_constructor
+TestSimplifyTokens::templateParameters
+TestSimplifyTokens::templateParameters1
+TestSimplifyTokens::namespaces
+TestSimplifyTokens::ifassign1
+TestSimplifyTokens::ifAssignWithCast
+TestSimplifyTokens::whileAssign1
+TestSimplifyTokens::whileAssign2
+TestSimplifyTokens::whileAssign3
+TestSimplifyTokens::doWhileAssign
+TestSimplifyTokens::test_4881
+TestSimplifyTokens::ifnot
+TestSimplifyTokens::combine_wstrings
+TestSimplifyTokens::not1
+TestSimplifyTokens::and1
+TestSimplifyTokens::or1
+TestSimplifyTokens::comma_keyword
+TestSimplifyTokens::remove_comma
+TestSimplifyTokens::simplifyConditionOperator
+TestSimplifyTokens::calculations
+TestSimplifyTokens::comparisons
+TestSimplifyTokens::goto1
+TestSimplifyTokens::goto2
+TestSimplifyTokens::goto3
+TestSimplifyTokens::goto4
+TestSimplifyTokens::goto5
+TestSimplifyTokens::goto6
+TestSimplifyTokens::flowControl
+TestSimplifyTokens::strcat1
+TestSimplifyTokens::strcat2
+TestSimplifyTokens::simplifyAtol
+TestSimplifyTokens::simplifyTypedef1
+TestSimplifyTokens::simplifyTypedef2
+TestSimplifyTokens::simplifyTypedef3
+TestSimplifyTokens::simplifyTypedef4
+TestSimplifyTokens::simplifyTypedef5
+TestSimplifyTokens::simplifyTypedef6
+TestSimplifyTokens::simplifyTypedef7
+TestSimplifyTokens::simplifyTypedef8
+TestSimplifyTokens::simplifyTypedef9
+TestSimplifyTokens::simplifyTypedef10
+TestSimplifyTokens::simplifyTypedef11
+TestSimplifyTokens::simplifyTypedef12
+TestSimplifyTokens::simplifyTypedef13
+TestSimplifyTokens::simplifyTypedef14
+TestSimplifyTokens::simplifyTypedef15
+TestSimplifyTokens::simplifyTypedef16
+TestSimplifyTokens::simplifyTypedef17
+TestSimplifyTokens::simplifyTypedef18
+TestSimplifyTokens::simplifyTypedef19
+TestSimplifyTokens::simplifyTypedef20
+TestSimplifyTokens::simplifyTypedef21
+TestSimplifyTokens::simplifyTypedef22
+TestSimplifyTokens::simplifyTypedef23
+TestSimplifyTokens::simplifyTypedef24
+TestSimplifyTokens::simplifyTypedef25
+TestSimplifyTokens::simplifyTypedef26
+TestSimplifyTokens::simplifyTypedef27
+TestSimplifyTokens::simplifyTypedef28
+TestSimplifyTokens::simplifyTypedef29
+TestSimplifyTokens::simplifyTypedef30
+TestSimplifyTokens::simplifyTypedef31
+TestSimplifyTokens::simplifyTypedef32
+TestSimplifyTokens::simplifyTypedef33
+TestSimplifyTokens::simplifyTypedef34
+TestSimplifyTokens::simplifyTypedef35
+TestSimplifyTokens::simplifyTypedef36
+TestSimplifyTokens::simplifyTypedef37
+TestSimplifyTokens::simplifyTypedef38
+TestSimplifyTokens::simplifyTypedef39
+TestSimplifyTokens::simplifyTypedef40
+TestSimplifyTokens::simplifyTypedef41
+TestSimplifyTokens::simplifyTypedef42
+TestSimplifyTokens::simplifyTypedef43
+TestSimplifyTokens::simplifyTypedef44
+TestSimplifyTokens::simplifyTypedef45
+TestSimplifyTokens::simplifyTypedef46
+TestSimplifyTokens::simplifyTypedef47
+TestSimplifyTokens::simplifyTypedef48
+TestSimplifyTokens::simplifyTypedef49
+TestSimplifyTokens::simplifyTypedef50
+TestSimplifyTokens::simplifyTypedef51
+TestSimplifyTokens::simplifyTypedef52
+TestSimplifyTokens::simplifyTypedef53
+TestSimplifyTokens::simplifyTypedef54
+TestSimplifyTokens::simplifyTypedef55
+TestSimplifyTokens::simplifyTypedef56
+TestSimplifyTokens::simplifyTypedef57
+TestSimplifyTokens::simplifyTypedef58
+TestSimplifyTokens::simplifyTypedef59
+TestSimplifyTokens::simplifyTypedef60
+TestSimplifyTokens::simplifyTypedef61
+TestSimplifyTokens::simplifyTypedef62
+TestSimplifyTokens::simplifyTypedef63
+TestSimplifyTokens::simplifyTypedef64
+TestSimplifyTokens::simplifyTypedef65
+TestSimplifyTokens::simplifyTypedef66
+TestSimplifyTokens::simplifyTypedef67
+TestSimplifyTokens::simplifyTypedef68
+TestSimplifyTokens::simplifyTypedef69
+TestSimplifyTokens::simplifyTypedef70
+TestSimplifyTokens::simplifyTypedef71
+TestSimplifyTokens::simplifyTypedef72
+TestSimplifyTokens::simplifyTypedef73
+TestSimplifyTokens::simplifyTypedef74
+TestSimplifyTokens::simplifyTypedef75
+TestSimplifyTokens::simplifyTypedef76
+TestSimplifyTokens::simplifyTypedef77
+TestSimplifyTokens::simplifyTypedef78
+TestSimplifyTokens::simplifyTypedef79
+TestSimplifyTokens::simplifyTypedef80
+TestSimplifyTokens::simplifyTypedef81
+TestSimplifyTokens::simplifyTypedef82
+TestSimplifyTokens::simplifyTypedef83
+TestSimplifyTokens::simplifyTypedef84
+TestSimplifyTokens::simplifyTypedef85
+TestSimplifyTokens::simplifyTypedef86
+TestSimplifyTokens::simplifyTypedef87
+TestSimplifyTokens::simplifyTypedef88
+TestSimplifyTokens::simplifyTypedef89
+TestSimplifyTokens::simplifyTypedef90
+TestSimplifyTokens::simplifyTypedef91
+TestSimplifyTokens::simplifyTypedef92
+TestSimplifyTokens::simplifyTypedef93
+TestSimplifyTokens::simplifyTypedef94
+TestSimplifyTokens::simplifyTypedef95
+TestSimplifyTokens::simplifyTypedef96
+TestSimplifyTokens::simplifyTypedef97
+TestSimplifyTokens::simplifyTypedef98
+TestSimplifyTokens::simplifyTypedef99
+TestSimplifyTokens::simplifyTypedef100
+TestSimplifyTokens::simplifyTypedef101
+TestSimplifyTokens::simplifyTypedef102
+TestSimplifyTokens::simplifyTypedef103
+TestSimplifyTokens::simplifyTypedef104
+TestSimplifyTokens::simplifyTypedef105
+TestSimplifyTokens::simplifyTypedef106
+TestSimplifyTokens::simplifyTypedef107
+TestSimplifyTokens::simplifyTypedefFunction1
+TestSimplifyTokens::simplifyTypedefFunction2
+TestSimplifyTokens::simplifyTypedefFunction3
+TestSimplifyTokens::simplifyTypedefFunction4
+TestSimplifyTokens::simplifyTypedefFunction5
+TestSimplifyTokens::simplifyTypedefFunction6
+TestSimplifyTokens::simplifyTypedefFunction7
+TestSimplifyTokens::simplifyTypedefFunction8
+TestSimplifyTokens::simplifyTypedefShadow
+TestSimplifyTokens::simplifyOperator1
+TestSimplifyTokens::reverseArraySyntax
+TestSimplifyTokens::simplify_numeric_condition
+TestSimplifyTokens::simplify_condition
+TestSimplifyTokens::pointeralias1
+TestSimplifyTokens::pointeralias2
+TestSimplifyTokens::pointeralias3
+TestSimplifyTokens::pointeralias4
+TestSimplifyTokens::pointeralias5
+TestSimplifyTokens::reduceConstness
+TestSimplifyTokens::while0
+TestSimplifyTokens::while0for
+TestSimplifyTokens::while1
+TestSimplifyTokens::enum1
+TestSimplifyTokens::enum2
+TestSimplifyTokens::enum3
+TestSimplifyTokens::enum4
+TestSimplifyTokens::enum5
+TestSimplifyTokens::enum6
+TestSimplifyTokens::enum7
+TestSimplifyTokens::enum8
+TestSimplifyTokens::enum9
+TestSimplifyTokens::enum10
+TestSimplifyTokens::enum11
+TestSimplifyTokens::enum12
+TestSimplifyTokens::enum13
+TestSimplifyTokens::enum14
+TestSimplifyTokens::enum15
+TestSimplifyTokens::enum16
+TestSimplifyTokens::enum17
+TestSimplifyTokens::enum18
+TestSimplifyTokens::enum19
+TestSimplifyTokens::enum20
+TestSimplifyTokens::enum21
+TestSimplifyTokens::enum22
+TestSimplifyTokens::enum23
+TestSimplifyTokens::enum24
+TestSimplifyTokens::enum25
+TestSimplifyTokens::enum26
+TestSimplifyTokens::enum27
+TestSimplifyTokens::enum28
+TestSimplifyTokens::enum29
+TestSimplifyTokens::enum30
+TestSimplifyTokens::enum31
+TestSimplifyTokens::enum32
+TestSimplifyTokens::enum33
+TestSimplifyTokens::enum34
+TestSimplifyTokens::enum35
+TestSimplifyTokens::enum36
+TestSimplifyTokens::enum37
+TestSimplifyTokens::enum38
+TestSimplifyTokens::enumscope1
+TestSimplifyTokens::duplicateDefinition
+TestSimplifyTokens::removestd
+TestSimplifyTokens::simplifyInitVar
+TestSimplifyTokens::simplifyReference
+TestSimplifyTokens::simplifyRealloc
+TestSimplifyTokens::simplifyErrNoInWhile
+TestSimplifyTokens::simplifyFuncInWhile
+TestSimplifyTokens::initstruct
+TestSimplifyTokens::simplifyStructDecl1
+TestSimplifyTokens::simplifyStructDecl2
+TestSimplifyTokens::simplifyStructDecl3
+TestSimplifyTokens::simplifyStructDecl4
+TestSimplifyTokens::simplifyStructDecl5
+TestSimplifyTokens::simplifyStructDecl6
+TestSimplifyTokens::simplifyStructDecl7
+TestSimplifyTokens::removeUnwantedKeywords
+TestSimplifyTokens::simplifyCallingConvention
+TestSimplifyTokens::simplifyFunctorCall
+TestSimplifyTokens::redundant_semicolon
+TestSimplifyTokens::simplifyFunctionReturn
+TestSimplifyTokens::removeVoidFromFunction
+TestSimplifyTokens::removeUnnecessaryQualification1
+TestSimplifyTokens::removeUnnecessaryQualification2
+TestSimplifyTokens::removeUnnecessaryQualification3
+TestSimplifyTokens::removeUnnecessaryQualification4
+TestSimplifyTokens::removeUnnecessaryQualification5
+TestSimplifyTokens::removeUnnecessaryQualification6
+TestSimplifyTokens::removeUnnecessaryQualification7
+TestSimplifyTokens::removeUnnecessaryQualification8
+TestSimplifyTokens::removeUnnecessaryQualification9
+TestSimplifyTokens::removeUnnecessaryQualification10
+TestSimplifyTokens::simplifyIfNotNull
+TestSimplifyTokens::simplifyVarDecl1
+TestSimplifyTokens::simplifyVarDecl2
+TestSimplifyTokens::return_strncat
+TestSimplifyTokens::removeRedundantFor
+TestSimplifyTokens::consecutiveBraces
+TestSimplifyTokens::undefinedSizeArray
+TestSimplifyTokens::simplifyArrayAddress
+TestSimplifyTokens::simplifyCharAt
+TestSizeof::sizeofsizeof
+TestSizeof::sizeofCalculation
+TestSizeof::checkPointerSizeof
+TestSizeof::sizeofForArrayParameter
+TestSizeof::sizeofForNumericParameter
+TestSizeof::suspiciousSizeofCalculation
+TestSizeof::sizeofVoid
+TestStl::iterator1
+TestStl::iterator2
+TestStl::iterator3
+TestStl::iterator4
+TestStl::iterator5
+TestStl::iterator6
+TestStl::iterator7
+TestStl::iterator8
+TestStl::iterator9
+TestStl::iterator10
+TestStl::iterator11
+TestStl::iterator12
+TestStl::iterator13
+TestStl::dereference
+TestStl::dereference_break
+TestStl::dereference_member
+TestStl::STLSize
+TestStl::STLSizeNoErr
+TestStl::erase1
+TestStl::erase2
+TestStl::erase3
+TestStl::erase4
+TestStl::erase5
+TestStl::erase6
+TestStl::eraseBreak
+TestStl::eraseContinue
+TestStl::eraseReturn1
+TestStl::eraseReturn2
+TestStl::eraseReturn3
+TestStl::eraseGoto
+TestStl::eraseAssign1
+TestStl::eraseAssign2
+TestStl::eraseAssign3
+TestStl::eraseAssignByFunctionCall
+TestStl::eraseErase
+TestStl::eraseByValue
+TestStl::pushback1
+TestStl::pushback2
+TestStl::pushback3
+TestStl::pushback4
+TestStl::pushback5
+TestStl::pushback6
+TestStl::pushback7
+TestStl::pushback8
+TestStl::pushback9
+TestStl::pushback10
+TestStl::pushback11
+TestStl::pushback12
+TestStl::insert1
+TestStl::insert2
+TestStl::invalidcode
+TestStl::stlBoundaries1
+TestStl::stlBoundaries2
+TestStl::stlBoundaries3
+TestStl::stlBoundaries4
+TestStl::stlBoundaries5
+TestStl::if_find
+TestStl::if_str_find
+TestStl::size1
+TestStl::size2
+TestStl::size3
+TestStl::size4
+TestStl::redundantCondition1
+TestStl::missingInnerComparison1
+TestStl::missingInnerComparison2
+TestStl::missingInnerComparison3
+TestStl::missingInnerComparison4
+TestStl::missingInnerComparison5
+TestStl::missingInnerComparison6
+TestStl::cstr
+TestStl::autoPointer
+TestStl::uselessCalls
+TestStl::stabilityOfChecks
+TestStl::dereferenceInvalidIterator
+TestSuppressions::suppressionsBadId1
+TestSuppressions::suppressionsDosFormat
+TestSuppressions::suppressionsFileNameWithColon
+TestSuppressions::suppressionsGlob
+TestSuppressions::suppressionsFileNameWithExtraPath
+TestSuppressions::suppressionsSettings
+TestSuppressions::suppressionsMultiFile
+TestSuppressions::suppressionsPathSeparator
+TestSuppressions::inlinesuppress_unusedFunction
+TestSymbolDatabase::array
+TestSymbolDatabase::test_isVariableDeclarationCanHandleNull
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesSimpleDeclaration
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesScopedDeclaration
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesStdDeclaration
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesScopedStdDeclaration
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesManyScopes
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesPointers
+TestSymbolDatabase::test_isVariableDeclarationDoesNotIdentifyConstness
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesFirstOfManyVariables
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesScopedPointerDeclaration
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesDeclarationWithIndirection
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesDeclarationWithMultipleIndirection
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesArray
+TestSymbolDatabase::test_isVariableDeclarationIdentifiesOfArrayPointers
+TestSymbolDatabase::isVariableDeclarationIdentifiesTemplatedPointerVariable
+TestSymbolDatabase::isVariableDeclarationIdentifiesTemplatedPointerToPointerVariable
+TestSymbolDatabase::isVariableDeclarationIdentifiesTemplatedArrayVariable
+TestSymbolDatabase::isVariableDeclarationIdentifiesTemplatedVariable
+TestSymbolDatabase::isVariableDeclarationIdentifiesTemplatedVariableIterator
+TestSymbolDatabase::isVariableDeclarationIdentifiesNestedTemplateVariable
+TestSymbolDatabase::isVariableDeclarationIdentifiesReference
+TestSymbolDatabase::isVariableDeclarationDoesNotIdentifyTemplateClass
+TestSymbolDatabase::isVariableDeclarationPointerConst
+TestSymbolDatabase::isVariableDeclarationRValueRef
+TestSymbolDatabase::arrayMemberVar1
+TestSymbolDatabase::arrayMemberVar2
+TestSymbolDatabase::arrayMemberVar3
+TestSymbolDatabase::staticMemberVar
+TestSymbolDatabase::hasRegularFunction
+TestSymbolDatabase::hasInlineClassFunction
+TestSymbolDatabase::hasMissingInlineClassFunction
+TestSymbolDatabase::hasClassFunction
+TestSymbolDatabase::hasRegularFunctionReturningFunctionPointer
+TestSymbolDatabase::hasInlineClassFunctionReturningFunctionPointer
+TestSymbolDatabase::hasMissingInlineClassFunctionReturningFunctionPointer
+TestSymbolDatabase::hasClassFunctionReturningFunctionPointer
+TestSymbolDatabase::hasSubClassConstructor
+TestSymbolDatabase::testConstructors
+TestSymbolDatabase::functionDeclarationTemplate
+TestSymbolDatabase::functionDeclarations
+TestSymbolDatabase::classWithFriend
+TestSymbolDatabase::parseFunctionCorrect
+TestSymbolDatabase::parseFunctionDeclarationCorrect
+TestSymbolDatabase::Cpp11InitInInitList
+TestSymbolDatabase::hasGlobalVariables1
+TestSymbolDatabase::hasGlobalVariables2
+TestSymbolDatabase::hasGlobalVariables3
+TestSymbolDatabase::checkTypeStartEndToken
+TestSymbolDatabase::functionArgs1
+TestSymbolDatabase::functionArgs2
+TestSymbolDatabase::functionArgs3
+TestSymbolDatabase::functionArgs4
+TestSymbolDatabase::namespaces1
+TestSymbolDatabase::namespaces2
+TestSymbolDatabase::namespaces3
+TestSymbolDatabase::tryCatch1
+TestSymbolDatabase::symboldatabase1
+TestSymbolDatabase::symboldatabase2
+TestSymbolDatabase::symboldatabase3
+TestSymbolDatabase::symboldatabase4
+TestSymbolDatabase::symboldatabase5
+TestSymbolDatabase::symboldatabase6
+TestSymbolDatabase::symboldatabase7
+TestSymbolDatabase::symboldatabase8
+TestSymbolDatabase::symboldatabase9
+TestSymbolDatabase::symboldatabase10
+TestSymbolDatabase::symboldatabase11
+TestSymbolDatabase::symboldatabase12
+TestSymbolDatabase::symboldatabase13
+TestSymbolDatabase::symboldatabase14
+TestSymbolDatabase::symboldatabase15
+TestSymbolDatabase::symboldatabase16
+TestSymbolDatabase::symboldatabase17
+TestSymbolDatabase::symboldatabase18
+TestSymbolDatabase::symboldatabase19
+TestSymbolDatabase::symboldatabase20
+TestSymbolDatabase::symboldatabase21
+TestSymbolDatabase::symboldatabase22
+TestSymbolDatabase::symboldatabase23
+TestSymbolDatabase::symboldatabase24
+TestSymbolDatabase::symboldatabase25
+TestSymbolDatabase::symboldatabase26
+TestSymbolDatabase::symboldatabase27
+TestSymbolDatabase::symboldatabase28
+TestSymbolDatabase::symboldatabase29
+TestSymbolDatabase::symboldatabase30
+TestSymbolDatabase::symboldatabase31
+TestSymbolDatabase::symboldatabase33
+TestSymbolDatabase::symboldatabase34
+TestSymbolDatabase::symboldatabase35
+TestSymbolDatabase::symboldatabase36
+TestSymbolDatabase::isImplicitlyVirtual
+TestSymbolDatabase::garbage
+TestSymbolDatabase::findFunction1
+TestThreadExecutor::deadlock_with_many_errors
+1/3 files checked 33% done
+2/3 files checked 66% done
+3/3 files checked 100% done
+TestThreadExecutor::no_errors_more_files
+1/3 files checked 33% done
+2/3 files checked 66% done
+3/3 files checked 100% done
+TestThreadExecutor::no_errors_less_files
+TestThreadExecutor::no_errors_equal_amount_files
+1/2 files checked 50% done
+2/2 files checked 100% done
+TestThreadExecutor::one_error_less_files
+TestThreadExecutor::one_error_several_files
+1/20 files checked 5% done
+2/20 files checked 10% done
+3/20 files checked 15% done
+4/20 files checked 20% done
+5/20 files checked 25% done
+6/20 files checked 30% done
+7/20 files checked 35% done
+8/20 files checked 40% done
+9/20 files checked 45% done
+10/20 files checked 50% done
+11/20 files checked 55% done
+12/20 files checked 60% done
+13/20 files checked 65% done
+14/20 files checked 70% done
+15/20 files checked 75% done
+16/20 files checked 80% done
+17/20 files checked 85% done
+18/20 files checked 90% done
+19/20 files checked 95% done
+20/20 files checked 100% done
+TestTimer::result
+TestToken::nextprevious
+TestToken::multiCompare
+TestToken::multiCompare2
+TestToken::multiCompare3
+TestToken::multiCompare4
+TestToken::getStrLength
+TestToken::strValue
+TestToken::deleteLast
+TestToken::nextArgument
+TestToken::eraseTokens
+TestToken::matchAny
+TestToken::matchSingleChar
+TestToken::matchNothingOrAnyNotElse
+TestToken::matchType
+TestToken::matchChar
+TestToken::matchCompOp
+TestToken::matchStr
+TestToken::matchVarid
+TestToken::matchNumeric
+TestToken::matchBoolean
+TestToken::matchOr
+TestToken::matchOp
+TestToken::matchConstOp
+TestToken::isArithmeticalOp
+TestToken::isOp
+TestToken::isConstOp
+TestToken::isExtendedOp
+TestToken::isAssignmentOp
+TestToken::isStandardType
+TestToken::literals
+TestToken::operators
+TestToken::updateProperties
+TestToken::updatePropertiesConcatStr
+TestToken::isNameGuarantees1
+TestToken::isNameGuarantees2
+TestToken::isNameGuarantees3
+TestToken::isNameGuarantees4
+TestToken::isNameGuarantees5
+TestToken::canFindMatchingBracketsNeedsOpen
+TestToken::canFindMatchingBracketsInnerPair
+TestToken::canFindMatchingBracketsOuterPair
+TestToken::canFindMatchingBracketsWithTooManyClosing
+TestToken::canFindMatchingBracketsWithTooManyOpening
+TestTokenizer::tokenize1
+TestTokenizer::tokenize2
+TestTokenizer::tokenize3
+TestTokenizer::tokenize4
+TestTokenizer::tokenize5
+TestTokenizer::tokenize6
+TestTokenizer::tokenize7
+TestTokenizer::tokenize8
+TestTokenizer::tokenize9
+TestTokenizer::tokenize10
+TestTokenizer::tokenize11
+TestTokenizer::tokenize12
+TestTokenizer::tokenize13
+TestTokenizer::tokenize14
+TestTokenizer::tokenize15
+TestTokenizer::tokenize16
+TestTokenizer::tokenize17
+TestTokenizer::tokenize18
+TestTokenizer::tokenize19
+TestTokenizer::tokenize20
+TestTokenizer::tokenize21
+TestTokenizer::tokenize22
+TestTokenizer::tokenize24
+TestTokenizer::tokenize25
+TestTokenizer::tokenize26
+TestTokenizer::tokenize27
+TestTokenizer::tokenize28
+TestTokenizer::wrong_syntax1
+TestTokenizer::wrong_syntax2
+TestTokenizer::wrong_syntax3
+TestTokenizer::wrong_syntax4
+TestTokenizer::wrong_syntax_if_macro
+TestTokenizer::wrong_syntax_class_x_y
+TestTokenizer::syntax_case_default
+TestTokenizer::garbageCode1
+TestTokenizer::garbageCode2
+TestTokenizer::garbageCode3
+TestTokenizer::garbageCode4
+TestTokenizer::simplifyFileAndLineMacro
+TestTokenizer::foreach
+TestTokenizer::concatenateNegativeNumber
+TestTokenizer::longtok
+TestTokenizer::removeCast1
+TestTokenizer::removeCast2
+TestTokenizer::removeCast3
+TestTokenizer::removeCast4
+TestTokenizer::removeCast5
+TestTokenizer::removeCast6
+TestTokenizer::removeCast7
+TestTokenizer::removeCast8
+TestTokenizer::removeCast9
+TestTokenizer::removeCast10
+TestTokenizer::removeCast11
+TestTokenizer::removeCast12
+TestTokenizer::inlineasm
+TestTokenizer::ifAddBraces1
+TestTokenizer::ifAddBraces2
+TestTokenizer::ifAddBraces3
+TestTokenizer::ifAddBraces4
+TestTokenizer::ifAddBraces5
+TestTokenizer::ifAddBraces6
+TestTokenizer::ifAddBraces7
+TestTokenizer::ifAddBraces9
+TestTokenizer::ifAddBraces10
+TestTokenizer::ifAddBraces11
+TestTokenizer::ifAddBraces12
+TestTokenizer::ifAddBraces13
+TestTokenizer::ifAddBraces14
+TestTokenizer::ifAddBraces15
+TestTokenizer::ifAddBraces16
+TestTokenizer::ifAddBraces17
+TestTokenizer::ifAddBraces18
+TestTokenizer::ifAddBraces19
+TestTokenizer::whileAddBraces
+TestTokenizer::doWhileAddBraces
+TestTokenizer::forAddBraces
+TestTokenizer::pointers_condition
+TestTokenizer::simplifyKnownVariables1
+TestTokenizer::simplifyKnownVariables2
+TestTokenizer::simplifyKnownVariables3
+TestTokenizer::simplifyKnownVariables4
+TestTokenizer::simplifyKnownVariables5
+TestTokenizer::simplifyKnownVariables6
+TestTokenizer::simplifyKnownVariables7
+TestTokenizer::simplifyKnownVariables8
+TestTokenizer::simplifyKnownVariables9
+TestTokenizer::simplifyKnownVariables10
+TestTokenizer::simplifyKnownVariables11
+TestTokenizer::simplifyKnownVariables12
+TestTokenizer::simplifyKnownVariables13
+TestTokenizer::simplifyKnownVariables14
+TestTokenizer::simplifyKnownVariables15
+TestTokenizer::simplifyKnownVariables16
+TestTokenizer::simplifyKnownVariables17
+TestTokenizer::simplifyKnownVariables18
+TestTokenizer::simplifyKnownVariables19
+TestTokenizer::simplifyKnownVariables20
+TestTokenizer::simplifyKnownVariables21
+TestTokenizer::simplifyKnownVariables22
+TestTokenizer::simplifyKnownVariables23
+TestTokenizer::simplifyKnownVariables24
+TestTokenizer::simplifyKnownVariables25
+TestTokenizer::simplifyKnownVariables26
+TestTokenizer::simplifyKnownVariables27
+TestTokenizer::simplifyKnownVariables28
+TestTokenizer::simplifyKnownVariables29
+TestTokenizer::simplifyKnownVariables30
+TestTokenizer::simplifyKnownVariables31
+TestTokenizer::simplifyKnownVariables32
+TestTokenizer::simplifyKnownVariables33
+TestTokenizer::simplifyKnownVariables34
+TestTokenizer::simplifyKnownVariables35
+TestTokenizer::simplifyKnownVariables36
+TestTokenizer::simplifyKnownVariables37
+TestTokenizer::simplifyKnownVariables38
+TestTokenizer::simplifyKnownVariables39
+TestTokenizer::simplifyKnownVariables40
+TestTokenizer::simplifyKnownVariables41
+TestTokenizer::simplifyKnownVariables42
+TestTokenizer::simplifyKnownVariables43
+TestTokenizer::simplifyKnownVariables44
+TestTokenizer::simplifyKnownVariables45
+TestTokenizer::simplifyKnownVariables46
+TestTokenizer::simplifyKnownVariables47
+TestTokenizer::simplifyKnownVariables48
+TestTokenizer::simplifyKnownVariables49
+TestTokenizer::simplifyKnownVariables50
+TestTokenizer::simplifyKnownVariables51
+TestTokenizer::simplifyKnownVariables52
+TestTokenizer::simplifyKnownVariables53
+TestTokenizer::simplifyKnownVariablesIfEq1
+TestTokenizer::simplifyKnownVariablesIfEq2
+TestTokenizer::simplifyKnownVariablesBailOutAssign1
+TestTokenizer::simplifyKnownVariablesBailOutAssign2
+TestTokenizer::simplifyKnownVariablesBailOutAssign3
+TestTokenizer::simplifyKnownVariablesBailOutFor1
+TestTokenizer::simplifyKnownVariablesBailOutFor2
+TestTokenizer::simplifyKnownVariablesBailOutFor3
+TestTokenizer::simplifyKnownVariablesBailOutMemberFunction
+TestTokenizer::simplifyKnownVariablesBailOutConditionalIncrement
+TestTokenizer::simplifyKnownVariablesBailOutSwitchBreak
+TestTokenizer::simplifyKnownVariablesFloat
+TestTokenizer::simplifyKnownVariablesClassMember
+TestTokenizer::simplifyKnownVariablesFunctionCalls
+TestTokenizer::simplifyKnownVariablesReturn
+TestTokenizer::simplifyExternC
+TestTokenizer::varid1
+TestTokenizer::varid2
+TestTokenizer::varid3
+TestTokenizer::varid4
+TestTokenizer::varid5
+TestTokenizer::varid6
+TestTokenizer::varid7
+TestTokenizer::varidReturn1
+TestTokenizer::varidReturn2
+TestTokenizer::varid8
+TestTokenizer::varid9
+TestTokenizer::varid10
+TestTokenizer::varid11
+TestTokenizer::varid12
+TestTokenizer::varid13
+TestTokenizer::varid14
+TestTokenizer::varid15
+TestTokenizer::varid16
+TestTokenizer::varid17
+TestTokenizer::varid18
+TestTokenizer::varid19
+TestTokenizer::varid20
+TestTokenizer::varid24
+TestTokenizer::varid25
+TestTokenizer::varid26
+TestTokenizer::varid27
+TestTokenizer::varid28
+TestTokenizer::varid29
+TestTokenizer::varid30
+TestTokenizer::varid31
+TestTokenizer::varid32
+TestTokenizer::varid33
+TestTokenizer::varid34
+TestTokenizer::varid35
+TestTokenizer::varid36
+TestTokenizer::varid37
+TestTokenizer::varid38
+TestTokenizer::varid39
+TestTokenizer::varid40
+TestTokenizer::varid41
+TestTokenizer::varid42
+TestTokenizer::varid43
+TestTokenizer::varid44
+TestTokenizer::varid45
+TestTokenizer::varid46
+TestTokenizer::varid47
+TestTokenizer::varid48
+TestTokenizer::varid49
+TestTokenizer::varid50
+TestTokenizer::varid51
+TestTokenizer::varid52
+TestTokenizer::varid53
+TestTokenizer::varid_cpp_keywords_in_c_code
+TestTokenizer::varidFunctionCall1
+TestTokenizer::varidFunctionCall2
+TestTokenizer::varidFunctionCall3
+TestTokenizer::varidFunctionCall4
+TestTokenizer::varidStl
+TestTokenizer::varid_delete
+TestTokenizer::varid_functions
+TestTokenizer::varid_sizeof
+TestTokenizer::varid_reference_to_containers
+TestTokenizer::varid_in_class1
+TestTokenizer::varid_in_class2
+TestTokenizer::varid_in_class3
+TestTokenizer::varid_in_class4
+TestTokenizer::varid_in_class5
+TestTokenizer::varid_in_class6
+TestTokenizer::varid_in_class7
+TestTokenizer::varid_in_class8
+TestTokenizer::varid_in_class9
+TestTokenizer::varid_in_class10
+TestTokenizer::varid_in_class11
+TestTokenizer::varid_in_class12
+TestTokenizer::varid_initList
+TestTokenizer::varid_operator
+TestTokenizer::varid_throw
+TestTokenizer::varid_unknown_macro
+TestTokenizer::varid_using
+TestTokenizer::varid_catch
+TestTokenizer::varid_functionPrototypeTemplate
+TestTokenizer::varid_templatePtr
+TestTokenizer::varid_templateNamespaceFuncPtr
+TestTokenizer::varid_variadicFunc
+TestTokenizer::varid_typename
+TestTokenizer::varid_rvalueref
+TestTokenizer::varidclass1
+TestTokenizer::varidclass2
+TestTokenizer::varidclass3
+TestTokenizer::varidclass4
+TestTokenizer::varidclass5
+TestTokenizer::varidclass6
+TestTokenizer::varidclass7
+TestTokenizer::varidclass8
+TestTokenizer::varidclass9
+TestTokenizer::varidclass10
+TestTokenizer::varidclass11
+TestTokenizer::varidclass12
+TestTokenizer::varidclass13
+TestTokenizer::varidclass14
+TestTokenizer::varidclass15
+TestTokenizer::varid_classnameshaddowsvariablename
+TestTokenizer::file1
+TestTokenizer::file2
+TestTokenizer::file3
+TestTokenizer::line1
+TestTokenizer::doublesharp
+TestTokenizer::macrodoublesharp
+TestTokenizer::simplifyFunctionParameters
+TestTokenizer::simplifyFunctionParameters1
+TestTokenizer::simplifyFunctionParameters2
+TestTokenizer::simplifyFunctionParameters3
+TestTokenizer::simplifyFunctionParametersErrors
+TestTokenizer::removeParentheses1
+TestTokenizer::removeParentheses2
+TestTokenizer::removeParentheses3
+TestTokenizer::removeParentheses4
+TestTokenizer::removeParentheses5
+TestTokenizer::removeParentheses6
+TestTokenizer::removeParentheses7
+TestTokenizer::removeParentheses8
+TestTokenizer::removeParentheses9
+TestTokenizer::removeParentheses10
+TestTokenizer::removeParentheses11
+TestTokenizer::removeParentheses12
+TestTokenizer::removeParentheses13
+TestTokenizer::removeParentheses14
+TestTokenizer::removeParentheses15
+TestTokenizer::removeParentheses16
+TestTokenizer::tokenize_double
+TestTokenizer::tokenize_strings
+TestTokenizer::simplify_constants
+TestTokenizer::simplify_constants2
+TestTokenizer::simplify_constants3
+TestTokenizer::simplify_constants4
+TestTokenizer::simplify_constants5
+TestTokenizer::simplify_null
+TestTokenizer::simplifyMulAndParens
+TestTokenizer::simplifyStructDecl
+TestTokenizer::vardecl1
+TestTokenizer::vardecl2
+TestTokenizer::vardecl3
+TestTokenizer::vardecl4
+TestTokenizer::vardec_static
+TestTokenizer::vardecl6
+TestTokenizer::vardecl7
+TestTokenizer::vardecl8
+TestTokenizer::vardecl9
+TestTokenizer::vardecl10
+TestTokenizer::vardecl11
+TestTokenizer::vardecl12
+TestTokenizer::vardecl13
+TestTokenizer::vardecl14
+TestTokenizer::vardecl15
+TestTokenizer::vardecl16
+TestTokenizer::vardecl17
+TestTokenizer::vardecl18
+TestTokenizer::vardecl19
+TestTokenizer::vardecl20
+TestTokenizer::vardecl21
+TestTokenizer::vardecl22
+TestTokenizer::vardecl23
+TestTokenizer::vardecl24
+TestTokenizer::vardecl25
+TestTokenizer::vardecl_stl_1
+TestTokenizer::vardecl_stl_2
+TestTokenizer::vardecl_template_1
+TestTokenizer::vardecl_template_2
+TestTokenizer::vardecl_union
+TestTokenizer::vardecl_par
+TestTokenizer::vardecl_par2
+TestTokenizer::volatile_variables
+TestTokenizer::syntax_error
+TestTokenizer::syntax_error_templates_1
+TestTokenizer::syntax_error_templates_2
+TestTokenizer::removeKeywords
+TestTokenizer::unsigned1
+TestTokenizer::unsigned2
+TestTokenizer::unsigned3
+TestTokenizer::createLinks
+TestTokenizer::signed1
+TestTokenizer::removeExceptionSpecification1
+TestTokenizer::removeExceptionSpecification2
+TestTokenizer::removeExceptionSpecification3
+TestTokenizer::removeExceptionSpecification4
+TestTokenizer::removeExceptionSpecification5
+TestTokenizer::removeExceptionSpecification6
+TestTokenizer::gt
+TestTokenizer::simplifyString
+TestTokenizer::simplifyConst
+TestTokenizer::switchCase
+TestTokenizer::simplifyPointerToStandardType
+TestTokenizer::functionpointer1
+TestTokenizer::functionpointer2
+TestTokenizer::functionpointer3
+TestTokenizer::functionpointer4
+TestTokenizer::functionpointer5
+TestTokenizer::removeRedundantAssignment
+TestTokenizer::removedeclspec
+TestTokenizer::removeattribute
+TestTokenizer::cpp0xtemplate1
+TestTokenizer::cpp0xtemplate2
+TestTokenizer::cpp0xtemplate3
+TestTokenizer::arraySize
+TestTokenizer::labels
+TestTokenizer::simplifyInitVar
+TestTokenizer::bitfields1
+TestTokenizer::bitfields2
+TestTokenizer::bitfields3
+TestTokenizer::bitfields4
+TestTokenizer::bitfields5
+TestTokenizer::bitfields6
+TestTokenizer::bitfields7
+TestTokenizer::bitfields8
+TestTokenizer::bitfields9
+TestTokenizer::bitfields10
+TestTokenizer::bitfields11
+TestTokenizer::bitfields12
+TestTokenizer::bitfields13
+TestTokenizer::bitfields14
+TestTokenizer::simplifyNamespaceStd
+TestTokenizer::microsoftMFC
+TestTokenizer::microsoftMemory
+TestTokenizer::borland
+TestTokenizer::Qt
+TestTokenizer::simplifySQL
+TestTokenizer::simplifyLogicalOperators
+TestTokenizer::simplifyCalculations
+TestTokenizer::simplifyAssignmentInFunctionCall
+TestTokenizer::simplifyCompoundAssignment
+TestTokenizer::simplifyRoundCurlyParentheses
+TestTokenizer::simplifyOperatorName1
+TestTokenizer::simplifyOperatorName2
+TestTokenizer::simplifyOperatorName3
+TestTokenizer::simplifyOperatorName4
+TestTokenizer::simplifyOperatorName5
+TestTokenizer::simplifyOperatorName6
+TestTokenizer::simplifyOperatorName7
+TestTokenizer::simplifyNull
+TestTokenizer::simplifyNullArray
+TestTokenizer::removeMacrosInGlobalScope
+TestTokenizer::removeMacroInVarDecl
+TestTokenizer::multipleAssignment
+TestTokenizer::platformWin
+TestTokenizer::platformWin32
+TestTokenizer::platformWin32A
+TestTokenizer::platformWin32W
+TestTokenizer::platformWin64
+TestTokenizer::platformUnix32
+TestTokenizer::platformUnix64
+TestTokenizer::simplifyMathExpressions
+TestTokenizer::astexpr
+TestTokenizer::astpar
+TestTokenizer::astbrackets
+TestTokenizer::astunaryop
+TestTokenizer::astfunction
+TestTokenizer::asttemplate
+TestUninitVar::uninitvar1
+TestUninitVar::uninitvar_bitop
+TestUninitVar::uninitvar_alloc
+TestUninitVar::uninitvar_arrays
+TestUninitVar::uninitvar_class
+TestUninitVar::uninitvar_enum
+TestUninitVar::uninitvar_if
+TestUninitVar::uninitvar_loops
+TestUninitVar::uninitvar_switch
+TestUninitVar::uninitvar_references
+TestUninitVar::uninitvar_return
+TestUninitVar::uninitvar_strncpy
+TestUninitVar::uninitvar_memset
+TestUninitVar::uninitvar_memset_nonchar
+TestUninitVar::uninitvar_func
+TestUninitVar::func_uninit_var
+TestUninitVar::func_uninit_pointer
+TestUninitVar::uninitvar_typeof
+TestUninitVar::uninitvar2
+TestUninitVar::uninitvar3
+TestUninitVar::uninitvar4
+TestUninitVar::uninitvar5
+TestUninitVar::uninitvar6
+TestUninitVar::uninitvar2_func
+TestUninitVar::uninitvar2_value
+TestUninitVar::uninitvar2_structmembers
+TestUninitVar::uninitvar2_while
+TestUninitVar::uninitvar2_4494
+TestUnusedFunctions::incondition
+TestUnusedFunctions::return1
+TestUnusedFunctions::return2
+TestUnusedFunctions::callback1
+TestUnusedFunctions::else1
+TestUnusedFunctions::functionpointer
+TestUnusedFunctions::template1
+TestUnusedFunctions::template2
+TestUnusedFunctions::throwIsNotAFunction
+TestUnusedFunctions::unusedError
+TestUnusedFunctions::unusedMain
+TestUnusedFunctions::initializationIsNotAFunction
+TestUnusedFunctions::operator1
+TestUnusedFunctions::returnRef
+TestUnusedFunctions::multipleFiles
+TestUnusedFunctions::lineNumber
+TestUnusedFunctions::ignore_declaration
+TestUnusedPrivateFunction::test1
+TestUnusedPrivateFunction::test2
+TestUnusedPrivateFunction::test3
+TestUnusedPrivateFunction::test4
+TestUnusedPrivateFunction::test5
+TestUnusedPrivateFunction::test6
+TestUnusedPrivateFunction::func_pointer1
+TestUnusedPrivateFunction::func_pointer2
+TestUnusedPrivateFunction::func_pointer3
+TestUnusedPrivateFunction::func_pointer4
+TestUnusedPrivateFunction::func_pointer5
+TestUnusedPrivateFunction::ctor
+TestUnusedPrivateFunction::classInClass
+TestUnusedPrivateFunction::sameFunctionNames
+TestUnusedPrivateFunction::incompleteImplementation
+TestUnusedPrivateFunction::derivedClass
+TestUnusedPrivateFunction::friendClass
+TestUnusedPrivateFunction::borland1
+TestUnusedPrivateFunction::borland2
+TestUnusedPrivateFunction::template1
+TestUnusedPrivateFunction::fp_operator
+TestUnusedPrivateFunction::testDoesNotIdentifyMethodAsFirstFunctionArgument
+TestUnusedPrivateFunction::testDoesNotIdentifyMethodAsMiddleFunctionArgument
+TestUnusedPrivateFunction::testDoesNotIdentifyMethodAsLastFunctionArgument
+TestUnusedPrivateFunction::multiFile
+TestUnusedPrivateFunction::unknownBaseTemplate
+TestUnusedVar::structmember1
+TestUnusedVar::structmember2
+TestUnusedVar::structmember3
+TestUnusedVar::structmember4
+TestUnusedVar::structmember5
+TestUnusedVar::structmember6
+TestUnusedVar::structmember7
+TestUnusedVar::structmember8
+TestUnusedVar::structmember9
+TestUnusedVar::structmember_extern
+TestUnusedVar::structmember10
+TestUnusedVar::structmember11
+TestUnusedVar::localvar1
+TestUnusedVar::localvar2
+TestUnusedVar::localvar3
+TestUnusedVar::localvar4
+TestUnusedVar::localvar5
+TestUnusedVar::localvar6
+TestUnusedVar::localvar7
+TestUnusedVar::localvar8
+TestUnusedVar::localvar9
+TestUnusedVar::localvar10
+TestUnusedVar::localvar11
+TestUnusedVar::localvar12
+TestUnusedVar::localvar13
+TestUnusedVar::localvar14
+TestUnusedVar::localvar15
+TestUnusedVar::localvar16
+TestUnusedVar::localvar17
+TestUnusedVar::localvar18
+TestUnusedVar::localvar19
+TestUnusedVar::localvar20
+TestUnusedVar::localvar21
+TestUnusedVar::localvar22
+TestUnusedVar::localvar23
+TestUnusedVar::localvar24
+TestUnusedVar::localvar25
+TestUnusedVar::localvar26
+TestUnusedVar::localvar27
+TestUnusedVar::localvar28
+TestUnusedVar::localvar29
+TestUnusedVar::localvar30
+TestUnusedVar::localvar31
+TestUnusedVar::localvar32
+TestUnusedVar::localvar33
+TestUnusedVar::localvar34
+TestUnusedVar::localvar35
+TestUnusedVar::localvar36
+TestUnusedVar::localvar37
+TestUnusedVar::localvar38
+TestUnusedVar::localvar39
+TestUnusedVar::localvar40
+TestUnusedVar::localvar41
+TestUnusedVar::localvar42
+TestUnusedVar::localvar43
+TestUnusedVar::localvar44
+TestUnusedVar::localvar45
+TestUnusedVar::localvaralias1
+TestUnusedVar::localvaralias2
+TestUnusedVar::localvaralias3
+TestUnusedVar::localvaralias4
+TestUnusedVar::localvaralias5
+TestUnusedVar::localvaralias6
+TestUnusedVar::localvaralias7
+TestUnusedVar::localvaralias8
+TestUnusedVar::localvaralias9
+TestUnusedVar::localvaralias10
+TestUnusedVar::localvaralias11
+TestUnusedVar::localvaralias12
+TestUnusedVar::localvaralias13
+TestUnusedVar::localvarasm
+TestUnusedVar::localvarstatic
+TestUnusedVar::localvarextern
+TestUnusedVar::localvardynamic1
+TestUnusedVar::localvardynamic2
+TestUnusedVar::localvardynamic3
+TestUnusedVar::localvararray1
+TestUnusedVar::localvararray2
+TestUnusedVar::localvararray3
+TestUnusedVar::localvarstring1
+TestUnusedVar::localvarstring2
+TestUnusedVar::localvarconst1
+TestUnusedVar::localvarconst2
+TestUnusedVar::localvarthrow
+TestUnusedVar::localVarStd
+TestUnusedVar::localvarStruct1
+TestUnusedVar::localvarStruct2
+TestUnusedVar::localvarStruct3
+TestUnusedVar::localvarStruct4
+TestUnusedVar::localvarStruct5
+TestUnusedVar::localvarStruct6
+TestUnusedVar::localvarStructArray
+TestUnusedVar::localvarOp
+TestUnusedVar::localvarInvert
+TestUnusedVar::localvarIf
+TestUnusedVar::localvarIfElse
+TestUnusedVar::localvarOpAssign
+TestUnusedVar::localvarFor
+TestUnusedVar::localvarForEach
+TestUnusedVar::localvarShift1
+TestUnusedVar::localvarShift2
+TestUnusedVar::localvarShift3
+TestUnusedVar::localvarCast
+TestUnusedVar::localvarClass
+TestUnusedVar::localvarUnused
+TestUnusedVar::localvarFunction
+TestUnusedVar::localvarIfNOT
+TestUnusedVar::localvarAnd
+TestUnusedVar::localvarSwitch
+TestUnusedVar::localvarNULL
+TestUnusedVar::localvarUnusedGoto
+TestUnusedVar::crash1
+TestUnusedVar::crash2
+TestUnusedVar::usingNamespace
+Tests failed: 0
+
+
+
+Testing Complete
+Number of tests: 2444
+Number of todos: 159
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_install -- HAVE_RULES=yes TINYXML=-ltinyxml2 INCLUDE_FOR_LIB=-Ilib INCLUDE_FOR_CLI=-Ilib INCLUDE_FOR_TEST="-Ilib -Icli"
+make[2]: Entering directory `/«PKGBUILDDIR»'
+install -d /«PKGBUILDDIR»/debian/cppcheck/usr/bin
+install cppcheck /«PKGBUILDDIR»/debian/cppcheck/usr/bin
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `cppcheck' in `../cppcheck_1.61-1_amd64.deb'.
+ dpkg-genchanges  >../cppcheck_1.61-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build cppcheck-1.61
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-1801
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+cppcheck_1.61-1_amd64.changes:
+──────────────────────────────
+
+Format: 1.8
+Date: Sun, 04 Aug 2013 08:39:00 +0300
+Source: cppcheck
+Binary: cppcheck
+Architecture: source amd64
+Version: 1.61-1
+Distribution: sid
+Urgency: low
+Maintainer: Reijo Tomperi <aggro80@users.sourceforge.net>
+Changed-By: Reijo Tomperi <aggro80@users.sourceforge.net>
+Description: 
+ cppcheck   - tool for static C/C++ code analysis
+Closes: 706494
+Changes: 
+ cppcheck (1.61-1) unstable; urgency=low
+ .
+   * New upstream release
+   * rules: add INCLUDE_FOR_LIB to makeit work with new upstream makefile
+   * Fix false positive, address of uninitialized variable, Closes: #706494
+Checksums-Sha1: 
+ 875522c67562750b5e3443e6013f264d6f4f9304 929 cppcheck_1.61-1.dsc
+ cb1982d484a04e8e9af11f6c7abca9d1aedde5ce 1413751 cppcheck_1.61.orig.tar.gz
+ 841f3329f8a06e5c7fe60b1d8eae382510d00545 5776 cppcheck_1.61-1.debian.tar.xz
+ 2dc0a01bd750a8f559e149107f023e9c14a5dc8a 516426 cppcheck_1.61-1_amd64.deb
+Checksums-Sha256: 
+ 96af00b726ec05f0cb0910bcac4626b545945bc6502786b7ffa29ac431fc925d 929 cppcheck_1.61-1.dsc
+ b9367e7264d6c0d1d31ac78c22d2a2b9c5f2b10c558a201fb2bde4e238d9232c 1413751 cppcheck_1.61.orig.tar.gz
+ 54ddaffc9dedba256dcfbc56a0d11e0d589607924ea2ede0cb117f3544ae7d9e 5776 cppcheck_1.61-1.debian.tar.xz
+ 59c2e966867377102e70ba0260899abc3cdc88fe849604383d30327c4fade500 516426 cppcheck_1.61-1_amd64.deb
+Files: 
+ f9e7d0c1cd75e12b943a86d4802e5cdc 516426 devel optional cppcheck_1.61-1_amd64.deb
+ c729fdf38181369807cf93efef91baab 929 devel optional cppcheck_1.61-1.dsc
+ 15bed77fb0208d09c0635cf4e1584dd5 1413751 devel optional cppcheck_1.61.orig.tar.gz
+ 28387f727d11bd54aa99ba803e987a99 5776 devel optional cppcheck_1.61-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+cppcheck_1.61-1_amd64.deb
+─────────────────────────
+
+ new debian package, version 2.0.
+ size 516426 bytes: control archive=1421 bytes.
+    1878 bytes,    42 lines      control              
+     395 bytes,     6 lines      md5sums              
+ Package: cppcheck
+ Version: 1.61-1
+ Architecture: amd64
+ Maintainer: Reijo Tomperi <aggro80@users.sourceforge.net>
+ Installed-Size: 1923
+ Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libpcre3 (>= 8.10), libstdc++6 (>= 4.6), libtinyxml2-2 (>= 2.0.2)
+ Section: devel
+ Priority: optional
+ Homepage: http://cppcheck.wiki.sourceforge.net/
+ Description: tool for static C/C++ code analysis
+  Cppcheck is a command-line tool that tries to detect bugs that your
+  C/C++ compiler doesn't see. It is versatile, and can check non-standard
+  code including various compiler extensions, inline assembly code, etc.
+  Its internal preprocessor can handle includes, macros, and several
+  preprocessor commands. While Cppcheck is highly configurable,
+  you can start using it just by giving it a path to the source code.
+  .
+  It includes checks for:
+   * pointers to out-of-scope auto variables;
+   * assignment of auto variables to an effective parameter of a function;
+   * out-of-bounds errors in arrays and STL;
+   * missing class constructors;
+   * variables not initialized by a constructor;
+   * use of memset, memcpy, etcetera on a class;
+   * non-virtual destructors for base classes;
+   * operator= not returning a constant reference to itself;
+   * use of deprecated functions (mktemp, gets, scanf);
+   * exceptions thrown in destructors;
+   * memory leaks in class or function variables;
+   * C-style pointer cast in C++ code;
+   * redundant if;
+   * misuse of the strtol or sprintf functions;
+   * unsigned division or division by zero;
+   * unused functions and struct members;
+   * passing parameters by value;
+   * misuse of signed char variables;
+   * unusual pointer arithmetic (such as "abc" + 'd');
+   * dereferenced null pointers;
+   * incomplete statements;
+   * misuse of iterators when iterating through a container;
+   * dereferencing of erased iterators;
+   * use of invalidated vector iterators/pointers;
+
+drwxr-xr-x root/root         0 2014-04-28 18:01 ./
+drwxr-xr-x root/root         0 2014-04-28 18:01 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:01 ./usr/bin/
+-rwxr-xr-x root/root   1917440 2014-04-28 18:01 ./usr/bin/cppcheck
+drwxr-xr-x root/root         0 2014-04-28 18:01 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:01 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-28 18:01 ./usr/share/man/man1/
+-rw-r--r-- root/root      3975 2014-04-28 18:01 ./usr/share/man/man1/cppcheck.1.gz
+drwxr-xr-x root/root         0 2014-04-28 18:01 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:01 ./usr/share/doc/cppcheck/
+-rw-r--r-- root/root      3236 2013-08-04 10:04 ./usr/share/doc/cppcheck/changelog.Debian.gz
+-rw-r--r-- root/root      1825 2013-08-03 18:16 ./usr/share/doc/cppcheck/AUTHORS
+-rw-r--r-- root/root      3147 2013-01-19 21:32 ./usr/share/doc/cppcheck/copyright
+-rw-r--r-- root/root      2524 2013-08-03 18:16 ./usr/share/doc/cppcheck/readme.txt
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 256996
+Build-Time: 172
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 12
+Job: cppcheck_1.61-1.dsc
+Machine Architecture: amd64
+Package: cppcheck
+Package-Time: 195
+Source-Version: 1.61-1
+Space: 256996
+Status: successful
+Version: 1.61-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-1801
+Build needed 00:03:15, 256996k disc space

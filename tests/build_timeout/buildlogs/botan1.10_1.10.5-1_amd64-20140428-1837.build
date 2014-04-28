@@ -1,0 +1,1428 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ botan1.10 1.10.5-1 (amd64)                                 28 Apr 2014 18:37 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: botan1.10
+Version: 1.10.5-1
+Source Version: 1.10.5-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/botan1.10-hGnz5s/botan1.10-1.10.5' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/botan1.10-hGnz5s' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-335ba695-6315-4dbe-8615-c21422087668' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+botan1.10_1.10.5-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-MJRs8d/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/818 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7.0.50~), libbz2-dev, libgmp3-dev, libssl-dev, python, zlib1g-dev, hardening-wrapper
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7.0.50~), libbz2-dev, libgmp3-dev, libssl-dev, python, zlib1g-dev, hardening-wrapper
+dpkg-deb: building package `sbuild-build-depends-botan1.10-dummy' in `/«BUILDDIR»/resolver-Catlss/apt_archive/sbuild-build-depends-botan1.10-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install botan1.10 build dependencies (apt-based resolver)                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base
+  hardening-wrapper intltool-debian libasprintf0c2 libbz2-dev libcroco3
+  libexpat1 libglib2.0-0 libgmp-dev libgmp3-dev libgmpxx4ldbl libmagic1
+  libpipeline1 libpython-stdlib libpython2.7-minimal libpython2.7-stdlib
+  libsqlite3-0 libssl-dev libssl1.0.0 libunistring0 libxml2 man-db
+  mime-support po-debconf python python-minimal python2.7 python2.7-minimal
+  zlib1g-dev
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff libgmp10-doc
+  libmpfr-dev less www-browser libmail-box-perl python-doc python-tk
+  python2.7-doc binfmt-support
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info libssl-doc xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base
+  hardening-wrapper intltool-debian libasprintf0c2 libbz2-dev libcroco3
+  libexpat1 libglib2.0-0 libgmp-dev libgmp3-dev libgmpxx4ldbl libmagic1
+  libpipeline1 libpython-stdlib libpython2.7-minimal libpython2.7-stdlib
+  libsqlite3-0 libssl-dev libssl1.0.0 libunistring0 libxml2 man-db
+  mime-support po-debconf python python-minimal python2.7 python2.7-minimal
+  sbuild-build-depends-botan1.10-dummy zlib1g-dev
+0 upgraded, 35 newly installed, 0 to remove and 8 not upgraded.
+Need to get 16.2 MB/16.2 MB of archives.
+After this operation, 55.6 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libssl1.0.0 amd64 1.0.1g-3 [1012 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libsqlite3-0 amd64 3.8.4.3-2 [409 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libexpat1 amd64 2.1.0-4 [138 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libgmpxx4ldbl amd64 2:6.0.0+dfsg-2.2 [21.4 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libpython2.7-minimal amd64 2.7.6-8 [349 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main python2.7-minimal amd64 2.7.6-8 [1227 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main mime-support all 3.54 [36.4 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libpython2.7-stdlib amd64 2.7.6-8 [1872 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main python2.7 amd64 2.7.6-8 [239 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main python-minimal amd64 2.7.5-5 [39.3 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libpython-stdlib amd64 2.7.5-5 [18.7 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main python amd64 2.7.5-5 [146 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main hardening-wrapper amd64 2.5 [13.5 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main libbz2-dev amd64 1.0.6-5 [28.7 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main libgmp-dev amd64 2:6.0.0+dfsg-2.2 [601 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main libgmp3-dev amd64 2:6.0.0+dfsg-2.2 [14.5 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-1 [217 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main libssl-dev amd64 1.0.1g-3 [1243 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 16.2 MB in 0s (16.7 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.1g-3_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1g-3) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.8.4.3-2_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.8.4.3-2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-4) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../libgmpxx4ldbl_2%3a6.0.0+dfsg-2.2_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.0.0+dfsg-2.2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package libpython2.7-minimal:amd64.
+Preparing to unpack .../libpython2.7-minimal_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.6-8) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.6-8_amd64.deb ...
+Unpacking python2.7-minimal (2.7.6-8) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../mime-support_3.54_all.deb ...
+Unpacking mime-support (3.54) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.6-8) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.6-8_amd64.deb ...
+Unpacking python2.7 (2.7.6-8) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.5-5_amd64.deb ...
+Unpacking python-minimal (2.7.5-5) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.5-5_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.5-5) ...
+Selecting previously unselected package python.
+Preparing to unpack .../python_2.7.5-5_amd64.deb ...
+Unpacking python (2.7.5-5) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package hardening-wrapper.
+Preparing to unpack .../hardening-wrapper_2.5_amd64.deb ...
+Adding 'diversion of /usr/bin/gcc-4.2 to /usr/bin/gcc-4.2.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/g++-4.2 to /usr/bin/g++-4.2.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/gcc-4.3 to /usr/bin/gcc-4.3.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/g++-4.3 to /usr/bin/g++-4.3.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/gcc-4.4 to /usr/bin/gcc-4.4.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/g++-4.4 to /usr/bin/g++-4.4.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/gcc-4.5 to /usr/bin/gcc-4.5.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/g++-4.5 to /usr/bin/g++-4.5.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/gcc-4.6 to /usr/bin/gcc-4.6.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/g++-4.6 to /usr/bin/g++-4.6.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/gcc-4.7 to /usr/bin/gcc-4.7.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/g++-4.7 to /usr/bin/g++-4.7.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/gcc-4.8 to /usr/bin/gcc-4.8.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/g++-4.8 to /usr/bin/g++-4.8.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/gcc-4.9 to /usr/bin/gcc-4.9.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/g++-4.9 to /usr/bin/g++-4.9.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/ld.bfd to /usr/bin/ld.bfd.real by hardening-wrapper'
+Adding 'diversion of /usr/bin/ld.gold to /usr/bin/ld.gold.real by hardening-wrapper'
+Unpacking hardening-wrapper (2.5) ...
+Selecting previously unselected package libbz2-dev:amd64.
+Preparing to unpack .../libbz2-dev_1.0.6-5_amd64.deb ...
+Unpacking libbz2-dev:amd64 (1.0.6-5) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../libgmp-dev_2%3a6.0.0+dfsg-2.2_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.0.0+dfsg-2.2) ...
+Selecting previously unselected package libgmp3-dev.
+Preparing to unpack .../libgmp3-dev_2%3a6.0.0+dfsg-2.2_amd64.deb ...
+Unpacking libgmp3-dev (2:6.0.0+dfsg-2.2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1g-3_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1g-3) ...
+Selecting previously unselected package sbuild-build-depends-botan1.10-dummy.
+Preparing to unpack .../sbuild-build-depends-botan1.10-dummy.deb ...
+Unpacking sbuild-build-depends-botan1.10-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libssl1.0.0:amd64 (1.0.1g-3) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libsqlite3-0:amd64 (3.8.4.3-2) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.0.0+dfsg-2.2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libpython2.7-minimal:amd64 (2.7.6-8) ...
+Setting up python2.7-minimal (2.7.6-8) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up mime-support (3.54) ...
+update-alternatives: using /usr/bin/see to provide /usr/bin/view (view) in auto mode
+Setting up libpython2.7-stdlib:amd64 (2.7.6-8) ...
+Setting up python2.7 (2.7.6-8) ...
+Setting up python-minimal (2.7.5-5) ...
+Setting up libpython-stdlib:amd64 (2.7.5-5) ...
+Setting up python (2.7.5-5) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up hardening-wrapper (2.5) ...
+Setting up libbz2-dev:amd64 (1.0.6-5) ...
+Setting up libgmp-dev:amd64 (2:6.0.0+dfsg-2.2) ...
+Setting up libgmp3-dev (2:6.0.0+dfsg-2.2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Setting up libssl-dev:amd64 (1.0.1g-3) ...
+Setting up sbuild-build-depends-botan1.10-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hardening-wrapper_2.5 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libbz2-dev_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp-dev_2:6.0.0+dfsg-2.2 libgmp10_2:6.0.0+dfsg-2.2 libgmp3-dev_2:6.0.0+dfsg-2.2 libgmpxx4ldbl_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libsqlite3-0_3.8.4.3-2 libss2_1.42.9-3 libssl-dev_1.0.1g-3 libssl1.0.0_1.0.1g-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-minimal_2.7.6-8 readline-common_6.3-6 sbuild-build-depends-botan1.10-dummy_0.invalid.0 sbuild-build-depends-core-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1 zlib1g-dev_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Mon Mar  4 08:32:15 2013 UTC using DSA key ID C20DF273
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./botan1.10_1.10.5-1.dsc
+dpkg-source: info: extracting botan1.10 in botan1.10-1.10.5
+dpkg-source: info: unpacking botan1.10_1.10.5.orig.tar.bz2
+dpkg-source: info: unpacking botan1.10_1.10.5-1.debian.tar.gz
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-335ba695-6315-4dbe-8615-c21422087668
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package botan1.10
+dpkg-buildpackage: source version 1.10.5-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Ondřej Surý <ondrej@debian.org>
+ dpkg-source --before-build botan1.10-1.10.5
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+DEB_BUILD_HARDENING=1 dh clean
+   dh_testdir
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_clean
+rm -f Makefile check libbotan-*.so libbotan.a
+rm -rf build
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_clean
+ dpkg-source -b botan1.10-1.10.5
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building botan1.10 using existing ./botan1.10_1.10.5.orig.tar.bz2
+dpkg-source: info: building botan1.10 in botan1.10_1.10.5-1.debian.tar.xz
+dpkg-source: info: building botan1.10 in botan1.10_1.10.5-1.dsc
+ debian/rules build
+DEB_BUILD_HARDENING=1 dh build
+   dh_testdir
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+DEB_BUILD_HARDENING=1 ./configure.py --prefix=/usr --cc=gcc --os=linux --with-bzip2 --with-gnump --with-openssl --with-zlib --cpu=x86_64
+   INFO: Canonicalizized --cpu=x86_64 to x86_64/x86_64
+   INFO: Target is gcc-linux-x86_64-x86_64
+   INFO: Detected gcc version 4.2.1
+   INFO: Assuming gcc has TR1 (use --with-tr1=none to disable)
+   INFO: Skipping, by request only - cms cvc
+   INFO: Skipping, incompatible CPU - aes_ni aes_ssse3 asm_x86_32 md4_x86_32 md5_x86_32 mp_asm64 mp_x86_32 serpent_x86_32 sha1_x86_32 simd_altivec
+   INFO: Skipping, incompatible OS - beos_stats cryptoapi_rng win32_crit_section win32_stats
+   INFO: Skipping, incompatible compiler - mp_msvc64 mp_x86_32_msvc
+   INFO: Skipping, loaded only if needed by dependency - aes_isa_eng mp_generic simd_scalar
+   INFO: Using MP module mp_x86_64
+   INFO: Using SIMD module simd_sse2
+   INFO: ssl: A new TLS API is being developed. This version has numerous performance and usability issues and will not be supported in the future. Only use it if you need it for compatability with code written against previous versions.
+   INFO: Assuming CPU is little endian
+   INFO: Assuming unaligned memory access works
+   INFO: Using symlink to link files into build directory
+   INFO: Botan 1.10.5 build setup is complete
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+DEB_BUILD_HARDENING=1 /usr/bin/make all
+make[2]: Entering directory `/«PKGBUILDDIR»'
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/algo_base/symkey.cpp -o build/lib/algo_base_symkey.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/algo_factory/algo_factory.cpp -o build/lib/algo_factory.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/algo_factory/prov_weight.cpp -o build/lib/algo_factory_prov_weight.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/alloc/alloc_mmap/mmap_mem.cpp -o build/lib/alloc_alloc_mmap_mmap_mem.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/alloc/mem_pool/mem_pool.cpp -o build/lib/alloc_mem_pool.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/alloc/system_alloc/defalloc.cpp -o build/lib/alloc_system_alloc_defalloc.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/asn1/alg_id.cpp -o build/lib/asn1_alg_id.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/asn1/asn1_alt.cpp -o build/lib/asn1_asn1_alt.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/asn1/asn1_att.cpp -o build/lib/asn1_asn1_att.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/asn1/asn1_int.cpp -o build/lib/asn1_asn1_int.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/asn1/asn1_oid.cpp -o build/lib/asn1_asn1_oid.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/asn1/asn1_str.cpp -o build/lib/asn1_asn1_str.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/asn1/asn1_tm.cpp -o build/lib/asn1_asn1_tm.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/asn1/ber_dec.cpp -o build/lib/asn1_ber_dec.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/asn1/der_enc.cpp -o build/lib/asn1_der_enc.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/asn1/x509_dn.cpp -o build/lib/asn1_x509_dn.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/benchmark/benchmark.cpp -o build/lib/benchmark.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/aes/aes.cpp -o build/lib/block_aes.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/blowfish/blfs_tab.cpp -o build/lib/block_blowfish_blfs_tab.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/blowfish/blowfish.cpp -o build/lib/block_blowfish.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/camellia/camellia.cpp -o build/lib/block_camellia.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/cascade/cascade.cpp -o build/lib/block_cascade.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/cast/cast128.cpp -o build/lib/block_cast_cast128.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/cast/cast256.cpp -o build/lib/block_cast_cast256.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/cast/cast_tab.cpp -o build/lib/block_cast_cast_tab.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/des/des.cpp -o build/lib/block_des.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/des/des_tab.cpp -o build/lib/block_des_des_tab.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/des/desx.cpp -o build/lib/block_des_desx.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/gost_28147/gost_28147.cpp -o build/lib/block_gost_28147.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/idea/idea.cpp -o build/lib/block_idea.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/idea_sse2/idea_sse2.cpp -o build/lib/block_idea_sse2.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/kasumi/kasumi.cpp -o build/lib/block_kasumi.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/lion/lion.cpp -o build/lib/block_lion.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/lubyrack/lubyrack.cpp -o build/lib/block_lubyrack.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/mars/mars.cpp -o build/lib/block_mars.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/misty1/misty1.cpp -o build/lib/block_misty1.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/noekeon/noekeon.cpp -o build/lib/block_noekeon.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/noekeon_simd/noekeon_simd.cpp -o build/lib/block_noekeon_simd.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/rc2/rc2.cpp -o build/lib/block_rc2.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/rc5/rc5.cpp -o build/lib/block_rc5.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/rc6/rc6.cpp -o build/lib/block_rc6.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/safer/safer_sk.cpp -o build/lib/block_safer_safer_sk.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/seed/seed.cpp -o build/lib/block_seed.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/seed/seed_tab.cpp -o build/lib/block_seed_seed_tab.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/serpent/serpent.cpp -o build/lib/block_serpent.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/serpent_simd/serp_simd.cpp -o build/lib/block_serpent_simd_serp_simd.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/skipjack/skipjack.cpp -o build/lib/block_skipjack.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/square/sqr_tab.cpp -o build/lib/block_square_sqr_tab.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/square/square.cpp -o build/lib/block_square.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/tea/tea.cpp -o build/lib/block_tea.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/twofish/two_tab.cpp -o build/lib/block_twofish_two_tab.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/twofish/twofish.cpp -o build/lib/block_twofish.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/xtea/xtea.cpp -o build/lib/block_xtea.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/block/xtea_simd/xtea_simd.cpp -o build/lib/block_xtea_simd.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/certstore/certstor.cpp -o build/lib/cert_certstore_certstor.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/pkcs10/pkcs10.cpp -o build/lib/cert_pkcs10.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/x509ca/x509_ca.cpp -o build/lib/cert_x509ca_x509_ca.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/x509cert/x509_ext.cpp -o build/lib/cert_x509cert_x509_ext.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/x509cert/x509_obj.cpp -o build/lib/cert_x509cert_x509_obj.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/x509cert/x509cert.cpp -o build/lib/cert_x509cert.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/x509crl/crl_ent.cpp -o build/lib/cert_x509crl_crl_ent.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/x509crl/x509_crl.cpp -o build/lib/cert_x509crl_x509_crl.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/x509self/x509opt.cpp -o build/lib/cert_x509self_x509opt.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/x509self/x509self.cpp -o build/lib/cert_x509self.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/cert/x509store/x509stor.cpp -o build/lib/cert_x509store_x509stor.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/checksum/adler32/adler32.cpp -o build/lib/checksum_adler32.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/checksum/crc24/crc24.cpp -o build/lib/checksum_crc24.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/checksum/crc32/crc32.cpp -o build/lib/checksum_crc32.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/codec/base64/base64.cpp -o build/lib/codec_base64.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/codec/hex/hex.cpp -o build/lib/codec_hex.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/codec/openpgp/openpgp.cpp -o build/lib/codec_openpgp.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/codec/pem/pem.cpp -o build/lib/codec_pem.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/constructs/aont/package.cpp -o build/lib/constructs_aont_package.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/constructs/cryptobox/cryptobox.cpp -o build/lib/constructs_cryptobox.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/constructs/fpe_fe1/fpe_fe1.cpp -o build/lib/constructs_fpe_fe1.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/constructs/rfc3394/rfc3394.cpp -o build/lib/constructs_rfc3394.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/constructs/srp6/srp6.cpp -o build/lib/constructs_srp6.o
+src/constructs/srp6/srp6.cpp:32:8: warning: unused function 'hash_seq' [-Wunused-function]
+BigInt hash_seq(const std::string& hash_id,
+       ^
+1 warning generated.
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/constructs/tss/tss.cpp -o build/lib/constructs_tss.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/asm_engine/asm_engine.cpp -o build/lib/engine_asm_engine.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/core_engine/core_modes.cpp -o build/lib/engine_core_engine_core_modes.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/core_engine/def_pk_ops.cpp -o build/lib/engine_core_engine_def_pk_ops.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/core_engine/def_powm.cpp -o build/lib/engine_core_engine_def_powm.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/core_engine/lookup_block.cpp -o build/lib/engine_core_engine_lookup_block.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/core_engine/lookup_hash.cpp -o build/lib/engine_core_engine_lookup_hash.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/core_engine/lookup_mac.cpp -o build/lib/engine_core_engine_lookup_mac.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/core_engine/lookup_pbkdf.cpp -o build/lib/engine_core_engine_lookup_pbkdf.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/core_engine/lookup_stream.cpp -o build/lib/engine_core_engine_lookup_stream.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/dyn_engine/dyn_engine.cpp -o build/lib/engine_dyn_engine.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/engine.cpp -o build/lib/engine.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/gnump/gmp_mem.cpp -o build/lib/engine_gnump_gmp_mem.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/gnump/gmp_powm.cpp -o build/lib/engine_gnump_gmp_powm.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/gnump/gmp_wrap.cpp -o build/lib/engine_gnump_gmp_wrap.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/gnump/gnump_pk.cpp -o build/lib/engine_gnump_gnump_pk.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/openssl/bn_powm.cpp -o build/lib/engine_openssl_bn_powm.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/openssl/bn_wrap.cpp -o build/lib/engine_openssl_bn_wrap.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/openssl/ossl_arc4.cpp -o build/lib/engine_openssl_ossl_arc4.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/openssl/ossl_bc.cpp -o build/lib/engine_openssl_ossl_bc.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/openssl/ossl_md.cpp -o build/lib/engine_openssl_ossl_md.o
+src/engine/openssl/ossl_md.cpp:41:14: warning: private field 'block_size' is not used [-Wunused-private-field]
+      size_t block_size;
+             ^
+1 warning generated.
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/openssl/ossl_pk.cpp -o build/lib/engine_openssl_ossl_pk.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/engine/simd_engine/simd_engine.cpp -o build/lib/engine_simd_engine.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/entropy/dev_random/dev_random.cpp -o build/lib/entropy_dev_random.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/entropy/egd/es_egd.cpp -o build/lib/entropy_egd_es_egd.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/entropy/hres_timer/hres_timer.cpp -o build/lib/entropy_hres_timer.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/entropy/proc_walk/es_ftw.cpp -o build/lib/entropy_proc_walk_es_ftw.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/entropy/rdrand/rdrand.cpp -o build/lib/entropy_rdrand.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/entropy/unix_procs/es_unix.cpp -o build/lib/entropy_unix_procs_es_unix.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/entropy/unix_procs/unix_cmd.cpp -o build/lib/entropy_unix_procs_unix_cmd.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/entropy/unix_procs/unix_src.cpp -o build/lib/entropy_unix_procs_unix_src.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/algo_filt.cpp -o build/lib/filters_algo_filt.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/basefilt.cpp -o build/lib/filters_basefilt.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/buf_filt.cpp -o build/lib/filters_buf_filt.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/bzip2/bzip2.cpp -o build/lib/filters_bzip2.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/codec_filt/b64_filt.cpp -o build/lib/filters_codec_filt_b64_filt.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/codec_filt/hex_filt.cpp -o build/lib/filters_codec_filt_hex_filt.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/data_snk.cpp -o build/lib/filters_data_snk.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/data_src.cpp -o build/lib/filters_data_src.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/fd_unix/fd_unix.cpp -o build/lib/filters_fd_unix.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/filter.cpp -o build/lib/filters_filter.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/modes/cbc/cbc.cpp -o build/lib/filters_modes_cbc.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/modes/cfb/cfb.cpp -o build/lib/filters_modes_cfb.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/modes/cts/cts.cpp -o build/lib/filters_modes_cts.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/modes/eax/eax.cpp -o build/lib/filters_modes_eax.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/modes/eax/eax_dec.cpp -o build/lib/filters_modes_eax_eax_dec.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/modes/ecb/ecb.cpp -o build/lib/filters_modes_ecb.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/modes/mode_pad/mode_pad.cpp -o build/lib/filters_modes_mode_pad.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/modes/xts/xts.cpp -o build/lib/filters_modes_xts.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/out_buf.cpp -o build/lib/filters_out_buf.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/pipe.cpp -o build/lib/filters_pipe.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/pipe_io.cpp -o build/lib/filters_pipe_io.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/pipe_rw.cpp -o build/lib/filters_pipe_rw.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/pk_filts/pk_filts.cpp -o build/lib/filters_pk_filts.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/secqueue.cpp -o build/lib/filters_secqueue.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/filters/zlib/zlib.cpp -o build/lib/filters_zlib.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/bmw_512/bmw_512.cpp -o build/lib/hash_bmw_512.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/comb4p/comb4p.cpp -o build/lib/hash_comb4p.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/gost_3411/gost_3411.cpp -o build/lib/hash_gost_3411.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/has160/has160.cpp -o build/lib/hash_has160.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/keccak/keccak.cpp -o build/lib/hash_keccak.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/md2/md2.cpp -o build/lib/hash_md2.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/md4/md4.cpp -o build/lib/hash_md4.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/md5/md5.cpp -o build/lib/hash_md5.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/mdx_hash/mdx_hash.cpp -o build/lib/hash_mdx_hash.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/par_hash/par_hash.cpp -o build/lib/hash_par_hash.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/rmd128/rmd128.cpp -o build/lib/hash_rmd128.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/rmd160/rmd160.cpp -o build/lib/hash_rmd160.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/sha1/sha160.cpp -o build/lib/hash_sha1_sha160.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/sha1_sse2/sha1_sse2.cpp -o build/lib/hash_sha1_sse2.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/sha1_x86_64/sha1_x86_64.cpp -o build/lib/hash_sha1_x86_64.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/sha1_x86_64/sha1_x86_64_imp.S -o build/lib/hash_sha1_x86_64_sha1_x86_64_imp.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/sha2_32/sha2_32.cpp -o build/lib/hash_sha2_32.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/sha2_64/sha2_64.cpp -o build/lib/hash_sha2_64.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/skein/skein_512.cpp -o build/lib/hash_skein_skein_512.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/tiger/tig_tab.cpp -o build/lib/hash_tiger_tig_tab.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/tiger/tiger.cpp -o build/lib/hash_tiger.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/whirlpool/whrl_tab.cpp -o build/lib/hash_whirlpool_whrl_tab.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/hash/whirlpool/whrlpool.cpp -o build/lib/hash_whirlpool_whrlpool.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/kdf/kdf.cpp -o build/lib/kdf.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/kdf/kdf1/kdf1.cpp -o build/lib/kdf_kdf1.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/kdf/kdf2/kdf2.cpp -o build/lib/kdf_kdf2.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/kdf/mgf1/mgf1.cpp -o build/lib/kdf_mgf1.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/kdf/prf_ssl3/prf_ssl3.cpp -o build/lib/kdf_prf_ssl3.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/kdf/prf_tls/prf_tls.cpp -o build/lib/kdf_prf_tls.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/kdf/prf_x942/prf_x942.cpp -o build/lib/kdf_prf_x942.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/libstate/get_enc.cpp -o build/lib/libstate_get_enc.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/libstate/global_rng.cpp -o build/lib/libstate_global_rng.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/libstate/global_state.cpp -o build/lib/libstate_global_state.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/libstate/init.cpp -o build/lib/libstate_init.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/libstate/libstate.cpp -o build/lib/libstate.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/libstate/lookup.cpp -o build/lib/libstate_lookup.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/libstate/oid_lookup/oids.cpp -o build/lib/libstate_oid_lookup_oids.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/libstate/policy.cpp -o build/lib/libstate_policy.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/libstate/scan_name.cpp -o build/lib/libstate_scan_name.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/mac/cbc_mac/cbc_mac.cpp -o build/lib/mac_cbc_mac.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/mac/cmac/cmac.cpp -o build/lib/mac_cmac.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/mac/hmac/hmac.cpp -o build/lib/mac_hmac.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/mac/mac.cpp -o build/lib/mac.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/mac/ssl3mac/ssl3_mac.cpp -o build/lib/mac_ssl3mac_ssl3_mac.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/mac/x919_mac/x919_mac.cpp -o build/lib/mac_x919_mac.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/bigint/big_code.cpp -o build/lib/math_bigint_big_code.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/bigint/big_io.cpp -o build/lib/math_bigint_big_io.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/bigint/big_ops2.cpp -o build/lib/math_bigint_big_ops2.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/bigint/big_ops3.cpp -o build/lib/math_bigint_big_ops3.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/bigint/big_rand.cpp -o build/lib/math_bigint_big_rand.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/bigint/bigint.cpp -o build/lib/math_bigint.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/bigint/divide.cpp -o build/lib/math_bigint_divide.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/ec_gfp/point_gfp.cpp -o build/lib/math_ec_gfp_point_gfp.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/mp/mp_asm.cpp -o build/lib/math_mp_mp_asm.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/mp/mp_comba.cpp -o build/lib/math_mp_mp_comba.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/mp/mp_karat.cpp -o build/lib/math_mp_mp_karat.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/mp/mp_misc.cpp -o build/lib/math_mp_mp_misc.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/mp/mp_monty.cpp -o build/lib/math_mp_mp_monty.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/mp/mp_mulop.cpp -o build/lib/math_mp_mp_mulop.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/mp/mp_shift.cpp -o build/lib/math_mp_mp_shift.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/dsa_gen.cpp -o build/lib/math_numbertheory_dsa_gen.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/jacobi.cpp -o build/lib/math_numbertheory_jacobi.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/make_prm.cpp -o build/lib/math_numbertheory_make_prm.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/mp_numth.cpp -o build/lib/math_numbertheory_mp_numth.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/numthry.cpp -o build/lib/math_numbertheory_numthry.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/pow_mod.cpp -o build/lib/math_numbertheory_pow_mod.o
+In file included from src/math/numbertheory/pow_mod.cpp:8:
+build/include/botan/pow_mod.h:67:19: warning: private field 'hints' is not used [-Wunused-private-field]
+      Usage_Hints hints;
+                  ^
+1 warning generated.
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/powm_fw.cpp -o build/lib/math_numbertheory_powm_fw.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/powm_mnt.cpp -o build/lib/math_numbertheory_powm_mnt.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/primes.cpp -o build/lib/math_numbertheory_primes.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/reducer.cpp -o build/lib/math_numbertheory_reducer.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/math/numbertheory/ressol.cpp -o build/lib/math_numbertheory_ressol.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/mutex/noop_mutex/mux_noop.cpp -o build/lib/mutex_noop_mutex_mux_noop.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/mutex/pthreads/mux_pthr.cpp -o build/lib/mutex_pthreads_mux_pthr.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/passhash/bcrypt/bcrypt.cpp -o build/lib/passhash_bcrypt.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/passhash/passhash9/passhash9.cpp -o build/lib/passhash_passhash9.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pbe/get_pbe.cpp -o build/lib/pbe_get_pbe.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pbe/pbes1/pbes1.cpp -o build/lib/pbe_pbes1.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pbe/pbes2/pbes2.cpp -o build/lib/pbe_pbes2.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pbkdf/pbkdf1/pbkdf1.cpp -o build/lib/pbkdf_pbkdf1.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pbkdf/pbkdf2/pbkdf2.cpp -o build/lib/pbkdf_pbkdf2.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pbkdf/pgps2k/pgp_s2k.cpp -o build/lib/pbkdf_pgps2k_pgp_s2k.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pk_pad/eme.cpp -o build/lib/pk_pad_eme.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pk_pad/eme1/eme1.cpp -o build/lib/pk_pad_eme1.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pk_pad/eme_pkcs/eme_pkcs.cpp -o build/lib/pk_pad_eme_pkcs.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pk_pad/emsa1/emsa1.cpp -o build/lib/pk_pad_emsa1.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pk_pad/emsa1_bsi/emsa1_bsi.cpp -o build/lib/pk_pad_emsa1_bsi.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pk_pad/emsa2/emsa2.cpp -o build/lib/pk_pad_emsa2.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pk_pad/emsa3/emsa3.cpp -o build/lib/pk_pad_emsa3.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pk_pad/emsa4/emsa4.cpp -o build/lib/pk_pad_emsa4.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pk_pad/emsa_raw/emsa_raw.cpp -o build/lib/pk_pad_emsa_raw.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pk_pad/hash_id/hash_id.cpp -o build/lib/pk_pad_hash_id.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/blinding.cpp -o build/lib/pubkey_blinding.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/dh/dh.cpp -o build/lib/pubkey_dh.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/dl_algo/dl_algo.cpp -o build/lib/pubkey_dl_algo.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/dl_group/dl_group.cpp -o build/lib/pubkey_dl_group.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/dlies/dlies.cpp -o build/lib/pubkey_dlies.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/dsa/dsa.cpp -o build/lib/pubkey_dsa.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/ec_group/ec_group.cpp -o build/lib/pubkey_ec_group.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/ecc_key/ecc_key.cpp -o build/lib/pubkey_ecc_key.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/ecdh/ecdh.cpp -o build/lib/pubkey_ecdh.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/ecdsa/ecdsa.cpp -o build/lib/pubkey_ecdsa.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/elgamal/elgamal.cpp -o build/lib/pubkey_elgamal.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/gost_3410/gost_3410.cpp -o build/lib/pubkey_gost_3410.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/if_algo/if_algo.cpp -o build/lib/pubkey_if_algo.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/keypair/keypair.cpp -o build/lib/pubkey_keypair.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/nr/nr.cpp -o build/lib/pubkey_nr.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/pk_algs.cpp -o build/lib/pubkey_pk_algs.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/pk_keys.cpp -o build/lib/pubkey_pk_keys.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/pkcs8.cpp -o build/lib/pubkey_pkcs8.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/pubkey.cpp -o build/lib/pubkey.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/pubkey_enums.cpp -o build/lib/pubkey_pubkey_enums.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/rsa/rsa.cpp -o build/lib/pubkey_rsa.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/rw/rw.cpp -o build/lib/pubkey_rw.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/workfactor.cpp -o build/lib/pubkey_workfactor.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/pubkey/x509_key.cpp -o build/lib/pubkey_x509_key.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/rng/hmac_rng/hmac_rng.cpp -o build/lib/rng_hmac_rng.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/rng/randpool/randpool.cpp -o build/lib/rng_randpool.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/rng/rng.cpp -o build/lib/rng.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/rng/x931_rng/x931_rng.cpp -o build/lib/rng_x931_rng.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/selftest/selftest.cpp -o build/lib/selftest.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/c_kex.cpp -o build/lib/ssl_c_kex.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/cert_req.cpp -o build/lib/ssl_cert_req.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/cert_ver.cpp -o build/lib/ssl_cert_ver.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/finished.cpp -o build/lib/ssl_finished.o
+In file included from src/ssl/finished.cpp:8:
+build/include/botan/internal/tls_messages.h:204:23: warning: private field 'side' is not used [-Wunused-private-field]
+      Connection_Side side;
+                      ^
+1 warning generated.
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/hello.cpp -o build/lib/ssl_hello.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/rec_read.cpp -o build/lib/ssl_rec_read.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/rec_wri.cpp -o build/lib/ssl_rec_wri.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/s_kex.cpp -o build/lib/ssl_s_kex.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/tls_client.cpp -o build/lib/ssl_tls_client.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/tls_handshake_hash.cpp -o build/lib/ssl_tls_handshake_hash.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/tls_policy.cpp -o build/lib/ssl_tls_policy.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/tls_server.cpp -o build/lib/ssl_tls_server.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/tls_session_key.cpp -o build/lib/ssl_tls_session_key.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/tls_state.cpp -o build/lib/ssl_tls_state.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/ssl/tls_suites.cpp -o build/lib/ssl_tls_suites.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/stream/arc4/arc4.cpp -o build/lib/stream_arc4.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/stream/ctr/ctr.cpp -o build/lib/stream_ctr.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/stream/ofb/ofb.cpp -o build/lib/stream_ofb.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/stream/salsa20/salsa20.cpp -o build/lib/stream_salsa20.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/stream/stream_cipher.cpp -o build/lib/stream_stream_cipher.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/stream/turing/tur_tab.cpp -o build/lib/stream_turing_tur_tab.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/stream/turing/turing.cpp -o build/lib/stream_turing.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/stream/wid_wake/wid_wake.cpp -o build/lib/stream_wid_wake.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/utils/assert.cpp -o build/lib/utils_assert.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/utils/charset.cpp -o build/lib/utils_charset.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/utils/cpuid.cpp -o build/lib/utils_cpuid.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/utils/datastor/datastor.cpp -o build/lib/utils_datastor.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/utils/dyn_load/dyn_load.cpp -o build/lib/utils_dyn_load.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/utils/mlock.cpp -o build/lib/utils_mlock.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/utils/parsing.cpp -o build/lib/utils_parsing.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/utils/time.cpp -o build/lib/utils_time.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/utils/ui.cpp -o build/lib/utils_ui.o
+g++ -m64 -Ibuild/include -O3 -finline-functions  -D_REENTRANT -Wno-long-long -W -Wall -fPIC -fvisibility=hidden -c src/utils/version.cpp -o build/lib/utils_version.o
+ar crs libbotan-1.10.a build/lib/algo_base_symkey.o build/lib/algo_factory.o build/lib/algo_factory_prov_weight.o build/lib/alloc_alloc_mmap_mmap_mem.o build/lib/alloc_mem_pool.o build/lib/alloc_system_alloc_defalloc.o build/lib/asn1_alg_id.o build/lib/asn1_asn1_alt.o build/lib/asn1_asn1_att.o build/lib/asn1_asn1_int.o build/lib/asn1_asn1_oid.o build/lib/asn1_asn1_str.o build/lib/asn1_asn1_tm.o build/lib/asn1_ber_dec.o build/lib/asn1_der_enc.o build/lib/asn1_x509_dn.o build/lib/benchmark.o build/lib/block_aes.o build/lib/block_blowfish_blfs_tab.o build/lib/block_blowfish.o build/lib/block_camellia.o build/lib/block_cascade.o build/lib/block_cast_cast128.o build/lib/block_cast_cast256.o build/lib/block_cast_cast_tab.o build/lib/block_des.o build/lib/block_des_des_tab.o build/lib/block_des_desx.o build/lib/block_gost_28147.o build/lib/block_idea.o build/lib/block_idea_sse2.o build/lib/block_kasumi.o build/lib/block_lion.o build/lib/block_lubyrack.o build/lib/block_mars.o build/lib/block_misty1.o build/lib/block_noekeon.o build/lib/block_noekeon_simd.o build/lib/block_rc2.o build/lib/block_rc5.o build/lib/block_rc6.o build/lib/block_safer_safer_sk.o build/lib/block_seed.o build/lib/block_seed_seed_tab.o build/lib/block_serpent.o build/lib/block_serpent_simd_serp_simd.o build/lib/block_skipjack.o build/lib/block_square_sqr_tab.o build/lib/block_square.o build/lib/block_tea.o build/lib/block_twofish_two_tab.o build/lib/block_twofish.o build/lib/block_xtea.o build/lib/block_xtea_simd.o build/lib/cert_certstore_certstor.o build/lib/cert_pkcs10.o build/lib/cert_x509ca_x509_ca.o build/lib/cert_x509cert_x509_ext.o build/lib/cert_x509cert_x509_obj.o build/lib/cert_x509cert.o build/lib/cert_x509crl_crl_ent.o build/lib/cert_x509crl_x509_crl.o build/lib/cert_x509self_x509opt.o build/lib/cert_x509self.o build/lib/cert_x509store_x509stor.o build/lib/checksum_adler32.o build/lib/checksum_crc24.o build/lib/checksum_crc32.o build/lib/codec_base64.o build/lib/codec_hex.o build/lib/codec_openpgp.o build/lib/codec_pem.o build/lib/constructs_aont_package.o build/lib/constructs_cryptobox.o build/lib/constructs_fpe_fe1.o build/lib/constructs_rfc3394.o build/lib/constructs_srp6.o build/lib/constructs_tss.o build/lib/engine_asm_engine.o build/lib/engine_core_engine_core_modes.o build/lib/engine_core_engine_def_pk_ops.o build/lib/engine_core_engine_def_powm.o build/lib/engine_core_engine_lookup_block.o build/lib/engine_core_engine_lookup_hash.o build/lib/engine_core_engine_lookup_mac.o build/lib/engine_core_engine_lookup_pbkdf.o build/lib/engine_core_engine_lookup_stream.o build/lib/engine_dyn_engine.o build/lib/engine.o build/lib/engine_gnump_gmp_mem.o build/lib/engine_gnump_gmp_powm.o build/lib/engine_gnump_gmp_wrap.o build/lib/engine_gnump_gnump_pk.o build/lib/engine_openssl_bn_powm.o build/lib/engine_openssl_bn_wrap.o build/lib/engine_openssl_ossl_arc4.o build/lib/engine_openssl_ossl_bc.o build/lib/engine_openssl_ossl_md.o build/lib/engine_openssl_ossl_pk.o build/lib/engine_simd_engine.o build/lib/entropy_dev_random.o build/lib/entropy_egd_es_egd.o build/lib/entropy_hres_timer.o build/lib/entropy_proc_walk_es_ftw.o build/lib/entropy_rdrand.o build/lib/entropy_unix_procs_es_unix.o build/lib/entropy_unix_procs_unix_cmd.o build/lib/entropy_unix_procs_unix_src.o build/lib/filters_algo_filt.o build/lib/filters_basefilt.o build/lib/filters_buf_filt.o build/lib/filters_bzip2.o build/lib/filters_codec_filt_b64_filt.o build/lib/filters_codec_filt_hex_filt.o build/lib/filters_data_snk.o build/lib/filters_data_src.o build/lib/filters_fd_unix.o build/lib/filters_filter.o build/lib/filters_modes_cbc.o build/lib/filters_modes_cfb.o build/lib/filters_modes_cts.o build/lib/filters_modes_eax.o build/lib/filters_modes_eax_eax_dec.o build/lib/filters_modes_ecb.o build/lib/filters_modes_mode_pad.o build/lib/filters_modes_xts.o build/lib/filters_out_buf.o build/lib/filters_pipe.o build/lib/filters_pipe_io.o build/lib/filters_pipe_rw.o build/lib/filters_pk_filts.o build/lib/filters_secqueue.o build/lib/filters_zlib.o build/lib/hash_bmw_512.o build/lib/hash_comb4p.o build/lib/hash_gost_3411.o build/lib/hash_has160.o build/lib/hash_keccak.o build/lib/hash_md2.o build/lib/hash_md4.o build/lib/hash_md5.o build/lib/hash_mdx_hash.o build/lib/hash_par_hash.o build/lib/hash_rmd128.o build/lib/hash_rmd160.o build/lib/hash_sha1_sha160.o build/lib/hash_sha1_sse2.o build/lib/hash_sha1_x86_64.o build/lib/hash_sha1_x86_64_sha1_x86_64_imp.o build/lib/hash_sha2_32.o build/lib/hash_sha2_64.o build/lib/hash_skein_skein_512.o build/lib/hash_tiger_tig_tab.o build/lib/hash_tiger.o build/lib/hash_whirlpool_whrl_tab.o build/lib/hash_whirlpool_whrlpool.o build/lib/kdf.o build/lib/kdf_kdf1.o build/lib/kdf_kdf2.o build/lib/kdf_mgf1.o build/lib/kdf_prf_ssl3.o build/lib/kdf_prf_tls.o build/lib/kdf_prf_x942.o build/lib/libstate_get_enc.o build/lib/libstate_global_rng.o build/lib/libstate_global_state.o build/lib/libstate_init.o build/lib/libstate.o build/lib/libstate_lookup.o build/lib/libstate_oid_lookup_oids.o build/lib/libstate_policy.o build/lib/libstate_scan_name.o build/lib/mac_cbc_mac.o build/lib/mac_cmac.o build/lib/mac_hmac.o build/lib/mac.o build/lib/mac_ssl3mac_ssl3_mac.o build/lib/mac_x919_mac.o build/lib/math_bigint_big_code.o build/lib/math_bigint_big_io.o build/lib/math_bigint_big_ops2.o build/lib/math_bigint_big_ops3.o build/lib/math_bigint_big_rand.o build/lib/math_bigint.o build/lib/math_bigint_divide.o build/lib/math_ec_gfp_point_gfp.o build/lib/math_mp_mp_asm.o build/lib/math_mp_mp_comba.o build/lib/math_mp_mp_karat.o build/lib/math_mp_mp_misc.o build/lib/math_mp_mp_monty.o build/lib/math_mp_mp_mulop.o build/lib/math_mp_mp_shift.o build/lib/math_numbertheory_dsa_gen.o build/lib/math_numbertheory_jacobi.o build/lib/math_numbertheory_make_prm.o build/lib/math_numbertheory_mp_numth.o build/lib/math_numbertheory_numthry.o build/lib/math_numbertheory_pow_mod.o build/lib/math_numbertheory_powm_fw.o build/lib/math_numbertheory_powm_mnt.o build/lib/math_numbertheory_primes.o build/lib/math_numbertheory_reducer.o build/lib/math_numbertheory_ressol.o build/lib/mutex_noop_mutex_mux_noop.o build/lib/mutex_pthreads_mux_pthr.o build/lib/passhash_bcrypt.o build/lib/passhash_passhash9.o build/lib/pbe_get_pbe.o build/lib/pbe_pbes1.o build/lib/pbe_pbes2.o build/lib/pbkdf_pbkdf1.o build/lib/pbkdf_pbkdf2.o build/lib/pbkdf_pgps2k_pgp_s2k.o build/lib/pk_pad_eme.o build/lib/pk_pad_eme1.o build/lib/pk_pad_eme_pkcs.o build/lib/pk_pad_emsa1.o build/lib/pk_pad_emsa1_bsi.o build/lib/pk_pad_emsa2.o build/lib/pk_pad_emsa3.o build/lib/pk_pad_emsa4.o build/lib/pk_pad_emsa_raw.o build/lib/pk_pad_hash_id.o build/lib/pubkey_blinding.o build/lib/pubkey_dh.o build/lib/pubkey_dl_algo.o build/lib/pubkey_dl_group.o build/lib/pubkey_dlies.o build/lib/pubkey_dsa.o build/lib/pubkey_ec_group.o build/lib/pubkey_ecc_key.o build/lib/pubkey_ecdh.o build/lib/pubkey_ecdsa.o build/lib/pubkey_elgamal.o build/lib/pubkey_gost_3410.o build/lib/pubkey_if_algo.o build/lib/pubkey_keypair.o build/lib/pubkey_nr.o build/lib/pubkey_pk_algs.o build/lib/pubkey_pk_keys.o build/lib/pubkey_pkcs8.o build/lib/pubkey.o build/lib/pubkey_pubkey_enums.o build/lib/pubkey_rsa.o build/lib/pubkey_rw.o build/lib/pubkey_workfactor.o build/lib/pubkey_x509_key.o build/lib/rng_hmac_rng.o build/lib/rng_randpool.o build/lib/rng.o build/lib/rng_x931_rng.o build/lib/selftest.o build/lib/ssl_c_kex.o build/lib/ssl_cert_req.o build/lib/ssl_cert_ver.o build/lib/ssl_finished.o build/lib/ssl_hello.o build/lib/ssl_rec_read.o build/lib/ssl_rec_wri.o build/lib/ssl_s_kex.o build/lib/ssl_tls_client.o build/lib/ssl_tls_handshake_hash.o build/lib/ssl_tls_policy.o build/lib/ssl_tls_server.o build/lib/ssl_tls_session_key.o build/lib/ssl_tls_state.o build/lib/ssl_tls_suites.o build/lib/stream_arc4.o build/lib/stream_ctr.o build/lib/stream_ofb.o build/lib/stream_salsa20.o build/lib/stream_stream_cipher.o build/lib/stream_turing_tur_tab.o build/lib/stream_turing.o build/lib/stream_wid_wake.o build/lib/utils_assert.o build/lib/utils_charset.o build/lib/utils_cpuid.o build/lib/utils_datastor.o build/lib/utils_dyn_load.o build/lib/utils_mlock.o build/lib/utils_parsing.o build/lib/utils_time.o build/lib/utils_ui.o build/lib/utils_version.o
+true libbotan-1.10.a
+g++ -m64 -shared -fPIC -Wl,-soname,libbotan-1.10.so.0  build/lib/algo_base_symkey.o build/lib/algo_factory.o build/lib/algo_factory_prov_weight.o build/lib/alloc_alloc_mmap_mmap_mem.o build/lib/alloc_mem_pool.o build/lib/alloc_system_alloc_defalloc.o build/lib/asn1_alg_id.o build/lib/asn1_asn1_alt.o build/lib/asn1_asn1_att.o build/lib/asn1_asn1_int.o build/lib/asn1_asn1_oid.o build/lib/asn1_asn1_str.o build/lib/asn1_asn1_tm.o build/lib/asn1_ber_dec.o build/lib/asn1_der_enc.o build/lib/asn1_x509_dn.o build/lib/benchmark.o build/lib/block_aes.o build/lib/block_blowfish_blfs_tab.o build/lib/block_blowfish.o build/lib/block_camellia.o build/lib/block_cascade.o build/lib/block_cast_cast128.o build/lib/block_cast_cast256.o build/lib/block_cast_cast_tab.o build/lib/block_des.o build/lib/block_des_des_tab.o build/lib/block_des_desx.o build/lib/block_gost_28147.o build/lib/block_idea.o build/lib/block_idea_sse2.o build/lib/block_kasumi.o build/lib/block_lion.o build/lib/block_lubyrack.o build/lib/block_mars.o build/lib/block_misty1.o build/lib/block_noekeon.o build/lib/block_noekeon_simd.o build/lib/block_rc2.o build/lib/block_rc5.o build/lib/block_rc6.o build/lib/block_safer_safer_sk.o build/lib/block_seed.o build/lib/block_seed_seed_tab.o build/lib/block_serpent.o build/lib/block_serpent_simd_serp_simd.o build/lib/block_skipjack.o build/lib/block_square_sqr_tab.o build/lib/block_square.o build/lib/block_tea.o build/lib/block_twofish_two_tab.o build/lib/block_twofish.o build/lib/block_xtea.o build/lib/block_xtea_simd.o build/lib/cert_certstore_certstor.o build/lib/cert_pkcs10.o build/lib/cert_x509ca_x509_ca.o build/lib/cert_x509cert_x509_ext.o build/lib/cert_x509cert_x509_obj.o build/lib/cert_x509cert.o build/lib/cert_x509crl_crl_ent.o build/lib/cert_x509crl_x509_crl.o build/lib/cert_x509self_x509opt.o build/lib/cert_x509self.o build/lib/cert_x509store_x509stor.o build/lib/checksum_adler32.o build/lib/checksum_crc24.o build/lib/checksum_crc32.o build/lib/codec_base64.o build/lib/codec_hex.o build/lib/codec_openpgp.o build/lib/codec_pem.o build/lib/constructs_aont_package.o build/lib/constructs_cryptobox.o build/lib/constructs_fpe_fe1.o build/lib/constructs_rfc3394.o build/lib/constructs_srp6.o build/lib/constructs_tss.o build/lib/engine_asm_engine.o build/lib/engine_core_engine_core_modes.o build/lib/engine_core_engine_def_pk_ops.o build/lib/engine_core_engine_def_powm.o build/lib/engine_core_engine_lookup_block.o build/lib/engine_core_engine_lookup_hash.o build/lib/engine_core_engine_lookup_mac.o build/lib/engine_core_engine_lookup_pbkdf.o build/lib/engine_core_engine_lookup_stream.o build/lib/engine_dyn_engine.o build/lib/engine.o build/lib/engine_gnump_gmp_mem.o build/lib/engine_gnump_gmp_powm.o build/lib/engine_gnump_gmp_wrap.o build/lib/engine_gnump_gnump_pk.o build/lib/engine_openssl_bn_powm.o build/lib/engine_openssl_bn_wrap.o build/lib/engine_openssl_ossl_arc4.o build/lib/engine_openssl_ossl_bc.o build/lib/engine_openssl_ossl_md.o build/lib/engine_openssl_ossl_pk.o build/lib/engine_simd_engine.o build/lib/entropy_dev_random.o build/lib/entropy_egd_es_egd.o build/lib/entropy_hres_timer.o build/lib/entropy_proc_walk_es_ftw.o build/lib/entropy_rdrand.o build/lib/entropy_unix_procs_es_unix.o build/lib/entropy_unix_procs_unix_cmd.o build/lib/entropy_unix_procs_unix_src.o build/lib/filters_algo_filt.o build/lib/filters_basefilt.o build/lib/filters_buf_filt.o build/lib/filters_bzip2.o build/lib/filters_codec_filt_b64_filt.o build/lib/filters_codec_filt_hex_filt.o build/lib/filters_data_snk.o build/lib/filters_data_src.o build/lib/filters_fd_unix.o build/lib/filters_filter.o build/lib/filters_modes_cbc.o build/lib/filters_modes_cfb.o build/lib/filters_modes_cts.o build/lib/filters_modes_eax.o build/lib/filters_modes_eax_eax_dec.o build/lib/filters_modes_ecb.o build/lib/filters_modes_mode_pad.o build/lib/filters_modes_xts.o build/lib/filters_out_buf.o build/lib/filters_pipe.o build/lib/filters_pipe_io.o build/lib/filters_pipe_rw.o build/lib/filters_pk_filts.o build/lib/filters_secqueue.o build/lib/filters_zlib.o build/lib/hash_bmw_512.o build/lib/hash_comb4p.o build/lib/hash_gost_3411.o build/lib/hash_has160.o build/lib/hash_keccak.o build/lib/hash_md2.o build/lib/hash_md4.o build/lib/hash_md5.o build/lib/hash_mdx_hash.o build/lib/hash_par_hash.o build/lib/hash_rmd128.o build/lib/hash_rmd160.o build/lib/hash_sha1_sha160.o build/lib/hash_sha1_sse2.o build/lib/hash_sha1_x86_64.o build/lib/hash_sha1_x86_64_sha1_x86_64_imp.o build/lib/hash_sha2_32.o build/lib/hash_sha2_64.o build/lib/hash_skein_skein_512.o build/lib/hash_tiger_tig_tab.o build/lib/hash_tiger.o build/lib/hash_whirlpool_whrl_tab.o build/lib/hash_whirlpool_whrlpool.o build/lib/kdf.o build/lib/kdf_kdf1.o build/lib/kdf_kdf2.o build/lib/kdf_mgf1.o build/lib/kdf_prf_ssl3.o build/lib/kdf_prf_tls.o build/lib/kdf_prf_x942.o build/lib/libstate_get_enc.o build/lib/libstate_global_rng.o build/lib/libstate_global_state.o build/lib/libstate_init.o build/lib/libstate.o build/lib/libstate_lookup.o build/lib/libstate_oid_lookup_oids.o build/lib/libstate_policy.o build/lib/libstate_scan_name.o build/lib/mac_cbc_mac.o build/lib/mac_cmac.o build/lib/mac_hmac.o build/lib/mac.o build/lib/mac_ssl3mac_ssl3_mac.o build/lib/mac_x919_mac.o build/lib/math_bigint_big_code.o build/lib/math_bigint_big_io.o build/lib/math_bigint_big_ops2.o build/lib/math_bigint_big_ops3.o build/lib/math_bigint_big_rand.o build/lib/math_bigint.o build/lib/math_bigint_divide.o build/lib/math_ec_gfp_point_gfp.o build/lib/math_mp_mp_asm.o build/lib/math_mp_mp_comba.o build/lib/math_mp_mp_karat.o build/lib/math_mp_mp_misc.o build/lib/math_mp_mp_monty.o build/lib/math_mp_mp_mulop.o build/lib/math_mp_mp_shift.o build/lib/math_numbertheory_dsa_gen.o build/lib/math_numbertheory_jacobi.o build/lib/math_numbertheory_make_prm.o build/lib/math_numbertheory_mp_numth.o build/lib/math_numbertheory_numthry.o build/lib/math_numbertheory_pow_mod.o build/lib/math_numbertheory_powm_fw.o build/lib/math_numbertheory_powm_mnt.o build/lib/math_numbertheory_primes.o build/lib/math_numbertheory_reducer.o build/lib/math_numbertheory_ressol.o build/lib/mutex_noop_mutex_mux_noop.o build/lib/mutex_pthreads_mux_pthr.o build/lib/passhash_bcrypt.o build/lib/passhash_passhash9.o build/lib/pbe_get_pbe.o build/lib/pbe_pbes1.o build/lib/pbe_pbes2.o build/lib/pbkdf_pbkdf1.o build/lib/pbkdf_pbkdf2.o build/lib/pbkdf_pgps2k_pgp_s2k.o build/lib/pk_pad_eme.o build/lib/pk_pad_eme1.o build/lib/pk_pad_eme_pkcs.o build/lib/pk_pad_emsa1.o build/lib/pk_pad_emsa1_bsi.o build/lib/pk_pad_emsa2.o build/lib/pk_pad_emsa3.o build/lib/pk_pad_emsa4.o build/lib/pk_pad_emsa_raw.o build/lib/pk_pad_hash_id.o build/lib/pubkey_blinding.o build/lib/pubkey_dh.o build/lib/pubkey_dl_algo.o build/lib/pubkey_dl_group.o build/lib/pubkey_dlies.o build/lib/pubkey_dsa.o build/lib/pubkey_ec_group.o build/lib/pubkey_ecc_key.o build/lib/pubkey_ecdh.o build/lib/pubkey_ecdsa.o build/lib/pubkey_elgamal.o build/lib/pubkey_gost_3410.o build/lib/pubkey_if_algo.o build/lib/pubkey_keypair.o build/lib/pubkey_nr.o build/lib/pubkey_pk_algs.o build/lib/pubkey_pk_keys.o build/lib/pubkey_pkcs8.o build/lib/pubkey.o build/lib/pubkey_pubkey_enums.o build/lib/pubkey_rsa.o build/lib/pubkey_rw.o build/lib/pubkey_workfactor.o build/lib/pubkey_x509_key.o build/lib/rng_hmac_rng.o build/lib/rng_randpool.o build/lib/rng.o build/lib/rng_x931_rng.o build/lib/selftest.o build/lib/ssl_c_kex.o build/lib/ssl_cert_req.o build/lib/ssl_cert_ver.o build/lib/ssl_finished.o build/lib/ssl_hello.o build/lib/ssl_rec_read.o build/lib/ssl_rec_wri.o build/lib/ssl_s_kex.o build/lib/ssl_tls_client.o build/lib/ssl_tls_handshake_hash.o build/lib/ssl_tls_policy.o build/lib/ssl_tls_server.o build/lib/ssl_tls_session_key.o build/lib/ssl_tls_state.o build/lib/ssl_tls_suites.o build/lib/stream_arc4.o build/lib/stream_ctr.o build/lib/stream_ofb.o build/lib/stream_salsa20.o build/lib/stream_stream_cipher.o build/lib/stream_turing_tur_tab.o build/lib/stream_turing.o build/lib/stream_wid_wake.o build/lib/utils_assert.o build/lib/utils_charset.o build/lib/utils_cpuid.o build/lib/utils_datastor.o build/lib/utils_dyn_load.o build/lib/utils_mlock.o build/lib/utils_parsing.o build/lib/utils_time.o build/lib/utils_ui.o build/lib/utils_version.o -o libbotan-1.10.so.0.5 -lbz2 -lcrypto -ldl -lgmp -lpthread -lrt -lz
+ln -fs libbotan-1.10.so.0.5 libbotan-1.10.so.0
+ln -fs libbotan-1.10.so.0.5 libbotan-1.10.so
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+/usr/bin/make check
+make[2]: Entering directory `/«PKGBUILDDIR»'
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/bench.cpp -o build/checks/bench.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/bigint.cpp -o build/checks/bigint.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/check.cpp -o build/checks/check.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/cvc_tests.cpp -o build/checks/cvc_tests.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/dolook.cpp -o build/checks/dolook.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/ec_tests.cpp -o build/checks/ec_tests.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/ecdh.cpp -o build/checks/ecdh.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/ecdsa.cpp -o build/checks/ecdsa.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/misc.cpp -o build/checks/misc.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/pk.cpp -o build/checks/pk.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/pk_bench.cpp -o build/checks/pk_bench.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/timer.cpp -o build/checks/timer.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/validate.cpp -o build/checks/validate.o
+g++ -m64 -Ibuild/include -O2 -D_REENTRANT -Wno-long-long -W -Wall -c checks/x509.cpp -o build/checks/x509.o
+g++ -m64  build/checks/bench.o build/checks/bigint.o build/checks/check.o build/checks/cvc_tests.o build/checks/dolook.o build/checks/ec_tests.o build/checks/ecdh.o build/checks/ecdsa.o build/checks/misc.o build/checks/pk.o build/checks/pk_bench.o build/checks/timer.o build/checks/validate.o build/checks/x509.o libbotan-1.10.so.0.5 -lbz2 -lcrypto -ldl -lgmp -lpthread -lrt -lz -o check
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+LD_LIBRARY_PATH=":/«PKGBUILDDIR»" ./check --validate
+Beginning tests...
+Testing Block Ciphers: ................................................................................................
+Testing Cipher Modes: ..........................
+Testing Stream Ciphers: .............
+Testing Hash Functions: ........................................
+Testing MACs: ...........
+Testing KDF Algorithms: ...........
+Testing PBKDF Algorithms: ....
+Testing Encoders/Decoders: ....
+Testing Random Number Generators: ...............
+Testing Password Hashing: .....
+Testing Bcrypt: ......
+Testing NIST keywrap: ......
+Testing CryptoBox: ..
+Testing BigInt Addition: .........................
+Testing BigInt Subtraction: .....................
+Testing BigInt Multiplication: ...................................
+Testing BigInt Square: .......
+Testing BigInt LeftShift: .................
+Testing BigInt RightShift: .................
+Testing BigInt Division: ............
+Testing BigInt Modulo: ........................
+Testing BigInt ModExp: ..........
+Testing BigInt PrimeTest: .......
+Testing RSAES/Raw: ...........................................................................
+Testing RSAES/EME1(SHA-1): ......................................
+Testing RSAES/EME-PKCS1-v1_5: ...........
+Testing RSASSA/EMSA1(SHA-1): ..
+Testing RSASSA/EMSA2(SHA-1): ..
+Testing RSASSA/EMSA2(SHA-224): ....
+Testing RSASSA/EMSA2(SHA-256): ....
+Testing RSASSA/EMSA2(SHA-384): ....
+Testing RSASSA/EMSA2(SHA-512): ....
+Testing RSASSA/EMSA2(RIPEMD-128): ....
+Testing RSASSA/EMSA2(RIPEMD-160): ....
+Testing RSASSA/EMSA2(Whirlpool): ....
+Testing RSASSA/EMSA3(Raw): .....
+Testing RSASSA/EMSA3(MD2): .
+Testing RSASSA/EMSA3(MD5): ...........
+Testing RSASSA/EMSA3(SHA-1): ..............
+Testing RSASSA/EMSA3(SHA-224): ...
+Testing RSASSA/EMSA3(SHA-256): ....
+Testing RSASSA/EMSA3(SHA-384): ....
+Testing RSASSA/EMSA3(SHA-512): ....
+Testing RSASSA/EMSA3(RIPEMD-160): ....
+Testing RSASSA/EMSA3(Tiger): ....
+Testing RSASSA/EMSA4(SHA-1): .............................
+Testing RSAVA/Raw: .
+Testing RSAVA/EMSA4(SHA-1): ................
+Testing RSAVA/EMSA4(SHA-224): ....
+Testing RSAVA/EMSA4(SHA-256): ....
+Testing RSAVA/EMSA4(RIPEMD-160): ....
+Testing RW/EMSA2(SHA-1): ...................
+Testing RWVA/EMSA2(SHA-1): .........
+Testing DSA/EMSA1(SHA-1): ...........
+Testing DSA/EMSA1(Tiger): ...
+Testing ECDSA/EMSA1(SHA-1): ...
+Testing ECDSA/EMSA1(SHA-224): ..
+Testing ECDSA/EMSA1(SHA-256): ....
+Testing ECDSA/EMSA1(SHA-384): ...
+Testing ECDSA/EMSA1(SHA-512): ...
+Testing GOST_3410/EMSA1(GOST-34.11): ...
+Testing NR/EMSA1(SHA-1): ............
+Testing ElGamal/Raw: ..........
+Testing DH/Raw: ........
+Testing DH/KDF2(SHA-1): ....
+Testing DLIES/KDF2(SHA-1)/HMAC(SHA-1)/16: ......
+Testing ECC: .........................................................................
+Testing ECDSA (InSiTo unit tests): .....................................
+Testing ECDH (InSiTo unit tests): ....
+Testing PK key generation: .......................................
+Testing X.509 CA/CRL/cert/cert request: .............
+All tests passed!
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+DEB_BUILD_HARDENING=1 dh binary
+   dh_testroot
+   dh_prep
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_install -- DESTDIR=/«PKGBUILDDIR»/debian/tmp/usr
+make[2]: Entering directory `/«PKGBUILDDIR»'
+cp readme.txt build/docs
+cp doc/*.txt build/docs/manual
+Installing Botan into /«PKGBUILDDIR»/debian/tmp/usr... 
+cp -r build/docs/* /«PKGBUILDDIR»/debian/tmp/usr/share/doc/botan-1.10.5
+for i in ./src/algo_base/algo_base.h ./src/algo_base/buf_comp.h ./src/algo_base/key_spec.h ./src/algo_base/sym_algo.h ./src/algo_base/symkey.h ./src/algo_factory/algo_factory.h ./src/alloc/allocate.h ./src/alloc/secmem.h ./src/asn1/alg_id.h ./src/asn1/asn1_int.h ./src/asn1/asn1_obj.h ./src/asn1/asn1_oid.h ./src/asn1/asn1_str.h ./src/asn1/ber_dec.h ./src/asn1/der_enc.h ./src/asn1/x509_dn.h ./src/benchmark/benchmark.h ./src/block/aes/aes.h ./src/block/block_cipher.h ./src/block/blowfish/blowfish.h ./src/block/camellia/camellia.h ./src/block/cascade/cascade.h ./src/block/cast/cast128.h ./src/block/cast/cast256.h ./src/block/des/des.h ./src/block/des/desx.h ./src/block/gost_28147/gost_28147.h ./src/block/idea/idea.h ./src/block/idea_sse2/idea_sse2.h ./src/block/kasumi/kasumi.h ./src/block/lion/lion.h ./src/block/lubyrack/lubyrack.h ./src/block/mars/mars.h ./src/block/misty1/misty1.h ./src/block/noekeon/noekeon.h ./src/block/noekeon_simd/noekeon_simd.h ./src/block/rc2/rc2.h ./src/block/rc5/rc5.h ./src/block/rc6/rc6.h ./src/block/safer/safer_sk.h ./src/block/seed/seed.h ./src/block/serpent/serpent.h ./src/block/serpent_simd/serp_simd.h ./src/block/skipjack/skipjack.h ./src/block/square/square.h ./src/block/tea/tea.h ./src/block/twofish/twofish.h ./src/block/xtea/xtea.h ./src/block/xtea_simd/xtea_simd.h ./src/cert/certstore/certstor.h ./src/cert/pkcs10/pkcs10.h ./src/cert/x509ca/x509_ca.h ./src/cert/x509cert/x509_ext.h ./src/cert/x509cert/x509_obj.h ./src/cert/x509cert/x509cert.h ./src/cert/x509crl/crl_ent.h ./src/cert/x509crl/x509_crl.h ./src/cert/x509self/x509self.h ./src/cert/x509store/x509stor.h ./src/checksum/adler32/adler32.h ./src/checksum/crc24/crc24.h ./src/checksum/crc32/crc32.h ./src/codec/base64/base64.h ./src/codec/hex/hex.h ./src/codec/openpgp/openpgp.h ./src/codec/pem/pem.h ./src/constructs/aont/package.h ./src/constructs/cryptobox/cryptobox.h ./src/constructs/fpe_fe1/fpe_fe1.h ./src/constructs/rfc3394/rfc3394.h ./src/constructs/srp6/srp6.h ./src/constructs/tss/tss.h ./src/engine/dyn_engine/dyn_engine.h ./src/engine/engine.h ./src/entropy/entropy_src.h ./src/filters/basefilt.h ./src/filters/buf_filt.h ./src/filters/bzip2/bzip2.h ./src/filters/codec_filt/b64_filt.h ./src/filters/codec_filt/hex_filt.h ./src/filters/data_snk.h ./src/filters/data_src.h ./src/filters/fd_unix/fd_unix.h ./src/filters/filter.h ./src/filters/filters.h ./src/filters/key_filt.h ./src/filters/modes/cbc/cbc.h ./src/filters/modes/cfb/cfb.h ./src/filters/modes/cts/cts.h ./src/filters/modes/eax/eax.h ./src/filters/modes/ecb/ecb.h ./src/filters/modes/mode_pad/mode_pad.h ./src/filters/modes/xts/xts.h ./src/filters/pipe.h ./src/filters/pk_filts/pk_filts.h ./src/filters/secqueue.h ./src/filters/zlib/zlib.h ./src/hash/bmw_512/bmw_512.h ./src/hash/comb4p/comb4p.h ./src/hash/gost_3411/gost_3411.h ./src/hash/has160/has160.h ./src/hash/hash.h ./src/hash/keccak/keccak.h ./src/hash/md2/md2.h ./src/hash/md4/md4.h ./src/hash/md5/md5.h ./src/hash/mdx_hash/mdx_hash.h ./src/hash/par_hash/par_hash.h ./src/hash/rmd128/rmd128.h ./src/hash/rmd160/rmd160.h ./src/hash/sha1/sha160.h ./src/hash/sha1_sse2/sha1_sse2.h ./src/hash/sha1_x86_64/sha1_x86_64.h ./src/hash/sha2_32/sha2_32.h ./src/hash/sha2_64/sha2_64.h ./src/hash/skein/skein_512.h ./src/hash/tiger/tiger.h ./src/hash/whirlpool/whrlpool.h ./src/kdf/kdf.h ./src/kdf/kdf1/kdf1.h ./src/kdf/kdf2/kdf2.h ./src/kdf/mgf1/mgf1.h ./src/kdf/prf_ssl3/prf_ssl3.h ./src/kdf/prf_tls/prf_tls.h ./src/kdf/prf_x942/prf_x942.h ./src/libstate/botan.h ./src/libstate/global_state.h ./src/libstate/init.h ./src/libstate/libstate.h ./src/libstate/look_pk.h ./src/libstate/lookup.h ./src/libstate/oid_lookup/oids.h ./src/libstate/scan_name.h ./src/mac/cbc_mac/cbc_mac.h ./src/mac/cmac/cmac.h ./src/mac/hmac/hmac.h ./src/mac/mac.h ./src/mac/ssl3mac/ssl3_mac.h ./src/mac/x919_mac/x919_mac.h ./src/math/bigint/bigint.h ./src/math/bigint/divide.h ./src/math/ec_gfp/curve_gfp.h ./src/math/ec_gfp/point_gfp.h ./src/math/mp/mp_types.h ./src/math/numbertheory/numthry.h ./src/math/numbertheory/pow_mod.h ./src/math/numbertheory/reducer.h ./src/passhash/bcrypt/bcrypt.h ./src/passhash/passhash9/passhash9.h ./src/pbe/get_pbe.h ./src/pbe/pbe.h ./src/pbe/pbes1/pbes1.h ./src/pbe/pbes2/pbes2.h ./src/pbkdf/pbkdf.h ./src/pbkdf/pbkdf1/pbkdf1.h ./src/pbkdf/pbkdf2/pbkdf2.h ./src/pbkdf/pgps2k/pgp_s2k.h ./src/pk_pad/eme.h ./src/pk_pad/eme1/eme1.h ./src/pk_pad/eme_pkcs/eme_pkcs.h ./src/pk_pad/emsa.h ./src/pk_pad/emsa1/emsa1.h ./src/pk_pad/emsa1_bsi/emsa1_bsi.h ./src/pk_pad/emsa2/emsa2.h ./src/pk_pad/emsa3/emsa3.h ./src/pk_pad/emsa4/emsa4.h ./src/pk_pad/emsa_raw/emsa_raw.h ./src/pk_pad/hash_id/hash_id.h ./src/pubkey/blinding.h ./src/pubkey/dh/dh.h ./src/pubkey/dl_algo/dl_algo.h ./src/pubkey/dl_group/dl_group.h ./src/pubkey/dlies/dlies.h ./src/pubkey/dsa/dsa.h ./src/pubkey/ec_group/ec_group.h ./src/pubkey/ecc_key/ecc_key.h ./src/pubkey/ecdh/ecdh.h ./src/pubkey/ecdsa/ecdsa.h ./src/pubkey/elgamal/elgamal.h ./src/pubkey/gost_3410/gost_3410.h ./src/pubkey/if_algo/if_algo.h ./src/pubkey/keypair/keypair.h ./src/pubkey/nr/nr.h ./src/pubkey/pk_keys.h ./src/pubkey/pk_ops.h ./src/pubkey/pkcs8.h ./src/pubkey/pubkey.h ./src/pubkey/pubkey_enums.h ./src/pubkey/rsa/rsa.h ./src/pubkey/rw/rw.h ./src/pubkey/x509_key.h ./src/rng/auto_rng/auto_rng.h ./src/rng/hmac_rng/hmac_rng.h ./src/rng/randpool/randpool.h ./src/rng/rng.h ./src/rng/x931_rng/x931_rng.h ./src/selftest/selftest.h ./src/ssl/tls_client.h ./src/ssl/tls_connection.h ./src/ssl/tls_exceptn.h ./src/ssl/tls_magic.h ./src/ssl/tls_policy.h ./src/ssl/tls_record.h ./src/ssl/tls_server.h ./src/ssl/tls_session_key.h ./src/ssl/tls_suites.h ./src/stream/arc4/arc4.h ./src/stream/ctr/ctr.h ./src/stream/ofb/ofb.h ./src/stream/salsa20/salsa20.h ./src/stream/stream_cipher.h ./src/stream/turing/turing.h ./src/stream/wid_wake/wid_wake.h ./src/utils/bswap.h ./src/utils/charset.h ./src/utils/cpuid.h ./src/utils/datastor/datastor.h ./src/utils/exceptn.h ./src/utils/get_byte.h ./src/utils/loadstor.h ./src/utils/mem_ops.h ./src/utils/parsing.h ./src/utils/rotate.h ./src/utils/time.h ./src/utils/types.h ./src/utils/ui.h ./src/utils/version.h build/build.h; do \
+	   install -m 644 $i /«PKGBUILDDIR»/debian/tmp/usr/include/botan-1.10/botan; \
+	 done
+install -m 644 libbotan-1.10.a /«PKGBUILDDIR»/debian/tmp/usr/lib
+install -m 755 libbotan-1.10.so.0.5 /«PKGBUILDDIR»/debian/tmp/usr/lib
+install -m 755 build/botan-config-1.10 /«PKGBUILDDIR»/debian/tmp/usr/bin
+install -m 644 build/botan-1.10.pc /«PKGBUILDDIR»/debian/tmp/usr/lib/pkgconfig
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+# Removing useless files
+rm -rf debian/tmp/usr/share/doc/botan-*
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_install --fail-missing
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_installdocs
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_installdocs -Xlicense.txt
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_installchangelogs
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_installchangelogs doc/log.txt
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installexamples
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   debian/rules override_dh_strip
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_strip --dbg-package=botan1.10-dbg
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `botan1.10-dbg' in `../botan1.10-dbg_1.10.5-1_amd64.deb'.
+dpkg-deb: building package `libbotan-1.10-0' in `../libbotan-1.10-0_1.10.5-1_amd64.deb'.
+dpkg-deb: building package `libbotan1.10-dev' in `../libbotan1.10-dev_1.10.5-1_amd64.deb'.
+ dpkg-genchanges  >../botan1.10_1.10.5-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build botan1.10-1.10.5
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-1839
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+botan1.10_1.10.5-1_amd64.changes:
+─────────────────────────────────
+
+Format: 1.8
+Date: Mon, 04 Mar 2013 09:24:12 +0100
+Source: botan1.10
+Binary: botan1.10-dbg libbotan-1.10-0 libbotan1.10-dev
+Architecture: source amd64
+Version: 1.10.5-1
+Distribution: sid
+Urgency: low
+Maintainer: Ondřej Surý <ondrej@debian.org>
+Changed-By: Ondřej Surý <ondrej@debian.org>
+Description: 
+ botan1.10-dbg - multiplatform crypto library (debug)
+ libbotan-1.10-0 - multiplatform crypto library
+ libbotan1.10-dev - multiplatform crypto library (development)
+Changes: 
+ botan1.10 (1.10.5-1) unstable; urgency=low
+ .
+   * Imported Upstream version 1.10.4
+    + Avoid a conditional operation in the power mod implementations on if
+      a nibble of the exponent was zero or not. This may help protect
+      against certain forms of side channel attacks.
+    + The SRP6 code was checking for invalid values as specified in RFC
+      5054, specifically values equal to zero mod p. However SRP would
+      accept negative A/B values, or ones larger than p, neither of which
+      should occur in a normal run of the protocol. These values are now
+      rejected. Credits to Timothy Prepscius for pointing out these values
+      are not normally used and probably signal something fishy.
+    + The return value of version_string is now a compile time constant
+      string, so version information can be more easily extracted from
+      binaries.
+   * Imported Upstream version 1.10.5
+    + A potential crash in the AES-NI implementation of the AES-192 key
+      schedule (caused by misaligned loads) has been fixed.
+    + A previously conditional operation in Montgomery multiplication and
+      squaring is now always performed, removing a possible timing channel.
+    + Use correct flags for creating a shared library on OS X under Clang.
+    + Fix a compile time incompatibility with Visual C++ 2012.
+Checksums-Sha1: 
+ 3cf2c8819f8874663803375599a9541c4f97ab91 1182 botan1.10_1.10.5-1.dsc
+ c203a40f97d6b141803f4bd1ed9d15140fb3c9de 2247439 botan1.10_1.10.5.orig.tar.bz2
+ 3ed1cc2d822438cf8a95d8d492c6edf7e236287a 7536 botan1.10_1.10.5-1.debian.tar.xz
+ b40e23cf9d8fdb83e252844d9d622cc23b1758c8 118452 botan1.10-dbg_1.10.5-1_amd64.deb
+ aaf904ebaae54ea89900b6b54f3228c1373bb6d1 837496 libbotan-1.10-0_1.10.5-1_amd64.deb
+ 081df3165a425487ecb5f5fe3f45b01af6c2e15e 1248038 libbotan1.10-dev_1.10.5-1_amd64.deb
+Checksums-Sha256: 
+ 63ad16029336bda7c394105a8056f3bbf4a27c71a66c62885e8ea5905a8da306 1182 botan1.10_1.10.5-1.dsc
+ 5f57cf44dc295e63c137f40e6367f1d0f53e92b9b224db150dae321d2a8e712d 2247439 botan1.10_1.10.5.orig.tar.bz2
+ 384622b5d43c976e620900a8171566aedba4944259e0d8d4cd5ba58afa55b40c 7536 botan1.10_1.10.5-1.debian.tar.xz
+ 8ce57562a4de448bf20c4675a32f17cb0f34aa739703df15493dde52c9bedbad 118452 botan1.10-dbg_1.10.5-1_amd64.deb
+ 5b7ca1824989d6a77ca78c437d387c24bc258f14d25e93a225bddc8b2ca33844 837496 libbotan-1.10-0_1.10.5-1_amd64.deb
+ 5d480f244de112c464edcffe35d4dbb83f1d4c00c03dd1da8c4d7aff9a0ca92c 1248038 libbotan1.10-dev_1.10.5-1_amd64.deb
+Files: 
+ 86822e1f659c6edbc36f1986ec6bc7d6 118452 debug extra botan1.10-dbg_1.10.5-1_amd64.deb
+ 6c5ca7bad209d3354ea511ef83e3db7c 837496 libs optional libbotan-1.10-0_1.10.5-1_amd64.deb
+ 16b9e011f52467461bc848f1dc0c2b0f 1248038 libdevel optional libbotan1.10-dev_1.10.5-1_amd64.deb
+ 6af43d9b52ee93ad7a969058aae6db15 1182 libs optional botan1.10_1.10.5-1.dsc
+ 89a7002f385c26477af6823c4fe2c930 2247439 libs optional botan1.10_1.10.5.orig.tar.bz2
+ 9cf89cc7fbd65896d5a1fdb162ddd7c8 7536 libs optional botan1.10_1.10.5-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+botan1.10-dbg_1.10.5-1_amd64.deb
+────────────────────────────────
+
+ new debian package, version 2.0.
+ size 118452 bytes: control archive=792 bytes.
+     636 bytes,    17 lines      control              
+     306 bytes,     4 lines      md5sums              
+ Package: botan1.10-dbg
+ Source: botan1.10
+ Version: 1.10.5-1
+ Architecture: amd64
+ Maintainer: Ondřej Surý <ondrej@debian.org>
+ Installed-Size: 517
+ Depends: libbotan-1.10-0 (= 1.10.5-1), libbotan1.10-dev (= 1.10.5-1)
+ Section: debug
+ Priority: extra
+ Homepage: http://botan.randombit.net/
+ Description: multiplatform crypto library (debug)
+  Botan is a C++ library which provides support for many common cryptographic
+  operations, including encryption, authentication, and X.509v3 certificates and
+  CRLs. A wide variety of algorithms is supported, including RSA, DSA, DES, AES,
+  MD5, and SHA-1.
+  .
+  This package contains the debugging symbols.
+
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/lib/debug/usr/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/lib/debug/usr/lib/
+-rw-r--r-- root/root    450302 2014-04-28 18:39 ./usr/lib/debug/usr/lib/libbotan-1.10.so.0.5
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/doc/botan1.10-dbg/
+-rw-r--r-- root/root     29749 2013-03-02 22:19 ./usr/share/doc/botan1.10-dbg/changelog.gz
+-rw-r--r-- root/root      5106 2013-03-04 09:26 ./usr/share/doc/botan1.10-dbg/changelog.Debian.gz
+-rw-r--r-- root/root      3068 2013-03-04 09:26 ./usr/share/doc/botan1.10-dbg/copyright
+
+
+libbotan-1.10-0_1.10.5-1_amd64.deb
+──────────────────────────────────
+
+ new debian package, version 2.0.
+ size 837496 bytes: control archive=1071 bytes.
+     650 bytes,    15 lines      control              
+     449 bytes,     6 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      32 bytes,     1 lines      shlibs               
+ Package: libbotan-1.10-0
+ Source: botan1.10
+ Version: 1.10.5-1
+ Architecture: amd64
+ Maintainer: Ondřej Surý <ondrej@debian.org>
+ Installed-Size: 3143
+ Depends: libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libgmp10, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4)
+ Section: libs
+ Priority: optional
+ Homepage: http://botan.randombit.net/
+ Description: multiplatform crypto library
+  Botan is a C++ library which provides support for many common cryptographic
+  operations, including encryption, authentication, and X.509v3 certificates and
+  CRLs. A wide variety of algorithms is supported, including RSA, DSA, DES, AES,
+  MD5, and SHA-1.
+
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/lib/
+-rw-r--r-- root/root   3147992 2014-04-28 18:39 ./usr/lib/libbotan-1.10.so.0.5
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/doc/libbotan-1.10-0/
+-rw-r--r-- root/root     29749 2013-03-02 22:19 ./usr/share/doc/libbotan-1.10-0/changelog.gz
+-rw-r--r-- root/root      5106 2013-03-04 09:26 ./usr/share/doc/libbotan-1.10-0/changelog.Debian.gz
+-rw-r--r-- root/root      3068 2013-03-04 09:26 ./usr/share/doc/libbotan-1.10-0/copyright
+-rw-r--r-- root/root      1969 2013-03-02 22:19 ./usr/share/doc/libbotan-1.10-0/credits.txt
+-rw-r--r-- root/root       654 2013-03-02 22:19 ./usr/share/doc/libbotan-1.10-0/readme.txt
+lrwxrwxrwx root/root         0 2014-04-28 18:39 ./usr/lib/libbotan-1.10.so.0 -> libbotan-1.10.so.0.5
+
+
+libbotan1.10-dev_1.10.5-1_amd64.deb
+───────────────────────────────────
+
+ new debian package, version 2.0.
+ size 1248038 bytes: control archive=9962 bytes.
+     674 bytes,    19 lines      control              
+   24266 bytes,   321 lines      md5sums              
+ Package: libbotan1.10-dev
+ Source: botan1.10
+ Version: 1.10.5-1
+ Architecture: amd64
+ Maintainer: Ondřej Surý <ondrej@debian.org>
+ Installed-Size: 8882
+ Depends: libbotan-1.10-0 (= 1.10.5-1)
+ Conflicts: libbotan1.6-dev
+ Replaces: libbotan1.6-dev
+ Section: libdevel
+ Priority: optional
+ Homepage: http://botan.randombit.net/
+ Description: multiplatform crypto library (development)
+  Botan is a C++ library which provides support for many common cryptographic
+  operations, including encryption, authentication, and X.509v3 certificates and
+  CRLs. A wide variety of algorithms is supported, including RSA, DSA, DES, AES,
+  MD5, and SHA-1.
+  .
+  This package contains the development files.
+
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/lib/pkgconfig/
+-rw-r--r-- root/root       286 2014-04-28 18:39 ./usr/lib/pkgconfig/botan-1.10.pc
+-rw-r--r-- root/root   8255114 2014-04-28 18:39 ./usr/lib/libbotan-1.10.a
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/bin/
+-rwxr-xr-x root/root      1176 2014-04-28 18:39 ./usr/bin/botan-config-1.10
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/include/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/include/botan-1.10/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/include/botan-1.10/botan/
+-rw-r--r-- root/root      1325 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x509_dn.h
+-rw-r--r-- root/root      1298 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pubkey_enums.h
+-rw-r--r-- root/root      1276 2014-04-28 18:39 ./usr/include/botan-1.10/botan/package.h
+-rw-r--r-- root/root      2682 2014-04-28 18:39 ./usr/include/botan-1.10/botan/dl_algo.h
+-rw-r--r-- root/root      1403 2014-04-28 18:39 ./usr/include/botan-1.10/botan/stream_cipher.h
+-rw-r--r-- root/root       729 2014-04-28 18:39 ./usr/include/botan-1.10/botan/rmd128.h
+-rw-r--r-- root/root      1977 2014-04-28 18:39 ./usr/include/botan-1.10/botan/gost_28147.h
+-rw-r--r-- root/root      3948 2014-04-28 18:39 ./usr/include/botan-1.10/botan/gost_3410.h
+-rw-r--r-- root/root      2119 2014-04-28 18:39 ./usr/include/botan-1.10/botan/parsing.h
+-rw-r--r-- root/root      1348 2014-04-28 18:39 ./usr/include/botan-1.10/botan/prf_tls.h
+-rw-r--r-- root/root       795 2014-04-28 18:39 ./usr/include/botan-1.10/botan/charset.h
+-rw-r--r-- root/root      1894 2014-04-28 18:39 ./usr/include/botan-1.10/botan/hex_filt.h
+-rw-r--r-- root/root      4208 2014-04-28 18:39 ./usr/include/botan-1.10/botan/data_src.h
+-rw-r--r-- root/root      3597 2014-04-28 18:39 ./usr/include/botan-1.10/botan/eax.h
+-rw-r--r-- root/root      5615 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pkcs8.h
+-rw-r--r-- root/root       525 2014-04-28 18:39 ./usr/include/botan-1.10/botan/prf_ssl3.h
+-rw-r--r-- root/root      4613 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x509_ca.h
+-rw-r--r-- root/root      1233 2014-04-28 18:39 ./usr/include/botan-1.10/botan/square.h
+-rw-r--r-- root/root      3888 2014-04-28 18:39 ./usr/include/botan-1.10/botan/hex.h
+-rw-r--r-- root/root      2341 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pow_mod.h
+-rw-r--r-- root/root      1762 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tls_client.h
+-rw-r--r-- root/root      1080 2014-04-28 18:39 ./usr/include/botan-1.10/botan/fpe_fe1.h
+-rw-r--r-- root/root      1107 2014-04-28 18:39 ./usr/include/botan-1.10/botan/mac.h
+-rw-r--r-- root/root      2504 2014-04-28 18:39 ./usr/include/botan-1.10/botan/elgamal.h
+-rw-r--r-- root/root      2452 2014-04-28 18:39 ./usr/include/botan-1.10/botan/srp6.h
+-rw-r--r-- root/root       746 2014-04-28 18:39 ./usr/include/botan-1.10/botan/par_hash.h
+-rw-r--r-- root/root      3528 2014-04-28 18:39 ./usr/include/botan-1.10/botan/ecc_key.h
+-rw-r--r-- root/root      4693 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x509self.h
+-rw-r--r-- root/root      5603 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tls_magic.h
+-rw-r--r-- root/root       598 2014-04-28 18:39 ./usr/include/botan-1.10/botan/noekeon_simd.h
+-rw-r--r-- root/root      1475 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pbes2.h
+-rw-r--r-- root/root      1477 2014-04-28 18:39 ./usr/include/botan-1.10/botan/time.h
+-rw-r--r-- root/root      3587 2014-04-28 18:39 ./usr/include/botan-1.10/botan/ec_group.h
+-rw-r--r-- root/root       671 2014-04-28 18:39 ./usr/include/botan-1.10/botan/mp_types.h
+-rw-r--r-- root/root       788 2014-04-28 18:39 ./usr/include/botan-1.10/botan/bmw_512.h
+-rw-r--r-- root/root       857 2014-04-28 18:39 ./usr/include/botan-1.10/botan/misty1.h
+-rw-r--r-- root/root      3858 2014-04-28 18:39 ./usr/include/botan-1.10/botan/ecdsa.h
+-rw-r--r-- root/root      1523 2014-04-28 18:39 ./usr/include/botan-1.10/botan/hmac_rng.h
+-rw-r--r-- root/root       875 2014-04-28 18:39 ./usr/include/botan-1.10/botan/md5.h
+-rw-r--r-- root/root       545 2014-04-28 18:39 ./usr/include/botan-1.10/botan/idea_sse2.h
+-rw-r--r-- root/root      8072 2014-04-28 18:39 ./usr/include/botan-1.10/botan/build.h
+-rw-r--r-- root/root      9706 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x509_ext.h
+-rw-r--r-- root/root       765 2014-04-28 18:39 ./usr/include/botan-1.10/botan/skipjack.h
+-rw-r--r-- root/root      3813 2014-04-28 18:39 ./usr/include/botan-1.10/botan/entropy_src.h
+-rw-r--r-- root/root      3094 2014-04-28 18:39 ./usr/include/botan-1.10/botan/rng.h
+-rw-r--r-- root/root      2220 2014-04-28 18:39 ./usr/include/botan-1.10/botan/ecb.h
+-rw-r--r-- root/root      1738 2014-04-28 18:39 ./usr/include/botan-1.10/botan/des.h
+-rw-r--r-- root/root      1173 2014-04-28 18:39 ./usr/include/botan-1.10/botan/rfc3394.h
+-rw-r--r-- root/root      1404 2014-04-28 18:39 ./usr/include/botan-1.10/botan/key_filt.h
+-rw-r--r-- root/root      2990 2014-04-28 18:39 ./usr/include/botan-1.10/botan/dyn_engine.h
+-rw-r--r-- root/root      1249 2014-04-28 18:39 ./usr/include/botan-1.10/botan/selftest.h
+-rw-r--r-- root/root      1883 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tls_server.h
+-rw-r--r-- root/root      2225 2014-04-28 18:39 ./usr/include/botan-1.10/botan/b64_filt.h
+-rw-r--r-- root/root      1372 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tls_session_key.h
+-rw-r--r-- root/root      2620 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tls_record.h
+-rw-r--r-- root/root      1101 2014-04-28 18:39 ./usr/include/botan-1.10/botan/noekeon.h
+-rw-r--r-- root/root      1722 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tss.h
+-rw-r--r-- root/root       570 2014-04-28 18:39 ./usr/include/botan-1.10/botan/xtea_simd.h
+-rw-r--r-- root/root      1355 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pbkdf1.h
+-rw-r--r-- root/root      1925 2014-04-28 18:39 ./usr/include/botan-1.10/botan/aes.h
+-rw-r--r-- root/root      3204 2014-04-28 18:39 ./usr/include/botan-1.10/botan/bswap.h
+-rw-r--r-- root/root       858 2014-04-28 18:39 ./usr/include/botan-1.10/botan/gost_3411.h
+-rw-r--r-- root/root       522 2014-04-28 18:39 ./usr/include/botan-1.10/botan/mgf1.h
+-rw-r--r-- root/root      2772 2014-04-28 18:39 ./usr/include/botan-1.10/botan/nr.h
+-rw-r--r-- root/root       421 2014-04-28 18:39 ./usr/include/botan-1.10/botan/botan.h
+-rw-r--r-- root/root     10080 2014-04-28 18:39 ./usr/include/botan-1.10/botan/lookup.h
+-rw-r--r-- root/root       879 2014-04-28 18:39 ./usr/include/botan-1.10/botan/emsa2.h
+-rw-r--r-- root/root      3426 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x509stor.h
+-rw-r--r-- root/root       889 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tls_suites.h
+-rw-r--r-- root/root      7040 2014-04-28 18:39 ./usr/include/botan-1.10/botan/algo_factory.h
+-rw-r--r-- root/root      3603 2014-04-28 18:39 ./usr/include/botan-1.10/botan/ber_dec.h
+-rw-r--r-- root/root      2137 2014-04-28 18:39 ./usr/include/botan-1.10/botan/cts.h
+-rw-r--r-- root/root      1392 2014-04-28 18:39 ./usr/include/botan-1.10/botan/allocate.h
+-rw-r--r-- root/root      1975 2014-04-28 18:39 ./usr/include/botan-1.10/botan/basefilt.h
+-rw-r--r-- root/root      1166 2014-04-28 18:39 ./usr/include/botan-1.10/botan/cast128.h
+-rw-r--r-- root/root       760 2014-04-28 18:39 ./usr/include/botan-1.10/botan/kasumi.h
+-rw-r--r-- root/root      3958 2014-04-28 18:39 ./usr/include/botan-1.10/botan/buf_comp.h
+-rw-r--r-- root/root      1448 2014-04-28 18:39 ./usr/include/botan-1.10/botan/mem_ops.h
+-rw-r--r-- root/root       956 2014-04-28 18:39 ./usr/include/botan-1.10/botan/hmac.h
+-rw-r--r-- root/root      2893 2014-04-28 18:39 ./usr/include/botan-1.10/botan/cpuid.h
+-rw-r--r-- root/root      2728 2014-04-28 18:39 ./usr/include/botan-1.10/botan/cbc.h
+-rw-r--r-- root/root       920 2014-04-28 18:39 ./usr/include/botan-1.10/botan/bcrypt.h
+-rw-r--r-- root/root      2024 2014-04-28 18:39 ./usr/include/botan-1.10/botan/certstor.h
+-rw-r--r-- root/root       776 2014-04-28 18:39 ./usr/include/botan-1.10/botan/hash.h
+-rw-r--r-- root/root      1516 2014-04-28 18:39 ./usr/include/botan-1.10/botan/data_snk.h
+-rw-r--r-- root/root      2367 2014-04-28 18:39 ./usr/include/botan-1.10/botan/xts.h
+-rw-r--r-- root/root      1483 2014-04-28 18:39 ./usr/include/botan-1.10/botan/randpool.h
+-rw-r--r-- root/root       729 2014-04-28 18:39 ./usr/include/botan-1.10/botan/rmd160.h
+-rw-r--r-- root/root       688 2014-04-28 18:39 ./usr/include/botan-1.10/botan/fd_unix.h
+-rw-r--r-- root/root       692 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tea.h
+-rw-r--r-- root/root      1726 2014-04-28 18:39 ./usr/include/botan-1.10/botan/mdx_hash.h
+-rw-r--r-- root/root      1070 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pbkdf2.h
+-rw-r--r-- root/root      1050 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x919_mac.h
+-rw-r--r-- root/root       586 2014-04-28 18:39 ./usr/include/botan-1.10/botan/serp_simd.h
+-rw-r--r-- root/root      1179 2014-04-28 18:39 ./usr/include/botan-1.10/botan/keypair.h
+-rw-r--r-- root/root      1498 2014-04-28 18:39 ./usr/include/botan-1.10/botan/emsa3.h
+-rw-r--r-- root/root       705 2014-04-28 18:39 ./usr/include/botan-1.10/botan/algo_base.h
+-rw-r--r-- root/root      4102 2014-04-28 18:39 ./usr/include/botan-1.10/botan/exceptn.h
+-rw-r--r-- root/root       663 2014-04-28 18:39 ./usr/include/botan-1.10/botan/crc24.h
+-rw-r--r-- root/root      4349 2014-04-28 18:39 ./usr/include/botan-1.10/botan/rsa.h
+-rw-r--r-- root/root       917 2014-04-28 18:39 ./usr/include/botan-1.10/botan/seed.h
+-rw-r--r-- root/root      2858 2014-04-28 18:39 ./usr/include/botan-1.10/botan/dsa.h
+-rw-r--r-- root/root       800 2014-04-28 18:39 ./usr/include/botan-1.10/botan/kdf1.h
+-rw-r--r-- root/root       518 2014-04-28 18:39 ./usr/include/botan-1.10/botan/sha1_sse2.h
+-rw-r--r-- root/root     15168 2014-04-28 18:39 ./usr/include/botan-1.10/botan/bigint.h
+-rw-r--r-- root/root      1385 2014-04-28 18:39 ./usr/include/botan-1.10/botan/cryptobox.h
+-rw-r--r-- root/root      1602 2014-04-28 18:39 ./usr/include/botan-1.10/botan/emsa.h
+-rw-r--r-- root/root      1220 2014-04-28 18:39 ./usr/include/botan-1.10/botan/reducer.h
+-rw-r--r-- root/root      2585 2014-04-28 18:39 ./usr/include/botan-1.10/botan/if_algo.h
+-rw-r--r-- root/root      1022 2014-04-28 18:39 ./usr/include/botan-1.10/botan/cast256.h
+-rw-r--r-- root/root       656 2014-04-28 18:39 ./usr/include/botan-1.10/botan/prf_x942.h
+-rw-r--r-- root/root      5398 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x509cert.h
+-rw-r--r-- root/root     13624 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pubkey.h
+-rw-r--r-- root/root      1485 2014-04-28 18:39 ./usr/include/botan-1.10/botan/datastor.h
+-rw-r--r-- root/root       996 2014-04-28 18:39 ./usr/include/botan-1.10/botan/auto_rng.h
+-rw-r--r-- root/root      1388 2014-04-28 18:39 ./usr/include/botan-1.10/botan/zlib.h
+-rw-r--r-- root/root      2301 2014-04-28 18:39 ./usr/include/botan-1.10/botan/buf_filt.h
+-rw-r--r-- root/root       726 2014-04-28 18:39 ./usr/include/botan-1.10/botan/rc6.h
+-rw-r--r-- root/root      1721 2014-04-28 18:39 ./usr/include/botan-1.10/botan/crl_ent.h
+-rw-r--r-- root/root       514 2014-04-28 18:39 ./usr/include/botan-1.10/botan/divide.h
+-rw-r--r-- root/root       926 2014-04-28 18:39 ./usr/include/botan-1.10/botan/blinding.h
+-rw-r--r-- root/root       711 2014-04-28 18:39 ./usr/include/botan-1.10/botan/emsa_raw.h
+-rw-r--r-- root/root      2494 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x509_key.h
+-rw-r--r-- root/root       808 2014-04-28 18:39 ./usr/include/botan-1.10/botan/rotate.h
+-rw-r--r-- root/root      1133 2014-04-28 18:39 ./usr/include/botan-1.10/botan/twofish.h
+-rw-r--r-- root/root      1269 2014-04-28 18:39 ./usr/include/botan-1.10/botan/cmac.h
+-rw-r--r-- root/root      2115 2014-04-28 18:39 ./usr/include/botan-1.10/botan/cfb.h
+-rw-r--r-- root/root       465 2014-04-28 18:39 ./usr/include/botan-1.10/botan/sha1_x86_64.h
+-rw-r--r-- root/root     16099 2014-04-28 18:39 ./usr/include/botan-1.10/botan/loadstor.h
+-rw-r--r-- root/root      1228 2014-04-28 18:39 ./usr/include/botan-1.10/botan/turing.h
+-rw-r--r-- root/root      1296 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pbkdf.h
+-rw-r--r-- root/root       557 2014-04-28 18:39 ./usr/include/botan-1.10/botan/eme_pkcs.h
+-rw-r--r-- root/root      1281 2014-04-28 18:39 ./usr/include/botan-1.10/botan/secqueue.h
+-rw-r--r-- root/root      3895 2014-04-28 18:39 ./usr/include/botan-1.10/botan/filter.h
+-rw-r--r-- root/root      3328 2014-04-28 18:39 ./usr/include/botan-1.10/botan/block_cipher.h
+-rw-r--r-- root/root      2331 2014-04-28 18:39 ./usr/include/botan-1.10/botan/scan_name.h
+-rw-r--r-- root/root      1167 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tiger.h
+-rw-r--r-- root/root       676 2014-04-28 18:39 ./usr/include/botan-1.10/botan/asn1_str.h
+-rw-r--r-- root/root       769 2014-04-28 18:39 ./usr/include/botan-1.10/botan/hash_id.h
+-rw-r--r-- root/root      2649 2014-04-28 18:39 ./usr/include/botan-1.10/botan/asn1_obj.h
+-rw-r--r-- root/root       864 2014-04-28 18:39 ./usr/include/botan-1.10/botan/rc2.h
+-rw-r--r-- root/root      1458 2014-04-28 18:39 ./usr/include/botan-1.10/botan/dlies.h
+-rw-r--r-- root/root      1220 2014-04-28 18:39 ./usr/include/botan-1.10/botan/bzip2.h
+-rw-r--r-- root/root      1755 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tls_policy.h
+-rw-r--r-- root/root      1349 2014-04-28 18:39 ./usr/include/botan-1.10/botan/openpgp.h
+-rw-r--r-- root/root       686 2014-04-28 18:39 ./usr/include/botan-1.10/botan/adler32.h
+-rw-r--r-- root/root      1132 2014-04-28 18:39 ./usr/include/botan-1.10/botan/skein_512.h
+-rw-r--r-- root/root      2034 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pk_filts.h
+-rw-r--r-- root/root     11431 2014-04-28 18:39 ./usr/include/botan-1.10/botan/secmem.h
+-rw-r--r-- root/root      3233 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x509_obj.h
+-rw-r--r-- root/root      1514 2014-04-28 18:39 ./usr/include/botan-1.10/botan/global_state.h
+-rw-r--r-- root/root     10035 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pipe.h
+-rw-r--r-- root/root      3540 2014-04-28 18:39 ./usr/include/botan-1.10/botan/symkey.h
+-rw-r--r-- root/root      1160 2014-04-28 18:39 ./usr/include/botan-1.10/botan/ctr.h
+-rw-r--r-- root/root      1603 2014-04-28 18:39 ./usr/include/botan-1.10/botan/lion.h
+-rw-r--r-- root/root      2849 2014-04-28 18:39 ./usr/include/botan-1.10/botan/ecdh.h
+-rw-r--r-- root/root      1123 2014-04-28 18:39 ./usr/include/botan-1.10/botan/passhash9.h
+-rw-r--r-- root/root       665 2014-04-28 18:39 ./usr/include/botan-1.10/botan/crc32.h
+-rw-r--r-- root/root      2334 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pkcs10.h
+-rw-r--r-- root/root       970 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pgp_s2k.h
+-rw-r--r-- root/root      3147 2014-04-28 18:39 ./usr/include/botan-1.10/botan/mode_pad.h
+-rw-r--r-- root/root       664 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tls_connection.h
+-rw-r--r-- root/root      1265 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pbe.h
+-rw-r--r-- root/root      6717 2014-04-28 18:39 ./usr/include/botan-1.10/botan/point_gfp.h
+-rw-r--r-- root/root       744 2014-04-28 18:39 ./usr/include/botan-1.10/botan/desx.h
+-rw-r--r-- root/root      1001 2014-04-28 18:39 ./usr/include/botan-1.10/botan/salsa20.h
+-rw-r--r-- root/root       742 2014-04-28 18:39 ./usr/include/botan-1.10/botan/get_pbe.h
+-rw-r--r-- root/root       854 2014-04-28 18:39 ./usr/include/botan-1.10/botan/xtea.h
+-rw-r--r-- root/root      1183 2014-04-28 18:39 ./usr/include/botan-1.10/botan/comb4p.h
+-rw-r--r-- root/root      1283 2014-04-28 18:39 ./usr/include/botan-1.10/botan/sha160.h
+-rw-r--r-- root/root       994 2014-04-28 18:39 ./usr/include/botan-1.10/botan/benchmark.h
+-rw-r--r-- root/root      2010 2014-04-28 18:39 ./usr/include/botan-1.10/botan/key_spec.h
+-rw-r--r-- root/root       741 2014-04-28 18:39 ./usr/include/botan-1.10/botan/kdf2.h
+-rw-r--r-- root/root      2489 2014-04-28 18:39 ./usr/include/botan-1.10/botan/dh.h
+-rw-r--r-- root/root      1261 2014-04-28 18:39 ./usr/include/botan-1.10/botan/serpent.h
+-rw-r--r-- root/root      1265 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pbes1.h
+-rw-r--r-- root/root       738 2014-04-28 18:39 ./usr/include/botan-1.10/botan/mars.h
+-rw-r--r-- root/root      3404 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pk_keys.h
+-rw-r--r-- root/root      1140 2014-04-28 18:39 ./usr/include/botan-1.10/botan/alg_id.h
+-rw-r--r-- root/root       943 2014-04-28 18:39 ./usr/include/botan-1.10/botan/keccak.h
+-rw-r--r-- root/root      1626 2014-04-28 18:39 ./usr/include/botan-1.10/botan/version.h
+-rw-r--r-- root/root      6725 2014-04-28 18:39 ./usr/include/botan-1.10/botan/filters.h
+-rw-r--r-- root/root      1767 2014-04-28 18:39 ./usr/include/botan-1.10/botan/camellia.h
+-rw-r--r-- root/root      2120 2014-04-28 18:39 ./usr/include/botan-1.10/botan/asn1_oid.h
+-rw-r--r-- root/root       754 2014-04-28 18:39 ./usr/include/botan-1.10/botan/md2.h
+-rw-r--r-- root/root      1073 2014-04-28 18:39 ./usr/include/botan-1.10/botan/lubyrack.h
+-rw-r--r-- root/root      1153 2014-04-28 18:39 ./usr/include/botan-1.10/botan/types.h
+-rw-r--r-- root/root      1221 2014-04-28 18:39 ./usr/include/botan-1.10/botan/sha2_32.h
+-rw-r--r-- root/root      4360 2014-04-28 18:39 ./usr/include/botan-1.10/botan/base64.h
+-rw-r--r-- root/root      1411 2014-04-28 18:39 ./usr/include/botan-1.10/botan/blowfish.h
+-rw-r--r-- root/root      3966 2014-04-28 18:39 ./usr/include/botan-1.10/botan/libstate.h
+-rw-r--r-- root/root      2710 2014-04-28 18:39 ./usr/include/botan-1.10/botan/rw.h
+-rw-r--r-- root/root      1046 2014-04-28 18:39 ./usr/include/botan-1.10/botan/emsa4.h
+-rw-r--r-- root/root       860 2014-04-28 18:39 ./usr/include/botan-1.10/botan/safer_sk.h
+-rw-r--r-- root/root      2460 2014-04-28 18:39 ./usr/include/botan-1.10/botan/asn1_int.h
+-rw-r--r-- root/root      1112 2014-04-28 18:39 ./usr/include/botan-1.10/botan/init.h
+-rw-r--r-- root/root       843 2014-04-28 18:39 ./usr/include/botan-1.10/botan/eme1.h
+-rw-r--r-- root/root       813 2014-04-28 18:39 ./usr/include/botan-1.10/botan/tls_exceptn.h
+-rw-r--r-- root/root      1198 2014-04-28 18:39 ./usr/include/botan-1.10/botan/cascade.h
+-rw-r--r-- root/root      1116 2014-04-28 18:39 ./usr/include/botan-1.10/botan/ofb.h
+-rw-r--r-- root/root      4114 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pk_ops.h
+-rw-r--r-- root/root      4545 2014-04-28 18:39 ./usr/include/botan-1.10/botan/engine.h
+-rw-r--r-- root/root       943 2014-04-28 18:39 ./usr/include/botan-1.10/botan/cbc_mac.h
+-rw-r--r-- root/root       973 2014-04-28 18:39 ./usr/include/botan-1.10/botan/arc4.h
+-rw-r--r-- root/root       881 2014-04-28 18:39 ./usr/include/botan-1.10/botan/md4.h
+-rw-r--r-- root/root       797 2014-04-28 18:39 ./usr/include/botan-1.10/botan/has160.h
+-rw-r--r-- root/root      1254 2014-04-28 18:39 ./usr/include/botan-1.10/botan/oids.h
+-rw-r--r-- root/root       889 2014-04-28 18:39 ./usr/include/botan-1.10/botan/rc5.h
+-rw-r--r-- root/root      3553 2014-04-28 18:39 ./usr/include/botan-1.10/botan/curve_gfp.h
+-rw-r--r-- root/root      1033 2014-04-28 18:39 ./usr/include/botan-1.10/botan/ssl3_mac.h
+-rw-r--r-- root/root      1004 2014-04-28 18:39 ./usr/include/botan-1.10/botan/whrlpool.h
+-rw-r--r-- root/root       744 2014-04-28 18:39 ./usr/include/botan-1.10/botan/ui.h
+-rw-r--r-- root/root       754 2014-04-28 18:39 ./usr/include/botan-1.10/botan/emsa1_bsi.h
+-rw-r--r-- root/root      1233 2014-04-28 18:39 ./usr/include/botan-1.10/botan/wid_wake.h
+-rw-r--r-- root/root      1200 2014-04-28 18:39 ./usr/include/botan-1.10/botan/sha2_64.h
+-rw-r--r-- root/root      6607 2014-04-28 18:39 ./usr/include/botan-1.10/botan/numthry.h
+-rw-r--r-- root/root      1070 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x931_rng.h
+-rw-r--r-- root/root      1019 2014-04-28 18:39 ./usr/include/botan-1.10/botan/idea.h
+-rw-r--r-- root/root      3479 2014-04-28 18:39 ./usr/include/botan-1.10/botan/der_enc.h
+-rw-r--r-- root/root       550 2014-04-28 18:39 ./usr/include/botan-1.10/botan/get_byte.h
+-rw-r--r-- root/root      3069 2014-04-28 18:39 ./usr/include/botan-1.10/botan/eme.h
+-rw-r--r-- root/root       811 2014-04-28 18:39 ./usr/include/botan-1.10/botan/pem.h
+-rw-r--r-- root/root       984 2014-04-28 18:39 ./usr/include/botan-1.10/botan/emsa1.h
+-rw-r--r-- root/root      4817 2014-04-28 18:39 ./usr/include/botan-1.10/botan/dl_group.h
+-rw-r--r-- root/root      2893 2014-04-28 18:39 ./usr/include/botan-1.10/botan/look_pk.h
+-rw-r--r-- root/root      2404 2014-04-28 18:39 ./usr/include/botan-1.10/botan/x509_crl.h
+-rw-r--r-- root/root      2216 2014-04-28 18:39 ./usr/include/botan-1.10/botan/sym_algo.h
+-rw-r--r-- root/root      3038 2014-04-28 18:39 ./usr/include/botan-1.10/botan/kdf.h
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/man/man1/
+-rw-r--r-- root/root       410 2014-04-28 18:39 ./usr/share/man/man1/botan-config-1.10.1.gz
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/doc/libbotan1.10-dev/
+-rw-r--r-- root/root      1587 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/ssl.txt
+-rw-r--r-- root/root       870 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/support.txt
+-rw-r--r-- root/root      3453 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/index.txt
+-rw-r--r-- root/root     29749 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/log.txt.gz
+-rw-r--r-- root/root     29749 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/changelog.gz
+-rw-r--r-- root/root       313 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/python.txt
+-rw-r--r-- root/root       441 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/contents.txt
+-rw-r--r-- root/root      2643 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/rng.txt.gz
+-rw-r--r-- root/root      1936 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/secmem.txt.gz
+-rw-r--r-- root/root      7813 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/pubkey.txt.gz
+-rw-r--r-- root/root      2062 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/users.txt.gz
+-rw-r--r-- root/root      9388 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/x509.txt.gz
+-rw-r--r-- root/root     11697 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/filters.txt.gz
+-rw-r--r-- root/root      1728 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/bigint.txt.gz
+-rw-r--r-- root/root      3227 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/lowlevel.txt.gz
+-rw-r--r-- root/root      5106 2013-03-04 09:26 ./usr/share/doc/libbotan1.10-dev/changelog.Debian.gz
+-rw-r--r-- root/root      3292 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/pbkdf.txt
+-rw-r--r-- root/root      1282 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/kdf.txt
+-rw-r--r-- root/root      3068 2013-03-04 09:26 ./usr/share/doc/libbotan1.10-dev/copyright
+-rw-r--r-- root/root      3998 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/faq.txt.gz
+-rw-r--r-- root/root      1969 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/credits.txt
+-rw-r--r-- root/root      2633 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/fpe.txt
+-rw-r--r-- root/root      3257 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/algos.txt
+-rw-r--r-- root/root      3388 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/download.txt
+-rw-r--r-- root/root       654 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/readme.txt
+-rw-r--r-- root/root       847 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/reading.txt
+drwxr-xr-x root/root         0 2014-04-28 18:39 ./usr/share/doc/libbotan1.10-dev/examples/
+-rw-r--r-- root/root      1481 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/row_encryptor.cpp.gz
+-rw-r--r-- root/root       726 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/rsa_manykey.cpp
+-rw-r--r-- root/root      3265 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/bzip.cpp
+-rw-r--r-- root/root      2494 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/read_ssh.cpp
+-rw-r--r-- root/root      1387 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/hash.cpp
+-rw-r--r-- root/root      1134 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/pkcs10.cpp
+-rw-r--r-- root/root      1613 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/toolbox.cpp.gz
+-rw-r--r-- root/root       832 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/tss.cpp
+-rw-r--r-- root/root      3069 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/fpe.cpp
+-rw-r--r-- root/root      1573 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/decrypt.cpp.gz
+-rw-r--r-- root/root      1867 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/rsa_enc.cpp.gz
+drwxr-xr-x root/root         0 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/python/
+-rwxr-xr-x root/root       384 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/python/rng_test.py
+-rwxr-xr-x root/root      1910 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/python/nisttest.py
+-rwxr-xr-x root/root      1003 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/python/cipher.py
+-rwxr-xr-x root/root       759 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/python/cryptobox.py
+-rw-r--r-- root/root      1560 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/python/results.vec
+-rwxr-xr-x root/root      1093 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/python/rsa.py
+-rw-r--r-- root/root      1031 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/passhash.cpp
+-rw-r--r-- root/root      1509 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/ca.cpp
+-rw-r--r-- root/root      1213 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/cryptobox.cpp
+-rw-r--r-- root/root      1411 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/package.cpp
+-rw-r--r-- root/root      1838 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/encrypt.cpp.gz
+-rw-r--r-- root/root      1192 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/cpuid.cpp
+-rw-r--r-- root/root      1170 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/rsa_kgen.cpp
+-rw-r--r-- root/root      2388 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/asn1.cpp.gz
+-rw-r--r-- root/root      2917 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/rng_test.cpp
+-rw-r--r-- root/root      1392 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/hasher.cpp
+-rw-r--r-- root/root      3459 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/rsa_dec.cpp
+-rw-r--r-- root/root       349 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/GNUmakefile
+-rw-r--r-- root/root       677 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/cert_verify.cpp
+-rw-r--r-- root/root      1899 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/eax_test.cpp.gz
+-rw-r--r-- root/root      1866 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/dsa_ver.cpp
+-rw-r--r-- root/root      3555 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/gen_certs.cpp
+-rw-r--r-- root/root      1277 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/ecdsa.cpp
+-rw-r--r-- root/root     13553 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/eax.vec.gz
+-rw-r--r-- root/root      2819 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/pqg_gen.cpp
+-rw-r--r-- root/root      2029 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/base64.cpp
+-rw-r--r-- root/root      1731 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/make_prime.cpp
+-rw-r--r-- root/root      1053 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/dsa_kgen.cpp
+-rw-r--r-- root/root      1704 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/dsa_sign.cpp
+-rw-r--r-- root/root      1688 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/encrypt2.cpp
+-rw-r--r-- root/root      2077 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/tls_client.cpp
+-rw-r--r-- root/root      2505 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/hash_quickly.cpp
+-rw-r--r-- root/root       839 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/checksum.cpp
+-rw-r--r-- root/root       821 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/bcrypt.cpp
+-rw-r--r-- root/root      2400 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/stack.cpp
+-rw-r--r-- root/root      1864 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/bench.cpp
+-rw-r--r-- root/root      1506 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/self_sig.cpp
+-rw-r--r-- root/root      1016 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/benchmark.cpp
+-rw-r--r-- root/root       790 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/keywrap.cpp
+-rw-r--r-- root/root      1748 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/hash_fd.cpp
+-rw-r--r-- root/root      1550 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/socket.h.gz
+-rw-r--r-- root/root      2740 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/new_engine.cpp
+-rw-r--r-- root/root      2240 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/sig_gen.cpp
+-rw-r--r-- root/root      1928 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/hasher2.cpp
+-rw-r--r-- root/root      3047 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/factor.cpp
+-rw-r--r-- root/root      2438 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/tls_server.cpp
+-rw-r--r-- root/root      1841 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/examples/dh.cpp
+-rw-r--r-- root/root      7578 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/building.txt.gz
+-rw-r--r-- root/root      2113 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/pgpkey.txt
+-rw-r--r-- root/root      1946 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/firststep.txt.gz
+-rw-r--r-- root/root      2129 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/passhash.txt.gz
+-rw-r--r-- root/root      3024 2013-03-02 22:19 ./usr/share/doc/libbotan1.10-dev/build_log.txt.gz
+lrwxrwxrwx root/root         0 2014-04-28 18:39 ./usr/lib/libbotan-1.10.so -> libbotan-1.10.so.0.5
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 66196
+Build-Time: 73
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 17
+Job: botan1.10_1.10.5-1.dsc
+Machine Architecture: amd64
+Package: botan1.10
+Package-Time: 96
+Source-Version: 1.10.5-1
+Space: 66196
+Status: successful
+Version: 1.10.5-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-1839
+Build needed 00:01:36, 66196k disc space

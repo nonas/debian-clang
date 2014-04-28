@@ -1,0 +1,1237 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ gdisk 0.8.8-1 (amd64)                                      27 Apr 2014 20:47 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: gdisk
+Version: 0.8.8-1
+Source Version: 0.8.8-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/gdisk-L6ekJj/gdisk-0.8.8' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/gdisk-L6ekJj' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-812f978f-80b2-4e64-99e4-533b3da0272e' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+gdisk_0.8.8-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-fFyQd0/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), libpopt-dev, uuid-dev, libicu-dev, libncurses5-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), libpopt-dev, uuid-dev, libicu-dev, libncurses5-dev
+dpkg-deb: building package `sbuild-build-depends-gdisk-dummy' in `/«BUILDDIR»/resolver-m5IdLi/apt_archive/sbuild-build-depends-gdisk-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install gdisk build dependencies (apt-based resolver)                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base icu-devtools
+  intltool-debian libasprintf0c2 libcroco3 libglib2.0-0 libicu-dev libicu52
+  libmagic1 libncurses5-dev libpipeline1 libpopt-dev libpopt0 libtinfo-dev
+  libunistring0 libxml2 man-db po-debconf uuid-dev
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff icu-doc
+  ncurses-doc less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base icu-devtools
+  intltool-debian libasprintf0c2 libcroco3 libglib2.0-0 libicu-dev libicu52
+  libmagic1 libncurses5-dev libpipeline1 libpopt-dev libpopt0 libtinfo-dev
+  libunistring0 libxml2 man-db po-debconf sbuild-build-depends-gdisk-dummy
+  uuid-dev
+0 upgraded, 25 newly installed, 0 to remove and 8 not upgraded.
+Need to get 23.5 MB/23.5 MB of archives.
+After this operation, 93.2 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libpopt0 amd64 1.16-8 [48.9 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libicu52 amd64 52.1-3 [6751 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main icu-devtools amd64 52.1-3 [170 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libicu-dev amd64 52.1-3 [7586 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libtinfo-dev amd64 5.9+20140118-1 [76.3 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libncurses5-dev amd64 5.9+20140118-1 [170 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libpopt-dev amd64 1.16-8 [49.9 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main uuid-dev amd64 2.20.1-5.7 [70.4 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 23.5 MB in 0s (46.1 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libpopt0:amd64.
+Preparing to unpack .../libpopt0_1.16-8_amd64.deb ...
+Unpacking libpopt0:amd64 (1.16-8) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libicu52:amd64.
+Preparing to unpack .../libicu52_52.1-3_amd64.deb ...
+Unpacking libicu52:amd64 (52.1-3) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package icu-devtools.
+Preparing to unpack .../icu-devtools_52.1-3_amd64.deb ...
+Unpacking icu-devtools (52.1-3) ...
+Selecting previously unselected package libicu-dev:amd64.
+Preparing to unpack .../libicu-dev_52.1-3_amd64.deb ...
+Unpacking libicu-dev:amd64 (52.1-3) ...
+Selecting previously unselected package libtinfo-dev:amd64.
+Preparing to unpack .../libtinfo-dev_5.9+20140118-1_amd64.deb ...
+Unpacking libtinfo-dev:amd64 (5.9+20140118-1) ...
+Selecting previously unselected package libncurses5-dev:amd64.
+Preparing to unpack .../libncurses5-dev_5.9+20140118-1_amd64.deb ...
+Unpacking libncurses5-dev:amd64 (5.9+20140118-1) ...
+Selecting previously unselected package libpopt-dev:amd64.
+Preparing to unpack .../libpopt-dev_1.16-8_amd64.deb ...
+Unpacking libpopt-dev:amd64 (1.16-8) ...
+Selecting previously unselected package uuid-dev.
+Preparing to unpack .../uuid-dev_2.20.1-5.7_amd64.deb ...
+Unpacking uuid-dev (2.20.1-5.7) ...
+Selecting previously unselected package sbuild-build-depends-gdisk-dummy.
+Preparing to unpack .../sbuild-build-depends-gdisk-dummy.deb ...
+Unpacking sbuild-build-depends-gdisk-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libpopt0:amd64 (1.16-8) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libicu52:amd64 (52.1-3) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up icu-devtools (52.1-3) ...
+Setting up libicu-dev:amd64 (52.1-3) ...
+Setting up libtinfo-dev:amd64 (5.9+20140118-1) ...
+Setting up libncurses5-dev:amd64 (5.9+20140118-1) ...
+Setting up libpopt-dev:amd64 (1.16-8) ...
+Setting up uuid-dev (2.20.1-5.7) ...
+Setting up sbuild-build-depends-gdisk-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 icu-devtools_52.1-3 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libicu-dev_52.1-3 libicu52_52.1-3 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncurses5-dev_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libpopt-dev_1.16-8 libpopt0_1.16-8 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-gdisk-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 uuid-dev_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Wed Dec 25 20:51:19 2013 UTC using RSA key ID 6AA15948
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./gdisk_0.8.8-1.dsc
+dpkg-source: info: extracting gdisk in gdisk-0.8.8
+dpkg-source: info: unpacking gdisk_0.8.8.orig.tar.gz
+dpkg-source: info: unpacking gdisk_0.8.8-1.debian.tar.gz
+dpkg-source: info: applying set_default_partition_type-test.diff
+dpkg-source: info: applying manpages.diff
+dpkg-source: info: applying kfreebsd_character_devices.diff
+dpkg-source: info: applying fix-change_disk_uid-test.diff
+dpkg-source: info: applying conditional-icu.diff
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-812f978f-80b2-4e64-99e4-533b3da0272e
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package gdisk
+dpkg-buildpackage: source version 0.8.8-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Guillaume Delacour <gui@iroqwa.org>
+ dpkg-source --before-build gdisk-0.8.8
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+make[1]: Entering directory `/«PKGBUILDDIR»'
+rm -f core *.o *~ gdisk sgdisk cgdisk fixparts
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_clean
+make[1]: Entering directory `/«PKGBUILDDIR»'
+rm -f -rf /«PKGBUILDDIR»/build-gdisk
+rm -f -rf /«PKGBUILDDIR»/build-gdisk-noicu
+/usr/bin/make clean
+make[2]: Entering directory `/«PKGBUILDDIR»'
+rm -f core *.o *~ gdisk sgdisk cgdisk fixparts
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+dh_clean
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ dpkg-source -b gdisk-0.8.8
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building gdisk using existing ./gdisk_0.8.8.orig.tar.gz
+dpkg-source: info: building gdisk in gdisk_0.8.8-1.debian.tar.xz
+dpkg-source: info: building gdisk in gdisk_0.8.8-1.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_auto_configure
+   debian/rules override_dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+install -d /«PKGBUILDDIR»/build-gdisk
+/usr/bin/make -C /«PKGBUILDDIR»/build-gdisk -f ../Makefile VPATH=..
+make[2]: Entering directory `/«PKGBUILDDIR»/build-gdisk'
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o crc32.o ../crc32.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o support.o ../support.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o guid.o ../guid.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o gptpart.o ../gptpart.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o mbrpart.o ../mbrpart.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o basicmbr.o ../basicmbr.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o mbr.o ../mbr.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o gpt.o ../gpt.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o bsd.o ../bsd.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o parttypes.o ../parttypes.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o attributes.o ../attributes.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o diskio.o ../diskio.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o diskio-unix.o ../diskio-unix.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o cgdisk.o ../cgdisk.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o gptcurses.o ../gptcurses.cc
+g++ crc32.o support.o guid.o gptpart.o mbrpart.o basicmbr.o mbr.o gpt.o bsd.o parttypes.o attributes.o diskio.o diskio-unix.o cgdisk.o gptcurses.o -Wl,-z,relro  -licuio -licuuc -luuid -lncurses -o cgdisk
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o gdisk.o ../gdisk.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o gpttext.o ../gpttext.cc
+g++ crc32.o support.o guid.o gptpart.o mbrpart.o basicmbr.o mbr.o gpt.o bsd.o parttypes.o attributes.o diskio.o diskio-unix.o gdisk.o gpttext.o -Wl,-z,relro  -licuio -licuuc -luuid -o gdisk
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o sgdisk.o ../sgdisk.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o gptcl.o ../gptcl.cc
+g++ crc32.o support.o guid.o gptpart.o mbrpart.o basicmbr.o mbr.o gpt.o bsd.o parttypes.o attributes.o diskio.o diskio-unix.o sgdisk.o gptcl.o -Wl,-z,relro  -licuio -licuuc -luuid -lpopt -o sgdisk
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D USE_UTF16 -D_FORTIFY_SOURCE=2  -c -o fixparts.o ../fixparts.cc
+g++ support.o diskio.o diskio-unix.o basicmbr.o mbrpart.o fixparts.o -Wl,-z,relro  -o fixparts
+make[2]: Leaving directory `/«PKGBUILDDIR»/build-gdisk'
+install -d /«PKGBUILDDIR»/build-gdisk-noicu
+/usr/bin/make -C /«PKGBUILDDIR»/build-gdisk-noicu -f ../Makefile VPATH=.. USE_ICU=0
+make[2]: Entering directory `/«PKGBUILDDIR»/build-gdisk-noicu'
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o crc32.o ../crc32.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o support.o ../support.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o guid.o ../guid.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o gptpart.o ../gptpart.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o mbrpart.o ../mbrpart.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o basicmbr.o ../basicmbr.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o mbr.o ../mbr.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o gpt.o ../gpt.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o bsd.o ../bsd.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o parttypes.o ../parttypes.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o attributes.o ../attributes.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o diskio.o ../diskio.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o diskio-unix.o ../diskio-unix.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o cgdisk.o ../cgdisk.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o gptcurses.o ../gptcurses.cc
+g++ crc32.o support.o guid.o gptpart.o mbrpart.o basicmbr.o mbr.o gpt.o bsd.o parttypes.o attributes.o diskio.o diskio-unix.o cgdisk.o gptcurses.o -Wl,-z,relro   -luuid -lncurses -o cgdisk
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o gdisk.o ../gdisk.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o gpttext.o ../gpttext.cc
+g++ crc32.o support.o guid.o gptpart.o mbrpart.o basicmbr.o mbr.o gpt.o bsd.o parttypes.o attributes.o diskio.o diskio-unix.o gdisk.o gpttext.o -Wl,-z,relro   -luuid -o gdisk
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o sgdisk.o ../sgdisk.cc
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o gptcl.o ../gptcl.cc
+g++ crc32.o support.o guid.o gptpart.o mbrpart.o basicmbr.o mbr.o gpt.o bsd.o parttypes.o attributes.o diskio.o diskio-unix.o sgdisk.o gptcl.o -Wl,-z,relro   -luuid -lpopt -o sgdisk
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wall -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2  -c -o fixparts.o ../fixparts.cc
+g++ support.o diskio.o diskio-unix.o basicmbr.o mbrpart.o fixparts.o -Wl,-z,relro  -o fixparts
+make[2]: Leaving directory `/«PKGBUILDDIR»/build-gdisk-noicu'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+./gdisk_test.sh build-gdisk
+65536+0 records in
+65536+0 records out
+67108864 bytes (67 MB) copied, 0.0464672 s, 1.4 GB/s
+[0;32m**SUCCESS**[m Temp disk sucessfully created
+
+[0;34m**Testing gdisk binary**[m
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: not present
+  BSD: not present
+  APM: not present
+  GPT: not present
+
+Creating new GPT entries.
+
+Command (? for help): This option deletes all partitions and creates a new protective MBR.
+Proceed? (Y/N): 
+Command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.J1W2cZSNrM.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Create new empty GPT table
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): Partition number (1-128, default 1): First sector (34-131038, default = 2048) or {+-}size{KMGTP}: Last sector (2048-131038, default = 131038) or {+-}size{KMGTP}: Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): Changed type of partition to 'Linux filesystem'
+
+Command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.J1W2cZSNrM.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Create new partition
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): Using 1
+Enter name: 
+Command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.J1W2cZSNrM.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Change partition 1 name (Linux filesystem -> HMRPrWUD)
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): Using 1
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): Changed type of partition to 'Linux swap'
+
+Command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.J1W2cZSNrM.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Change partition 1 type (8300 -> 8200)
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): Enter backup filename to save: The operation has completed successfully.
+
+Command (? for help): 
+[0;32m**SUCCESS**[m GPT data backuped sucessfully
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): Using 1
+
+Command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.J1W2cZSNrM.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Delete partition 1
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): 
+Recovery/transformation command (? for help): b	use backup GPT header (rebuilding main)
+c	load backup partition table from disk (rebuilding main)
+d	use main GPT header (rebuilding backup)
+e	load main partition table from disk (rebuilding backup)
+f	load MBR and build fresh GPT from it
+g	convert GPT into MBR and exit
+h	make hybrid MBR
+i	show detailed information on a partition
+l	load partition data from a backup file
+m	return to main menu
+o	print protective MBR data
+p	print the partition table
+q	quit without saving changes
+t	transform BSD disklabel partition
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+
+Recovery/transformation command (? for help): Enter backup filename to load: 
+Recovery/transformation command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.J1W2cZSNrM.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Restore the GPT backup
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): 
+Expert command (? for help): Enter the disk's unique GUID ('R' to randomize): The new disk GUID is 41E55C3D-3040-42D7-BCDC-4A402723D5AF
+
+Expert command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.J1W2cZSNrM.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m GUID of disk has been sucessfully changed
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): 
+Expert command (? for help): About to wipe out GPT on /tmp/tmp.J1W2cZSNrM. Proceed? (Y/N): Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+GPT data structures destroyed! You may now partition the disk using fdisk or
+other utilities.
+Blank out MBR? (Y/N): [0;32m**SUCCESS**[m Wipe GPT table
+
+Creating new GPT entries.
+[0;32m**SUCCESS**[m EOF successfully exit gdisk
+
+[0;34m**Testing sgdisk binary**[m
+
+Creating new GPT entries.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Create new empty GPT table
+
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Create new partition
+
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Change partition 1 name (Linux filesystem -> HMRPrWUD)
+
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Change partition 1 type (8300 -> 8200)
+
+The operation has completed successfully.
+[0;32m**SUCCESS**[m GPT data backuped sucessfully
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Delete partition 1
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): 
+Recovery/transformation command (? for help): b	use backup GPT header (rebuilding main)
+c	load backup partition table from disk (rebuilding main)
+d	use main GPT header (rebuilding backup)
+e	load main partition table from disk (rebuilding backup)
+f	load MBR and build fresh GPT from it
+g	convert GPT into MBR and exit
+h	make hybrid MBR
+i	show detailed information on a partition
+l	load partition data from a backup file
+m	return to main menu
+o	print protective MBR data
+p	print the partition table
+q	quit without saving changes
+t	transform BSD disklabel partition
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+
+Recovery/transformation command (? for help): Enter backup filename to load: 
+Recovery/transformation command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.J1W2cZSNrM.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Restore the GPT backup
+
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m GUID of disk has been sucessfully changed
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+GPT data structures destroyed! You may now partition the disk using fdisk or
+other utilities.
+[0;32m**SUCCESS**[m Wipe GPT table
+
+Creating new GPT entries.
+[0;32m**SUCCESS**[m EOF successfully exit gdisk
+./gdisk_test.sh build-gdisk-noicu
+65536+0 records in
+65536+0 records out
+67108864 bytes (67 MB) copied, 0.0479199 s, 1.4 GB/s
+[0;32m**SUCCESS**[m Temp disk sucessfully created
+
+[0;34m**Testing gdisk binary**[m
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: not present
+  BSD: not present
+  APM: not present
+  GPT: not present
+
+Creating new GPT entries.
+
+Command (? for help): This option deletes all partitions and creates a new protective MBR.
+Proceed? (Y/N): 
+Command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.BAwm2U4XE1.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Create new empty GPT table
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): Partition number (1-128, default 1): First sector (34-131038, default = 2048) or {+-}size{KMGTP}: Last sector (2048-131038, default = 131038) or {+-}size{KMGTP}: Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): Changed type of partition to 'Linux filesystem'
+
+Command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.BAwm2U4XE1.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Create new partition
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): Using 1
+Enter name: 
+Command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.BAwm2U4XE1.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Change partition 1 name (Linux filesystem -> ZwLrwpfL)
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): Using 1
+Current type is 'Linux filesystem'
+Hex code or GUID (L to show codes, Enter = 8300): Changed type of partition to 'Linux swap'
+
+Command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.BAwm2U4XE1.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Change partition 1 type (8300 -> 8200)
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): Enter backup filename to save: The operation has completed successfully.
+
+Command (? for help): 
+[0;32m**SUCCESS**[m GPT data backuped sucessfully
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): Using 1
+
+Command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.BAwm2U4XE1.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Delete partition 1
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): 
+Recovery/transformation command (? for help): b	use backup GPT header (rebuilding main)
+c	load backup partition table from disk (rebuilding main)
+d	use main GPT header (rebuilding backup)
+e	load main partition table from disk (rebuilding backup)
+f	load MBR and build fresh GPT from it
+g	convert GPT into MBR and exit
+h	make hybrid MBR
+i	show detailed information on a partition
+l	load partition data from a backup file
+m	return to main menu
+o	print protective MBR data
+p	print the partition table
+q	quit without saving changes
+t	transform BSD disklabel partition
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+
+Recovery/transformation command (? for help): Enter backup filename to load: 
+Recovery/transformation command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.BAwm2U4XE1.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Restore the GPT backup
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): 
+Expert command (? for help): Enter the disk's unique GUID ('R' to randomize): The new disk GUID is FC5DE49D-A56E-46E8-9722-75CF473ADFB2
+
+Expert command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.BAwm2U4XE1.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m GUID of disk has been sucessfully changed
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): 
+Expert command (? for help): About to wipe out GPT on /tmp/tmp.BAwm2U4XE1. Proceed? (Y/N): Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+GPT data structures destroyed! You may now partition the disk using fdisk or
+other utilities.
+Blank out MBR? (Y/N): [0;32m**SUCCESS**[m Wipe GPT table
+
+Creating new GPT entries.
+[0;32m**SUCCESS**[m EOF successfully exit gdisk
+
+[0;34m**Testing sgdisk binary**[m
+
+Creating new GPT entries.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Create new empty GPT table
+
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Create new partition
+
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Change partition 1 name (Linux filesystem -> ZwLrwpfL)
+
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Change partition 1 type (8300 -> 8200)
+
+The operation has completed successfully.
+[0;32m**SUCCESS**[m GPT data backuped sucessfully
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Delete partition 1
+
+GPT fdisk (gdisk) version 0.8.8
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help): 
+Recovery/transformation command (? for help): b	use backup GPT header (rebuilding main)
+c	load backup partition table from disk (rebuilding main)
+d	use main GPT header (rebuilding backup)
+e	load main partition table from disk (rebuilding backup)
+f	load MBR and build fresh GPT from it
+g	convert GPT into MBR and exit
+h	make hybrid MBR
+i	show detailed information on a partition
+l	load partition data from a backup file
+m	return to main menu
+o	print protective MBR data
+p	print the partition table
+q	quit without saving changes
+t	transform BSD disklabel partition
+v	verify disk
+w	write table to disk and exit
+x	extra functionality (experts only)
+?	print this menu
+
+Recovery/transformation command (? for help): Enter backup filename to load: 
+Recovery/transformation command (? for help): 
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): OK; writing new GUID partition table (GPT) to /tmp/tmp.BAwm2U4XE1.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m Restore the GPT backup
+
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+The operation has completed successfully.
+[0;32m**SUCCESS**[m GUID of disk has been sucessfully changed
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot.
+GPT data structures destroyed! You may now partition the disk using fdisk or
+other utilities.
+[0;32m**SUCCESS**[m Wipe GPT table
+
+Creating new GPT entries.
+[0;32m**SUCCESS**[m EOF successfully exit gdisk
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   dh_auto_install
+   debian/rules override_dh_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+# gdisk
+install -D build-gdisk/gdisk  /«PKGBUILDDIR»/debian/gdisk/sbin/gdisk
+install -D build-gdisk/sgdisk /«PKGBUILDDIR»/debian/gdisk/sbin/sgdisk
+install -D build-gdisk/cgdisk /«PKGBUILDDIR»/debian/gdisk/sbin/cgdisk
+install -D build-gdisk/fixparts /«PKGBUILDDIR»/debian/gdisk/sbin/fixparts
+# gdisk-noicu
+install -D build-gdisk-noicu/gdisk  /«PKGBUILDDIR»/debian/gdisk-noicu/sbin/gdisk
+install -D build-gdisk-noicu/sgdisk /«PKGBUILDDIR»/debian/gdisk-noicu/sbin/sgdisk
+install -D build-gdisk-noicu/cgdisk /«PKGBUILDDIR»/debian/gdisk-noicu/sbin/cgdisk
+install -D build-gdisk-noicu/fixparts /«PKGBUILDDIR»/debian/gdisk-noicu/sbin/fixparts
+# install index page for doc-base
+install -D debian/index.html /«PKGBUILDDIR»/debian/gdisk/usr/share/doc/gdisk/index.html
+install -D debian/index.html /«PKGBUILDDIR»/debian/gdisk-noicu/usr/share/doc/gdisk-noicu/index.html
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `gdisk' in `../gdisk_0.8.8-1_amd64.deb'.
+dpkg-deb: building package `gdisk-noicu' in `../gdisk-noicu_0.8.8-1_amd64.deb'.
+ dpkg-genchanges  >../gdisk_0.8.8-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build gdisk-0.8.8
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140427-2048
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+gdisk_0.8.8-1_amd64.changes:
+────────────────────────────
+
+Format: 1.8
+Date: Fri, 20 Dec 2013 17:41:44 +0100
+Source: gdisk
+Binary: gdisk gdisk-noicu
+Architecture: source amd64
+Version: 0.8.8-1
+Distribution: sid
+Urgency: low
+Maintainer: Guillaume Delacour <gui@iroqwa.org>
+Changed-By: Guillaume Delacour <gui@iroqwa.org>
+Description: 
+ gdisk      - GPT fdisk text-mode partitioning tool
+ gdisk-noicu - GPT fdisk text-mode partitioning tool (without unicode support)
+Closes: 729957 729958
+Changes: 
+ gdisk (0.8.8-1) unstable; urgency=low
+ .
+   * New upstream release (Closes: #729958)
+   * debian/patches/set_default_partition_type-test.diff don't use a kernel
+     dependent default gpt type when creating a partition (Closes: #729957)
+   * Bump to Standards-Version 3.9.5 (no changes needed)
+   * *.lintian-overrides: Removed as fixparts use fortified functions
+   * Refresh patch debian/patches/manpages.diff (hyphen as minus)
+Checksums-Sha1: 
+ 5f38be6a0477f78d18ea0dc53fe13a3a92289c90 1039 gdisk_0.8.8-1.dsc
+ 11f66ec2a67920368f7afe0c01a1cb8c3f2c527a 188395 gdisk_0.8.8.orig.tar.gz
+ 380649b4eecf0626daf56145e4c54772a91c2386 5888 gdisk_0.8.8-1.debian.tar.xz
+ fab6cc57b1b07ab6d1fa953bdea683029a5dbcec 185200 gdisk_0.8.8-1_amd64.deb
+ 8c51c03a2fff36a42bf9678242e3f14d793ad8c5 184820 gdisk-noicu_0.8.8-1_amd64.deb
+Checksums-Sha256: 
+ 3b3aa19faab0a522974d358f3ff4ef77fdfca36dccf86d4075e1ef85a589f1bc 1039 gdisk_0.8.8-1.dsc
+ 4c31e9c0e4802079526658947ab236d3b417604a8246a418f41cdc2a8ec2be9a 188395 gdisk_0.8.8.orig.tar.gz
+ 5c52ce96461d52222466660eca372c749c72c1fe17a89c1953ec77992aa1c29d 5888 gdisk_0.8.8-1.debian.tar.xz
+ 4e4520c9ed84141feba9241982bebbc55c7e313a744d8e3b2ddf937a00648c04 185200 gdisk_0.8.8-1_amd64.deb
+ df3e0fd94415b932c1516558c25f6a8665fdd7dc3d1ae7b035f0fe9d7fa3fa25 184820 gdisk-noicu_0.8.8-1_amd64.deb
+Files: 
+ f93378db2a29bf813cf5d825dff51628 185200 admin extra gdisk_0.8.8-1_amd64.deb
+ c2762ab75958a36929cb6263a714d9bc 184820 admin extra gdisk-noicu_0.8.8-1_amd64.deb
+ c651e7fe6643ed5fc9aecc34b33d1e28 1039 admin extra gdisk_0.8.8-1.dsc
+ bd47d03ec27bab5613254b5a20f72143 188395 admin extra gdisk_0.8.8.orig.tar.gz
+ fae0475bfc88adae23a01af65a1c84d6 5888 admin extra gdisk_0.8.8-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+gdisk_0.8.8-1_amd64.deb
+───────────────────────
+
+ new debian package, version 2.0.
+ size 185200 bytes: control archive=1239 bytes.
+     749 bytes,    19 lines      control              
+    1099 bytes,    18 lines      md5sums              
+ Package: gdisk
+ Version: 0.8.8-1
+ Architecture: amd64
+ Maintainer: Guillaume Delacour <gui@iroqwa.org>
+ Installed-Size: 779
+ Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libicu52 (>= 52~m1-1~), libncurses5 (>= 5.5-5~), libpopt0 (>= 1.14), libstdc++6 (>= 4.4.0), libtinfo5, libuuid1 (>= 2.16)
+ Recommends: groff-base
+ Conflicts: gdisk-noicu
+ Section: admin
+ Priority: extra
+ Homepage: http://sourceforge.net/projects/gptfdisk/
+ Description: GPT fdisk text-mode partitioning tool
+  GPT fdisk (aka gdisk) is a text-mode partitioning
+  tool that works on Globally Unique Identifier
+  (GUID) Partition Table (GPT) disks, rather than
+  on the more common (through 2009)
+  Master Boot Record (MBR) partition tables.
+  .
+  Please note that gdisk is still in beta version.
+
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./sbin/
+-rwxr-xr-x root/root    183032 2014-04-27 20:48 ./sbin/gdisk
+-rwxr-xr-x root/root    174896 2014-04-27 20:48 ./sbin/sgdisk
+-rwxr-xr-x root/root     64104 2014-04-27 20:48 ./sbin/fixparts
+-rwxr-xr-x root/root    187336 2014-04-27 20:48 ./sbin/cgdisk
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/doc-base/
+-rw-r--r-- root/root       239 2013-06-03 21:35 ./usr/share/doc-base/gdisk
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/man/man8/
+-rw-r--r-- root/root      6466 2014-04-27 20:48 ./usr/share/man/man8/cgdisk.8.gz
+-rw-r--r-- root/root      4375 2014-04-27 20:48 ./usr/share/man/man8/fixparts.8.gz
+-rw-r--r-- root/root     10009 2014-04-27 20:48 ./usr/share/man/man8/gdisk.8.gz
+-rw-r--r-- root/root      9906 2014-04-27 20:48 ./usr/share/man/man8/sgdisk.8.gz
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/doc/gdisk/
+-rw-r--r-- root/root      5354 2013-10-14 18:05 ./usr/share/doc/gdisk/README.gz
+-rw-r--r-- root/root      1860 2013-12-20 17:42 ./usr/share/doc/gdisk/changelog.Debian.gz
+-rw-r--r-- root/root     18056 2013-10-14 18:05 ./usr/share/doc/gdisk/cgdisk.html
+-rw-r--r-- root/root      1228 2013-06-03 21:35 ./usr/share/doc/gdisk/copyright
+-rw-r--r-- root/root     30794 2013-10-14 18:05 ./usr/share/doc/gdisk/gdisk.html
+-rw-r--r-- root/root     12600 2013-10-14 18:05 ./usr/share/doc/gdisk/fixparts.html
+-rw-r--r-- root/root     28903 2013-10-14 18:05 ./usr/share/doc/gdisk/sgdisk.html
+-rw-r--r-- root/root     16345 2013-10-14 18:05 ./usr/share/doc/gdisk/NEWS.gz
+-rw-r--r-- root/root       266 2014-04-27 20:48 ./usr/share/doc/gdisk/index.html
+
+
+gdisk-noicu_0.8.8-1_amd64.deb
+─────────────────────────────
+
+ new debian package, version 2.0.
+ size 184820 bytes: control archive=1328 bytes.
+     914 bytes,    25 lines      control              
+    1159 bytes,    18 lines      md5sums              
+ Package: gdisk-noicu
+ Source: gdisk
+ Version: 0.8.8-1
+ Architecture: amd64
+ Maintainer: Guillaume Delacour <gui@iroqwa.org>
+ Installed-Size: 778
+ Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libncurses5 (>= 5.5-5~), libpopt0 (>= 1.14), libstdc++6 (>= 4.4.0), libtinfo5, libuuid1 (>= 2.16)
+ Recommends: groff-base
+ Conflicts: gdisk
+ Provides: gdisk
+ Section: admin
+ Priority: extra
+ Homepage: http://sourceforge.net/projects/gptfdisk/
+ Description: GPT fdisk text-mode partitioning tool (without unicode support)
+  GPT fdisk (aka gdisk) is a text-mode partitioning
+  tool that works on Globally Unique Identifier
+  (GUID) Partition Table (GPT) disks, rather than
+  on the more common (through 2009)
+  Master Boot Record (MBR) partition tables.
+  .
+  This package is not built with Unicode, for
+  space-constrained systems.  For Unicode support,
+  please install the gdisk package.
+  .
+  Please note that gdisk is still in beta version.
+
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./sbin/
+-rwxr-xr-x root/root    182976 2014-04-27 20:48 ./sbin/gdisk
+-rwxr-xr-x root/root    174840 2014-04-27 20:48 ./sbin/sgdisk
+-rwxr-xr-x root/root     64104 2014-04-27 20:48 ./sbin/fixparts
+-rwxr-xr-x root/root    187264 2014-04-27 20:48 ./sbin/cgdisk
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/doc-base/
+-rw-r--r-- root/root       257 2013-06-10 21:48 ./usr/share/doc-base/gdisk-noicu
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/man/man8/
+-rw-r--r-- root/root      6466 2014-04-27 20:48 ./usr/share/man/man8/cgdisk.8.gz
+-rw-r--r-- root/root      4375 2014-04-27 20:48 ./usr/share/man/man8/fixparts.8.gz
+-rw-r--r-- root/root     10009 2014-04-27 20:48 ./usr/share/man/man8/gdisk.8.gz
+-rw-r--r-- root/root      9906 2014-04-27 20:48 ./usr/share/man/man8/sgdisk.8.gz
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 20:48 ./usr/share/doc/gdisk-noicu/
+-rw-r--r-- root/root      5354 2013-10-14 18:05 ./usr/share/doc/gdisk-noicu/README.gz
+-rw-r--r-- root/root      1860 2013-12-20 17:42 ./usr/share/doc/gdisk-noicu/changelog.Debian.gz
+-rw-r--r-- root/root     18056 2013-10-14 18:05 ./usr/share/doc/gdisk-noicu/cgdisk.html
+-rw-r--r-- root/root      1228 2013-06-03 21:35 ./usr/share/doc/gdisk-noicu/copyright
+-rw-r--r-- root/root     30794 2013-10-14 18:05 ./usr/share/doc/gdisk-noicu/gdisk.html
+-rw-r--r-- root/root     12600 2013-10-14 18:05 ./usr/share/doc/gdisk-noicu/fixparts.html
+-rw-r--r-- root/root     28903 2013-10-14 18:05 ./usr/share/doc/gdisk-noicu/sgdisk.html
+-rw-r--r-- root/root     16345 2013-10-14 18:05 ./usr/share/doc/gdisk-noicu/NEWS.gz
+-rw-r--r-- root/root       266 2014-04-27 20:48 ./usr/share/doc/gdisk-noicu/index.html
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 14288
+Build-Time: 49
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 17
+Job: gdisk_0.8.8-1.dsc
+Machine Architecture: amd64
+Package: gdisk
+Package-Time: 74
+Source-Version: 0.8.8-1
+Space: 14288
+Status: successful
+Version: 0.8.8-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140427-2048
+Build needed 00:01:14, 14288k disc space

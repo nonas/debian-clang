@@ -1,0 +1,644 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ zutils 1.2-2 (amd64)                                       28 Apr 2014 20:35 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: zutils
+Version: 1.2-2
+Source Version: 1.2-2
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/zutils-pIJmDY/zutils-1.2' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/zutils-pIJmDY' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-c01441c9-826a-4442-84da-f390a9ef0806' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+zutils_1.2-2.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-gu3XcP/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), lzip, texinfo
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), lzip, texinfo
+dpkg-deb: building package `sbuild-build-depends-zutils-dummy' in `/«BUILDDIR»/resolver-mi4tCI/apt_archive/sbuild-build-depends-zutils-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install zutils build dependencies (apt-based resolver)                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libintl-perl libmagic1 libpipeline1
+  libtext-unidecode-perl libunistring0 libxml-libxml-perl
+  libxml-namespacesupport-perl libxml-sax-base-perl libxml-sax-perl libxml2
+  lzip man-db po-debconf texinfo ucf
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff libintl-xs-perl
+  less www-browser libmail-box-perl texlive-base texlive-latex-base
+  texlive-generic-recommended texinfo-doc-nonfree
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info libxml-sax-expat-perl xml-core
+  libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libintl-perl libmagic1 libpipeline1
+  libtext-unidecode-perl libunistring0 libxml-libxml-perl
+  libxml-namespacesupport-perl libxml-sax-base-perl libxml-sax-perl libxml2
+  lzip man-db po-debconf sbuild-build-depends-zutils-dummy texinfo ucf
+0 upgraded, 26 newly installed, 0 to remove and 8 not upgraded.
+Need to get 11.5 MB/11.5 MB of archives.
+After this operation, 37.9 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libtext-unidecode-perl all 0.04-2 [115 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libintl-perl all 1.23-1 [1209 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libxml-namespacesupport-perl all 1.11-1 [14.8 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libxml-sax-base-perl all 1.07-1 [23.1 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main ucf all 3.0028 [69.1 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libxml-sax-perl all 0.99+dfsg-2 [68.3 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libxml-libxml-perl amd64 2.0108+dfsg-1 [358 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main texinfo amd64 5.2.0.dfsg.1-2 [954 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main lzip amd64 1.16~pre1-2 [67.1 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 11.5 MB in 0s (12.5 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package libtext-unidecode-perl.
+Preparing to unpack .../libtext-unidecode-perl_0.04-2_all.deb ...
+Unpacking libtext-unidecode-perl (0.04-2) ...
+Selecting previously unselected package libintl-perl.
+Preparing to unpack .../libintl-perl_1.23-1_all.deb ...
+Unpacking libintl-perl (1.23-1) ...
+Selecting previously unselected package libxml-namespacesupport-perl.
+Preparing to unpack .../libxml-namespacesupport-perl_1.11-1_all.deb ...
+Unpacking libxml-namespacesupport-perl (1.11-1) ...
+Selecting previously unselected package libxml-sax-base-perl.
+Preparing to unpack .../libxml-sax-base-perl_1.07-1_all.deb ...
+Unpacking libxml-sax-base-perl (1.07-1) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../archives/ucf_3.0028_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0028) ...
+Selecting previously unselected package libxml-sax-perl.
+Preparing to unpack .../libxml-sax-perl_0.99+dfsg-2_all.deb ...
+Unpacking libxml-sax-perl (0.99+dfsg-2) ...
+Selecting previously unselected package libxml-libxml-perl.
+Preparing to unpack .../libxml-libxml-perl_2.0108+dfsg-1_amd64.deb ...
+Unpacking libxml-libxml-perl (2.0108+dfsg-1) ...
+Selecting previously unselected package texinfo.
+Preparing to unpack .../texinfo_5.2.0.dfsg.1-2_amd64.deb ...
+Unpacking texinfo (5.2.0.dfsg.1-2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package lzip.
+Preparing to unpack .../lzip_1.16~pre1-2_amd64.deb ...
+Unpacking lzip (1.16~pre1-2) ...
+Selecting previously unselected package sbuild-build-depends-zutils-dummy.
+Preparing to unpack .../sbuild-build-depends-zutils-dummy.deb ...
+Unpacking sbuild-build-depends-zutils-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up libtext-unidecode-perl (0.04-2) ...
+Setting up libintl-perl (1.23-1) ...
+Setting up libxml-namespacesupport-perl (1.11-1) ...
+Setting up libxml-sax-base-perl (1.07-1) ...
+Setting up ucf (3.0028) ...
+Setting up libxml-sax-perl (0.99+dfsg-2) ...
+update-perl-sax-parsers: Registering Perl SAX parser XML::SAX::PurePerl with priority 10...
+update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
+
+Creating config file /etc/perl/XML/SAX/ParserDetails.ini with new version
+Setting up libxml-libxml-perl (2.0108+dfsg-1) ...
+update-perl-sax-parsers: Registering Perl SAX parser XML::LibXML::SAX::Parser with priority 50...
+update-perl-sax-parsers: Registering Perl SAX parser XML::LibXML::SAX with priority 50...
+update-perl-sax-parsers: Updating overall Perl SAX parser modules info file...
+Replacing config file /etc/perl/XML/SAX/ParserDetails.ini with new version
+Setting up texinfo (5.2.0.dfsg.1-2) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up lzip (1.16~pre1-2) ...
+Setting up sbuild-build-depends-zutils-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libintl-perl_1.23-1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-unidecode-perl_0.04-2 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml-libxml-perl_2.0108+dfsg-1 libxml-namespacesupport-perl_1.11-1 libxml-sax-base-perl_1.07-1 libxml-sax-perl_0.99+dfsg-2 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 lzip_1.16~pre1-2 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-zutils-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 texinfo_5.2.0.dfsg.1-2 tzdata_2014b-1 ucf_3.0028 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Mon Mar 31 19:37:14 2014 UTC using DSA key ID 4B2B2B9E
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./zutils_1.2-2.dsc
+dpkg-source: info: extracting zutils in zutils-1.2
+dpkg-source: info: unpacking zutils_1.2.orig.tar.xz
+dpkg-source: info: unpacking zutils_1.2-2.debian.tar.xz
+dpkg-source: info: applying 0001-build.patch
+dpkg-source: info: applying 0002-zupdate.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-c01441c9-826a-4442-84da-f390a9ef0806
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package zutils
+dpkg-buildpackage: source version 1.2-2
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Daniel Baumann <mail@daniel-baumann.ch>
+ dpkg-source --before-build zutils-1.2
+dpkg-buildpackage: host architecture amd64
+dpkg-source: info: using options from zutils-1.2/debian/source/options: --compression=xz
+ fakeroot debian/rules clean
+dh clean --parallel
+   dh_testdir -O--parallel
+   dh_auto_clean -O--parallel
+   dh_clean -O--parallel
+ dpkg-source -b zutils-1.2
+dpkg-source: info: using options from zutils-1.2/debian/source/options: --compression=xz
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building zutils using existing ./zutils_1.2.orig.tar.xz
+dpkg-source: info: building zutils in zutils_1.2-2.debian.tar.xz
+dpkg-source: info: building zutils in zutils_1.2-2.dsc
+ debian/rules build
+dh build --parallel
+   dh_testdir -O--parallel
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+LDFLAGS="-Wl,-z,relro -static" dh_auto_configure -- --exec-prefix=/
+configure: WARNING: unrecognized option: '--build=x86_64-linux-gnu'
+configure: WARNING: unrecognized option: '--includedir=${prefix}/include'
+configure: WARNING: unrecognized option: '--localstatedir=/var'
+configure: WARNING: unrecognized option: '--libdir=${prefix}/lib/x86_64-linux-gnu'
+configure: WARNING: unrecognized option: '--libexecdir=${prefix}/lib/x86_64-linux-gnu'
+configure: WARNING: unrecognized option: '--disable-maintainer-mode'
+configure: WARNING: unrecognized option: '--disable-dependency-tracking'
+
+creating config.status
+creating Makefile
+VPATH = .
+prefix = /usr
+exec_prefix = 
+bindir = $(exec_prefix)/bin
+datarootdir = $(prefix)/share
+infodir = ${prefix}/share/info
+mandir = ${prefix}/share/man
+sysconfdir = /etc
+CXX = g++
+CPPFLAGS = -D_FORTIFY_SOURCE=2
+CXXFLAGS = -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security
+LDFLAGS = -Wl,-z,relro -static
+DIFF = diff
+GREP = grep
+OK. Now you can run make.
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_build -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»'
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o arg_parser.o arg_parser.cc
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DPROGVERSION=\"1.2\" -DSYSCONFDIR=\"/etc\" -c -o rc.o rc.cc
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o zutils.o zutils.cc
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o zcat.o zcat.cc
+g++ -Wl,-z,relro -static -o zcat arg_parser.o rc.o zutils.o zcat.o
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o zcmp.o zcmp.cc
+g++ -Wl,-z,relro -static -o zcmp arg_parser.o rc.o zutils.o zcmp.o
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DDIFF=\"diff\" -c -o zdiff.o zdiff.cc
+g++ -Wl,-z,relro -static -o zdiff arg_parser.o rc.o zutils.o zdiff.o
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DGREP=\"grep\" -c -o zgrep.o zgrep.cc
+g++ -Wl,-z,relro -static -o zgrep arg_parser.o rc.o zutils.o zgrep.o
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o ztest.o ztest.cc
+g++ -Wl,-z,relro -static -o ztest arg_parser.o rc.o zutils.o ztest.o
+g++ -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c -o zupdate.o zupdate.cc
+g++ -o zupdate arg_parser.o rc.o zupdate.o
+cat ./zegrep.in > zegrep
+chmod a+x zegrep
+cat ./zfgrep.in > zfgrep
+chmod a+x zfgrep
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»'
+testing    zcat-1.2........................
+testing    zcmp-1.2...................................................
+testing   zdiff-1.2.........................................
+testing   zgrep-1.2...................................................
+testing   ztest-1.2.......................
+testing zupdate-1.2.................
+tests completed successfully.
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary --parallel
+   dh_testroot -O--parallel
+   dh_prep -O--parallel
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_install -- DESTDIR=/«PKGBUILDDIR»/debian/zutils
+make[2]: Entering directory `/«PKGBUILDDIR»'
+if [ ! -d "/«PKGBUILDDIR»/debian/zutils/bin" ] ; then install -d -m 755 "/«PKGBUILDDIR»/debian/zutils/bin" ; fi
+install -m 755 ./zcat "/«PKGBUILDDIR»/debian/zutils/bin/zcat"
+install -m 755 ./zcmp "/«PKGBUILDDIR»/debian/zutils/bin/zcmp"
+install -m 755 ./zdiff "/«PKGBUILDDIR»/debian/zutils/bin/zdiff"
+install -m 755 ./zegrep "/«PKGBUILDDIR»/debian/zutils/bin/zegrep"
+install -m 755 ./zfgrep "/«PKGBUILDDIR»/debian/zutils/bin/zfgrep"
+install -m 755 ./zgrep "/«PKGBUILDDIR»/debian/zutils/bin/zgrep"
+install -m 755 ./ztest "/«PKGBUILDDIR»/debian/zutils/bin/ztest"
+install -m 755 ./zupdate "/«PKGBUILDDIR»/debian/zutils/bin/zupdate"
+if [ ! -e "/«PKGBUILDDIR»/debian/zutils/etc/zutilsrc" ] ; then \
+		if [ ! -d "/«PKGBUILDDIR»/debian/zutils/etc" ] ; then install -d -m 755 "/«PKGBUILDDIR»/debian/zutils/etc" ; fi ; \
+		install -m 644 ./zutilsrc "/«PKGBUILDDIR»/debian/zutils/etc/zutilsrc" ; \
+	fi
+if [ ! -d "/«PKGBUILDDIR»/debian/zutils/usr/share/info" ] ; then install -d -m 755 "/«PKGBUILDDIR»/debian/zutils/usr/share/info" ; fi
+install -m 644 ./doc/zutils.info "/«PKGBUILDDIR»/debian/zutils/usr/share/info/zutils.info"
+install-info --info-dir="/«PKGBUILDDIR»/debian/zutils/usr/share/info" "/«PKGBUILDDIR»/debian/zutils/usr/share/info/zutils.info"
+/bin/sh: 1: install-info: not found
+make[2]: [install-info] Error 127 (ignored)
+if [ ! -d "/«PKGBUILDDIR»/debian/zutils/usr/share/man/man1" ] ; then install -d -m 755 "/«PKGBUILDDIR»/debian/zutils/usr/share/man/man1" ; fi
+install -m 644 ./doc/zcat.1 "/«PKGBUILDDIR»/debian/zutils/usr/share/man/man1/zcat.1"
+install -m 644 ./doc/zcmp.1 "/«PKGBUILDDIR»/debian/zutils/usr/share/man/man1/zcmp.1"
+install -m 644 ./doc/zdiff.1 "/«PKGBUILDDIR»/debian/zutils/usr/share/man/man1/zdiff.1"
+install -m 644 ./doc/zgrep.1 "/«PKGBUILDDIR»/debian/zutils/usr/share/man/man1/zgrep.1"
+install -m 644 ./doc/ztest.1 "/«PKGBUILDDIR»/debian/zutils/usr/share/man/man1/ztest.1"
+install -m 644 ./doc/zupdate.1 "/«PKGBUILDDIR»/debian/zutils/usr/share/man/man1/zupdate.1"
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+# removing unused files
+rm -f debian/zutils/usr/share/info/dir*
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs -O--parallel
+   dh_installchangelogs -O--parallel
+   dh_installman -O--parallel
+   dh_lintian -O--parallel
+   dh_perl -O--parallel
+   dh_link -O--parallel
+   dh_compress -O--parallel
+   dh_fixperms -O--parallel
+   debian/rules override_dh_strip
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_strip --dbg-package=zutils-dbg
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_makeshlibs -O--parallel
+   dh_shlibdeps -O--parallel
+   dh_installdeb -O--parallel
+   dh_gencontrol -O--parallel
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums -O--parallel
+   debian/rules override_dh_builddeb
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_builddeb -- -Zxz
+dpkg-deb: building package `zutils' in `../zutils_1.2-2_amd64.deb'.
+dpkg-deb: building package `zutils-dbg' in `../zutils-dbg_1.2-2_amd64.deb'.
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ dpkg-genchanges  >../zutils_1.2-2_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build zutils-1.2
+dpkg-source: info: using options from zutils-1.2/debian/source/options: --compression=xz
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-2036
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+zutils_1.2-2_amd64.changes:
+───────────────────────────
+
+Format: 1.8
+Date: Mon, 31 Mar 2014 21:35:49 +0200
+Source: zutils
+Binary: zutils zutils-dbg
+Architecture: source amd64
+Version: 1.2-2
+Distribution: sid
+Urgency: low
+Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+Changed-By: Daniel Baumann <mail@daniel-baumann.ch>
+Description: 
+ zutils     - utilities for dealing with compressed files transparently
+ zutils-dbg - utilities for dealing with compressed files transparently (debug)
+Changes: 
+ zutils (1.2-2) unstable; urgency=low
+ .
+   * Building with dh --parallel.
+Checksums-Sha1: 
+ ca8c59660c474966f0fe315e567da0d53ac76959 1005 zutils_1.2-2.dsc
+ 2868a40cc11747c9b799f9f3b577beebb6cc2c32 3828 zutils_1.2-2.debian.tar.xz
+ 2835158fd2b6fb9547e9bc95d208d83f2d91c04e 474032 zutils_1.2-2_amd64.deb
+ 0601ca5e4719da5a4d37659056134e752814eab9 482186 zutils-dbg_1.2-2_amd64.deb
+Checksums-Sha256: 
+ 588ac37093bbf6d387b88f1de4848a999d2dcd2489ae1b569dae9d006042ef63 1005 zutils_1.2-2.dsc
+ fa04608cadfa1857183666a55a50b4da27a45227f56f0ea2eca0dec8db6556a9 3828 zutils_1.2-2.debian.tar.xz
+ ebfad2675fda21cb43e83e80d3a5c21221858e57bce04b634fa498ff2fa31cb3 474032 zutils_1.2-2_amd64.deb
+ 176867d1b307d43eae70151c681b216471b4f261b3353edec626195f7478dbe6 482186 zutils-dbg_1.2-2_amd64.deb
+Files: 
+ 45e2907b94fbf9c6a052943d8b8011c3 474032 utils extra zutils_1.2-2_amd64.deb
+ eb661c85c4d08827c8d69169671bfda2 482186 debug extra zutils-dbg_1.2-2_amd64.deb
+ 4b1186c48f7627be64c7d98273d22fe3 1005 utils extra zutils_1.2-2.dsc
+ 209c2e7a94c7f45922af63fcda39e809 3828 utils extra zutils_1.2-2.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+zutils_1.2-2_amd64.deb
+──────────────────────
+
+ new debian package, version 2.0.
+ size 474032 bytes: control archive=1571 bytes.
+      14 bytes,     1 lines      conffiles            
+     611 bytes,    15 lines      control              
+    1204 bytes,    21 lines      md5sums              
+     511 bytes,    26 lines   *  postrm               #!/bin/sh
+     462 bytes,    26 lines   *  preinst              #!/bin/sh
+ Package: zutils
+ Version: 1.2-2
+ Architecture: amd64
+ Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+ Installed-Size: 4375
+ Depends: libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6)
+ Recommends: bzip2, lzip, xz-utils
+ Enhances: bzip2, gzip, lzip, xz-utils
+ Section: utils
+ Priority: extra
+ Homepage: http://www.nongnu.org/zutils/zutils.html
+ Description: utilities for dealing with compressed files transparently
+  Zutils is a collection of utilities for dealing with any combination of
+  compressed and non-compressed files transparently. Currently the supported
+  compressors are gzip, bzip2, lzip, and xz.
+
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./bin/
+-rwxr-xr-x root/root        82 2014-04-28 20:36 ./bin/zfgrep
+-rwxr-xr-x root/root    869472 2014-04-28 20:36 ./bin/zcmp
+-rwxr-xr-x root/root    869472 2014-04-28 20:36 ./bin/ztest
+-rwxr-xr-x root/root    869504 2014-04-28 20:36 ./bin/zcat
+-rwxr-xr-x root/root    877664 2014-04-28 20:36 ./bin/zgrep
+-rwxr-xr-x root/root     44344 2014-04-28 20:36 ./bin/zupdate
+-rwxr-xr-x root/root        82 2014-04-28 20:36 ./bin/zegrep
+-rwxr-xr-x root/root    873568 2014-04-28 20:36 ./bin/zdiff
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/man/man1/
+-rw-r--r-- root/root      1532 2014-04-28 20:36 ./usr/share/man/man1/zgrep.1.gz
+-rw-r--r-- root/root      1310 2014-04-28 20:36 ./usr/share/man/man1/zcmp.1.gz
+-rw-r--r-- root/root      1217 2014-04-28 20:36 ./usr/share/man/man1/zcat.1.gz
+-rw-r--r-- root/root      1252 2014-04-28 20:36 ./usr/share/man/man1/zupdate.1.gz
+-rw-r--r-- root/root      1549 2014-04-28 20:36 ./usr/share/man/man1/zdiff.1.gz
+-rw-r--r-- root/root      1002 2014-04-28 20:36 ./usr/share/man/man1/ztest.1.gz
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/doc/zutils/
+-rw-r--r-- root/root      1539 2014-02-01 19:41 ./usr/share/doc/zutils/changelog.gz
+-rw-r--r-- root/root      1760 2014-03-31 21:35 ./usr/share/doc/zutils/changelog.Debian.gz
+-rw-r--r-- root/root      1129 2014-03-31 21:35 ./usr/share/doc/zutils/copyright
+-rw-r--r-- root/root      1549 2014-01-16 18:46 ./usr/share/doc/zutils/README
+-rw-r--r-- root/root       225 2014-01-30 17:46 ./usr/share/doc/zutils/NEWS.gz
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root       213 2014-03-31 21:35 ./usr/share/lintian/overrides/zutils
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/info/
+-rw-r--r-- root/root      6395 2014-04-28 20:36 ./usr/share/info/zutils.info.gz
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./etc/
+-rw-r--r-- root/root       449 2014-04-28 20:36 ./etc/zutilsrc
+
+
+zutils-dbg_1.2-2_amd64.deb
+──────────────────────────
+
+ new debian package, version 2.0.
+ size 482186 bytes: control archive=997 bytes.
+     572 bytes,    16 lines      control              
+     856 bytes,     9 lines      md5sums              
+ Package: zutils-dbg
+ Source: zutils
+ Version: 1.2-2
+ Architecture: amd64
+ Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+ Installed-Size: 1095
+ Depends: zutils (= 1.2-2)
+ Section: debug
+ Priority: extra
+ Homepage: http://www.nongnu.org/zutils/zutils.html
+ Description: utilities for dealing with compressed files transparently (debug)
+  Zutils is a collection of utilities for dealing with any combination of
+  compressed and non-compressed files transparently. Currently the supported
+  compressors are gzip, bzip2, lzip, and xz.
+  .
+  This package contains the debugging symbols.
+
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/lib/debug/.build-id/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/lib/debug/.build-id/c1/
+-rw-r--r-- root/root     78412 2014-04-28 20:36 ./usr/lib/debug/.build-id/c1/429c2335e9c97ee5b05b76e6de37bbd9bc4db5.debug
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/lib/debug/.build-id/48/
+-rw-r--r-- root/root    189000 2014-04-28 20:36 ./usr/lib/debug/.build-id/48/b137097e646e56ba8d96668b15d148809ceb82.debug
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/lib/debug/.build-id/90/
+-rw-r--r-- root/root    197486 2014-04-28 20:36 ./usr/lib/debug/.build-id/90/83139d2ebe4363425a36b5ee36ecc75c0a5846.debug
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/lib/debug/.build-id/bb/
+-rw-r--r-- root/root    196729 2014-04-28 20:36 ./usr/lib/debug/.build-id/bb/f6f5aa304771828fa8486610b7018a75ba3a44.debug
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/lib/debug/.build-id/f8/
+-rw-r--r-- root/root    193774 2014-04-28 20:36 ./usr/lib/debug/.build-id/f8/8ea38d3459f1285f0e41d144dc5092d917d817.debug
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/lib/debug/.build-id/0f/
+-rw-r--r-- root/root    199695 2014-04-28 20:36 ./usr/lib/debug/.build-id/0f/d33c94a8f29f83ed6fba5f7c7bee3daf66b327.debug
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 20:36 ./usr/share/doc/zutils-dbg/
+-rw-r--r-- root/root      1539 2014-02-01 19:41 ./usr/share/doc/zutils-dbg/changelog.gz
+-rw-r--r-- root/root      1760 2014-03-31 21:35 ./usr/share/doc/zutils-dbg/changelog.Debian.gz
+-rw-r--r-- root/root      1129 2014-03-31 21:35 ./usr/share/doc/zutils-dbg/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 15400
+Build-Time: 8
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 15
+Job: zutils_1.2-2.dsc
+Machine Architecture: amd64
+Package: zutils
+Package-Time: 28
+Source-Version: 1.2-2
+Space: 15400
+Status: successful
+Version: 1.2-2
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-2036
+Build needed 00:00:28, 15400k disc space

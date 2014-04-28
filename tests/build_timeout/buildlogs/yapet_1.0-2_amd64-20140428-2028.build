@@ -1,0 +1,1828 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ yapet 1.0-2 (amd64)                                        28 Apr 2014 20:28 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: yapet
+Version: 1.0-2
+Source Version: 1.0-2
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/yapet-Zhcq8i/yapet-1.0' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/yapet-Zhcq8i' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-191f826a-514e-4b27-8f61-eeb55cb68748' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+yapet_1.0-2.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-PIWUkE/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/814 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), autotools-dev, gettext, libncurses5-dev, libssl-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), autotools-dev, gettext, libncurses5-dev, libssl-dev
+dpkg-deb: building package `sbuild-build-depends-yapet-dummy' in `/«BUILDDIR»/resolver-MInurs/apt_archive/sbuild-build-depends-yapet-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install yapet build dependencies (apt-based resolver)                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autotools-dev bsdmainutils debhelper file gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libcroco3 libglib2.0-0 libmagic1
+  libncurses5-dev libpipeline1 libssl-dev libssl1.0.0 libtinfo-dev
+  libunistring0 libxml2 man-db po-debconf zlib1g-dev
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff ncurses-doc less
+  www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info libssl-doc xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  autotools-dev bsdmainutils debhelper file gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libcroco3 libglib2.0-0 libmagic1
+  libncurses5-dev libpipeline1 libssl-dev libssl1.0.0 libtinfo-dev
+  libunistring0 libxml2 man-db po-debconf sbuild-build-depends-yapet-dummy
+  zlib1g-dev
+0 upgraded, 23 newly installed, 0 to remove and 8 not upgraded.
+Need to get 11.4 MB/11.4 MB of archives.
+After this operation, 37.6 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libssl1.0.0 amd64 1.0.1g-3 [1012 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libtinfo-dev amd64 5.9+20140118-1 [76.3 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libncurses5-dev amd64 5.9+20140118-1 [170 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-1 [217 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libssl-dev amd64 1.0.1g-3 [1243 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 11.4 MB in 0s (67.5 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.1g-3_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1g-3) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libtinfo-dev:amd64.
+Preparing to unpack .../libtinfo-dev_5.9+20140118-1_amd64.deb ...
+Unpacking libtinfo-dev:amd64 (5.9+20140118-1) ...
+Selecting previously unselected package libncurses5-dev:amd64.
+Preparing to unpack .../libncurses5-dev_5.9+20140118-1_amd64.deb ...
+Unpacking libncurses5-dev:amd64 (5.9+20140118-1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1g-3_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1g-3) ...
+Selecting previously unselected package sbuild-build-depends-yapet-dummy.
+Preparing to unpack .../sbuild-build-depends-yapet-dummy.deb ...
+Unpacking sbuild-build-depends-yapet-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libssl1.0.0:amd64 (1.0.1g-3) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libtinfo-dev:amd64 (5.9+20140118-1) ...
+Setting up libncurses5-dev:amd64 (5.9+20140118-1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Setting up libssl-dev:amd64 (1.0.1g-3) ...
+Setting up sbuild-build-depends-yapet-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncurses5-dev_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libssl-dev_1.0.1g-3 libssl1.0.0_1.0.1g-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-yapet-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1 zlib1g-dev_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Fri Mar  7 20:29:36 2014 UTC using RSA key ID 1343CF44
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./yapet_1.0-2.dsc
+dpkg-source: info: extracting yapet in yapet-1.0
+dpkg-source: info: unpacking yapet_1.0.orig.tar.gz
+dpkg-source: info: unpacking yapet_1.0-2.debian.tar.xz
+dpkg-source: info: applying do-not-install-licenses-files.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-191f826a-514e-4b27-8f61-eeb55cb68748
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package yapet
+dpkg-buildpackage: source version 1.0-2
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Salvatore Bonaccorso <carnil@debian.org>
+ dpkg-source --before-build yapet-1.0
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with autotools_dev
+   dh_testdir
+   dh_auto_clean
+   dh_autotools-dev_restoreconfig
+   dh_clean
+ dpkg-source -b yapet-1.0
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building yapet using existing ./yapet_1.0.orig.tar.gz
+dpkg-source: info: building yapet in yapet_1.0-2.debian.tar.xz
+dpkg-source: info: building yapet in yapet_1.0-2.dsc
+ debian/rules build
+dh build --with autotools_dev
+   dh_testdir
+   dh_autotools-dev_updateconfig
+   dh_auto_configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+configure: Checking required programs
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking for a sed that does not truncate output... /bin/sed
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for pkg-config... no
+checking for openssl/ssl.h in /usr/local/ssl... no
+checking for openssl/ssl.h in /usr/lib/ssl... no
+checking for openssl/ssl.h in /usr/ssl... no
+checking for openssl/ssl.h in /usr/pkg... no
+checking for openssl/ssl.h in /usr/local... no
+checking for openssl/ssl.h in /usr... yes
+checking whether compiling and linking against OpenSSL works... yes
+configure: Checking C headers
+checking whether time.h and sys/time.h may both be included... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for inttypes.h... (cached) yes
+checking libgen.h usability... yes
+checking libgen.h presence... yes
+checking for libgen.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+configure: Checking C++ headers
+checking for ISO C++ 98 include files... yes
+configure: Checking types
+checking for int32_t... yes
+checking for int64_t... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uid_t in sys/types.h... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+configure: Checking functions
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for basename... yes
+checking for isblank... yes
+checking for isspace... yes
+checking for lrand48... yes
+checking for rand... yes
+checking for setlocale... yes
+checking for srand... yes
+checking for srand48... yes
+checking for strcasestr... yes
+checking for tcgetattr... yes
+checking for tcsetattr... yes
+checking for tolower... yes
+checking for towlower... yes
+checking for dup2... yes
+checking for getopt... yes
+checking for memset... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strstr... yes
+configure: Checking encryption functions
+checking for EVP_bf_cbc... yes
+checking for EVP_CIPHER_CTX_cleanup... yes
+checking for EVP_CIPHER_CTX_init... yes
+checking for EVP_CIPHER_CTX_set_key_length... yes
+checking for EVP_CipherInit_ex... yes
+checking for EVP_DigestFinal_ex... yes
+checking for EVP_DigestInit_ex... yes
+checking for EVP_DigestUpdate... yes
+checking for EVP_MD_CTX_cleanup... yes
+checking for EVP_MD_CTX_init... yes
+checking for EVP_md5... yes
+checking for EVP_ripemd160... yes
+checking for EVP_sha1... yes
+configure: Checking support functions
+checking for SSLeay_version... yes
+configure: Checking miscellaneous properties of platform
+checking size of int *... 8
+checking size of int... 4
+checking size of long... 8
+checking whether byte ordering is bigendian... no
+checking for /dev/urandom... yes
+checking for /dev/random... yes
+configure: Preparing NLS
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating crypt/Makefile
+config.status: creating pwgen/Makefile
+config.status: creating ui/Makefile
+config.status: creating glue/Makefile
+config.status: creating yapet/Makefile
+config.status: creating csv2yapet/Makefile
+config.status: creating yapet2csv/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/preload/Makefile
+config.status: creating tests/testpaths.h
+config.status: creating doc/Makefile
+config.status: creating doc/Makefile.doc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+=== configuring in libyacurs (/«PKGBUILDDIR»/libyacurs)
+configure: running /bin/bash ./configure --disable-option-checking '--prefix=/usr'  '--build=x86_64-linux-gnu' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--libexecdir=${prefix}/lib/x86_64-linux-gnu' '--disable-maintainer-mode' '--disable-dependency-tracking' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security' 'LDFLAGS=-Wl,-z,relro' 'CPPFLAGS=-D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security' '--disable-install' --cache-file=/dev/null --srcdir=.
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) none
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking checking whether we are on Cygwin... no
+checking whether the linker accepts -Wl,--export-dynamic... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking whether time.h and sys/time.h may both be included... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking stropts.h usability... yes
+checking stropts.h presence... yes
+checking for stropts.h... yes
+checking sys/termios.h usability... yes
+checking sys/termios.h presence... yes
+checking for sys/termios.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for stdint.h... (cached) yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for unistd.h... (cached) yes
+checking cwchar usability... yes
+checking cwchar presence... yes
+checking for cwchar... yes
+checking cwctype usability... yes
+checking cwctype presence... yes
+checking for cwctype... yes
+checking for int16_t... yes
+checking for size_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for ISO C++ 98 include files... yes
+checking for NcursesW wide-character library... no
+checking for Ncurses library... yes
+checking for working ncurses/curses.h... no
+checking for working ncurses.h... yes
+checking for alarm... yes
+checking for getcwd... yes
+checking for memset... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strstr... yes
+checking for setlocale... yes
+checking for iswprint... yes
+checking for resize_term... yes
+checking for termname... yes
+checking whether waddstr() use const char*... yes
+checking whether waddnstr() use const char*... yes
+checking whether mvwaddstr() use const char*... yes
+checking whether mvwaddnstr() use const char*... yes
+checking whether keypad() return int... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating include/Makefile
+config.status: creating po/Makefile.in
+config.status: creating tests/basic/Makefile
+config.status: creating tests/ui-interactive/Makefile
+config.status: creating tests/ui-non-interactive/Makefile
+config.status: creating tests/preloadlib/Makefile
+config.status: creating config.h
+config.status: creating include/libyacurscfg.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+configure: 
+configure:   host              x86_64-pc-linux-gnu
+configure:   prefix            /usr
+configure:   Use NLS           yes
+configure:   Curses library    -lncurses
+configure:   Debug mode        -DNDEBUG
+configure:   Disable wchar     no
+******************************************************************
+
+Prefix              : /usr
+CPPFLAGS            : -D_FORTIFY_SOURCE=2
+CFLAGS              : -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security
+CXXFLAGS            : -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security
+LDFLAGS             : -Wl,-z,relro
+
+Enable debug code   : no
+Disable install Doc.: no
+Build csv2yapet     : yes
+
+Use NLS             : yes
+
+******************************************************************
+
+Looks good.
+
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make  all-recursive
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making all in libyacurs
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs'
+make  all-recursive
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs'
+Making all in po
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/po'
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/po'
+Making all in include
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/include'
+make  all-am
+make[6]: Entering directory `/«PKGBUILDDIR»/libyacurs/include'
+make[6]: Leaving directory `/«PKGBUILDDIR»/libyacurs/include'
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/include'
+Making all in src
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/src'
+  CXX      libyacurs_la-sigaction.lo
+  CXX      libyacurs_la-coordinates.lo
+  CXX      libyacurs_la-size.lo
+  CXX      libyacurs_la-margin.lo
+  CXX      libyacurs_la-area.lo
+  CXX      libyacurs_la-curstr.lo
+  CXX      libyacurs_la-curswin.lo
+  CXX      libyacurs_la-cursorbuf.lo
+  CXX      libyacurs_la-event.lo
+  CXX      libyacurs_la-eventconnector.lo
+  CXX      libyacurs_la-eventqueue.lo
+  CXX      libyacurs_la-evtqueuestats.lo
+  CXX      libyacurs_la-curs.lo
+  CXX      libyacurs_la-realizeable.lo
+  CXX      libyacurs_la-titlebar.lo
+  CXX      libyacurs_la-statusbar.lo
+  CXX      libyacurs_la-windowbase.lo
+  CXX      libyacurs_la-hotkey.lo
+  CXX      libyacurs_la-window.lo
+  CXX      libyacurs_la-lockscreen.lo
+  CXX      libyacurs_la-lineobject.lo
+  CXX      libyacurs_la-widgetbase.lo
+  CXX      libyacurs_la-pack.lo
+  CXX      libyacurs_la-vpack.lo
+  CXX      libyacurs_la-hpack.lo
+  CXX      libyacurs_la-widget.lo
+widget.cc:148:9: warning: logical not is only applied to the left hand side of this comparison [-Wlogical-not-parentheses]
+    if (!realization() == REALIZED) return;
+        ^              ~~
+widget.cc:148:9: note: add parentheses after the '!' to evaluate the comparison first
+    if (!realization() == REALIZED) return;
+        ^
+         (                        )
+widget.cc:148:9: note: add parentheses around left hand side expression to silence this warning
+    if (!realization() == REALIZED) return;
+        ^
+        (             )
+1 warning generated.
+  CXX      libyacurs_la-label.lo
+  CXX      libyacurs_la-dynlabel.lo
+  CXX      libyacurs_la-yacursex.lo
+  CXX      libyacurs_la-colors.lo
+  CXX      libyacurs_la-colorparser.lo
+  CXX      libyacurs_la-focusgroup.lo
+  CXX      libyacurs_la-focusmanager.lo
+  CXX      libyacurs_la-button.lo
+  CXX      libyacurs_la-dialog.lo
+  CXX      libyacurs_la-messagebox.lo
+  CXX      libyacurs_la-messagebox2.lo
+  CXX      libyacurs_la-messagebox3.lo
+  CXX      libyacurs_la-inputbox.lo
+  CXX      libyacurs_la-filedialog.lo
+  CXX      libyacurs_la-filesavedialog.lo
+  CXX      libyacurs_la-fileloaddialog.lo
+  CXX      libyacurs_la-checkbox.lo
+  CXX      libyacurs_la-radiobox.lo
+  CXX      libyacurs_la-unlockdialog.lo
+  CXX      libyacurs_la-unlockdiadefault.lo
+  CXX      libyacurs_la-rule.lo
+  CXX      libyacurs_la-hrule.lo
+  CXX      libyacurs_la-vrule.lo
+  CXX      libyacurs_la-spacer.lo
+  CXX      libyacurs_la-yacursdbg.lo
+  CXXLD    libyacurs.la
+libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/src'
+Making all in tests
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests'
+Making all in preloadlib
+make[6]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/preloadlib'
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -shared -D_XOPEN_SOURCE_EXTENDED=1 -DLOCALEDIR=\"/usr/share/locale\" -I../../include -DNDEBUG -I../.. -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2   -DHAVE_CONFIG_H -c -o ./testpreload.lo testpreload.cc
+libtool: compile:  g++ -D_XOPEN_SOURCE_EXTENDED=1 -DLOCALEDIR=\"/usr/share/locale\" -I../../include -DNDEBUG -I../.. -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -DHAVE_CONFIG_H -c testpreload.cc  -fPIC -DPIC -o ./.libs/testpreload.o
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -rpath /usr/lib/x86_64-linux-gnu -version-info 0 -o libtestpreload.la testpreload.lo
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  .libs/testpreload.o   -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro   -Wl,-soname -Wl,libtestpreload.so.0 -o .libs/libtestpreload.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libtestpreload.so.0" && ln -s "libtestpreload.so.0.0.0" "libtestpreload.so.0")
+libtool: link: (cd ".libs" && rm -f "libtestpreload.so" && ln -s "libtestpreload.so.0.0.0" "libtestpreload.so")
+libtool: link: ar cru .libs/libtestpreload.a  .libs/testpreload.o
+libtool: link: ranlib .libs/libtestpreload.a
+libtool: link: ( cd ".libs" && rm -f "libtestpreload.la" && ln -s "../libtestpreload.la" "libtestpreload.la" )
+make[6]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/preloadlib'
+Making all in basic
+make[6]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+make[6]: Nothing to be done for `all'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+Making all in ui-interactive
+make[6]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+make[6]: Nothing to be done for `all'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+Making all in ui-non-interactive
+make[6]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+make[6]: Nothing to be done for `all'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+make[6]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[6]: Nothing to be done for `all-am'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs'
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs'
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs'
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs'
+Making all in po
+make[3]: Entering directory `/«PKGBUILDDIR»/po'
+make[3]: Leaving directory `/«PKGBUILDDIR»/po'
+Making all in crypt
+make[3]: Entering directory `/«PKGBUILDDIR»/crypt'
+  CXX      libyapet_crypt_la-key.lo
+  CXX      libyapet_crypt_la-file.lo
+  CXX      libyapet_crypt_la-crypt.lo
+  CXX      libyapet_crypt_la-bdbuffer.lo
+  CXX      libyapet_crypt_la-partdec.lo
+  CXXLD    libyapet-crypt.la
+make[3]: Leaving directory `/«PKGBUILDDIR»/crypt'
+Making all in ui
+make[3]: Entering directory `/«PKGBUILDDIR»/ui'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/ui'
+Making all in glue
+make[3]: Entering directory `/«PKGBUILDDIR»/glue'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/glue'
+Making all in pwgen
+make[3]: Entering directory `/«PKGBUILDDIR»/pwgen'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/pwgen'
+Making all in csv2yapet
+make[3]: Entering directory `/«PKGBUILDDIR»/csv2yapet'
+  CXX      csv2yapet-main.o
+  CXX      csv2yapet-csvimport.o
+  CXX      csv2yapet-consts.o
+  CXXLD    csv2yapet
+make[3]: Leaving directory `/«PKGBUILDDIR»/csv2yapet'
+Making all in yapet2csv
+make[3]: Entering directory `/«PKGBUILDDIR»/yapet2csv'
+  CXX      yapet2csv-main.o
+  CXX      yapet2csv-csvexport.o
+  CXX      yapet2csv-consts.o
+  CXXLD    yapet2csv
+make[3]: Leaving directory `/«PKGBUILDDIR»/yapet2csv'
+Making all in yapet
+make[3]: Entering directory `/«PKGBUILDDIR»/yapet'
+  CXX      yapet-charpool.o
+  CXX      yapet-rng.o
+  CXX      yapet-pwgen.o
+  CXX      yapet-loadfile.o
+  CXX      yapet-promptpassword.o
+  CXX      yapet-createfile.o
+  CXX      yapet-changepassword.o
+  CXX      yapet-opencmdlinefile.o
+  CXX      yapet-help.o
+  CXX      yapet-mainwindow.o
+  CXX      yapet-passworddialog.o
+  CXX      yapet-passwordrecord.o
+  CXX      yapet-newpassworddialog.o
+  CXX      yapet-info.o
+  CXX      yapet-yapetunlockdialog.o
+  CXX      yapet-yapetlockscreen.o
+  CXX      yapet-pwgendialog.o
+  CXX      yapet-main.o
+  CXX      yapet-cfgfile.o
+  CXX      yapet-consts.o
+  CXX      yapet-cfg.o
+  CXX      yapet-globals.o
+  CXXLD    yapet
+make[3]: Leaving directory `/«PKGBUILDDIR»/yapet'
+Making all in tests
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
+Making all in preload
+make[4]: Entering directory `/«PKGBUILDDIR»/tests/preload'
+  CXX      checktestpwrecord-checktestpwrecord.o
+  CXX      checktestpwrecord-bdbuffer.o
+  CXX      checktestpwrecord-crypt.o
+  CXX      checktestpwrecord-file.o
+  CXX      checktestpwrecord-key.o
+  CXX      checktestpwrecord-partdec.o
+  CXXLD    checktestpwrecord
+  CXX      checkmasterpwchange-checkmasterpwchange.o
+  CXX      checkmasterpwchange-bdbuffer.o
+  CXX      checkmasterpwchange-crypt.o
+  CXX      checkmasterpwchange-file.o
+  CXX      checkmasterpwchange-key.o
+  CXX      checkmasterpwchange-partdec.o
+  CXXLD    checkmasterpwchange
+  CXX      istty.o
+  CXXLD    istty
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests/preload'
+make[4]: Entering directory `/«PKGBUILDDIR»/tests'
+make[4]: Nothing to be done for `all-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+Making all in doc
+make[3]: Entering directory `/«PKGBUILDDIR»/doc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/doc'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+rm -f yapet.desktop.tmp yapet.desktop
+/bin/sed -e 's|@PACKAGE_STRING[@]|YAPET 1.0|g' -e 's|@PACKAGE_VERSION[@]|1.0|g' -e 's|@PACKAGE_NAME[@]|YAPET|g' -e 's|@PACKAGE_TARNAME[@]|yapet|g' -e 's|@PACKAGE[@]|yapet|g' -e 's|@top_srcdir[@]|.|g' -e 's|@top_builddir[@]|.|g' -e 's|@prefix[@]|/usr|g' ./yapet.desktop.in > yapet.desktop
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making check in libyacurs
+make[2]: Entering directory `/«PKGBUILDDIR»/libyacurs'
+Making check in po
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs/po'
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs/po'
+Making check in include
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs/include'
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs/include'
+Making check in src
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs/src'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs/src'
+Making check in tests
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests'
+Making check in preloadlib
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/preloadlib'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/preloadlib'
+Making check in basic
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+make  cursorbuf1 area colorparser coordinates margin eventconnector1 eventqueue1 eventqueue2 eventqueue3 eventqueue4 eventqueue5 eventqueue6 eventqueue7 eventqueue8 eventqueue9
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+  CXX      cursorbuf1.o
+  CXXLD    cursorbuf1
+  CXX      area.o
+  CXXLD    area
+  CXX      colorparser.o
+  CXXLD    colorparser
+  CXX      coordinates.o
+  CXXLD    coordinates
+  CXX      margin.o
+  CXXLD    margin
+  CXX      eventconnector1.o
+  CXXLD    eventconnector1
+  CXX      eventqueue1.o
+  CXXLD    eventqueue1
+  CXX      eventqueue2.o
+  CXXLD    eventqueue2
+  CXX      eventqueue3.o
+  CXXLD    eventqueue3
+  CXX      eventqueue4.o
+  CXXLD    eventqueue4
+  CXX      eventqueue5.o
+  CXXLD    eventqueue5
+  CXX      eventqueue6.o
+  CXXLD    eventqueue6
+  CXX      eventqueue7.o
+  CXXLD    eventqueue7
+  CXX      eventqueue8.o
+  CXXLD    eventqueue8
+  CXX      eventqueue9.o
+  CXXLD    eventqueue9
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+make  check-TESTS check-local
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+PASS: cursorbuf1
+PASS: area
+PASS: colorparser
+PASS: coordinates
+PASS: margin
+PASS: eventconnector1
+SKIP: eventqueue1
+SKIP: eventqueue2
+SKIP: eventqueue3
+SKIP: eventqueue4
+SKIP: eventqueue5
+SKIP: eventqueue6
+SKIP: eventqueue7
+SKIP: eventqueue8
+======================
+All 6 tests passed
+(8 tests were not run)
+======================
+for f in eventqueue9 ; do \
+		/bin/bash ../../libtool --mode=execute env LD_PRELOAD="../../tests/preloadlib/.libs/libtestpreload.so" ./$f ; \
+		test "x$?" = "x0" -o "x$?" = "x77" || { echo "*** $f failed" ; exit 1 ; } ; \
+	done
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+Making check in ui-interactive
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+make  input1 app1 checkbox1 dialog1 filedialog1 filedialog2 filedialog3 focus1 inputbox1 listbox1 listbox2 lockscreen1 messagebox1 messagebox2 messagebox3 packremove radiobox1 resize3 resize4 resize5
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+  CXX      input1.o
+  CXXLD    input1
+  CXX      app1.o
+  CXXLD    app1
+  CXX      checkbox1.o
+  CXXLD    checkbox1
+  CXX      dialog1.o
+  CXXLD    dialog1
+  CXX      filedialog1.o
+  CXXLD    filedialog1
+  CXX      filedialog2.o
+  CXXLD    filedialog2
+  CXX      filedialog3.o
+  CXXLD    filedialog3
+  CXX      focus1.o
+  CXXLD    focus1
+  CXX      inputbox1.o
+  CXXLD    inputbox1
+  CXX      listbox1.o
+  CXXLD    listbox1
+  CXX      listbox2.o
+  CXXLD    listbox2
+  CXX      lockscreen1.o
+  CXXLD    lockscreen1
+  CXX      messagebox1.o
+  CXXLD    messagebox1
+  CXX      messagebox2.o
+  CXXLD    messagebox2
+  CXX      messagebox3.o
+  CXXLD    messagebox3
+  CXX      packremove.o
+  CXXLD    packremove
+  CXX      radiobox1.o
+  CXXLD    radiobox1
+  CXX      resize3.o
+  CXXLD    resize3
+  CXX      resize4.o
+  CXXLD    resize4
+  CXX      resize5.o
+  CXXLD    resize5
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+make  check-local
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+for f in input1 app1 checkbox1 dialog1 filedialog1 filedialog2 filedialog3 focus1 inputbox1 listbox1 listbox2 lockscreen1 messagebox1 messagebox2 messagebox3 packremove radiobox1 resize3 resize4 resize5 ; do \
+		/bin/bash ../../libtool --mode=execute env LD_PRELOAD="../../tests/preloadlib/.libs/libtestpreload.so" ./$f ; \
+		retval=$? ; \
+		if test "x$retval" = "x77" ; then \
+			echo "*** $f skipped" ; \
+		else \
+			test "x$retval" = "x0" || { echo "*** $f failed" ; exit 1 ; } ; \
+		fi ; \
+	done
+*** input1 skipped
+*** app1 skipped
+*** checkbox1 skipped
+*** dialog1 skipped
+*** filedialog1 skipped
+*** filedialog2 skipped
+*** filedialog3 skipped
+*** focus1 skipped
+*** inputbox1 skipped
+*** listbox1 skipped
+*** listbox2 skipped
+*** lockscreen1 skipped
+*** messagebox1 skipped
+*** messagebox2 skipped
+*** messagebox3 skipped
+*** packremove skipped
+*** radiobox1 skipped
+*** resize3 skipped
+*** resize4 skipped
+*** resize5 skipped
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+Making check in ui-non-interactive
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+make  basic1 basic2 cursinit cursorbuf1 curswin1 curswin2 curswin3 dynlabel1 dynlabel2 pack1 pack2 pack3 pack4 pack5 pack6 pack7 pack8 pack9 packresize1 resize1 resize2 widget1 widget2 widget3 listbox1 hrule1 vrule1
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+  CXX      basic1.o
+  CXXLD    basic1
+  CXX      basic2.o
+  CXXLD    basic2
+  CXX      cursinit.o
+  CXXLD    cursinit
+  CXX      cursorbuf1.o
+  CXXLD    cursorbuf1
+  CXX      curswin1.o
+  CXXLD    curswin1
+  CXX      curswin2.o
+  CXXLD    curswin2
+  CXX      curswin3.o
+  CXXLD    curswin3
+  CXX      dynlabel1.o
+  CXXLD    dynlabel1
+  CXX      dynlabel2.o
+  CXXLD    dynlabel2
+  CXX      pack1.o
+  CXXLD    pack1
+  CXX      pack2.o
+  CXXLD    pack2
+  CXX      pack3.o
+  CXXLD    pack3
+  CXX      pack4.o
+  CXXLD    pack4
+  CXX      pack5.o
+  CXXLD    pack5
+  CXX      pack6.o
+  CXXLD    pack6
+  CXX      pack7.o
+  CXXLD    pack7
+  CXX      pack8.o
+  CXXLD    pack8
+  CXX      pack9.o
+  CXXLD    pack9
+  CXX      packresize1.o
+  CXXLD    packresize1
+  CXX      resize1.o
+  CXXLD    resize1
+  CXX      resize2.o
+  CXXLD    resize2
+  CXX      widget1.o
+  CXXLD    widget1
+  CXX      widget2.o
+  CXXLD    widget2
+  CXX      widget3.o
+  CXXLD    widget3
+  CXX      listbox1.o
+  CXXLD    listbox1
+  CXX      hrule1.o
+  CXXLD    hrule1
+  CXX      vrule1.o
+  CXXLD    vrule1
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+make  check-TESTS
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+SKIP: basic1
+SKIP: basic2
+SKIP: cursinit
+SKIP: cursorbuf1
+SKIP: curswin1
+SKIP: curswin2
+SKIP: curswin3
+SKIP: dynlabel1
+SKIP: dynlabel2
+SKIP: pack1
+SKIP: pack2
+SKIP: pack3
+SKIP: pack4
+SKIP: pack5
+SKIP: pack6
+SKIP: pack7
+SKIP: pack8
+SKIP: pack9
+SKIP: packresize1
+SKIP: resize1
+SKIP: resize2
+SKIP: widget1
+SKIP: widget2
+SKIP: widget3
+SKIP: listbox1
+SKIP: hrule1
+SKIP: vrule1
+=======================
+All 0 tests passed
+(27 tests were not run)
+=======================
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[4]: Nothing to be done for `check-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs'
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs'
+make[2]: Leaving directory `/«PKGBUILDDIR»/libyacurs'
+Making check in po
+make[2]: Entering directory `/«PKGBUILDDIR»/po'
+make[2]: Leaving directory `/«PKGBUILDDIR»/po'
+Making check in crypt
+make[2]: Entering directory `/«PKGBUILDDIR»/crypt'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/crypt'
+Making check in ui
+make[2]: Entering directory `/«PKGBUILDDIR»/ui'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/ui'
+Making check in glue
+make[2]: Entering directory `/«PKGBUILDDIR»/glue'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/glue'
+Making check in pwgen
+make[2]: Entering directory `/«PKGBUILDDIR»/pwgen'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/pwgen'
+Making check in csv2yapet
+make[2]: Entering directory `/«PKGBUILDDIR»/csv2yapet'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/csv2yapet'
+Making check in yapet2csv
+make[2]: Entering directory `/«PKGBUILDDIR»/yapet2csv'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/yapet2csv'
+Making check in yapet
+make[2]: Entering directory `/«PKGBUILDDIR»/yapet'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/yapet'
+Making check in tests
+make[2]: Entering directory `/«PKGBUILDDIR»/tests'
+Making check in preload
+make[3]: Entering directory `/«PKGBUILDDIR»/tests/preload'
+make  check-local
+make[4]: Entering directory `/«PKGBUILDDIR»/tests/preload'
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -shared -I../../libyacurs/include -I../../libyacurs/include -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2   -c -o ./pwrecord.lo pwrecord.cc
+libtool: compile:  g++ -I../../libyacurs/include -I../../libyacurs/include -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -c pwrecord.cc  -fPIC -DPIC -o ./.libs/pwrecord.o
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -rpath /usr/lib/x86_64-linux-gnu -version-info 0 -o libpwrecord.la pwrecord.lo
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  .libs/pwrecord.o   -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro   -Wl,-soname -Wl,libpwrecord.so.0 -o .libs/libpwrecord.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libpwrecord.so.0" && ln -s "libpwrecord.so.0.0.0" "libpwrecord.so.0")
+libtool: link: (cd ".libs" && rm -f "libpwrecord.so" && ln -s "libpwrecord.so.0.0.0" "libpwrecord.so")
+libtool: link: ar cru .libs/libpwrecord.a  .libs/pwrecord.o
+libtool: link: ranlib .libs/libpwrecord.a
+libtool: link: ( cd ".libs" && rm -f "libpwrecord.la" && ln -s "../libpwrecord.la" "libpwrecord.la" )
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -shared -I../../libyacurs/include -I../../libyacurs/include -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2   -c -o ./masterpwchange.lo masterpwchange.cc
+libtool: compile:  g++ -I../../libyacurs/include -I../../libyacurs/include -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -c masterpwchange.cc  -fPIC -DPIC -o ./.libs/masterpwchange.o
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -rpath /usr/lib/x86_64-linux-gnu -version-info 0 -o libmasterpwchange.la masterpwchange.lo
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  .libs/masterpwchange.o   -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro   -Wl,-soname -Wl,libmasterpwchange.so.0 -o .libs/libmasterpwchange.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libmasterpwchange.so.0" && ln -s "libmasterpwchange.so.0.0.0" "libmasterpwchange.so.0")
+libtool: link: (cd ".libs" && rm -f "libmasterpwchange.so" && ln -s "libmasterpwchange.so.0.0.0" "libmasterpwchange.so")
+libtool: link: ar cru .libs/libmasterpwchange.a  .libs/masterpwchange.o
+libtool: link: ranlib .libs/libmasterpwchange.a
+libtool: link: ( cd ".libs" && rm -f "libmasterpwchange.la" && ln -s "../libmasterpwchange.la" "libmasterpwchange.la" )
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -shared -I../../libyacurs/include -I../../libyacurs/include -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2   -c -o ./checkyapet.lo checkyapet.cc
+libtool: compile:  g++ -I../../libyacurs/include -I../../libyacurs/include -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -c checkyapet.cc  -fPIC -DPIC -o ./.libs/checkyapet.o
+/bin/bash ../../libtool --tag=CXX   --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -Wl,-z,relro -rpath /usr/lib/x86_64-linux-gnu -version-info 0 -o libcheckyapet.la checkyapet.lo
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  .libs/checkyapet.o   -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro   -Wl,-soname -Wl,libcheckyapet.so.0 -o .libs/libcheckyapet.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libcheckyapet.so.0" && ln -s "libcheckyapet.so.0.0.0" "libcheckyapet.so.0")
+libtool: link: (cd ".libs" && rm -f "libcheckyapet.so" && ln -s "libcheckyapet.so.0.0.0" "libcheckyapet.so")
+libtool: link: ar cru .libs/libcheckyapet.a  .libs/checkyapet.o
+libtool: link: ranlib .libs/libcheckyapet.a
+libtool: link: ( cd ".libs" && rm -f "libcheckyapet.la" && ln -s "../libcheckyapet.la" "libcheckyapet.la" )
+if ./istty ; then \
+		rm -f /tmp/emptyfile.pet ; \
+		../../libtool --mode=execute /usr/bin/env LD_PRELOAD="./.libs/libcheckyapet.so" ../../yapet/yapet -i /tmp/emptyfile.pet && echo 'OK' ; \
+		rm -f /tmp/testpwrecord.pet ; \
+		../../libtool --mode=execute /usr/bin/env LD_PRELOAD="./.libs/libpwrecord.so" ../../yapet/yapet -i /tmp/testpwrecord.pet ; \
+		../../libtool --mode=execute ./checktestpwrecord || exit 1 ; \
+		rm -f /tmp/masterpwchange.pet ; \
+		../../libtool --mode=execute /usr/bin/env LD_PRELOAD="./.libs/libmasterpwchange.so" ../../yapet/yapet -i /tmp/masterpwchange.pet ; \
+		../../libtool --mode=execute ./checkmasterpwchange || exit 1 ; \
+	fi
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests/preload'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests/preload'
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
+make  endianess key record bdbuffer enc partdec file file2 file3 file4 file5 file6 corrupt foreign cfg1 cfgfile1 charpool1 charpool2 rng1 pwgen1 import1 import2 import3 import4 import5 import6 import7 import8 import9 import10 import11 import12 import13 import14 import15
+make[4]: Entering directory `/«PKGBUILDDIR»/tests'
+  CXX      endianess.o
+endianess.cc:64:2: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+        read(fd, &test16, sizeof(uint16_t));
+        ^~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+endianess.cc:75:2: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+        read(fd, &test32, sizeof(uint32_t));
+        ^~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+endianess.cc:86:2: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+        read(fd, &test64, sizeof(uint64_t));
+        ^~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+  CXXLD    endianess
+  CXX      key.o
+  CXXLD    key
+  CXX      record.o
+  CXXLD    record
+  CXX      bdbuffer.o
+  CXXLD    bdbuffer
+  CXX      enc.o
+  CXXLD    enc
+  CXX      partdec.o
+  CXXLD    partdec
+  CXX      file.o
+  CXXLD    file
+  CXX      file2.o
+  CXXLD    file2
+  CXX      file3.o
+  CXXLD    file3
+  CXX      file4.o
+  CXXLD    file4
+  CXX      file5.o
+  CXXLD    file5
+  CXX      file6.o
+  CXXLD    file6
+  CXX      corrupt.o
+  CPY    corrupt.pet
+  CHMOD  corrupt.pet
+  CXXLD    corrupt
+  CXX      foreign.o
+  CPY    f32le0.5.pet
+  CHMOD  f32le0.5.pet
+  CPY    f32be0.5.pet
+  CHMOD  f32be0.5.pet
+  CPY    f64le0.5.pet
+  CHMOD  f64le0.5.pet
+  CPY    f64be0.5.pet
+  CHMOD  f64be0.5.pet
+  CPY    f32le0.6.pet
+  CHMOD  f32le0.6.pet
+  CPY    f32be0.6.pet
+  CHMOD  f32be0.6.pet
+  CPY    f64le0.6.pet
+  CHMOD  f64le0.6.pet
+  CPY    f64be0.6.pet
+  CHMOD  f64be0.6.pet
+  CXXLD    foreign
+  CXX      cfg1-cfg1.o
+  CXX      cfg1-cfg.o
+  CXX      cfg1-consts.o
+  CXXLD    cfg1
+  CXX      cfgfile1-cfgfile1.o
+  CXX      cfgfile1-cfg.o
+  CXX      cfgfile1-cfgfile.o
+  CXX      cfgfile1-consts.o
+  CXXLD    cfgfile1
+  CXX      charpool1.o
+  CXX      charpool.o
+  CXX      pwgen.o
+  CXX      rng.o
+  CXXLD    charpool1
+  CXX      charpool2.o
+  CXXLD    charpool2
+  CXX      rng1.o
+  CXXLD    rng1
+  CXX      pwgen1.o
+  CXXLD    pwgen1
+  CXX      import1.o
+  CXX      csvimport.o
+  CXXLD    import1
+  CXX      import2.o
+  CXXLD    import2
+  CXX      import3.o
+  CXXLD    import3
+  CXX      import4.o
+  CXXLD    import4
+  CXX      import5.o
+  CXXLD    import5
+  CXX      import6.o
+  CXXLD    import6
+  CXX      import7.o
+  CXXLD    import7
+  CXX      import8.o
+  CXXLD    import8
+  CXX      import9.o
+  CXXLD    import9
+  CXX      import10.o
+  CXXLD    import10
+  CXX      import11.o
+  CXXLD    import11
+  CXX      import12.o
+  CXXLD    import12
+  CXX      import13.o
+  CXXLD    import13
+  CXX      import14.o
+  CXXLD    import14
+  CXX      import15.o
+  CXXLD    import15
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests'
+make  check-TESTS check-local
+make[4]: Entering directory `/«PKGBUILDDIR»/tests'
+PASS: endianess
+PASS: key
+PASS: record
+PASS: bdbuffer
+PASS: enc
+PASS: partdec
+PASS: file
+PASS: file2
+PASS: file3
+PASS: file4
+PASS: file5
+PASS: file6
+PASS: corrupt
+PASS: foreign
+PASS: cfg1
+PASS: cfgfile1
+PASS: charpool1
+PASS: charpool2
+PASS: rng1
+PASS: pwgen1
+PASS: import1
+PASS: import2
+PASS: import3
+PASS: import4
+PASS: import5
+PASS: import6
+PASS: import7
+PASS: import8
+PASS: import9
+PASS: import10
+PASS: import11
+PASS: import12
+PASS: import13
+PASS: import14
+PASS: import15
+===================
+All 35 tests passed
+===================
+rm -f /tmp/yapettestimport.pet /tmp/yapettestexport.csv
+../csv2yapet/csv2yapet -p secret -s ',' ./testimport.csv /tmp/yapettestimport.pet
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+/tmp/yapettestimport.pet successfully created.
+../yapet2csv/yapet2csv -p secret -s ',' /tmp/yapettestimport.pet /tmp/yapettestexport.csv
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+/tmp/yapettestexport.csv successfully created.
+diff ./testimport.csv /tmp/yapettestexport.csv
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
+Making check in doc
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Nothing to be done for `check-am'.
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary --with autotools_dev
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making install in libyacurs
+make[2]: Entering directory `/«PKGBUILDDIR»/libyacurs'
+Making install in po
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs/po'
+installing de.gmo as /«PKGBUILDDIR»/debian/yapet/usr/share/locale/de/LC_MESSAGES/libyacurs.mo
+if test "libyacurs" = "gettext-tools"; then \
+	  /bin/mkdir -p /«PKGBUILDDIR»/debian/yapet/usr/share/gettext/po; \
+	  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /«PKGBUILDDIR»/debian/yapet/usr/share/gettext/po/$file; \
+	  done; \
+	  for file in Makevars; do \
+	    rm -f /«PKGBUILDDIR»/debian/yapet/usr/share/gettext/po/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs/po'
+Making install in include
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs/include'
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/include'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/include'
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs/include'
+Making install in src
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs/src'
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/src'
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/src'
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs/src'
+Making install in tests
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests'
+Making install in preloadlib
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/preloadlib'
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/preloadlib'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/preloadlib'
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/preloadlib'
+Making install in basic
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/basic'
+Making install in ui-interactive
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-interactive'
+Making install in ui-non-interactive
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests/ui-non-interactive'
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[5]: Entering directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs/tests'
+make[3]: Entering directory `/«PKGBUILDDIR»/libyacurs'
+make[4]: Entering directory `/«PKGBUILDDIR»/libyacurs'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/libyacurs'
+make[3]: Leaving directory `/«PKGBUILDDIR»/libyacurs'
+make[2]: Leaving directory `/«PKGBUILDDIR»/libyacurs'
+Making install in po
+make[2]: Entering directory `/«PKGBUILDDIR»/po'
+installing de.gmo as /«PKGBUILDDIR»/debian/yapet/usr/share/locale/de/LC_MESSAGES/yapet.mo
+if test "yapet" = "gettext-tools"; then \
+	  /bin/mkdir -p /«PKGBUILDDIR»/debian/yapet/usr/share/gettext/po; \
+	  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /«PKGBUILDDIR»/debian/yapet/usr/share/gettext/po/$file; \
+	  done; \
+	  for file in Makevars; do \
+	    rm -f /«PKGBUILDDIR»/debian/yapet/usr/share/gettext/po/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+make[2]: Leaving directory `/«PKGBUILDDIR»/po'
+Making install in crypt
+make[2]: Entering directory `/«PKGBUILDDIR»/crypt'
+make[3]: Entering directory `/«PKGBUILDDIR»/crypt'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/crypt'
+make[2]: Leaving directory `/«PKGBUILDDIR»/crypt'
+Making install in ui
+make[2]: Entering directory `/«PKGBUILDDIR»/ui'
+make[3]: Entering directory `/«PKGBUILDDIR»/ui'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/ui'
+make[2]: Leaving directory `/«PKGBUILDDIR»/ui'
+Making install in glue
+make[2]: Entering directory `/«PKGBUILDDIR»/glue'
+make[3]: Entering directory `/«PKGBUILDDIR»/glue'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/glue'
+make[2]: Leaving directory `/«PKGBUILDDIR»/glue'
+Making install in pwgen
+make[2]: Entering directory `/«PKGBUILDDIR»/pwgen'
+make[3]: Entering directory `/«PKGBUILDDIR»/pwgen'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/pwgen'
+make[2]: Leaving directory `/«PKGBUILDDIR»/pwgen'
+Making install in csv2yapet
+make[2]: Entering directory `/«PKGBUILDDIR»/csv2yapet'
+make[3]: Entering directory `/«PKGBUILDDIR»/csv2yapet'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/yapet/usr/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c csv2yapet '/«PKGBUILDDIR»/debian/yapet/usr/bin'
+libtool: install: /usr/bin/install -c csv2yapet /«PKGBUILDDIR»/debian/yapet/usr/bin/csv2yapet
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/csv2yapet'
+make[2]: Leaving directory `/«PKGBUILDDIR»/csv2yapet'
+Making install in yapet2csv
+make[2]: Entering directory `/«PKGBUILDDIR»/yapet2csv'
+make[3]: Entering directory `/«PKGBUILDDIR»/yapet2csv'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/yapet/usr/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c yapet2csv '/«PKGBUILDDIR»/debian/yapet/usr/bin'
+libtool: install: /usr/bin/install -c yapet2csv /«PKGBUILDDIR»/debian/yapet/usr/bin/yapet2csv
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/yapet2csv'
+make[2]: Leaving directory `/«PKGBUILDDIR»/yapet2csv'
+Making install in yapet
+make[2]: Entering directory `/«PKGBUILDDIR»/yapet'
+make[3]: Entering directory `/«PKGBUILDDIR»/yapet'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/yapet/usr/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c yapet '/«PKGBUILDDIR»/debian/yapet/usr/bin'
+libtool: install: /usr/bin/install -c yapet /«PKGBUILDDIR»/debian/yapet/usr/bin/yapet
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/yapet'
+make[2]: Leaving directory `/«PKGBUILDDIR»/yapet'
+Making install in tests
+make[2]: Entering directory `/«PKGBUILDDIR»/tests'
+Making install in preload
+make[3]: Entering directory `/«PKGBUILDDIR»/tests/preload'
+make[4]: Entering directory `/«PKGBUILDDIR»/tests/preload'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests/preload'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests/preload'
+make[3]: Entering directory `/«PKGBUILDDIR»/tests'
+make[4]: Entering directory `/«PKGBUILDDIR»/tests'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[3]: Leaving directory `/«PKGBUILDDIR»/tests'
+make[2]: Leaving directory `/«PKGBUILDDIR»/tests'
+Making install in doc
+make[2]: Entering directory `/«PKGBUILDDIR»/doc'
+make[3]: Entering directory `/«PKGBUILDDIR»/doc'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/yapet/usr/share/doc/yapet/html'
+ /usr/bin/install -c -m 644 README.html DESIGN.html yapet.html csv2yapet.html yapet2csv.html '/«PKGBUILDDIR»/debian/yapet/usr/share/doc/yapet/html'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/yapet/usr/share/man/man1'
+ /usr/bin/install -c -m 644 yapet.1 csv2yapet.1 yapet2csv.1 '/«PKGBUILDDIR»/debian/yapet/usr/share/man/man1'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/yapet/usr/share/man/man5'
+ /usr/bin/install -c -m 644 yapet_colors.5 yapet_config.5 '/«PKGBUILDDIR»/debian/yapet/usr/share/man/man5'
+make[3]: Leaving directory `/«PKGBUILDDIR»/doc'
+make[2]: Leaving directory `/«PKGBUILDDIR»/doc'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/yapet/usr/share/applications'
+ /usr/bin/install -c -m 644 yapet.desktop '/«PKGBUILDDIR»/debian/yapet/usr/share/applications'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/yapet/usr/share/doc/yapet'
+ /usr/bin/install -c -m 644 README AUTHORS DESIGN NEWS '/«PKGBUILDDIR»/debian/yapet/usr/share/doc/yapet'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_installmenu
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/yapet/usr/bin/csv2yapet debian/yapet/usr/bin/yapet debian/yapet/usr/bin/yapet2csv were not linked against libssl.so.1.0.0 (they use none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `yapet' in `../yapet_1.0-2_amd64.deb'.
+ dpkg-genchanges  >../yapet_1.0-2_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build yapet-1.0
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-2030
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+yapet_1.0-2_amd64.changes:
+──────────────────────────
+
+Format: 1.8
+Date: Fri, 07 Mar 2014 21:24:10 +0100
+Source: yapet
+Binary: yapet
+Architecture: source amd64
+Version: 1.0-2
+Distribution: sid
+Urgency: low
+Maintainer: Salvatore Bonaccorso <carnil@debian.org>
+Changed-By: Salvatore Bonaccorso <carnil@debian.org>
+Description: 
+ yapet      - Yet Another Password Encryption Tool
+Changes: 
+ yapet (1.0-2) unstable; urgency=low
+ .
+   * Upload to unstable
+Checksums-Sha1: 
+ b7ebd5611bd452418d90e680989f2fa1684acc2b 851 yapet_1.0-2.dsc
+ d32fb977a8ee18b45a3c3b16a84055c1b5eb6371 4700 yapet_1.0-2.debian.tar.xz
+ a813628dcac0d4bd21cebf2681275d5345f22cd4 283036 yapet_1.0-2_amd64.deb
+Checksums-Sha256: 
+ f406f69d94ce92438cfdedbfda2d719ef0dd16e3adc84cdc3eb64ae5c5df7a4f 851 yapet_1.0-2.dsc
+ 7b8ac45596951016eea0d46054822ac61bf5d50d5b93f9131c2d631d0c276559 4700 yapet_1.0-2.debian.tar.xz
+ 4da659ac9546589c6a6f51530eb13fd98a6492eb7b40adf03b749e73be8cd5c5 283036 yapet_1.0-2_amd64.deb
+Files: 
+ 3c8deb7b5c8108a41d8e34073afe6116 283036 utils optional yapet_1.0-2_amd64.deb
+ eff905e0a7c86b8b57a9f7489ce357ec 851 utils optional yapet_1.0-2.dsc
+ bedf9006684439139c1575ee681f681e 4700 utils optional yapet_1.0-2.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+yapet_1.0-2_amd64.deb
+─────────────────────
+
+ new debian package, version 2.0.
+ size 283036 bytes: control archive=1668 bytes.
+     630 bytes,    14 lines      control              
+    1719 bytes,    26 lines      md5sums              
+     185 bytes,     7 lines   *  postinst             #!/bin/sh
+     160 bytes,     5 lines   *  postrm               #!/bin/sh
+ Package: yapet
+ Version: 1.0-2
+ Architecture: amd64
+ Maintainer: Salvatore Bonaccorso <carnil@debian.org>
+ Installed-Size: 1315
+ Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libncurses5 (>= 5.5-5~), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.6), libtinfo5
+ Section: utils
+ Priority: optional
+ Homepage: http://www.guengel.ch/myapps/yapet/
+ Description: Yet Another Password Encryption Tool
+  Yapet is a curses based password encryption tool using the Blowfish
+  encryption algorithm to store password records encrypted on disk. Its
+  primary aim is to provide a safe way to store passwords in a file on
+  disk while having a small footprint.
+
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/bin/
+-rwxr-xr-x root/root     93224 2014-04-28 20:30 ./usr/bin/csv2yapet
+-rwxr-xr-x root/root    950488 2014-04-28 20:30 ./usr/bin/yapet
+-rwxr-xr-x root/root     93200 2014-04-28 20:30 ./usr/bin/yapet2csv
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/doc-base/
+-rw-r--r-- root/root       282 2014-03-07 21:26 ./usr/share/doc-base/yapet
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/menu/
+-rw-r--r-- root/root       170 2014-03-07 21:26 ./usr/share/menu/yapet
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/man/man5/
+-rw-r--r-- root/root      1550 2014-04-28 20:30 ./usr/share/man/man5/yapet_colors.5.gz
+-rw-r--r-- root/root      2246 2014-04-28 20:30 ./usr/share/man/man5/yapet_config.5.gz
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/man/man1/
+-rw-r--r-- root/root      1976 2014-04-28 20:30 ./usr/share/man/man1/csv2yapet.1.gz
+-rw-r--r-- root/root      3129 2014-04-28 20:30 ./usr/share/man/man1/yapet.1.gz
+-rw-r--r-- root/root      1499 2014-04-28 20:30 ./usr/share/man/man1/yapet2csv.1.gz
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/applications/
+-rw-r--r-- root/root       310 2014-04-28 20:30 ./usr/share/applications/yapet.desktop
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/doc/yapet/
+-rw-r--r-- root/root     21749 2014-02-23 18:49 ./usr/share/doc/yapet/changelog.gz
+-rw-r--r-- root/root      2479 2014-02-23 18:57 ./usr/share/doc/yapet/README.gz
+-rw-r--r-- root/root      2276 2014-03-07 21:26 ./usr/share/doc/yapet/changelog.Debian.gz
+-rw-r--r-- root/root       452 2014-03-07 21:26 ./usr/share/doc/yapet/NEWS.Debian.gz
+-rw-r--r-- root/root       241 2014-04-28 20:30 ./usr/share/doc/yapet/AUTHORS
+-rw-r--r-- root/root      2276 2014-03-07 21:26 ./usr/share/doc/yapet/copyright
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/doc/yapet/html/
+-rw-r--r-- root/root     12743 2014-04-28 20:30 ./usr/share/doc/yapet/html/README.html
+-rw-r--r-- root/root      7252 2014-04-28 20:30 ./usr/share/doc/yapet/html/yapet2csv.html
+-rw-r--r-- root/root      9182 2014-04-28 20:30 ./usr/share/doc/yapet/html/csv2yapet.html
+-rw-r--r-- root/root     27446 2014-04-28 20:30 ./usr/share/doc/yapet/html/DESIGN.html
+-rw-r--r-- root/root     17768 2014-04-28 20:30 ./usr/share/doc/yapet/html/yapet.html
+-rw-r--r-- root/root      3558 2014-04-28 20:30 ./usr/share/doc/yapet/DESIGN.gz
+-rw-r--r-- root/root      1711 2014-02-23 18:18 ./usr/share/doc/yapet/NEWS.gz
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/locale/
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/locale/de/
+drwxr-xr-x root/root         0 2014-04-28 20:30 ./usr/share/locale/de/LC_MESSAGES/
+-rw-r--r-- root/root      3626 2014-04-28 20:30 ./usr/share/locale/de/LC_MESSAGES/libyacurs.mo
+-rw-r--r-- root/root     15624 2014-04-28 20:30 ./usr/share/locale/de/LC_MESSAGES/yapet.mo
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 243244
+Build-Time: 94
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 14
+Job: yapet_1.0-2.dsc
+Machine Architecture: amd64
+Package: yapet
+Package-Time: 114
+Source-Version: 1.0-2
+Space: 243244
+Status: successful
+Version: 1.0-2
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-2030
+Build needed 00:01:54, 243244k disc space

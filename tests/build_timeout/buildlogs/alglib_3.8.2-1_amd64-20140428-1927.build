@@ -1,0 +1,882 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ alglib 3.8.2-1 (amd64)                                     28 Apr 2014 19:27 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: alglib
+Version: 3.8.2-1
+Source Version: 3.8.2-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/alglib-2MNhZd/alglib-3.8.2' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/alglib-2MNhZd' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-cbc9f49b-4371-4749-8fd3-4f5b270bc83c' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+alglib_3.8.2-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-i9_ccQ/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), cmake, debhelper (>= 9)
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), cmake, debhelper (>= 9)
+dpkg-deb: building package `sbuild-build-depends-alglib-dummy' in `/«BUILDDIR»/resolver-3cEfqn/apt_archive/sbuild-build-depends-alglib-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install alglib build dependencies (apt-based resolver)                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils cmake cmake-data debhelper file gettext gettext-base groff-base
+  intltool-debian libarchive13 libasprintf0c2 libcroco3 libcurl3 libexpat1
+  libgcrypt11 libglib2.0-0 libgnutls26 libgpg-error0 libgssapi-krb5-2
+  libhogweed2 libidn11 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+  libldap-2.4-2 liblzo2-2 libmagic1 libnettle4 libp11-kit0 libpipeline1
+  libprocps3 librtmp1 libsasl2-2 libsasl2-modules-db libssh2-1 libssl1.0.0
+  libtasn1-6 libunistring0 libxml2 man-db po-debconf procps
+Suggested packages:
+  wamerican wordlist whois vacation codeblocks eclipse dh-make gettext-doc
+  groff lrzip rng-tools krb5-doc krb5-user less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  ca-certificates libglib2.0-data shared-mime-info krb5-locales
+  libsasl2-modules xml-core libmail-sendmail-perl psmisc
+The following NEW packages will be installed:
+  bsdmainutils cmake cmake-data debhelper file gettext gettext-base groff-base
+  intltool-debian libarchive13 libasprintf0c2 libcroco3 libcurl3 libexpat1
+  libgcrypt11 libglib2.0-0 libgnutls26 libgpg-error0 libgssapi-krb5-2
+  libhogweed2 libidn11 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+  libldap-2.4-2 liblzo2-2 libmagic1 libnettle4 libp11-kit0 libpipeline1
+  libprocps3 librtmp1 libsasl2-2 libsasl2-modules-db libssh2-1 libssl1.0.0
+  libtasn1-6 libunistring0 libxml2 man-db po-debconf procps
+  sbuild-build-depends-alglib-dummy
+0 upgraded, 44 newly installed, 0 to remove and 8 not upgraded.
+Need to get 17.1 MB/17.1 MB of archives.
+After this operation, 55.9 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libprocps3 amd64 1:3.3.9-4 [55.6 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main libssl1.0.0 amd64 1.0.1g-3 [1012 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libgpg-error0 amd64 1.12-0.2 [56.5 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libgcrypt11 amd64 1.5.3-4 [250 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libp11-kit0 amd64 0.20.2-5 [81.1 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libtasn1-6 amd64 3.4-3 [48.8 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libgnutls26 amd64 2.12.23-14 [530 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libkeyutils1 amd64 1.5.6-1 [8758 B]
+Get:14 http://debian.proxad.net/debian/ sid/main libkrb5support0 amd64 1.12.1+dfsg-1 [56.3 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libk5crypto3 amd64 1.12.1+dfsg-1 [109 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libkrb5-3 amd64 1.12.1+dfsg-1 [296 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libgssapi-krb5-2 amd64 1.12.1+dfsg-1 [143 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libidn11 amd64 1.28-2 [158 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libsasl2-modules-db amd64 2.1.26.dfsg1-9 [66.4 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libsasl2-2 amd64 2.1.26.dfsg1-9 [103 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libldap-2.4-2 amd64 2.4.39-1 [212 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main liblzo2-2 amd64 2.06-1.2 [51.2 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main libnettle4 amd64 2.7.1-2 [172 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libarchive13 amd64 3.1.2-8 [265 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libhogweed2 amd64 2.7.1-2 [125 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main librtmp1 amd64 2.4+20131018.git79459a2-2 [58.6 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main libssh2-1 amd64 1.4.3-2 [124 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main libcurl3 amd64 7.36.0-1+b1 [253 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main libexpat1 amd64 2.1.0-4 [138 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main procps amd64 1:3.3.9-4 [233 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:37 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main cmake-data all 2.8.12.1-1.2 [1285 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main cmake amd64 2.8.12.1-1.2 [2638 kB]
+Get:40 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:41 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:42 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:43 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 17.1 MB in 0s (36.4 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libprocps3:amd64.
+Preparing to unpack .../libprocps3_1%3a3.3.9-4_amd64.deb ...
+Unpacking libprocps3:amd64 (1:3.3.9-4) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.1g-3_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1g-3) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libgpg-error0:amd64.
+Preparing to unpack .../libgpg-error0_1.12-0.2_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.12-0.2) ...
+Selecting previously unselected package libgcrypt11:amd64.
+Preparing to unpack .../libgcrypt11_1.5.3-4_amd64.deb ...
+Unpacking libgcrypt11:amd64 (1.5.3-4) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../libp11-kit0_0.20.2-5_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.20.2-5) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../libtasn1-6_3.4-3_amd64.deb ...
+Unpacking libtasn1-6:amd64 (3.4-3) ...
+Selecting previously unselected package libgnutls26:amd64.
+Preparing to unpack .../libgnutls26_2.12.23-14_amd64.deb ...
+Unpacking libgnutls26:amd64 (2.12.23-14) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../libkeyutils1_1.5.6-1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.6-1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../libkrb5support0_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../libk5crypto3_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../libkrb5-3_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../libgssapi-krb5-2_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libidn11:amd64.
+Preparing to unpack .../libidn11_1.28-2_amd64.deb ...
+Unpacking libidn11:amd64 (1.28-2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-9_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.26.dfsg1-9) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../libsasl2-2_2.1.26.dfsg1-9_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.26.dfsg1-9) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../libldap-2.4-2_2.4.39-1_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.39-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package liblzo2-2:amd64.
+Preparing to unpack .../liblzo2-2_2.06-1.2_amd64.deb ...
+Unpacking liblzo2-2:amd64 (2.06-1.2) ...
+Selecting previously unselected package libnettle4:amd64.
+Preparing to unpack .../libnettle4_2.7.1-2_amd64.deb ...
+Unpacking libnettle4:amd64 (2.7.1-2) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../libarchive13_3.1.2-8_amd64.deb ...
+Unpacking libarchive13:amd64 (3.1.2-8) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libhogweed2:amd64.
+Preparing to unpack .../libhogweed2_2.7.1-2_amd64.deb ...
+Unpacking libhogweed2:amd64 (2.7.1-2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../librtmp1_2.4+20131018.git79459a2-2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20131018.git79459a2-2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../libssh2-1_1.4.3-2_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.4.3-2) ...
+Selecting previously unselected package libcurl3:amd64.
+Preparing to unpack .../libcurl3_7.36.0-1+b1_amd64.deb ...
+Unpacking libcurl3:amd64 (7.36.0-1+b1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-4) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../procps_1%3a3.3.9-4_amd64.deb ...
+Unpacking procps (1:3.3.9-4) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../cmake-data_2.8.12.1-1.2_all.deb ...
+Unpacking cmake-data (2.8.12.1-1.2) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_2.8.12.1-1.2_amd64.deb ...
+Unpacking cmake (2.8.12.1-1.2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package sbuild-build-depends-alglib-dummy.
+Preparing to unpack .../sbuild-build-depends-alglib-dummy.deb ...
+Unpacking sbuild-build-depends-alglib-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libprocps3:amd64 (1:3.3.9-4) ...
+Setting up libssl1.0.0:amd64 (1.0.1g-3) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libgpg-error0:amd64 (1.12-0.2) ...
+Setting up libgcrypt11:amd64 (1.5.3-4) ...
+Setting up libp11-kit0:amd64 (0.20.2-5) ...
+Setting up libtasn1-6:amd64 (3.4-3) ...
+Setting up libgnutls26:amd64 (2.12.23-14) ...
+Setting up libkeyutils1:amd64 (1.5.6-1) ...
+Setting up libkrb5support0:amd64 (1.12.1+dfsg-1) ...
+Setting up libk5crypto3:amd64 (1.12.1+dfsg-1) ...
+Setting up libkrb5-3:amd64 (1.12.1+dfsg-1) ...
+Setting up libgssapi-krb5-2:amd64 (1.12.1+dfsg-1) ...
+Setting up libidn11:amd64 (1.28-2) ...
+Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-9) ...
+Setting up libsasl2-2:amd64 (2.1.26.dfsg1-9) ...
+Setting up libldap-2.4-2:amd64 (2.4.39-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up liblzo2-2:amd64 (2.06-1.2) ...
+Setting up libnettle4:amd64 (2.7.1-2) ...
+Setting up libarchive13:amd64 (3.1.2-8) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libhogweed2:amd64 (2.7.1-2) ...
+Setting up librtmp1:amd64 (2.4+20131018.git79459a2-2) ...
+Setting up libssh2-1:amd64 (1.4.3-2) ...
+Setting up libcurl3:amd64 (7.36.0-1+b1) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up procps (1:3.3.9-4) ...
+update-alternatives: using /usr/bin/w.procps to provide /usr/bin/w (w) in auto mode
+All runlevel operations denied by policy
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up cmake-data (2.8.12.1-1.2) ...
+Setting up cmake (2.8.12.1-1.2) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up sbuild-build-depends-alglib-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 cmake_2.8.12.1-1.2 cmake-data_2.8.12.1-1.2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libarchive13_3.1.2-8 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libcurl3_7.36.0-1+b1 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgcrypt11_1.5.3-4 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgnutls26_2.12.23-14 libgomp1_4.9.0-1 libgpg-error0_1.12-0.2 libgpm2_1.20.4-6.1 libgssapi-krb5-2_1.12.1+dfsg-1 libhogweed2_2.7.1-2 libidn11_1.28-2 libisl10_0.12.2-1 libitm1_4.9.0-1 libk5crypto3_1.12.1+dfsg-1 libkeyutils1_1.5.6-1 libkrb5-3_1.12.1+dfsg-1 libkrb5support0_1.12.1+dfsg-1 libldap-2.4-2_2.4.39-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 liblzo2-2_2.06-1.2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libnettle4_2.7.1-2 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libp11-kit0_0.20.2-5 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libprocps3_1:3.3.9-4 libquadmath0_4.9.0-1 libreadline6_6.3-6 librtmp1_2.4+20131018.git79459a2-2 libsasl2-2_2.1.26.dfsg1-9 libsasl2-modules-db_2.1.26.dfsg1-9 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libssh2-1_1.4.3-2 libssl1.0.0_1.0.1g-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtasn1-6_3.4-3 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 procps_1:3.3.9-4 readline-common_6.3-6 sbuild-build-depends-alglib-dummy_0.invalid.0 sbuild-build-depends-core-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Sat Nov 30 18:19:49 2013 UTC using RSA key ID CFA7FF06
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./alglib_3.8.2-1.dsc
+dpkg-source: info: extracting alglib in alglib-3.8.2
+dpkg-source: info: unpacking alglib_3.8.2.orig.tar.gz
+dpkg-source: info: unpacking alglib_3.8.2-1.debian.tar.gz
+dpkg-source: info: applying 01_add_cmake.patch
+dpkg-source: info: applying 02_disable_some_tests.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-cbc9f49b-4371-4749-8fd3-4f5b270bc83c
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package alglib
+dpkg-buildpackage: source version 3.8.2-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Anton Gladky <gladk@debian.org>
+ dpkg-source --before-build alglib-3.8.2
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --parallel
+   dh_testdir -O--parallel
+   dh_auto_clean -O--parallel
+   dh_clean -O--parallel
+ dpkg-source -b alglib-3.8.2
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building alglib using existing ./alglib_3.8.2.orig.tar.gz
+dpkg-source: info: building alglib in alglib_3.8.2-1.debian.tar.xz
+dpkg-source: info: building alglib in alglib_3.8.2-1.dsc
+ debian/rules build
+dh build --parallel
+   dh_testdir -O--parallel
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_configure -- -DVERSION="3.8.0" -DSOVERSION="3.8"
+-- The CXX compiler identification is Clang 3.4.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /«PKGBUILDDIR»/obj-x86_64-linux-gnu
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_build -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -H/«PKGBUILDDIR» -B/«PKGBUILDDIR»/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[2]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/alglib.dir/build.make CMakeFiles/alglib.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR» /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/alglib.dir/DependInfo.cmake --color=
+Scanning dependencies of target alglib
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/alglib.dir/build.make CMakeFiles/alglib.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 1
+[  6%] Building CXX object CMakeFiles/alglib.dir/src/optimization.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/optimization.cpp.o -c /«PKGBUILDDIR»/src/optimization.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 2
+[ 13%] Building CXX object CMakeFiles/alglib.dir/src/diffequations.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/diffequations.cpp.o -c /«PKGBUILDDIR»/src/diffequations.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 3
+[ 20%] Building CXX object CMakeFiles/alglib.dir/src/integration.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/integration.cpp.o -c /«PKGBUILDDIR»/src/integration.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 4
+[ 26%] Building CXX object CMakeFiles/alglib.dir/src/dataanalysis.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/dataanalysis.cpp.o -c /«PKGBUILDDIR»/src/dataanalysis.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 5
+[ 33%] Building CXX object CMakeFiles/alglib.dir/src/solvers.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/solvers.cpp.o -c /«PKGBUILDDIR»/src/solvers.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 6
+[ 40%] Building CXX object CMakeFiles/alglib.dir/src/linalg.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/linalg.cpp.o -c /«PKGBUILDDIR»/src/linalg.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 7
+[ 46%] Building CXX object CMakeFiles/alglib.dir/src/interpolation.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/interpolation.cpp.o -c /«PKGBUILDDIR»/src/interpolation.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 8
+[ 53%] Building CXX object CMakeFiles/alglib.dir/src/ap.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/ap.cpp.o -c /«PKGBUILDDIR»/src/ap.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 9
+[ 60%] Building CXX object CMakeFiles/alglib.dir/src/statistics.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/statistics.cpp.o -c /«PKGBUILDDIR»/src/statistics.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 10
+[ 66%] Building CXX object CMakeFiles/alglib.dir/src/specialfunctions.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/specialfunctions.cpp.o -c /«PKGBUILDDIR»/src/specialfunctions.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 11
+[ 73%] Building CXX object CMakeFiles/alglib.dir/src/alglibinternal.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/alglibinternal.cpp.o -c /«PKGBUILDDIR»/src/alglibinternal.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 12
+[ 80%] Building CXX object CMakeFiles/alglib.dir/src/fasttransforms.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/fasttransforms.cpp.o -c /«PKGBUILDDIR»/src/fasttransforms.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 13
+[ 86%] Building CXX object CMakeFiles/alglib.dir/src/alglibmisc.cpp.o
+/usr/bin/c++   -Dalglib_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -fPIC -I/«PKGBUILDDIR»/src    -o CMakeFiles/alglib.dir/src/alglibmisc.cpp.o -c /«PKGBUILDDIR»/src/alglibmisc.cpp
+Linking CXX shared library libalglib.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/alglib.dir/link.txt --verbose=1
+/usr/bin/c++  -fPIC -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2   -Wl,-z,relro -shared -Wl,-soname,libalglib.so.3.8 -o libalglib.so.3.8.0 CMakeFiles/alglib.dir/src/optimization.cpp.o CMakeFiles/alglib.dir/src/diffequations.cpp.o CMakeFiles/alglib.dir/src/integration.cpp.o CMakeFiles/alglib.dir/src/dataanalysis.cpp.o CMakeFiles/alglib.dir/src/solvers.cpp.o CMakeFiles/alglib.dir/src/linalg.cpp.o CMakeFiles/alglib.dir/src/interpolation.cpp.o CMakeFiles/alglib.dir/src/ap.cpp.o CMakeFiles/alglib.dir/src/statistics.cpp.o CMakeFiles/alglib.dir/src/specialfunctions.cpp.o CMakeFiles/alglib.dir/src/alglibinternal.cpp.o CMakeFiles/alglib.dir/src/fasttransforms.cpp.o CMakeFiles/alglib.dir/src/alglibmisc.cpp.o 
+/usr/bin/cmake -E cmake_symlink_library libalglib.so.3.8.0 libalglib.so.3.8 libalglib.so
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13
+[ 86%] Built target alglib
+make -f CMakeFiles/test_c.dir/build.make CMakeFiles/test_c.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR» /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/test_c.dir/DependInfo.cmake --color=
+Scanning dependencies of target test_c
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/test_c.dir/build.make CMakeFiles/test_c.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 14
+[ 93%] Building CXX object CMakeFiles/test_c.dir/tests/test_c.cpp.o
+/usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/«PKGBUILDDIR»/src    -o CMakeFiles/test_c.dir/tests/test_c.cpp.o -c /«PKGBUILDDIR»/tests/test_c.cpp
+Linking CXX executable test_c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/test_c.dir/link.txt --verbose=1
+/usr/bin/c++   -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2    -Wl,-z,relro CMakeFiles/test_c.dir/tests/test_c.cpp.o  -o test_c -rdynamic libalglib.so.3.8.0 -Wl,-rpath,/«PKGBUILDDIR»/obj-x86_64-linux-gnu 
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  14
+[ 93%] Built target test_c
+make -f CMakeFiles/test_i.dir/build.make CMakeFiles/test_i.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR» /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/test_i.dir/DependInfo.cmake --color=
+Scanning dependencies of target test_i
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/test_i.dir/build.make CMakeFiles/test_i.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 15
+[100%] Building CXX object CMakeFiles/test_i.dir/tests/test_i.cpp.o
+/usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/«PKGBUILDDIR»/src    -o CMakeFiles/test_i.dir/tests/test_i.cpp.o -c /«PKGBUILDDIR»/tests/test_i.cpp
+Linking CXX executable test_i
+/usr/bin/cmake -E cmake_link_script CMakeFiles/test_i.dir/link.txt --verbose=1
+/usr/bin/c++   -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2    -Wl,-z,relro CMakeFiles/test_i.dir/tests/test_i.cpp.o  -o test_i -rdynamic libalglib.so.3.8.0 -Wl,-rpath,/«PKGBUILDDIR»/obj-x86_64-linux-gnu 
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  15
+[100%] Built target test_i
+make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 0
+make[1]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+   dh_auto_test -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+Running tests...
+/usr/bin/ctest --force-new-ctest-process -j1
+Test project /«PKGBUILDDIR»/obj-x86_64-linux-gnu
+    Start 1: test_c
+1/2 Test #1: test_c ...........................   Passed   35.70 sec
+    Start 2: test_i
+2/2 Test #2: test_i ...........................   Passed    0.25 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  35.96 sec
+make[1]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+ fakeroot debian/rules binary
+dh binary --parallel
+   dh_testroot -O--parallel
+   dh_prep -O--parallel
+   dh_auto_install -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -H/«PKGBUILDDIR» -B/«PKGBUILDDIR»/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[2]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/alglib.dir/build.make CMakeFiles/alglib.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR» /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/alglib.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/alglib.dir/build.make CMakeFiles/alglib.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `CMakeFiles/alglib.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13
+[ 86%] Built target alglib
+make -f CMakeFiles/test_c.dir/build.make CMakeFiles/test_c.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR» /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/test_c.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/test_c.dir/build.make CMakeFiles/test_c.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `CMakeFiles/test_c.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  14
+[ 93%] Built target test_c
+make -f CMakeFiles/test_i.dir/build.make CMakeFiles/test_i.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR» /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/test_i.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/test_i.dir/build.make CMakeFiles/test_i.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `CMakeFiles/test_i.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  15
+[100%] Built target test_i
+make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 0
+make -f CMakeFiles/Makefile2 preinstall
+make[2]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[2]: Nothing to be done for `preinstall'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libalglib.so.3.8.0
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libalglib.so.3.8
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libalglib.so
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/alglibinternal.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/optimization.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/alglibmisc.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/interpolation.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/statistics.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/specialfunctions.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/ap.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/integration.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/fasttransforms.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/diffequations.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/stdafx.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/linalg.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/solvers.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/dataanalysis.h
+make[1]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+   dh_install -O--parallel
+   dh_installdocs -O--parallel
+   dh_installchangelogs -O--parallel
+   dh_perl -O--parallel
+   dh_link -O--parallel
+   dh_compress -O--parallel
+   dh_fixperms -O--parallel
+   debian/rules override_dh_strip
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_strip --dbg-package=libalglib3.8-dbg
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_makeshlibs -O--parallel
+   dh_shlibdeps -O--parallel
+   dh_installdeb -O--parallel
+   dh_gencontrol -O--parallel
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: Pre-Depends field of package libalglib3.8-dbg: unknown substitution variable ${misc:Pre-Depends}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums -O--parallel
+   dh_builddeb -O--parallel
+dpkg-deb: building package `libalglib-dev' in `../libalglib-dev_3.8.2-1_amd64.deb'.
+dpkg-deb: building package `libalglib3.8' in `../libalglib3.8_3.8.2-1_amd64.deb'.
+dpkg-deb: building package `libalglib3.8-dbg' in `../libalglib3.8-dbg_3.8.2-1_amd64.deb'.
+ dpkg-genchanges  >../alglib_3.8.2-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build alglib-3.8.2
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-1928
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+alglib_3.8.2-1_amd64.changes:
+─────────────────────────────
+
+Format: 1.8
+Date: Sat, 30 Nov 2013 18:45:20 +0100
+Source: alglib
+Binary: libalglib-dev libalglib3.8 libalglib3.8-dbg
+Architecture: source amd64
+Version: 3.8.2-1
+Distribution: sid
+Urgency: low
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Changed-By: Anton Gladky <gladk@debian.org>
+Description: 
+ libalglib-dev - Development files for the alglib library
+ libalglib3.8 - Numerical analysis and data processing library
+ libalglib3.8-dbg - Debugging symbols for the alglib library
+Changes: 
+ alglib (3.8.2-1) unstable; urgency=low
+ .
+   * [a6b0053] Imported Upstream version 3.8.2
+   * [f6a238d] Refresh patch.
+   * [6145e76] Set Standards-Version 3.9.5, no changes.
+Checksums-Sha1: 
+ 145ef3bb3039b9d58a0b0089d5caa7464780a054 1251 alglib_3.8.2-1.dsc
+ aa8f65186623a95cc5bcc61ffc53d31c1ae642e2 1674260 alglib_3.8.2.orig.tar.gz
+ a57081b64570dd6c2c702939bdf427fd08e43dbe 4944 alglib_3.8.2-1.debian.tar.xz
+ a43f81f8443f811d918ea752805667f4eba11dc5 218460 libalglib-dev_3.8.2-1_amd64.deb
+ d7c26dd35b1e3a1b4dfb62a282d5bffece98aed7 730090 libalglib3.8_3.8.2-1_amd64.deb
+ 6b4874cda708aa81f41837e770ac3284f0e14e6e 1136636 libalglib3.8-dbg_3.8.2-1_amd64.deb
+Checksums-Sha256: 
+ ae7ec5decaa20fc8cde403ee973c01c0b8e56c59fda6d3fce3e48449a2a085ee 1251 alglib_3.8.2-1.dsc
+ c02944558849c8b22f32f8dea03ebf3b77a0aab9aa2518927d25f6bfe7cb06a2 1674260 alglib_3.8.2.orig.tar.gz
+ 5491f0f6f71ecf30e44675c46ceca9ef4440e53761cca965959b002c82fd7cd4 4944 alglib_3.8.2-1.debian.tar.xz
+ 692f430852496743b9efce8afead71a476af227c33ac818b3b1afa17301a35ee 218460 libalglib-dev_3.8.2-1_amd64.deb
+ dfac7171e635aa812d960a1ffba53728db61fc299332b933a266d782559b8154 730090 libalglib3.8_3.8.2-1_amd64.deb
+ a823744f6d8523e09726fd748723ef57c9d539454a0bb92a3712f2426332f793 1136636 libalglib3.8-dbg_3.8.2-1_amd64.deb
+Files: 
+ f40de7180cfab3ee8c2ee576f51bff04 218460 libdevel extra libalglib-dev_3.8.2-1_amd64.deb
+ 08f508a01ad5fd7f04d3e596a97b10c2 730090 libs optional libalglib3.8_3.8.2-1_amd64.deb
+ 46ef222d3a61310a6644ba472b36792c 1136636 debug extra libalglib3.8-dbg_3.8.2-1_amd64.deb
+ 24489e8c27d11bac0eb2e427804e01b9 1251 libs optional alglib_3.8.2-1.dsc
+ a28827b5b9c98638dff7fcfa8f877ac7 1674260 libs optional alglib_3.8.2.orig.tar.gz
+ 1207bb5e56f8a49e0de0af4ebc166afd 4944 libs optional alglib_3.8.2-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libalglib-dev_3.8.2-1_amd64.deb
+───────────────────────────────
+
+ new debian package, version 2.0.
+ size 218460 bytes: control archive=1355 bytes.
+     988 bytes,    28 lines      control              
+    1128 bytes,    18 lines      md5sums              
+ Package: libalglib-dev
+ Source: alglib
+ Version: 3.8.2-1
+ Architecture: amd64
+ Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+ Installed-Size: 3021
+ Depends: libalglib3.8 (= 3.8.2-1)
+ Section: libdevel
+ Priority: extra
+ Homepage: http://www.alglib.net/
+ Description: Development files for the alglib library
+  ALGLIB is a cross-platform numerical analysis and data processing library.
+  This package support C++. ALGLIB features include:
+  .
+     * Linear algebra (direct algorithms, EVD/SVD)
+     * Solvers (linear and nonlinear)
+     * Interpolation
+     * Optimization
+     * Fast Fourier transforms
+     * Numerical integration
+     * Linear and nonlinear least-squares fitting
+     * Ordinary differential equations
+     * Special functions
+     * Statistics (descriptive statistics, hypothesis testing)
+     * Data analysis (classification/regression, including neural networks)
+  .
+  This package contains the development files (headers and documentation) for
+  ALGLIB.
+
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/include/
+-rw-r--r-- root/root     30981 2013-11-22 14:17 ./usr/include/alglibinternal.h
+-rw-r--r-- root/root    171919 2013-11-22 14:17 ./usr/include/optimization.h
+-rw-r--r-- root/root     48183 2013-11-22 14:17 ./usr/include/alglibmisc.h
+-rw-r--r-- root/root    245920 2013-11-22 14:17 ./usr/include/interpolation.h
+-rw-r--r-- root/root     53839 2013-11-22 14:17 ./usr/include/statistics.h
+-rw-r--r-- root/root     63924 2013-11-22 14:17 ./usr/include/specialfunctions.h
+-rw-r--r-- root/root     57064 2013-11-22 14:17 ./usr/include/ap.h
+-rw-r--r-- root/root     32018 2013-11-22 14:17 ./usr/include/integration.h
+-rw-r--r-- root/root     25592 2013-11-22 14:17 ./usr/include/fasttransforms.h
+-rw-r--r-- root/root      9883 2013-11-22 14:17 ./usr/include/diffequations.h
+-rw-r--r-- root/root         4 2013-11-22 14:17 ./usr/include/stdafx.h
+-rw-r--r-- root/root    208690 2013-11-22 14:17 ./usr/include/linalg.h
+-rw-r--r-- root/root     73532 2013-11-22 14:17 ./usr/include/solvers.h
+-rw-r--r-- root/root    296279 2013-11-22 14:17 ./usr/include/dataanalysis.h
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/share/doc-base/
+-rw-r--r-- root/root       291 2013-11-10 09:40 ./usr/share/doc-base/alglib-cpp
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/share/doc/libalglib-dev/
+-rw-r--r-- root/root      1444 2013-11-30 18:45 ./usr/share/doc/libalglib-dev/changelog.Debian.gz
+-rw-r--r-- root/root   1729897 2013-11-22 14:17 ./usr/share/doc/libalglib-dev/manual.cpp.html
+-rw-r--r-- root/root      2195 2013-11-10 09:42 ./usr/share/doc/libalglib-dev/copyright
+lrwxrwxrwx root/root         0 2014-04-28 19:28 ./usr/lib/x86_64-linux-gnu/libalglib.so -> libalglib.so.3.8
+
+
+libalglib3.8_3.8.2-1_amd64.deb
+──────────────────────────────
+
+ new debian package, version 2.0.
+ size 730090 bytes: control archive=1125 bytes.
+     987 bytes,    27 lines      control              
+     230 bytes,     3 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      27 bytes,     1 lines      shlibs               
+ Package: libalglib3.8
+ Source: alglib
+ Version: 3.8.2-1
+ Architecture: amd64
+ Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+ Installed-Size: 2593
+ Pre-Depends: multiarch-support
+ Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+ Section: libs
+ Priority: optional
+ Multi-Arch: same
+ Homepage: http://www.alglib.net/
+ Description: Numerical analysis and data processing library
+  ALGLIB is a cross-platform numerical analysis and data processing library.
+  This package support C++. ALGLIB features include:
+  .
+     * Linear algebra (direct algorithms, EVD/SVD)
+     * Solvers (linear and nonlinear)
+     * Interpolation
+     * Optimization
+     * Fast Fourier transforms
+     * Numerical integration
+     * Linear and nonlinear least-squares fitting
+     * Ordinary differential equations
+     * Special functions
+     * Statistics (descriptive statistics, hypothesis testing)
+     * Data analysis (classification/regression, including neural networks)
+
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root   2618400 2014-04-28 19:28 ./usr/lib/x86_64-linux-gnu/libalglib.so.3.8.0
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/share/doc/libalglib3.8/
+-rw-r--r-- root/root      1444 2013-11-30 18:45 ./usr/share/doc/libalglib3.8/changelog.Debian.gz
+-rw-r--r-- root/root      2195 2013-11-10 09:42 ./usr/share/doc/libalglib3.8/copyright
+lrwxrwxrwx root/root         0 2014-04-28 19:28 ./usr/lib/x86_64-linux-gnu/libalglib.so.3.8 -> libalglib.so.3.8.0
+
+
+libalglib3.8-dbg_3.8.2-1_amd64.deb
+──────────────────────────────────
+
+ new debian package, version 2.0.
+ size 1136636 bytes: control archive=943 bytes.
+     976 bytes,    28 lines      control              
+     266 bytes,     3 lines      md5sums              
+ Package: libalglib3.8-dbg
+ Source: alglib
+ Version: 3.8.2-1
+ Architecture: amd64
+ Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+ Installed-Size: 1508
+ Depends: libalglib3.8 (= 3.8.2-1)
+ Section: debug
+ Priority: extra
+ Multi-Arch: same
+ Homepage: http://www.alglib.net/
+ Description: Debugging symbols for the alglib library
+  ALGLIB is a cross-platform numerical analysis and data processing library.
+  This package support C++. ALGLIB features include:
+  .
+     * Linear algebra (direct algorithms, EVD/SVD)
+     * Solvers (linear and nonlinear)
+     * Interpolation
+     * Optimization
+     * Fast Fourier transforms
+     * Numerical integration
+     * Linear and nonlinear least-squares fitting
+     * Ordinary differential equations
+     * Special functions
+     * Statistics (descriptive statistics, hypothesis testing)
+     * Data analysis (classification/regression, including neural networks)
+  .
+  This package contains the debugging symbols for ALGLIB.
+
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/lib/debug/.build-id/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/lib/debug/.build-id/2e/
+-rw-r--r-- root/root   1498862 2014-04-28 19:28 ./usr/lib/debug/.build-id/2e/7aa0492a58503939f31e10fe8193ba1cb5f184.debug
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 19:28 ./usr/share/doc/libalglib3.8-dbg/
+-rw-r--r-- root/root      1444 2013-11-30 18:45 ./usr/share/doc/libalglib3.8-dbg/changelog.Debian.gz
+-rw-r--r-- root/root      2195 2013-11-10 09:42 ./usr/share/doc/libalglib3.8-dbg/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 65064
+Build-Time: 71
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 15
+Job: alglib_3.8.2-1.dsc
+Machine Architecture: amd64
+Package: alglib
+Package-Time: 91
+Source-Version: 3.8.2-1
+Space: 65064
+Status: successful
+Version: 3.8.2-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-1928
+Build needed 00:01:31, 65064k disc space

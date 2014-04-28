@@ -1,0 +1,2525 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ coinor-osi 0.106.4-1 (amd64)                               28 Apr 2014 18:04 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: coinor-osi
+Version: 0.106.4-1
+Source Version: 0.106.4-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/coinor-osi-6yXHHC/coinor-osi-0.106.4' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/coinor-osi-6yXHHC' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-be73b780-420c-4b0f-bb79-b8f605b8c813' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+coinor-osi_0.106.4-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-suKrnb/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), doxygen, graphviz, coinor-libcoinutils-dev (>= 2.9.4), pkg-config, zlib1g-dev, libbz2-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), doxygen, graphviz, coinor-libcoinutils-dev (>= 2.9.4), pkg-config, zlib1g-dev, libbz2-dev
+dpkg-deb: building package `sbuild-build-depends-coinor-osi-dummy' in `/«BUILDDIR»/resolver-CuySD8/apt_archive/sbuild-build-depends-coinor-osi-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install coinor-osi build dependencies (apt-based resolver)                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils coinor-libcoinutils-dev coinor-libcoinutils3 debhelper doxygen
+  file fontconfig fontconfig-config fonts-dejavu-core gettext gettext-base
+  graphviz groff-base intltool-debian libasprintf0c2 libbz2-dev libcairo2
+  libcdt4 libcgraph5 libcroco3 libdatrie1 libdrm2 libegl1-mesa libexpat1
+  libfontconfig1 libfreetype6 libgbm1 libgd3 libgl1-mesa-glx libglapi-mesa
+  libglib2.0-0 libgraph4 libgraphite2-3 libgvc5 libgvpr1 libharfbuzz0b libice6
+  libjbig0 libjpeg8 libltdl7 libmagic1 libpango-1.0-0 libpangocairo-1.0-0
+  libpangoft2-1.0-0 libpathplan4 libpipeline1 libpixman-1-0 libpng12-0 libsm6
+  libthai-data libthai0 libtiff5 libudev1 libunistring0 libvpx1
+  libwayland-client0 libwayland-server0 libx11-6 libx11-data libx11-xcb1
+  libxau6 libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+  libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb1
+  libxdamage1 libxdmcp6 libxdot4 libxext6 libxfixes3 libxml2 libxmu6 libxpm4
+  libxrender1 libxshmfence1 libxt6 libxxf86vm1 man-db pkg-config po-debconf
+  ucf x11-common zlib1g-dev
+Suggested packages:
+  wamerican wordlist whois vacation dh-make doxygen-latex doxygen-doc
+  doxygen-gui gettext-doc gsfonts graphviz-doc groff libgd-tools ttf-baekmuk
+  ttf-arphic-gbsn00lp ttf-arphic-bsmi00lp ttf-arphic-gkai00mp
+  ttf-arphic-bkai00mp less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev ttf-liberation
+  libegl1-mesa-drivers libgl1-mesa-dri libglib2.0-data shared-mime-info
+  xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils coinor-libcoinutils-dev coinor-libcoinutils3 debhelper doxygen
+  file fontconfig fontconfig-config fonts-dejavu-core gettext gettext-base
+  graphviz groff-base intltool-debian libasprintf0c2 libbz2-dev libcairo2
+  libcdt4 libcgraph5 libcroco3 libdatrie1 libdrm2 libegl1-mesa libexpat1
+  libfontconfig1 libfreetype6 libgbm1 libgd3 libgl1-mesa-glx libglapi-mesa
+  libglib2.0-0 libgraph4 libgraphite2-3 libgvc5 libgvpr1 libharfbuzz0b libice6
+  libjbig0 libjpeg8 libltdl7 libmagic1 libpango-1.0-0 libpangocairo-1.0-0
+  libpangoft2-1.0-0 libpathplan4 libpipeline1 libpixman-1-0 libpng12-0 libsm6
+  libthai-data libthai0 libtiff5 libudev1 libunistring0 libvpx1
+  libwayland-client0 libwayland-server0 libx11-6 libx11-data libx11-xcb1
+  libxau6 libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+  libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb1
+  libxdamage1 libxdmcp6 libxdot4 libxext6 libxfixes3 libxml2 libxmu6 libxpm4
+  libxrender1 libxshmfence1 libxt6 libxxf86vm1 man-db pkg-config po-debconf
+  sbuild-build-depends-coinor-osi-dummy ucf x11-common zlib1g-dev
+0 upgraded, 91 newly installed, 0 to remove and 8 not upgraded.
+Need to get 24.3 MB/24.3 MB of archives.
+After this operation, 71.8 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libudev1 amd64 204-9 [45.7 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libdrm2 amd64 2.4.52-1 [29.2 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libglapi-mesa amd64 10.1.0-5 [50.8 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libwayland-client0 amd64 1.4.0-1 [22.5 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libwayland-server0 amd64 1.4.0-1 [27.5 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libxau6 amd64 1:1.0.8-1 [20.7 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libxdmcp6 amd64 1:1.1.1-1 [26.3 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libxcb1 amd64 1.10-2 [41.8 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libxcb-dri2-0 amd64 1.10-2 [12.1 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libgbm1 amd64 10.1.0-5 [534 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libx11-data all 2:1.6.2-1 [125 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libx11-6 amd64 2:1.6.2-1 [716 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libx11-xcb1 amd64 2:1.6.2-1 [162 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libxcb-render0 amd64 1.10-2 [16.5 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libxcb-shape0 amd64 1.10-2 [11.0 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libxcb-xfixes0 amd64 1.10-2 [13.9 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main libegl1-mesa amd64 10.1.0-5 [88.3 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main libexpat1 amd64 2.1.0-4 [138 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libpng12-0 amd64 1.2.50-1 [189 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main libfreetype6 amd64 2.5.2-1 [454 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main ucf all 3.0028 [69.1 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main fonts-dejavu-core all 2.34-1 [1047 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main fontconfig-config all 2.11.0-5 [273 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main libfontconfig1 amd64 2.11.0-5 [327 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main libxcb-dri3-0 amd64 1.10-2 [10.6 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main libxcb-glx0 amd64 1.10-2 [25.3 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main libxcb-present0 amd64 1.10-2 [10.7 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main libxcb-sync1 amd64 1.10-2 [13.6 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main libxfixes3 amd64 1:5.0.1-1 [22.5 kB]
+Get:37 http://debian.proxad.net/debian/ sid/main libxdamage1 amd64 1:1.1.4-1 [15.1 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main libxext6 amd64 2:1.3.2-1 [56.5 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main libxshmfence1 amd64 1.1-2 [6452 B]
+Get:40 http://debian.proxad.net/debian/ sid/main libxxf86vm1 amd64 1:1.1.3-1 [19.1 kB]
+Get:41 http://debian.proxad.net/debian/ sid/main libgl1-mesa-glx amd64 10.1.0-5 [144 kB]
+Get:42 http://debian.proxad.net/debian/ sid/main libpixman-1-0 amd64 0.32.4-1 [496 kB]
+Get:43 http://debian.proxad.net/debian/ sid/main libxcb-shm0 amd64 1.10-2 [10.8 kB]
+Get:44 http://debian.proxad.net/debian/ sid/main libxrender1 amd64 1:0.9.8-1 [33.5 kB]
+Get:45 http://debian.proxad.net/debian/ sid/main libcairo2 amd64 1.12.16-2 [987 kB]
+Get:46 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:47 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:48 http://debian.proxad.net/debian/ sid/main libdatrie1 amd64 0.2.8-1 [32.6 kB]
+Get:49 http://debian.proxad.net/debian/ sid/main libjpeg8 amd64 8d-2 [120 kB]
+Get:50 http://debian.proxad.net/debian/ sid/main libjbig0 amd64 2.0-2.1 [29.3 kB]
+Get:51 http://debian.proxad.net/debian/ sid/main libtiff5 amd64 4.0.3-8 [209 kB]
+Get:52 http://debian.proxad.net/debian/ sid/main libvpx1 amd64 1.3.0-2 [565 kB]
+Get:53 http://debian.proxad.net/debian/ sid/main libxpm4 amd64 1:3.5.10-1 [49.4 kB]
+Get:54 http://debian.proxad.net/debian/ sid/main libgd3 amd64 2.1.0-3+b1 [144 kB]
+Get:55 http://debian.proxad.net/debian/ sid/main libgraphite2-3 amd64 1.2.4-2 [57.4 kB]
+Get:56 http://debian.proxad.net/debian/ sid/main libharfbuzz0b amd64 0.9.27-1 [450 kB]
+Get:57 http://debian.proxad.net/debian/ sid/main x11-common all 1:7.7+7 [287 kB]
+Get:58 http://debian.proxad.net/debian/ sid/main libice6 amd64 2:1.0.8-2 [63.1 kB]
+Get:59 http://debian.proxad.net/debian/ sid/main libltdl7 amd64 2.4.2-1.7 [352 kB]
+Get:60 http://debian.proxad.net/debian/ sid/main libthai-data all 0.1.20-3 [157 kB]
+Get:61 http://debian.proxad.net/debian/ sid/main libthai0 amd64 0.1.20-3 [44.2 kB]
+Get:62 http://debian.proxad.net/debian/ sid/main fontconfig amd64 2.11.0-5 [402 kB]
+Get:63 http://debian.proxad.net/debian/ sid/main libpango-1.0-0 amd64 1.36.3-1 [281 kB]
+Get:64 http://debian.proxad.net/debian/ sid/main libpangoft2-1.0-0 amd64 1.36.3-1 [205 kB]
+Get:65 http://debian.proxad.net/debian/ sid/main libpangocairo-1.0-0 amd64 1.36.3-1 [192 kB]
+Get:66 http://debian.proxad.net/debian/ sid/main libsm6 amd64 2:1.2.1-2 [34.2 kB]
+Get:67 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:68 http://debian.proxad.net/debian/ sid/main libxt6 amd64 1:1.1.4-1 [180 kB]
+Get:69 http://debian.proxad.net/debian/ sid/main libxmu6 amd64 2:1.1.1-1 [66.6 kB]
+Get:70 http://debian.proxad.net/debian/ sid/main libxaw7 amd64 2:1.0.12-1 [192 kB]
+Get:71 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:72 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:73 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:74 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:75 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:76 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:77 http://debian.proxad.net/debian/ sid/main doxygen amd64 1.8.6-2 [2454 kB]
+Get:78 http://debian.proxad.net/debian/ sid/main libcdt4 amd64 2.26.3-17 [57.9 kB]
+Get:79 http://debian.proxad.net/debian/ sid/main libcgraph5 amd64 2.26.3-17 [79.8 kB]
+Get:80 http://debian.proxad.net/debian/ sid/main libgraph4 amd64 2.26.3-17 [69.1 kB]
+Get:81 http://debian.proxad.net/debian/ sid/main libpathplan4 amd64 2.26.3-17 [62.1 kB]
+Get:82 http://debian.proxad.net/debian/ sid/main libxdot4 amd64 2.26.3-17 [52.7 kB]
+Get:83 http://debian.proxad.net/debian/ sid/main libgvc5 amd64 2.26.3-17 [437 kB]
+Get:84 http://debian.proxad.net/debian/ sid/main libgvpr1 amd64 2.26.3-17 [205 kB]
+Get:85 http://debian.proxad.net/debian/ sid/main graphviz amd64 2.26.3-17 [308 kB]
+Get:86 http://debian.proxad.net/debian/ sid/main libbz2-dev amd64 1.0.6-5 [28.7 kB]
+Get:87 http://debian.proxad.net/debian/ sid/main pkg-config amd64 0.28-1 [57.5 kB]
+Get:88 http://debian.proxad.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-1 [217 kB]
+Get:89 http://debian.proxad.net/debian/ sid/main coinor-libcoinutils3 amd64 2.9.10-1 [463 kB]
+Get:90 http://debian.proxad.net/debian/ sid/main coinor-libcoinutils-dev amd64 2.9.10-1 [768 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 24.3 MB in 7s (3166 kB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libudev1:amd64.
+Preparing to unpack .../libudev1_204-9_amd64.deb ...
+Unpacking libudev1:amd64 (204-9) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libdrm2:amd64.
+Preparing to unpack .../libdrm2_2.4.52-1_amd64.deb ...
+Unpacking libdrm2:amd64 (2.4.52-1) ...
+Selecting previously unselected package libglapi-mesa:amd64.
+Preparing to unpack .../libglapi-mesa_10.1.0-5_amd64.deb ...
+Unpacking libglapi-mesa:amd64 (10.1.0-5) ...
+Selecting previously unselected package libwayland-client0:amd64.
+Preparing to unpack .../libwayland-client0_1.4.0-1_amd64.deb ...
+Unpacking libwayland-client0:amd64 (1.4.0-1) ...
+Selecting previously unselected package libwayland-server0:amd64.
+Preparing to unpack .../libwayland-server0_1.4.0-1_amd64.deb ...
+Unpacking libwayland-server0:amd64 (1.4.0-1) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../libxau6_1%3a1.0.8-1_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.8-1) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../libxdmcp6_1%3a1.1.1-1_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.1-1) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../libxcb1_1.10-2_amd64.deb ...
+Unpacking libxcb1:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-dri2-0:amd64.
+Preparing to unpack .../libxcb-dri2-0_1.10-2_amd64.deb ...
+Unpacking libxcb-dri2-0:amd64 (1.10-2) ...
+Selecting previously unselected package libgbm1:amd64.
+Preparing to unpack .../libgbm1_10.1.0-5_amd64.deb ...
+Unpacking libgbm1:amd64 (10.1.0-5) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../libx11-data_2%3a1.6.2-1_all.deb ...
+Unpacking libx11-data (2:1.6.2-1) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../libx11-6_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../libx11-xcb1_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package libxcb-render0:amd64.
+Preparing to unpack .../libxcb-render0_1.10-2_amd64.deb ...
+Unpacking libxcb-render0:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-shape0:amd64.
+Preparing to unpack .../libxcb-shape0_1.10-2_amd64.deb ...
+Unpacking libxcb-shape0:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-xfixes0:amd64.
+Preparing to unpack .../libxcb-xfixes0_1.10-2_amd64.deb ...
+Unpacking libxcb-xfixes0:amd64 (1.10-2) ...
+Selecting previously unselected package libegl1-mesa:amd64.
+Preparing to unpack .../libegl1-mesa_10.1.0-5_amd64.deb ...
+Unpacking libegl1-mesa:amd64 (10.1.0-5) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-4) ...
+Selecting previously unselected package libpng12-0:amd64.
+Preparing to unpack .../libpng12-0_1.2.50-1_amd64.deb ...
+Unpacking libpng12-0:amd64 (1.2.50-1) ...
+Selecting previously unselected package libfreetype6:amd64.
+Preparing to unpack .../libfreetype6_2.5.2-1_amd64.deb ...
+Unpacking libfreetype6:amd64 (2.5.2-1) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../archives/ucf_3.0028_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0028) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../fonts-dejavu-core_2.34-1_all.deb ...
+Unpacking fonts-dejavu-core (2.34-1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../fontconfig-config_2.11.0-5_all.deb ...
+Unpacking fontconfig-config (2.11.0-5) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../libfontconfig1_2.11.0-5_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.11.0-5) ...
+Selecting previously unselected package libxcb-dri3-0:amd64.
+Preparing to unpack .../libxcb-dri3-0_1.10-2_amd64.deb ...
+Unpacking libxcb-dri3-0:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-glx0:amd64.
+Preparing to unpack .../libxcb-glx0_1.10-2_amd64.deb ...
+Unpacking libxcb-glx0:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-present0:amd64.
+Preparing to unpack .../libxcb-present0_1.10-2_amd64.deb ...
+Unpacking libxcb-present0:amd64 (1.10-2) ...
+Selecting previously unselected package libxcb-sync1:amd64.
+Preparing to unpack .../libxcb-sync1_1.10-2_amd64.deb ...
+Unpacking libxcb-sync1:amd64 (1.10-2) ...
+Selecting previously unselected package libxfixes3:amd64.
+Preparing to unpack .../libxfixes3_1%3a5.0.1-1_amd64.deb ...
+Unpacking libxfixes3:amd64 (1:5.0.1-1) ...
+Selecting previously unselected package libxdamage1:amd64.
+Preparing to unpack .../libxdamage1_1%3a1.1.4-1_amd64.deb ...
+Unpacking libxdamage1:amd64 (1:1.1.4-1) ...
+Selecting previously unselected package libxext6:amd64.
+Preparing to unpack .../libxext6_2%3a1.3.2-1_amd64.deb ...
+Unpacking libxext6:amd64 (2:1.3.2-1) ...
+Selecting previously unselected package libxshmfence1:amd64.
+Preparing to unpack .../libxshmfence1_1.1-2_amd64.deb ...
+Unpacking libxshmfence1:amd64 (1.1-2) ...
+Selecting previously unselected package libxxf86vm1:amd64.
+Preparing to unpack .../libxxf86vm1_1%3a1.1.3-1_amd64.deb ...
+Unpacking libxxf86vm1:amd64 (1:1.1.3-1) ...
+Selecting previously unselected package libgl1-mesa-glx:amd64.
+Preparing to unpack .../libgl1-mesa-glx_10.1.0-5_amd64.deb ...
+Unpacking libgl1-mesa-glx:amd64 (10.1.0-5) ...
+Selecting previously unselected package libpixman-1-0:amd64.
+Preparing to unpack .../libpixman-1-0_0.32.4-1_amd64.deb ...
+Unpacking libpixman-1-0:amd64 (0.32.4-1) ...
+Selecting previously unselected package libxcb-shm0:amd64.
+Preparing to unpack .../libxcb-shm0_1.10-2_amd64.deb ...
+Unpacking libxcb-shm0:amd64 (1.10-2) ...
+Selecting previously unselected package libxrender1:amd64.
+Preparing to unpack .../libxrender1_1%3a0.9.8-1_amd64.deb ...
+Unpacking libxrender1:amd64 (1:0.9.8-1) ...
+Selecting previously unselected package libcairo2:amd64.
+Preparing to unpack .../libcairo2_1.12.16-2_amd64.deb ...
+Unpacking libcairo2:amd64 (1.12.16-2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libdatrie1:amd64.
+Preparing to unpack .../libdatrie1_0.2.8-1_amd64.deb ...
+Unpacking libdatrie1:amd64 (0.2.8-1) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../libjpeg8_8d-2_amd64.deb ...
+Unpacking libjpeg8:amd64 (8d-2) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../libjbig0_2.0-2.1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.0-2.1) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../libtiff5_4.0.3-8_amd64.deb ...
+Unpacking libtiff5:amd64 (4.0.3-8) ...
+Selecting previously unselected package libvpx1:amd64.
+Preparing to unpack .../libvpx1_1.3.0-2_amd64.deb ...
+Unpacking libvpx1:amd64 (1.3.0-2) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../libxpm4_1%3a3.5.10-1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.10-1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../libgd3_2.1.0-3+b1_amd64.deb ...
+Unpacking libgd3:amd64 (2.1.0-3+b1) ...
+Selecting previously unselected package libgraphite2-3:amd64.
+Preparing to unpack .../libgraphite2-3_1.2.4-2_amd64.deb ...
+Unpacking libgraphite2-3:amd64 (1.2.4-2) ...
+Selecting previously unselected package libharfbuzz0b:amd64.
+Preparing to unpack .../libharfbuzz0b_0.9.27-1_amd64.deb ...
+Unpacking libharfbuzz0b:amd64 (0.9.27-1) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../x11-common_1%3a7.7+7_all.deb ...
+Unpacking x11-common (1:7.7+7) ...
+Selecting previously unselected package libice6:amd64.
+Preparing to unpack .../libice6_2%3a1.0.8-2_amd64.deb ...
+Unpacking libice6:amd64 (2:1.0.8-2) ...
+Selecting previously unselected package libltdl7:amd64.
+Preparing to unpack .../libltdl7_2.4.2-1.7_amd64.deb ...
+Unpacking libltdl7:amd64 (2.4.2-1.7) ...
+Selecting previously unselected package libthai-data.
+Preparing to unpack .../libthai-data_0.1.20-3_all.deb ...
+Unpacking libthai-data (0.1.20-3) ...
+Selecting previously unselected package libthai0:amd64.
+Preparing to unpack .../libthai0_0.1.20-3_amd64.deb ...
+Unpacking libthai0:amd64 (0.1.20-3) ...
+Selecting previously unselected package fontconfig.
+Preparing to unpack .../fontconfig_2.11.0-5_amd64.deb ...
+Unpacking fontconfig (2.11.0-5) ...
+Selecting previously unselected package libpango-1.0-0:amd64.
+Preparing to unpack .../libpango-1.0-0_1.36.3-1_amd64.deb ...
+Unpacking libpango-1.0-0:amd64 (1.36.3-1) ...
+Selecting previously unselected package libpangoft2-1.0-0:amd64.
+Preparing to unpack .../libpangoft2-1.0-0_1.36.3-1_amd64.deb ...
+Unpacking libpangoft2-1.0-0:amd64 (1.36.3-1) ...
+Selecting previously unselected package libpangocairo-1.0-0:amd64.
+Preparing to unpack .../libpangocairo-1.0-0_1.36.3-1_amd64.deb ...
+Unpacking libpangocairo-1.0-0:amd64 (1.36.3-1) ...
+Selecting previously unselected package libsm6:amd64.
+Preparing to unpack .../libsm6_2%3a1.2.1-2_amd64.deb ...
+Unpacking libsm6:amd64 (2:1.2.1-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package libxt6:amd64.
+Preparing to unpack .../libxt6_1%3a1.1.4-1_amd64.deb ...
+Unpacking libxt6:amd64 (1:1.1.4-1) ...
+Selecting previously unselected package libxmu6:amd64.
+Preparing to unpack .../libxmu6_2%3a1.1.1-1_amd64.deb ...
+Unpacking libxmu6:amd64 (2:1.1.1-1) ...
+Selecting previously unselected package libxaw7:amd64.
+Preparing to unpack .../libxaw7_2%3a1.0.12-1_amd64.deb ...
+Unpacking libxaw7:amd64 (2:1.0.12-1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package doxygen.
+Preparing to unpack .../doxygen_1.8.6-2_amd64.deb ...
+Unpacking doxygen (1.8.6-2) ...
+Selecting previously unselected package libcdt4.
+Preparing to unpack .../libcdt4_2.26.3-17_amd64.deb ...
+Unpacking libcdt4 (2.26.3-17) ...
+Selecting previously unselected package libcgraph5.
+Preparing to unpack .../libcgraph5_2.26.3-17_amd64.deb ...
+Unpacking libcgraph5 (2.26.3-17) ...
+Selecting previously unselected package libgraph4.
+Preparing to unpack .../libgraph4_2.26.3-17_amd64.deb ...
+Unpacking libgraph4 (2.26.3-17) ...
+Selecting previously unselected package libpathplan4.
+Preparing to unpack .../libpathplan4_2.26.3-17_amd64.deb ...
+Unpacking libpathplan4 (2.26.3-17) ...
+Selecting previously unselected package libxdot4.
+Preparing to unpack .../libxdot4_2.26.3-17_amd64.deb ...
+Unpacking libxdot4 (2.26.3-17) ...
+Selecting previously unselected package libgvc5.
+Preparing to unpack .../libgvc5_2.26.3-17_amd64.deb ...
+Unpacking libgvc5 (2.26.3-17) ...
+Selecting previously unselected package libgvpr1.
+Preparing to unpack .../libgvpr1_2.26.3-17_amd64.deb ...
+Unpacking libgvpr1 (2.26.3-17) ...
+Selecting previously unselected package graphviz.
+Preparing to unpack .../graphviz_2.26.3-17_amd64.deb ...
+Unpacking graphviz (2.26.3-17) ...
+Selecting previously unselected package libbz2-dev:amd64.
+Preparing to unpack .../libbz2-dev_1.0.6-5_amd64.deb ...
+Unpacking libbz2-dev:amd64 (1.0.6-5) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../pkg-config_0.28-1_amd64.deb ...
+Unpacking pkg-config (0.28-1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Selecting previously unselected package coinor-libcoinutils3.
+Preparing to unpack .../coinor-libcoinutils3_2.9.10-1_amd64.deb ...
+Unpacking coinor-libcoinutils3 (2.9.10-1) ...
+Selecting previously unselected package coinor-libcoinutils-dev.
+Preparing to unpack .../coinor-libcoinutils-dev_2.9.10-1_amd64.deb ...
+Unpacking coinor-libcoinutils-dev (2.9.10-1) ...
+Selecting previously unselected package sbuild-build-depends-coinor-osi-dummy.
+Preparing to unpack .../sbuild-build-depends-coinor-osi-dummy.deb ...
+Unpacking sbuild-build-depends-coinor-osi-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libudev1:amd64 (204-9) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libdrm2:amd64 (2.4.52-1) ...
+Setting up libglapi-mesa:amd64 (10.1.0-5) ...
+Setting up libwayland-client0:amd64 (1.4.0-1) ...
+Setting up libwayland-server0:amd64 (1.4.0-1) ...
+Setting up libxau6:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp6:amd64 (1:1.1.1-1) ...
+Setting up libxcb1:amd64 (1.10-2) ...
+Setting up libxcb-dri2-0:amd64 (1.10-2) ...
+Setting up libgbm1:amd64 (10.1.0-5) ...
+Setting up libx11-data (2:1.6.2-1) ...
+Setting up libx11-6:amd64 (2:1.6.2-1) ...
+Setting up libx11-xcb1:amd64 (2:1.6.2-1) ...
+Setting up libxcb-render0:amd64 (1.10-2) ...
+Setting up libxcb-shape0:amd64 (1.10-2) ...
+Setting up libxcb-xfixes0:amd64 (1.10-2) ...
+Setting up libegl1-mesa:amd64 (10.1.0-5) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libpng12-0:amd64 (1.2.50-1) ...
+Setting up libfreetype6:amd64 (2.5.2-1) ...
+Setting up ucf (3.0028) ...
+Setting up fonts-dejavu-core (2.34-1) ...
+Setting up fontconfig-config (2.11.0-5) ...
+Setting up libfontconfig1:amd64 (2.11.0-5) ...
+Setting up libxcb-dri3-0:amd64 (1.10-2) ...
+Setting up libxcb-glx0:amd64 (1.10-2) ...
+Setting up libxcb-present0:amd64 (1.10-2) ...
+Setting up libxcb-sync1:amd64 (1.10-2) ...
+Setting up libxfixes3:amd64 (1:5.0.1-1) ...
+Setting up libxdamage1:amd64 (1:1.1.4-1) ...
+Setting up libxext6:amd64 (2:1.3.2-1) ...
+Setting up libxshmfence1:amd64 (1.1-2) ...
+Setting up libxxf86vm1:amd64 (1:1.1.3-1) ...
+Setting up libgl1-mesa-glx:amd64 (10.1.0-5) ...
+Setting up libpixman-1-0:amd64 (0.32.4-1) ...
+Setting up libxcb-shm0:amd64 (1.10-2) ...
+Setting up libxrender1:amd64 (1:0.9.8-1) ...
+Setting up libcairo2:amd64 (1.12.16-2) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libdatrie1:amd64 (0.2.8-1) ...
+Setting up libjpeg8:amd64 (8d-2) ...
+Setting up libjbig0:amd64 (2.0-2.1) ...
+Setting up libtiff5:amd64 (4.0.3-8) ...
+Setting up libvpx1:amd64 (1.3.0-2) ...
+Setting up libxpm4:amd64 (1:3.5.10-1) ...
+Setting up libgd3:amd64 (2.1.0-3+b1) ...
+Setting up libgraphite2-3:amd64 (1.2.4-2) ...
+Setting up libharfbuzz0b:amd64 (0.9.27-1) ...
+Setting up x11-common (1:7.7+7) ...
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+All runlevel operations denied by policy
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libice6:amd64 (2:1.0.8-2) ...
+Setting up libltdl7:amd64 (2.4.2-1.7) ...
+Setting up libthai-data (0.1.20-3) ...
+Setting up libthai0:amd64 (0.1.20-3) ...
+Setting up fontconfig (2.11.0-5) ...
+Regenerating fonts cache... done.
+Setting up libpango-1.0-0:amd64 (1.36.3-1) ...
+Setting up libpangoft2-1.0-0:amd64 (1.36.3-1) ...
+Setting up libpangocairo-1.0-0:amd64 (1.36.3-1) ...
+Setting up libsm6:amd64 (2:1.2.1-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libxt6:amd64 (1:1.1.4-1) ...
+Setting up libxmu6:amd64 (2:1.1.1-1) ...
+Setting up libxaw7:amd64 (2:1.0.12-1) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up doxygen (1.8.6-2) ...
+Setting up libcdt4 (2.26.3-17) ...
+Setting up libcgraph5 (2.26.3-17) ...
+Setting up libgraph4 (2.26.3-17) ...
+Setting up libpathplan4 (2.26.3-17) ...
+Setting up libxdot4 (2.26.3-17) ...
+Setting up libgvc5 (2.26.3-17) ...
+Setting up libgvpr1 (2.26.3-17) ...
+Setting up graphviz (2.26.3-17) ...
+Setting up libbz2-dev:amd64 (1.0.6-5) ...
+Setting up pkg-config (0.28-1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Setting up coinor-libcoinutils3 (2.9.10-1) ...
+Setting up coinor-libcoinutils-dev (2.9.10-1) ...
+Setting up sbuild-build-depends-coinor-osi-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coinor-libcoinutils-dev_2.9.10-1 coinor-libcoinutils3_2.9.10-1 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 doxygen_1.8.6-2 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 fontconfig_2.11.0-5 fontconfig-config_2.11.0-5 fonts-dejavu-core_2.34-1 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 graphviz_2.26.3-17 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libbz2-dev_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcairo2_1.12.16-2 libcap2_1:2.22-1.2 libcdt4_2.26.3-17 libcgraph5_2.26.3-17 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdatrie1_0.2.8-1 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libdrm2_2.4.52-1 libegl1-mesa_10.1.0-5 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libfontconfig1_2.11.0-5 libfreetype6_2.5.2-1 libgbm1_10.1.0-5 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgd3_2.1.0-3+b1 libgdbm3_1.8.3-12 libgl1-mesa-glx_10.1.0-5 libglapi-mesa_10.1.0-5 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libgraph4_2.26.3-17 libgraphite2-3_1.2.4-2 libgvc5_2.26.3-17 libgvpr1_2.26.3-17 libharfbuzz0b_0.9.27-1 libice6_2:1.0.8-2 libisl10_0.12.2-1 libitm1_4.9.0-1 libjbig0_2.0-2.1 libjpeg8_8d-2 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 libltdl7_2.4.2-1.7 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpango-1.0-0_1.36.3-1 libpangocairo-1.0-0_1.36.3-1 libpangoft2-1.0-0_1.36.3-1 libpathplan4_2.26.3-17 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libpixman-1-0_0.32.4-1 libpng12-0_1.2.50-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libsm6_2:1.2.1-2 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libthai-data_0.1.20-3 libthai0_0.1.20-3 libtiff5_4.0.3-8 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libudev1_204-9 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libvpx1_1.3.0-2 libwayland-client0_1.4.0-1 libwayland-server0_1.4.0-1 libx11-6_2:1.6.2-1 libx11-data_2:1.6.2-1 libx11-xcb1_2:1.6.2-1 libxau6_1:1.0.8-1 libxaw7_2:1.0.12-1 libxcb-dri2-0_1.10-2 libxcb-dri3-0_1.10-2 libxcb-glx0_1.10-2 libxcb-present0_1.10-2 libxcb-render0_1.10-2 libxcb-shape0_1.10-2 libxcb-shm0_1.10-2 libxcb-sync1_1.10-2 libxcb-xfixes0_1.10-2 libxcb1_1.10-2 libxdamage1_1:1.1.4-1 libxdmcp6_1:1.1.1-1 libxdot4_2.26.3-17 libxext6_2:1.3.2-1 libxfixes3_1:5.0.1-1 libxml2_2.9.1+dfsg1-3 libxmu6_2:1.1.1-1 libxpm4_1:3.5.10-1 libxrender1_1:0.9.8-1 libxshmfence1_1.1-2 libxt6_1:1.1.4-1 libxxf86vm1_1:1.1.3-1 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 pkg-config_0.28-1 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-coinor-osi-dummy_0.invalid.0 sbuild-build-depends-core-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 ucf_3.0028 util-linux_2.20.1-5.7 x11-common_1:7.7+7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1 zlib1g-dev_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Sat Nov 30 21:22:02 2013 UTC using RSA key ID 0ECEBE4A
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./coinor-osi_0.106.4-1.dsc
+dpkg-source: info: extracting coinor-osi in coinor-osi-0.106.4
+dpkg-source: info: unpacking coinor-osi_0.106.4.orig.tar.gz
+dpkg-source: info: unpacking coinor-osi_0.106.4-1.debian.tar.gz
+dpkg-source: info: applying shlibdeps.patch
+dpkg-source: info: applying fix-addlibs-file.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-be73b780-420c-4b0f-bb79-b8f605b8c813
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package coinor-osi
+dpkg-buildpackage: source version 0.106.4-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Miles Lubin <miles.lubin@gmail.com>
+ dpkg-source --before-build coinor-osi-0.106.4
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b coinor-osi-0.106.4
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building coinor-osi using existing ./coinor-osi_0.106.4.orig.tar.gz
+dpkg-source: info: building coinor-osi in coinor-osi_0.106.4-1.debian.tar.xz
+dpkg-source: info: building coinor-osi in coinor-osi_0.106.4-1.dsc
+ debian/rules build
+dh build 
+   dh_testdir
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_configure -- --enable-static --enable-dot
+checking build system type... x86_64-pc-linux-gnu
+checking for svnversion... no
+checking whether we want to compile in debug mode... no
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+configure: C compiler options are: -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking whether C++ compiler g++ works... yes
+configure: C++ compiler options are: -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD
+checking for egrep... grep -E
+checking whether ln -s works... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking dependency style of g++... none
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking host system type... x86_64-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for f77... no
+checking for xlf... no
+checking for frt... no
+checking for pgf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for f90... no
+checking for xlf90... no
+checking for pgf90... no
+checking for epcf90... no
+checking for f95... no
+checking for fort... no
+checking for xlf95... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for gfortran... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: Build is "x86_64-pc-linux-gnu".
+checking if library version is set... 12:4:11
+checking for pkg-config... pkg-config
+checking pkg-config is at least version 0.16.0... yes
+checking for COIN-OR package CoinUtils... yes: 2.9.10 
+checking for COIN-OR package Glpk... not given: No package 'coinglpk' found
+checking for COIN-OR package SoPlex... not given: No package 'coinsoplex' found
+checking for COIN-OR package Sample... yes: 1.2.9 
+checking for COIN-OR package Netlib... not given: No package 'coindatanetlib' found
+checking if user provides library for Cplex... no
+checking if user provides library for Mosek... no
+checking if user provides library for Xpress... no
+checking if user provides library for Gurobi... no
+configure: WARNING: No solver available, examples will not work.
+configure: configuring doxygen documentation options
+checking for doxygen... yes
+checking for dot... YES
+checking for doxygen doc'n for CoinUtils ... /usr/share/coin/doc/CoinUtils/doxydoc (tag)
+checking cmath usability... yes
+checking cmath presence... yes
+checking for cmath... yes
+checking cfloat usability... yes
+checking cfloat presence... yes
+checking for cfloat... yes
+checking cieeefp usability... no
+checking cieeefp presence... no
+checking for cieeefp... no
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking which command should be used to link input files... ln -s
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating examples/Makefile
+config.status: creating src/Osi/Makefile
+config.status: creating src/OsiCpx/Makefile
+config.status: creating src/OsiGlpk/Makefile
+config.status: creating src/OsiMsk/Makefile
+config.status: creating src/OsiXpr/Makefile
+config.status: creating src/OsiGrb/Makefile
+config.status: creating src/OsiSpx/Makefile
+config.status: creating src/OsiCommonTest/Makefile
+config.status: creating test/Makefile
+config.status: creating osi.pc
+config.status: creating osi-uninstalled.pc
+config.status: creating osi-unittests.pc
+config.status: creating osi-unittests-uninstalled.pc
+config.status: creating doxydoc/doxygen.conf
+config.status: creating src/Osi/config.h
+config.status: creating src/Osi/config_osi.h
+config.status: executing depfiles commands
+configure: In case of trouble, first consult the troubleshooting page at https://projects.coin-or.org/BuildTools/wiki/user-troubleshooting
+configure: Configuration of Osi successful
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_build --
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making all in src/Osi
+make[3]: Entering directory `/«PKGBUILDDIR»/src/Osi'
+make  all-am
+make[4]: Entering directory `/«PKGBUILDDIR»/src/Osi'
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiAuxInfo.lo OsiAuxInfo.cpp
+mkdir .libs
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiAuxInfo.cpp  -fPIC -DPIC -o .libs/OsiAuxInfo.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiAuxInfo.cpp -o OsiAuxInfo.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiBranchingObject.lo OsiBranchingObject.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiBranchingObject.cpp  -fPIC -DPIC -o .libs/OsiBranchingObject.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiBranchingObject.cpp -o OsiBranchingObject.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiChooseVariable.lo OsiChooseVariable.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiChooseVariable.cpp  -fPIC -DPIC -o .libs/OsiChooseVariable.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiChooseVariable.cpp -o OsiChooseVariable.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiColCut.lo OsiColCut.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiColCut.cpp  -fPIC -DPIC -o .libs/OsiColCut.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiColCut.cpp -o OsiColCut.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiCut.lo OsiCut.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiCut.cpp  -fPIC -DPIC -o .libs/OsiCut.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiCut.cpp -o OsiCut.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiCuts.lo OsiCuts.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiCuts.cpp  -fPIC -DPIC -o .libs/OsiCuts.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiCuts.cpp -o OsiCuts.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiNames.lo OsiNames.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiNames.cpp  -fPIC -DPIC -o .libs/OsiNames.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiNames.cpp -o OsiNames.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiPresolve.lo OsiPresolve.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiPresolve.cpp  -fPIC -DPIC -o .libs/OsiPresolve.o
+In file included from OsiPresolve.cpp:46:
+/usr/include/coin/CoinPresolveImpliedFree.hpp:6:9: warning: 'CoinPresolveImpliedFree_H' is used as a header guard here, followed by #define of a different macro [-Wheader-guard]
+#ifndef CoinPresolveImpliedFree_H
+        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/coin/CoinPresolveImpliedFree.hpp:7:9: note: 'CoinPresolveInpliedFree_H' is defined here; did you mean 'CoinPresolveImpliedFree_H'?
+#define CoinPresolveInpliedFree_H
+        ^~~~~~~~~~~~~~~~~~~~~~~~~
+        CoinPresolveImpliedFree_H
+1 warning generated.
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiPresolve.cpp -o OsiPresolve.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiRowCut.lo OsiRowCut.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiRowCut.cpp  -fPIC -DPIC -o .libs/OsiRowCut.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiRowCut.cpp -o OsiRowCut.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiRowCutDebugger.lo OsiRowCutDebugger.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiRowCutDebugger.cpp  -fPIC -DPIC -o .libs/OsiRowCutDebugger.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiRowCutDebugger.cpp -o OsiRowCutDebugger.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiSolverBranch.lo OsiSolverBranch.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiSolverBranch.cpp  -fPIC -DPIC -o .libs/OsiSolverBranch.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiSolverBranch.cpp -o OsiSolverBranch.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .`  -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiSolverInterface.lo OsiSolverInterface.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiSolverInterface.cpp  -fPIC -DPIC -o .libs/OsiSolverInterface.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiSolverInterface.cpp -o OsiSolverInterface.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD  -Wl,-z,relro -o libOsi.la -rpath /usr/lib/x86_64-linux-gnu -version-info 12:4:11 OsiAuxInfo.lo OsiBranchingObject.lo OsiChooseVariable.lo OsiColCut.lo OsiCut.lo OsiCuts.lo OsiNames.lo OsiPresolve.lo OsiRowCut.lo OsiRowCutDebugger.lo OsiSolverBranch.lo OsiSolverInterface.lo -lCoinUtils -lbz2 -lz -lm   
+g++ -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  .libs/OsiAuxInfo.o .libs/OsiBranchingObject.o .libs/OsiChooseVariable.o .libs/OsiColCut.o .libs/OsiCut.o .libs/OsiCuts.o .libs/OsiNames.o .libs/OsiPresolve.o .libs/OsiRowCut.o .libs/OsiRowCutDebugger.o .libs/OsiSolverBranch.o .libs/OsiSolverInterface.o  -lCoinUtils -lbz2 -lz -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -Wl,-z -Wl,relro -Wl,-soname -Wl,libOsi.so.1 -o .libs/libOsi.so.1.11.4
+(cd .libs && rm -f libOsi.so.1 && ln -s libOsi.so.1.11.4 libOsi.so.1)
+(cd .libs && rm -f libOsi.so && ln -s libOsi.so.1.11.4 libOsi.so)
+ar cru .libs/libOsi.a  OsiAuxInfo.o OsiBranchingObject.o OsiChooseVariable.o OsiColCut.o OsiCut.o OsiCuts.o OsiNames.o OsiPresolve.o OsiRowCut.o OsiRowCutDebugger.o OsiSolverBranch.o OsiSolverInterface.o
+ranlib .libs/libOsi.a
+creating libOsi.la
+(cd .libs && rm -f libOsi.la && ln -s ../libOsi.la libOsi.la)
+make[4]: Leaving directory `/«PKGBUILDDIR»/src/Osi'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src/Osi'
+Making all in src/OsiCommonTest
+make[3]: Entering directory `/«PKGBUILDDIR»/src/OsiCommonTest'
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../../src/Osi  -I`echo ./../Osi` -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiColCutTest.lo OsiColCutTest.cpp
+mkdir .libs
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiColCutTest.cpp  -fPIC -DPIC -o .libs/OsiColCutTest.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiColCutTest.cpp -o OsiColCutTest.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../../src/Osi  -I`echo ./../Osi` -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiCutsTest.lo OsiCutsTest.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiCutsTest.cpp  -fPIC -DPIC -o .libs/OsiCutsTest.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiCutsTest.cpp -o OsiCutsTest.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../../src/Osi  -I`echo ./../Osi` -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiRowCutDebuggerTest.lo OsiRowCutDebuggerTest.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiRowCutDebuggerTest.cpp  -fPIC -DPIC -o .libs/OsiRowCutDebuggerTest.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiRowCutDebuggerTest.cpp -o OsiRowCutDebuggerTest.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../../src/Osi  -I`echo ./../Osi` -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiRowCutTest.lo OsiRowCutTest.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiRowCutTest.cpp  -fPIC -DPIC -o .libs/OsiRowCutTest.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiRowCutTest.cpp -o OsiRowCutTest.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../../src/Osi  -I`echo ./../Osi` -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiSimplexAPITest.lo OsiSimplexAPITest.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiSimplexAPITest.cpp  -fPIC -DPIC -o .libs/OsiSimplexAPITest.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiSimplexAPITest.cpp -o OsiSimplexAPITest.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../../src/Osi  -I`echo ./../Osi` -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiNetlibTest.lo OsiNetlibTest.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiNetlibTest.cpp  -fPIC -DPIC -o .libs/OsiNetlibTest.o
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiNetlibTest.cpp -o OsiNetlibTest.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../../src/Osi  -I`echo ./../Osi` -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiUnitTestUtils.lo OsiUnitTestUtils.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiUnitTestUtils.cpp  -fPIC -DPIC -o .libs/OsiUnitTestUtils.o
+OsiUnitTestUtils.cpp:489:42: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if( *endptr != '\0' || verblevel < 0) {
+                               ~~~~~~~~~ ^ ~
+1 warning generated.
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiUnitTestUtils.cpp -o OsiUnitTestUtils.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=compile g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../../src/Osi  -I`echo ./../Osi` -I/usr/include/coin  -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiSolverInterfaceTest.lo OsiSolverInterfaceTest.cpp
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiSolverInterfaceTest.cpp  -fPIC -DPIC -o .libs/OsiSolverInterfaceTest.o
+OsiSolverInterfaceTest.cpp:2497:17: warning: equality comparison result unused [-Wunused-comparison]
+     solverName == "unknown";
+     ~~~~~~~~~~~^~~~~~~~~~~~
+OsiSolverInterfaceTest.cpp:2497:17: note: use '=' to turn this equality comparison into an assignment
+     solverName == "unknown";
+                ^~
+                =
+1 warning generated.
+ g++ -DHAVE_CONFIG_H -I. -I. -I../../src/Osi -I./../Osi -I/usr/include/coin -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -c OsiSolverInterfaceTest.cpp -o OsiSolverInterfaceTest.o >/dev/null 2>&1
+/bin/bash ../../libtool --tag=CXX --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD  -Wl,-z,relro -o libOsiCommonTests.la -rpath /usr/lib/x86_64-linux-gnu -version-info 12:4:11 OsiColCutTest.lo OsiCutsTest.lo OsiRowCutDebuggerTest.lo OsiRowCutTest.lo OsiSimplexAPITest.lo OsiNetlibTest.lo OsiUnitTestUtils.lo OsiSolverInterfaceTest.lo  
+g++ -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  .libs/OsiColCutTest.o .libs/OsiCutsTest.o .libs/OsiRowCutDebuggerTest.o .libs/OsiRowCutTest.o .libs/OsiSimplexAPITest.o .libs/OsiNetlibTest.o .libs/OsiUnitTestUtils.o .libs/OsiSolverInterfaceTest.o  -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -Wl,-z -Wl,relro -Wl,-soname -Wl,libOsiCommonTests.so.1 -o .libs/libOsiCommonTests.so.1.11.4
+(cd .libs && rm -f libOsiCommonTests.so.1 && ln -s libOsiCommonTests.so.1.11.4 libOsiCommonTests.so.1)
+(cd .libs && rm -f libOsiCommonTests.so && ln -s libOsiCommonTests.so.1.11.4 libOsiCommonTests.so)
+ar cru .libs/libOsiCommonTests.a  OsiColCutTest.o OsiCutsTest.o OsiRowCutDebuggerTest.o OsiRowCutTest.o OsiSimplexAPITest.o OsiNetlibTest.o OsiUnitTestUtils.o OsiSolverInterfaceTest.o
+ranlib .libs/libOsiCommonTests.a
+creating libOsiCommonTests.la
+(cd .libs && rm -f libOsiCommonTests.la && ln -s ../libOsiCommonTests.la libOsiCommonTests.la)
+make[3]: Leaving directory `/«PKGBUILDDIR»/src/OsiCommonTest'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make doxydoc
+make[2]: Entering directory `/«PKGBUILDDIR»'
+doxygen doxydoc/doxygen.conf
+Warning: Tag `SYMBOL_CACHE_SIZE' at line 289 of file doxydoc/doxygen.conf has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `SHOW_DIRECTORIES' at line 477 of file doxydoc/doxygen.conf has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `HTML_ALIGN_MEMBERS' at line 804 of file doxydoc/doxygen.conf has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: Tag `USE_INLINE_TREES' at line 957 of file doxydoc/doxygen.conf has become obsolete.
+To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+Warning: doxygen no longer ships with the FreeSans font.
+You may want to clear or change DOT_FONTNAME.
+Otherwise you run the risk that the wrong font is being used for dot generated graphs.
+Searching for include files...
+Searching for example files...
+Searching for images...
+Searching for dot files...
+Searching for msc files...
+Searching for dia files...
+Searching for files to exclude
+Searching for files to process...
+Searching for files in directory /«PKGBUILDDIR»/src
+Searching for files in directory /«PKGBUILDDIR»/src/Osi
+Searching for files in directory /«PKGBUILDDIR»/src/OsiCommonTest
+Searching for files in directory /«PKGBUILDDIR»/src/OsiCpx
+Searching for files in directory /«PKGBUILDDIR»/src/OsiGlpk
+Searching for files in directory /«PKGBUILDDIR»/src/OsiGrb
+Searching for files in directory /«PKGBUILDDIR»/src/OsiMsk
+Searching for files in directory /«PKGBUILDDIR»/src/OsiSpx
+Searching for files in directory /«PKGBUILDDIR»/src/OsiXpr
+Reading and parsing tag files
+Parsing files
+Preprocessing /«PKGBUILDDIR»/src/Osi/config.h...
+Parsing file /«PKGBUILDDIR»/src/Osi/config.h...
+Preprocessing /«PKGBUILDDIR»/src/Osi/config_default.h...
+Parsing file /«PKGBUILDDIR»/src/Osi/config_default.h...
+Preprocessing /«PKGBUILDDIR»/src/Osi/config_osi.h...
+Parsing file /«PKGBUILDDIR»/src/Osi/config_osi.h...
+Preprocessing /«PKGBUILDDIR»/src/Osi/config_osi_default.h...
+Parsing file /«PKGBUILDDIR»/src/Osi/config_osi_default.h...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiAuxInfo.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiAuxInfo.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiBranchingObject.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiBranchingObject.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiChooseVariable.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiChooseVariable.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiColCut.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiColCut.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiCollections.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiCollections.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiConfig.h...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiConfig.h...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiCut.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiCut.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiCuts.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiCuts.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiPresolve.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiPresolve.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiRowCut.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiRowCut.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiRowCutDebugger.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiRowCutDebugger.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiSolverBranch.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiSolverBranch.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiSolverInterface.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiSolverInterface.hpp...
+Preprocessing /«PKGBUILDDIR»/src/Osi/OsiSolverParameters.hpp...
+Parsing file /«PKGBUILDDIR»/src/Osi/OsiSolverParameters.hpp...
+Preprocessing /«PKGBUILDDIR»/src/OsiCommonTest/OsiUnitTests.hpp...
+Parsing file /«PKGBUILDDIR»/src/OsiCommonTest/OsiUnitTests.hpp...
+Preprocessing /«PKGBUILDDIR»/src/OsiCpx/OsiCpxSolverInterface.hpp...
+Parsing file /«PKGBUILDDIR»/src/OsiCpx/OsiCpxSolverInterface.hpp...
+Preprocessing /«PKGBUILDDIR»/src/OsiGlpk/OsiGlpkSolverInterface.hpp...
+Parsing file /«PKGBUILDDIR»/src/OsiGlpk/OsiGlpkSolverInterface.hpp...
+Preprocessing /«PKGBUILDDIR»/src/OsiGrb/OsiGrbSolverInterface.hpp...
+Parsing file /«PKGBUILDDIR»/src/OsiGrb/OsiGrbSolverInterface.hpp...
+Preprocessing /«PKGBUILDDIR»/src/OsiMsk/OsiMskSolverInterface.hpp...
+Parsing file /«PKGBUILDDIR»/src/OsiMsk/OsiMskSolverInterface.hpp...
+Preprocessing /«PKGBUILDDIR»/src/OsiSpx/OsiSpxSolverInterface.hpp...
+Parsing file /«PKGBUILDDIR»/src/OsiSpx/OsiSpxSolverInterface.hpp...
+Preprocessing /«PKGBUILDDIR»/src/OsiXpr/OsiXprSolverInterface.hpp...
+Parsing file /«PKGBUILDDIR»/src/OsiXpr/OsiXprSolverInterface.hpp...
+Building group list...
+Building directory list...
+Building namespace list...
+Building file list...
+Building class list...
+Associating documentation with classes...
+Computing nesting relations for classes...
+Building example list...
+Searching for enumerations...
+Searching for documented typedefs...
+Searching for members imported via using declarations...
+Searching for included using directives...
+Searching for documented variables...
+Building interface member list...
+Building member list...
+Searching for friends...
+Searching for documented defines...
+Computing class inheritance relations...
+Computing class usage relations...
+Flushing cached template relations that have become invalid...
+Creating members for template instances...
+Computing class relations...
+Add enum values to enums...
+Searching for member function documentation...
+Building page list...
+Search for main page...
+Computing page relations...
+Determining the scope of groups...
+Sorting lists...
+Freeing entry tree
+Determining which enums are documented
+Computing member relations...
+Building full member lists recursively...
+Adding members to member groups.
+Computing member references...
+Inheriting documentation...
+Generating disk names...
+Adding source references...
+Adding xrefitems...
+Sorting member lists...
+Computing dependencies between directories...
+Generating citations page...
+Counting data structures...
+Resolving user defined references...
+Finding anchors and sections in the documentation...
+Transferring function references...
+Combining using relations...
+Adding members to index pages...
+Generating style sheet...
+Generating search indices...
+Generating example documentation...
+Generating file sources...
+Generating code for file /«PKGBUILDDIR»/src/Osi/config.h...
+Generating code for file /«PKGBUILDDIR»/src/Osi/config_default.h...
+Generating code for file /«PKGBUILDDIR»/src/Osi/config_osi.h...
+Generating code for file /«PKGBUILDDIR»/src/Osi/config_osi_default.h...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiAuxInfo.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiBranchingObject.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiChooseVariable.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiColCut.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiCollections.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiConfig.h...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiCut.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiCuts.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiPresolve.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiRowCut.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiRowCutDebugger.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiSolverBranch.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiSolverInterface.hpp...
+Generating code for file /«PKGBUILDDIR»/src/Osi/OsiSolverParameters.hpp...
+Generating code for file /«PKGBUILDDIR»/src/OsiCommonTest/OsiUnitTests.hpp...
+Generating code for file /«PKGBUILDDIR»/src/OsiCpx/OsiCpxSolverInterface.hpp...
+Generating code for file /«PKGBUILDDIR»/src/OsiGlpk/OsiGlpkSolverInterface.hpp...
+Generating code for file /«PKGBUILDDIR»/src/OsiGrb/OsiGrbSolverInterface.hpp...
+Generating code for file /«PKGBUILDDIR»/src/OsiMsk/OsiMskSolverInterface.hpp...
+Generating code for file /«PKGBUILDDIR»/src/OsiSpx/OsiSpxSolverInterface.hpp...
+Generating code for file /«PKGBUILDDIR»/src/OsiXpr/OsiXprSolverInterface.hpp...
+Generating file documentation...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/config.h...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/config_default.h...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/config_osi.h...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/config_osi_default.h...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiAuxInfo.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiBranchingObject.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiChooseVariable.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiColCut.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiCollections.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiConfig.h...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiCut.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiCuts.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiPresolve.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiRowCut.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiRowCutDebugger.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiSolverBranch.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiSolverInterface.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/Osi/OsiSolverParameters.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/OsiCommonTest/OsiUnitTests.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/OsiCpx/OsiCpxSolverInterface.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/OsiGlpk/OsiGlpkSolverInterface.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/OsiGrb/OsiGrbSolverInterface.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/OsiMsk/OsiMskSolverInterface.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/OsiSpx/OsiSpxSolverInterface.hpp...
+Generating docs for file /«PKGBUILDDIR»/src/OsiXpr/OsiXprSolverInterface.hpp...
+Generating page documentation...
+Generating docs for page todo...
+Generating docs for page deprecated...
+Generating group documentation...
+Generating class documentation...
+Generating docs for compound glp_prob...
+Generating docs for compound OsiAuxInfo...
+Generating docs for compound OsiBabSolver...
+Generating docs for compound OsiBranchingInformation...
+Generating docs for compound OsiBranchingObject...
+Generating docs for compound OsiChooseStrong...
+Generating docs for compound OsiChooseVariable...
+Generating docs for compound OsiColCut...
+Generating docs for compound OsiCpxSolverInterface...
+Generating docs for compound OsiCut...
+Generating docs for compound OsiCuts...
+Generating docs for nested compound OsiCuts::const_iterator...
+Generating docs for nested compound OsiCuts::iterator...
+Generating docs for nested compound OsiCuts::OsiCutCompare...
+Generating docs for compound OsiGlpkSolverInterface...
+Generating docs for compound OsiGrbSolverInterface...
+Generating docs for compound OsiHotInfo...
+Generating docs for compound OsiIntegerBranchingObject...
+Generating docs for compound OsiLotsize...
+Generating docs for compound OsiLotsizeBranchingObject...
+Generating docs for compound OsiMskSolverInterface...
+Generating docs for compound OsiObject...
+Generating docs for compound OsiObject2...
+Generating docs for compound OsiPresolve...
+Generating docs for compound OsiPseudoCosts...
+Generating docs for compound OsiRowCut...
+Generating docs for compound OsiRowCut2...
+Generating docs for compound OsiRowCutDebugger...
+Generating docs for compound OsiSimpleInteger...
+Generating docs for compound OsiSolverBranch...
+Generating docs for compound OsiSolverInterface...
+Generating docs for nested compound OsiSolverInterface::ApplyCutsReturnCode...
+Generating docs for compound OsiSolverResult...
+Generating docs for compound OsiSOS...
+Generating docs for compound OsiSOSBranchingObject...
+Generating docs for compound OsiSpxSolverInterface...
+Generating docs for compound OsiTwoWayBranchingObject...
+Generating docs for compound OsiXprSolverInterface...
+Generating namespace index...
+Generating docs for namespace OsiUnitTest
+Generating docs for compound OsiUnitTest::TestOutcome...
+Generating docs for compound OsiUnitTest::TestOutcomes...
+Generating docs for namespace soplex
+Generating graph info page...
+Generating directory documentation...
+Generating dependency graph for directory /«PKGBUILDDIR»/src/Osi
+Generating dependency graph for directory /«PKGBUILDDIR»/src/OsiCommonTest
+Generating dependency graph for directory /«PKGBUILDDIR»/src/OsiCpx
+Generating dependency graph for directory /«PKGBUILDDIR»/src/OsiGlpk
+Generating dependency graph for directory /«PKGBUILDDIR»/src/OsiGrb
+Generating dependency graph for directory /«PKGBUILDDIR»/src/OsiMsk
+Generating dependency graph for directory /«PKGBUILDDIR»/src/OsiSpx
+Generating dependency graph for directory /«PKGBUILDDIR»/src/OsiXpr
+Generating dependency graph for directory /«PKGBUILDDIR»/src
+Generating index page...
+Generating page index...
+Generating module index...
+Generating namespace index...
+Generating namespace member index...
+Generating annotated compound index...
+Generating alphabetical compound index...
+Generating hierarchical class index...
+Generating graphical class hierarchy...
+Generating member index...
+Generating file index...
+Generating file member index...
+Generating example index...
+finalizing index lists...
+Running dot...
+Generating dot graphs using 5 parallel threads...
+Running dot for graph 1/312
+Running dot for graph 2/312
+Running dot for graph 3/312
+Running dot for graph 4/312
+Running dot for graph 5/312
+Running dot for graph 6/312
+Running dot for graph 7/312
+Running dot for graph 8/312
+Running dot for graph 9/312
+Running dot for graph 10/312
+Running dot for graph 11/312
+Running dot for graph 12/312
+Running dot for graph 13/312
+Running dot for graph 14/312
+Running dot for graph 15/312
+Running dot for graph 16/312
+Running dot for graph 17/312
+Running dot for graph 18/312
+Running dot for graph 19/312
+Running dot for graph 20/312
+Running dot for graph 21/312
+Running dot for graph 22/312
+Running dot for graph 23/312
+Running dot for graph 24/312
+Running dot for graph 25/312
+Running dot for graph 26/312
+Running dot for graph 27/312
+Running dot for graph 28/312
+Running dot for graph 29/312
+Running dot for graph 30/312
+Running dot for graph 31/312
+Running dot for graph 32/312
+Running dot for graph 33/312
+Running dot for graph 34/312
+Running dot for graph 35/312
+Running dot for graph 36/312
+Running dot for graph 37/312
+Running dot for graph 38/312
+Running dot for graph 39/312
+Running dot for graph 40/312
+Running dot for graph 41/312
+Running dot for graph 42/312
+Running dot for graph 43/312
+Running dot for graph 44/312
+Running dot for graph 45/312
+Running dot for graph 46/312
+Running dot for graph 47/312
+Running dot for graph 48/312
+Running dot for graph 49/312
+Running dot for graph 50/312
+Running dot for graph 51/312
+Running dot for graph 52/312
+Running dot for graph 53/312
+Running dot for graph 54/312
+Running dot for graph 55/312
+Running dot for graph 56/312
+Running dot for graph 57/312
+Running dot for graph 58/312
+Running dot for graph 59/312
+Running dot for graph 60/312
+Running dot for graph 61/312
+Running dot for graph 62/312
+Running dot for graph 63/312
+Running dot for graph 64/312
+Running dot for graph 65/312
+Running dot for graph 66/312
+Running dot for graph 67/312
+Running dot for graph 68/312
+Running dot for graph 69/312
+Running dot for graph 70/312
+Running dot for graph 71/312
+Running dot for graph 72/312
+Running dot for graph 73/312
+Running dot for graph 74/312
+Running dot for graph 75/312
+Running dot for graph 76/312
+Running dot for graph 77/312
+Running dot for graph 78/312
+Running dot for graph 79/312
+Running dot for graph 80/312
+Running dot for graph 81/312
+Running dot for graph 82/312
+Running dot for graph 83/312
+Running dot for graph 84/312
+Running dot for graph 85/312
+Running dot for graph 86/312
+Running dot for graph 87/312
+Running dot for graph 88/312
+Running dot for graph 89/312
+Running dot for graph 90/312
+Running dot for graph 91/312
+Running dot for graph 92/312
+Running dot for graph 93/312
+Running dot for graph 94/312
+Running dot for graph 95/312
+Running dot for graph 96/312
+Running dot for graph 97/312
+Running dot for graph 98/312
+Running dot for graph 99/312
+Running dot for graph 100/312
+Running dot for graph 101/312
+Running dot for graph 102/312
+Running dot for graph 103/312
+Running dot for graph 104/312
+Running dot for graph 105/312
+Running dot for graph 106/312
+Running dot for graph 107/312
+Running dot for graph 108/312
+Running dot for graph 109/312
+Running dot for graph 110/312
+Running dot for graph 111/312
+Running dot for graph 112/312
+Running dot for graph 113/312
+Running dot for graph 114/312
+Running dot for graph 115/312
+Running dot for graph 116/312
+Running dot for graph 117/312
+Running dot for graph 118/312
+Running dot for graph 119/312
+Running dot for graph 120/312
+Running dot for graph 121/312
+Running dot for graph 122/312
+Running dot for graph 123/312
+Running dot for graph 124/312
+Running dot for graph 125/312
+Running dot for graph 126/312
+Running dot for graph 127/312
+Running dot for graph 128/312
+Running dot for graph 129/312
+Running dot for graph 130/312
+Running dot for graph 131/312
+Running dot for graph 132/312
+Running dot for graph 133/312
+Running dot for graph 134/312
+Running dot for graph 135/312
+Running dot for graph 136/312
+Running dot for graph 137/312
+Running dot for graph 138/312
+Running dot for graph 139/312
+Running dot for graph 140/312
+Running dot for graph 141/312
+Running dot for graph 142/312
+Running dot for graph 143/312
+Running dot for graph 144/312
+Running dot for graph 145/312
+Running dot for graph 146/312
+Running dot for graph 147/312
+Running dot for graph 148/312
+Running dot for graph 149/312
+Running dot for graph 150/312
+Running dot for graph 151/312
+Running dot for graph 152/312
+Running dot for graph 153/312
+Running dot for graph 154/312
+Running dot for graph 155/312
+Running dot for graph 156/312
+Running dot for graph 157/312
+Running dot for graph 158/312
+Running dot for graph 159/312
+Running dot for graph 160/312
+Running dot for graph 161/312
+Running dot for graph 162/312
+Running dot for graph 163/312
+Running dot for graph 164/312
+Running dot for graph 165/312
+Running dot for graph 166/312
+Running dot for graph 167/312
+Running dot for graph 168/312
+Running dot for graph 169/312
+Running dot for graph 170/312
+Running dot for graph 171/312
+Running dot for graph 172/312
+Running dot for graph 173/312
+Running dot for graph 174/312
+Running dot for graph 175/312
+Running dot for graph 176/312
+Running dot for graph 177/312
+Running dot for graph 178/312
+Running dot for graph 179/312
+Running dot for graph 180/312
+Running dot for graph 181/312
+Running dot for graph 182/312
+Running dot for graph 183/312
+Running dot for graph 184/312
+Running dot for graph 185/312
+Running dot for graph 186/312
+Running dot for graph 187/312
+Running dot for graph 188/312
+Running dot for graph 189/312
+Running dot for graph 190/312
+Running dot for graph 191/312
+Running dot for graph 192/312
+Running dot for graph 193/312
+Running dot for graph 194/312
+Running dot for graph 195/312
+Running dot for graph 196/312
+Running dot for graph 197/312
+Running dot for graph 198/312
+Running dot for graph 199/312
+Running dot for graph 200/312
+Running dot for graph 201/312
+Running dot for graph 202/312
+Running dot for graph 203/312
+Running dot for graph 204/312
+Running dot for graph 205/312
+Running dot for graph 206/312
+Running dot for graph 207/312
+Running dot for graph 208/312
+Running dot for graph 209/312
+Running dot for graph 210/312
+Running dot for graph 211/312
+Running dot for graph 212/312
+Running dot for graph 213/312
+Running dot for graph 214/312
+Running dot for graph 215/312
+Running dot for graph 216/312
+Running dot for graph 217/312
+Running dot for graph 218/312
+Running dot for graph 219/312
+Running dot for graph 220/312
+Running dot for graph 221/312
+Running dot for graph 222/312
+Running dot for graph 223/312
+Running dot for graph 224/312
+Running dot for graph 225/312
+Running dot for graph 226/312
+Running dot for graph 227/312
+Running dot for graph 228/312
+Running dot for graph 229/312
+Running dot for graph 230/312
+Running dot for graph 231/312
+Running dot for graph 232/312
+Running dot for graph 233/312
+Running dot for graph 234/312
+Running dot for graph 235/312
+Running dot for graph 236/312
+Running dot for graph 237/312
+Running dot for graph 238/312
+Running dot for graph 239/312
+Running dot for graph 240/312
+Running dot for graph 241/312
+Running dot for graph 242/312
+Running dot for graph 243/312
+Running dot for graph 244/312
+Running dot for graph 245/312
+Running dot for graph 246/312
+Running dot for graph 247/312
+Running dot for graph 248/312
+Running dot for graph 249/312
+Running dot for graph 250/312
+Running dot for graph 251/312
+Running dot for graph 252/312
+Running dot for graph 253/312
+Running dot for graph 254/312
+Running dot for graph 255/312
+Running dot for graph 256/312
+Running dot for graph 257/312
+Running dot for graph 258/312
+Running dot for graph 259/312
+Running dot for graph 260/312
+Running dot for graph 261/312
+Running dot for graph 262/312
+Running dot for graph 263/312
+Running dot for graph 264/312
+Running dot for graph 265/312
+Running dot for graph 266/312
+Running dot for graph 267/312
+Running dot for graph 268/312
+Running dot for graph 269/312
+Running dot for graph 270/312
+Running dot for graph 271/312
+Running dot for graph 272/312
+Running dot for graph 273/312
+Running dot for graph 274/312
+Running dot for graph 275/312
+Running dot for graph 276/312
+Running dot for graph 277/312
+Running dot for graph 278/312
+Running dot for graph 279/312
+Running dot for graph 280/312
+Running dot for graph 281/312
+Running dot for graph 282/312
+Running dot for graph 283/312
+Running dot for graph 284/312
+Running dot for graph 285/312
+Running dot for graph 286/312
+Running dot for graph 287/312
+Running dot for graph 288/312
+Running dot for graph 289/312
+Running dot for graph 290/312
+Running dot for graph 291/312
+Running dot for graph 292/312
+Running dot for graph 293/312
+Running dot for graph 294/312
+Running dot for graph 295/312
+Running dot for graph 296/312
+Running dot for graph 297/312
+Running dot for graph 298/312
+Running dot for graph 299/312
+Running dot for graph 300/312
+Running dot for graph 301/312
+Running dot for graph 302/312
+Running dot for graph 303/312
+Running dot for graph 304/312
+Running dot for graph 305/312
+Running dot for graph 306/312
+Running dot for graph 307/312
+Running dot for graph 308/312
+Running dot for graph 309/312
+Running dot for graph 310/312
+Running dot for graph 311/312
+Running dot for graph 312/312
+Patching output file 1/131
+Patching output file 2/131
+Patching output file 3/131
+Patching output file 4/131
+Patching output file 5/131
+Patching output file 6/131
+Patching output file 7/131
+Patching output file 8/131
+Patching output file 9/131
+Patching output file 10/131
+Patching output file 11/131
+Patching output file 12/131
+Patching output file 13/131
+Patching output file 14/131
+Patching output file 15/131
+Patching output file 16/131
+Patching output file 17/131
+Patching output file 18/131
+Patching output file 19/131
+Patching output file 20/131
+Patching output file 21/131
+Patching output file 22/131
+Patching output file 23/131
+Patching output file 24/131
+Patching output file 25/131
+Patching output file 26/131
+Patching output file 27/131
+Patching output file 28/131
+Patching output file 29/131
+Patching output file 30/131
+Patching output file 31/131
+Patching output file 32/131
+Patching output file 33/131
+Patching output file 34/131
+Patching output file 35/131
+Patching output file 36/131
+Patching output file 37/131
+Patching output file 38/131
+Patching output file 39/131
+Patching output file 40/131
+Patching output file 41/131
+Patching output file 42/131
+Patching output file 43/131
+Patching output file 44/131
+Patching output file 45/131
+Patching output file 46/131
+Patching output file 47/131
+Patching output file 48/131
+Patching output file 49/131
+Patching output file 50/131
+Patching output file 51/131
+Patching output file 52/131
+Patching output file 53/131
+Patching output file 54/131
+Patching output file 55/131
+Patching output file 56/131
+Patching output file 57/131
+Patching output file 58/131
+Patching output file 59/131
+Patching output file 60/131
+Patching output file 61/131
+Patching output file 62/131
+Patching output file 63/131
+Patching output file 64/131
+Patching output file 65/131
+Patching output file 66/131
+Patching output file 67/131
+Patching output file 68/131
+Patching output file 69/131
+Patching output file 70/131
+Patching output file 71/131
+Patching output file 72/131
+Patching output file 73/131
+Patching output file 74/131
+Patching output file 75/131
+Patching output file 76/131
+Patching output file 77/131
+Patching output file 78/131
+Patching output file 79/131
+Patching output file 80/131
+Patching output file 81/131
+Patching output file 82/131
+Patching output file 83/131
+Patching output file 84/131
+Patching output file 85/131
+Patching output file 86/131
+Patching output file 87/131
+Patching output file 88/131
+Patching output file 89/131
+Patching output file 90/131
+Patching output file 91/131
+Patching output file 92/131
+Patching output file 93/131
+Patching output file 94/131
+Patching output file 95/131
+Patching output file 96/131
+Patching output file 97/131
+Patching output file 98/131
+Patching output file 99/131
+Patching output file 100/131
+Patching output file 101/131
+Patching output file 102/131
+Patching output file 103/131
+Patching output file 104/131
+Patching output file 105/131
+Patching output file 106/131
+Patching output file 107/131
+Patching output file 108/131
+Patching output file 109/131
+Patching output file 110/131
+Patching output file 111/131
+Patching output file 112/131
+Patching output file 113/131
+Patching output file 114/131
+Patching output file 115/131
+Patching output file 116/131
+Patching output file 117/131
+Patching output file 118/131
+Patching output file 119/131
+Patching output file 120/131
+Patching output file 121/131
+Patching output file 122/131
+Patching output file 123/131
+Patching output file 124/131
+Patching output file 125/131
+Patching output file 126/131
+Patching output file 127/131
+Patching output file 128/131
+Patching output file 129/131
+Patching output file 130/131
+Patching output file 131/131
+lookup cache used 2517/65536 hits=13444 misses=2636
+finished...
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+rm -f doxydoc/html/*.md5 doxydoc/html/*.dot doxydoc/html/*.map
+rm -f doxydoc/html/jquery.js
+ln -s /usr/share/javascript/jquery/jquery.js doxydoc/html
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making all in src/Osi
+make[2]: Entering directory `/«PKGBUILDDIR»/src/Osi'
+make  all-am
+make[3]: Entering directory `/«PKGBUILDDIR»/src/Osi'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src/Osi'
+make[2]: Leaving directory `/«PKGBUILDDIR»/src/Osi'
+Making all in src/OsiCommonTest
+make[2]: Entering directory `/«PKGBUILDDIR»/src/OsiCommonTest'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/src/OsiCommonTest'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+cd test; make test
+make[2]: Entering directory `/«PKGBUILDDIR»/test'
+g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../src/Osi  -I`echo ./../src/Osi` -I`echo ./../src/OsiCommonTest` -I/usr/include/coin        -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o unitTest.o unitTest.cpp
+g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../src/Osi  -I`echo ./../src/Osi` -I`echo ./../src/OsiCommonTest` -I/usr/include/coin        -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiTestSolver.o OsiTestSolver.cpp
+g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../src/Osi  -I`echo ./../src/Osi` -I`echo ./../src/OsiCommonTest` -I/usr/include/coin        -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiTestSolverInterface.o OsiTestSolverInterface.cpp
+g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../src/Osi  -I`echo ./../src/Osi` -I`echo ./../src/OsiCommonTest` -I/usr/include/coin        -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiTestSolverInterfaceIO.o OsiTestSolverInterfaceIO.cpp
+g++ -DHAVE_CONFIG_H -I. -I`echo .` -I../src/Osi  -I`echo ./../src/Osi` -I`echo ./../src/OsiCommonTest` -I/usr/include/coin        -D_FORTIFY_SOURCE=2  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD -c -o OsiTestSolverInterfaceTest.o OsiTestSolverInterfaceTest.cpp
+/bin/bash ../libtool --tag=CXX --mode=link g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security   -DOSI_BUILD  -Wl,-z,relro -o unitTest  unitTest.o OsiTestSolver.o OsiTestSolverInterface.o OsiTestSolverInterfaceIO.o OsiTestSolverInterfaceTest.o       ../src/OsiCommonTest/libOsiCommonTests.la       ../src/Osi/libOsi.la -lCoinUtils -lbz2 -lz -lm        
+mkdir .libs
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DOSI_BUILD -Wl,-z -Wl,relro -o .libs/unitTest unitTest.o OsiTestSolver.o OsiTestSolverInterface.o OsiTestSolverInterfaceIO.o OsiTestSolverInterfaceTest.o  ../src/OsiCommonTest/.libs/libOsiCommonTests.so ../src/Osi/.libs/libOsi.so -lCoinUtils -lbz2 -lz -lm
+creating unitTest
+./unitTest -mpsDir=`echo /usr/share/coin/Data/Sample` 
+Testing OsiRowCut with OsiTestSolverInterface
+Testing OsiColCut with OsiTestSolverInterface
+Coin0001I At line 29 NAME          EXAMPLE
+Coin0001I At line 30 ROWS
+Coin0001I At line 37 COLUMNS
+Coin0001I At line 55 RHS
+Coin0001I At line 61 RANGES
+Coin0001I At line 64 BOUNDS
+Coin0001I At line 70 ENDATA
+Coin0002I Problem EXAMPLE has 5 rows, 8 columns and 14 elements
+Coin0001I At line 29 NAME          EXAMPLE
+Coin0001I At line 30 ROWS
+Coin0001I At line 37 COLUMNS
+Coin0001I At line 55 RHS
+Coin0001I At line 61 RANGES
+Coin0001I At line 64 BOUNDS
+Coin0001I At line 70 ENDATA
+Coin0002I Problem EXAMPLE has 5 rows, 8 columns and 14 elements
+Coin0001I At line 29 NAME          EXAMPLE
+Coin0001I At line 30 ROWS
+Coin0001I At line 37 COLUMNS
+Coin0001I At line 55 RHS
+Coin0001I At line 61 RANGES
+Coin0001I At line 64 BOUNDS
+Coin0001I At line 70 ENDATA
+Coin0002I Problem EXAMPLE has 5 rows, 8 columns and 14 elements
+Testing OsiCuts
+Coin0001I At line 29 NAME          EXAMPLE
+Coin0001I At line 30 ROWS
+Coin0001I At line 37 COLUMNS
+Coin0001I At line 55 RHS
+Coin0001I At line 61 RANGES
+Coin0001I At line 64 BOUNDS
+Coin0001I At line 70 ENDATA
+Coin0002I Problem EXAMPLE has 5 rows, 8 columns and 14 elements
+Coin0001I At line 29 NAME          EXAMPLE
+Coin0001I At line 30 ROWS
+Coin0001I At line 37 COLUMNS
+Coin0001I At line 55 RHS
+Coin0001I At line 61 RANGES
+Coin0001I At line 64 BOUNDS
+Coin0001I At line 70 ENDATA
+Coin0002I Problem EXAMPLE has 5 rows, 8 columns and 14 elements
+Coin0001I At line 29 NAME          EXAMPLE
+Coin0001I At line 30 ROWS
+Coin0001I At line 37 COLUMNS
+Coin0001I At line 55 RHS
+Coin0001I At line 61 RANGES
+Coin0001I At line 64 BOUNDS
+Coin0001I At line 70 ENDATA
+Coin0002I Problem EXAMPLE has 5 rows, 8 columns and 14 elements
+Testing OsiTestSolverInterface
+vol: running common unit tests.
+Testing empty solver interface ... 
+Testing row/column name handling ...Coin0001I At line 29 NAME          EXAMPLE
+Coin0001I At line 30 ROWS
+Coin0001I At line 37 COLUMNS
+Coin0001I At line 55 RHS
+Coin0001I At line 61 RANGES
+Coin0001I At line 64 BOUNDS
+Coin0001I At line 70 ENDATA
+Coin0002I Problem EXAMPLE has 5 rows, 8 columns and 14 elements
+*** volSolverInterface testing issue: testNames: switch to lazy names failed: si->setIntParam(OsiNameDiscipline, 1) == true
+*** volSolverInterface testing issue: solution value before solve failed: eq(correctObjValue,siObjValue)
+Coin0001I At line 29 NAME          EXAMPLE
+Coin0001I At line 30 ROWS
+Coin0001I At line 37 COLUMNS
+Coin0001I At line 55 RHS
+Coin0001I At line 61 RANGES
+Coin0001I At line 64 BOUNDS
+Coin0001I At line 70 ENDATA
+Coin0002I Problem EXAMPLE has 5 rows, 8 columns and 14 elements
+Checking that solver can set row and column solutions ... ok.
+Testing loadProblem and assignProblem methods.
+*** volSolverInterface testing issue: testLoadAndAssignProblem: base initialSolve failed: base->initialSolve() threw CoinError: Volume algorithm is unable to handle ranged rows in OsiTestSolverInterface in checkData_
+*** volSolverInterface testing issue: addCol add columns to null
+Testing writeMps and writeMpsNative.
+*** volSolverInterface testing issue: testWriteMps: solving LP failed: si1->initialSolve() threw CoinError: Volume algorithm is unable to handle ranged rows in OsiTestSolverInterface in checkData_
+Coin0001I At line 29 NAME          EXAMPLE
+Coin0001I At line 30 ROWS
+Coin0001I At line 37 COLUMNS
+Coin0001I At line 55 RHS
+Coin0001I At line 61 RANGES
+Coin0001I At line 64 BOUNDS
+Coin0001I At line 70 ENDATA
+Coin0002I Problem EXAMPLE has 5 rows, 8 columns and 14 elements
+Testing writeLp and writeLpNative.
+Coin0001I At line 1 NAME          BLANK
+Coin0001I At line 2 ROWS
+Coin0001I At line 9 COLUMNS
+Coin0001I At line 21 RHS
+Coin0001I At line 25 RANGES
+Coin0001I At line 27 BOUNDS
+Coin0001I At line 35 ENDATA
+Coin0002I Problem BLANK has 5 rows, 8 columns and 14 elements
+Coin0001I At line 1 NAME          BLANK
+Coin0001I At line 2 ROWS
+Coin0001I At line 9 COLUMNS
+Coin0001I At line 21 RHS
+Coin0001I At line 25 RANGES
+Coin0001I At line 27 BOUNDS
+Coin0001I At line 35 ENDATA
+Coin0002I Problem BLANK has 5 rows, 8 columns and 14 elements
+*** volSolverInterface testing issue: testWriteLp: solving LP failed: si1->initialSolve() threw CoinError: Volume algorithm is unable to handle ranged rows in OsiTestSolverInterface in checkData_
+Coin0001I At line 29 NAME          EXAMPLE
+Coin0001I At line 30 ROWS
+Coin0001I At line 37 COLUMNS
+Coin0001I At line 55 RHS
+Coin0001I At line 61 RANGES
+Coin0001I At line 64 BOUNDS
+Coin0001I At line 70 ENDATA
+Coin0002I Problem EXAMPLE has 5 rows, 8 columns and 14 elements
+vol has no OsiSimplex API.
+testHintParam: hint 0 sense 1 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 0 sense 0 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 1 sense 1 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 1 sense 0 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 2 sense 1 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 2 sense 0 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 3 sense 1 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 3 sense 0 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 4 sense 1 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 4 sense 0 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 5 sense 1 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 5 sense 0 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 6 sense 1 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 6 sense 0 strength 3 catched CoinError exception OsiForceDo illegal
+testHintParam: hint 7 sense 1 strength 3 catched CoinError exception OsiForceDo illegal
+Checked 8 hints x (true, false) at strength OsiForceDo; 16 throws.
+testHintParam: hint 7 sense 0 strength 3 catched CoinError exception OsiForceDo illegal
+     **** readjusting target!!! new target = -38.000000 *****
+0. L=-40.000000 P=-40.000000 vu=0.000000 infeas=16.007811
+ asc=1025.000000 vmax=25.000000 P-vu=-40.000000 xrc =0.000000
+     **** readjusting target!!! new target = -37.050000 *****
+
+ ---- increasing lamda to 0.2 ----
+
+
+ ---- increasing lamda to 0.4 ----
+
+     **** readjusting target!!! new target = -36.123750 *****
+
+ ---- increasing lamda to 0.8 ----
+
+     **** readjusting target!!! new target = -34.744350 *****
+
+ ---- increasing lamda to 1.6 ----
+
+     **** readjusting target!!! new target = -31.964802 *****
+
+ ---- increasing lamda to 3.2 ----
+
+     **** readjusting target!!! new target = -27.684178 *****
+     **** readjusting target!!! new target = -26.992074 *****
+     **** readjusting target!!! new target = -26.317272 *****
+     **** readjusting target!!! new target = -25.659340 *****
+     **** readjusting target!!! new target = -25.017856 *****
+     **** readjusting target!!! new target = -23.801115 *****
+
+ **** decreasing lamda to 2.144 *****
+
+
+ **** decreasing lamda to 1.43648 *****
+
+
+ **** decreasing lamda to 0.962442 *****
+
+50. L=-25.053805 P=-13.234081 vu=0.074731 infeas=0.050000
+ asc=100.000000 vmax=0.000000 P-vu=-13.308812 xrc =11.702614
+**** G= 12, Y= 1, R= 37 ****
+
+ **** decreasing lamda to 0.644836 *****
+
+
+ **** decreasing lamda to 0.43204 *****
+
+
+ **** decreasing lamda to 0.289467 *****
+
+
+ **** decreasing lamda to 0.193943 *****
+
+     **** readjusting target!!! new target = -18.639578 *****
+
+ **** decreasing lamda to 0.129942 *****
+
+100. L=-19.620608 P=-13.211095 vu=0.196206 infeas=0.050000
+ asc=100.000000 vmax=0.000000 P-vu=-13.407301 xrc =6.397369
+**** G= 0, Y= 1, R= 49 ****
+
+ **** decreasing lamda to 0.0870609 *****
+
+     **** readjusting target!!! new target = -17.974315 *****
+     **** readjusting target!!! new target = -14.437835 *****
+
+ **** decreasing lamda to 0.0583308 *****
+
+
+ **** decreasing lamda to 0.0390816 *****
+
+
+ **** decreasing lamda to 0.0261847 *****
+
+
+ **** decreasing lamda to 0.0175437 *****
+
+150. L=-15.197722 P=-13.975508 vu=0.151977 infeas=0.050000
+ asc=100.000000 vmax=0.000000 P-vu=-14.127485 xrc =1.828765
+**** G= 0, Y= 2, R= 48 ****
+***Skipped Testing of OsiSolverInterface on Netlib problems***
+***use -testOsiSolverInterface to run them.***
+
+ **** decreasing lamda to 0.0117543 *****
+
+
+ **** decreasing lamda to 0.00787539 *****
+
+
+ **** decreasing lamda to 0.00527651 *****
+
+
+ **** decreasing lamda to 0.00353526 *****
+
+All tests completed successfully
+     **** readjusting target!!! new target = -14.076890 *****
+200. L=-15.070918 P=-14.528303 vu=0.149291 infeas=0.050000
+ asc=100.000000 vmax=0.000000 P-vu=-14.677594 xrc =0.464552
+**** G= 0, Y= 1, R= 49 ****
+
+ **** decreasing lamda to 0.00236863 *****
+
+
+ **** decreasing lamda to 0.00158698 *****
+
+
+ **** decreasing lamda to 0.00106328 *****
+
+
+ **** decreasing lamda to 0.000712395 *****
+
+
+ **** decreasing lamda to 0.000477305 *****
+
+250. L=-15.012193 P=-14.731658 vu=0.150122 infeas=0.050000
+ asc=100.000000 vmax=0.000000 P-vu=-14.881780 xrc =0.148441
+**** G= 0, Y= 3, R= 47 ****
+300. L=-15.012193 P=-14.806466 vu=0.150122 infeas=0.050000
+ asc=100.000000 vmax=0.000000 P-vu=-14.956588 xrc =0.148441
+**** G= 0, Y= 0, R= 50 ****
+ ------------decreasing alpha to 0.005000
+350. L=-15.012193 P=-14.903273 vu=0.075061 infeas=0.025000
+ asc=100.000000 vmax=0.000000 P-vu=-14.978334 xrc =0.148441
+**** G= 0, Y= 0, R= 50 ****
+ ------------decreasing alpha to 0.002500
+400. L=-15.012193 P=-14.949289 vu=0.037530 infeas=0.012500
+ asc=100.000000 vmax=0.000000 P-vu=-14.986819 xrc =0.148441
+**** G= 0, Y= 0, R= 50 ****
+450. L=-15.012193 P=-14.952211 vu=0.037530 infeas=0.012500
+ asc=100.000000 vmax=0.000000 P-vu=-14.989742 xrc =0.148441
+**** G= 0, Y= 0, R= 50 ****
+ ------------decreasing alpha to 0.001250
+ small lp gap 
+481. L=-15.012193 P=-15.009905 vu=-0.018765 infeas=0.006250
+ asc=100.000000 vmax=0.012500 P-vu=-14.991140 xrc =0.148441
+     **** readjusting target!!! new target = -14.261583 *****
+0. L=-15.012193 P=0.000000 vu=15.012193 infeas=5.000000
+ asc=100.000000 vmax=0.000000 P-vu=-15.012193 xrc =0.000000
+     **** readjusting target!!! new target = -13.905044 *****
+
+ ---- increasing lamda to 0.2 ----
+
+
+ ---- increasing lamda to 0.4 ----
+
+     **** readjusting target!!! new target = -13.557418 *****
+
+ ---- increasing lamda to 0.8 ----
+
+     **** readjusting target!!! new target = -13.039722 *****
+
+ ---- increasing lamda to 1.6 ----
+
+     **** readjusting target!!! new target = -11.996544 *****
+
+ ---- increasing lamda to 3.2 ----
+
+     **** readjusting target!!! new target = -10.077097 *****
+     **** readjusting target!!! new target = -9.500000 *****
+
+ **** decreasing lamda to 2.144 *****
+
+
+ **** decreasing lamda to 1.43648 *****
+
+
+ **** decreasing lamda to 0.962442 *****
+
+
+ **** decreasing lamda to 0.644836 *****
+
+50. L=-10.000000 P=-3.573884 vu=5.725846 infeas=3.213058
+ asc=0.000000 vmax=0.000000 P-vu=-9.299730 xrc =1.089724
+**** G= 6, Y= 1, R= 43 ****
+
+ **** decreasing lamda to 0.43204 *****
+
+
+ **** decreasing lamda to 0.289467 *****
+
+
+ ---- increasing lamda to 0.578934 ----
+
+     **** readjusting target!!! new target = 10.000000 *****
+
+ ---- increasing lamda to 1.15787 ----
+
+
+ **** decreasing lamda to 0.775771 *****
+
+
+ **** decreasing lamda to 0.519767 *****
+
+100. L=-9.934379 P=-6.460994 vu=1.024429 infeas=0.640662
+ asc=325.000000 vmax=0.000000 P-vu=-7.485423 xrc =0.893597
+**** G= 2, Y= 0, R= 48 ****
+
+ **** decreasing lamda to 0.348244 *****
+
+
+ **** decreasing lamda to 0.233323 *****
+
+
+ **** decreasing lamda to 0.156327 *****
+
+
+ **** decreasing lamda to 0.104739 *****
+
+
+ **** decreasing lamda to 0.070175 *****
+
+150. L=-9.934379 P=-6.956798 vu=0.000552 infeas=0.108498
+ asc=325.000000 vmax=0.000494 P-vu=-6.957350 xrc =0.893597
+**** G= 0, Y= 0, R= 50 ****
+
+ **** decreasing lamda to 0.0470172 *****
+
+ ------------decreasing alpha to 0.005000
+
+ **** decreasing lamda to 0.0315016 *****
+
+
+ **** decreasing lamda to 0.021106 *****
+
+
+ **** decreasing lamda to 0.014141 *****
+
+
+ **** decreasing lamda to 0.0094745 *****
+
+200. L=-9.934379 P=-6.976571 vu=0.005771 infeas=0.052069
+ asc=325.000000 vmax=0.000000 P-vu=-6.982342 xrc =0.893597
+**** G= 0, Y= 0, R= 50 ****
+
+ **** decreasing lamda to 0.00634792 *****
+
+
+ **** decreasing lamda to 0.0042531 *****
+
+
+ **** decreasing lamda to 0.00284958 *****
+
+
+ **** decreasing lamda to 0.00190922 *****
+
+ ------------decreasing alpha to 0.002500
+
+ **** decreasing lamda to 0.00127918 *****
+
+250. L=-9.934379 P=-6.976513 vu=0.038275 infeas=0.026265
+ asc=325.000000 vmax=0.000000 P-vu=-7.014788 xrc =0.893597
+**** G= 0, Y= 0, R= 50 ****
+
+ **** decreasing lamda to 0.000857048 *****
+
+
+ ---- increasing lamda to 0.0017141 ----
+
+
+ **** decreasing lamda to 0.00114844 *****
+
+
+ **** decreasing lamda to 0.000769458 *****
+
+
+ **** decreasing lamda to 0.000515537 *****
+
+300. L=-8.141356 P=-7.029623 vu=-0.031896 infeas=0.040749
+ asc=1025.000000 vmax=0.072090 P-vu=-6.997727 xrc =1.125670
+**** G= 1, Y= 0, R= 49 ****
+
+ **** decreasing lamda to 0.00034541 *****
+
+
+ ---- increasing lamda to 0.000690819 ----
+
+
+ **** decreasing lamda to 0.000462849 *****
+
+350. L=-7.880143 P=-7.030294 vu=-0.033657 infeas=0.040450
+ asc=1025.000000 vmax=0.069853 P-vu=-6.996637 xrc =0.871774
+**** G= 1, Y= 0, R= 49 ****
+ ------------decreasing alpha to 0.001250
+400. L=-7.880143 P=-7.020054 vu=-0.024781 infeas=0.022436
+ asc=1025.000000 vmax=0.040849 P-vu=-6.995273 xrc =0.871774
+**** G= 0, Y= 0, R= 50 ****
+450. L=-7.880143 P=-7.004254 vu=-0.003918 infeas=0.009396
+ asc=225.000000 vmax=0.018750 P-vu=-7.000336 xrc =0.871774
+**** G= 0, Y= 0, R= 50 ****
+ ------------decreasing alpha to 0.000625
+500. L=-7.880143 P=-6.997159 vu=0.002554 infeas=0.006610
+ asc=325.000000 vmax=0.000000 P-vu=-6.999713 xrc =0.871774
+**** G= 0, Y= 0, R= 50 ****
+ small improvement 
+501. L=-7.880143 P=-6.999036 vu=0.000926 infeas=0.001930
+ asc=225.000000 vmax=0.000000 P-vu=-6.999962 xrc =0.871774
+WARNING   vol       solution value before solve
+                    eq(correctObjValue,siObjValue)
+                    OsiSolverInterfaceTest.cpp:3834
+ERROR     vol       testLoadAndAssignProblem: base initialSolve
+ (expected)         base->initialSolve() threw CoinError: Volume algorithm is unable to handle ranged rows in OsiTestSolverInterface in checkData_
+                    OsiSolverInterfaceTest.cpp:2672
+WARNING   vol       testAddToEmptySystem
+ (expected)         addCol adds columns to NULL
+                    OsiSolverInterfaceTest.cpp:3204
+WARNING   vol       testAddToEmptySystem
+ (expected)         addCol adds columns to NULL
+                    OsiSolverInterfaceTest.cpp:3244
+ERROR     vol       testWriteMps: solving LP
+ (expected)         si1->initialSolve() threw CoinError: Volume algorithm is unable to handle ranged rows in OsiTestSolverInterface in checkData_
+                    OsiSolverInterfaceTest.cpp:2409
+ERROR     vol       testWriteLp: solving LP
+ (expected)         si1->initialSolve() threw CoinError: Volume algorithm is unable to handle ranged rows in OsiTestSolverInterface in checkData_
+                    OsiSolverInterfaceTest.cpp:2461
+Severity NOTE      :    9  thereof expected:    8
+Severity PASSED    :  608  thereof expected:    0
+Severity WARNING   :    3  thereof expected:    2
+Severity ERROR     :    3  thereof expected:    3
+make[2]: Leaving directory `/«PKGBUILDDIR»/test'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary 
+   dh_testroot
+   dh_prep
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_install --
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making install in src/Osi
+make[3]: Entering directory `/«PKGBUILDDIR»/src/Osi'
+make[4]: Entering directory `/«PKGBUILDDIR»/src/Osi'
+/«PKGBUILDDIR»/install-sh -c -m 644 config_osi.h /«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiConfig.h
+test -z "/usr/lib/x86_64-linux-gnu" || mkdir -p -- "/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu"
+ /bin/bash ../../libtool --mode=install /usr/bin/install -c  'libOsi.la' '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsi.la'
+/usr/bin/install -c .libs/libOsi.so.1.11.4 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsi.so.1.11.4
+(cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libOsi.so.1.11.4 libOsi.so.1 || { rm -f libOsi.so.1 && ln -s libOsi.so.1.11.4 libOsi.so.1; }; })
+(cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libOsi.so.1.11.4 libOsi.so || { rm -f libOsi.so && ln -s libOsi.so.1.11.4 libOsi.so; }; })
+/usr/bin/install -c .libs/libOsi.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsi.la
+/usr/bin/install -c .libs/libOsi.a /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsi.a
+chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsi.a
+ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsi.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib/x86_64-linux-gnu'
+test -z "/usr/include/coin" || mkdir -p -- "/«PKGBUILDDIR»/debian/tmp/usr/include/coin"
+ /usr/bin/install -c -m 644 'OsiAuxInfo.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiAuxInfo.hpp'
+ /usr/bin/install -c -m 644 'OsiBranchingObject.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiBranchingObject.hpp'
+ /usr/bin/install -c -m 644 'OsiChooseVariable.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiChooseVariable.hpp'
+ /usr/bin/install -c -m 644 'OsiColCut.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiColCut.hpp'
+ /usr/bin/install -c -m 644 'OsiCollections.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiCollections.hpp'
+ /usr/bin/install -c -m 644 'OsiCut.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiCut.hpp'
+ /usr/bin/install -c -m 644 'OsiCuts.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiCuts.hpp'
+ /usr/bin/install -c -m 644 'OsiPresolve.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiPresolve.hpp'
+ /usr/bin/install -c -m 644 'OsiRowCut.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiRowCut.hpp'
+ /usr/bin/install -c -m 644 'OsiRowCutDebugger.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiRowCutDebugger.hpp'
+ /usr/bin/install -c -m 644 'OsiSolverBranch.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiSolverBranch.hpp'
+ /usr/bin/install -c -m 644 'OsiSolverInterface.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiSolverInterface.hpp'
+ /usr/bin/install -c -m 644 'OsiSolverParameters.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiSolverParameters.hpp'
+make[4]: Leaving directory `/«PKGBUILDDIR»/src/Osi'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src/Osi'
+Making install in src/OsiCommonTest
+make[3]: Entering directory `/«PKGBUILDDIR»/src/OsiCommonTest'
+make[4]: Entering directory `/«PKGBUILDDIR»/src/OsiCommonTest'
+test -z "/usr/lib/x86_64-linux-gnu" || mkdir -p -- "/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu"
+ /bin/bash ../../libtool --mode=install /usr/bin/install -c  'libOsiCommonTests.la' '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsiCommonTests.la'
+/usr/bin/install -c .libs/libOsiCommonTests.so.1.11.4 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4
+(cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libOsiCommonTests.so.1.11.4 libOsiCommonTests.so.1 || { rm -f libOsiCommonTests.so.1 && ln -s libOsiCommonTests.so.1.11.4 libOsiCommonTests.so.1; }; })
+(cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libOsiCommonTests.so.1.11.4 libOsiCommonTests.so || { rm -f libOsiCommonTests.so && ln -s libOsiCommonTests.so.1.11.4 libOsiCommonTests.so; }; })
+/usr/bin/install -c .libs/libOsiCommonTests.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsiCommonTests.la
+/usr/bin/install -c .libs/libOsiCommonTests.a /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsiCommonTests.a
+chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsiCommonTests.a
+ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/libOsiCommonTests.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib/x86_64-linux-gnu'
+test -z "/usr/include/coin" || mkdir -p -- "/«PKGBUILDDIR»/debian/tmp/usr/include/coin"
+ /usr/bin/install -c -m 644 'OsiUnitTests.hpp' '/«PKGBUILDDIR»/debian/tmp/usr/include/coin/OsiUnitTests.hpp'
+make[4]: Leaving directory `/«PKGBUILDDIR»/src/OsiCommonTest'
+make[3]: Leaving directory `/«PKGBUILDDIR»/src/OsiCommonTest'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[4]: Entering directory `/«PKGBUILDDIR»'
+test -z "/usr/share/coin/doc/Osi" || mkdir -p -- "/«PKGBUILDDIR»/debian/tmp/usr/share/coin/doc/Osi"
+for file in README AUTHORS LICENSE; do \
+	  if test -f "$file"; then dir=; else dir="./"; fi; \
+	  if test -f "$dir$file"; then /usr/bin/install -c -m 644 "$dir$file" "/«PKGBUILDDIR»/debian/tmp/usr/share/coin/doc/Osi/$file"; fi; \
+	done
+test -z "/usr/lib/x86_64-linux-gnu/pkgconfig" || mkdir -p -- "/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig"
+ /usr/bin/install -c -m 644 'osi.pc' '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig/osi.pc'
+ /usr/bin/install -c -m 644 'osi-unittests.pc' '/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig/osi-unittests.pc'
+make  install-data-hook
+make[5]: Entering directory `/«PKGBUILDDIR»'
+PKG_CONFIG_PATH=/«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig \
+	pkg-config --libs osi > /«PKGBUILDDIR»/debian/tmp/usr/share/coin/doc/Osi/osi_addlibs.txt
+make[5]: Leaving directory `/«PKGBUILDDIR»'
+make[4]: Leaving directory `/«PKGBUILDDIR»'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+rm -f debian/tmp/usr/share/coin/doc/Osi/LICENSE
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installexamples
+   dh_lintian
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   debian/rules override_dh_strip
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_strip --dbg-package=coinor-libosi1-dbg
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: symbol _ZNK16CoinPackedMatrix14transposeTimesEPKdPd used by debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4 found in none of the libraries
+dpkg-shlibdeps: warning: symbol _ZN16CoinPackedVectorC1EiPKdb used by debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4 found in none of the libraries
+dpkg-shlibdeps: warning: symbol _Z10CoinFinited used by debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4 found in none of the libraries
+dpkg-shlibdeps: warning: symbol _ZN11OsiPresolveD1Ev used by debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4 found in none of the libraries
+dpkg-shlibdeps: warning: symbol _ZN16CoinPackedMatrixC1Ev used by debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4 found in none of the libraries
+dpkg-shlibdeps: warning: symbol _ZN7OsiCuts14const_iterator3endEv used by debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4 found in none of the libraries
+dpkg-shlibdeps: warning: symbol _ZNK20CoinPackedVectorBase11getMaxIndexEv used by debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4 found in none of the libraries
+dpkg-shlibdeps: warning: symbol _ZN9OsiRowCut5setLbEd used by debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4 found in none of the libraries
+dpkg-shlibdeps: warning: symbol _ZNK20CoinPackedVectorBaseneERKS_ used by debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4 found in none of the libraries
+dpkg-shlibdeps: warning: symbol _ZNK9OsiRowCut2lbEv used by debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4 found in none of the libraries
+dpkg-shlibdeps: warning: 96 other similar warnings have been skipped (use -v to see them all)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsi.so.1.11.4 was not linked against libz.so.1 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/coinor-libosi1/usr/lib/x86_64-linux-gnu/libOsi.so.1.11.4 was not linked against libbz2.so.1.0 (it uses none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: package coinor-libosi1: unused substitution variable ${misc:Pre-Depends}
+dpkg-gencontrol: warning: Depends field of package coinor-libosi-dev: unknown substitution variable ${shlibs:Depends}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: Depends field of package coinor-libosi1-dbg: unknown substitution variable ${shlibs:Depends}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `coinor-libosi1' in `../coinor-libosi1_0.106.4-1_amd64.deb'.
+dpkg-deb: building package `coinor-libosi-dev' in `../coinor-libosi-dev_0.106.4-1_amd64.deb'.
+dpkg-deb: building package `coinor-libosi-doc' in `../coinor-libosi-doc_0.106.4-1_all.deb'.
+dpkg-deb: building package `coinor-libosi1-dbg' in `../coinor-libosi1-dbg_0.106.4-1_amd64.deb'.
+ dpkg-genchanges  >../coinor-osi_0.106.4-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build coinor-osi-0.106.4
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-1805
+
+Finished
+────────
+
+I: Built successfully
+E: Package builds coinor-libosi-doc_0.106.4-1_all.deb when binary-indep target is not called.  This is a bug in the packaging.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+coinor-osi_0.106.4-1_amd64.changes:
+───────────────────────────────────
+
+Format: 1.8
+Date: Wed, 27 Nov 2013 23:33:22 -0500
+Source: coinor-osi
+Binary: coinor-libosi1 coinor-libosi-dev coinor-libosi-doc coinor-libosi1-dbg
+Architecture: source amd64 all
+Version: 0.106.4-1
+Distribution: sid
+Urgency: low
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Changed-By: Miles Lubin <miles.lubin@gmail.com>
+Description: 
+ coinor-libosi-dev - COIN-OR Open Solver Interface (developer files)
+ coinor-libosi-doc - COIN-OR Open Solver Interface (documentation)
+ coinor-libosi1 - COIN-OR Open Solver Interface
+ coinor-libosi1-dbg - COIN-OR Open Solver Interface (debug symbols)
+Changes: 
+ coinor-osi (0.106.4-1) unstable; urgency=low
+ .
+   * New upstream version.
+   * Switch to upstream's packager-friendly tarballs.
+   * Bump standards version (no changes needed).
+   * Upload to unstable for transition.
+Checksums-Sha1: 
+ e98d299a2b9a35cc06e39656a3aad4e8d2ec37ab 1399 coinor-osi_0.106.4-1.dsc
+ 6e992dc4ffec6f45a07a5fb3f766fb386a7cd01d 750359 coinor-osi_0.106.4.orig.tar.gz
+ 6cca148a330b4e2a6daa682e5e32cfacf68222ab 7608 coinor-osi_0.106.4-1.debian.tar.xz
+ 66bbb23bce5e07d1f75ee65be3a874cae66060c8 294908 coinor-libosi1_0.106.4-1_amd64.deb
+ d431441062c4e5293cd9d48ee91afb541f58f281 345240 coinor-libosi-dev_0.106.4-1_amd64.deb
+ d6907e20899658a7f3c0a1e26abcbf7bc4fc70b0 2669374 coinor-libosi-doc_0.106.4-1_all.deb
+ 59fed1e3501aa2c5d9a02cfe73e2523e6aa2726a 898264 coinor-libosi1-dbg_0.106.4-1_amd64.deb
+Checksums-Sha256: 
+ a94f0ff7b24e49050870a23041c16d6929a55a3de57b1c1e0d95ae804c9b0ccf 1399 coinor-osi_0.106.4-1.dsc
+ 5e603e33b5d1e1ffe36c761ec435eb6d1ad370fd3a62fe79df94857b6c9f970e 750359 coinor-osi_0.106.4.orig.tar.gz
+ 8be7e688792e381568b07a560f95f227a11bdeb3faee7790ae73fa78f6e1d02c 7608 coinor-osi_0.106.4-1.debian.tar.xz
+ 2d0874571f9b95ab01a7259f9104cb3669db1cdf6dbb9072dd4f3f7df67e26c6 294908 coinor-libosi1_0.106.4-1_amd64.deb
+ 297b3d1d543f993bb3ece4109b3a751b6ee090f04138e5dacd02c1aed11d6c45 345240 coinor-libosi-dev_0.106.4-1_amd64.deb
+ cf50c2ab035d60a3beeafba9d260d2224a880c342a4f9b5cb4720b1966f80509 2669374 coinor-libosi-doc_0.106.4-1_all.deb
+ 89f388b33ed8d4887421558c5ec03371c33d8c4f91eb2ccd43cb32e41a34dd92 898264 coinor-libosi1-dbg_0.106.4-1_amd64.deb
+Files: 
+ 36d8e4da7463752672cb8f71b574a488 294908 science extra coinor-libosi1_0.106.4-1_amd64.deb
+ 6d0d83c4213cf2cbe3d15c8ac10ef7a0 345240 libdevel extra coinor-libosi-dev_0.106.4-1_amd64.deb
+ 09a3bbf54722878b208cb78e26d9c92e 2669374 doc extra coinor-libosi-doc_0.106.4-1_all.deb
+ ff82755a70a18c0c5e3814cf33c02cb0 898264 debug extra coinor-libosi1-dbg_0.106.4-1_amd64.deb
+ c2ab9500de0b3cc4c1dd83d6baad4dc8 1399 science extra coinor-osi_0.106.4-1.dsc
+ c76911162ded04f297eb282e771a86aa 750359 science extra coinor-osi_0.106.4.orig.tar.gz
+ 4a355d14ec6aff9b1ee531e9eef22e94 7608 science extra coinor-osi_0.106.4-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+coinor-libosi1_0.106.4-1_amd64.deb
+──────────────────────────────────
+
+ new debian package, version 2.0.
+ size 294908 bytes: control archive=1259 bytes.
+     975 bytes,    22 lines      control              
+     472 bytes,     6 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      59 bytes,     2 lines      shlibs               
+ Package: coinor-libosi1
+ Source: coinor-osi
+ Version: 0.106.4-1
+ Architecture: amd64
+ Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+ Installed-Size: 1225
+ Depends: coinor-libcoinutils3, libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4)
+ Section: science
+ Priority: extra
+ Homepage: https://projects.coin-or.org/Osi
+ Description: COIN-OR Open Solver Interface
+  Osi (Open Solver Interface) provides an abstract C++ base class to a generic
+  linear programming (LP) solver, along with derived classes for specific
+  solvers. Many applications may be able to use the Osi to insulate themselves
+  from a specific LP solver.
+  .
+  Osi is part of the larger COIN-OR initiative (Computational Infrastructure
+  for Operations Research).
+  .
+  This package contains the abstract Osi base library; implementations for
+  different solvers are provided separately. The OsiClp interface is provided
+  by the clp source package.
+
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    332112 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/libOsi.so.1.11.4
+-rw-r--r-- root/root    864272 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1.11.4
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/doc/coinor-libosi1/
+-rw-r--r-- root/root      1960 2013-11-23 03:01 ./usr/share/doc/coinor-libosi1/changelog.gz
+-rw-r--r-- root/root      1188 2013-11-30 22:18 ./usr/share/doc/coinor-libosi1/changelog.Debian.gz
+-rw-r--r-- root/root     12870 2013-11-30 22:18 ./usr/share/doc/coinor-libosi1/copyright
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root        77 2013-09-18 09:45 ./usr/share/lintian/overrides/coinor-libosi1
+lrwxrwxrwx root/root         0 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/libOsi.so.1 -> libOsi.so.1.11.4
+lrwxrwxrwx root/root         0 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/libOsiCommonTests.so.1 -> libOsiCommonTests.so.1.11.4
+
+
+coinor-libosi-dev_0.106.4-1_amd64.deb
+─────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 345240 bytes: control archive=1535 bytes.
+     789 bytes,    20 lines      control              
+    1781 bytes,    25 lines      md5sums              
+ Package: coinor-libosi-dev
+ Source: coinor-osi
+ Version: 0.106.4-1
+ Architecture: amd64
+ Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+ Installed-Size: 2377
+ Depends: coinor-libosi1 (= 0.106.4-1)
+ Section: libdevel
+ Priority: extra
+ Homepage: https://projects.coin-or.org/Osi
+ Description: COIN-OR Open Solver Interface (developer files)
+  Osi (Open Solver Interface) provides an abstract C++ base class to a generic
+  linear programming (LP) solver, along with derived classes for specific
+  solvers. Many applications may be able to use the Osi to insulate themselves
+  from a specific LP solver.
+  .
+  Osi is part of the larger COIN-OR initiative (Computational Infrastructure
+  for Operations Research).
+  .
+  This package contains the header files for developers.
+
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root   1563242 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/libOsiCommonTests.a
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/pkgconfig/
+-rw-r--r-- root/root       315 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/pkgconfig/osi-unittests.pc
+-rw-r--r-- root/root       285 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/pkgconfig/osi.pc
+-rw-r--r-- root/root    577214 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/libOsi.a
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/include/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/include/coin/
+-rw-r--r-- root/root       830 2014-04-28 18:05 ./usr/include/coin/OsiCollections.hpp
+-rw-r--r-- root/root      8183 2014-04-28 18:05 ./usr/include/coin/OsiAuxInfo.hpp
+-rw-r--r-- root/root     13914 2014-04-28 18:05 ./usr/include/coin/OsiUnitTests.hpp
+-rw-r--r-- root/root     13959 2014-04-28 18:05 ./usr/include/coin/OsiCuts.hpp
+-rw-r--r-- root/root      8541 2014-04-28 18:05 ./usr/include/coin/OsiColCut.hpp
+-rw-r--r-- root/root     19286 2014-04-28 18:05 ./usr/include/coin/OsiChooseVariable.hpp
+-rw-r--r-- root/root     31564 2014-04-28 18:05 ./usr/include/coin/OsiBranchingObject.hpp
+-rw-r--r-- root/root      9391 2014-04-28 18:05 ./usr/include/coin/OsiPresolve.hpp
+-rw-r--r-- root/root      4093 2014-04-28 18:05 ./usr/include/coin/OsiSolverBranch.hpp
+-rw-r--r-- root/root      8517 2014-04-28 18:05 ./usr/include/coin/OsiRowCut.hpp
+-rw-r--r-- root/root       414 2014-04-28 18:05 ./usr/include/coin/OsiConfig.h
+-rw-r--r-- root/root      6105 2014-04-28 18:05 ./usr/include/coin/OsiRowCutDebugger.hpp
+-rw-r--r-- root/root      4702 2014-04-28 18:05 ./usr/include/coin/OsiSolverParameters.hpp
+-rw-r--r-- root/root      7507 2014-04-28 18:05 ./usr/include/coin/OsiCut.hpp
+-rw-r--r-- root/root     78717 2014-04-28 18:05 ./usr/include/coin/OsiSolverInterface.hpp
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/coin/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/coin/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/coin/doc/Osi/
+-rw-r--r-- root/root        33 2014-04-28 18:05 ./usr/share/coin/doc/Osi/osi_addlibs.txt
+-rw-r--r-- root/root       191 2014-04-28 18:05 ./usr/share/coin/doc/Osi/AUTHORS
+-rw-r--r-- root/root      3018 2014-04-28 18:05 ./usr/share/coin/doc/Osi/README
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/doc/coinor-libosi-dev/
+-rw-r--r-- root/root      1960 2013-11-23 03:01 ./usr/share/doc/coinor-libosi-dev/changelog.gz
+-rw-r--r-- root/root      1188 2013-11-30 22:18 ./usr/share/doc/coinor-libosi-dev/changelog.Debian.gz
+-rw-r--r-- root/root     12870 2013-11-30 22:18 ./usr/share/doc/coinor-libosi-dev/copyright
+lrwxrwxrwx root/root         0 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/libOsi.so -> libOsi.so.1.11.4
+lrwxrwxrwx root/root         0 2014-04-28 18:05 ./usr/lib/x86_64-linux-gnu/libOsiCommonTests.so -> libOsiCommonTests.so.1.11.4
+
+
+coinor-libosi-doc_0.106.4-1_all.deb
+───────────────────────────────────
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/coinor-libosi-doc_0.106.4-1_all.deb': No such file or directory
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/coinor-libosi-doc_0.106.4-1_all.deb': No such file or directory
+
+
+coinor-libosi1-dbg_0.106.4-1_amd64.deb
+──────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 898264 bytes: control archive=932 bytes.
+     771 bytes,    20 lines      control              
+     456 bytes,     5 lines      md5sums              
+ Package: coinor-libosi1-dbg
+ Source: coinor-osi
+ Version: 0.106.4-1
+ Architecture: amd64
+ Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+ Installed-Size: 1030
+ Depends: coinor-libosi1 (= 0.106.4-1)
+ Section: debug
+ Priority: extra
+ Homepage: https://projects.coin-or.org/Osi
+ Description: COIN-OR Open Solver Interface (debug symbols)
+  Osi (Open Solver Interface) provides an abstract C++ base class to a generic
+  linear programming (LP) solver, along with derived classes for specific
+  solvers. Many applications may be able to use the Osi to insulate themselves
+  from a specific LP solver.
+  .
+  Osi is part of the larger COIN-OR initiative (Computational Infrastructure
+  for Operations Research).
+  .
+  This package contains the debug symbols.
+
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/lib/debug/.build-id/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/lib/debug/.build-id/19/
+-rw-r--r-- root/root    335655 2014-04-28 18:05 ./usr/lib/debug/.build-id/19/676672328ba17529ca999474dac3041d9f3ee0.debug
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/lib/debug/.build-id/62/
+-rw-r--r-- root/root    657605 2014-04-28 18:05 ./usr/lib/debug/.build-id/62/c7ba4ac1fbecdddc2496034beec8cf17d5cc04.debug
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:05 ./usr/share/doc/coinor-libosi1-dbg/
+-rw-r--r-- root/root      1960 2013-11-23 03:01 ./usr/share/doc/coinor-libosi1-dbg/changelog.gz
+-rw-r--r-- root/root      1188 2013-11-30 22:18 ./usr/share/doc/coinor-libosi1-dbg/changelog.Debian.gz
+-rw-r--r-- root/root     12870 2013-11-30 22:18 ./usr/share/doc/coinor-libosi1-dbg/copyright
+
+mv: cannot stat '/«CHROOT»/«BUILDDIR»/coinor-libosi-doc_0.106.4-1_all.deb': No such file or directory
+E: Could not move coinor-libosi-doc_0.106.4-1_all.deb to .
+du: cannot access '/mnt/ito/data/projets/debian-clang/tests/build_timeout/builds/coinor-osi/coinor-libosi-doc_0.106.4-1_all.deb': No such file or directory
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 110752
+Build-Time: 60
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 26
+Job: coinor-osi_0.106.4-1.dsc
+Machine Architecture: amd64
+Package: coinor-osi
+Package-Time: 92
+Source-Version: 0.106.4-1
+Space: 110752
+Status: successful
+Version: 0.106.4-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-1805
+Build needed 00:01:32, 110752k disc space

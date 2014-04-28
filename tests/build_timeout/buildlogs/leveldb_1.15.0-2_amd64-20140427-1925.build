@@ -1,0 +1,2632 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ leveldb 1.15.0-2 (amd64)                                   27 Apr 2014 19:25 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: leveldb
+Version: 1.15.0-2
+Source Version: 1.15.0-2
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/leveldb-OjDla5/leveldb-1.15.0' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/leveldb-OjDla5' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-42106be6-1c6e-40b2-b93e-ad116266a310' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+leveldb_1.15.0-2.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-sysq5F/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), libsnappy-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), libsnappy-dev
+dpkg-deb: building package `sbuild-build-depends-leveldb-dummy' in `/«BUILDDIR»/resolver-_PKv06/apt_archive/sbuild-build-depends-leveldb-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install leveldb build dependencies (apt-based resolver)                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpipeline1 libsnappy-dev
+  libsnappy1 libunistring0 libxml2 man-db po-debconf
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff less www-browser
+  libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpipeline1 libsnappy-dev
+  libsnappy1 libunistring0 libxml2 man-db po-debconf
+  sbuild-build-depends-leveldb-dummy
+0 upgraded, 19 newly installed, 0 to remove and 8 not upgraded.
+Need to get 8704 kB/8705 kB of archives.
+After this operation, 26.3 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libsnappy1 amd64 1.1.2-1 [40.3 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libsnappy-dev amd64 1.1.2-1 [48.4 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 8704 kB in 1s (5782 kB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libsnappy1.
+Preparing to unpack .../libsnappy1_1.1.2-1_amd64.deb ...
+Unpacking libsnappy1 (1.1.2-1) ...
+Selecting previously unselected package libsnappy-dev.
+Preparing to unpack .../libsnappy-dev_1.1.2-1_amd64.deb ...
+Unpacking libsnappy-dev (1.1.2-1) ...
+Selecting previously unselected package sbuild-build-depends-leveldb-dummy.
+Preparing to unpack .../sbuild-build-depends-leveldb-dummy.deb ...
+Unpacking sbuild-build-depends-leveldb-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libsnappy1 (1.1.2-1) ...
+Setting up libsnappy-dev (1.1.2-1) ...
+Setting up sbuild-build-depends-leveldb-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libsnappy-dev_1.1.2-1 libsnappy1_1.1.2-1 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-leveldb-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Mon Mar 10 17:45:01 2014 UTC using RSA key ID 311D765A
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./leveldb_1.15.0-2.dsc
+dpkg-source: info: extracting leveldb in leveldb-1.15.0
+dpkg-source: info: unpacking leveldb_1.15.0.orig.tar.gz
+dpkg-source: info: unpacking leveldb_1.15.0-2.debian.tar.gz
+dpkg-source: info: applying 0001-debian-ports.patch
+dpkg-source: info: applying 0102-kfreebsd.patch
+dpkg-source: info: applying 0103-hurd.patch
+dpkg-source: info: applying 0112-makefile_install.patch
+dpkg-source: info: applying 0113-makefile_memenv.patch
+dpkg-source: info: applying 1001-fix_bloom_test.patch
+dpkg-source: info: applying 1002-cstdatomic_renaming.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-42106be6-1c6e-40b2-b93e-ad116266a310
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package leveldb
+dpkg-buildpackage: source version 1.15.0-2
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Alessio Treglia <alessio@debian.org>
+ dpkg-source --before-build leveldb-1.15.0
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --parallel
+   dh_testdir -O--parallel
+   dh_auto_clean -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»'
+rm -f db_bench leveldbutil arena_test autocompact_test bloom_test c_test cache_test coding_test corruption_test crc32c_test db_test dbformat_test env_test filename_test filter_block_test issue178_test issue200_test log_test memenv_test skiplist_test table_test version_edit_test version_set_test write_batch_test db_bench_sqlite3 db_bench_tree_db libleveldb.a libleveldb.so libleveldb.so.1 libleveldb.so.1.15 libmemenv.a */*.o */*/*.o ios-x86/*/*.o ios-arm/*/*.o build_config.mk
+rm -rf ios-x86/* ios-arm/*
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_clean -O--parallel
+ dpkg-source -b leveldb-1.15.0
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building leveldb using existing ./leveldb_1.15.0.orig.tar.gz
+dpkg-source: info: building leveldb in leveldb_1.15.0-2.debian.tar.xz
+dpkg-source: info: building leveldb in leveldb_1.15.0-2.dsc
+ debian/rules build
+dh build --parallel
+   dh_testdir -O--parallel
+   dh_auto_configure -O--parallel
+   dh_auto_build -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»'
+g++ -Wl,-z,relro -pthread -shared -Wl,-soname -Wl,libleveldb.so.1 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -fPIC db/builder.cc db/c.cc db/db_impl.cc db/db_iter.cc db/dbformat.cc db/filename.cc db/log_reader.cc db/log_writer.cc db/memtable.cc db/repair.cc db/table_cache.cc db/version_edit.cc db/version_set.cc db/write_batch.cc table/block.cc table/block_builder.cc table/filter_block.cc table/format.cc table/iterator.cc table/merger.cc table/table.cc table/table_builder.cc table/two_level_iterator.cc util/arena.cc util/bloom.cc util/cache.cc util/coding.cc util/comparator.cc util/crc32c.cc util/env.cc util/env_posix.cc util/filter_policy.cc util/hash.cc util/histogram.cc util/logging.cc util/options.cc util/status.cc  port/port_posix.cc -o libleveldb.so.1.15 -lsnappy
+ln -fs libleveldb.so.1.15 libleveldb.so
+ln -fs libleveldb.so.1.15 libleveldb.so.1
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/builder.cc -o db/builder.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/c.cc -o db/c.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/db_impl.cc -o db/db_impl.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/db_iter.cc -o db/db_iter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/dbformat.cc -o db/dbformat.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/filename.cc -o db/filename.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/log_reader.cc -o db/log_reader.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/log_writer.cc -o db/log_writer.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/memtable.cc -o db/memtable.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/repair.cc -o db/repair.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/table_cache.cc -o db/table_cache.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/version_edit.cc -o db/version_edit.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/version_set.cc -o db/version_set.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/write_batch.cc -o db/write_batch.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/block.cc -o table/block.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/block_builder.cc -o table/block_builder.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/filter_block.cc -o table/filter_block.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/format.cc -o table/format.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/iterator.cc -o table/iterator.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/merger.cc -o table/merger.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/table.cc -o table/table.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/table_builder.cc -o table/table_builder.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/two_level_iterator.cc -o table/two_level_iterator.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/arena.cc -o util/arena.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/bloom.cc -o util/bloom.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/cache.cc -o util/cache.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/coding.cc -o util/coding.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/comparator.cc -o util/comparator.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/crc32c.cc -o util/crc32c.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/env.cc -o util/env.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/env_posix.cc -o util/env_posix.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/filter_policy.cc -o util/filter_policy.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/hash.cc -o util/hash.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/histogram.cc -o util/histogram.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/logging.cc -o util/logging.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/options.cc -o util/options.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/status.cc -o util/status.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c port/port_posix.cc -o port/port_posix.o
+rm -f libleveldb.a
+ar -rs libleveldb.a db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o
+ar: creating libleveldb.a
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c helpers/memenv/memenv.cc -o helpers/memenv/memenv.o
+rm -f libmemenv.a
+ar -rs libmemenv.a helpers/memenv/memenv.o
+ar: creating libmemenv.a
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_test
+make[2]: Entering directory `/«PKGBUILDDIR»'
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/db_bench.cc -o db/db_bench.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/testutil.cc -o util/testutil.o
+g++ -Wl,-z,relro -pthread db/db_bench.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testutil.o -o db_bench -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/leveldb_main.cc -o db/leveldb_main.o
+g++ -Wl,-z,relro -pthread db/leveldb_main.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o -o leveldbutil -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/arena_test.cc -o util/arena_test.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/testharness.cc -o util/testharness.o
+g++ -Wl,-z,relro -pthread util/arena_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o arena_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/autocompact_test.cc -o db/autocompact_test.o
+g++ -Wl,-z,relro -pthread db/autocompact_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o autocompact_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/bloom_test.cc -o util/bloom_test.o
+g++ -Wl,-z,relro -pthread util/bloom_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o bloom_test -lsnappy
+cc -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/c_test.c -o db/c_test.o
+g++ -Wl,-z,relro -pthread db/c_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o c_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/cache_test.cc -o util/cache_test.o
+g++ -Wl,-z,relro -pthread util/cache_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o cache_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/coding_test.cc -o util/coding_test.o
+g++ -Wl,-z,relro -pthread util/coding_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o coding_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/corruption_test.cc -o db/corruption_test.o
+g++ -Wl,-z,relro -pthread db/corruption_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o corruption_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/crc32c_test.cc -o util/crc32c_test.o
+g++ -Wl,-z,relro -pthread util/crc32c_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o crc32c_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/db_test.cc -o db/db_test.o
+g++ -Wl,-z,relro -pthread db/db_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o db_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/dbformat_test.cc -o db/dbformat_test.o
+g++ -Wl,-z,relro -pthread db/dbformat_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o dbformat_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c util/env_test.cc -o util/env_test.o
+g++ -Wl,-z,relro -pthread util/env_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o env_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/filename_test.cc -o db/filename_test.o
+g++ -Wl,-z,relro -pthread db/filename_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o filename_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/filter_block_test.cc -o table/filter_block_test.o
+g++ -Wl,-z,relro -pthread table/filter_block_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o filter_block_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c issues/issue178_test.cc -o issues/issue178_test.o
+g++ -Wl,-z,relro -pthread issues/issue178_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o issue178_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c issues/issue200_test.cc -o issues/issue200_test.o
+g++ -Wl,-z,relro -pthread issues/issue200_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o issue200_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/log_test.cc -o db/log_test.o
+g++ -Wl,-z,relro -pthread db/log_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o log_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c helpers/memenv/memenv_test.cc -o helpers/memenv/memenv_test.o
+g++ -Wl,-z,relro -pthread helpers/memenv/memenv_test.o libmemenv.a libleveldb.a ./util/testharness.o ./util/testutil.o -o memenv_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/skiplist_test.cc -o db/skiplist_test.o
+g++ -Wl,-z,relro -pthread db/skiplist_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o skiplist_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c table/table_test.cc -o table/table_test.o
+g++ -Wl,-z,relro -pthread table/table_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o table_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/version_edit_test.cc -o db/version_edit_test.o
+g++ -Wl,-z,relro -pthread db/version_edit_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o version_edit_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/version_set_test.cc -o db/version_set_test.o
+g++ -Wl,-z,relro -pthread db/version_set_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o version_set_test -lsnappy
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -I. -I./include -std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -DLEVELDB_CSTDATOMIC_PRESENT -DSNAPPY -O2 -g -DNDEBUG -c db/write_batch_test.cc -o db/write_batch_test.o
+g++ -Wl,-z,relro -pthread db/write_batch_test.o db/builder.o db/c.o db/db_impl.o db/db_iter.o db/dbformat.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block.o table/block_builder.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table.o table/table_builder.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o ./util/testharness.o ./util/testutil.o -o write_batch_test -lsnappy
+for t in arena_test autocompact_test bloom_test c_test cache_test coding_test corruption_test crc32c_test db_test dbformat_test env_test filename_test filter_block_test issue178_test issue200_test log_test memenv_test skiplist_test table_test version_edit_test version_set_test write_batch_test; do echo "***** Running $t"; ./$t || exit 1; done
+***** Running arena_test
+==== Test ArenaTest.Empty
+==== Test ArenaTest.Simple
+==== PASSED 2 tests
+***** Running autocompact_test
+==== Test AutoCompactTest.ReadAll
+iter   1 => 100.040 MB [other   0.000 MB]
+iter   2 => 100.040 MB [other   0.000 MB]
+iter   3 => 100.040 MB [other   0.000 MB]
+iter   4 => 100.040 MB [other   0.000 MB]
+iter   5 => 100.040 MB [other   0.000 MB]
+iter   6 => 100.040 MB [other   0.000 MB]
+iter   7 =>  79.524 MB [other   0.000 MB]
+iter   8 =>  38.492 MB [other   0.000 MB]
+iter   9 =>  17.976 MB [other   0.000 MB]
+iter  10 =>   4.103 MB [other   0.000 MB]
+==== Test AutoCompactTest.ReadHalf
+iter   1 =>  50.017 MB [other  50.023 MB]
+iter   2 =>  50.020 MB [other  50.021 MB]
+iter   3 =>  50.020 MB [other  50.021 MB]
+iter   4 =>  50.020 MB [other  50.021 MB]
+iter   5 =>  50.020 MB [other  50.021 MB]
+iter   6 =>  50.020 MB [other  50.021 MB]
+iter   7 =>  29.504 MB [other  50.021 MB]
+iter   8 =>   8.988 MB [other  50.021 MB]
+iter   9 =>   4.103 MB [other  34.389 MB]
+==== PASSED 2 tests
+***** Running bloom_test
+==== Test BloomTest.EmptyFilter
+==== Test BloomTest.Small
+==== Test BloomTest.VaryingLengths
+False positives:  0.23% @ length =      1 ; bytes =      9
+False positives:  0.44% @ length =      2 ; bytes =      9
+False positives:  0.75% @ length =      3 ; bytes =      9
+False positives:  1.08% @ length =      4 ; bytes =      9
+False positives:  1.20% @ length =      5 ; bytes =      9
+False positives:  1.59% @ length =      6 ; bytes =      9
+False positives:  1.53% @ length =      7 ; bytes =     10
+False positives:  1.81% @ length =      8 ; bytes =     11
+False positives:  0.79% @ length =      9 ; bytes =     13
+False positives:  1.63% @ length =     10 ; bytes =     14
+False positives:  1.24% @ length =     20 ; bytes =     26
+False positives:  0.84% @ length =     30 ; bytes =     39
+False positives:  1.07% @ length =     40 ; bytes =     51
+False positives:  1.09% @ length =     50 ; bytes =     64
+False positives:  1.12% @ length =     60 ; bytes =     76
+False positives:  0.93% @ length =     70 ; bytes =     89
+False positives:  1.16% @ length =     80 ; bytes =    101
+False positives:  1.07% @ length =     90 ; bytes =    114
+False positives:  0.83% @ length =    100 ; bytes =    126
+False positives:  0.96% @ length =    200 ; bytes =    251
+False positives:  0.77% @ length =    300 ; bytes =    376
+False positives:  0.81% @ length =    400 ; bytes =    501
+False positives:  0.74% @ length =    500 ; bytes =    626
+False positives:  0.78% @ length =    600 ; bytes =    751
+False positives:  0.91% @ length =    700 ; bytes =    876
+False positives:  0.88% @ length =    800 ; bytes =   1001
+False positives:  0.97% @ length =    900 ; bytes =   1126
+False positives:  0.90% @ length =   1000 ; bytes =   1251
+False positives:  0.89% @ length =   2000 ; bytes =   2501
+False positives:  0.95% @ length =   3000 ; bytes =   3751
+False positives:  1.01% @ length =   4000 ; bytes =   5001
+False positives:  0.89% @ length =   5000 ; bytes =   6251
+False positives:  1.03% @ length =   6000 ; bytes =   7501
+False positives:  0.78% @ length =   7000 ; bytes =   8751
+False positives:  1.09% @ length =   8000 ; bytes =  10001
+False positives:  1.09% @ length =   9000 ; bytes =  11251
+False positives:  0.81% @ length =  10000 ; bytes =  12501
+Filters: 33 good, 4 mediocre
+==== PASSED 3 tests
+***** Running c_test
+=== Test create_objects
+=== Test destroy
+=== Test open_error
+=== Test leveldb_free
+=== Test open
+=== Test put
+=== Test compactall
+=== Test compactrange
+=== Test writebatch
+=== Test iter
+=== Test approximate_sizes
+=== Test property
+=== Test snapshot
+=== Test repair
+=== Test filter
+=== Test cleanup
+PASS
+***** Running cache_test
+==== Test CacheTest.HitAndMiss
+==== Test CacheTest.Erase
+==== Test CacheTest.EntriesArePinned
+==== Test CacheTest.EvictionPolicy
+==== Test CacheTest.HeavyEntries
+==== Test CacheTest.NewId
+==== PASSED 6 tests
+***** Running coding_test
+==== Test Coding.Fixed32
+==== Test Coding.Fixed64
+==== Test Coding.EncodingOutput
+==== Test Coding.Varint32
+==== Test Coding.Varint64
+==== Test Coding.Varint32Overflow
+==== Test Coding.Varint32Truncation
+==== Test Coding.Varint64Overflow
+==== Test Coding.Varint64Truncation
+==== Test Coding.Strings
+==== PASSED 10 tests
+***** Running corruption_test
+==== Test CorruptionTest.Recovery
+expected=100..100; got=100; bad_keys=0; bad_values=0; missed=0
+expected=36..36; got=36; bad_keys=0; bad_values=0; missed=64
+==== Test CorruptionTest.RecoverWriteError
+==== Test CorruptionTest.NewFileErrorDuringWrite
+==== Test CorruptionTest.TableFile
+expected=90..99; got=98; bad_keys=0; bad_values=2; missed=0
+==== Test CorruptionTest.TableFileRepair
+expected=95..99; got=98; bad_keys=0; bad_values=0; missed=2
+==== Test CorruptionTest.TableFileIndexData
+expected=5000..9999; got=7958; bad_keys=0; bad_values=0; missed=0
+==== Test CorruptionTest.MissingDescriptor
+expected=1000..1000; got=1000; bad_keys=0; bad_values=0; missed=0
+==== Test CorruptionTest.SequenceNumberRecovery
+==== Test CorruptionTest.CorruptedDescriptor
+==== Test CorruptionTest.CompactionInputError
+expected=5..9; got=8; bad_keys=0; bad_values=2; missed=0
+expected=10000..10000; got=10000; bad_keys=0; bad_values=0; missed=0
+==== Test CorruptionTest.CompactionInputErrorParanoid
+==== Test CorruptionTest.UnrelatedKeys
+==== PASSED 12 tests
+***** Running crc32c_test
+==== Test CRC.StandardResults
+==== Test CRC.Values
+==== Test CRC.Extend
+==== Test CRC.Mask
+==== PASSED 4 tests
+***** Running db_test
+==== Test DBTest.Empty
+==== Test DBTest.ReadWrite
+==== Test DBTest.PutDeleteGet
+==== Test DBTest.GetFromImmutableLayer
+==== Test DBTest.GetFromVersions
+==== Test DBTest.GetSnapshot
+==== Test DBTest.GetLevel0Ordering
+==== Test DBTest.GetOrderedByLevels
+==== Test DBTest.GetPicksCorrectFile
+==== Test DBTest.GetEncountersEmptyLevel
+==== Test DBTest.IterEmpty
+==== Test DBTest.IterSingle
+==== Test DBTest.IterMulti
+==== Test DBTest.IterSmallAndLargeMix
+==== Test DBTest.IterMultiWithDelete
+==== Test DBTest.Recover
+==== Test DBTest.RecoveryWithEmptyLog
+==== Test DBTest.RecoverDuringMemtableCompaction
+==== Test DBTest.MinorCompactionsHappen
+==== Test DBTest.RecoverWithLargeLog
+==== Test DBTest.CompactionsGenerateMultipleFiles
+==== Test DBTest.RepeatedWritesToSameKey
+after 1: 0 files
+after 2: 0 files
+after 3: 1 files
+after 4: 2 files
+after 5: 3 files
+after 6: 4 files
+after 7: 5 files
+after 8: 6 files
+after 9: 7 files
+after 10: 4 files
+after 11: 5 files
+after 12: 6 files
+after 13: 7 files
+after 14: 4 files
+after 15: 5 files
+after 16: 6 files
+after 17: 3 files
+after 18: 4 files
+after 19: 5 files
+after 20: 6 files
+after 21: 3 files
+after 22: 4 files
+after 23: 5 files
+after 24: 6 files
+after 25: 7 files
+after 26: 4 files
+after 27: 5 files
+after 28: 6 files
+after 29: 7 files
+after 30: 4 files
+after 31: 5 files
+after 32: 6 files
+after 33: 7 files
+after 34: 4 files
+after 35: 5 files
+after 36: 6 files
+after 37: 7 files
+after 38: 4 files
+after 39: 5 files
+after 40: 6 files
+after 41: 7 files
+after 42: 4 files
+after 43: 5 files
+after 44: 6 files
+after 45: 7 files
+after 46: 4 files
+after 47: 6 files
+after 48: 2 files
+after 49: 3 files
+after 50: 4 files
+after 51: 5 files
+after 52: 6 files
+after 53: 7 files
+after 54: 4 files
+after 55: 5 files
+after 56: 6 files
+after 57: 7 files
+after 58: 4 files
+after 59: 5 files
+after 60: 6 files
+after 61: 7 files
+after 62: 4 files
+after 63: 5 files
+after 64: 6 files
+after 65: 7 files
+after 66: 4 files
+after 67: 5 files
+after 68: 6 files
+after 69: 7 files
+after 70: 4 files
+after 71: 5 files
+after 72: 6 files
+after 73: 7 files
+after 74: 4 files
+after 75: 5 files
+after 76: 6 files
+after 77: 7 files
+after 78: 4 files
+after 79: 5 files
+after 80: 6 files
+after 81: 7 files
+after 82: 4 files
+after 83: 5 files
+after 84: 6 files
+after 85: 7 files
+after 86: 4 files
+after 87: 5 files
+after 88: 6 files
+after 89: 7 files
+after 90: 4 files
+after 91: 5 files
+after 92: 6 files
+after 93: 3 files
+after 94: 4 files
+after 95: 5 files
+==== Test DBTest.SparseMerge
+==== Test DBTest.ApproximateSizes
+==== Test DBTest.ApproximateSizes_MixOfSmallAndLarge
+==== Test DBTest.IteratorPinsRef
+==== Test DBTest.Snapshot
+==== Test DBTest.HiddenValuesAreRemoved
+==== Test DBTest.DeletionMarkers1
+==== Test DBTest.DeletionMarkers2
+==== Test DBTest.OverlapInLevel0
+==== Test DBTest.L0_CompactionBug_Issue44_a
+==== Test DBTest.L0_CompactionBug_Issue44_b
+==== Test DBTest.ComparatorCheck
+==== Test DBTest.CustomComparator
+==== Test DBTest.ManualCompaction
+==== Test DBTest.DBOpen_Options
+==== Test DBTest.Locking
+==== Test DBTest.NoSpace
+==== Test DBTest.NonWritableFileSystem
+iter 0; errors 0
+iter 1; errors 0
+iter 2; errors 1
+iter 3; errors 2
+iter 4; errors 3
+iter 5; errors 4
+iter 6; errors 5
+iter 7; errors 6
+iter 8; errors 7
+iter 9; errors 8
+iter 10; errors 9
+iter 11; errors 10
+iter 12; errors 11
+iter 13; errors 12
+iter 14; errors 13
+iter 15; errors 14
+iter 16; errors 15
+iter 17; errors 16
+iter 18; errors 17
+iter 19; errors 18
+==== Test DBTest.WriteSyncError
+==== Test DBTest.ManifestWriteError
+==== Test DBTest.MissingSSTFile
+==== Test DBTest.StillReadSST
+==== Test DBTest.FilesDeletedAfterCompaction
+==== Test DBTest.BloomFilter
+10000 present => 10125 reads
+10000 missing => 174 reads
+==== Test DBTest.MultiThreaded
+... starting thread 0
+... starting thread 1
+... starting thread 2
+... starting thread 3
+... stopping thread 0 after 680525 ops
+... stopping thread 2 after 674361 ops
+... stopping thread 3 after 690220 ops
+... stopping thread 1 after 668393 ops
+... starting thread 0
+... starting thread 1
+... starting thread 2
+... starting thread 3
+... stopping thread 1 after 681312 ops
+... stopping thread 0 after 681772 ops
+... stopping thread 2 after 669900 ops
+... stopping thread 3 after 655300 ops
+... starting thread 1
+... starting thread 0
+... starting thread 2
+... starting thread 3
+... stopping thread 3 after 672810 ops
+... stopping thread 0 after 653262 ops
+... stopping thread 1 after 639753 ops
+... stopping thread 2 after 654966 ops
+==== Test DBTest.Randomized
+Step 0 of 10000
+1 entries compared: ok=1
+1 entries compared: ok=1
+1 entries compared: ok=1
+Step 100 of 10000
+36 entries compared: ok=1
+1 entries compared: ok=1
+36 entries compared: ok=1
+Step 200 of 10000
+70 entries compared: ok=1
+36 entries compared: ok=1
+70 entries compared: ok=1
+Step 300 of 10000
+101 entries compared: ok=1
+70 entries compared: ok=1
+101 entries compared: ok=1
+Step 400 of 10000
+126 entries compared: ok=1
+101 entries compared: ok=1
+126 entries compared: ok=1
+Step 500 of 10000
+161 entries compared: ok=1
+126 entries compared: ok=1
+161 entries compared: ok=1
+Step 600 of 10000
+189 entries compared: ok=1
+161 entries compared: ok=1
+189 entries compared: ok=1
+Step 700 of 10000
+221 entries compared: ok=1
+189 entries compared: ok=1
+221 entries compared: ok=1
+Step 800 of 10000
+259 entries compared: ok=1
+221 entries compared: ok=1
+259 entries compared: ok=1
+Step 900 of 10000
+285 entries compared: ok=1
+259 entries compared: ok=1
+285 entries compared: ok=1
+Step 1000 of 10000
+313 entries compared: ok=1
+285 entries compared: ok=1
+313 entries compared: ok=1
+Step 1100 of 10000
+343 entries compared: ok=1
+313 entries compared: ok=1
+343 entries compared: ok=1
+Step 1200 of 10000
+372 entries compared: ok=1
+343 entries compared: ok=1
+372 entries compared: ok=1
+Step 1300 of 10000
+403 entries compared: ok=1
+372 entries compared: ok=1
+403 entries compared: ok=1
+Step 1400 of 10000
+440 entries compared: ok=1
+403 entries compared: ok=1
+440 entries compared: ok=1
+Step 1500 of 10000
+477 entries compared: ok=1
+440 entries compared: ok=1
+477 entries compared: ok=1
+Step 1600 of 10000
+505 entries compared: ok=1
+477 entries compared: ok=1
+505 entries compared: ok=1
+Step 1700 of 10000
+539 entries compared: ok=1
+505 entries compared: ok=1
+539 entries compared: ok=1
+Step 1800 of 10000
+560 entries compared: ok=1
+539 entries compared: ok=1
+560 entries compared: ok=1
+Step 1900 of 10000
+591 entries compared: ok=1
+560 entries compared: ok=1
+591 entries compared: ok=1
+Step 2000 of 10000
+616 entries compared: ok=1
+591 entries compared: ok=1
+616 entries compared: ok=1
+Step 2100 of 10000
+649 entries compared: ok=1
+616 entries compared: ok=1
+649 entries compared: ok=1
+Step 2200 of 10000
+675 entries compared: ok=1
+649 entries compared: ok=1
+675 entries compared: ok=1
+Step 2300 of 10000
+692 entries compared: ok=1
+675 entries compared: ok=1
+692 entries compared: ok=1
+Step 2400 of 10000
+718 entries compared: ok=1
+692 entries compared: ok=1
+718 entries compared: ok=1
+Step 2500 of 10000
+742 entries compared: ok=1
+718 entries compared: ok=1
+742 entries compared: ok=1
+Step 2600 of 10000
+770 entries compared: ok=1
+742 entries compared: ok=1
+770 entries compared: ok=1
+Step 2700 of 10000
+798 entries compared: ok=1
+770 entries compared: ok=1
+798 entries compared: ok=1
+Step 2800 of 10000
+829 entries compared: ok=1
+798 entries compared: ok=1
+829 entries compared: ok=1
+Step 2900 of 10000
+851 entries compared: ok=1
+829 entries compared: ok=1
+851 entries compared: ok=1
+Step 3000 of 10000
+874 entries compared: ok=1
+851 entries compared: ok=1
+874 entries compared: ok=1
+Step 3100 of 10000
+900 entries compared: ok=1
+874 entries compared: ok=1
+900 entries compared: ok=1
+Step 3200 of 10000
+919 entries compared: ok=1
+900 entries compared: ok=1
+919 entries compared: ok=1
+Step 3300 of 10000
+954 entries compared: ok=1
+919 entries compared: ok=1
+954 entries compared: ok=1
+Step 3400 of 10000
+992 entries compared: ok=1
+954 entries compared: ok=1
+992 entries compared: ok=1
+Step 3500 of 10000
+1018 entries compared: ok=1
+992 entries compared: ok=1
+1018 entries compared: ok=1
+Step 3600 of 10000
+1046 entries compared: ok=1
+1018 entries compared: ok=1
+1046 entries compared: ok=1
+Step 3700 of 10000
+1082 entries compared: ok=1
+1046 entries compared: ok=1
+1082 entries compared: ok=1
+Step 3800 of 10000
+1103 entries compared: ok=1
+1082 entries compared: ok=1
+1103 entries compared: ok=1
+Step 3900 of 10000
+1132 entries compared: ok=1
+1103 entries compared: ok=1
+1132 entries compared: ok=1
+Step 4000 of 10000
+1150 entries compared: ok=1
+1132 entries compared: ok=1
+1150 entries compared: ok=1
+Step 4100 of 10000
+1187 entries compared: ok=1
+1150 entries compared: ok=1
+1187 entries compared: ok=1
+Step 4200 of 10000
+1217 entries compared: ok=1
+1187 entries compared: ok=1
+1217 entries compared: ok=1
+Step 4300 of 10000
+1241 entries compared: ok=1
+1217 entries compared: ok=1
+1241 entries compared: ok=1
+Step 4400 of 10000
+1267 entries compared: ok=1
+1241 entries compared: ok=1
+1267 entries compared: ok=1
+Step 4500 of 10000
+1290 entries compared: ok=1
+1267 entries compared: ok=1
+1290 entries compared: ok=1
+Step 4600 of 10000
+1317 entries compared: ok=1
+1290 entries compared: ok=1
+1317 entries compared: ok=1
+Step 4700 of 10000
+1336 entries compared: ok=1
+1317 entries compared: ok=1
+1336 entries compared: ok=1
+Step 4800 of 10000
+1358 entries compared: ok=1
+1336 entries compared: ok=1
+1358 entries compared: ok=1
+Step 4900 of 10000
+1384 entries compared: ok=1
+1358 entries compared: ok=1
+1384 entries compared: ok=1
+Step 5000 of 10000
+1421 entries compared: ok=1
+1384 entries compared: ok=1
+1421 entries compared: ok=1
+Step 5100 of 10000
+1447 entries compared: ok=1
+1421 entries compared: ok=1
+1447 entries compared: ok=1
+Step 5200 of 10000
+1478 entries compared: ok=1
+1447 entries compared: ok=1
+1478 entries compared: ok=1
+Step 5300 of 10000
+1509 entries compared: ok=1
+1478 entries compared: ok=1
+1509 entries compared: ok=1
+Step 5400 of 10000
+1529 entries compared: ok=1
+1509 entries compared: ok=1
+1529 entries compared: ok=1
+Step 5500 of 10000
+1543 entries compared: ok=1
+1529 entries compared: ok=1
+1543 entries compared: ok=1
+Step 5600 of 10000
+1557 entries compared: ok=1
+1543 entries compared: ok=1
+1557 entries compared: ok=1
+Step 5700 of 10000
+1567 entries compared: ok=1
+1557 entries compared: ok=1
+1567 entries compared: ok=1
+Step 5800 of 10000
+1596 entries compared: ok=1
+1567 entries compared: ok=1
+1596 entries compared: ok=1
+Step 5900 of 10000
+1620 entries compared: ok=1
+1596 entries compared: ok=1
+1620 entries compared: ok=1
+Step 6000 of 10000
+1657 entries compared: ok=1
+1620 entries compared: ok=1
+1657 entries compared: ok=1
+Step 6100 of 10000
+1683 entries compared: ok=1
+1657 entries compared: ok=1
+1683 entries compared: ok=1
+Step 6200 of 10000
+1711 entries compared: ok=1
+1683 entries compared: ok=1
+1711 entries compared: ok=1
+Step 6300 of 10000
+1741 entries compared: ok=1
+1711 entries compared: ok=1
+1741 entries compared: ok=1
+Step 6400 of 10000
+1769 entries compared: ok=1
+1741 entries compared: ok=1
+1769 entries compared: ok=1
+Step 6500 of 10000
+1805 entries compared: ok=1
+1769 entries compared: ok=1
+1805 entries compared: ok=1
+Step 6600 of 10000
+1839 entries compared: ok=1
+1805 entries compared: ok=1
+1839 entries compared: ok=1
+Step 6700 of 10000
+1879 entries compared: ok=1
+1839 entries compared: ok=1
+1879 entries compared: ok=1
+Step 6800 of 10000
+1905 entries compared: ok=1
+1879 entries compared: ok=1
+1905 entries compared: ok=1
+Step 6900 of 10000
+1924 entries compared: ok=1
+1905 entries compared: ok=1
+1924 entries compared: ok=1
+Step 7000 of 10000
+1957 entries compared: ok=1
+1924 entries compared: ok=1
+1957 entries compared: ok=1
+Step 7100 of 10000
+1990 entries compared: ok=1
+1957 entries compared: ok=1
+1990 entries compared: ok=1
+Step 7200 of 10000
+2012 entries compared: ok=1
+1990 entries compared: ok=1
+2012 entries compared: ok=1
+Step 7300 of 10000
+2040 entries compared: ok=1
+2012 entries compared: ok=1
+2040 entries compared: ok=1
+Step 7400 of 10000
+2071 entries compared: ok=1
+2040 entries compared: ok=1
+2071 entries compared: ok=1
+Step 7500 of 10000
+2087 entries compared: ok=1
+2071 entries compared: ok=1
+2087 entries compared: ok=1
+Step 7600 of 10000
+2113 entries compared: ok=1
+2087 entries compared: ok=1
+2113 entries compared: ok=1
+Step 7700 of 10000
+2143 entries compared: ok=1
+2113 entries compared: ok=1
+2143 entries compared: ok=1
+Step 7800 of 10000
+2164 entries compared: ok=1
+2143 entries compared: ok=1
+2164 entries compared: ok=1
+Step 7900 of 10000
+2193 entries compared: ok=1
+2164 entries compared: ok=1
+2193 entries compared: ok=1
+Step 8000 of 10000
+2223 entries compared: ok=1
+2193 entries compared: ok=1
+2223 entries compared: ok=1
+Step 8100 of 10000
+2244 entries compared: ok=1
+2223 entries compared: ok=1
+2244 entries compared: ok=1
+Step 8200 of 10000
+2266 entries compared: ok=1
+2244 entries compared: ok=1
+2266 entries compared: ok=1
+Step 8300 of 10000
+2306 entries compared: ok=1
+2266 entries compared: ok=1
+2306 entries compared: ok=1
+Step 8400 of 10000
+2326 entries compared: ok=1
+2306 entries compared: ok=1
+2326 entries compared: ok=1
+Step 8500 of 10000
+2352 entries compared: ok=1
+2326 entries compared: ok=1
+2352 entries compared: ok=1
+Step 8600 of 10000
+2371 entries compared: ok=1
+2352 entries compared: ok=1
+2371 entries compared: ok=1
+Step 8700 of 10000
+2402 entries compared: ok=1
+2371 entries compared: ok=1
+2402 entries compared: ok=1
+Step 8800 of 10000
+2431 entries compared: ok=1
+2402 entries compared: ok=1
+2431 entries compared: ok=1
+Step 8900 of 10000
+2470 entries compared: ok=1
+2431 entries compared: ok=1
+2470 entries compared: ok=1
+Step 9000 of 10000
+2492 entries compared: ok=1
+2470 entries compared: ok=1
+2492 entries compared: ok=1
+Step 9100 of 10000
+2512 entries compared: ok=1
+2492 entries compared: ok=1
+2512 entries compared: ok=1
+Step 9200 of 10000
+2536 entries compared: ok=1
+2512 entries compared: ok=1
+2536 entries compared: ok=1
+Step 9300 of 10000
+2562 entries compared: ok=1
+2536 entries compared: ok=1
+2562 entries compared: ok=1
+Step 9400 of 10000
+2579 entries compared: ok=1
+2562 entries compared: ok=1
+2579 entries compared: ok=1
+Step 9500 of 10000
+2612 entries compared: ok=1
+2579 entries compared: ok=1
+2612 entries compared: ok=1
+Step 9600 of 10000
+2641 entries compared: ok=1
+2612 entries compared: ok=1
+2641 entries compared: ok=1
+Step 9700 of 10000
+2657 entries compared: ok=1
+2641 entries compared: ok=1
+2657 entries compared: ok=1
+Step 9800 of 10000
+2684 entries compared: ok=1
+2657 entries compared: ok=1
+2684 entries compared: ok=1
+Step 9900 of 10000
+2705 entries compared: ok=1
+2684 entries compared: ok=1
+2705 entries compared: ok=1
+Step 0 of 10000
+0 entries compared: ok=1
+0 entries compared: ok=1
+0 entries compared: ok=1
+Step 100 of 10000
+32 entries compared: ok=1
+0 entries compared: ok=1
+32 entries compared: ok=1
+Step 200 of 10000
+62 entries compared: ok=1
+32 entries compared: ok=1
+62 entries compared: ok=1
+Step 300 of 10000
+91 entries compared: ok=1
+62 entries compared: ok=1
+91 entries compared: ok=1
+Step 400 of 10000
+132 entries compared: ok=1
+91 entries compared: ok=1
+132 entries compared: ok=1
+Step 500 of 10000
+165 entries compared: ok=1
+132 entries compared: ok=1
+165 entries compared: ok=1
+Step 600 of 10000
+191 entries compared: ok=1
+165 entries compared: ok=1
+191 entries compared: ok=1
+Step 700 of 10000
+225 entries compared: ok=1
+191 entries compared: ok=1
+225 entries compared: ok=1
+Step 800 of 10000
+248 entries compared: ok=1
+225 entries compared: ok=1
+248 entries compared: ok=1
+Step 900 of 10000
+278 entries compared: ok=1
+248 entries compared: ok=1
+278 entries compared: ok=1
+Step 1000 of 10000
+304 entries compared: ok=1
+278 entries compared: ok=1
+304 entries compared: ok=1
+Step 1100 of 10000
+330 entries compared: ok=1
+304 entries compared: ok=1
+330 entries compared: ok=1
+Step 1200 of 10000
+371 entries compared: ok=1
+330 entries compared: ok=1
+371 entries compared: ok=1
+Step 1300 of 10000
+392 entries compared: ok=1
+371 entries compared: ok=1
+392 entries compared: ok=1
+Step 1400 of 10000
+423 entries compared: ok=1
+392 entries compared: ok=1
+423 entries compared: ok=1
+Step 1500 of 10000
+456 entries compared: ok=1
+423 entries compared: ok=1
+456 entries compared: ok=1
+Step 1600 of 10000
+487 entries compared: ok=1
+456 entries compared: ok=1
+487 entries compared: ok=1
+Step 1700 of 10000
+509 entries compared: ok=1
+487 entries compared: ok=1
+509 entries compared: ok=1
+Step 1800 of 10000
+538 entries compared: ok=1
+509 entries compared: ok=1
+538 entries compared: ok=1
+Step 1900 of 10000
+562 entries compared: ok=1
+538 entries compared: ok=1
+562 entries compared: ok=1
+Step 2000 of 10000
+584 entries compared: ok=1
+562 entries compared: ok=1
+584 entries compared: ok=1
+Step 2100 of 10000
+622 entries compared: ok=1
+584 entries compared: ok=1
+622 entries compared: ok=1
+Step 2200 of 10000
+648 entries compared: ok=1
+622 entries compared: ok=1
+648 entries compared: ok=1
+Step 2300 of 10000
+669 entries compared: ok=1
+648 entries compared: ok=1
+669 entries compared: ok=1
+Step 2400 of 10000
+688 entries compared: ok=1
+669 entries compared: ok=1
+688 entries compared: ok=1
+Step 2500 of 10000
+711 entries compared: ok=1
+688 entries compared: ok=1
+711 entries compared: ok=1
+Step 2600 of 10000
+739 entries compared: ok=1
+711 entries compared: ok=1
+739 entries compared: ok=1
+Step 2700 of 10000
+759 entries compared: ok=1
+739 entries compared: ok=1
+759 entries compared: ok=1
+Step 2800 of 10000
+792 entries compared: ok=1
+759 entries compared: ok=1
+792 entries compared: ok=1
+Step 2900 of 10000
+819 entries compared: ok=1
+792 entries compared: ok=1
+819 entries compared: ok=1
+Step 3000 of 10000
+859 entries compared: ok=1
+819 entries compared: ok=1
+859 entries compared: ok=1
+Step 3100 of 10000
+876 entries compared: ok=1
+859 entries compared: ok=1
+876 entries compared: ok=1
+Step 3200 of 10000
+908 entries compared: ok=1
+876 entries compared: ok=1
+908 entries compared: ok=1
+Step 3300 of 10000
+938 entries compared: ok=1
+908 entries compared: ok=1
+938 entries compared: ok=1
+Step 3400 of 10000
+965 entries compared: ok=1
+938 entries compared: ok=1
+965 entries compared: ok=1
+Step 3500 of 10000
+989 entries compared: ok=1
+965 entries compared: ok=1
+989 entries compared: ok=1
+Step 3600 of 10000
+1029 entries compared: ok=1
+989 entries compared: ok=1
+1029 entries compared: ok=1
+Step 3700 of 10000
+1062 entries compared: ok=1
+1029 entries compared: ok=1
+1062 entries compared: ok=1
+Step 3800 of 10000
+1083 entries compared: ok=1
+1062 entries compared: ok=1
+1083 entries compared: ok=1
+Step 3900 of 10000
+1113 entries compared: ok=1
+1083 entries compared: ok=1
+1113 entries compared: ok=1
+Step 4000 of 10000
+1142 entries compared: ok=1
+1113 entries compared: ok=1
+1142 entries compared: ok=1
+Step 4100 of 10000
+1164 entries compared: ok=1
+1142 entries compared: ok=1
+1164 entries compared: ok=1
+Step 4200 of 10000
+1186 entries compared: ok=1
+1164 entries compared: ok=1
+1186 entries compared: ok=1
+Step 4300 of 10000
+1210 entries compared: ok=1
+1186 entries compared: ok=1
+1210 entries compared: ok=1
+Step 4400 of 10000
+1234 entries compared: ok=1
+1210 entries compared: ok=1
+1234 entries compared: ok=1
+Step 4500 of 10000
+1268 entries compared: ok=1
+1234 entries compared: ok=1
+1268 entries compared: ok=1
+Step 4600 of 10000
+1293 entries compared: ok=1
+1268 entries compared: ok=1
+1293 entries compared: ok=1
+Step 4700 of 10000
+1311 entries compared: ok=1
+1293 entries compared: ok=1
+1311 entries compared: ok=1
+Step 4800 of 10000
+1340 entries compared: ok=1
+1311 entries compared: ok=1
+1340 entries compared: ok=1
+Step 4900 of 10000
+1368 entries compared: ok=1
+1340 entries compared: ok=1
+1368 entries compared: ok=1
+Step 5000 of 10000
+1387 entries compared: ok=1
+1368 entries compared: ok=1
+1387 entries compared: ok=1
+Step 5100 of 10000
+1417 entries compared: ok=1
+1387 entries compared: ok=1
+1417 entries compared: ok=1
+Step 5200 of 10000
+1447 entries compared: ok=1
+1417 entries compared: ok=1
+1447 entries compared: ok=1
+Step 5300 of 10000
+1481 entries compared: ok=1
+1447 entries compared: ok=1
+1481 entries compared: ok=1
+Step 5400 of 10000
+1515 entries compared: ok=1
+1481 entries compared: ok=1
+1515 entries compared: ok=1
+Step 5500 of 10000
+1540 entries compared: ok=1
+1515 entries compared: ok=1
+1540 entries compared: ok=1
+Step 5600 of 10000
+1573 entries compared: ok=1
+1540 entries compared: ok=1
+1573 entries compared: ok=1
+Step 5700 of 10000
+1606 entries compared: ok=1
+1573 entries compared: ok=1
+1606 entries compared: ok=1
+Step 5800 of 10000
+1636 entries compared: ok=1
+1606 entries compared: ok=1
+1636 entries compared: ok=1
+Step 5900 of 10000
+1655 entries compared: ok=1
+1636 entries compared: ok=1
+1655 entries compared: ok=1
+Step 6000 of 10000
+1679 entries compared: ok=1
+1655 entries compared: ok=1
+1679 entries compared: ok=1
+Step 6100 of 10000
+1711 entries compared: ok=1
+1679 entries compared: ok=1
+1711 entries compared: ok=1
+Step 6200 of 10000
+1734 entries compared: ok=1
+1711 entries compared: ok=1
+1734 entries compared: ok=1
+Step 6300 of 10000
+1766 entries compared: ok=1
+1734 entries compared: ok=1
+1766 entries compared: ok=1
+Step 6400 of 10000
+1791 entries compared: ok=1
+1766 entries compared: ok=1
+1791 entries compared: ok=1
+Step 6500 of 10000
+1832 entries compared: ok=1
+1791 entries compared: ok=1
+1832 entries compared: ok=1
+Step 6600 of 10000
+1855 entries compared: ok=1
+1832 entries compared: ok=1
+1855 entries compared: ok=1
+Step 6700 of 10000
+1867 entries compared: ok=1
+1855 entries compared: ok=1
+1867 entries compared: ok=1
+Step 6800 of 10000
+1896 entries compared: ok=1
+1867 entries compared: ok=1
+1896 entries compared: ok=1
+Step 6900 of 10000
+1921 entries compared: ok=1
+1896 entries compared: ok=1
+1921 entries compared: ok=1
+Step 7000 of 10000
+1956 entries compared: ok=1
+1921 entries compared: ok=1
+1956 entries compared: ok=1
+Step 7100 of 10000
+1974 entries compared: ok=1
+1956 entries compared: ok=1
+1974 entries compared: ok=1
+Step 7200 of 10000
+2013 entries compared: ok=1
+1974 entries compared: ok=1
+2013 entries compared: ok=1
+Step 7300 of 10000
+2044 entries compared: ok=1
+2013 entries compared: ok=1
+2044 entries compared: ok=1
+Step 7400 of 10000
+2068 entries compared: ok=1
+2044 entries compared: ok=1
+2068 entries compared: ok=1
+Step 7500 of 10000
+2095 entries compared: ok=1
+2068 entries compared: ok=1
+2095 entries compared: ok=1
+Step 7600 of 10000
+2139 entries compared: ok=1
+2095 entries compared: ok=1
+2139 entries compared: ok=1
+Step 7700 of 10000
+2161 entries compared: ok=1
+2139 entries compared: ok=1
+2161 entries compared: ok=1
+Step 7800 of 10000
+2183 entries compared: ok=1
+2161 entries compared: ok=1
+2183 entries compared: ok=1
+Step 7900 of 10000
+2199 entries compared: ok=1
+2183 entries compared: ok=1
+2199 entries compared: ok=1
+Step 8000 of 10000
+2218 entries compared: ok=1
+2199 entries compared: ok=1
+2218 entries compared: ok=1
+Step 8100 of 10000
+2243 entries compared: ok=1
+2218 entries compared: ok=1
+2243 entries compared: ok=1
+Step 8200 of 10000
+2271 entries compared: ok=1
+2243 entries compared: ok=1
+2271 entries compared: ok=1
+Step 8300 of 10000
+2301 entries compared: ok=1
+2271 entries compared: ok=1
+2301 entries compared: ok=1
+Step 8400 of 10000
+2333 entries compared: ok=1
+2301 entries compared: ok=1
+2333 entries compared: ok=1
+Step 8500 of 10000
+2357 entries compared: ok=1
+2333 entries compared: ok=1
+2357 entries compared: ok=1
+Step 8600 of 10000
+2381 entries compared: ok=1
+2357 entries compared: ok=1
+2381 entries compared: ok=1
+Step 8700 of 10000
+2409 entries compared: ok=1
+2381 entries compared: ok=1
+2409 entries compared: ok=1
+Step 8800 of 10000
+2441 entries compared: ok=1
+2409 entries compared: ok=1
+2441 entries compared: ok=1
+Step 8900 of 10000
+2466 entries compared: ok=1
+2441 entries compared: ok=1
+2466 entries compared: ok=1
+Step 9000 of 10000
+2500 entries compared: ok=1
+2466 entries compared: ok=1
+2500 entries compared: ok=1
+Step 9100 of 10000
+2529 entries compared: ok=1
+2500 entries compared: ok=1
+2529 entries compared: ok=1
+Step 9200 of 10000
+2550 entries compared: ok=1
+2529 entries compared: ok=1
+2550 entries compared: ok=1
+Step 9300 of 10000
+2580 entries compared: ok=1
+2550 entries compared: ok=1
+2580 entries compared: ok=1
+Step 9400 of 10000
+2599 entries compared: ok=1
+2580 entries compared: ok=1
+2599 entries compared: ok=1
+Step 9500 of 10000
+2627 entries compared: ok=1
+2599 entries compared: ok=1
+2627 entries compared: ok=1
+Step 9600 of 10000
+2659 entries compared: ok=1
+2627 entries compared: ok=1
+2659 entries compared: ok=1
+Step 9700 of 10000
+2688 entries compared: ok=1
+2659 entries compared: ok=1
+2688 entries compared: ok=1
+Step 9800 of 10000
+2717 entries compared: ok=1
+2688 entries compared: ok=1
+2717 entries compared: ok=1
+Step 9900 of 10000
+2740 entries compared: ok=1
+2717 entries compared: ok=1
+2740 entries compared: ok=1
+Step 0 of 10000
+3 entries compared: ok=1
+3 entries compared: ok=1
+3 entries compared: ok=1
+Step 100 of 10000
+38 entries compared: ok=1
+3 entries compared: ok=1
+38 entries compared: ok=1
+Step 200 of 10000
+75 entries compared: ok=1
+38 entries compared: ok=1
+75 entries compared: ok=1
+Step 300 of 10000
+104 entries compared: ok=1
+75 entries compared: ok=1
+104 entries compared: ok=1
+Step 400 of 10000
+132 entries compared: ok=1
+104 entries compared: ok=1
+132 entries compared: ok=1
+Step 500 of 10000
+175 entries compared: ok=1
+132 entries compared: ok=1
+175 entries compared: ok=1
+Step 600 of 10000
+207 entries compared: ok=1
+175 entries compared: ok=1
+207 entries compared: ok=1
+Step 700 of 10000
+230 entries compared: ok=1
+207 entries compared: ok=1
+230 entries compared: ok=1
+Step 800 of 10000
+269 entries compared: ok=1
+230 entries compared: ok=1
+269 entries compared: ok=1
+Step 900 of 10000
+295 entries compared: ok=1
+269 entries compared: ok=1
+295 entries compared: ok=1
+Step 1000 of 10000
+323 entries compared: ok=1
+295 entries compared: ok=1
+323 entries compared: ok=1
+Step 1100 of 10000
+360 entries compared: ok=1
+323 entries compared: ok=1
+360 entries compared: ok=1
+Step 1200 of 10000
+384 entries compared: ok=1
+360 entries compared: ok=1
+384 entries compared: ok=1
+Step 1300 of 10000
+430 entries compared: ok=1
+384 entries compared: ok=1
+430 entries compared: ok=1
+Step 1400 of 10000
+450 entries compared: ok=1
+430 entries compared: ok=1
+450 entries compared: ok=1
+Step 1500 of 10000
+479 entries compared: ok=1
+450 entries compared: ok=1
+479 entries compared: ok=1
+Step 1600 of 10000
+502 entries compared: ok=1
+479 entries compared: ok=1
+502 entries compared: ok=1
+Step 1700 of 10000
+533 entries compared: ok=1
+502 entries compared: ok=1
+533 entries compared: ok=1
+Step 1800 of 10000
+559 entries compared: ok=1
+533 entries compared: ok=1
+559 entries compared: ok=1
+Step 1900 of 10000
+589 entries compared: ok=1
+559 entries compared: ok=1
+589 entries compared: ok=1
+Step 2000 of 10000
+630 entries compared: ok=1
+589 entries compared: ok=1
+630 entries compared: ok=1
+Step 2100 of 10000
+651 entries compared: ok=1
+630 entries compared: ok=1
+651 entries compared: ok=1
+Step 2200 of 10000
+682 entries compared: ok=1
+651 entries compared: ok=1
+682 entries compared: ok=1
+Step 2300 of 10000
+721 entries compared: ok=1
+682 entries compared: ok=1
+721 entries compared: ok=1
+Step 2400 of 10000
+760 entries compared: ok=1
+721 entries compared: ok=1
+760 entries compared: ok=1
+Step 2500 of 10000
+786 entries compared: ok=1
+760 entries compared: ok=1
+786 entries compared: ok=1
+Step 2600 of 10000
+822 entries compared: ok=1
+786 entries compared: ok=1
+822 entries compared: ok=1
+Step 2700 of 10000
+851 entries compared: ok=1
+822 entries compared: ok=1
+851 entries compared: ok=1
+Step 2800 of 10000
+888 entries compared: ok=1
+851 entries compared: ok=1
+888 entries compared: ok=1
+Step 2900 of 10000
+924 entries compared: ok=1
+888 entries compared: ok=1
+924 entries compared: ok=1
+Step 3000 of 10000
+953 entries compared: ok=1
+924 entries compared: ok=1
+953 entries compared: ok=1
+Step 3100 of 10000
+977 entries compared: ok=1
+953 entries compared: ok=1
+977 entries compared: ok=1
+Step 3200 of 10000
+1010 entries compared: ok=1
+977 entries compared: ok=1
+1010 entries compared: ok=1
+Step 3300 of 10000
+1033 entries compared: ok=1
+1010 entries compared: ok=1
+1033 entries compared: ok=1
+Step 3400 of 10000
+1068 entries compared: ok=1
+1033 entries compared: ok=1
+1068 entries compared: ok=1
+Step 3500 of 10000
+1102 entries compared: ok=1
+1068 entries compared: ok=1
+1102 entries compared: ok=1
+Step 3600 of 10000
+1128 entries compared: ok=1
+1102 entries compared: ok=1
+1128 entries compared: ok=1
+Step 3700 of 10000
+1153 entries compared: ok=1
+1128 entries compared: ok=1
+1153 entries compared: ok=1
+Step 3800 of 10000
+1183 entries compared: ok=1
+1153 entries compared: ok=1
+1183 entries compared: ok=1
+Step 3900 of 10000
+1210 entries compared: ok=1
+1183 entries compared: ok=1
+1210 entries compared: ok=1
+Step 4000 of 10000
+1228 entries compared: ok=1
+1210 entries compared: ok=1
+1228 entries compared: ok=1
+Step 4100 of 10000
+1247 entries compared: ok=1
+1228 entries compared: ok=1
+1247 entries compared: ok=1
+Step 4200 of 10000
+1277 entries compared: ok=1
+1247 entries compared: ok=1
+1277 entries compared: ok=1
+Step 4300 of 10000
+1295 entries compared: ok=1
+1277 entries compared: ok=1
+1295 entries compared: ok=1
+Step 4400 of 10000
+1316 entries compared: ok=1
+1295 entries compared: ok=1
+1316 entries compared: ok=1
+Step 4500 of 10000
+1351 entries compared: ok=1
+1316 entries compared: ok=1
+1351 entries compared: ok=1
+Step 4600 of 10000
+1380 entries compared: ok=1
+1351 entries compared: ok=1
+1380 entries compared: ok=1
+Step 4700 of 10000
+1405 entries compared: ok=1
+1380 entries compared: ok=1
+1405 entries compared: ok=1
+Step 4800 of 10000
+1437 entries compared: ok=1
+1405 entries compared: ok=1
+1437 entries compared: ok=1
+Step 4900 of 10000
+1461 entries compared: ok=1
+1437 entries compared: ok=1
+1461 entries compared: ok=1
+Step 5000 of 10000
+1505 entries compared: ok=1
+1461 entries compared: ok=1
+1505 entries compared: ok=1
+Step 5100 of 10000
+1532 entries compared: ok=1
+1505 entries compared: ok=1
+1532 entries compared: ok=1
+Step 5200 of 10000
+1573 entries compared: ok=1
+1532 entries compared: ok=1
+1573 entries compared: ok=1
+Step 5300 of 10000
+1591 entries compared: ok=1
+1573 entries compared: ok=1
+1591 entries compared: ok=1
+Step 5400 of 10000
+1618 entries compared: ok=1
+1591 entries compared: ok=1
+1618 entries compared: ok=1
+Step 5500 of 10000
+1639 entries compared: ok=1
+1618 entries compared: ok=1
+1639 entries compared: ok=1
+Step 5600 of 10000
+1664 entries compared: ok=1
+1639 entries compared: ok=1
+1664 entries compared: ok=1
+Step 5700 of 10000
+1675 entries compared: ok=1
+1664 entries compared: ok=1
+1675 entries compared: ok=1
+Step 5800 of 10000
+1705 entries compared: ok=1
+1675 entries compared: ok=1
+1705 entries compared: ok=1
+Step 5900 of 10000
+1728 entries compared: ok=1
+1705 entries compared: ok=1
+1728 entries compared: ok=1
+Step 6000 of 10000
+1751 entries compared: ok=1
+1728 entries compared: ok=1
+1751 entries compared: ok=1
+Step 6100 of 10000
+1776 entries compared: ok=1
+1751 entries compared: ok=1
+1776 entries compared: ok=1
+Step 6200 of 10000
+1800 entries compared: ok=1
+1776 entries compared: ok=1
+1800 entries compared: ok=1
+Step 6300 of 10000
+1829 entries compared: ok=1
+1800 entries compared: ok=1
+1829 entries compared: ok=1
+Step 6400 of 10000
+1845 entries compared: ok=1
+1829 entries compared: ok=1
+1845 entries compared: ok=1
+Step 6500 of 10000
+1875 entries compared: ok=1
+1845 entries compared: ok=1
+1875 entries compared: ok=1
+Step 6600 of 10000
+1899 entries compared: ok=1
+1875 entries compared: ok=1
+1899 entries compared: ok=1
+Step 6700 of 10000
+1930 entries compared: ok=1
+1899 entries compared: ok=1
+1930 entries compared: ok=1
+Step 6800 of 10000
+1948 entries compared: ok=1
+1930 entries compared: ok=1
+1948 entries compared: ok=1
+Step 6900 of 10000
+1983 entries compared: ok=1
+1948 entries compared: ok=1
+1983 entries compared: ok=1
+Step 7000 of 10000
+2005 entries compared: ok=1
+1983 entries compared: ok=1
+2005 entries compared: ok=1
+Step 7100 of 10000
+2031 entries compared: ok=1
+2005 entries compared: ok=1
+2031 entries compared: ok=1
+Step 7200 of 10000
+2060 entries compared: ok=1
+2031 entries compared: ok=1
+2060 entries compared: ok=1
+Step 7300 of 10000
+2085 entries compared: ok=1
+2060 entries compared: ok=1
+2085 entries compared: ok=1
+Step 7400 of 10000
+2117 entries compared: ok=1
+2085 entries compared: ok=1
+2117 entries compared: ok=1
+Step 7500 of 10000
+2145 entries compared: ok=1
+2117 entries compared: ok=1
+2145 entries compared: ok=1
+Step 7600 of 10000
+2168 entries compared: ok=1
+2145 entries compared: ok=1
+2168 entries compared: ok=1
+Step 7700 of 10000
+2194 entries compared: ok=1
+2168 entries compared: ok=1
+2194 entries compared: ok=1
+Step 7800 of 10000
+2219 entries compared: ok=1
+2194 entries compared: ok=1
+2219 entries compared: ok=1
+Step 7900 of 10000
+2257 entries compared: ok=1
+2219 entries compared: ok=1
+2257 entries compared: ok=1
+Step 8000 of 10000
+2275 entries compared: ok=1
+2257 entries compared: ok=1
+2275 entries compared: ok=1
+Step 8100 of 10000
+2309 entries compared: ok=1
+2275 entries compared: ok=1
+2309 entries compared: ok=1
+Step 8200 of 10000
+2336 entries compared: ok=1
+2309 entries compared: ok=1
+2336 entries compared: ok=1
+Step 8300 of 10000
+2360 entries compared: ok=1
+2336 entries compared: ok=1
+2360 entries compared: ok=1
+Step 8400 of 10000
+2389 entries compared: ok=1
+2360 entries compared: ok=1
+2389 entries compared: ok=1
+Step 8500 of 10000
+2412 entries compared: ok=1
+2389 entries compared: ok=1
+2412 entries compared: ok=1
+Step 8600 of 10000
+2432 entries compared: ok=1
+2412 entries compared: ok=1
+2432 entries compared: ok=1
+Step 8700 of 10000
+2456 entries compared: ok=1
+2432 entries compared: ok=1
+2456 entries compared: ok=1
+Step 8800 of 10000
+2496 entries compared: ok=1
+2456 entries compared: ok=1
+2496 entries compared: ok=1
+Step 8900 of 10000
+2524 entries compared: ok=1
+2496 entries compared: ok=1
+2524 entries compared: ok=1
+Step 9000 of 10000
+2550 entries compared: ok=1
+2524 entries compared: ok=1
+2550 entries compared: ok=1
+Step 9100 of 10000
+2571 entries compared: ok=1
+2550 entries compared: ok=1
+2571 entries compared: ok=1
+Step 9200 of 10000
+2604 entries compared: ok=1
+2571 entries compared: ok=1
+2604 entries compared: ok=1
+Step 9300 of 10000
+2647 entries compared: ok=1
+2604 entries compared: ok=1
+2647 entries compared: ok=1
+Step 9400 of 10000
+2669 entries compared: ok=1
+2647 entries compared: ok=1
+2669 entries compared: ok=1
+Step 9500 of 10000
+2687 entries compared: ok=1
+2669 entries compared: ok=1
+2687 entries compared: ok=1
+Step 9600 of 10000
+2711 entries compared: ok=1
+2687 entries compared: ok=1
+2711 entries compared: ok=1
+Step 9700 of 10000
+2738 entries compared: ok=1
+2711 entries compared: ok=1
+2738 entries compared: ok=1
+Step 9800 of 10000
+2758 entries compared: ok=1
+2738 entries compared: ok=1
+2758 entries compared: ok=1
+Step 9900 of 10000
+2783 entries compared: ok=1
+2758 entries compared: ok=1
+2783 entries compared: ok=1
+==== PASSED 48 tests
+***** Running dbformat_test
+==== Test FormatTest.InternalKey_EncodeDecode
+==== Test FormatTest.InternalKeyShortSeparator
+==== Test FormatTest.InternalKeyShortestSuccessor
+==== PASSED 3 tests
+***** Running env_test
+==== Test EnvPosixTest.RunImmediately
+==== Test EnvPosixTest.RunMany
+==== Test EnvPosixTest.StartThread
+==== PASSED 3 tests
+***** Running filename_test
+==== Test FileNameTest.Parse
+==== Test FileNameTest.Construction
+==== PASSED 2 tests
+***** Running filter_block_test
+==== Test FilterBlockTest.EmptyBuilder
+==== Test FilterBlockTest.SingleChunk
+==== Test FilterBlockTest.MultiChunk
+==== PASSED 3 tests
+***** Running issue178_test
+==== Test Issue178.Test
+==== PASSED 1 tests
+***** Running issue200_test
+==== Test Issue200.Test
+==== PASSED 1 tests
+***** Running log_test
+==== Test LogTest.Empty
+==== Test LogTest.ReadWrite
+==== Test LogTest.ManyBlocks
+==== Test LogTest.Fragmentation
+==== Test LogTest.MarginalTrailer
+==== Test LogTest.MarginalTrailer2
+==== Test LogTest.ShortTrailer
+==== Test LogTest.AlignedEof
+==== Test LogTest.RandomRead
+==== Test LogTest.ReadError
+==== Test LogTest.BadRecordType
+==== Test LogTest.TruncatedTrailingRecord
+==== Test LogTest.BadLength
+==== Test LogTest.ChecksumMismatch
+==== Test LogTest.UnexpectedMiddleType
+==== Test LogTest.UnexpectedLastType
+==== Test LogTest.UnexpectedFullType
+==== Test LogTest.UnexpectedFirstType
+==== Test LogTest.ErrorJoinsRecords
+==== Test LogTest.ReadStart
+==== Test LogTest.ReadSecondOneOff
+==== Test LogTest.ReadSecondTenThousand
+==== Test LogTest.ReadSecondStart
+==== Test LogTest.ReadThirdOneOff
+==== Test LogTest.ReadThirdStart
+==== Test LogTest.ReadFourthOneOff
+==== Test LogTest.ReadFourthFirstBlockTrailer
+==== Test LogTest.ReadFourthMiddleBlock
+==== Test LogTest.ReadFourthLastBlock
+==== Test LogTest.ReadFourthStart
+==== Test LogTest.ReadEnd
+==== Test LogTest.ReadPastEnd
+==== PASSED 32 tests
+***** Running memenv_test
+==== Test MemEnvTest.Basics
+==== Test MemEnvTest.ReadWrite
+==== Test MemEnvTest.Locks
+==== Test MemEnvTest.Misc
+==== Test MemEnvTest.LargeWrite
+==== Test MemEnvTest.DBTest
+==== PASSED 6 tests
+***** Running skiplist_test
+==== Test SkipTest.Empty
+==== Test SkipTest.InsertAndLookup
+==== Test SkipTest.ConcurrentWithoutThreads
+==== Test SkipTest.Concurrent1
+Run 0 of 1000
+Run 100 of 1000
+Run 200 of 1000
+Run 300 of 1000
+Run 400 of 1000
+Run 500 of 1000
+Run 600 of 1000
+Run 700 of 1000
+Run 800 of 1000
+Run 900 of 1000
+==== Test SkipTest.Concurrent2
+Run 0 of 1000
+Run 100 of 1000
+Run 200 of 1000
+Run 300 of 1000
+Run 400 of 1000
+Run 500 of 1000
+Run 600 of 1000
+Run 700 of 1000
+Run 800 of 1000
+Run 900 of 1000
+==== Test SkipTest.Concurrent3
+Run 0 of 1000
+Run 100 of 1000
+Run 200 of 1000
+Run 300 of 1000
+Run 400 of 1000
+Run 500 of 1000
+Run 600 of 1000
+Run 700 of 1000
+Run 800 of 1000
+Run 900 of 1000
+==== Test SkipTest.Concurrent4
+Run 0 of 1000
+Run 100 of 1000
+Run 200 of 1000
+Run 300 of 1000
+Run 400 of 1000
+Run 500 of 1000
+Run 600 of 1000
+Run 700 of 1000
+Run 800 of 1000
+Run 900 of 1000
+==== Test SkipTest.Concurrent5
+Run 0 of 1000
+Run 100 of 1000
+Run 200 of 1000
+Run 300 of 1000
+Run 400 of 1000
+Run 500 of 1000
+Run 600 of 1000
+Run 700 of 1000
+Run 800 of 1000
+Run 900 of 1000
+==== PASSED 8 tests
+***** Running table_test
+==== Test Harness.Empty
+==== Test Harness.ZeroRestartPointsInBlock
+==== Test Harness.SimpleEmptyKey
+==== Test Harness.SimpleSingle
+==== Test Harness.SimpleMulti
+==== Test Harness.SimpleSpecialKey
+==== Test Harness.Randomized
+case 1 of 16: num_entries = 0
+case 1 of 16: num_entries = 10
+case 1 of 16: num_entries = 20
+case 1 of 16: num_entries = 30
+case 1 of 16: num_entries = 40
+case 1 of 16: num_entries = 50
+case 1 of 16: num_entries = 250
+case 1 of 16: num_entries = 450
+case 1 of 16: num_entries = 650
+case 1 of 16: num_entries = 850
+case 1 of 16: num_entries = 1050
+case 1 of 16: num_entries = 1250
+case 1 of 16: num_entries = 1450
+case 1 of 16: num_entries = 1650
+case 1 of 16: num_entries = 1850
+case 2 of 16: num_entries = 0
+case 2 of 16: num_entries = 10
+case 2 of 16: num_entries = 20
+case 2 of 16: num_entries = 30
+case 2 of 16: num_entries = 40
+case 2 of 16: num_entries = 50
+case 2 of 16: num_entries = 250
+case 2 of 16: num_entries = 450
+case 2 of 16: num_entries = 650
+case 2 of 16: num_entries = 850
+case 2 of 16: num_entries = 1050
+case 2 of 16: num_entries = 1250
+case 2 of 16: num_entries = 1450
+case 2 of 16: num_entries = 1650
+case 2 of 16: num_entries = 1850
+case 3 of 16: num_entries = 0
+case 3 of 16: num_entries = 10
+case 3 of 16: num_entries = 20
+case 3 of 16: num_entries = 30
+case 3 of 16: num_entries = 40
+case 3 of 16: num_entries = 50
+case 3 of 16: num_entries = 250
+case 3 of 16: num_entries = 450
+case 3 of 16: num_entries = 650
+case 3 of 16: num_entries = 850
+case 3 of 16: num_entries = 1050
+case 3 of 16: num_entries = 1250
+case 3 of 16: num_entries = 1450
+case 3 of 16: num_entries = 1650
+case 3 of 16: num_entries = 1850
+case 4 of 16: num_entries = 0
+case 4 of 16: num_entries = 10
+case 4 of 16: num_entries = 20
+case 4 of 16: num_entries = 30
+case 4 of 16: num_entries = 40
+case 4 of 16: num_entries = 50
+case 4 of 16: num_entries = 250
+case 4 of 16: num_entries = 450
+case 4 of 16: num_entries = 650
+case 4 of 16: num_entries = 850
+case 4 of 16: num_entries = 1050
+case 4 of 16: num_entries = 1250
+case 4 of 16: num_entries = 1450
+case 4 of 16: num_entries = 1650
+case 4 of 16: num_entries = 1850
+case 5 of 16: num_entries = 0
+case 5 of 16: num_entries = 10
+case 5 of 16: num_entries = 20
+case 5 of 16: num_entries = 30
+case 5 of 16: num_entries = 40
+case 5 of 16: num_entries = 50
+case 5 of 16: num_entries = 250
+case 5 of 16: num_entries = 450
+case 5 of 16: num_entries = 650
+case 5 of 16: num_entries = 850
+case 5 of 16: num_entries = 1050
+case 5 of 16: num_entries = 1250
+case 5 of 16: num_entries = 1450
+case 5 of 16: num_entries = 1650
+case 5 of 16: num_entries = 1850
+case 6 of 16: num_entries = 0
+case 6 of 16: num_entries = 10
+case 6 of 16: num_entries = 20
+case 6 of 16: num_entries = 30
+case 6 of 16: num_entries = 40
+case 6 of 16: num_entries = 50
+case 6 of 16: num_entries = 250
+case 6 of 16: num_entries = 450
+case 6 of 16: num_entries = 650
+case 6 of 16: num_entries = 850
+case 6 of 16: num_entries = 1050
+case 6 of 16: num_entries = 1250
+case 6 of 16: num_entries = 1450
+case 6 of 16: num_entries = 1650
+case 6 of 16: num_entries = 1850
+case 7 of 16: num_entries = 0
+case 7 of 16: num_entries = 10
+case 7 of 16: num_entries = 20
+case 7 of 16: num_entries = 30
+case 7 of 16: num_entries = 40
+case 7 of 16: num_entries = 50
+case 7 of 16: num_entries = 250
+case 7 of 16: num_entries = 450
+case 7 of 16: num_entries = 650
+case 7 of 16: num_entries = 850
+case 7 of 16: num_entries = 1050
+case 7 of 16: num_entries = 1250
+case 7 of 16: num_entries = 1450
+case 7 of 16: num_entries = 1650
+case 7 of 16: num_entries = 1850
+case 8 of 16: num_entries = 0
+case 8 of 16: num_entries = 10
+case 8 of 16: num_entries = 20
+case 8 of 16: num_entries = 30
+case 8 of 16: num_entries = 40
+case 8 of 16: num_entries = 50
+case 8 of 16: num_entries = 250
+case 8 of 16: num_entries = 450
+case 8 of 16: num_entries = 650
+case 8 of 16: num_entries = 850
+case 8 of 16: num_entries = 1050
+case 8 of 16: num_entries = 1250
+case 8 of 16: num_entries = 1450
+case 8 of 16: num_entries = 1650
+case 8 of 16: num_entries = 1850
+case 9 of 16: num_entries = 0
+case 9 of 16: num_entries = 10
+case 9 of 16: num_entries = 20
+case 9 of 16: num_entries = 30
+case 9 of 16: num_entries = 40
+case 9 of 16: num_entries = 50
+case 9 of 16: num_entries = 250
+case 9 of 16: num_entries = 450
+case 9 of 16: num_entries = 650
+case 9 of 16: num_entries = 850
+case 9 of 16: num_entries = 1050
+case 9 of 16: num_entries = 1250
+case 9 of 16: num_entries = 1450
+case 9 of 16: num_entries = 1650
+case 9 of 16: num_entries = 1850
+case 10 of 16: num_entries = 0
+case 10 of 16: num_entries = 10
+case 10 of 16: num_entries = 20
+case 10 of 16: num_entries = 30
+case 10 of 16: num_entries = 40
+case 10 of 16: num_entries = 50
+case 10 of 16: num_entries = 250
+case 10 of 16: num_entries = 450
+case 10 of 16: num_entries = 650
+case 10 of 16: num_entries = 850
+case 10 of 16: num_entries = 1050
+case 10 of 16: num_entries = 1250
+case 10 of 16: num_entries = 1450
+case 10 of 16: num_entries = 1650
+case 10 of 16: num_entries = 1850
+case 11 of 16: num_entries = 0
+case 11 of 16: num_entries = 10
+case 11 of 16: num_entries = 20
+case 11 of 16: num_entries = 30
+case 11 of 16: num_entries = 40
+case 11 of 16: num_entries = 50
+case 11 of 16: num_entries = 250
+case 11 of 16: num_entries = 450
+case 11 of 16: num_entries = 650
+case 11 of 16: num_entries = 850
+case 11 of 16: num_entries = 1050
+case 11 of 16: num_entries = 1250
+case 11 of 16: num_entries = 1450
+case 11 of 16: num_entries = 1650
+case 11 of 16: num_entries = 1850
+case 12 of 16: num_entries = 0
+case 12 of 16: num_entries = 10
+case 12 of 16: num_entries = 20
+case 12 of 16: num_entries = 30
+case 12 of 16: num_entries = 40
+case 12 of 16: num_entries = 50
+case 12 of 16: num_entries = 250
+case 12 of 16: num_entries = 450
+case 12 of 16: num_entries = 650
+case 12 of 16: num_entries = 850
+case 12 of 16: num_entries = 1050
+case 12 of 16: num_entries = 1250
+case 12 of 16: num_entries = 1450
+case 12 of 16: num_entries = 1650
+case 12 of 16: num_entries = 1850
+case 13 of 16: num_entries = 0
+case 13 of 16: num_entries = 10
+case 13 of 16: num_entries = 20
+case 13 of 16: num_entries = 30
+case 13 of 16: num_entries = 40
+case 13 of 16: num_entries = 50
+case 13 of 16: num_entries = 250
+case 13 of 16: num_entries = 450
+case 13 of 16: num_entries = 650
+case 13 of 16: num_entries = 850
+case 13 of 16: num_entries = 1050
+case 13 of 16: num_entries = 1250
+case 13 of 16: num_entries = 1450
+case 13 of 16: num_entries = 1650
+case 13 of 16: num_entries = 1850
+case 14 of 16: num_entries = 0
+case 14 of 16: num_entries = 10
+case 14 of 16: num_entries = 20
+case 14 of 16: num_entries = 30
+case 14 of 16: num_entries = 40
+case 14 of 16: num_entries = 50
+case 14 of 16: num_entries = 250
+case 14 of 16: num_entries = 450
+case 14 of 16: num_entries = 650
+case 14 of 16: num_entries = 850
+case 14 of 16: num_entries = 1050
+case 14 of 16: num_entries = 1250
+case 14 of 16: num_entries = 1450
+case 14 of 16: num_entries = 1650
+case 14 of 16: num_entries = 1850
+case 15 of 16: num_entries = 0
+case 15 of 16: num_entries = 10
+case 15 of 16: num_entries = 20
+case 15 of 16: num_entries = 30
+case 15 of 16: num_entries = 40
+case 15 of 16: num_entries = 50
+case 15 of 16: num_entries = 250
+case 15 of 16: num_entries = 450
+case 15 of 16: num_entries = 650
+case 15 of 16: num_entries = 850
+case 15 of 16: num_entries = 1050
+case 15 of 16: num_entries = 1250
+case 15 of 16: num_entries = 1450
+case 15 of 16: num_entries = 1650
+case 15 of 16: num_entries = 1850
+case 16 of 16: num_entries = 0
+case 16 of 16: num_entries = 10
+case 16 of 16: num_entries = 20
+case 16 of 16: num_entries = 30
+case 16 of 16: num_entries = 40
+case 16 of 16: num_entries = 50
+case 16 of 16: num_entries = 250
+case 16 of 16: num_entries = 450
+case 16 of 16: num_entries = 650
+case 16 of 16: num_entries = 850
+case 16 of 16: num_entries = 1050
+case 16 of 16: num_entries = 1250
+case 16 of 16: num_entries = 1450
+case 16 of 16: num_entries = 1650
+case 16 of 16: num_entries = 1850
+==== Test Harness.RandomizedLongDB
+==== Test MemTableTest.Simple
+key: 'k1d' -> 'v1'
+key: 'k2e' -> 'v2'
+key: 'k3f' -> 'v3'
+key: 'largekeyg' -> 'vlarge'
+==== Test TableTest.ApproximateOffsetOfPlain
+==== Test TableTest.ApproximateOffsetOfCompressed
+==== PASSED 11 tests
+***** Running version_edit_test
+==== Test VersionEditTest.EncodeDecode
+==== PASSED 1 tests
+***** Running version_set_test
+==== Test FindFileTest.Empty
+==== Test FindFileTest.Single
+==== Test FindFileTest.Multiple
+==== Test FindFileTest.MultipleNullBoundaries
+==== Test FindFileTest.OverlapSequenceChecks
+==== Test FindFileTest.OverlappingFiles
+==== PASSED 6 tests
+***** Running write_batch_test
+==== Test WriteBatchTest.Empty
+==== Test WriteBatchTest.Multiple
+==== Test WriteBatchTest.Corruption
+==== Test WriteBatchTest.Append
+==== PASSED 4 tests
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary --parallel
+   dh_testroot -O--parallel
+   dh_prep -O--parallel
+   dh_auto_install -O--parallel
+make[1]: Entering directory `/«PKGBUILDDIR»'
+install -d /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu
+install -d /«PKGBUILDDIR»/debian/tmp/usr/include/leveldb/helpers
+install -m 0644 libleveldb.a /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu
+install -m 0644 libmemenv.a /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu
+install -m 0644 libleveldb.so.1.15 /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu
+cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && ln -sf libleveldb.so.1.15 libleveldb.so.1
+cd /«PKGBUILDDIR»/debian/tmp/usr/lib/x86_64-linux-gnu && ln -sf libleveldb.so.1.15 libleveldb.so
+install -m 0644 include/leveldb/* /«PKGBUILDDIR»/debian/tmp/usr/include/leveldb
+install -m 0644 helpers/memenv/*.h /«PKGBUILDDIR»/debian/tmp/usr/include/leveldb/helpers
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_install -O--parallel
+   dh_installdocs -O--parallel
+   dh_installchangelogs -O--parallel
+   dh_perl -O--parallel
+   dh_link -O--parallel
+   dh_compress -O--parallel
+   dh_fixperms -O--parallel
+   debian/rules override_dh_strip
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_strip --dbg-package=libleveldb-dbg
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_makeshlibs -O--parallel
+   dh_shlibdeps -O--parallel
+   dh_installdeb -O--parallel
+   dh_gencontrol -O--parallel
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: Depends field of package libleveldb-dev: unknown substitution variable ${shlibs:Depends}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: Pre-Depends field of package libleveldb-dbg: unknown substitution variable ${misc:Pre-Depends}
+dpkg-gencontrol: warning: Depends field of package libleveldb-dbg: unknown substitution variable ${shlibs:Depends}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums -O--parallel
+   dh_builddeb -O--parallel
+dpkg-deb: building package `libleveldb1' in `../libleveldb1_1.15.0-2_amd64.deb'.
+dpkg-deb: building package `libleveldb-dev' in `../libleveldb-dev_1.15.0-2_amd64.deb'.
+dpkg-deb: building package `libleveldb-dbg' in `../libleveldb-dbg_1.15.0-2_amd64.deb'.
+dpkg-deb: building package `leveldb-doc' in `../leveldb-doc_1.15.0-2_all.deb'.
+ dpkg-genchanges  >../leveldb_1.15.0-2_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build leveldb-1.15.0
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140427-1927
+
+Finished
+────────
+
+I: Built successfully
+E: Package builds leveldb-doc_1.15.0-2_all.deb when binary-indep target is not called.  This is a bug in the packaging.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+leveldb_1.15.0-2_amd64.changes:
+───────────────────────────────
+
+Format: 1.8
+Date: Mon, 10 Mar 2014 17:39:33 +0000
+Source: leveldb
+Binary: libleveldb1 libleveldb-dev libleveldb-dbg leveldb-doc
+Architecture: source amd64 all
+Version: 1.15.0-2
+Distribution: sid
+Urgency: low
+Maintainer: Alessio Treglia <alessio@debian.org>
+Changed-By: Alessio Treglia <alessio@debian.org>
+Description: 
+ leveldb-doc - LevelDB documentation
+ libleveldb-dbg - fast key-value storage library (debug symbols)
+ libleveldb-dev - fast key-value storage library (development files)
+ libleveldb1 - fast key-value storage library
+Closes: 735515
+Changes: 
+ leveldb (1.15.0-2) unstable; urgency=low
+ .
+   * Allow tests to fail on mips only. Thanks to Dmitry Smirnov
+     for the hint. (Closes: #735515)
+Checksums-Sha1: 
+ 332e1327d8e4a80a3402f13e94e4b1847e8dafee 1182 leveldb_1.15.0-2.dsc
+ eaac91c14fffe128156c3a88e7b937be7aa81b47 9712 leveldb_1.15.0-2.debian.tar.xz
+ 32d689968315f7afe62a40bc866e87adbf4595f6 114286 libleveldb1_1.15.0-2_amd64.deb
+ 87a81eeb91abc2ceef87fedd2369d794199c98f4 143750 libleveldb-dev_1.15.0-2_amd64.deb
+ acb8d7825a48fb6a74028be30e1af54ace4abb97 601390 libleveldb-dbg_1.15.0-2_amd64.deb
+ a7ec1c06b9c40343a4d0326114d0a04ce0568655 32770 leveldb-doc_1.15.0-2_all.deb
+Checksums-Sha256: 
+ af1e6e7290a67e110335e8459dd799b13216df7584b0d43132cc05a698cdbb0c 1182 leveldb_1.15.0-2.dsc
+ 04f03c1fe08abc0fbc4e7a8ad71dafbde2d2fc987703e1e7ce65008a9d686ce7 9712 leveldb_1.15.0-2.debian.tar.xz
+ 279d9fd4ff69b6da1b10712dfc7dbff9c4bddc5a64f1e3c772797c1cf119475c 114286 libleveldb1_1.15.0-2_amd64.deb
+ a972377c3a1b4e1728df32747323618a6288ef2cac355626e28e2be3cf263b31 143750 libleveldb-dev_1.15.0-2_amd64.deb
+ d65c21861216b8c5f58b85d660033ee13fe46fb307285d9b39a61e36b078c0d7 601390 libleveldb-dbg_1.15.0-2_amd64.deb
+ d456bec77c6e8793c35f82a73e44a5cbcd2054eca72ea0fc0ed0cc3dc2935eca 32770 leveldb-doc_1.15.0-2_all.deb
+Files: 
+ 87aca67a164a849245dc5bd79fafa616 114286 libs optional libleveldb1_1.15.0-2_amd64.deb
+ 78b40638571e07521c2a507442320d3e 143750 libdevel optional libleveldb-dev_1.15.0-2_amd64.deb
+ 28b858f9bae2e9a80f614521dbd274a9 601390 debug extra libleveldb-dbg_1.15.0-2_amd64.deb
+ aebc4c84e7068948fdb27334ae64209f 32770 doc optional leveldb-doc_1.15.0-2_all.deb
+ 2ea7b61b5e6304197045ce7b748daaa7 1182 database optional leveldb_1.15.0-2.dsc
+ 3559a62ac0a797d4b4c90b728635a2d4 9712 database optional leveldb_1.15.0-2.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libleveldb1_1.15.0-2_amd64.deb
+──────────────────────────────
+
+ new debian package, version 2.0.
+ size 114286 bytes: control archive=1529 bytes.
+    1775 bytes,    44 lines      control              
+     228 bytes,     3 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      25 bytes,     1 lines      shlibs               
+ Package: libleveldb1
+ Source: leveldb
+ Version: 1.15.0-2
+ Architecture: amd64
+ Maintainer: Alessio Treglia <alessio@debian.org>
+ Installed-Size: 359
+ Pre-Depends: multiarch-support
+ Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libsnappy1, libstdc++6 (>= 4.1.1)
+ Section: libs
+ Priority: optional
+ Multi-Arch: same
+ Homepage: http://code.google.com/p/leveldb/
+ Description: fast key-value storage library
+  LevelDB is a fast key-value storage library written at Google that
+  provides an ordered mapping from string keys to string values.
+  .
+  Features:
+   * Keys and values are arbitrary byte arrays.
+   * Data is stored sorted by key.
+   * Callers can provide a custom comparison function to override
+     the sort order.
+   * The basic operations are Put(key,value), Get(key), Delete(key).
+   * Multiple changes can be made in one atomic batch.
+   * Users can create a transient snapshot to get a consistent view of
+     data.
+   * Forward and backward iteration is supported over the data.
+   * Data is automatically compressed using the Snappy compression
+     library.
+   * External activity (file system operations etc.) is relayed through
+     a virtual interface so users can customize the operating system
+     interactions.
+   * Detailed documentation about how to use the library is included with
+     the source code.
+  .
+  Limitations:
+   * This is not a SQL database. It does not have a relational data model,
+     it does not support SQL queries, and it has no support for indexes.
+   * Only a single process (possibly multi-threaded) can access a
+     particular database at a time.
+   * There is no client-server support builtin to the library.
+     An application that needs such support will have to wrap their own
+     server around the library.
+  .
+  This package provides the shared library.
+
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root    328816 2014-04-27 19:27 ./usr/lib/x86_64-linux-gnu/libleveldb.so.1.15
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/share/doc/libleveldb1/
+-rw-r--r-- root/root      2903 2014-03-10 18:39 ./usr/share/doc/libleveldb1/changelog.Debian.gz
+-rw-r--r-- root/root      1818 2014-01-29 15:48 ./usr/share/doc/libleveldb1/copyright
+lrwxrwxrwx root/root         0 2014-04-27 19:27 ./usr/lib/x86_64-linux-gnu/libleveldb.so.1 -> libleveldb.so.1.15
+
+
+libleveldb-dev_1.15.0-2_amd64.deb
+─────────────────────────────────
+
+ new debian package, version 2.0.
+ size 143750 bytes: control archive=1129 bytes.
+     546 bytes,    17 lines      control              
+    1200 bytes,    18 lines      md5sums              
+ Package: libleveldb-dev
+ Source: leveldb
+ Version: 1.15.0-2
+ Architecture: amd64
+ Maintainer: Alessio Treglia <alessio@debian.org>
+ Installed-Size: 781
+ Depends: libleveldb1 (= 1.15.0-2)
+ Suggests: leveldb-doc
+ Section: libdevel
+ Priority: optional
+ Multi-Arch: same
+ Homepage: http://code.google.com/p/leveldb/
+ Description: fast key-value storage library (development files)
+  LevelDB is a fast key-value storage library written at Google that
+  provides an ordered mapping from string keys to string values.
+  .
+  This package provides the development files.
+
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/lib/x86_64-linux-gnu/
+-rw-r--r-- root/root     31326 2014-04-27 19:27 ./usr/lib/x86_64-linux-gnu/libmemenv.a
+-rw-r--r-- root/root    654828 2014-04-27 19:27 ./usr/lib/x86_64-linux-gnu/libleveldb.a
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/include/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/include/leveldb/
+-rw-r--r-- root/root     11957 2014-04-27 19:27 ./usr/include/leveldb/env.h
+-rw-r--r-- root/root      3502 2014-04-27 19:27 ./usr/include/leveldb/iterator.h
+-rw-r--r-- root/root      2963 2014-04-27 19:27 ./usr/include/leveldb/table.h
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/include/leveldb/helpers/
+-rw-r--r-- root/root       699 2014-04-27 19:27 ./usr/include/leveldb/helpers/memenv.h
+-rw-r--r-- root/root      3395 2014-04-27 19:27 ./usr/include/leveldb/table_builder.h
+-rw-r--r-- root/root      6815 2014-04-27 19:27 ./usr/include/leveldb/options.h
+-rw-r--r-- root/root      2349 2014-04-27 19:27 ./usr/include/leveldb/comparator.h
+-rw-r--r-- root/root      2925 2014-04-27 19:27 ./usr/include/leveldb/filter_policy.h
+-rw-r--r-- root/root      3128 2014-04-27 19:27 ./usr/include/leveldb/slice.h
+-rw-r--r-- root/root      3534 2014-04-27 19:27 ./usr/include/leveldb/cache.h
+-rw-r--r-- root/root      1848 2014-04-27 19:27 ./usr/include/leveldb/write_batch.h
+-rw-r--r-- root/root      9909 2014-04-27 19:27 ./usr/include/leveldb/c.h
+-rw-r--r-- root/root      6405 2014-04-27 19:27 ./usr/include/leveldb/db.h
+-rw-r--r-- root/root      3350 2014-04-27 19:27 ./usr/include/leveldb/status.h
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/share/doc/libleveldb-dev/
+-rw-r--r-- root/root      2903 2014-03-10 18:39 ./usr/share/doc/libleveldb-dev/changelog.Debian.gz
+-rw-r--r-- root/root      1818 2014-01-29 15:48 ./usr/share/doc/libleveldb-dev/copyright
+lrwxrwxrwx root/root         0 2014-04-27 19:27 ./usr/lib/x86_64-linux-gnu/libleveldb.so -> libleveldb.so.1.15
+
+
+libleveldb-dbg_1.15.0-2_amd64.deb
+─────────────────────────────────
+
+ new debian package, version 2.0.
+ size 601390 bytes: control archive=694 bytes.
+     514 bytes,    16 lines      control              
+     262 bytes,     3 lines      md5sums              
+ Package: libleveldb-dbg
+ Source: leveldb
+ Version: 1.15.0-2
+ Architecture: amd64
+ Maintainer: Alessio Treglia <alessio@debian.org>
+ Installed-Size: 692
+ Depends: libleveldb1 (= 1.15.0-2)
+ Section: debug
+ Priority: extra
+ Multi-Arch: same
+ Homepage: http://code.google.com/p/leveldb/
+ Description: fast key-value storage library (debug symbols)
+  LevelDB is a fast key-value storage library written at Google that
+  provides an ordered mapping from string keys to string values.
+  .
+  This package provides the debugging symbols.
+
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/lib/debug/.build-id/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/lib/debug/.build-id/2a/
+-rw-r--r-- root/root    662356 2014-04-27 19:27 ./usr/lib/debug/.build-id/2a/71fe35b0b6eb5517d3f5e586b2aa4f9b0d62ee.debug
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 19:27 ./usr/share/doc/libleveldb-dbg/
+-rw-r--r-- root/root      2903 2014-03-10 18:39 ./usr/share/doc/libleveldb-dbg/changelog.Debian.gz
+-rw-r--r-- root/root      1818 2014-01-29 15:48 ./usr/share/doc/libleveldb-dbg/copyright
+
+
+leveldb-doc_1.15.0-2_all.deb
+────────────────────────────
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/leveldb-doc_1.15.0-2_all.deb': No such file or directory
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/leveldb-doc_1.15.0-2_all.deb': No such file or directory
+
+mv: cannot stat '/«CHROOT»/«BUILDDIR»/leveldb-doc_1.15.0-2_all.deb': No such file or directory
+E: Could not move leveldb-doc_1.15.0-2_all.deb to .
+du: cannot access '/mnt/ito/data/projets/debian-clang/tests/build_timeout/builds/leveldb/leveldb-doc_1.15.0-2_all.deb': No such file or directory
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 102396
+Build-Time: 106
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 14
+Job: leveldb_1.15.0-2.dsc
+Machine Architecture: amd64
+Package: leveldb
+Package-Time: 126
+Source-Version: 1.15.0-2
+Space: 102396
+Status: successful
+Version: 1.15.0-2
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140427-1927
+Build needed 00:02:06, 102396k disc space

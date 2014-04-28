@@ -1,0 +1,976 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ lnav 0.7.0-3 (amd64)                                       27 Apr 2014 16:21 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: lnav
+Version: 0.7.0-3
+Source Version: 0.7.0-3
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/lnav-DmiPmD/lnav-0.7.0' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/lnav-DmiPmD' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-6e6c2292-773d-4525-852b-a85a72eb7209' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+lnav_0.7.0-3.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-7_TObI/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), autotools-dev, debhelper (>= 9), libbz2-dev, libncurses5-dev, libncursesw5-dev, libpcre3-dev, libreadline-dev, libsqlite3-dev, libssl-dev, python-all, sqlite3, zlib1g-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), autotools-dev, debhelper (>= 9), libbz2-dev, libncurses5-dev, libncursesw5-dev, libpcre3-dev, libreadline-dev, libsqlite3-dev, libssl-dev, python-all, sqlite3, zlib1g-dev
+dpkg-deb: building package `sbuild-build-depends-lnav-dummy' in `/«BUILDDIR»/resolver-qDFpCO/apt_archive/sbuild-build-depends-lnav-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install lnav build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autotools-dev bsdmainutils debhelper file gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libbz2-dev libcroco3 libexpat1 libglib2.0-0
+  libmagic1 libncurses5-dev libncursesw5-dev libpcre3-dev libpcrecpp0
+  libpipeline1 libpython-stdlib libpython2.7-minimal libpython2.7-stdlib
+  libreadline-dev libreadline6-dev libsqlite3-0 libsqlite3-dev libssl-dev
+  libssl1.0.0 libtinfo-dev libunistring0 libxml2 man-db mime-support
+  po-debconf python python-all python-minimal python2.7 python2.7-minimal
+  sqlite3 zlib1g-dev
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff ncurses-doc
+  sqlite3-doc less www-browser libmail-box-perl python-doc python-tk
+  python2.7-doc binfmt-support
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info libssl-doc xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  autotools-dev bsdmainutils debhelper file gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libbz2-dev libcroco3 libexpat1 libglib2.0-0
+  libmagic1 libncurses5-dev libncursesw5-dev libpcre3-dev libpcrecpp0
+  libpipeline1 libpython-stdlib libpython2.7-minimal libpython2.7-stdlib
+  libreadline-dev libreadline6-dev libsqlite3-0 libsqlite3-dev libssl-dev
+  libssl1.0.0 libtinfo-dev libunistring0 libxml2 man-db mime-support
+  po-debconf python python-all python-minimal python2.7 python2.7-minimal
+  sbuild-build-depends-lnav-dummy sqlite3 zlib1g-dev
+0 upgraded, 42 newly installed, 0 to remove and 8 not upgraded.
+Need to get 17.5 MB/17.5 MB of archives.
+After this operation, 59.8 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libssl1.0.0 amd64 1.0.1g-3 [1012 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libsqlite3-0 amd64 3.8.4.3-2 [409 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libexpat1 amd64 2.1.0-4 [138 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libpcrecpp0 amd64 1:8.31-5 [128 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libpython2.7-minimal amd64 2.7.6-8 [349 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main python2.7-minimal amd64 2.7.6-8 [1227 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main mime-support all 3.54 [36.4 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libpython2.7-stdlib amd64 2.7.6-8 [1872 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main python2.7 amd64 2.7.6-8 [239 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main python-minimal amd64 2.7.5-5 [39.3 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libpython-stdlib amd64 2.7.5-5 [18.7 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main python amd64 2.7.5-5 [146 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main libbz2-dev amd64 1.0.6-5 [28.7 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main libtinfo-dev amd64 5.9+20140118-1 [76.3 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main libncurses5-dev amd64 5.9+20140118-1 [170 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main libncursesw5-dev amd64 5.9+20140118-1 [197 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main libpcre3-dev amd64 1:8.31-5 [407 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main libreadline6-dev amd64 6.3-6 [213 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main libreadline-dev amd64 6.3-6 [992 B]
+Get:37 http://debian.proxad.net/debian/ sid/main libsqlite3-dev amd64 3.8.4.3-2 [506 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-1 [217 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main libssl-dev amd64 1.0.1g-3 [1243 kB]
+Get:40 http://debian.proxad.net/debian/ sid/main python-all amd64 2.7.5-5 [930 B]
+Get:41 http://debian.proxad.net/debian/ sid/main sqlite3 amd64 3.8.4.3-2 [94.4 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 17.5 MB in 1s (10.8 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.1g-3_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1g-3) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.8.4.3-2_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.8.4.3-2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-4) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Preparing to unpack .../libpcrecpp0_1%3a8.31-5_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-5) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package libpython2.7-minimal:amd64.
+Preparing to unpack .../libpython2.7-minimal_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.6-8) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.6-8_amd64.deb ...
+Unpacking python2.7-minimal (2.7.6-8) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../mime-support_3.54_all.deb ...
+Unpacking mime-support (3.54) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.6-8) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.6-8_amd64.deb ...
+Unpacking python2.7 (2.7.6-8) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.5-5_amd64.deb ...
+Unpacking python-minimal (2.7.5-5) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.5-5_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.5-5) ...
+Selecting previously unselected package python.
+Preparing to unpack .../python_2.7.5-5_amd64.deb ...
+Unpacking python (2.7.5-5) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libbz2-dev:amd64.
+Preparing to unpack .../libbz2-dev_1.0.6-5_amd64.deb ...
+Unpacking libbz2-dev:amd64 (1.0.6-5) ...
+Selecting previously unselected package libtinfo-dev:amd64.
+Preparing to unpack .../libtinfo-dev_5.9+20140118-1_amd64.deb ...
+Unpacking libtinfo-dev:amd64 (5.9+20140118-1) ...
+Selecting previously unselected package libncurses5-dev:amd64.
+Preparing to unpack .../libncurses5-dev_5.9+20140118-1_amd64.deb ...
+Unpacking libncurses5-dev:amd64 (5.9+20140118-1) ...
+Selecting previously unselected package libncursesw5-dev:amd64.
+Preparing to unpack .../libncursesw5-dev_5.9+20140118-1_amd64.deb ...
+Unpacking libncursesw5-dev:amd64 (5.9+20140118-1) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-5_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-5) ...
+Selecting previously unselected package libreadline6-dev:amd64.
+Preparing to unpack .../libreadline6-dev_6.3-6_amd64.deb ...
+Unpacking libreadline6-dev:amd64 (6.3-6) ...
+Selecting previously unselected package libreadline-dev:amd64.
+Preparing to unpack .../libreadline-dev_6.3-6_amd64.deb ...
+Unpacking libreadline-dev:amd64 (6.3-6) ...
+Selecting previously unselected package libsqlite3-dev:amd64.
+Preparing to unpack .../libsqlite3-dev_3.8.4.3-2_amd64.deb ...
+Unpacking libsqlite3-dev:amd64 (3.8.4.3-2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1g-3_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1g-3) ...
+Selecting previously unselected package python-all.
+Preparing to unpack .../python-all_2.7.5-5_amd64.deb ...
+Unpacking python-all (2.7.5-5) ...
+Selecting previously unselected package sqlite3.
+Preparing to unpack .../sqlite3_3.8.4.3-2_amd64.deb ...
+Unpacking sqlite3 (3.8.4.3-2) ...
+Selecting previously unselected package sbuild-build-depends-lnav-dummy.
+Preparing to unpack .../sbuild-build-depends-lnav-dummy.deb ...
+Unpacking sbuild-build-depends-lnav-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libssl1.0.0:amd64 (1.0.1g-3) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libsqlite3-0:amd64 (3.8.4.3-2) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libpcrecpp0:amd64 (1:8.31-5) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libpython2.7-minimal:amd64 (2.7.6-8) ...
+Setting up python2.7-minimal (2.7.6-8) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up mime-support (3.54) ...
+update-alternatives: using /usr/bin/see to provide /usr/bin/view (view) in auto mode
+Setting up libpython2.7-stdlib:amd64 (2.7.6-8) ...
+Setting up python2.7 (2.7.6-8) ...
+Setting up python-minimal (2.7.5-5) ...
+Setting up libpython-stdlib:amd64 (2.7.5-5) ...
+Setting up python (2.7.5-5) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libbz2-dev:amd64 (1.0.6-5) ...
+Setting up libtinfo-dev:amd64 (5.9+20140118-1) ...
+Setting up libncurses5-dev:amd64 (5.9+20140118-1) ...
+Setting up libncursesw5-dev:amd64 (5.9+20140118-1) ...
+Setting up libpcre3-dev:amd64 (1:8.31-5) ...
+Setting up libreadline6-dev:amd64 (6.3-6) ...
+Setting up libreadline-dev:amd64 (6.3-6) ...
+Setting up libsqlite3-dev:amd64 (3.8.4.3-2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Setting up libssl-dev:amd64 (1.0.1g-3) ...
+Setting up python-all (2.7.5-5) ...
+Setting up sqlite3 (3.8.4.3-2) ...
+Setting up sbuild-build-depends-lnav-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libbz2-dev_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncurses5-dev_5.9+20140118-1 libncursesw5_5.9+20140118-1 libncursesw5-dev_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpcre3-dev_1:8.31-5 libpcrecpp0_1:8.31-5 libpipeline1_1.3.0-1 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libquadmath0_4.9.0-1 libreadline-dev_6.3-6 libreadline6_6.3-6 libreadline6-dev_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libsqlite3-0_3.8.4.3-2 libsqlite3-dev_3.8.4.3-2 libss2_1.42.9-3 libssl-dev_1.0.1g-3 libssl1.0.0_1.0.1g-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-all_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-minimal_2.7.6-8 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-lnav-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sqlite3_3.8.4.3-2 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1 zlib1g-dev_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Thu Apr  3 15:03:08 2014 UTC using RSA key ID 1343CF44
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./lnav_0.7.0-3.dsc
+dpkg-source: info: extracting lnav in lnav-0.7.0
+dpkg-source: info: unpacking lnav_0.7.0.orig.tar.gz
+dpkg-source: info: unpacking lnav_0.7.0-3.debian.tar.xz
+dpkg-source: info: applying default-to-var-log-syslog-on-Debian.patch
+dpkg-source: info: applying 743503.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-6e6c2292-773d-4525-852b-a85a72eb7209
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package lnav
+dpkg-buildpackage: source version 0.7.0-3
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Salvatore Bonaccorso <carnil@debian.org>
+ dpkg-source --before-build lnav-0.7.0
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean  --with autotools-dev
+   dh_testdir
+   dh_auto_clean
+   dh_autotools-dev_restoreconfig
+   dh_clean
+ dpkg-source -b lnav-0.7.0
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building lnav using existing ./lnav_0.7.0.orig.tar.gz
+dpkg-source: info: building lnav in lnav_0.7.0-3.debian.tar.xz
+dpkg-source: info: building lnav in lnav_0.7.0-3.dsc
+ debian/rules build
+dh build  --with autotools-dev
+   dh_testdir
+   dh_autotools-dev_updateconfig
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_configure -- --disable-static
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... none
+checking gprof(4) profiling support... no
+checking for ranlib... ranlib
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for a Python interpreter with version >= 2.4... python
+checking for python... /usr/bin/python
+checking for python version... 2.7
+checking for python platform... linux2
+checking for python script directory... ${prefix}/lib/python2.7/dist-packages
+checking for python extension module directory... ${exec_prefix}/lib/python2.7/dist-packages
+checking for sqlite3... /usr/bin/sqlite3
+checking for bzip2... /bin/bzip2
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of off_t... 8
+checking size of size_t... 8
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... no
+checking whether tzname is declared... yes
+checking for tzname... yes
+checking for library containing openpty... -lutil
+checking for library containing gzseek... -lz
+checking for library containing BZ2_bzopen... -lbz2
+checking for library containing dlopen... -ldl
+checking for library containing backtrace... none required
+checking for library containing cur_term... -ltinfo
+checking for library containing Gpm_Open... no
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking pty.h usability... yes
+checking pty.h presence... yes
+checking for pty.h... yes
+checking util.h usability... no
+checking util.h presence... no
+checking for util.h... no
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking bzlib.h usability... yes
+checking bzlib.h presence... yes
+checking for bzlib.h... yes
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking sys/ttydefaults.h usability... yes
+checking sys/ttydefaults.h presence... yes
+checking for sys/ttydefaults.h... yes
+checking for NcursesW wide-character library... yes
+checking for working ncursesw/curses.h... yes
+checking for working ncursesw.h... no
+checking for working ncurses.h... no
+checking lib pcre... (testing)
+checking for pcre_study in -lpcre... yes
+checking for _ZN7pcrecpp2RE4InitERKSsPKNS_10RE_OptionsE in -lpcrecpp... yes
+checking pcre.h usability... yes
+checking pcre.h presence... yes
+checking for pcre.h... yes
+checking pcre/pcre.h usability... no
+checking pcre/pcre.h presence... no
+checking for pcre/pcre.h... no
+checking lib pcre... -lpcre -lpcrecpp
+checking lib readline... checking for readline in -lreadline... yes
+checking lib readline... -lreadline
+checking for SQLite3 library >= 3.0.0... yes
+checking for sqlite3_stmt_readonly... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating TESTS_ENVIRONMENT
+config.status: creating src/Makefile
+config.status: creating test/Makefile
+config.status: creating src/config.h
+config.status: executing depfiles commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making all in src
+make[2]: Entering directory `/«PKGBUILDDIR»/src'
+make  all-am
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+  CXX      ansi_scrubber.o
+  CXX      bookmarks.o
+  CXX      collation-functions.o
+  CXX      db_sub_source.o
+  CC       extension-functions.o
+  CXX      fs-extension-functions.o
+  CXX      grep_proc.o
+  CXX      hist_source.o
+  CXX      line_buffer.o
+  CXX      listview_curses.o
+  CXX      lnav_commands.o
+  CXX      lnav_config.o
+  CXX      lnav_log.o
+lnav_log.cc:178:9: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        curr_time.tv_usec / 1000,
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+lnav_log.cc:229:13: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+            write(fd, &log_ring.lr_data[log_ring.lr_frag_start],
+            ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lnav_log.cc:232:9: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+        write(fd, log_ring.lr_data, log_ring.lr_length);
+        ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lnav_log.cc:239:9: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+        symlink(crash_path, latest_crash_path);
+        ^~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+  CXX      lnav_util.o
+  CXX      log_accel.o
+  CXX      log_format.o
+log_format.cc:238:24: warning: 'va_start' has undefined behavior with reference types [-Wvarargs]
+        va_start(args, tv_out);
+                       ^
+/usr/bin/../lib/clang/3.4/include/stdarg.h:33:52: note: expanded from macro 'va_start'
+#define va_start(ap, param) __builtin_va_start(ap, param)
+                                                   ^
+log_format.cc:230:51: note: parameter of type 'struct timeval &' is declared here
+                                  struct timeval &tv_out,
+                                                  ^
+1 warning generated.
+  CXX      log_format_loader.o
+log_format_loader.cc:399:9: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+        write(sample_fd.get(),
+        ^~~~~ ~~~~~~~~~~~~~~~~
+log_format_loader.cc:411:9: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+        write(sh_fd.get(), dump_pid_sh, strlen(dump_pid_sh));
+        ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+  CXX      logfile.o
+  CXX      logfile_sub_source.o
+  CXX      network-extension-functions.o
+  CXX      data_scanner.o
+  CXX      data_parser.o
+  CXX      ptimec_rt.o
+  CXX      readline_curses.o
+  CXX      readline_highlighters.o
+  CXX      session_data.o
+  CXX      sequence_matcher.o
+  CXX      shared_buffer.o
+  CC       sqlite-extension-func.o
+  CXX      statusview_curses.o
+  CXX      string-extension-functions.o
+  CXX      pcrepp.o
+  CXX      piper_proc.o
+  CXX      sql_util.o
+  CXX      state-extension-functions.o
+  CC       strnatcmp.o
+  CXX      textview_curses.o
+  CXX      ptimec.o
+  CXXLD    ptimec
+./ptimec "%Y-%m-%d %H:%M:%S" "%Y-%m-%d %H:%M" "%Y-%m-%dT%H:%M:%S" "%Y-%m-%dT%H:%M:%SZ" "%Y/%m/%d %H:%M:%S" "%Y/%m/%d %H:%M" "%a %b %d %H:%M:%S %Y" "%a %b %d %H:%M:%S %Z %Y" "%a %b %d %H:%M:%S " "%d/%b/%Y:%H:%M:%S %z" "%b %d %H:%M:%S" "%m/%d/%y %H:%M:%S" "%m%d %H:%M:%S" > time_fmts.cc
+  CXX      time_fmts.o
+  CXX      view_curses.o
+  CXX      vt52_curses.o
+  CXX      log_vtab_impl.o
+  CXX      xterm_mouse.o
+  CXX      yajlpp.o
+  CC       yajl/yajl.o
+  CC       yajl/yajl_alloc.o
+  CC       yajl/yajl_buf.o
+  CC       yajl/yajl_encode.o
+  CC       yajl/yajl_gen.o
+yajl/yajl_gen.c:301:5: warning: implicit conversion from enumeration type 'yajl_gen_state' to different enumeration type 'yajl_gen_status' [-Wenum-conversion]
+    DECREMENT_DEPTH;
+    ^~~~~~~~~~~~~~~
+yajl/yajl_gen.c:174:46: note: expanded from macro 'DECREMENT_DEPTH'
+  if (--(g->depth) >= YAJL_MAX_DEPTH) return yajl_gen_error;
+                                      ~~~~~~ ^~~~~~~~~~~~~~
+yajl/yajl_gen.c:327:5: warning: implicit conversion from enumeration type 'yajl_gen_state' to different enumeration type 'yajl_gen_status' [-Wenum-conversion]
+    DECREMENT_DEPTH;
+    ^~~~~~~~~~~~~~~
+yajl/yajl_gen.c:174:46: note: expanded from macro 'DECREMENT_DEPTH'
+  if (--(g->depth) >= YAJL_MAX_DEPTH) return yajl_gen_error;
+                                      ~~~~~~ ^~~~~~~~~~~~~~
+2 warnings generated.
+  CC       yajl/yajl_lex.o
+  CC       yajl/yajl_parser.o
+  CC       yajl/yajl_tree.o
+  CC       yajl/yajl_version.o
+  CXX      spookyhash/SpookyV2.o
+  AR       libdiag.a
+  CXX      lnav.o
+lnav.cc:305:45: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+                     (int)offset_tv.tv_sec, offset_tv.tv_usec / 1000);
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~
+lnav.cc:4505:21: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+                    write(STDOUT_FILENO, str.c_str(), str.size());
+                    ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lnav.cc:4506:21: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+                    write(STDOUT_FILENO, "\n", 1);
+                    ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+  CC       bin2c.o
+  CCLD     bin2c
+./bin2c -z -c ./dump-pid.sh dump-pid-sh.c
+  CC       dump-pid-sh.o
+./bin2c -z -c ./help.txt help.c
+  CC       help.o
+./bin2c -z -c ./init.sql init-sql.c
+  CC       init-sql.o
+./bin2c -z -c ./default-log-formats.json default-log-formats-json.c
+  CC       default-log-formats-json.o
+  CXXLD    lnav
+  CXX      test_override.o
+  CXXLD    lnav-test
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+make[2]: Leaving directory `/«PKGBUILDDIR»/src'
+Making all in test
+make[2]: Entering directory `/«PKGBUILDDIR»/test'
+rm -f simple-db.db
+/usr/bin/sqlite3 simple-db.db < ./simple-db.sql
+make[2]: Leaving directory `/«PKGBUILDDIR»/test'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   debian/rules override_dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+mkdir -p /«PKGBUILDDIR»/debian/build
+HOME=/«PKGBUILDDIR»/debian/build dh_auto_test
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making check in src
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+Making check in test
+make[3]: Entering directory `/«PKGBUILDDIR»/test'
+make  drive_data_scanner drive_line_buffer drive_grep_proc drive_listview drive_logfile drive_mvwattrline drive_sequencer drive_sql drive_view_colors drive_vt52_curses drive_readline_curses slicer scripty test_ansi_scrubber test_auto_fd test_auto_mem test_bookmarks test_date_time_scanner test_grep_proc2 test_hist_source test_line_buffer2 test_log_accel test_pcrepp test_top_status test_yajlpp
+make[4]: Entering directory `/«PKGBUILDDIR»/test'
+  CXX      drive_data_scanner.o
+drive_data_scanner.cc:165:25: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+                        scanf("%3s", resp);
+                        ^~~~~ ~~~~~~~~~~~
+1 warning generated.
+  CXXLD    drive_data_scanner
+  CXX      drive_line_buffer.o
+drive_line_buffer.cc:64:39: warning: format specifies type 'long long *' but the argument has type 'off_t *' (aka 'long *') [-Wformat]
+            if (sscanf(optarg, FORMAT_OFF_T, &offset) != 1) {
+                                             ^~~~~~~
+1 warning generated.
+  CXXLD    drive_line_buffer
+  CXX      drive_grep_proc.o
+  CXXLD    drive_grep_proc
+  CXX      drive_listview.o
+  CXXLD    drive_listview
+  CXX      drive_logfile.o
+  CXXLD    drive_logfile
+  CXX      drive_mvwattrline.o
+  CXXLD    drive_mvwattrline
+  CXX      drive_sequencer.o
+  CXXLD    drive_sequencer
+  CXX      drive_sql.o
+  CXXLD    drive_sql
+  CXX      drive_view_colors.o
+  CXXLD    drive_view_colors
+  CXX      drive_vt52_curses.o
+  CXXLD    drive_vt52_curses
+  CXX      drive_readline_curses.o
+  CXXLD    drive_readline_curses
+  CXX      slicer.o
+  CXXLD    slicer
+  CXX      scripty.o
+scripty.cc:581:8: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+                            write(ct.get_fd(),
+                            ^~~~~ ~~~~~~~~~~~~
+scripty.cc:626:19: warning: format specifies type 'int' but the argument has type '__suseconds_t' (aka 'long') [-Wformat]
+                                        diff.tv_sec, diff.tv_usec);
+                                                     ^~~~~~~~~~~~
+scripty.cc:621:8: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+                            write(ct.get_fd(), buffer, rc);
+                            ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~
+scripty.cc:665:5: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+                                write(STDOUT_FILENO, buffer, rc);
+                                ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+  CXXLD    scripty
+  CXX      test_ansi_scrubber.o
+  CXXLD    test_ansi_scrubber
+  CXX      test_auto_fd.o
+  CXXLD    test_auto_fd
+  CXX      test_auto_mem.o
+  CXXLD    test_auto_mem
+  CXX      test_bookmarks.o
+  CXXLD    test_bookmarks
+  CXX      test_date_time_scanner.o
+  CXXLD    test_date_time_scanner
+  CXX      test_grep_proc2.o
+  CXXLD    test_grep_proc2
+  CXX      test_hist_source.o
+  CXXLD    test_hist_source
+  CXX      test_line_buffer2.o
+test_line_buffer2.cc:49:5: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+    write(pi[1], data, strlen(data));
+    ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+  CXXLD    test_line_buffer2
+  CXX      test_log_accel.o
+  CXXLD    test_log_accel
+  CXX      test_pcrepp.o
+  CXXLD    test_pcrepp
+  CXX      test_top_status.o
+  CXXLD    test_top_status
+  CXX      test_yajlpp.o
+  CXXLD    test_yajlpp
+make[4]: Leaving directory `/«PKGBUILDDIR»/test'
+make  check-TESTS
+make[4]: Entering directory `/«PKGBUILDDIR»/test'
+make[5]: Entering directory `/«PKGBUILDDIR»/test'
+PASS: test_ansi_scrubber
+PASS: test_auto_fd
+PASS: test_auto_mem
+PASS: test_bookmarks
+PASS: test_date_time_scanner
+PASS: test_cmds.sh
+PASS: test_line_buffer2
+PASS: test_line_buffer.sh
+PASS: test_listview.sh
+PASS: test_mvwattrline.sh
+PASS: test_grep_proc.sh
+PASS: test_grep_proc2
+PASS: test_hist_source
+PASS: test_json_format.sh
+PASS: test_log_accel
+PASS: test_logfile.sh
+PASS: test_pcrepp
+PASS: test_sessions.sh
+PASS: test_sql.sh
+PASS: test_sql_coll_func.sh
+PASS: test_sql_fs_func.sh
+PASS: test_sql_str_func.sh
+PASS: test_view_colors.sh
+PASS: test_vt52_curses.sh
+PASS: test_top_status
+PASS: test_data_parser.sh
+PASS: test_yajlpp
+make[6]: Entering directory `/«PKGBUILDDIR»/test'
+make[6]: Nothing to be done for `all'.
+make[6]: Leaving directory `/«PKGBUILDDIR»/test'
+============================================================================
+Testsuite summary for lnav 0.7.0
+============================================================================
+# TOTAL: 27
+# PASS:  27
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory `/«PKGBUILDDIR»/test'
+make[4]: Leaving directory `/«PKGBUILDDIR»/test'
+make[3]: Leaving directory `/«PKGBUILDDIR»/test'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary  --with autotools-dev
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making install in src
+make[2]: Entering directory `/«PKGBUILDDIR»/src'
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/lnav/usr/bin'
+  /usr/bin/install -c lnav '/«PKGBUILDDIR»/debian/lnav/usr/bin'
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+make[2]: Leaving directory `/«PKGBUILDDIR»/src'
+Making install in test
+make[2]: Entering directory `/«PKGBUILDDIR»/test'
+make[3]: Entering directory `/«PKGBUILDDIR»/test'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/test'
+make[2]: Leaving directory `/«PKGBUILDDIR»/test'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/lnav/usr/share/man/man1'
+ /usr/bin/install -c -m 644 lnav.1 '/«PKGBUILDDIR»/debian/lnav/usr/share/man/man1'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs
+   debian/rules override_dh_installchangelogs
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_installchangelogs NEWS
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/lnav/usr/bin/lnav was not linked against libdl.so.2 (it uses none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `lnav' in `../lnav_0.7.0-3_amd64.deb'.
+ dpkg-genchanges  >../lnav_0.7.0-3_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build lnav-0.7.0
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140427-1622
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+lnav_0.7.0-3_amd64.changes:
+───────────────────────────
+
+Format: 1.8
+Date: Thu, 03 Apr 2014 16:59:44 +0200
+Source: lnav
+Binary: lnav
+Architecture: source amd64
+Version: 0.7.0-3
+Distribution: sid
+Urgency: low
+Maintainer: Salvatore Bonaccorso <carnil@debian.org>
+Changed-By: Salvatore Bonaccorso <carnil@debian.org>
+Description: 
+ lnav       - ncurses-based log file viewer
+Closes: 743503
+Changes: 
+ lnav (0.7.0-3) unstable; urgency=low
+ .
+   * Add 743503.patch patch.
+     Correctly convert byte encoding for 32bit value from little-endian order
+     to host byte order. Fixes FTBFS on big-endian architectures.
+     Thanks to Jurica Stanojkovic and Patrick Baggett (Closes: #743503)
+Checksums-Sha1: 
+ 9b4d480e558653de506f1e41be51eee91456b977 1061 lnav_0.7.0-3.dsc
+ f7ac4fba0d96a2e409c992d801691ae0ddfa6d33 4664 lnav_0.7.0-3.debian.tar.xz
+ dfde5c8d2d770da78f08514f89430f2c16446d02 277230 lnav_0.7.0-3_amd64.deb
+Checksums-Sha256: 
+ 74e6e7c19a475c5fca7df71211e306a75ae538fc449d552d90ab520b86c00a63 1061 lnav_0.7.0-3.dsc
+ dee83a1dfc70ac10e07b38ff1baae9cdd1e24bb56859e458c84c1d26a12b460b 4664 lnav_0.7.0-3.debian.tar.xz
+ 8b01a2470ad3c1952846d3fd038aafdbbf9260bdb2479481f38a10f494ded019 277230 lnav_0.7.0-3_amd64.deb
+Files: 
+ c6e3c1399b9a3b159670393d1cef1958 277230 admin optional lnav_0.7.0-3_amd64.deb
+ 82fad7e57a5a8ab683ebc6d7796f84e1 1061 admin optional lnav_0.7.0-3.dsc
+ d6cdcb8341ba95b8f01b362d4de035d0 4664 admin optional lnav_0.7.0-3.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+lnav_0.7.0-3_amd64.deb
+──────────────────────
+
+ new debian package, version 2.0.
+ size 277230 bytes: control archive=1001 bytes.
+     971 bytes,    18 lines      control              
+     377 bytes,     6 lines      md5sums              
+ Package: lnav
+ Version: 0.7.0-3
+ Architecture: amd64
+ Maintainer: Salvatore Bonaccorso <carnil@debian.org>
+ Installed-Size: 1131
+ Depends: libbz2-1.0, libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libncursesw5 (>= 5.6+20070908), libpcre3 (>= 8.10), libpcrecpp0 (>= 7.7), libreadline6 (>= 6.0), libsqlite3-0 (>= 3.7.4), libstdc++6 (>= 4.6), libtinfo5, zlib1g (>= 1:1.1.4)
+ Section: admin
+ Priority: optional
+ Homepage: http://lnav.org
+ Description: ncurses-based log file viewer
+  The log file navigator, lnav, is an enhanced log file viewer that
+  takes advantage of any semantic information that can be gleaned from
+  the files being viewed, such as timestamps and log levels.  Using this
+  extra semantic information, lnav can do things like interleaving
+  messages from different files, generate histograms of messages over
+  time, and providing hotkeys for navigating through the file.  It is
+  hoped that these features will allow the user to quickly and
+  efficiently zero in on problems.
+
+drwxr-xr-x root/root         0 2014-04-27 16:22 ./
+drwxr-xr-x root/root         0 2014-04-27 16:22 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 16:22 ./usr/bin/
+-rwxr-xr-x root/root   1101368 2014-04-27 16:22 ./usr/bin/lnav
+drwxr-xr-x root/root         0 2014-04-27 16:22 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 16:22 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-27 16:22 ./usr/share/man/man1/
+-rw-r--r-- root/root      1212 2014-04-27 16:22 ./usr/share/man/man1/lnav.1.gz
+drwxr-xr-x root/root         0 2014-04-27 16:22 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 16:22 ./usr/share/doc/lnav/
+-rw-r--r-- root/root      2182 2014-03-22 05:16 ./usr/share/doc/lnav/changelog.gz
+-rw-r--r-- root/root      8911 2014-03-22 05:15 ./usr/share/doc/lnav/help.txt.gz
+-rw-r--r-- root/root       923 2014-04-03 17:00 ./usr/share/doc/lnav/changelog.Debian.gz
+-rw-r--r-- root/root      6320 2014-04-03 17:00 ./usr/share/doc/lnav/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 92292
+Build-Time: 68
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 15
+Job: lnav_0.7.0-3.dsc
+Machine Architecture: amd64
+Package: lnav
+Package-Time: 90
+Source-Version: 0.7.0-3
+Space: 92292
+Status: successful
+Version: 0.7.0-3
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140427-1622
+Build needed 00:01:30, 92292k disc space

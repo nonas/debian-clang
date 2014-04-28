@@ -1,0 +1,841 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ btag 1.1.3-1 (amd64)                                       28 Apr 2014 18:36 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: btag
+Version: 1.1.3-1
+Source Version: 1.1.3-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/btag-RhcwQh/btag-1.1.3' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/btag-RhcwQh' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-d7154640-4fb4-447d-9d94-2f6c504e93a8' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+btag_1.1.3-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-6TCyfb/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), cmake, debhelper (>= 8), dpkg-dev (>= 1.16.1), libboost-dev, libboost-filesystem-dev (>= 1.46.0), libtag1-dev, pkg-config
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), cmake, debhelper (>= 8), dpkg-dev (>= 1.16.1), libboost-dev, libboost-filesystem-dev (>= 1.46.0), libtag1-dev, pkg-config
+dpkg-deb: building package `sbuild-build-depends-btag-dummy' in `/«BUILDDIR»/resolver-PzAK_M/apt_archive/sbuild-build-depends-btag-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install btag build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils cmake cmake-data debhelper file gettext gettext-base groff-base
+  intltool-debian libarchive13 libasprintf0c2 libboost-dev
+  libboost-filesystem-dev libboost-filesystem1.54-dev
+  libboost-filesystem1.54.0 libboost-system1.54-dev libboost-system1.54.0
+  libboost1.54-dev libcroco3 libcurl3 libexpat1 libgcrypt11 libglib2.0-0
+  libgnutls26 libgpg-error0 libgssapi-krb5-2 libhogweed2 libidn11 libk5crypto3
+  libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.4-2 liblzo2-2 libmagic1
+  libnettle4 libp11-kit0 libpipeline1 libprocps3 librtmp1 libsasl2-2
+  libsasl2-modules-db libssh2-1 libssl1.0.0 libtag1-dev libtag1-vanilla
+  libtag1c2a libtasn1-6 libunistring0 libxml2 man-db pkg-config po-debconf
+  procps
+Suggested packages:
+  wamerican wordlist whois vacation codeblocks eclipse dh-make gettext-doc
+  groff lrzip libboost-doc libboost1.54-doc libboost-atomic1.54-dev
+  libboost-chrono1.54-dev libboost-context1.54-dev libboost-coroutine.54-dev
+  libboost-date-time1.54-dev libboost-exception1.54-dev libboost-graph1.54-dev
+  libboost-graph-parallel1.54-dev libboost-iostreams1.54-dev
+  libboost-locale1.54-dev libboost-log.54-dev libboost-math1.54-dev
+  libboost-mpi1.54-dev libboost-mpi-python1.54-dev
+  libboost-program-options1.54-dev libboost-python1.54-dev
+  libboost-random1.54-dev libboost-regex1.54-dev
+  libboost-serialization1.54-dev libboost-signals1.54-dev
+  libboost-test1.54-dev libboost-thread1.54-dev libboost-timer1.54-dev
+  libboost-wave1.54-dev libboost1.54-tools-dev libmpfrc++-dev libntl-dev
+  rng-tools krb5-doc krb5-user less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  ca-certificates libglib2.0-data shared-mime-info krb5-locales
+  libsasl2-modules xml-core libmail-sendmail-perl psmisc
+The following NEW packages will be installed:
+  bsdmainutils cmake cmake-data debhelper file gettext gettext-base groff-base
+  intltool-debian libarchive13 libasprintf0c2 libboost-dev
+  libboost-filesystem-dev libboost-filesystem1.54-dev
+  libboost-filesystem1.54.0 libboost-system1.54-dev libboost-system1.54.0
+  libboost1.54-dev libcroco3 libcurl3 libexpat1 libgcrypt11 libglib2.0-0
+  libgnutls26 libgpg-error0 libgssapi-krb5-2 libhogweed2 libidn11 libk5crypto3
+  libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.4-2 liblzo2-2 libmagic1
+  libnettle4 libp11-kit0 libpipeline1 libprocps3 librtmp1 libsasl2-2
+  libsasl2-modules-db libssh2-1 libssl1.0.0 libtag1-dev libtag1-vanilla
+  libtag1c2a libtasn1-6 libunistring0 libxml2 man-db pkg-config po-debconf
+  procps sbuild-build-depends-btag-dummy
+0 upgraded, 55 newly installed, 0 to remove and 8 not upgraded.
+Need to get 23.5 MB/23.5 MB of archives.
+After this operation, 155 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libprocps3 amd64 1:3.3.9-4 [55.6 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main libssl1.0.0 amd64 1.0.1g-3 [1012 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libgpg-error0 amd64 1.12-0.2 [56.5 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libgcrypt11 amd64 1.5.3-4 [250 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libp11-kit0 amd64 0.20.2-5 [81.1 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libtasn1-6 amd64 3.4-3 [48.8 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libgnutls26 amd64 2.12.23-14 [530 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libkeyutils1 amd64 1.5.6-1 [8758 B]
+Get:14 http://debian.proxad.net/debian/ sid/main libkrb5support0 amd64 1.12.1+dfsg-1 [56.3 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libk5crypto3 amd64 1.12.1+dfsg-1 [109 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libkrb5-3 amd64 1.12.1+dfsg-1 [296 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libgssapi-krb5-2 amd64 1.12.1+dfsg-1 [143 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libidn11 amd64 1.28-2 [158 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libsasl2-modules-db amd64 2.1.26.dfsg1-9 [66.4 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libsasl2-2 amd64 2.1.26.dfsg1-9 [103 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libldap-2.4-2 amd64 2.4.39-1 [212 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main liblzo2-2 amd64 2.06-1.2 [51.2 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main libnettle4 amd64 2.7.1-2 [172 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libarchive13 amd64 3.1.2-8 [265 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main libboost-system1.54.0 amd64 1.54.0-5 [29.3 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main libboost-filesystem1.54.0 amd64 1.54.0-5 [55.7 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main libhogweed2 amd64 2.7.1-2 [125 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main librtmp1 amd64 2.4+20131018.git79459a2-2 [58.6 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main libssh2-1 amd64 1.4.3-2 [124 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main libcurl3 amd64 7.36.0-1+b1 [253 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main libexpat1 amd64 2.1.0-4 [138 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main libtag1-vanilla amd64 1.9.1-2 [288 kB]
+Get:37 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main procps amd64 1:3.3.9-4 [233 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:40 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:41 http://debian.proxad.net/debian/ sid/main cmake-data all 2.8.12.1-1.2 [1285 kB]
+Get:42 http://debian.proxad.net/debian/ sid/main cmake amd64 2.8.12.1-1.2 [2638 kB]
+Get:43 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:44 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:45 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:46 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:47 http://debian.proxad.net/debian/ sid/main libboost1.54-dev amd64 1.54.0-5 [5733 kB]
+Get:48 http://debian.proxad.net/debian/ sid/main libboost-dev amd64 1.54.0.1 [3108 B]
+Get:49 http://debian.proxad.net/debian/ sid/main libboost-system1.54-dev amd64 1.54.0-5 [29.7 kB]
+Get:50 http://debian.proxad.net/debian/ sid/main libboost-filesystem1.54-dev amd64 1.54.0-5 [63.0 kB]
+Get:51 http://debian.proxad.net/debian/ sid/main libboost-filesystem-dev amd64 1.54.0.1 [2820 B]
+Get:52 http://debian.proxad.net/debian/ sid/main libtag1c2a amd64 1.9.1-2 [17.3 kB]
+Get:53 http://debian.proxad.net/debian/ sid/main libtag1-dev amd64 1.9.1-2 [83.0 kB]
+Get:54 http://debian.proxad.net/debian/ sid/main pkg-config amd64 0.28-1 [57.5 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 23.5 MB in 6s (3571 kB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libprocps3:amd64.
+Preparing to unpack .../libprocps3_1%3a3.3.9-4_amd64.deb ...
+Unpacking libprocps3:amd64 (1:3.3.9-4) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.1g-3_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1g-3) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libgpg-error0:amd64.
+Preparing to unpack .../libgpg-error0_1.12-0.2_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.12-0.2) ...
+Selecting previously unselected package libgcrypt11:amd64.
+Preparing to unpack .../libgcrypt11_1.5.3-4_amd64.deb ...
+Unpacking libgcrypt11:amd64 (1.5.3-4) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../libp11-kit0_0.20.2-5_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.20.2-5) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../libtasn1-6_3.4-3_amd64.deb ...
+Unpacking libtasn1-6:amd64 (3.4-3) ...
+Selecting previously unselected package libgnutls26:amd64.
+Preparing to unpack .../libgnutls26_2.12.23-14_amd64.deb ...
+Unpacking libgnutls26:amd64 (2.12.23-14) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../libkeyutils1_1.5.6-1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.6-1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../libkrb5support0_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../libk5crypto3_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../libkrb5-3_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../libgssapi-krb5-2_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libidn11:amd64.
+Preparing to unpack .../libidn11_1.28-2_amd64.deb ...
+Unpacking libidn11:amd64 (1.28-2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-9_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.26.dfsg1-9) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../libsasl2-2_2.1.26.dfsg1-9_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.26.dfsg1-9) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../libldap-2.4-2_2.4.39-1_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.39-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package liblzo2-2:amd64.
+Preparing to unpack .../liblzo2-2_2.06-1.2_amd64.deb ...
+Unpacking liblzo2-2:amd64 (2.06-1.2) ...
+Selecting previously unselected package libnettle4:amd64.
+Preparing to unpack .../libnettle4_2.7.1-2_amd64.deb ...
+Unpacking libnettle4:amd64 (2.7.1-2) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../libarchive13_3.1.2-8_amd64.deb ...
+Unpacking libarchive13:amd64 (3.1.2-8) ...
+Selecting previously unselected package libboost-system1.54.0:amd64.
+Preparing to unpack .../libboost-system1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-system1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-filesystem1.54.0:amd64.
+Preparing to unpack .../libboost-filesystem1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-filesystem1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libhogweed2:amd64.
+Preparing to unpack .../libhogweed2_2.7.1-2_amd64.deb ...
+Unpacking libhogweed2:amd64 (2.7.1-2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../librtmp1_2.4+20131018.git79459a2-2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20131018.git79459a2-2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../libssh2-1_1.4.3-2_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.4.3-2) ...
+Selecting previously unselected package libcurl3:amd64.
+Preparing to unpack .../libcurl3_7.36.0-1+b1_amd64.deb ...
+Unpacking libcurl3:amd64 (7.36.0-1+b1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-4) ...
+Selecting previously unselected package libtag1-vanilla:amd64.
+Preparing to unpack .../libtag1-vanilla_1.9.1-2_amd64.deb ...
+Unpacking libtag1-vanilla:amd64 (1.9.1-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../procps_1%3a3.3.9-4_amd64.deb ...
+Unpacking procps (1:3.3.9-4) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../cmake-data_2.8.12.1-1.2_all.deb ...
+Unpacking cmake-data (2.8.12.1-1.2) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_2.8.12.1-1.2_amd64.deb ...
+Unpacking cmake (2.8.12.1-1.2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libboost1.54-dev.
+Preparing to unpack .../libboost1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost1.54-dev (1.54.0-5) ...
+Selecting previously unselected package libboost-dev.
+Preparing to unpack .../libboost-dev_1.54.0.1_amd64.deb ...
+Unpacking libboost-dev (1.54.0.1) ...
+Selecting previously unselected package libboost-system1.54-dev:amd64.
+Preparing to unpack .../libboost-system1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-system1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-filesystem1.54-dev:amd64.
+Preparing to unpack .../libboost-filesystem1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-filesystem1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-filesystem-dev.
+Preparing to unpack .../libboost-filesystem-dev_1.54.0.1_amd64.deb ...
+Unpacking libboost-filesystem-dev (1.54.0.1) ...
+Selecting previously unselected package libtag1c2a:amd64.
+Preparing to unpack .../libtag1c2a_1.9.1-2_amd64.deb ...
+Unpacking libtag1c2a:amd64 (1.9.1-2) ...
+Selecting previously unselected package libtag1-dev.
+Preparing to unpack .../libtag1-dev_1.9.1-2_amd64.deb ...
+Unpacking libtag1-dev (1.9.1-2) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../pkg-config_0.28-1_amd64.deb ...
+Unpacking pkg-config (0.28-1) ...
+Selecting previously unselected package sbuild-build-depends-btag-dummy.
+Preparing to unpack .../sbuild-build-depends-btag-dummy.deb ...
+Unpacking sbuild-build-depends-btag-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libprocps3:amd64 (1:3.3.9-4) ...
+Setting up libssl1.0.0:amd64 (1.0.1g-3) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libgpg-error0:amd64 (1.12-0.2) ...
+Setting up libgcrypt11:amd64 (1.5.3-4) ...
+Setting up libp11-kit0:amd64 (0.20.2-5) ...
+Setting up libtasn1-6:amd64 (3.4-3) ...
+Setting up libgnutls26:amd64 (2.12.23-14) ...
+Setting up libkeyutils1:amd64 (1.5.6-1) ...
+Setting up libkrb5support0:amd64 (1.12.1+dfsg-1) ...
+Setting up libk5crypto3:amd64 (1.12.1+dfsg-1) ...
+Setting up libkrb5-3:amd64 (1.12.1+dfsg-1) ...
+Setting up libgssapi-krb5-2:amd64 (1.12.1+dfsg-1) ...
+Setting up libidn11:amd64 (1.28-2) ...
+Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-9) ...
+Setting up libsasl2-2:amd64 (2.1.26.dfsg1-9) ...
+Setting up libldap-2.4-2:amd64 (2.4.39-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up liblzo2-2:amd64 (2.06-1.2) ...
+Setting up libnettle4:amd64 (2.7.1-2) ...
+Setting up libarchive13:amd64 (3.1.2-8) ...
+Setting up libboost-system1.54.0:amd64 (1.54.0-5) ...
+Setting up libboost-filesystem1.54.0:amd64 (1.54.0-5) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libhogweed2:amd64 (2.7.1-2) ...
+Setting up librtmp1:amd64 (2.4+20131018.git79459a2-2) ...
+Setting up libssh2-1:amd64 (1.4.3-2) ...
+Setting up libcurl3:amd64 (7.36.0-1+b1) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libtag1-vanilla:amd64 (1.9.1-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up procps (1:3.3.9-4) ...
+update-alternatives: using /usr/bin/w.procps to provide /usr/bin/w (w) in auto mode
+All runlevel operations denied by policy
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up cmake-data (2.8.12.1-1.2) ...
+Setting up cmake (2.8.12.1-1.2) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libboost1.54-dev (1.54.0-5) ...
+Setting up libboost-dev (1.54.0.1) ...
+Setting up libboost-system1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-filesystem1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-filesystem-dev (1.54.0.1) ...
+Setting up libtag1c2a:amd64 (1.9.1-2) ...
+Setting up libtag1-dev (1.9.1-2) ...
+Setting up pkg-config (0.28-1) ...
+Setting up sbuild-build-depends-btag-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 cmake_2.8.12.1-1.2 cmake-data_2.8.12.1-1.2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libarchive13_3.1.2-8 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libboost-dev_1.54.0.1 libboost-filesystem-dev_1.54.0.1 libboost-filesystem1.54-dev_1.54.0-5 libboost-filesystem1.54.0_1.54.0-5 libboost-system1.54-dev_1.54.0-5 libboost-system1.54.0_1.54.0-5 libboost1.54-dev_1.54.0-5 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libcurl3_7.36.0-1+b1 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgcrypt11_1.5.3-4 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgnutls26_2.12.23-14 libgomp1_4.9.0-1 libgpg-error0_1.12-0.2 libgpm2_1.20.4-6.1 libgssapi-krb5-2_1.12.1+dfsg-1 libhogweed2_2.7.1-2 libidn11_1.28-2 libisl10_0.12.2-1 libitm1_4.9.0-1 libk5crypto3_1.12.1+dfsg-1 libkeyutils1_1.5.6-1 libkrb5-3_1.12.1+dfsg-1 libkrb5support0_1.12.1+dfsg-1 libldap-2.4-2_2.4.39-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 liblzo2-2_2.06-1.2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libnettle4_2.7.1-2 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libp11-kit0_0.20.2-5 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libprocps3_1:3.3.9-4 libquadmath0_4.9.0-1 libreadline6_6.3-6 librtmp1_2.4+20131018.git79459a2-2 libsasl2-2_2.1.26.dfsg1-9 libsasl2-modules-db_2.1.26.dfsg1-9 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libssh2-1_1.4.3-2 libssl1.0.0_1.0.1g-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtag1-dev_1.9.1-2 libtag1-vanilla_1.9.1-2 libtag1c2a_1.9.1-2 libtasn1-6_3.4-3 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 pkg-config_0.28-1 po-debconf_1.0.16+nmu2 procps_1:3.3.9-4 readline-common_6.3-6 sbuild-build-depends-btag-dummy_0.invalid.0 sbuild-build-depends-core-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Mon Mar 19 14:57:15 2012 UTC using RSA key ID B6E57DE1
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./btag_1.1.3-1.dsc
+dpkg-source: info: extracting btag in btag-1.1.3
+dpkg-source: info: unpacking btag_1.1.3.orig.tar.gz
+dpkg-source: info: unpacking btag_1.1.3-1.debian.tar.gz
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-d7154640-4fb4-447d-9d94-2f6c504e93a8
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package btag
+dpkg-buildpackage: source version 1.1.3-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Fernando Tarlá Cardoso Lemos <fernandotcl@gmail.com>
+ dpkg-source --before-build btag-1.1.3
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b btag-1.1.3
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building btag using existing ./btag_1.1.3.orig.tar.gz
+dpkg-source: info: building btag in btag_1.1.3-1.debian.tar.xz
+dpkg-source: info: building btag in btag_1.1.3-1.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_configure -- -DENABLE_TESTS=1
+-- The C compiler identification is Clang 3.4.0
+-- The CXX compiler identification is Clang 3.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   filesystem
+--   system
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.28") 
+-- checking for module 'taglib'
+--   found taglib, version 1.9.1
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /«PKGBUILDDIR»/obj-x86_64-linux-gnu
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -H/«PKGBUILDDIR» -B/«PKGBUILDDIR»/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[2]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/btag.dir/build.make CMakeFiles/btag.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR» /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/btag.dir/DependInfo.cmake --color=
+Scanning dependencies of target btag
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/btag.dir/build.make CMakeFiles/btag.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 1
+[  4%] Building CXX object CMakeFiles/btag.dir/src/BasicStringFilter.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/BasicStringFilter.cpp.o -c /«PKGBUILDDIR»/src/BasicStringFilter.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 2
+[  8%] Building CXX object CMakeFiles/btag.dir/src/ConfirmationHandler.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/ConfirmationHandler.cpp.o -c /«PKGBUILDDIR»/src/ConfirmationHandler.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 3
+[ 13%] Building CXX object CMakeFiles/btag.dir/src/EnglishTitleLocalizationHandler.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/EnglishTitleLocalizationHandler.cpp.o -c /«PKGBUILDDIR»/src/EnglishTitleLocalizationHandler.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 4
+[ 17%] Building CXX object CMakeFiles/btag.dir/src/InteractiveTagger.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/InteractiveTagger.cpp.o -c /«PKGBUILDDIR»/src/InteractiveTagger.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 5
+[ 21%] Building CXX object CMakeFiles/btag.dir/src/main.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/main.cpp.o -c /«PKGBUILDDIR»/src/main.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 6
+[ 26%] Building CXX object CMakeFiles/btag.dir/src/RenamingFilter.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/RenamingFilter.cpp.o -c /«PKGBUILDDIR»/src/RenamingFilter.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 7
+[ 30%] Building CXX object CMakeFiles/btag.dir/src/SimpleCapitalizationFilter.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/SimpleCapitalizationFilter.cpp.o -c /«PKGBUILDDIR»/src/SimpleCapitalizationFilter.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 8
+[ 34%] Building CXX object CMakeFiles/btag.dir/src/SpanishTitleLocalizationHandler.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/SpanishTitleLocalizationHandler.cpp.o -c /«PKGBUILDDIR»/src/SpanishTitleLocalizationHandler.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 9
+[ 39%] Building CXX object CMakeFiles/btag.dir/src/StandardConsole.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/StandardConsole.cpp.o -c /«PKGBUILDDIR»/src/StandardConsole.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 10
+[ 43%] Building CXX object CMakeFiles/btag.dir/src/TitleCapitalizationFilter.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/TitleCapitalizationFilter.cpp.o -c /«PKGBUILDDIR»/src/TitleCapitalizationFilter.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 11
+[ 47%] Building CXX object CMakeFiles/btag.dir/src/TitleLocalizationHandler.cpp.o
+/usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib    -o CMakeFiles/btag.dir/src/TitleLocalizationHandler.cpp.o -c /«PKGBUILDDIR»/src/TitleLocalizationHandler.cpp
+Linking CXX executable btag
+/usr/bin/cmake -E cmake_link_script CMakeFiles/btag.dir/link.txt --verbose=1
+/usr/bin/c++   -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2    -fPIE -pie -Wl,-z,relro -Wl,-z,now CMakeFiles/btag.dir/src/BasicStringFilter.cpp.o CMakeFiles/btag.dir/src/ConfirmationHandler.cpp.o CMakeFiles/btag.dir/src/EnglishTitleLocalizationHandler.cpp.o CMakeFiles/btag.dir/src/InteractiveTagger.cpp.o CMakeFiles/btag.dir/src/main.cpp.o CMakeFiles/btag.dir/src/RenamingFilter.cpp.o CMakeFiles/btag.dir/src/SimpleCapitalizationFilter.cpp.o CMakeFiles/btag.dir/src/SpanishTitleLocalizationHandler.cpp.o CMakeFiles/btag.dir/src/StandardConsole.cpp.o CMakeFiles/btag.dir/src/TitleCapitalizationFilter.cpp.o CMakeFiles/btag.dir/src/TitleLocalizationHandler.cpp.o  -o btag -rdynamic -lboost_filesystem -lboost_system -ltag 
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11
+[ 47%] Built target btag
+make -f tests/CMakeFiles/english_titles_test.dir/build.make tests/CMakeFiles/english_titles_test.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tests /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests/CMakeFiles/english_titles_test.dir/DependInfo.cmake --color=
+Scanning dependencies of target english_titles_test
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tests/CMakeFiles/english_titles_test.dir/build.make tests/CMakeFiles/english_titles_test.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 12
+[ 52%] Building CXX object tests/CMakeFiles/english_titles_test.dir/english_titles.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/english_titles_test.dir/english_titles.cpp.o -c /«PKGBUILDDIR»/tests/english_titles.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 13
+[ 56%] Building CXX object tests/CMakeFiles/english_titles_test.dir/titles_base.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/english_titles_test.dir/titles_base.cpp.o -c /«PKGBUILDDIR»/tests/titles_base.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 14
+[ 60%] Building CXX object tests/CMakeFiles/english_titles_test.dir/__/src/BasicStringFilter.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/english_titles_test.dir/__/src/BasicStringFilter.cpp.o -c /«PKGBUILDDIR»/src/BasicStringFilter.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 15
+[ 65%] Building CXX object tests/CMakeFiles/english_titles_test.dir/__/src/EnglishTitleLocalizationHandler.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/english_titles_test.dir/__/src/EnglishTitleLocalizationHandler.cpp.o -c /«PKGBUILDDIR»/src/EnglishTitleLocalizationHandler.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 16
+[ 69%] Building CXX object tests/CMakeFiles/english_titles_test.dir/__/src/TitleCapitalizationFilter.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/english_titles_test.dir/__/src/TitleCapitalizationFilter.cpp.o -c /«PKGBUILDDIR»/src/TitleCapitalizationFilter.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 17
+[ 73%] Building CXX object tests/CMakeFiles/english_titles_test.dir/__/src/TitleLocalizationHandler.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/english_titles_test.dir/__/src/TitleLocalizationHandler.cpp.o -c /«PKGBUILDDIR»/src/TitleLocalizationHandler.cpp
+Linking CXX executable english_titles_test
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/cmake -E cmake_link_script CMakeFiles/english_titles_test.dir/link.txt --verbose=1
+/usr/bin/c++   -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2    -fPIE -pie -Wl,-z,relro -Wl,-z,now CMakeFiles/english_titles_test.dir/english_titles.cpp.o CMakeFiles/english_titles_test.dir/titles_base.cpp.o CMakeFiles/english_titles_test.dir/__/src/BasicStringFilter.cpp.o CMakeFiles/english_titles_test.dir/__/src/EnglishTitleLocalizationHandler.cpp.o CMakeFiles/english_titles_test.dir/__/src/TitleCapitalizationFilter.cpp.o CMakeFiles/english_titles_test.dir/__/src/TitleLocalizationHandler.cpp.o  -o english_titles_test -rdynamic -lboost_filesystem -lboost_system 
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  12 13 14 15 16 17
+[ 73%] Built target english_titles_test
+make -f tests/CMakeFiles/spanish_titles_test.dir/build.make tests/CMakeFiles/spanish_titles_test.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tests /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests/CMakeFiles/spanish_titles_test.dir/DependInfo.cmake --color=
+Scanning dependencies of target spanish_titles_test
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tests/CMakeFiles/spanish_titles_test.dir/build.make tests/CMakeFiles/spanish_titles_test.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 18
+[ 78%] Building CXX object tests/CMakeFiles/spanish_titles_test.dir/spanish_titles.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/spanish_titles_test.dir/spanish_titles.cpp.o -c /«PKGBUILDDIR»/tests/spanish_titles.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 19
+[ 82%] Building CXX object tests/CMakeFiles/spanish_titles_test.dir/titles_base.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/spanish_titles_test.dir/titles_base.cpp.o -c /«PKGBUILDDIR»/tests/titles_base.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 20
+[ 86%] Building CXX object tests/CMakeFiles/spanish_titles_test.dir/__/src/BasicStringFilter.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/spanish_titles_test.dir/__/src/BasicStringFilter.cpp.o -c /«PKGBUILDDIR»/src/BasicStringFilter.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 21
+[ 91%] Building CXX object tests/CMakeFiles/spanish_titles_test.dir/__/src/SpanishTitleLocalizationHandler.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/spanish_titles_test.dir/__/src/SpanishTitleLocalizationHandler.cpp.o -c /«PKGBUILDDIR»/src/SpanishTitleLocalizationHandler.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 22
+[ 95%] Building CXX object tests/CMakeFiles/spanish_titles_test.dir/__/src/TitleCapitalizationFilter.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/spanish_titles_test.dir/__/src/TitleCapitalizationFilter.cpp.o -c /«PKGBUILDDIR»/src/TitleCapitalizationFilter.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 23
+[100%] Building CXX object tests/CMakeFiles/spanish_titles_test.dir/__/src/TitleLocalizationHandler.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/c++    -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2  -I/usr/include/taglib -I/«PKGBUILDDIR»/src    -o CMakeFiles/spanish_titles_test.dir/__/src/TitleLocalizationHandler.cpp.o -c /«PKGBUILDDIR»/src/TitleLocalizationHandler.cpp
+Linking CXX executable spanish_titles_test
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests && /usr/bin/cmake -E cmake_link_script CMakeFiles/spanish_titles_test.dir/link.txt --verbose=1
+/usr/bin/c++   -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2    -fPIE -pie -Wl,-z,relro -Wl,-z,now CMakeFiles/spanish_titles_test.dir/spanish_titles.cpp.o CMakeFiles/spanish_titles_test.dir/titles_base.cpp.o CMakeFiles/spanish_titles_test.dir/__/src/BasicStringFilter.cpp.o CMakeFiles/spanish_titles_test.dir/__/src/SpanishTitleLocalizationHandler.cpp.o CMakeFiles/spanish_titles_test.dir/__/src/TitleCapitalizationFilter.cpp.o CMakeFiles/spanish_titles_test.dir/__/src/TitleLocalizationHandler.cpp.o  -o spanish_titles_test -rdynamic -lboost_filesystem -lboost_system 
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  18 19 20 21 22 23
+[100%] Built target spanish_titles_test
+make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 0
+make[1]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+   dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+Running tests...
+/usr/bin/ctest --force-new-ctest-process -j1
+Test project /«PKGBUILDDIR»/obj-x86_64-linux-gnu
+    Start 1: english_titles_test
+1/2 Test #1: english_titles_test ..............   Passed    0.00 sec
+    Start 2: spanish_titles_test
+2/2 Test #2: spanish_titles_test ..............   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.00 sec
+make[1]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -H/«PKGBUILDDIR» -B/«PKGBUILDDIR»/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[2]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/btag.dir/build.make CMakeFiles/btag.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR» /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/btag.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f CMakeFiles/btag.dir/build.make CMakeFiles/btag.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `CMakeFiles/btag.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11
+[ 47%] Built target btag
+make -f tests/CMakeFiles/english_titles_test.dir/build.make tests/CMakeFiles/english_titles_test.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tests /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests/CMakeFiles/english_titles_test.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tests/CMakeFiles/english_titles_test.dir/build.make tests/CMakeFiles/english_titles_test.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `tests/CMakeFiles/english_titles_test.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  12 13 14 15 16 17
+[ 73%] Built target english_titles_test
+make -f tests/CMakeFiles/spanish_titles_test.dir/build.make tests/CMakeFiles/spanish_titles_test.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tests /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tests/CMakeFiles/spanish_titles_test.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tests/CMakeFiles/spanish_titles_test.dir/build.make tests/CMakeFiles/spanish_titles_test.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `tests/CMakeFiles/spanish_titles_test.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  18 19 20 21 22 23
+[100%] Built target spanish_titles_test
+make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 0
+make -f CMakeFiles/Makefile2 preinstall
+make[2]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[2]: Nothing to be done for `preinstall'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /«PKGBUILDDIR»/debian/btag/usr/bin/btag
+make[1]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `btag' in `../btag_1.1.3-1_amd64.deb'.
+ dpkg-genchanges  >../btag_1.1.3-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build btag-1.1.3
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-1837
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+btag_1.1.3-1_amd64.changes:
+───────────────────────────
+
+Format: 1.8
+Date: Wed, 07 Mar 2012 22:50:32 -0300
+Source: btag
+Binary: btag
+Architecture: source amd64
+Version: 1.1.3-1
+Distribution: sid
+Urgency: low
+Maintainer: Fernando Tarlá Cardoso Lemos <fernandotcl@gmail.com>
+Changed-By: Fernando Tarlá Cardoso Lemos <fernandotcl@gmail.com>
+Description: 
+ btag       - interactive command-line based multimedia tag editor
+Closes: 662970
+Changes: 
+ btag (1.1.3-1) unstable; urgency=low
+ .
+   * New upstream release
+   * Bumped Standards-Version to 3.9.3 (no changes needed)
+   * Fixed the copyright format URL in debian/copyright
+   * Bumped the copyright years in debian/copyright
+   * Formatted debian/control with wrap-and-sort
+   * Imported changes from a patch submitted by Simon Ruderich (thanks!) to
+     enable all hardening flags and copy CPPFLAGS into CFLAGS/CXXFLAGS since
+     CMake doesn't use CPPFLAGS (Closes: #662970)
+Checksums-Sha1: 
+ 2ba7e30a42c620f9bc6311f51f7df74f4e34682c 915 btag_1.1.3-1.dsc
+ 77012a6e30173e959e0b6defe6848603969481e2 18950 btag_1.1.3.orig.tar.gz
+ 73700e9c6a18449c78b1a083b83e94fd831f1928 2740 btag_1.1.3-1.debian.tar.xz
+ 2fb28d654d00913e4c21af0dec98089a0ded909b 53484 btag_1.1.3-1_amd64.deb
+Checksums-Sha256: 
+ 855c946cecaa8c85fa1a7988b0cb365b299a1e1234d49b2a21db441e8e589d53 915 btag_1.1.3-1.dsc
+ 63abde4910de327c1b6a4e6c57fc4cd0493dc18eb0821b389c9e86f438d28409 18950 btag_1.1.3.orig.tar.gz
+ 6ef81dd0d368e84e5c19fbccb8d64caabda2aec7c2343db9c51bbe6609819c7c 2740 btag_1.1.3-1.debian.tar.xz
+ d73fcd0cd7becdad218b26f2aa191696e0766876c77a4b04feb8b5396a43950c 53484 btag_1.1.3-1_amd64.deb
+Files: 
+ d9f0aef42274384bc8c482fa41c9a864 53484 sound optional btag_1.1.3-1_amd64.deb
+ 3af78b9677b33746f59ae3fa797a8c61 915 sound optional btag_1.1.3-1.dsc
+ 45b6ef5e294b10602aa96c12c56f427f 18950 sound optional btag_1.1.3.orig.tar.gz
+ 1afa09627607e5dfd6c460cc26991966 2740 sound optional btag_1.1.3-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+btag_1.1.3-1_amd64.deb
+──────────────────────
+
+ new debian package, version 2.0.
+ size 53484 bytes: control archive=1068 bytes.
+    1154 bytes,    23 lines      control              
+     312 bytes,     5 lines      md5sums              
+ Package: btag
+ Version: 1.1.3-1
+ Architecture: amd64
+ Maintainer: Fernando Tarlá Cardoso Lemos <fernandotcl@gmail.com>
+ Installed-Size: 204
+ Depends: libboost-filesystem1.54.0, libboost-system1.54.0, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6), libtag1c2a (>= 1.9.1)
+ Section: sound
+ Priority: optional
+ Homepage: https://github.com/fernandotcl/btag
+ Description: interactive command-line based multimedia tag editor
+  btag is an interactive utility for tagging multimedia files in batches.
+  tries to automate most of the process by stripping away stray whitespace
+  guessing the best capitalization style for the text fields and keeping
+  state on the current album being tagged.
+  .
+  btag can change the capitalization of text fields even when those contain
+  non-ASCII characters, relying on the standard library to perform the
+  appropriate case conversions. It works on directories containing complete
+  albums as well as on individual files.
+  .
+  All tag formats supported by TagLib should be supported by btag. This
+  includes (among others) ID3v1 and ID3v2 tags found in MP3 files, Ogg
+  Vorbis comments, ID3 tags and Vorbis comments in FLAC files.
+
+drwxr-xr-x root/root         0 2014-04-28 18:37 ./
+drwxr-xr-x root/root         0 2014-04-28 18:37 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:37 ./usr/bin/
+-rwxr-xr-x root/root    166152 2014-04-28 18:37 ./usr/bin/btag
+drwxr-xr-x root/root         0 2014-04-28 18:37 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:37 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-28 18:37 ./usr/share/man/man1/
+-rw-r--r-- root/root      2126 2014-04-28 18:37 ./usr/share/man/man1/btag.1.gz
+drwxr-xr-x root/root         0 2014-04-28 18:37 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:37 ./usr/share/doc/btag/
+-rw-r--r-- root/root       224 2012-03-14 00:49 ./usr/share/doc/btag/changelog.gz
+-rw-r--r-- root/root       799 2012-03-14 00:56 ./usr/share/doc/btag/changelog.Debian.gz
+-rw-r--r-- root/root      1744 2012-03-14 00:52 ./usr/share/doc/btag/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 9456
+Build-Time: 15
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 25
+Job: btag_1.1.3-1.dsc
+Machine Architecture: amd64
+Package: btag
+Package-Time: 47
+Source-Version: 1.1.3-1
+Space: 9456
+Status: successful
+Version: 1.1.3-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-1837
+Build needed 00:00:47, 9456k disc space

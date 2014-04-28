@@ -1,0 +1,2052 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ pion 5.0.5+dfsg-1 (amd64)                                  27 Apr 2014 10:58 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: pion
+Version: 5.0.5+dfsg-1
+Source Version: 5.0.5+dfsg-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/pion-ssTkRr/pion-5.0.5+dfsg' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/pion-ssTkRr' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-9fd23457-b745-415f-8775-9b67d0a72bdc' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+pion_5.0.5+dfsg-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-47M1mm/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7), autotools-dev, autoconf, automake, libssl-dev, libboost-dev (>= 1.35), libboost-thread-dev (>= 1.35), libboost-iostreams-dev (>= 1.35), libboost-system-dev (>= 1.35), libboost-filesystem-dev (>= 1.35), libboost-signals-dev (>= 1.35), libboost-test-dev (>= 1.35), chrpath, zlib1g-dev, doxygen, perl, libbz2-dev, libxml2-dev, libpcap-dev, libtool, ruby, cmake, pkg-config, liblog4cpp5-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7), autotools-dev, autoconf, automake, libssl-dev, libboost-dev (>= 1.35), libboost-thread-dev (>= 1.35), libboost-iostreams-dev (>= 1.35), libboost-system-dev (>= 1.35), libboost-filesystem-dev (>= 1.35), libboost-signals-dev (>= 1.35), libboost-test-dev (>= 1.35), chrpath, zlib1g-dev, doxygen, perl, libbz2-dev, libxml2-dev, libpcap-dev, libtool, ruby, cmake, pkg-config, liblog4cpp5-dev
+dpkg-deb: building package `sbuild-build-depends-pion-dummy' in `/«BUILDDIR»/resolver-I3fTi0/apt_archive/sbuild-build-depends-pion-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install pion build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autotools-dev bsdmainutils chrpath cmake cmake-data
+  debhelper doxygen file gettext gettext-base groff-base icu-devtools
+  intltool-debian libarchive13 libasprintf0c2 libboost-atomic1.54-dev
+  libboost-atomic1.54.0 libboost-chrono1.54-dev libboost-chrono1.54.0
+  libboost-date-time1.54-dev libboost-date-time1.54.0 libboost-dev
+  libboost-filesystem-dev libboost-filesystem1.54-dev
+  libboost-filesystem1.54.0 libboost-iostreams-dev libboost-iostreams1.54-dev
+  libboost-iostreams1.54.0 libboost-regex1.54-dev libboost-regex1.54.0
+  libboost-serialization1.54-dev libboost-serialization1.54.0
+  libboost-signals-dev libboost-signals1.54-dev libboost-signals1.54.0
+  libboost-system-dev libboost-system1.54-dev libboost-system1.54.0
+  libboost-test-dev libboost-test1.54-dev libboost-test1.54.0
+  libboost-thread-dev libboost-thread1.54-dev libboost-thread1.54.0
+  libboost1.54-dev libbz2-dev libcroco3 libcurl3 libexpat1 libgcrypt11
+  libglib2.0-0 libgnutls26 libgpg-error0 libgssapi-krb5-2 libhogweed2
+  libicu-dev libicu52 libidn11 libjs-jquery libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libldap-2.4-2 liblog4cpp5 liblog4cpp5-dev
+  liblzo2-2 libmagic1 libnettle4 libp11-kit0 libpcap-dev libpcap0.8
+  libpcap0.8-dev libpipeline1 libprocps3 librtmp1 libruby2.0 libsasl2-2
+  libsasl2-modules-db libsigsegv2 libssh2-1 libssl-dev libssl1.0.0 libtasn1-6
+  libtool libunistring0 libxml2 libxml2-dev libyaml-0-2 m4 man-db pkg-config
+  po-debconf procps ruby ruby2.0 rubygems-integration zlib1g-dev
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation codeblocks eclipse dh-make doxygen-latex doxygen-doc
+  doxygen-gui graphviz gettext-doc groff lrzip libboost-doc libboost1.54-doc
+  libboost-context1.54-dev libboost-coroutine.54-dev
+  libboost-exception1.54-dev libboost-graph1.54-dev
+  libboost-graph-parallel1.54-dev libboost-locale1.54-dev libboost-log.54-dev
+  libboost-math1.54-dev libboost-mpi1.54-dev libboost-mpi-python1.54-dev
+  libboost-program-options1.54-dev libboost-python1.54-dev
+  libboost-random1.54-dev libboost-timer1.54-dev libboost-wave1.54-dev
+  libboost1.54-tools-dev libmpfrc++-dev libntl-dev rng-tools krb5-doc
+  krb5-user icu-doc libtool-doc automaken gfortran fortran95-compiler gcj-jdk
+  less www-browser libmail-box-perl ri ruby-dev bundler
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  ca-certificates libglib2.0-data shared-mime-info javascript-common
+  krb5-locales libsasl2-modules libssl-doc libltdl-dev xml-core
+  libmail-sendmail-perl psmisc
+The following NEW packages will be installed:
+  autoconf automake autotools-dev bsdmainutils chrpath cmake cmake-data
+  debhelper doxygen file gettext gettext-base groff-base icu-devtools
+  intltool-debian libarchive13 libasprintf0c2 libboost-atomic1.54-dev
+  libboost-atomic1.54.0 libboost-chrono1.54-dev libboost-chrono1.54.0
+  libboost-date-time1.54-dev libboost-date-time1.54.0 libboost-dev
+  libboost-filesystem-dev libboost-filesystem1.54-dev
+  libboost-filesystem1.54.0 libboost-iostreams-dev libboost-iostreams1.54-dev
+  libboost-iostreams1.54.0 libboost-regex1.54-dev libboost-regex1.54.0
+  libboost-serialization1.54-dev libboost-serialization1.54.0
+  libboost-signals-dev libboost-signals1.54-dev libboost-signals1.54.0
+  libboost-system-dev libboost-system1.54-dev libboost-system1.54.0
+  libboost-test-dev libboost-test1.54-dev libboost-test1.54.0
+  libboost-thread-dev libboost-thread1.54-dev libboost-thread1.54.0
+  libboost1.54-dev libbz2-dev libcroco3 libcurl3 libexpat1 libgcrypt11
+  libglib2.0-0 libgnutls26 libgpg-error0 libgssapi-krb5-2 libhogweed2
+  libicu-dev libicu52 libidn11 libjs-jquery libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libldap-2.4-2 liblog4cpp5 liblog4cpp5-dev
+  liblzo2-2 libmagic1 libnettle4 libp11-kit0 libpcap-dev libpcap0.8
+  libpcap0.8-dev libpipeline1 libprocps3 librtmp1 libruby2.0 libsasl2-2
+  libsasl2-modules-db libsigsegv2 libssh2-1 libssl-dev libssl1.0.0 libtasn1-6
+  libtool libunistring0 libxml2 libxml2-dev libyaml-0-2 m4 man-db pkg-config
+  po-debconf procps ruby ruby2.0 rubygems-integration
+  sbuild-build-depends-pion-dummy zlib1g-dev
+0 upgraded, 101 newly installed, 0 to remove and 8 not upgraded.
+Need to get 50.4 MB/50.4 MB of archives.
+After this operation, 275 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libboost-iostreams1.54.0 amd64 1.54.0-5 [48.4 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main libprocps3 amd64 1:3.3.9-4 [55.6 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main libssl1.0.0 amd64 1.0.1g-3 [1012 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libgpg-error0 amd64 1.12-0.2 [56.5 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libgcrypt11 amd64 1.5.3-4 [250 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libp11-kit0 amd64 0.20.2-5 [81.1 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libtasn1-6 amd64 3.4-3 [48.8 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libgnutls26 amd64 2.12.23-14 [530 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libkeyutils1 amd64 1.5.6-1 [8758 B]
+Get:15 http://debian.proxad.net/debian/ sid/main libkrb5support0 amd64 1.12.1+dfsg-1 [56.3 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libk5crypto3 amd64 1.12.1+dfsg-1 [109 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libkrb5-3 amd64 1.12.1+dfsg-1 [296 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libgssapi-krb5-2 amd64 1.12.1+dfsg-1 [143 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libidn11 amd64 1.28-2 [158 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libsasl2-modules-db amd64 2.1.26.dfsg1-9 [66.4 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libsasl2-2 amd64 2.1.26.dfsg1-9 [103 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libldap-2.4-2 amd64 2.4.39-1 [212 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main liblzo2-2 amd64 2.06-1.2 [51.2 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libnettle4 amd64 2.7.1-2 [172 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main libarchive13 amd64 3.1.2-8 [265 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main libboost-atomic1.54.0 amd64 1.54.0-5 [27.3 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libboost-system1.54.0 amd64 1.54.0-5 [29.3 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main libboost-chrono1.54.0 amd64 1.54.0-5 [33.8 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main libboost-date-time1.54.0 amd64 1.54.0-5 [39.8 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main libboost-filesystem1.54.0 amd64 1.54.0-5 [55.7 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main libicu52 amd64 52.1-3 [6751 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main libboost-regex1.54.0 amd64 1.54.0-5 [283 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main libboost-serialization1.54.0 amd64 1.54.0-5 [145 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main libboost-signals1.54.0 amd64 1.54.0-5 [48.9 kB]
+Get:37 http://debian.proxad.net/debian/ sid/main libboost-test1.54.0 amd64 1.54.0-5 [197 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main libboost-thread1.54.0 amd64 1.54.0-5 [47.7 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:40 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:41 http://debian.proxad.net/debian/ sid/main libhogweed2 amd64 2.7.1-2 [125 kB]
+Get:42 http://debian.proxad.net/debian/ sid/main librtmp1 amd64 2.4+20131018.git79459a2-2 [58.6 kB]
+Get:43 http://debian.proxad.net/debian/ sid/main libssh2-1 amd64 1.4.3-2 [124 kB]
+Get:44 http://debian.proxad.net/debian/ sid/main libcurl3 amd64 7.36.0-1+b1 [253 kB]
+Get:45 http://debian.proxad.net/debian/ sid/main libexpat1 amd64 2.1.0-4 [138 kB]
+Get:46 http://debian.proxad.net/debian/ sid/main libpcap0.8 amd64 1.5.3-2 [129 kB]
+Get:47 http://debian.proxad.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:48 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:49 http://debian.proxad.net/debian/ sid/main libyaml-0-2 amd64 0.1.4-3.2 [48.0 kB]
+Get:50 http://debian.proxad.net/debian/ sid/main procps amd64 1:3.3.9-4 [233 kB]
+Get:51 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:52 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:53 http://debian.proxad.net/debian/ sid/main m4 amd64 1.4.17-3 [254 kB]
+Get:54 http://debian.proxad.net/debian/ sid/main autoconf all 2.69-6 [340 kB]
+Get:55 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:56 http://debian.proxad.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:57 http://debian.proxad.net/debian/ sid/main chrpath amd64 0.16-1 [16.3 kB]
+Get:58 http://debian.proxad.net/debian/ sid/main cmake-data all 2.8.12.1-1.2 [1285 kB]
+Get:59 http://debian.proxad.net/debian/ sid/main cmake amd64 2.8.12.1-1.2 [2638 kB]
+Get:60 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:61 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:62 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:63 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:64 http://debian.proxad.net/debian/ sid/main doxygen amd64 1.8.6-2 [2454 kB]
+Get:65 http://debian.proxad.net/debian/ sid/main icu-devtools amd64 52.1-3 [170 kB]
+Get:66 http://debian.proxad.net/debian/ sid/main libboost1.54-dev amd64 1.54.0-5 [5733 kB]
+Get:67 http://debian.proxad.net/debian/ sid/main libboost-atomic1.54-dev amd64 1.54.0-5 [26.1 kB]
+Get:68 http://debian.proxad.net/debian/ sid/main libboost-chrono1.54-dev amd64 1.54.0-5 [35.4 kB]
+Get:69 http://debian.proxad.net/debian/ sid/main libboost-serialization1.54-dev amd64 1.54.0-5 [173 kB]
+Get:70 http://debian.proxad.net/debian/ sid/main libboost-date-time1.54-dev amd64 1.54.0-5 [46.4 kB]
+Get:71 http://debian.proxad.net/debian/ sid/main libboost-dev amd64 1.54.0.1 [3108 B]
+Get:72 http://debian.proxad.net/debian/ sid/main libboost-system1.54-dev amd64 1.54.0-5 [29.7 kB]
+Get:73 http://debian.proxad.net/debian/ sid/main libboost-filesystem1.54-dev amd64 1.54.0-5 [63.0 kB]
+Get:74 http://debian.proxad.net/debian/ sid/main libboost-filesystem-dev amd64 1.54.0.1 [2820 B]
+Get:75 http://debian.proxad.net/debian/ sid/main libicu-dev amd64 52.1-3 [7586 kB]
+Get:76 http://debian.proxad.net/debian/ sid/main libboost-regex1.54-dev amd64 1.54.0-5 [323 kB]
+Get:77 http://debian.proxad.net/debian/ sid/main libboost-iostreams1.54-dev amd64 1.54.0-5 [53.9 kB]
+Get:78 http://debian.proxad.net/debian/ sid/main libboost-iostreams-dev amd64 1.54.0.1 [2782 B]
+Get:79 http://debian.proxad.net/debian/ sid/main libboost-signals1.54-dev amd64 1.54.0-5 [51.8 kB]
+Get:80 http://debian.proxad.net/debian/ sid/main libboost-signals-dev amd64 1.54.0.1 [2852 B]
+Get:81 http://debian.proxad.net/debian/ sid/main libboost-system-dev amd64 1.54.0.1 [2926 B]
+Get:82 http://debian.proxad.net/debian/ sid/main libboost-test1.54-dev amd64 1.54.0-5 [233 kB]
+Get:83 http://debian.proxad.net/debian/ sid/main libboost-test-dev amd64 1.54.0.1 [2826 B]
+Get:84 http://debian.proxad.net/debian/ sid/main libboost-thread1.54-dev amd64 1.54.0-5 [47.3 kB]
+Get:85 http://debian.proxad.net/debian/ sid/main libboost-thread-dev amd64 1.54.0.1 [2812 B]
+Get:86 http://debian.proxad.net/debian/ sid/main libbz2-dev amd64 1.0.6-5 [28.7 kB]
+Get:87 http://debian.proxad.net/debian/ sid/main libjs-jquery all 1.7.2+dfsg-3 [96.9 kB]
+Get:88 http://debian.proxad.net/debian/ sid/main liblog4cpp5 amd64 1.0-4 [129 kB]
+Get:89 http://debian.proxad.net/debian/ sid/main liblog4cpp5-dev amd64 1.0-4 [214 kB]
+Get:90 http://debian.proxad.net/debian/ sid/main libpcap0.8-dev amd64 1.5.3-2 [225 kB]
+Get:91 http://debian.proxad.net/debian/ sid/main libpcap-dev all 1.5.3-2 [23.1 kB]
+Get:92 http://debian.proxad.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-1 [217 kB]
+Get:93 http://debian.proxad.net/debian/ sid/main libssl-dev amd64 1.0.1g-3 [1243 kB]
+Get:94 http://debian.proxad.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:95 http://debian.proxad.net/debian/ sid/main libxml2-dev amd64 2.9.1+dfsg1-3 [685 kB]
+Get:96 http://debian.proxad.net/debian/ sid/main pkg-config amd64 0.28-1 [57.5 kB]
+Get:97 http://debian.proxad.net/debian/ sid/main rubygems-integration all 1.6 [4052 B]
+Get:98 http://debian.proxad.net/debian/ sid/main libruby2.0 amd64 2.0.0.484+really457-3 [3091 kB]
+Get:99 http://debian.proxad.net/debian/ sid/main ruby2.0 amd64 2.0.0.484+really457-3 [349 kB]
+Get:100 http://debian.proxad.net/debian/ sid/main ruby all 1:2.0.0.2 [8528 B]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 50.4 MB in 38s (1317 kB/s)
+Selecting previously unselected package libboost-iostreams1.54.0:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libboost-iostreams1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-iostreams1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libpipeline1:amd64.
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libprocps3:amd64.
+Preparing to unpack .../libprocps3_1%3a3.3.9-4_amd64.deb ...
+Unpacking libprocps3:amd64 (1:3.3.9-4) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.1g-3_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1g-3) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libgpg-error0:amd64.
+Preparing to unpack .../libgpg-error0_1.12-0.2_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.12-0.2) ...
+Selecting previously unselected package libgcrypt11:amd64.
+Preparing to unpack .../libgcrypt11_1.5.3-4_amd64.deb ...
+Unpacking libgcrypt11:amd64 (1.5.3-4) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../libp11-kit0_0.20.2-5_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.20.2-5) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../libtasn1-6_3.4-3_amd64.deb ...
+Unpacking libtasn1-6:amd64 (3.4-3) ...
+Selecting previously unselected package libgnutls26:amd64.
+Preparing to unpack .../libgnutls26_2.12.23-14_amd64.deb ...
+Unpacking libgnutls26:amd64 (2.12.23-14) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../libkeyutils1_1.5.6-1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.6-1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../libkrb5support0_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../libk5crypto3_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../libkrb5-3_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../libgssapi-krb5-2_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libidn11:amd64.
+Preparing to unpack .../libidn11_1.28-2_amd64.deb ...
+Unpacking libidn11:amd64 (1.28-2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-9_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.26.dfsg1-9) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../libsasl2-2_2.1.26.dfsg1-9_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.26.dfsg1-9) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../libldap-2.4-2_2.4.39-1_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.39-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package liblzo2-2:amd64.
+Preparing to unpack .../liblzo2-2_2.06-1.2_amd64.deb ...
+Unpacking liblzo2-2:amd64 (2.06-1.2) ...
+Selecting previously unselected package libnettle4:amd64.
+Preparing to unpack .../libnettle4_2.7.1-2_amd64.deb ...
+Unpacking libnettle4:amd64 (2.7.1-2) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../libarchive13_3.1.2-8_amd64.deb ...
+Unpacking libarchive13:amd64 (3.1.2-8) ...
+Selecting previously unselected package libboost-atomic1.54.0:amd64.
+Preparing to unpack .../libboost-atomic1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-atomic1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-system1.54.0:amd64.
+Preparing to unpack .../libboost-system1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-system1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-chrono1.54.0:amd64.
+Preparing to unpack .../libboost-chrono1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-chrono1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-date-time1.54.0:amd64.
+Preparing to unpack .../libboost-date-time1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-date-time1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-filesystem1.54.0:amd64.
+Preparing to unpack .../libboost-filesystem1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-filesystem1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libicu52:amd64.
+Preparing to unpack .../libicu52_52.1-3_amd64.deb ...
+Unpacking libicu52:amd64 (52.1-3) ...
+Selecting previously unselected package libboost-regex1.54.0:amd64.
+Preparing to unpack .../libboost-regex1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-regex1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-serialization1.54.0:amd64.
+Preparing to unpack .../libboost-serialization1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-serialization1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-signals1.54.0:amd64.
+Preparing to unpack .../libboost-signals1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-signals1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-test1.54.0:amd64.
+Preparing to unpack .../libboost-test1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-test1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-thread1.54.0:amd64.
+Preparing to unpack .../libboost-thread1.54.0_1.54.0-5_amd64.deb ...
+Unpacking libboost-thread1.54.0:amd64 (1.54.0-5) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libhogweed2:amd64.
+Preparing to unpack .../libhogweed2_2.7.1-2_amd64.deb ...
+Unpacking libhogweed2:amd64 (2.7.1-2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../librtmp1_2.4+20131018.git79459a2-2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20131018.git79459a2-2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../libssh2-1_1.4.3-2_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.4.3-2) ...
+Selecting previously unselected package libcurl3:amd64.
+Preparing to unpack .../libcurl3_7.36.0-1+b1_amd64.deb ...
+Unpacking libcurl3:amd64 (7.36.0-1+b1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-4) ...
+Selecting previously unselected package libpcap0.8:amd64.
+Preparing to unpack .../libpcap0.8_1.5.3-2_amd64.deb ...
+Unpacking libpcap0.8:amd64 (1.5.3-2) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package libyaml-0-2:amd64.
+Preparing to unpack .../libyaml-0-2_0.1.4-3.2_amd64.deb ...
+Unpacking libyaml-0-2:amd64 (0.1.4-3.2) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../procps_1%3a3.3.9-4_amd64.deb ...
+Unpacking procps (1:3.3.9-4) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-3_amd64.deb ...
+Unpacking m4 (1.4.17-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-6_all.deb ...
+Unpacking autoconf (2.69-6) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package chrpath.
+Preparing to unpack .../chrpath_0.16-1_amd64.deb ...
+Unpacking chrpath (0.16-1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../cmake-data_2.8.12.1-1.2_all.deb ...
+Unpacking cmake-data (2.8.12.1-1.2) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_2.8.12.1-1.2_amd64.deb ...
+Unpacking cmake (2.8.12.1-1.2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package doxygen.
+Preparing to unpack .../doxygen_1.8.6-2_amd64.deb ...
+Unpacking doxygen (1.8.6-2) ...
+Selecting previously unselected package icu-devtools.
+Preparing to unpack .../icu-devtools_52.1-3_amd64.deb ...
+Unpacking icu-devtools (52.1-3) ...
+Selecting previously unselected package libboost1.54-dev.
+Preparing to unpack .../libboost1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost1.54-dev (1.54.0-5) ...
+Selecting previously unselected package libboost-atomic1.54-dev:amd64.
+Preparing to unpack .../libboost-atomic1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-atomic1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-chrono1.54-dev:amd64.
+Preparing to unpack .../libboost-chrono1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-chrono1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-serialization1.54-dev:amd64.
+Preparing to unpack .../libboost-serialization1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-serialization1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-date-time1.54-dev:amd64.
+Preparing to unpack .../libboost-date-time1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-date-time1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-dev.
+Preparing to unpack .../libboost-dev_1.54.0.1_amd64.deb ...
+Unpacking libboost-dev (1.54.0.1) ...
+Selecting previously unselected package libboost-system1.54-dev:amd64.
+Preparing to unpack .../libboost-system1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-system1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-filesystem1.54-dev:amd64.
+Preparing to unpack .../libboost-filesystem1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-filesystem1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-filesystem-dev.
+Preparing to unpack .../libboost-filesystem-dev_1.54.0.1_amd64.deb ...
+Unpacking libboost-filesystem-dev (1.54.0.1) ...
+Selecting previously unselected package libicu-dev:amd64.
+Preparing to unpack .../libicu-dev_52.1-3_amd64.deb ...
+Unpacking libicu-dev:amd64 (52.1-3) ...
+Selecting previously unselected package libboost-regex1.54-dev:amd64.
+Preparing to unpack .../libboost-regex1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-regex1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-iostreams1.54-dev:amd64.
+Preparing to unpack .../libboost-iostreams1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-iostreams1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-iostreams-dev.
+Preparing to unpack .../libboost-iostreams-dev_1.54.0.1_amd64.deb ...
+Unpacking libboost-iostreams-dev (1.54.0.1) ...
+Selecting previously unselected package libboost-signals1.54-dev:amd64.
+Preparing to unpack .../libboost-signals1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-signals1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-signals-dev.
+Preparing to unpack .../libboost-signals-dev_1.54.0.1_amd64.deb ...
+Unpacking libboost-signals-dev (1.54.0.1) ...
+Selecting previously unselected package libboost-system-dev.
+Preparing to unpack .../libboost-system-dev_1.54.0.1_amd64.deb ...
+Unpacking libboost-system-dev (1.54.0.1) ...
+Selecting previously unselected package libboost-test1.54-dev:amd64.
+Preparing to unpack .../libboost-test1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-test1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-test-dev.
+Preparing to unpack .../libboost-test-dev_1.54.0.1_amd64.deb ...
+Unpacking libboost-test-dev (1.54.0.1) ...
+Selecting previously unselected package libboost-thread1.54-dev:amd64.
+Preparing to unpack .../libboost-thread1.54-dev_1.54.0-5_amd64.deb ...
+Unpacking libboost-thread1.54-dev:amd64 (1.54.0-5) ...
+Selecting previously unselected package libboost-thread-dev.
+Preparing to unpack .../libboost-thread-dev_1.54.0.1_amd64.deb ...
+Unpacking libboost-thread-dev (1.54.0.1) ...
+Selecting previously unselected package libbz2-dev:amd64.
+Preparing to unpack .../libbz2-dev_1.0.6-5_amd64.deb ...
+Unpacking libbz2-dev:amd64 (1.0.6-5) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../libjs-jquery_1.7.2+dfsg-3_all.deb ...
+Unpacking libjs-jquery (1.7.2+dfsg-3) ...
+Selecting previously unselected package liblog4cpp5.
+Preparing to unpack .../liblog4cpp5_1.0-4_amd64.deb ...
+Unpacking liblog4cpp5 (1.0-4) ...
+Selecting previously unselected package liblog4cpp5-dev.
+Preparing to unpack .../liblog4cpp5-dev_1.0-4_amd64.deb ...
+Unpacking liblog4cpp5-dev (1.0-4) ...
+Selecting previously unselected package libpcap0.8-dev.
+Preparing to unpack .../libpcap0.8-dev_1.5.3-2_amd64.deb ...
+Unpacking libpcap0.8-dev (1.5.3-2) ...
+Selecting previously unselected package libpcap-dev.
+Preparing to unpack .../libpcap-dev_1.5.3-2_all.deb ...
+Unpacking libpcap-dev (1.5.3-2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.0.1g-3_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.0.1g-3) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package libxml2-dev:amd64.
+Preparing to unpack .../libxml2-dev_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2-dev:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../pkg-config_0.28-1_amd64.deb ...
+Unpacking pkg-config (0.28-1) ...
+Selecting previously unselected package rubygems-integration.
+Preparing to unpack .../rubygems-integration_1.6_all.deb ...
+Unpacking rubygems-integration (1.6) ...
+Selecting previously unselected package libruby2.0:amd64.
+Preparing to unpack .../libruby2.0_2.0.0.484+really457-3_amd64.deb ...
+Unpacking libruby2.0:amd64 (2.0.0.484+really457-3) ...
+Selecting previously unselected package ruby2.0.
+Preparing to unpack .../ruby2.0_2.0.0.484+really457-3_amd64.deb ...
+Unpacking ruby2.0 (2.0.0.484+really457-3) ...
+Selecting previously unselected package ruby.
+Preparing to unpack .../ruby_1%3a2.0.0.2_all.deb ...
+Unpacking ruby (1:2.0.0.2) ...
+Selecting previously unselected package sbuild-build-depends-pion-dummy.
+Preparing to unpack .../sbuild-build-depends-pion-dummy.deb ...
+Unpacking sbuild-build-depends-pion-dummy (0.invalid.0) ...
+Setting up libboost-iostreams1.54.0:amd64 (1.54.0-5) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libprocps3:amd64 (1:3.3.9-4) ...
+Setting up libssl1.0.0:amd64 (1.0.1g-3) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libgpg-error0:amd64 (1.12-0.2) ...
+Setting up libgcrypt11:amd64 (1.5.3-4) ...
+Setting up libp11-kit0:amd64 (0.20.2-5) ...
+Setting up libtasn1-6:amd64 (3.4-3) ...
+Setting up libgnutls26:amd64 (2.12.23-14) ...
+Setting up libkeyutils1:amd64 (1.5.6-1) ...
+Setting up libkrb5support0:amd64 (1.12.1+dfsg-1) ...
+Setting up libk5crypto3:amd64 (1.12.1+dfsg-1) ...
+Setting up libkrb5-3:amd64 (1.12.1+dfsg-1) ...
+Setting up libgssapi-krb5-2:amd64 (1.12.1+dfsg-1) ...
+Setting up libidn11:amd64 (1.28-2) ...
+Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-9) ...
+Setting up libsasl2-2:amd64 (2.1.26.dfsg1-9) ...
+Setting up libldap-2.4-2:amd64 (2.4.39-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up liblzo2-2:amd64 (2.06-1.2) ...
+Setting up libnettle4:amd64 (2.7.1-2) ...
+Setting up libarchive13:amd64 (3.1.2-8) ...
+Setting up libboost-atomic1.54.0:amd64 (1.54.0-5) ...
+Setting up libboost-system1.54.0:amd64 (1.54.0-5) ...
+Setting up libboost-chrono1.54.0:amd64 (1.54.0-5) ...
+Setting up libboost-date-time1.54.0:amd64 (1.54.0-5) ...
+Setting up libboost-filesystem1.54.0:amd64 (1.54.0-5) ...
+Setting up libicu52:amd64 (52.1-3) ...
+Setting up libboost-regex1.54.0:amd64 (1.54.0-5) ...
+Setting up libboost-serialization1.54.0:amd64 (1.54.0-5) ...
+Setting up libboost-signals1.54.0:amd64 (1.54.0-5) ...
+Setting up libboost-test1.54.0:amd64 (1.54.0-5) ...
+Setting up libboost-thread1.54.0:amd64 (1.54.0-5) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libhogweed2:amd64 (2.7.1-2) ...
+Setting up librtmp1:amd64 (2.4+20131018.git79459a2-2) ...
+Setting up libssh2-1:amd64 (1.4.3-2) ...
+Setting up libcurl3:amd64 (7.36.0-1+b1) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libpcap0.8:amd64 (1.5.3-2) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libyaml-0-2:amd64 (0.1.4-3.2) ...
+Setting up procps (1:3.3.9-4) ...
+update-alternatives: using /usr/bin/w.procps to provide /usr/bin/w (w) in auto mode
+All runlevel operations denied by policy
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-3) ...
+Setting up autoconf (2.69-6) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up chrpath (0.16-1) ...
+Setting up cmake-data (2.8.12.1-1.2) ...
+Setting up cmake (2.8.12.1-1.2) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up doxygen (1.8.6-2) ...
+Setting up icu-devtools (52.1-3) ...
+Setting up libboost1.54-dev (1.54.0-5) ...
+Setting up libboost-atomic1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-chrono1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-serialization1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-date-time1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-dev (1.54.0.1) ...
+Setting up libboost-system1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-filesystem1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-filesystem-dev (1.54.0.1) ...
+Setting up libicu-dev:amd64 (52.1-3) ...
+Setting up libboost-regex1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-iostreams1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-iostreams-dev (1.54.0.1) ...
+Setting up libboost-signals1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-signals-dev (1.54.0.1) ...
+Setting up libboost-system-dev (1.54.0.1) ...
+Setting up libboost-test1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-test-dev (1.54.0.1) ...
+Setting up libboost-thread1.54-dev:amd64 (1.54.0-5) ...
+Setting up libboost-thread-dev (1.54.0.1) ...
+Setting up libbz2-dev:amd64 (1.0.6-5) ...
+Setting up libjs-jquery (1.7.2+dfsg-3) ...
+Setting up liblog4cpp5 (1.0-4) ...
+Setting up liblog4cpp5-dev (1.0-4) ...
+Setting up libpcap0.8-dev (1.5.3-2) ...
+Setting up libpcap-dev (1.5.3-2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Setting up libssl-dev:amd64 (1.0.1g-3) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up libxml2-dev:amd64 (2.9.1+dfsg1-3) ...
+Setting up pkg-config (0.28-1) ...
+Setting up ruby2.0 (2.0.0.484+really457-3) ...
+Setting up libruby2.0:amd64 (2.0.0.484+really457-3) ...
+Setting up rubygems-integration (1.6) ...
+Setting up ruby (1:2.0.0.2) ...
+Setting up sbuild-build-depends-pion-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 autoconf_2.69-6 automake_1:1.14.1-3 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 chrpath_0.16-1 clang-3.4_1:3.4-2 cmake_2.8.12.1-1.2 cmake-data_2.8.12.1-1.2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 doxygen_1.8.6-2 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 icu-devtools_52.1-3 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libarchive13_3.1.2-8 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libboost-atomic1.54-dev_1.54.0-5 libboost-atomic1.54.0_1.54.0-5 libboost-chrono1.54-dev_1.54.0-5 libboost-chrono1.54.0_1.54.0-5 libboost-date-time1.54-dev_1.54.0-5 libboost-date-time1.54.0_1.54.0-5 libboost-dev_1.54.0.1 libboost-filesystem-dev_1.54.0.1 libboost-filesystem1.54-dev_1.54.0-5 libboost-filesystem1.54.0_1.54.0-5 libboost-iostreams-dev_1.54.0.1 libboost-iostreams1.54-dev_1.54.0-5 libboost-iostreams1.54.0_1.54.0-5 libboost-regex1.54-dev_1.54.0-5 libboost-regex1.54.0_1.54.0-5 libboost-serialization1.54-dev_1.54.0-5 libboost-serialization1.54.0_1.54.0-5 libboost-signals-dev_1.54.0.1 libboost-signals1.54-dev_1.54.0-5 libboost-signals1.54.0_1.54.0-5 libboost-system-dev_1.54.0.1 libboost-system1.54-dev_1.54.0-5 libboost-system1.54.0_1.54.0-5 libboost-test-dev_1.54.0.1 libboost-test1.54-dev_1.54.0-5 libboost-test1.54.0_1.54.0-5 libboost-thread-dev_1.54.0.1 libboost-thread1.54-dev_1.54.0-5 libboost-thread1.54.0_1.54.0-5 libboost1.54-dev_1.54.0-5 libbz2-1.0_1.0.6-5 libbz2-dev_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libcurl3_7.36.0-1+b1 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgcrypt11_1.5.3-4 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2 libgnutls26_2.12.23-14 libgomp1_4.9.0-1 libgpg-error0_1.12-0.2 libgpm2_1.20.4-6.1 libgssapi-krb5-2_1.12.1+dfsg-1 libhogweed2_2.7.1-2 libicu-dev_52.1-3 libicu52_52.1-3 libidn11_1.28-2 libisl10_0.12.2-1 libitm1_4.9.0-1 libjs-jquery_1.7.2+dfsg-3 libk5crypto3_1.12.1+dfsg-1 libkeyutils1_1.5.6-1 libkrb5-3_1.12.1+dfsg-1 libkrb5support0_1.12.1+dfsg-1 libldap-2.4-2_2.4.39-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblog4cpp5_1.0-4 liblog4cpp5-dev_1.0-4 liblzma5_5.1.1alpha+20120614-2 liblzo2-2_2.06-1.2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libnettle4_2.7.1-2 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libp11-kit0_0.20.2-5 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcap-dev_1.5.3-2 libpcap0.8_1.5.3-2 libpcap0.8-dev_1.5.3-2 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libprocps3_1:3.3.9-4 libquadmath0_4.9.0-1 libreadline6_6.3-6 librtmp1_2.4+20131018.git79459a2-2 libruby2.0_2.0.0.484+really457-3 libsasl2-2_2.1.26.dfsg1-9 libsasl2-modules-db_2.1.26.dfsg1-9 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libss2_1.42.9-3 libssh2-1_1.4.3-2 libssl-dev_1.0.1g-3 libssl1.0.0_1.0.1g-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtasn1-6_3.4-3 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtool_2.4.2-1.7 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 libxml2-dev_2.9.1+dfsg1-3 libyaml-0-2_0.1.4-3.2 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 m4_1.4.17-3 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 pkg-config_0.28-1 po-debconf_1.0.16+nmu2 procps_1:3.3.9-4 readline-common_6.3-6 ruby_1:2.0.0.2 ruby2.0_2.0.0.484+really457-3 rubygems-integration_1.6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-pion-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1 zlib1g-dev_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Tue Mar 11 22:27:18 2014 UTC using RSA key ID DDA7B20F
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./pion_5.0.5+dfsg-1.dsc
+dpkg-source: info: extracting pion in pion-5.0.5+dfsg
+dpkg-source: info: unpacking pion_5.0.5+dfsg.orig.tar.gz
+dpkg-source: info: unpacking pion_5.0.5+dfsg-1.debian.tar.xz
+dpkg-source: info: applying 01_fix_test_suite_for_big_endian_architectures.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-9fd23457-b745-415f-8775-9b67d0a72bdc
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package pion
+dpkg-buildpackage: source version 5.0.5+dfsg-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Roberto C. Sanchez <roberto@connexer.com>
+ dpkg-source --before-build pion-5.0.5+dfsg
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp
+[ ! -f Makefile ] || /usr/bin/make distclean
+rm -f config.sub config.guess
+dh_clean 
+ dpkg-source -b pion-5.0.5+dfsg
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building pion using existing ./pion_5.0.5+dfsg.orig.tar.gz
+dpkg-source: info: building pion in pion_5.0.5+dfsg-1.debian.tar.xz
+dpkg-source: info: building pion in pion_5.0.5+dfsg-1.dsc
+ debian/rules build
+dh_testdir
+cp -f /usr/share/misc/config.sub config.sub
+cp -f /usr/share/misc/config.guess config.guess
+./autogen.sh
+configure.ac:26: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+m4/libtool.m4:1022: _LT_SYS_MODULE_PATH_AIX is expanded from...
+m4/libtool.m4:4161: _LT_LINKER_SHLIBS is expanded from...
+m4/libtool.m4:5236: _LT_LANG_C_CONFIG is expanded from...
+m4/libtool.m4:138: _LT_SETUP is expanded from...
+m4/libtool.m4:67: LT_INIT is expanded from...
+m4/libtool.m4:102: AC_PROG_LIBTOOL is expanded from...
+configure.ac:26: the top level
+configure.ac:26: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+m4/libtool.m4:4161: _LT_LINKER_SHLIBS is expanded from...
+m4/libtool.m4:5236: _LT_LANG_C_CONFIG is expanded from...
+m4/libtool.m4:138: _LT_SETUP is expanded from...
+m4/libtool.m4:67: LT_INIT is expanded from...
+m4/libtool.m4:102: AC_PROG_LIBTOOL is expanded from...
+configure.ac:26: the top level
+build/pion-setup.inc:9: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+m4/libtool.m4:1022: _LT_SYS_MODULE_PATH_AIX is expanded from...
+m4/libtool.m4:5343: _LT_LANG_CXX_CONFIG is expanded from...
+m4/libtool.m4:785: _LT_LANG is expanded from...
+m4/libtool.m4:768: LT_LANG is expanded from...
+build/pion-setup.inc:9: the top level
+configure.ac:26: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+m4/libtool.m4:1022: _LT_SYS_MODULE_PATH_AIX is expanded from...
+m4/libtool.m4:4161: _LT_LINKER_SHLIBS is expanded from...
+m4/libtool.m4:5236: _LT_LANG_C_CONFIG is expanded from...
+m4/libtool.m4:138: _LT_SETUP is expanded from...
+m4/libtool.m4:67: LT_INIT is expanded from...
+m4/libtool.m4:102: AC_PROG_LIBTOOL is expanded from...
+configure.ac:26: the top level
+configure.ac:26: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+m4/libtool.m4:4161: _LT_LINKER_SHLIBS is expanded from...
+m4/libtool.m4:5236: _LT_LANG_C_CONFIG is expanded from...
+m4/libtool.m4:138: _LT_SETUP is expanded from...
+m4/libtool.m4:67: LT_INIT is expanded from...
+m4/libtool.m4:102: AC_PROG_LIBTOOL is expanded from...
+configure.ac:26: the top level
+build/pion-setup.inc:9: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+m4/libtool.m4:1022: _LT_SYS_MODULE_PATH_AIX is expanded from...
+m4/libtool.m4:5343: _LT_LANG_CXX_CONFIG is expanded from...
+m4/libtool.m4:785: _LT_LANG is expanded from...
+m4/libtool.m4:768: LT_LANG is expanded from...
+build/pion-setup.inc:9: the top level
+configure.ac:26: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+m4/libtool.m4:1022: _LT_SYS_MODULE_PATH_AIX is expanded from...
+m4/libtool.m4:4161: _LT_LINKER_SHLIBS is expanded from...
+m4/libtool.m4:5236: _LT_LANG_C_CONFIG is expanded from...
+m4/libtool.m4:138: _LT_SETUP is expanded from...
+m4/libtool.m4:67: LT_INIT is expanded from...
+m4/libtool.m4:102: AC_PROG_LIBTOOL is expanded from...
+configure.ac:26: the top level
+configure.ac:26: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+m4/libtool.m4:4161: _LT_LINKER_SHLIBS is expanded from...
+m4/libtool.m4:5236: _LT_LANG_C_CONFIG is expanded from...
+m4/libtool.m4:138: _LT_SETUP is expanded from...
+m4/libtool.m4:67: LT_INIT is expanded from...
+m4/libtool.m4:102: AC_PROG_LIBTOOL is expanded from...
+configure.ac:26: the top level
+build/pion-setup.inc:9: warning: AC_LANG_CONFTEST: no AC_LANG_SOURCE call detected in body
+../../lib/autoconf/lang.m4:193: AC_LANG_CONFTEST is expanded from...
+../../lib/autoconf/general.m4:2661: _AC_LINK_IFELSE is expanded from...
+../../lib/autoconf/general.m4:2678: AC_LINK_IFELSE is expanded from...
+m4/libtool.m4:1022: _LT_SYS_MODULE_PATH_AIX is expanded from...
+m4/libtool.m4:5343: _LT_LANG_CXX_CONFIG is expanded from...
+m4/libtool.m4:785: _LT_LANG is expanded from...
+m4/libtool.m4:768: LT_LANG is expanded from...
+build/pion-setup.inc:9: the top level
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, `m4'.
+libtoolize: linking file `m4/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: linking file `m4/libtool.m4'
+libtoolize: linking file `m4/ltoptions.m4'
+libtoolize: linking file `m4/ltsugar.m4'
+libtoolize: linking file `m4/ltversion.m4'
+libtoolize: linking file `m4/lt~obsolete.m4'
+parallel-tests: installing 'm4/test-driver'
+./configure --build x86_64-linux-gnu --prefix=/usr --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --enable-shared --disable-static --with-gnu-ld --with-pic --with-openssl --with-zlib --with-bzlib --with-log4cpp --disable-lockfree CFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" CPPFLAGS="-D_FORTIFY_SOURCE=2" CXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" FCFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4" FFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4" GCJFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4" LDFLAGS="-Wl,-z,relro -ldl -Wl,-z,defs -lpthread" OBJCFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" OBJCXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" 
+configure: WARNING: unrecognized options: --disable-lockfree
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for doxygen... /usr/bin/doxygen
+checking for perl... /usr/bin/perl
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for C++ compiler vendor... gnu
+checking for specific CPU architecture... no
+checking for debugging... no
+checking for plug-ins directory... /usr/share/pion/plugins
+checking for boostlib >= 1.35... yes
+checking boost library extension... "(none)"
+checking for boost::date_time library... ok
+checking for boost::system library... ok
+checking for boost::thread library... ok
+checking for boost::filesystem library... ok
+checking for boost::regex library... ok
+checking for boost::test library... ok
+checking for cygwin directory... no
+checking for malloc_trim() support... yes
+checking tr1/unordered_map usability... yes
+checking tr1/unordered_map presence... yes
+checking for tr1/unordered_map... yes
+checking if unordered_map is ok... ok
+checking for gzip compression support (zlib)... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking linking with zlib... ok
+checking for bzip2 compression support (bzlib)... yes
+checking bzlib.h usability... yes
+checking bzlib.h presence... yes
+checking for bzlib.h... yes
+checking linking with bzlib... ok
+checking for SSL support (openssl)... yes
+checking openssl/ssl.h usability... yes
+checking openssl/ssl.h presence... yes
+checking for openssl/ssl.h... yes
+checking linking with openssl... ok
+configure: Building Pion with support for SSL (using OpenSSL)
+checking log4cpp library... ok
+configure: Using log4cpp for logging
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating pion.pc
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating include/pion/Makefile
+config.status: creating include/pion/tcp/Makefile
+config.status: creating include/pion/http/Makefile
+config.status: creating include/pion/test/Makefile
+config.status: creating include/pion/spdy/Makefile
+config.status: creating src/Makefile
+config.status: creating services/Makefile
+config.status: creating utils/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/plugins/Makefile
+config.status: creating include/pion/config.hpp
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-lockfree
+dh_testdir
+/usr/bin/make CFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" CPPFLAGS="-D_FORTIFY_SOURCE=2" CXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" FCFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4" FFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4" GCJFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4" LDFLAGS="-Wl,-z,relro -ldl -Wl,-z,defs -lpthread" OBJCFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" OBJCXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security"  all
+make[1]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+Making all in include
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+Making all in pion
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+(CDPATH="${ZSH_VERSION+.}:" && cd ../.. && echo autoheader ignored)
+autoheader ignored
+rm -f stamp-h1
+touch config.hpp.in
+cd ../.. && /bin/bash ./config.status include/pion/config.hpp
+config.status: creating include/pion/config.hpp
+config.status: include/pion/config.hpp is unchanged
+/usr/bin/make  all-recursive
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+Making all in http
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/http'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/http'
+Making all in spdy
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/spdy'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/spdy'
+Making all in test
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/test'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/test'
+Making all in tcp
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/tcp'
+make[5]: Nothing to be done for `all'.
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/tcp'
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+Making all in src
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/src'
+  CXX      admin_rights.lo
+  CXX      algorithm.lo
+  CXX      logger.lo
+  CXX      plugin.lo
+  CXX      process.lo
+  CXX      scheduler.lo
+  CXX      spdy_decompressor.lo
+  CXX      spdy_parser.lo
+  CXX      tcp_server.lo
+  CXX      tcp_timer.lo
+  CXX      http_auth.lo
+  CXX      http_basic_auth.lo
+  CXX      http_cookie_auth.lo
+  CXX      http_message.lo
+  CXX      http_parser.lo
+  CXX      http_plugin_server.lo
+  CXX      http_reader.lo
+  CXX      http_server.lo
+  CXX      http_types.lo
+  CXX      http_writer.lo
+  CXXLD    libpion.la
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/src'
+Making all in services
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/services'
+  CXX      HelloService_la-HelloService.lo
+  CXXLD    HelloService.la
+  CXX      EchoService_la-EchoService.lo
+  CXXLD    EchoService.la
+  CXX      CookieService_la-CookieService.lo
+  CXXLD    CookieService.la
+  CXX      LogService_la-LogService.lo
+  CXXLD    LogService.la
+  CXX      FileService.lo
+  CXXLD    FileService.la
+  CXX      AllowNothingService_la-AllowNothingService.lo
+  CXXLD    AllowNothingService.la
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/services'
+Making all in utils
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/utils'
+  CXX      helloserver.o
+  CXXLD    helloserver
+  CXX      piond.o
+  CXXLD    piond
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/utils'
+Making all in tests
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+Making all in plugins
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins'
+  CXX      hasCreateAndDestroy.lo
+  CXXLD    hasCreateAndDestroy.la
+  CXX      hasCreateButNoDestroy.lo
+  CXXLD    hasCreateButNoDestroy.la
+  CXX      hasNoCreate.lo
+  CXXLD    hasNoCreate.la
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins'
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+make[1]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+/usr/bin/make check
+make[1]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+Making check in include
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+Making check in pion
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+Making check in http
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/http'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/http'
+Making check in spdy
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/spdy'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/spdy'
+Making check in test
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/test'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/test'
+Making check in tcp
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/tcp'
+make[4]: Nothing to be done for `check'.
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/tcp'
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+make[3]: Nothing to be done for `check-am'.
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+Making check in src
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/src'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/src'
+Making check in services
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/services'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/services'
+Making check in utils
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/utils'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/utils'
+Making check in tests
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+Making check in plugins
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins'
+make[3]: Nothing to be done for `check'.
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins'
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+/usr/bin/make  piontests
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+  CXX      piontests.o
+  CXX      algorithm_tests.o
+  CXX      file_service_tests.o
+  CXX      http_message_tests.o
+  CXX      http_parser_tests.o
+  CXX      http_plugin_server_tests.o
+  CXX      http_request_tests.o
+  CXX      http_response_tests.o
+  CXX      http_types_tests.o
+  CXX      plugin_manager_tests.o
+  CXX      plugin_tests.o
+  CXX      process_tests.o
+  CXX      spdy_parser_tests.o
+  CXX      tcp_server_tests.o
+  CXX      tcp_stream_tests.o
+  CXXLD    piontests
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+/usr/bin/make  check-TESTS
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+PASS: piontests
+make[6]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+Making all in plugins
+make[7]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins'
+make[7]: Nothing to be done for `all'.
+make[7]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins'
+make[7]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[7]: Nothing to be done for `all-am'.
+make[7]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[6]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+============================================================================
+Testsuite summary for pion 5.0.5
+============================================================================
+# TOTAL: 1
+# PASS:  1
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+make[2]: Nothing to be done for `check-am'.
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+make[1]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+touch build-stamp
+ fakeroot debian/rules binary
+dh_testdir
+cp -f /usr/share/misc/config.sub config.sub
+cp -f /usr/share/misc/config.guess config.guess
+./autogen.sh
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, `m4'.
+libtoolize: linking file `m4/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: linking file `m4/libtool.m4'
+libtoolize: linking file `m4/ltoptions.m4'
+libtoolize: linking file `m4/ltsugar.m4'
+libtoolize: linking file `m4/ltversion.m4'
+libtoolize: linking file `m4/lt~obsolete.m4'
+./configure --build x86_64-linux-gnu --prefix=/usr --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --enable-shared --disable-static --with-gnu-ld --with-pic --with-openssl --with-zlib --with-bzlib --with-log4cpp --disable-lockfree CFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" CPPFLAGS="-D_FORTIFY_SOURCE=2" CXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" FCFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4" FFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4" GCJFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4" LDFLAGS="-Wl,-z,relro -ldl -Wl,-z,defs -lpthread" OBJCFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" OBJCXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" 
+configure: WARNING: unrecognized options: --disable-lockfree
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for doxygen... /usr/bin/doxygen
+checking for perl... /usr/bin/perl
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for C++ compiler vendor... gnu
+checking for specific CPU architecture... no
+checking for debugging... no
+checking for plug-ins directory... /usr/share/pion/plugins
+checking for boostlib >= 1.35... yes
+checking boost library extension... "(none)"
+checking for boost::date_time library... ok
+checking for boost::system library... ok
+checking for boost::thread library... ok
+checking for boost::filesystem library... ok
+checking for boost::regex library... ok
+checking for boost::test library... ok
+checking for cygwin directory... no
+checking for malloc_trim() support... yes
+checking tr1/unordered_map usability... yes
+checking tr1/unordered_map presence... yes
+checking for tr1/unordered_map... yes
+checking if unordered_map is ok... ok
+checking for gzip compression support (zlib)... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking linking with zlib... ok
+checking for bzip2 compression support (bzlib)... yes
+checking bzlib.h usability... yes
+checking bzlib.h presence... yes
+checking for bzlib.h... yes
+checking linking with bzlib... ok
+checking for SSL support (openssl)... yes
+checking openssl/ssl.h usability... yes
+checking openssl/ssl.h presence... yes
+checking for openssl/ssl.h... yes
+checking linking with openssl... ok
+configure: Building Pion with support for SSL (using OpenSSL)
+checking log4cpp library... ok
+configure: Using log4cpp for logging
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating pion.pc
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating include/pion/Makefile
+config.status: creating include/pion/tcp/Makefile
+config.status: creating include/pion/http/Makefile
+config.status: creating include/pion/test/Makefile
+config.status: creating include/pion/spdy/Makefile
+config.status: creating src/Makefile
+config.status: creating services/Makefile
+config.status: creating utils/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/plugins/Makefile
+config.status: creating include/pion/config.hpp
+config.status: include/pion/config.hpp is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-lockfree
+dh_testdir
+dh_testroot
+dh_prep
+dh_installdirs
+/usr/bin/make DESTDIR=/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp install
+make[1]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+Making install in include
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+Making install in pion
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+Making install in http
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/http'
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/http'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/include/pion/http'
+ /usr/bin/install -c -m 644 auth.hpp basic_auth.hpp cookie_auth.hpp message.hpp parser.hpp plugin_server.hpp plugin_service.hpp reader.hpp request.hpp request_reader.hpp request_writer.hpp response.hpp response_reader.hpp response_writer.hpp server.hpp types.hpp writer.hpp '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/include/pion/http'
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/http'
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/http'
+Making install in spdy
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/spdy'
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/spdy'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/include/pion/spdy'
+ /usr/bin/install -c -m 644 decompressor.hpp parser.hpp types.hpp '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/include/pion/spdy'
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/spdy'
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/spdy'
+Making install in test
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/test'
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/test'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/include/pion/test'
+ /usr/bin/install -c -m 644 unit_test.hpp '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/include/pion/test'
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/test'
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/test'
+Making install in tcp
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/tcp'
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/tcp'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/include/pion/tcp'
+ /usr/bin/install -c -m 644 connection.hpp server.hpp stream.hpp timer.hpp '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/include/pion/tcp'
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/tcp'
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion/tcp'
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+(CDPATH="${ZSH_VERSION+.}:" && cd ../.. && echo autoheader ignored)
+autoheader ignored
+rm -f stamp-h1
+touch config.hpp.in
+cd ../.. && /bin/bash ./config.status include/pion/config.hpp
+config.status: creating include/pion/config.hpp
+config.status: include/pion/config.hpp is unchanged
+make[5]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[5]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/include/pion'
+ /usr/bin/install -c -m 644 admin_rights.hpp algorithm.hpp config.hpp error.hpp hash_map.hpp logger.hpp plugin.hpp plugin_manager.hpp process.hpp scheduler.hpp user.hpp '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/include/pion'
+make[5]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include/pion'
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/include'
+Making install in src
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/src'
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/src'
+ /bin/mkdir -p '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/lib'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libpion.la '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libpion-5.0.so /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/lib/libpion-5.0.so
+libtool: install: (cd /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/lib && { ln -s -f libpion-5.0.so libpion.so || { rm -f libpion.so && ln -s libpion-5.0.so libpion.so; }; })
+libtool: install: /usr/bin/install -c .libs/libpion.lai /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/lib/libpion.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/src'
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/src'
+Making install in services
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/services'
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/services'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   HelloService.la EchoService.la CookieService.la LogService.la FileService.la AllowNothingService.la '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins'
+libtool: install: warning: relinking `HelloService.la'
+libtool: install: (cd /«BUILDDIR»/pion-5.0.5+dfsg/services; /bin/bash /«BUILDDIR»/pion-5.0.5+dfsg/libtool  --silent --tag CXX --mode=relink g++ -shared -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -no-undefined -module -avoid-version -Wl,-z,relro -ldl -Wl,-z,defs -lpthread -o HelloService.la -rpath /usr/share/pion/plugins HelloService_la-HelloService.lo ../src/libpion.la -lboost_thread -lboost_system -lboost_filesystem -lboost_regex -lboost_date_time -llog4cpp -lssl -lcrypto -lz -lbz2 -lrt -ldl -inst-prefix-dir /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp)
+libtool: install: /usr/bin/install -c .libs/HelloService.soT /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/HelloService.so
+libtool: install: /usr/bin/install -c .libs/HelloService.lai /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/HelloService.la
+libtool: install: warning: relinking `EchoService.la'
+libtool: install: (cd /«BUILDDIR»/pion-5.0.5+dfsg/services; /bin/bash /«BUILDDIR»/pion-5.0.5+dfsg/libtool  --silent --tag CXX --mode=relink g++ -shared -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -no-undefined -module -avoid-version -Wl,-z,relro -ldl -Wl,-z,defs -lpthread -o EchoService.la -rpath /usr/share/pion/plugins EchoService_la-EchoService.lo ../src/libpion.la -lboost_thread -lboost_system -lboost_filesystem -lboost_regex -lboost_date_time -llog4cpp -lssl -lcrypto -lz -lbz2 -lrt -ldl -inst-prefix-dir /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp)
+libtool: install: /usr/bin/install -c .libs/EchoService.soT /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/EchoService.so
+libtool: install: /usr/bin/install -c .libs/EchoService.lai /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/EchoService.la
+libtool: install: warning: relinking `CookieService.la'
+libtool: install: (cd /«BUILDDIR»/pion-5.0.5+dfsg/services; /bin/bash /«BUILDDIR»/pion-5.0.5+dfsg/libtool  --silent --tag CXX --mode=relink g++ -shared -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -no-undefined -module -avoid-version -Wl,-z,relro -ldl -Wl,-z,defs -lpthread -o CookieService.la -rpath /usr/share/pion/plugins CookieService_la-CookieService.lo ../src/libpion.la -lboost_thread -lboost_system -lboost_filesystem -lboost_regex -lboost_date_time -llog4cpp -lssl -lcrypto -lz -lbz2 -lrt -ldl -inst-prefix-dir /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp)
+libtool: install: /usr/bin/install -c .libs/CookieService.soT /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/CookieService.so
+libtool: install: /usr/bin/install -c .libs/CookieService.lai /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/CookieService.la
+libtool: install: warning: relinking `LogService.la'
+libtool: install: (cd /«BUILDDIR»/pion-5.0.5+dfsg/services; /bin/bash /«BUILDDIR»/pion-5.0.5+dfsg/libtool  --silent --tag CXX --mode=relink g++ -shared -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -no-undefined -module -avoid-version -Wl,-z,relro -ldl -Wl,-z,defs -lpthread -o LogService.la -rpath /usr/share/pion/plugins LogService_la-LogService.lo ../src/libpion.la -lboost_thread -lboost_system -lboost_filesystem -lboost_regex -lboost_date_time -llog4cpp -lssl -lcrypto -lz -lbz2 -lrt -ldl -inst-prefix-dir /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp)
+libtool: install: /usr/bin/install -c .libs/LogService.soT /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/LogService.so
+libtool: install: /usr/bin/install -c .libs/LogService.lai /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/LogService.la
+libtool: install: warning: relinking `FileService.la'
+libtool: install: (cd /«BUILDDIR»/pion-5.0.5+dfsg/services; /bin/bash /«BUILDDIR»/pion-5.0.5+dfsg/libtool  --silent --tag CXX --mode=relink g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -no-undefined -module -avoid-version -Wl,-z,relro -ldl -Wl,-z,defs -lpthread -o FileService.la -rpath /usr/share/pion/plugins FileService.lo ../src/libpion.la -lboost_thread -lboost_system -lboost_filesystem -lboost_regex -lboost_date_time -llog4cpp -lssl -lcrypto -lz -lbz2 -lrt -ldl -inst-prefix-dir /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp)
+libtool: install: /usr/bin/install -c .libs/FileService.soT /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/FileService.so
+libtool: install: /usr/bin/install -c .libs/FileService.lai /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/FileService.la
+libtool: install: warning: relinking `AllowNothingService.la'
+libtool: install: (cd /«BUILDDIR»/pion-5.0.5+dfsg/services; /bin/bash /«BUILDDIR»/pion-5.0.5+dfsg/libtool  --silent --tag CXX --mode=relink g++ -shared -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -no-undefined -module -avoid-version -Wl,-z,relro -ldl -Wl,-z,defs -lpthread -o AllowNothingService.la -rpath /usr/share/pion/plugins AllowNothingService_la-AllowNothingService.lo ../src/libpion.la -lboost_thread -lboost_system -lboost_filesystem -lboost_regex -lboost_date_time -llog4cpp -lssl -lcrypto -lz -lbz2 -lrt -ldl -inst-prefix-dir /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp)
+libtool: install: /usr/bin/install -c .libs/AllowNothingService.soT /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/AllowNothingService.so
+libtool: install: /usr/bin/install -c .libs/AllowNothingService.lai /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/AllowNothingService.la
+libtool: install: warning: remember to run `libtool --finish /usr/share/pion/plugins'
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/services'
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/services'
+Making install in utils
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/utils'
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/utils'
+ /bin/mkdir -p '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c helloserver piond '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/bin'
+libtool: install: warning: `../src/libpion.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/helloserver /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/bin/helloserver
+libtool: install: warning: `../src/libpion.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/piond /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/bin/piond
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/utils'
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/utils'
+Making install in tests
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+Making install in plugins
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins'
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins'
+make[4]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins'
+ /bin/bash ../../libtool   --mode=install /usr/bin/install -c   hasCreateAndDestroy.la hasCreateButNoDestroy.la hasNoCreate.la '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins'
+libtool: install: warning: relinking `hasCreateAndDestroy.la'
+libtool: install: (cd /«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins; /bin/bash /«BUILDDIR»/pion-5.0.5+dfsg/libtool  --silent --tag CXX --mode=relink g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -no-undefined -module -avoid-version -Wl,-z,relro -ldl -Wl,-z,defs -lpthread -o hasCreateAndDestroy.la -rpath /usr/share/pion/plugins hasCreateAndDestroy.lo ../../src/libpion.la -lboost_thread -lboost_system -lboost_filesystem -lboost_regex -lboost_date_time -llog4cpp -lssl -lcrypto -lz -lbz2 -lrt -ldl -inst-prefix-dir /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp)
+libtool: install: /usr/bin/install -c .libs/hasCreateAndDestroy.soT /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/hasCreateAndDestroy.so
+libtool: install: /usr/bin/install -c .libs/hasCreateAndDestroy.lai /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/hasCreateAndDestroy.la
+libtool: install: warning: relinking `hasCreateButNoDestroy.la'
+libtool: install: (cd /«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins; /bin/bash /«BUILDDIR»/pion-5.0.5+dfsg/libtool  --silent --tag CXX --mode=relink g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -no-undefined -module -avoid-version -Wl,-z,relro -ldl -Wl,-z,defs -lpthread -o hasCreateButNoDestroy.la -rpath /usr/share/pion/plugins hasCreateButNoDestroy.lo ../../src/libpion.la -lboost_thread -lboost_system -lboost_filesystem -lboost_regex -lboost_date_time -llog4cpp -lssl -lcrypto -lz -lbz2 -lrt -ldl -inst-prefix-dir /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp)
+libtool: install: /usr/bin/install -c .libs/hasCreateButNoDestroy.soT /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/hasCreateButNoDestroy.so
+libtool: install: /usr/bin/install -c .libs/hasCreateButNoDestroy.lai /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/hasCreateButNoDestroy.la
+libtool: install: warning: relinking `hasNoCreate.la'
+libtool: install: (cd /«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins; /bin/bash /«BUILDDIR»/pion-5.0.5+dfsg/libtool  --silent --tag CXX --mode=relink g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -no-undefined -module -avoid-version -Wl,-z,relro -ldl -Wl,-z,defs -lpthread -o hasNoCreate.la -rpath /usr/share/pion/plugins hasNoCreate.lo ../../src/libpion.la -lboost_thread -lboost_system -lboost_filesystem -lboost_regex -lboost_date_time -llog4cpp -lssl -lcrypto -lz -lbz2 -lrt -ldl -inst-prefix-dir /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp)
+libtool: install: /usr/bin/install -c .libs/hasNoCreate.soT /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/hasNoCreate.so
+libtool: install: /usr/bin/install -c .libs/hasNoCreate.lai /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/pion/plugins/hasNoCreate.la
+libtool: install: warning: remember to run `libtool --finish /usr/share/pion/plugins'
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins'
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests/plugins'
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[4]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg/tests'
+make[2]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+make[3]: Entering directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 pion.pc '/«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/lib/pkgconfig'
+make[3]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+make[2]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+make[1]: Leaving directory `/«BUILDDIR»/pion-5.0.5+dfsg'
+install -d /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/lintian/overrides
+cp /«BUILDDIR»/pion-5.0.5+dfsg/debian/lintian/* /«BUILDDIR»/pion-5.0.5+dfsg/debian/tmp/usr/share/lintian/overrides/
+dh_testdir -i
+dh_testroot -i
+dh_installchangelogs -i ChangeLog
+dh_installdocs -i
+dh_install -i
+dh_installman -i
+dh_link -i
+dh_strip -i -k
+dh_compress -i
+dh_fixperms -i
+dh_makeshlibs -i
+dh_installdeb -i
+dh_shlibdeps -i
+dh_gencontrol -i
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dh_md5sums -i
+dh_builddeb -i
+dpkg-deb: building package `libpion-doc' in `../libpion-doc_5.0.5+dfsg-1_all.deb'.
+dh_testdir -a
+dh_testroot -a
+dh_installchangelogs -a ChangeLog
+dh_installdocs -a
+dh_install -a
+dh_installman -a
+dh_link -a
+dh_strip -a -k
+mv /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-dev/usr/lib/debug/* /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-5.0-dbg/usr/lib/debug/
+rmdir /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-dev/usr/lib/debug/
+mv /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-5.0/usr/lib/debug/usr/* /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-5.0-dbg/usr/lib/debug/usr/
+rm /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-5.0-dbg/usr/lib/debug/usr/bin/helloserver /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-5.0-dbg/usr/lib/debug/usr/bin/piond
+rmdir /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-5.0-dbg/usr/lib/debug/usr/bin/
+rmdir /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-5.0/usr/lib/debug/usr/
+rmdir /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-5.0/usr/lib/debug/
+mv /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-plugins/usr/lib/debug/* /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-plugins-dbg/usr/lib/debug/
+rmdir /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-plugins/usr/lib/debug/
+cp /«BUILDDIR»/pion-5.0.5+dfsg/services/*.hpp /«BUILDDIR»/pion-5.0.5+dfsg/debian/libpion-dev/usr/include/pion/plugins/
+dh_compress -a
+dh_fixperms -a
+dh_makeshlibs -a
+dh_installdeb -a
+dh_shlibdeps -a
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-dev/usr/bin/helloserver debian/libpion-dev/usr/bin/piond were not linked against libboost_regex.so.1.54.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-dev/usr/bin/helloserver debian/libpion-dev/usr/bin/piond were not linked against librt.so.1 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-dev/usr/bin/helloserver debian/libpion-dev/usr/bin/piond were not linked against libbz2.so.1.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-dev/usr/bin/helloserver debian/libpion-dev/usr/bin/piond were not linked against libz.so.1 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-dev/usr/bin/helloserver debian/libpion-dev/usr/bin/piond were not linked against libdl.so.2 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-dev/usr/bin/helloserver debian/libpion-dev/usr/bin/piond were not linked against libboost_date_time.so.1.54.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-plugins/usr/lib/pion/plugins/AllowNothingService.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateAndDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/EchoService.so debian/libpion-plugins/usr/lib/pion/plugins/FileService.so debian/libpion-plugins/usr/lib/pion/plugins/LogService.so debian/libpion-plugins/usr/lib/pion/plugins/hasNoCreate.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateButNoDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/CookieService.so debian/libpion-plugins/usr/lib/pion/plugins/HelloService.so were not linked against libbz2.so.1.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-plugins/usr/lib/pion/plugins/AllowNothingService.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateAndDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/EchoService.so debian/libpion-plugins/usr/lib/pion/plugins/FileService.so debian/libpion-plugins/usr/lib/pion/plugins/LogService.so debian/libpion-plugins/usr/lib/pion/plugins/hasNoCreate.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateButNoDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/CookieService.so debian/libpion-plugins/usr/lib/pion/plugins/HelloService.so were not linked against libboost_date_time.so.1.54.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-plugins/usr/lib/pion/plugins/AllowNothingService.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateAndDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/EchoService.so debian/libpion-plugins/usr/lib/pion/plugins/FileService.so debian/libpion-plugins/usr/lib/pion/plugins/LogService.so debian/libpion-plugins/usr/lib/pion/plugins/hasNoCreate.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateButNoDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/CookieService.so debian/libpion-plugins/usr/lib/pion/plugins/HelloService.so were not linked against libz.so.1 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-plugins/usr/lib/pion/plugins/AllowNothingService.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateAndDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/EchoService.so debian/libpion-plugins/usr/lib/pion/plugins/FileService.so debian/libpion-plugins/usr/lib/pion/plugins/LogService.so debian/libpion-plugins/usr/lib/pion/plugins/hasNoCreate.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateButNoDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/CookieService.so debian/libpion-plugins/usr/lib/pion/plugins/HelloService.so were not linked against libboost_regex.so.1.54.0 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-plugins/usr/lib/pion/plugins/AllowNothingService.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateAndDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/EchoService.so debian/libpion-plugins/usr/lib/pion/plugins/FileService.so debian/libpion-plugins/usr/lib/pion/plugins/LogService.so debian/libpion-plugins/usr/lib/pion/plugins/hasNoCreate.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateButNoDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/CookieService.so debian/libpion-plugins/usr/lib/pion/plugins/HelloService.so were not linked against librt.so.1 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-plugins/usr/lib/pion/plugins/AllowNothingService.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateAndDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/EchoService.so debian/libpion-plugins/usr/lib/pion/plugins/FileService.so debian/libpion-plugins/usr/lib/pion/plugins/LogService.so debian/libpion-plugins/usr/lib/pion/plugins/hasNoCreate.so debian/libpion-plugins/usr/lib/pion/plugins/hasCreateButNoDestroy.so debian/libpion-plugins/usr/lib/pion/plugins/CookieService.so debian/libpion-plugins/usr/lib/pion/plugins/HelloService.so were not linked against libdl.so.2 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-5.0/usr/lib/libpion-5.0.so was not linked against libbz2.so.1.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-5.0/usr/lib/libpion-5.0.so was not linked against libboost_date_time.so.1.54.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libpion-5.0/usr/lib/libpion-5.0.so was not linked against librt.so.1 (it uses none of the library's symbols)
+dh_gencontrol -a
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dh_md5sums -a
+dh_builddeb -a
+dpkg-deb: building package `libpion-dev' in `../libpion-dev_5.0.5+dfsg-1_amd64.deb'.
+dpkg-deb: building package `libpion-plugins' in `../libpion-plugins_5.0.5+dfsg-1_amd64.deb'.
+dpkg-deb: building package `libpion-5.0' in `../libpion-5.0_5.0.5+dfsg-1_amd64.deb'.
+dpkg-deb: building package `libpion-5.0-dbg' in `../libpion-5.0-dbg_5.0.5+dfsg-1_amd64.deb'.
+dpkg-deb: building package `libpion-plugins-dbg' in `../libpion-plugins-dbg_5.0.5+dfsg-1_amd64.deb'.
+ dpkg-genchanges  >../pion_5.0.5+dfsg-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build pion-5.0.5+dfsg
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140427-1102
+
+Finished
+────────
+
+I: Built successfully
+E: Package builds libpion-doc_5.0.5+dfsg-1_all.deb when binary-indep target is not called.  This is a bug in the packaging.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+pion_5.0.5+dfsg-1_amd64.changes:
+────────────────────────────────
+
+Format: 1.8
+Date: Tue, 11 Mar 2014 18:16:00 -0400
+Source: pion
+Binary: libpion-dev libpion-plugins libpion-5.0 libpion-5.0-dbg libpion-plugins-dbg libpion-doc
+Architecture: source all amd64
+Version: 5.0.5+dfsg-1
+Distribution: sid
+Urgency: low
+Maintainer: Athena Capital Research <acr-debian@athenacr.com>
+Changed-By: Roberto C. Sanchez <roberto@connexer.com>
+Description: 
+ libpion-5.0 - lightweight HTTP interface library - runtime files
+ libpion-5.0-dbg - lightweight HTTP interface library - debug files
+ libpion-dev - lightweight HTTP interface library - development files
+ libpion-doc - lightweight HTTP interface library - documentation
+ libpion-plugins - lightweight HTTP interface library - plugins
+ libpion-plugins-dbg - lightweight HTTP interface library - plugins debug files
+Changes: 
+ pion (5.0.5+dfsg-1) unstable; urgency=low
+ .
+   * New upstream release
+Checksums-Sha1: 
+ 7e36a1caf35c9c8f102b1c65c94f77e42a288c48 1676 pion_5.0.5+dfsg-1.dsc
+ 24e5d41cc68991d9497b7ad4df3145fc7ee964a3 1340487 pion_5.0.5+dfsg.orig.tar.gz
+ 52dd27c93096c38584396acdcca213cba064e160 6656 pion_5.0.5+dfsg-1.debian.tar.xz
+ 7eb08b1dd0d29bc5a614124ea6af617700e5d170 280086 libpion-doc_5.0.5+dfsg-1_all.deb
+ 311574076a95a59bab89a21057deb377cd207b38 129660 libpion-dev_5.0.5+dfsg-1_amd64.deb
+ 42d14cd38ded26aa5f49e0c6863992237c995f6b 227908 libpion-plugins_5.0.5+dfsg-1_amd64.deb
+ deb34a67d88d90265ca0f8e25a2a9b6e2fef6eba 270592 libpion-5.0_5.0.5+dfsg-1_amd64.deb
+ e5680c76c75c4b18ed4f5593fbd1a3ca8e27279e 1651148 libpion-5.0-dbg_5.0.5+dfsg-1_amd64.deb
+ 344f4cddf6c67ad8e98a53761be4e162d03f7ecc 1303508 libpion-plugins-dbg_5.0.5+dfsg-1_amd64.deb
+Checksums-Sha256: 
+ 8cd31a92d88132304744075ce6b38050cd7ede1da375e4929c202d59dc24aac1 1676 pion_5.0.5+dfsg-1.dsc
+ b480c3e7b8d2ed5e56a0e5a1a7f26775bc3480cd34eab8153fce82c3ccd7ca3d 1340487 pion_5.0.5+dfsg.orig.tar.gz
+ 7d48bc15bca0e01a3af8ab697a9fc12c1dbbc0f9470b4064a10a028698bf1fe2 6656 pion_5.0.5+dfsg-1.debian.tar.xz
+ 00a3fbe73f0b04561ea9bbed3083b0ab6d1bc4c701c75ac801382d9d509e3797 280086 libpion-doc_5.0.5+dfsg-1_all.deb
+ 27089e304396551348528072234777238520a8becee1a053fca7830190386dca 129660 libpion-dev_5.0.5+dfsg-1_amd64.deb
+ d6fba10bba701cce71660aa244d99440144824f5939b4ed9f5b96805c1e1a84a 227908 libpion-plugins_5.0.5+dfsg-1_amd64.deb
+ c4d29e7cdd823db0ae77f1d8962187ab5e21fc650a0a7f366f7a7854e9d620a0 270592 libpion-5.0_5.0.5+dfsg-1_amd64.deb
+ 230f22a15468e7be216c73217cbee364745c691b6d837dfcf420ec9c336b39d0 1651148 libpion-5.0-dbg_5.0.5+dfsg-1_amd64.deb
+ e55d3a612c20f86ebe994c12d4b0d79710920f1648379e162cbd13330665c49c 1303508 libpion-plugins-dbg_5.0.5+dfsg-1_amd64.deb
+Files: 
+ 846408f36145ed444d31eb8317c79d1a 280086 doc extra libpion-doc_5.0.5+dfsg-1_all.deb
+ 79b187f4880be76fc6e5aed5a5eefa22 129660 libdevel extra libpion-dev_5.0.5+dfsg-1_amd64.deb
+ afd4b2c4a567a02874e9b07da78209cd 227908 libs extra libpion-plugins_5.0.5+dfsg-1_amd64.deb
+ 4555445b724db48d6b1bd932c28ef192 270592 libs extra libpion-5.0_5.0.5+dfsg-1_amd64.deb
+ 65a22a02610f1bd26cafffada35583ed 1651148 debug extra libpion-5.0-dbg_5.0.5+dfsg-1_amd64.deb
+ 5be55037d70c4c1ece8430e1b33fc9c9 1303508 debug extra libpion-plugins-dbg_5.0.5+dfsg-1_amd64.deb
+ 5ccc21559dd40383c996b0ce2a4df991 1676 libs extra pion_5.0.5+dfsg-1.dsc
+ b9ac5a029d1d0f88b8d00d7d77b2ca96 1340487 libs extra pion_5.0.5+dfsg.orig.tar.gz
+ e8e607bb616e137d2300b447cd3872d5 6656 libs extra pion_5.0.5+dfsg-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libpion-doc_5.0.5+dfsg-1_all.deb
+────────────────────────────────
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/libpion-doc_5.0.5+dfsg-1_all.deb': No such file or directory
+
+dpkg-deb: error: failed to read archive `/«CHROOT»/«BUILDDIR»/libpion-doc_5.0.5+dfsg-1_all.deb': No such file or directory
+
+
+libpion-dev_5.0.5+dfsg-1_amd64.deb
+──────────────────────────────────
+
+ new debian package, version 2.0.
+ size 129660 bytes: control archive=2636 bytes.
+    1524 bytes,    29 lines      control              
+    3565 bytes,    52 lines      md5sums              
+ Package: libpion-dev
+ Source: pion
+ Version: 5.0.5+dfsg-1
+ Architecture: amd64
+ Maintainer: Athena Capital Research <acr-debian@athenacr.com>
+ Installed-Size: 728
+ Depends: libpion-5.0 (= 5.0.5+dfsg-1), libpion-plugins (= 5.0.5+dfsg-1), liblog4cpp5-dev, libssl-dev, libboost-date-time1.54.0, libboost-filesystem1.54.0, libboost-regex1.54.0, libboost-system1.54.0, libboost-thread1.54.0, libbz2-1.0, libc6 (>= 2.8), libgcc1 (>= 1:4.1.1), liblog4cpp5, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.4.0), zlib1g (>= 1:1.1.4)
+ Suggests: libpion-doc
+ Conflicts: libpion-net-dev
+ Section: libdevel
+ Priority: extra
+ Homepage: http://pion.sourceforge.net/
+ Description: lightweight HTTP interface library - development files
+  pion is not intended to implement yet another web server, but to
+  provide HTTP(S) functionality to new or existing C++ applications. If
+  you're looking for a full-featured server application, check out Apache
+  or lighttpd. If you're working on a Boost C++ application and would just
+  like to use HTTP to provide a simple user interface or interact with
+  run-time data, then pion is a clean and simple solution.
+  .
+  Pion Network Library uses the Boost and asio libraries for multi-threading
+  and asynchronous I/O. This allows servers implemented using pion to
+  handle many thousands of connections simultaneously with a single physical
+  server.
+  .
+  pion also supports server-side SSL & TLS encryption when built with
+  the OpenSSL library (which the Debian package is).
+  .
+  This package includes the pion development files.
+
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/pkgconfig/
+-rw-r--r-- root/root       592 2014-04-27 11:01 ./usr/lib/pkgconfig/pion.pc
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/bin/
+-rwxr-xr-x root/root    159016 2014-04-27 11:01 ./usr/bin/piond
+-rwxr-xr-x root/root    130216 2014-04-27 11:01 ./usr/bin/helloserver
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/include/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/include/pion/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/include/pion/tcp/
+-rw-r--r-- root/root      2281 2014-04-27 11:01 ./usr/include/pion/tcp/timer.hpp
+-rw-r--r-- root/root     27556 2014-04-27 11:01 ./usr/include/pion/tcp/connection.hpp
+-rw-r--r-- root/root      9066 2014-04-27 11:01 ./usr/include/pion/tcp/server.hpp
+-rw-r--r-- root/root     18628 2014-04-27 11:01 ./usr/include/pion/tcp/stream.hpp
+-rw-r--r-- root/root     15751 2014-04-27 11:01 ./usr/include/pion/plugin.hpp
+-rw-r--r-- root/root      4126 2014-04-27 11:01 ./usr/include/pion/process.hpp
+-rw-r--r-- root/root     11777 2014-04-27 11:01 ./usr/include/pion/logger.hpp
+-rw-r--r-- root/root      2481 2014-04-27 11:01 ./usr/include/pion/config.hpp
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/include/pion/spdy/
+-rw-r--r-- root/root      8515 2014-04-27 11:01 ./usr/include/pion/spdy/parser.hpp
+-rw-r--r-- root/root      3412 2014-04-27 11:01 ./usr/include/pion/spdy/types.hpp
+-rw-r--r-- root/root      2582 2014-04-27 11:01 ./usr/include/pion/spdy/decompressor.hpp
+-rw-r--r-- root/root      8362 2014-04-27 11:01 ./usr/include/pion/error.hpp
+-rw-r--r-- root/root      8677 2014-04-27 11:01 ./usr/include/pion/user.hpp
+-rw-r--r-- root/root      2684 2014-04-27 11:01 ./usr/include/pion/admin_rights.hpp
+-rw-r--r-- root/root      5042 2014-04-27 11:01 ./usr/include/pion/hash_map.hpp
+-rw-r--r-- root/root     16900 2014-04-27 11:01 ./usr/include/pion/algorithm.hpp
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/include/pion/test/
+-rw-r--r-- root/root     17640 2014-04-27 11:01 ./usr/include/pion/test/unit_test.hpp
+-rw-r--r-- root/root     15155 2014-04-27 11:01 ./usr/include/pion/plugin_manager.hpp
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/include/pion/plugins/
+-rw-r--r-- root/root      1035 2014-04-27 11:01 ./usr/include/pion/plugins/CookieService.hpp
+-rw-r--r-- root/root      1024 2014-04-27 11:01 ./usr/include/pion/plugins/HelloService.hpp
+-rw-r--r-- root/root      1036 2014-04-27 11:01 ./usr/include/pion/plugins/EchoService.hpp
+-rw-r--r-- root/root     13411 2014-04-27 11:01 ./usr/include/pion/plugins/FileService.hpp
+-rw-r--r-- root/root      1177 2014-04-27 11:01 ./usr/include/pion/plugins/AllowNothingService.hpp
+-rw-r--r-- root/root      4948 2014-04-27 11:01 ./usr/include/pion/plugins/LogService.hpp
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/include/pion/http/
+-rw-r--r-- root/root      4518 2014-04-27 11:01 ./usr/include/pion/http/response_reader.hpp
+-rw-r--r-- root/root      6502 2014-04-27 11:01 ./usr/include/pion/http/cookie_auth.hpp
+-rw-r--r-- root/root     26909 2014-04-27 11:01 ./usr/include/pion/http/message.hpp
+-rw-r--r-- root/root      7619 2014-04-27 11:01 ./usr/include/pion/http/request.hpp
+-rw-r--r-- root/root     28079 2014-04-27 11:01 ./usr/include/pion/http/parser.hpp
+-rw-r--r-- root/root      3427 2014-04-27 11:01 ./usr/include/pion/http/basic_auth.hpp
+-rw-r--r-- root/root      3515 2014-04-27 11:01 ./usr/include/pion/http/reader.hpp
+-rw-r--r-- root/root      3948 2014-04-27 11:01 ./usr/include/pion/http/plugin_service.hpp
+-rw-r--r-- root/root      7461 2014-04-27 11:01 ./usr/include/pion/http/response_writer.hpp
+-rw-r--r-- root/root      6501 2014-04-27 11:01 ./usr/include/pion/http/request_writer.hpp
+-rw-r--r-- root/root     10970 2014-04-27 11:01 ./usr/include/pion/http/server.hpp
+-rw-r--r-- root/root      5475 2014-04-27 11:01 ./usr/include/pion/http/plugin_server.hpp
+-rw-r--r-- root/root      5407 2014-04-27 11:01 ./usr/include/pion/http/auth.hpp
+-rw-r--r-- root/root      5512 2014-04-27 11:01 ./usr/include/pion/http/types.hpp
+-rw-r--r-- root/root      8389 2014-04-27 11:01 ./usr/include/pion/http/response.hpp
+-rw-r--r-- root/root      4245 2014-04-27 11:01 ./usr/include/pion/http/request_reader.hpp
+-rw-r--r-- root/root     14196 2014-04-27 11:01 ./usr/include/pion/http/writer.hpp
+-rw-r--r-- root/root     11940 2014-04-27 11:01 ./usr/include/pion/scheduler.hpp
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/doc/libpion-dev/
+-rw-r--r-- root/root      5436 2013-12-18 03:00 ./usr/share/doc/libpion-dev/changelog.gz
+-rw-r--r-- root/root      2418 2013-12-18 03:00 ./usr/share/doc/libpion-dev/README.md
+-rw-r--r-- root/root        39 2013-12-18 03:00 ./usr/share/doc/libpion-dev/TODO
+-rw-r--r-- root/root      1895 2014-03-11 23:16 ./usr/share/doc/libpion-dev/changelog.Debian.gz
+-rw-r--r-- root/root      3211 2014-03-11 23:16 ./usr/share/doc/libpion-dev/copyright
+-rw-r--r-- root/root        79 2013-12-18 03:00 ./usr/share/doc/libpion-dev/NEWS.gz
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root       236 2014-04-27 11:01 ./usr/share/lintian/overrides/libpion-dev
+lrwxrwxrwx root/root         0 2014-04-27 11:01 ./usr/lib/libpion.so -> libpion-5.0.so
+
+
+libpion-plugins_5.0.5+dfsg-1_amd64.deb
+──────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 227908 bytes: control archive=1456 bytes.
+    1423 bytes,    28 lines      control              
+     971 bytes,    13 lines      md5sums              
+ Package: libpion-plugins
+ Source: pion
+ Version: 5.0.5+dfsg-1
+ Architecture: amd64
+ Maintainer: Athena Capital Research <acr-debian@athenacr.com>
+ Installed-Size: 1769
+ Depends: libpion-5.0 (= 5.0.5+dfsg-1), libboost-date-time1.54.0, libboost-filesystem1.54.0, libboost-regex1.54.0, libboost-system1.54.0, libboost-thread1.54.0, libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), liblog4cpp5, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4)
+ Conflicts: libpion-net-plugins
+ Section: libs
+ Priority: extra
+ Homepage: http://pion.sourceforge.net/
+ Description: lightweight HTTP interface library - plugins
+  pion is not intended to implement yet another web server, but to
+  provide HTTP(S) functionality to new or existing C++ applications. If
+  you're looking for a full-featured server application, check out Apache
+  or lighttpd. If you're working on a Boost C++ application and would just
+  like to use HTTP to provide a simple user interface or interact with
+  run-time data, then pion is a clean and simple solution.
+  .
+  Pion Network Library uses the Boost and asio libraries for multi-threading
+  and asynchronous I/O. This allows servers implemented using pion to
+  handle many thousands of connections simultaneously with a single physical
+  server.
+  .
+  pion also supports server-side SSL & TLS encryption when built with
+  the OpenSSL library (which the Debian package is).
+  .
+  This package includes the pion plugins.
+
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/pion/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/pion/plugins/
+-rw-r--r-- root/root    250336 2014-04-27 11:01 ./usr/lib/pion/plugins/EchoService.so
+-rw-r--r-- root/root      6056 2014-04-27 11:01 ./usr/lib/pion/plugins/hasNoCreate.so
+-rw-r--r-- root/root     10328 2014-04-27 11:01 ./usr/lib/pion/plugins/hasCreateButNoDestroy.so
+-rw-r--r-- root/root    246216 2014-04-27 11:01 ./usr/lib/pion/plugins/CookieService.so
+-rw-r--r-- root/root    238008 2014-04-27 11:01 ./usr/lib/pion/plugins/HelloService.so
+-rw-r--r-- root/root    242112 2014-04-27 11:01 ./usr/lib/pion/plugins/AllowNothingService.so
+-rw-r--r-- root/root    266888 2014-04-27 11:01 ./usr/lib/pion/plugins/LogService.so
+-rw-r--r-- root/root    485280 2014-04-27 11:01 ./usr/lib/pion/plugins/FileService.so
+-rw-r--r-- root/root     10328 2014-04-27 11:01 ./usr/lib/pion/plugins/hasCreateAndDestroy.so
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/doc/libpion-plugins/
+-rw-r--r-- root/root      5436 2013-12-18 03:00 ./usr/share/doc/libpion-plugins/changelog.gz
+-rw-r--r-- root/root      1895 2014-03-11 23:16 ./usr/share/doc/libpion-plugins/changelog.Debian.gz
+-rw-r--r-- root/root      3211 2014-03-11 23:16 ./usr/share/doc/libpion-plugins/copyright
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root       101 2014-04-27 11:01 ./usr/share/lintian/overrides/libpion-plugins
+
+
+libpion-5.0_5.0.5+dfsg-1_amd64.deb
+──────────────────────────────────
+
+ new debian package, version 2.0.
+ size 270592 bytes: control archive=1380 bytes.
+    1370 bytes,    27 lines      control              
+     354 bytes,     5 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      24 bytes,     1 lines      shlibs               
+ Package: libpion-5.0
+ Source: pion
+ Version: 5.0.5+dfsg-1
+ Architecture: amd64
+ Maintainer: Athena Capital Research <acr-debian@athenacr.com>
+ Installed-Size: 1241
+ Depends: libboost-date-time1.54.0, libboost-filesystem1.54.0, libboost-regex1.54.0, libboost-system1.54.0, libboost-thread1.54.0, libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), liblog4cpp5, libssl1.0.0 (>= 1.0.1), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4)
+ Section: libs
+ Priority: extra
+ Homepage: http://pion.sourceforge.net/
+ Description: lightweight HTTP interface library - runtime files
+  pion is not intended to implement yet another web server, but to
+  provide HTTP(S) functionality to new or existing C++ applications. If
+  you're looking for a full-featured server application, check out Apache
+  or lighttpd. If you're working on a Boost C++ application and would just
+  like to use HTTP to provide a simple user interface or interact with
+  run-time data, then pion is a clean and simple solution.
+  .
+  Pion Network Library uses the Boost and asio libraries for multi-threading
+  and asynchronous I/O. This allows servers implemented using pion to
+  handle many thousands of connections simultaneously with a single physical
+  server.
+  .
+  pion also supports server-side SSL & TLS encryption when built with
+  the OpenSSL library (which the Debian package is).
+  .
+  This package includes the pion runtime files.
+
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/
+-rw-r--r-- root/root   1222792 2014-04-27 11:01 ./usr/lib/libpion-5.0.so
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/doc/libpion-5.0/
+-rw-r--r-- root/root      5436 2013-12-18 03:00 ./usr/share/doc/libpion-5.0/changelog.gz
+-rw-r--r-- root/root      1895 2014-03-11 23:16 ./usr/share/doc/libpion-5.0/changelog.Debian.gz
+-rw-r--r-- root/root      3211 2014-03-11 23:16 ./usr/share/doc/libpion-5.0/copyright
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root        97 2014-04-27 11:01 ./usr/share/lintian/overrides/libpion-5.0
+
+
+libpion-5.0-dbg_5.0.5+dfsg-1_amd64.deb
+──────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 1651148 bytes: control archive=1035 bytes.
+    1151 bytes,    27 lines      control              
+     306 bytes,     4 lines      md5sums              
+ Package: libpion-5.0-dbg
+ Source: pion
+ Version: 5.0.5+dfsg-1
+ Architecture: amd64
+ Maintainer: Athena Capital Research <acr-debian@athenacr.com>
+ Installed-Size: 11249
+ Depends: libpion-5.0 (= 5.0.5+dfsg-1)
+ Section: debug
+ Priority: extra
+ Homepage: http://pion.sourceforge.net/
+ Description: lightweight HTTP interface library - debug files
+  pion is not intended to implement yet another web server, but to
+  provide HTTP(S) functionality to new or existing C++ applications. If
+  you're looking for a full-featured server application, check out Apache
+  or lighttpd. If you're working on a Boost C++ application and would just
+  like to use HTTP to provide a simple user interface or interact with
+  run-time data, then pion is a clean and simple solution.
+  .
+  Pion Network Library uses the Boost and asio libraries for multi-threading
+  and asynchronous I/O. This allows servers implemented using pion to
+  handle many thousands of connections simultaneously with a single physical
+  server.
+  .
+  pion also supports server-side SSL & TLS encryption when built with
+  the OpenSSL library (which the Debian package is).
+  .
+  This package includes the pion debug files.
+
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/debug/usr/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/debug/usr/lib/
+-rw-r--r-- root/root  11467114 2014-04-27 11:01 ./usr/lib/debug/usr/lib/libpion-5.0.so
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/doc/libpion-5.0-dbg/
+-rw-r--r-- root/root      5436 2013-12-18 03:00 ./usr/share/doc/libpion-5.0-dbg/changelog.gz
+-rw-r--r-- root/root      1895 2014-03-11 23:16 ./usr/share/doc/libpion-5.0-dbg/changelog.Debian.gz
+-rw-r--r-- root/root      3211 2014-03-11 23:16 ./usr/share/doc/libpion-5.0-dbg/copyright
+
+
+libpion-plugins-dbg_5.0.5+dfsg-1_amd64.deb
+──────────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 1303508 bytes: control archive=1332 bytes.
+    1227 bytes,    28 lines      control              
+    1031 bytes,    12 lines      md5sums              
+ Package: libpion-plugins-dbg
+ Source: pion
+ Version: 5.0.5+dfsg-1
+ Architecture: amd64
+ Maintainer: Athena Capital Research <acr-debian@athenacr.com>
+ Installed-Size: 11569
+ Depends: libpion-plugins (= 5.0.5+dfsg-1), libpion-5.0-dbg
+ Conflicts: libpion-net-plugins-dbg
+ Section: debug
+ Priority: extra
+ Homepage: http://pion.sourceforge.net/
+ Description: lightweight HTTP interface library - plugins debug files
+  pion is not intended to implement yet another web server, but to
+  provide HTTP(S) functionality to new or existing C++ applications. If
+  you're looking for a full-featured server application, check out Apache
+  or lighttpd. If you're working on a Boost C++ application and would just
+  like to use HTTP to provide a simple user interface or interact with
+  run-time data, then pion is a clean and simple solution.
+  .
+  Pion Network Library uses the Boost and asio libraries for multi-threading
+  and asynchronous I/O. This allows servers implemented using pion to
+  handle many thousands of connections simultaneously with a single physical
+  server.
+  .
+  pion also supports server-side SSL & TLS encryption when built with
+  the OpenSSL library (which the Debian package is).
+  .
+  This package includes the pion plugins debug files.
+
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/debug/usr/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/debug/usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/plugins/
+-rw-r--r-- root/root   1793032 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/plugins/EchoService.so
+-rw-r--r-- root/root      5509 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/plugins/hasNoCreate.so
+-rw-r--r-- root/root      7951 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/plugins/hasCreateButNoDestroy.so
+-rw-r--r-- root/root   1763555 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/plugins/CookieService.so
+-rw-r--r-- root/root   1721892 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/plugins/HelloService.so
+-rw-r--r-- root/root   1725766 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/plugins/AllowNothingService.so
+-rw-r--r-- root/root   1778621 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/plugins/LogService.so
+-rw-r--r-- root/root   2982109 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/plugins/FileService.so
+-rw-r--r-- root/root      8268 2014-04-27 11:01 ./usr/lib/debug/usr/lib/pion/plugins/hasCreateAndDestroy.so
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 11:01 ./usr/share/doc/libpion-plugins-dbg/
+-rw-r--r-- root/root      5436 2013-12-18 03:00 ./usr/share/doc/libpion-plugins-dbg/changelog.gz
+-rw-r--r-- root/root      1895 2014-03-11 23:16 ./usr/share/doc/libpion-plugins-dbg/changelog.Debian.gz
+-rw-r--r-- root/root      3211 2014-03-11 23:16 ./usr/share/doc/libpion-plugins-dbg/copyright
+
+mv: cannot stat '/«CHROOT»/«BUILDDIR»/libpion-doc_5.0.5+dfsg-1_all.deb': No such file or directory
+E: Could not move libpion-doc_5.0.5+dfsg-1_all.deb to .
+du: cannot access '/mnt/ito/data/projets/debian-clang/tests/build_timeout/builds/pion/libpion-doc_5.0.5+dfsg-1_all.deb': No such file or directory
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 269500
+Build-Time: 161
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 64
+Job: pion_5.0.5+dfsg-1.dsc
+Machine Architecture: amd64
+Package: pion
+Package-Time: 230
+Source-Version: 5.0.5+dfsg-1
+Space: 269500
+Status: successful
+Version: 5.0.5+dfsg-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140427-1102
+Build needed 00:03:50, 269500k disc space

@@ -1,0 +1,112 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ ferret-vis 6.6.2-3 (amd64)                                 27 Apr 2014 22:08 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: ferret-vis
+Version: 6.6.2-3
+Source Version: 6.6.2-3
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/ferret-vis-yHoMwJ/ferret-vis-6.6.2' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/ferret-vis-yHoMwJ' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-8d57a9f6-12fa-4376-88a1-9cab86375a49' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+ferret-vis_6.6.2-3.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-t4gMAr/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), libreadline-dev, libcurl4-openssl-dev | libcurl-dev, libxgks-dev, libncurses-dev, libmotif-dev, gfortran, libnetcdf-dev, libxmu-headers, csh, libxpm-dev, libxt-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), libreadline-dev, libcurl4-openssl-dev, libxgks-dev, libncurses-dev, libmotif-dev, gfortran, libnetcdf-dev, libxmu-headers, csh, libxpm-dev, libxt-dev
+dpkg-deb: building package `sbuild-build-depends-ferret-vis-dummy' in `/«BUILDDIR»/resolver-2Ivl1D/apt_archive/sbuild-build-depends-ferret-vis-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install ferret-vis build dependencies (apt-based resolver)                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ sbuild-build-depends-ferret-vis-dummy : Depends: gfortran but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+apt-get failed.
+Package installation failed
+Not removing build depends: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Not cleaning session: cloned chroot in use
+E: Package build dependencies not satisfied; skipping
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 0
+Build-Time: 0
+Distribution: sid
+Fail-Stage: install-deps
+Host Architecture: amd64
+Install-Time: 0
+Job: ferret-vis_6.6.2-3.dsc
+Machine Architecture: amd64
+Package: ferret-vis
+Package-Time: 0
+Source-Version: 6.6.2-3
+Space: 0
+Status: failed
+Version: 6.6.2-3
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140427-2208
+Build needed 00:00:00, 0k disc space

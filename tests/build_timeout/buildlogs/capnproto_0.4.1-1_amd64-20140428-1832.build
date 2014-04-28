@@ -1,0 +1,1433 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ capnproto 0.4.1-1 (amd64)                                  28 Apr 2014 18:32 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: capnproto
+Version: 0.4.1-1
+Source Version: 0.4.1-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/capnproto-GunILD/capnproto-0.4.1' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/capnproto-GunILD' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-6505477a-0e2e-41d9-ae02-cfa1ac18f184' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+capnproto_0.4.1-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-8TV7h4/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8.0.0), gcc (>= 4.7), python-all (>= 2.6), dpkg-dev (>= 1.16.1.1), docbook-xsl, docbook-xml, xsltproc, dh-autoreconf, netbase
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8.0.0), gcc (>= 4.7), python-all (>= 2.6), dpkg-dev (>= 1.16.1.1), docbook-xsl, docbook-xml, xsltproc, dh-autoreconf, netbase
+dpkg-deb: building package `sbuild-build-depends-capnproto-dummy' in `/«BUILDDIR»/resolver-7RHMX2/apt_archive/sbuild-build-depends-capnproto-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install capnproto build dependencies (apt-based resolver)                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf docbook-xml docbook-xsl file gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libcroco3 libexpat1 libgcrypt11 libglib2.0-0
+  libgpg-error0 libmagic1 libpipeline1 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libsigsegv2 libsqlite3-0 libssl1.0.0 libtool
+  libunistring0 libxml2 libxslt1.1 m4 man-db mime-support netbase po-debconf
+  python python-all python-minimal python2.7 python2.7-minimal sgml-base
+  sgml-data xml-core xsltproc
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make docbook docbook-dsssl docbook-defguide dbtoepub
+  docbook-xsl-doc-html docbook-xsl-doc-pdf docbook-xsl-doc-text
+  docbook-xsl-doc docbook-xsl-saxon fop libsaxon-java libxalan2-java
+  libxslthl-java xalan gettext-doc groff rng-tools libtool-doc automaken
+  gfortran fortran95-compiler gcj-jdk less www-browser libmail-box-perl
+  python-doc python-tk python2.7-doc binfmt-support sgml-base-doc perlsgml
+  w3-recs opensp libxml2-utils
+Recommended packages:
+  curl wget lynx-cur libasprintf-dev libgettextpo-dev libglib2.0-data
+  shared-mime-info libltdl-dev ifupdown libmail-sendmail-perl
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils debhelper
+  dh-autoreconf docbook-xml docbook-xsl file gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libcroco3 libexpat1 libgcrypt11 libglib2.0-0
+  libgpg-error0 libmagic1 libpipeline1 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libsigsegv2 libsqlite3-0 libssl1.0.0 libtool
+  libunistring0 libxml2 libxslt1.1 m4 man-db mime-support netbase po-debconf
+  python python-all python-minimal python2.7 python2.7-minimal
+  sbuild-build-depends-capnproto-dummy sgml-base sgml-data xml-core xsltproc
+0 upgraded, 47 newly installed, 0 to remove and 8 not upgraded.
+Need to get 20.1 MB/20.1 MB of archives.
+After this operation, 73.0 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libssl1.0.0 amd64 1.0.1g-3 [1012 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libgpg-error0 amd64 1.12-0.2 [56.5 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libgcrypt11 amd64 1.5.3-4 [250 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libsqlite3-0 amd64 3.8.4.3-2 [409 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libexpat1 amd64 2.1.0-4 [138 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libxslt1.1 amd64 1.1.28-2 [230 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libpython2.7-minimal amd64 2.7.6-8 [349 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main python2.7-minimal amd64 2.7.6-8 [1227 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main sgml-base all 1.26+nmu4 [14.6 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main netbase all 5.2 [18.9 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main m4 amd64 1.4.17-3 [254 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main mime-support all 3.54 [36.4 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libpython2.7-stdlib amd64 2.7.6-8 [1872 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main python2.7 amd64 2.7.6-8 [239 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main python-minimal amd64 2.7.5-5 [39.3 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libpython-stdlib amd64 2.7.5-5 [18.7 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main python amd64 2.7.5-5 [146 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main autoconf all 2.69-6 [340 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main autopoint all 0.18.3.2-1 [393 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:37 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:40 http://debian.proxad.net/debian/ sid/main dh-autoreconf all 9 [15.5 kB]
+Get:41 http://debian.proxad.net/debian/ sid/main xml-core all 0.13+nmu2 [24.2 kB]
+Get:42 http://debian.proxad.net/debian/ sid/main sgml-data all 2.0.9-1 [281 kB]
+Get:43 http://debian.proxad.net/debian/ sid/main docbook-xml all 4.5-7.2 [347 kB]
+Get:44 http://debian.proxad.net/debian/ sid/main docbook-xsl all 1.78.1+dfsg-1 [2339 kB]
+Get:45 http://debian.proxad.net/debian/ sid/main python-all amd64 2.7.5-5 [930 B]
+Get:46 http://debian.proxad.net/debian/ sid/main xsltproc amd64 1.1.28-2 [118 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 20.1 MB in 2s (8505 kB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.1g-3_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1g-3) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libgpg-error0:amd64.
+Preparing to unpack .../libgpg-error0_1.12-0.2_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.12-0.2) ...
+Selecting previously unselected package libgcrypt11:amd64.
+Preparing to unpack .../libgcrypt11_1.5.3-4_amd64.deb ...
+Unpacking libgcrypt11:amd64 (1.5.3-4) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.8.4.3-2_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.8.4.3-2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-4) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package libxslt1.1:amd64.
+Preparing to unpack .../libxslt1.1_1.1.28-2_amd64.deb ...
+Unpacking libxslt1.1:amd64 (1.1.28-2) ...
+Selecting previously unselected package libpython2.7-minimal:amd64.
+Preparing to unpack .../libpython2.7-minimal_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.6-8) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.6-8_amd64.deb ...
+Unpacking python2.7-minimal (2.7.6-8) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../sgml-base_1.26+nmu4_all.deb ...
+Unpacking sgml-base (1.26+nmu4) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../archives/netbase_5.2_all.deb ...
+Unpacking netbase (5.2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-3_amd64.deb ...
+Unpacking m4 (1.4.17-3) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../mime-support_3.54_all.deb ...
+Unpacking mime-support (3.54) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.6-8_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.6-8) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.6-8_amd64.deb ...
+Unpacking python2.7 (2.7.6-8) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.5-5_amd64.deb ...
+Unpacking python-minimal (2.7.5-5) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.5-5_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.5-5) ...
+Selecting previously unselected package python.
+Preparing to unpack .../python_2.7.5-5_amd64.deb ...
+Unpacking python (2.7.5-5) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-6_all.deb ...
+Unpacking autoconf (2.69-6) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../autopoint_0.18.3.2-1_all.deb ...
+Unpacking autopoint (0.18.3.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../dh-autoreconf_9_all.deb ...
+Unpacking dh-autoreconf (9) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../xml-core_0.13+nmu2_all.deb ...
+Unpacking xml-core (0.13+nmu2) ...
+Selecting previously unselected package sgml-data.
+Preparing to unpack .../sgml-data_2.0.9-1_all.deb ...
+Unpacking sgml-data (2.0.9-1) ...
+Selecting previously unselected package docbook-xml.
+Preparing to unpack .../docbook-xml_4.5-7.2_all.deb ...
+Unpacking docbook-xml (4.5-7.2) ...
+Selecting previously unselected package docbook-xsl.
+Preparing to unpack .../docbook-xsl_1.78.1+dfsg-1_all.deb ...
+Unpacking docbook-xsl (1.78.1+dfsg-1) ...
+Selecting previously unselected package python-all.
+Preparing to unpack .../python-all_2.7.5-5_amd64.deb ...
+Unpacking python-all (2.7.5-5) ...
+Selecting previously unselected package xsltproc.
+Preparing to unpack .../xsltproc_1.1.28-2_amd64.deb ...
+Unpacking xsltproc (1.1.28-2) ...
+Selecting previously unselected package sbuild-build-depends-capnproto-dummy.
+Preparing to unpack .../sbuild-build-depends-capnproto-dummy.deb ...
+Unpacking sbuild-build-depends-capnproto-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libssl1.0.0:amd64 (1.0.1g-3) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libgpg-error0:amd64 (1.12-0.2) ...
+Setting up libgcrypt11:amd64 (1.5.3-4) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libsqlite3-0:amd64 (3.8.4.3-2) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libxslt1.1:amd64 (1.1.28-2) ...
+Setting up libpython2.7-minimal:amd64 (2.7.6-8) ...
+Setting up python2.7-minimal (2.7.6-8) ...
+Setting up sgml-base (1.26+nmu4) ...
+Setting up netbase (5.2) ...
+
+Configuration file '/etc/protocols'
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package maintainer.
+ ==> Using current old file as you requested.
+
+Configuration file '/etc/services'
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package maintainer.
+ ==> Using current old file as you requested.
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-3) ...
+Setting up mime-support (3.54) ...
+update-alternatives: using /usr/bin/see to provide /usr/bin/view (view) in auto mode
+Setting up libpython2.7-stdlib:amd64 (2.7.6-8) ...
+Setting up python2.7 (2.7.6-8) ...
+Setting up python-minimal (2.7.5-5) ...
+Setting up libpython-stdlib:amd64 (2.7.5-5) ...
+Setting up python (2.7.5-5) ...
+Setting up autoconf (2.69-6) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up autopoint (0.18.3.2-1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up dh-autoreconf (9) ...
+Setting up xml-core (0.13+nmu2) ...
+Setting up python-all (2.7.5-5) ...
+Setting up xsltproc (1.1.28-2) ...
+Processing triggers for sgml-base (1.26+nmu4) ...
+Setting up docbook-xsl (1.78.1+dfsg-1) ...
+Setting up sgml-data (2.0.9-1) ...
+Processing triggers for sgml-base (1.26+nmu4) ...
+Setting up docbook-xml (4.5-7.2) ...
+Processing triggers for sgml-base (1.26+nmu4) ...
+Setting up sbuild-build-depends-capnproto-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 autoconf_2.69-6 automake_1:1.14.1-3 autopoint_0.18.3.2-1 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 dh-autoreconf_9 diffutils_1:3.3-1 docbook-xml_4.5-7.2 docbook-xsl_1.78.1+dfsg-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgcrypt11_1.5.3-4 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgomp1_4.9.0-1 libgpg-error0_1.12-0.2 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libpython-stdlib_2.7.5-5 libpython2.7-minimal_2.7.6-8 libpython2.7-stdlib_2.7.6-8 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libsqlite3-0_3.8.4.3-2 libss2_1.42.9-3 libssl1.0.0_1.0.1g-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtool_2.4.2-1.7 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 libxslt1.1_1.1.28-2 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 m4_1.4.17-3 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mime-support_3.54 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 netbase_5.2 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 python_2.7.5-5 python-all_2.7.5-5 python-minimal_2.7.5-5 python2.7_2.7.6-8 python2.7-minimal_2.7.6-8 readline-common_6.3-6 sbuild-build-depends-capnproto-dummy_0.invalid.0 sbuild-build-depends-core-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 sgml-base_1.26+nmu4 sgml-data_2.0.9-1 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xml-core_0.13+nmu2 xsltproc_1.1.28-2 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Fri Apr 11 20:11:31 2014 UTC using RSA key ID 353525F9
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./capnproto_0.4.1-1.dsc
+dpkg-source: info: extracting capnproto in capnproto-0.4.1
+dpkg-source: info: unpacking capnproto_0.4.1.orig.tar.gz
+dpkg-source: info: unpacking capnproto_0.4.1-1.debian.tar.xz
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-6505477a-0e2e-41d9-ae02-cfa1ac18f184
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package capnproto
+dpkg-buildpackage: source version 0.4.1-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Tom Lee <debian@tomlee.co>
+ dpkg-source --before-build capnproto-0.4.1
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with autoreconf
+   dh_testdir
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory `/«PKGBUILDDIR»'
+rm -f debian/capnp.1
+dh_auto_clean
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_autoreconf_clean
+   dh_clean
+ dpkg-source -b capnproto-0.4.1
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building capnproto using existing ./capnproto_0.4.1.orig.tar.gz
+dpkg-source: info: building capnproto in capnproto_0.4.1-1.debian.tar.xz
+dpkg-source: info: building capnproto in capnproto_0.4.1-1.dsc
+ debian/rules build
+dh build --with autoreconf
+   dh_testdir
+   dh_autoreconf
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, `build-aux'.
+libtoolize: copying file `build-aux/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: copying file `m4/libtool.m4'
+libtoolize: copying file `m4/ltoptions.m4'
+libtoolize: copying file `m4/ltsugar.m4'
+libtoolize: copying file `m4/ltversion.m4'
+libtoolize: copying file `m4/lt~obsolete.m4'
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, `build-aux'.
+libtoolize: copying file `build-aux/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: copying file `m4/libtool.m4'
+libtoolize: copying file `m4/ltoptions.m4'
+libtoolize: copying file `m4/ltsugar.m4'
+libtoolize: copying file `m4/ltversion.m4'
+libtoolize: copying file `m4/lt~obsolete.m4'
+   dh_auto_configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking whether g++ supports C++11 features by default... no
+checking whether g++ supports C++11 features with -std=gnu++11... yes
+checking whether g++ -std=gnu++11 supports C++11 library features by default... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking whether to check for GCC pthread/shared inconsistencies... yes
+checking whether -pthread is sufficient with -shared... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -std=gnu++11 -E
+checking for ld used by g++ -std=gnu++11... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ -std=gnu++11 option to produce PIC... -fPIC -DPIC
+checking if g++ -std=gnu++11 PIC flag -fPIC -DPIC works... yes
+checking if g++ -std=gnu++11 static flag -static works... no
+checking if g++ -std=gnu++11 supports -c -o file.o... yes
+checking if g++ -std=gnu++11 supports -c -o file.o... (cached) yes
+checking whether the g++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for library containing sched_yield... none required
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating capnp.pc
+config.status: creating capnp-rpc.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+=== configuring in gtest (/«PKGBUILDDIR»/gtest)
+configure: running /bin/bash ./configure --disable-option-checking '--prefix=/usr'  '--build=x86_64-linux-gnu' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--libexecdir=${prefix}/lib/capnproto' '--disable-maintainer-mode' '--disable-dependency-tracking' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security' 'LDFLAGS=-fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread' 'CPPFLAGS=-D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG' 'CXX=g++ -std=gnu++11' --cache-file=/dev/null --srcdir=.
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ -std=gnu++11 accepts -g... yes
+checking dependency style of g++ -std=gnu++11... none
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 3458764513820540925
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -std=gnu++11 -E
+checking for ld used by g++ -std=gnu++11... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ -std=gnu++11 option to produce PIC... -fPIC -DPIC
+checking if g++ -std=gnu++11 PIC flag -fPIC -DPIC works... yes
+checking if g++ -std=gnu++11 static flag -static works... no
+checking if g++ -std=gnu++11 supports -c -o file.o... yes
+checking if g++ -std=gnu++11 supports -c -o file.o... (cached) yes
+checking whether the g++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for python... /usr/bin/python
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking whether to check for GCC pthread/shared inconsistencies... yes
+checking whether -pthread is sufficient with -shared... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating scripts/gtest-config
+config.status: creating build-aux/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+   debian/rules override_dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+xsltproc --nonet \
+		--param make.year.ranges 1 \
+		--param make.single.year.ranges 1 \
+		--param man.charmap.use.subset 0 \
+		-o debian/ \
+	http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl \
+		debian/capnp.1.xml
+Note: Writing capnp.1
+dh_auto_build
+make[2]: Entering directory `/«PKGBUILDDIR»'
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/module-loader.o src/capnp/compiler/module-loader.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/capnp.o src/capnp/compiler/capnp.c++
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/md5.lo src/capnp/compiler/md5.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/md5.c++  -fPIC -DPIC -o src/capnp/compiler/.libs/md5.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/md5.c++ -fPIE -o src/capnp/compiler/md5.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/error-reporter.lo src/capnp/compiler/error-reporter.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/error-reporter.c++  -fPIC -DPIC -o src/capnp/compiler/.libs/error-reporter.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/error-reporter.c++ -fPIE -o src/capnp/compiler/error-reporter.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/lexer.capnp.lo src/capnp/compiler/lexer.capnp.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/lexer.capnp.c++  -fPIC -DPIC -o src/capnp/compiler/.libs/lexer.capnp.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/lexer.capnp.c++ -fPIE -o src/capnp/compiler/lexer.capnp.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/lexer.lo src/capnp/compiler/lexer.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/lexer.c++  -fPIC -DPIC -o src/capnp/compiler/.libs/lexer.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/lexer.c++ -fPIE -o src/capnp/compiler/lexer.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/grammar.capnp.lo src/capnp/compiler/grammar.capnp.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/grammar.capnp.c++  -fPIC -DPIC -o src/capnp/compiler/.libs/grammar.capnp.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/grammar.capnp.c++ -fPIE -o src/capnp/compiler/grammar.capnp.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/parser.lo src/capnp/compiler/parser.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/parser.c++  -fPIC -DPIC -o src/capnp/compiler/.libs/parser.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/parser.c++ -fPIE -o src/capnp/compiler/parser.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/node-translator.lo src/capnp/compiler/node-translator.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/node-translator.c++  -fPIC -DPIC -o src/capnp/compiler/.libs/node-translator.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/node-translator.c++ -fPIE -o src/capnp/compiler/node-translator.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/compiler.lo src/capnp/compiler/compiler.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/compiler.c++  -fPIC -DPIC -o src/capnp/compiler/.libs/compiler.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/compiler/compiler.c++ -fPIE -o src/capnp/compiler/compiler.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/schema-parser.lo src/capnp/schema-parser.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/schema-parser.c++  -fPIC -DPIC -o src/capnp/.libs/schema-parser.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/schema-parser.c++ -fPIE -o src/capnp/schema-parser.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/c++.capnp.lo src/capnp/c++.capnp.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/c++.capnp.c++  -fPIC -DPIC -o src/capnp/.libs/c++.capnp.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/c++.capnp.c++ -fPIE -o src/capnp/c++.capnp.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/blob.lo src/capnp/blob.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/blob.c++  -fPIC -DPIC -o src/capnp/.libs/blob.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/blob.c++ -fPIE -o src/capnp/blob.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/arena.lo src/capnp/arena.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/arena.c++  -fPIC -DPIC -o src/capnp/.libs/arena.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/arena.c++ -fPIE -o src/capnp/arena.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/layout.lo src/capnp/layout.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/layout.c++  -fPIC -DPIC -o src/capnp/.libs/layout.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/layout.c++ -fPIE -o src/capnp/layout.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/list.lo src/capnp/list.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/list.c++  -fPIC -DPIC -o src/capnp/.libs/list.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/list.c++ -fPIE -o src/capnp/list.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/any.lo src/capnp/any.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/any.c++  -fPIC -DPIC -o src/capnp/.libs/any.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/any.c++ -fPIE -o src/capnp/any.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/message.lo src/capnp/message.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/message.c++  -fPIC -DPIC -o src/capnp/.libs/message.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/message.c++ -fPIE -o src/capnp/message.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/schema.capnp.lo src/capnp/schema.capnp.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/schema.capnp.c++  -fPIC -DPIC -o src/capnp/.libs/schema.capnp.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/schema.capnp.c++ -fPIE -o src/capnp/schema.capnp.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/schema.lo src/capnp/schema.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/schema.c++  -fPIC -DPIC -o src/capnp/.libs/schema.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/schema.c++ -fPIE -o src/capnp/schema.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/schema-loader.lo src/capnp/schema-loader.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/schema-loader.c++  -fPIC -DPIC -o src/capnp/.libs/schema-loader.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/schema-loader.c++ -fPIE -o src/capnp/schema-loader.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/dynamic.lo src/capnp/dynamic.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/dynamic.c++  -fPIC -DPIC -o src/capnp/.libs/dynamic.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/dynamic.c++ -fPIE -o src/capnp/dynamic.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/stringify.lo src/capnp/stringify.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/stringify.c++  -fPIC -DPIC -o src/capnp/.libs/stringify.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/stringify.c++ -fPIE -o src/capnp/stringify.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/serialize.lo src/capnp/serialize.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/serialize.c++  -fPIC -DPIC -o src/capnp/.libs/serialize.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/serialize.c++ -fPIE -o src/capnp/serialize.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/serialize-packed.lo src/capnp/serialize-packed.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/serialize-packed.c++  -fPIC -DPIC -o src/capnp/.libs/serialize-packed.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/serialize-packed.c++ -fPIE -o src/capnp/serialize-packed.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/common.lo src/kj/common.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/common.c++  -fPIC -DPIC -o src/kj/.libs/common.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/common.c++ -fPIE -o src/kj/common.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/units.lo src/kj/units.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/units.c++  -fPIC -DPIC -o src/kj/.libs/units.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/units.c++ -fPIE -o src/kj/units.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/memory.lo src/kj/memory.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/memory.c++  -fPIC -DPIC -o src/kj/.libs/memory.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/memory.c++ -fPIE -o src/kj/memory.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/refcount.lo src/kj/refcount.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/refcount.c++  -fPIC -DPIC -o src/kj/.libs/refcount.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/refcount.c++ -fPIE -o src/kj/refcount.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/array.lo src/kj/array.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/array.c++  -fPIC -DPIC -o src/kj/.libs/array.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/array.c++ -fPIE -o src/kj/array.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/string.lo src/kj/string.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/string.c++  -fPIC -DPIC -o src/kj/.libs/string.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/string.c++ -fPIE -o src/kj/string.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/string-tree.lo src/kj/string-tree.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/string-tree.c++  -fPIC -DPIC -o src/kj/.libs/string-tree.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/string-tree.c++ -fPIE -o src/kj/string-tree.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/exception.lo src/kj/exception.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/exception.c++  -fPIC -DPIC -o src/kj/.libs/exception.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/exception.c++ -fPIE -o src/kj/exception.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/debug.lo src/kj/debug.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/debug.c++  -fPIC -DPIC -o src/kj/.libs/debug.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/debug.c++ -fPIE -o src/kj/debug.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/arena.lo src/kj/arena.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/arena.c++  -fPIC -DPIC -o src/kj/.libs/arena.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/arena.c++ -fPIE -o src/kj/arena.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/io.lo src/kj/io.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/io.c++  -fPIC -DPIC -o src/kj/.libs/io.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/io.c++ -fPIE -o src/kj/io.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/mutex.lo src/kj/mutex.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/mutex.c++  -fPIC -DPIC -o src/kj/.libs/mutex.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/mutex.c++ -fPIE -o src/kj/mutex.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/thread.lo src/kj/thread.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/thread.c++  -fPIC -DPIC -o src/kj/.libs/thread.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/thread.c++ -fPIE -o src/kj/thread.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/main.lo src/kj/main.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/main.c++  -fPIC -DPIC -o src/kj/.libs/main.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/main.c++ -fPIE -o src/kj/main.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/parse/char.lo src/kj/parse/char.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/parse/char.c++  -fPIC -DPIC -o src/kj/parse/.libs/char.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/parse/char.c++ -fPIE -o src/kj/parse/char.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -release 0.4.1 -no-undefined -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o libkj.la -rpath /usr/lib src/kj/common.lo src/kj/units.lo src/kj/memory.lo src/kj/refcount.lo src/kj/array.lo src/kj/string.lo src/kj/string-tree.lo src/kj/exception.lo src/kj/debug.lo src/kj/arena.lo src/kj/io.lo src/kj/mutex.lo src/kj/thread.lo src/kj/main.lo src/kj/parse/char.lo  -lpthread 
+libtool: link: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/kj/.libs/common.o src/kj/.libs/units.o src/kj/.libs/memory.o src/kj/.libs/refcount.o src/kj/.libs/array.o src/kj/.libs/string.o src/kj/.libs/string-tree.o src/kj/.libs/exception.o src/kj/.libs/debug.o src/kj/.libs/arena.o src/kj/.libs/io.o src/kj/.libs/mutex.o src/kj/.libs/thread.o src/kj/.libs/main.o src/kj/parse/.libs/char.o   -lpthread -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libkj-0.4.1.so -o .libs/libkj-0.4.1.so
+libtool: link: (cd ".libs" && rm -f "libkj.so" && ln -s "libkj-0.4.1.so" "libkj.so")
+libtool: link: ar cru .libs/libkj.a  src/kj/common.o src/kj/units.o src/kj/memory.o src/kj/refcount.o src/kj/array.o src/kj/string.o src/kj/string-tree.o src/kj/exception.o src/kj/debug.o src/kj/arena.o src/kj/io.o src/kj/mutex.o src/kj/thread.o src/kj/main.o src/kj/parse/char.o
+libtool: link: ranlib .libs/libkj.a
+libtool: link: ( cd ".libs" && rm -f "libkj.la" && ln -s "../libkj.la" "libkj.la" )
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -release 0.4.1 -no-undefined -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o libcapnp.la -rpath /usr/lib src/capnp/c++.capnp.lo src/capnp/blob.lo src/capnp/arena.lo src/capnp/layout.lo src/capnp/list.lo src/capnp/any.lo src/capnp/message.lo src/capnp/schema.capnp.lo src/capnp/schema.lo src/capnp/schema-loader.lo src/capnp/dynamic.lo src/capnp/stringify.lo src/capnp/serialize.lo src/capnp/serialize-packed.lo libkj.la  -lpthread 
+libtool: link: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/capnp/.libs/c++.capnp.o src/capnp/.libs/blob.o src/capnp/.libs/arena.o src/capnp/.libs/layout.o src/capnp/.libs/list.o src/capnp/.libs/any.o src/capnp/.libs/message.o src/capnp/.libs/schema.capnp.o src/capnp/.libs/schema.o src/capnp/.libs/schema-loader.o src/capnp/.libs/dynamic.o src/capnp/.libs/stringify.o src/capnp/.libs/serialize.o src/capnp/.libs/serialize-packed.o   -Wl,-rpath -Wl,/«PKGBUILDDIR»/.libs ./.libs/libkj.so -lpthread -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libcapnp-0.4.1.so -o .libs/libcapnp-0.4.1.so
+libtool: link: (cd ".libs" && rm -f "libcapnp.so" && ln -s "libcapnp-0.4.1.so" "libcapnp.so")
+libtool: link: ar cru .libs/libcapnp.a  src/capnp/c++.capnp.o src/capnp/blob.o src/capnp/arena.o src/capnp/layout.o src/capnp/list.o src/capnp/any.o src/capnp/message.o src/capnp/schema.capnp.o src/capnp/schema.o src/capnp/schema-loader.o src/capnp/dynamic.o src/capnp/stringify.o src/capnp/serialize.o src/capnp/serialize-packed.o
+libtool: link: ranlib .libs/libcapnp.a
+libtool: link: ( cd ".libs" && rm -f "libcapnp.la" && ln -s "../libcapnp.la" "libcapnp.la" )
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -release 0.4.1 -no-undefined -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o libcapnpc.la -rpath /usr/lib src/capnp/compiler/md5.lo src/capnp/compiler/error-reporter.lo src/capnp/compiler/lexer.capnp.lo src/capnp/compiler/lexer.lo src/capnp/compiler/grammar.capnp.lo src/capnp/compiler/parser.lo src/capnp/compiler/node-translator.lo src/capnp/compiler/compiler.lo src/capnp/schema-parser.lo libcapnp.la libkj.la  -lpthread 
+libtool: link: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/capnp/compiler/.libs/md5.o src/capnp/compiler/.libs/error-reporter.o src/capnp/compiler/.libs/lexer.capnp.o src/capnp/compiler/.libs/lexer.o src/capnp/compiler/.libs/grammar.capnp.o src/capnp/compiler/.libs/parser.o src/capnp/compiler/.libs/node-translator.o src/capnp/compiler/.libs/compiler.o src/capnp/.libs/schema-parser.o   -Wl,-rpath -Wl,/«PKGBUILDDIR»/.libs ./.libs/libcapnp.so ./.libs/libkj.so -lpthread -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libcapnpc-0.4.1.so -o .libs/libcapnpc-0.4.1.so
+libtool: link: (cd ".libs" && rm -f "libcapnpc.so" && ln -s "libcapnpc-0.4.1.so" "libcapnpc.so")
+libtool: link: ar cru .libs/libcapnpc.a  src/capnp/compiler/md5.o src/capnp/compiler/error-reporter.o src/capnp/compiler/lexer.capnp.o src/capnp/compiler/lexer.o src/capnp/compiler/grammar.capnp.o src/capnp/compiler/parser.o src/capnp/compiler/node-translator.o src/capnp/compiler/compiler.o src/capnp/schema-parser.o
+libtool: link: ranlib .libs/libcapnpc.a
+libtool: link: ( cd ".libs" && rm -f "libcapnpc.la" && ln -s "../libcapnpc.la" "libcapnpc.la" )
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG   -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o capnp src/capnp/compiler/module-loader.o src/capnp/compiler/capnp.o libcapnpc.la libcapnp.la libkj.la  
+libtool: link: g++ -std=gnu++11 -I./src -I./src -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -fPIE -pie -Wl,-z -Wl,relro -Wl,-z -Wl,now -o .libs/capnp src/capnp/compiler/module-loader.o src/capnp/compiler/capnp.o  -lpthread ./.libs/libcapnpc.so ./.libs/libcapnp.so ./.libs/libkj.so
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/capnpc-c++.o src/capnp/compiler/capnpc-c++.c++
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG   -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o capnpc-c++ src/capnp/compiler/capnpc-c++.o libcapnp.la libkj.la  
+libtool: link: g++ -std=gnu++11 -I./src -I./src -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -fPIE -pie -Wl,-z -Wl,relro -Wl,-z -Wl,now -o .libs/capnpc-c++ src/capnp/compiler/capnpc-c++.o  -lpthread ./.libs/libcapnp.so ./.libs/libkj.so
+echo capnp capnpc-c++ src/capnp/test.capnp src/capnp/test-import.capnp src/capnp/test-import2.capnp | (read CAPNP CAPNPC_CXX SOURCES && ./$CAPNP compile --src-prefix=./src -o./$CAPNPC_CXX:src -I./src $SOURCES)
+touch test_capnpc_middleman
+(CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /«PKGBUILDDIR»/build-aux/missing autoheader)
+rm -f stamp-h1
+touch config.h.in
+cd . && /bin/bash ./config.status config.h
+config.status: creating config.h
+config.status: config.h is unchanged
+make  all-recursive
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[4]: Entering directory `/«PKGBUILDDIR»'
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/async.lo src/kj/async.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/async.c++  -fPIC -DPIC -o src/kj/.libs/async.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/async.c++ -fPIE -o src/kj/async.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/async-unix.lo src/kj/async-unix.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/async-unix.c++  -fPIC -DPIC -o src/kj/.libs/async-unix.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/async-unix.c++ -fPIE -o src/kj/async-unix.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/async-io.lo src/kj/async-io.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/async-io.c++  -fPIC -DPIC -o src/kj/.libs/async-io.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/kj/async-io.c++ -fPIE -o src/kj/async-io.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -release 0.4.1 -no-undefined -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o libkj-async.la -rpath /usr/lib src/kj/async.lo src/kj/async-unix.lo src/kj/async-io.lo libkj.la  -lpthread 
+libtool: link: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/kj/.libs/async.o src/kj/.libs/async-unix.o src/kj/.libs/async-io.o   -Wl,-rpath -Wl,/«PKGBUILDDIR»/.libs ./.libs/libkj.so -lpthread -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libkj-async-0.4.1.so -o .libs/libkj-async-0.4.1.so
+libtool: link: (cd ".libs" && rm -f "libkj-async.so" && ln -s "libkj-async-0.4.1.so" "libkj-async.so")
+libtool: link: ar cru .libs/libkj-async.a  src/kj/async.o src/kj/async-unix.o src/kj/async-io.o
+libtool: link: ranlib .libs/libkj-async.a
+libtool: link: ( cd ".libs" && rm -f "libkj-async.la" && ln -s "../libkj-async.la" "libkj-async.la" )
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/serialize-async.lo src/capnp/serialize-async.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/serialize-async.c++  -fPIC -DPIC -o src/capnp/.libs/serialize-async.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/serialize-async.c++ -fPIE -o src/capnp/serialize-async.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capability.lo src/capnp/capability.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/capability.c++  -fPIC -DPIC -o src/capnp/.libs/capability.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/capability.c++ -fPIE -o src/capnp/capability.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/dynamic-capability.lo src/capnp/dynamic-capability.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/dynamic-capability.c++  -fPIC -DPIC -o src/capnp/.libs/dynamic-capability.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/dynamic-capability.c++ -fPIE -o src/capnp/dynamic-capability.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/rpc.lo src/capnp/rpc.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/rpc.c++  -fPIC -DPIC -o src/capnp/.libs/rpc.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/rpc.c++ -fPIE -o src/capnp/rpc.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/rpc.capnp.lo src/capnp/rpc.capnp.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/rpc.capnp.c++  -fPIC -DPIC -o src/capnp/.libs/rpc.capnp.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/rpc.capnp.c++ -fPIE -o src/capnp/rpc.capnp.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/rpc-twoparty.lo src/capnp/rpc-twoparty.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/rpc-twoparty.c++  -fPIC -DPIC -o src/capnp/.libs/rpc-twoparty.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/rpc-twoparty.c++ -fPIE -o src/capnp/rpc-twoparty.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/rpc-twoparty.capnp.lo src/capnp/rpc-twoparty.capnp.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/rpc-twoparty.capnp.c++  -fPIC -DPIC -o src/capnp/.libs/rpc-twoparty.capnp.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/rpc-twoparty.capnp.c++ -fPIE -o src/capnp/rpc-twoparty.capnp.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/ez-rpc.lo src/capnp/ez-rpc.c++
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/ez-rpc.c++  -fPIC -DPIC -o src/capnp/.libs/ez-rpc.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -D_FORTIFY_SOURCE=2 -I./src -I./src -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/capnp/ez-rpc.c++ -fPIE -o src/capnp/ez-rpc.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -release 0.4.1 -no-undefined -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o libcapnp-rpc.la -rpath /usr/lib src/capnp/serialize-async.lo src/capnp/capability.lo src/capnp/dynamic-capability.lo src/capnp/rpc.lo src/capnp/rpc.capnp.lo src/capnp/rpc-twoparty.lo src/capnp/rpc-twoparty.capnp.lo src/capnp/ez-rpc.lo libcapnp.la libkj-async.la libkj.la  -lpthread 
+libtool: link: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/capnp/.libs/serialize-async.o src/capnp/.libs/capability.o src/capnp/.libs/dynamic-capability.o src/capnp/.libs/rpc.o src/capnp/.libs/rpc.capnp.o src/capnp/.libs/rpc-twoparty.o src/capnp/.libs/rpc-twoparty.capnp.o src/capnp/.libs/ez-rpc.o   -Wl,-rpath -Wl,/«PKGBUILDDIR»/.libs ./.libs/libcapnp.so ./.libs/libkj-async.so ./.libs/libkj.so -lpthread -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libcapnp-rpc-0.4.1.so -o .libs/libcapnp-rpc-0.4.1.so
+libtool: link: (cd ".libs" && rm -f "libcapnp-rpc.so" && ln -s "libcapnp-rpc-0.4.1.so" "libcapnp-rpc.so")
+libtool: link: ar cru .libs/libcapnp-rpc.a  src/capnp/serialize-async.o src/capnp/capability.o src/capnp/dynamic-capability.o src/capnp/rpc.o src/capnp/rpc.capnp.o src/capnp/rpc-twoparty.o src/capnp/rpc-twoparty.capnp.o src/capnp/ez-rpc.o
+libtool: link: ranlib .libs/libcapnp-rpc.a
+libtool: link: ( cd ".libs" && rm -f "libcapnp-rpc.la" && ln -s "../libcapnp-rpc.la" "libcapnp-rpc.la" )
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/capnpc-capnp.o src/capnp/compiler/capnpc-capnp.c++
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG   -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o capnpc-capnp src/capnp/compiler/capnpc-capnp.o libcapnp.la libkj.la  
+libtool: link: g++ -std=gnu++11 -I./src -I./src -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -fPIE -pie -Wl,-z -Wl,relro -Wl,-z -Wl,now -o .libs/capnpc-capnp src/capnp/compiler/capnpc-capnp.o  -lpthread ./.libs/libcapnp.so ./.libs/libkj.so
+make[4]: Leaving directory `/«PKGBUILDDIR»'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make  check-recursive
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make  capnp-test capnp-evolution-test
+make[4]: Entering directory `/«PKGBUILDDIR»'
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-common-test.o `test -f 'src/kj/common-test.c++' || echo './'`src/kj/common-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-memory-test.o `test -f 'src/kj/memory-test.c++' || echo './'`src/kj/memory-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-refcount-test.o `test -f 'src/kj/refcount-test.c++' || echo './'`src/kj/refcount-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-array-test.o `test -f 'src/kj/array-test.c++' || echo './'`src/kj/array-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-string-test.o `test -f 'src/kj/string-test.c++' || echo './'`src/kj/string-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-string-tree-test.o `test -f 'src/kj/string-tree-test.c++' || echo './'`src/kj/string-tree-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-exception-test.o `test -f 'src/kj/exception-test.c++' || echo './'`src/kj/exception-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-debug-test.o `test -f 'src/kj/debug-test.c++' || echo './'`src/kj/debug-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-arena-test.o `test -f 'src/kj/arena-test.c++' || echo './'`src/kj/arena-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-units-test.o `test -f 'src/kj/units-test.c++' || echo './'`src/kj/units-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-tuple-test.o `test -f 'src/kj/tuple-test.c++' || echo './'`src/kj/tuple-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-one-of-test.o `test -f 'src/kj/one-of-test.c++' || echo './'`src/kj/one-of-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-function-test.o `test -f 'src/kj/function-test.c++' || echo './'`src/kj/function-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-mutex-test.o `test -f 'src/kj/mutex-test.c++' || echo './'`src/kj/mutex-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-threadlocal-test.o `test -f 'src/kj/threadlocal-test.c++' || echo './'`src/kj/threadlocal-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-threadlocal-pthread-test.o `test -f 'src/kj/threadlocal-pthread-test.c++' || echo './'`src/kj/threadlocal-pthread-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-async-test.o `test -f 'src/kj/async-test.c++' || echo './'`src/kj/async-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-async-unix-test.o `test -f 'src/kj/async-unix-test.c++' || echo './'`src/kj/async-unix-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/capnp_test-async-io-test.o `test -f 'src/kj/async-io-test.c++' || echo './'`src/kj/async-io-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/parse/capnp_test-common-test.o `test -f 'src/kj/parse/common-test.c++' || echo './'`src/kj/parse/common-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/kj/parse/capnp_test-char-test.o `test -f 'src/kj/parse/char-test.c++' || echo './'`src/kj/parse/char-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-common-test.o `test -f 'src/capnp/common-test.c++' || echo './'`src/capnp/common-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-blob-test.o `test -f 'src/capnp/blob-test.c++' || echo './'`src/capnp/blob-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-endian-test.o `test -f 'src/capnp/endian-test.c++' || echo './'`src/capnp/endian-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-endian-fallback-test.o `test -f 'src/capnp/endian-fallback-test.c++' || echo './'`src/capnp/endian-fallback-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-endian-reverse-test.o `test -f 'src/capnp/endian-reverse-test.c++' || echo './'`src/capnp/endian-reverse-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-layout-test.o `test -f 'src/capnp/layout-test.c++' || echo './'`src/capnp/layout-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-any-test.o `test -f 'src/capnp/any-test.c++' || echo './'`src/capnp/any-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-message-test.o `test -f 'src/capnp/message-test.c++' || echo './'`src/capnp/message-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-capability-test.o `test -f 'src/capnp/capability-test.c++' || echo './'`src/capnp/capability-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-schema-test.o `test -f 'src/capnp/schema-test.c++' || echo './'`src/capnp/schema-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-schema-loader-test.o `test -f 'src/capnp/schema-loader-test.c++' || echo './'`src/capnp/schema-loader-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-dynamic-test.o `test -f 'src/capnp/dynamic-test.c++' || echo './'`src/capnp/dynamic-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-stringify-test.o `test -f 'src/capnp/stringify-test.c++' || echo './'`src/capnp/stringify-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-encoding-test.o `test -f 'src/capnp/encoding-test.c++' || echo './'`src/capnp/encoding-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-orphan-test.o `test -f 'src/capnp/orphan-test.c++' || echo './'`src/capnp/orphan-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-serialize-test.o `test -f 'src/capnp/serialize-test.c++' || echo './'`src/capnp/serialize-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-serialize-async-test.o `test -f 'src/capnp/serialize-async-test.c++' || echo './'`src/capnp/serialize-async-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-serialize-packed-test.o `test -f 'src/capnp/serialize-packed-test.c++' || echo './'`src/capnp/serialize-packed-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-rpc-test.o `test -f 'src/capnp/rpc-test.c++' || echo './'`src/capnp/rpc-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-rpc-twoparty-test.o `test -f 'src/capnp/rpc-twoparty-test.c++' || echo './'`src/capnp/rpc-twoparty-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-ez-rpc-test.o `test -f 'src/capnp/ez-rpc-test.c++' || echo './'`src/capnp/ez-rpc-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-test-util.o `test -f 'src/capnp/test-util.c++' || echo './'`src/capnp/test-util.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/capnp_test-lexer-test.o `test -f 'src/capnp/compiler/lexer-test.c++' || echo './'`src/capnp/compiler/lexer-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/capnp_test-md5-test.o `test -f 'src/capnp/compiler/md5-test.c++' || echo './'`src/capnp/compiler/md5-test.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-test.capnp.o `test -f 'src/capnp/test.capnp.c++' || echo './'`src/capnp/test.capnp.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-test-import.capnp.o `test -f 'src/capnp/test-import.capnp.c++' || echo './'`src/capnp/test-import.capnp.c++
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.  -Igtest/include -I./gtest/include -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/capnp_test-test-import2.capnp.o `test -f 'src/capnp/test-import2.capnp.c++' || echo './'`src/capnp/test-import2.capnp.c++
+Making lib/libgtest.a lib/libgtest_main.a in gtest
+make[5]: Entering directory `/«PKGBUILDDIR»/gtest'
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -I./build-aux  -I. -I./include -D_FORTIFY_SOURCE=2 -DGTEST_HAS_PTHREAD=1 -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c -o src/gtest-all.lo src/gtest-all.cc
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -I./build-aux -I. -I./include -D_FORTIFY_SOURCE=2 -DGTEST_HAS_PTHREAD=1 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/gtest-all.cc  -fPIC -DPIC -o src/.libs/gtest-all.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -I./build-aux -I. -I./include -D_FORTIFY_SOURCE=2 -DGTEST_HAS_PTHREAD=1 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/gtest-all.cc -fPIE -o src/gtest-all.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -DGTEST_HAS_PTHREAD=1 -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o lib/libgtest.la -rpath /usr/lib src/gtest-all.lo  
+libtool: link: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/.libs/gtest-all.o   -lpthread -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libgtest.so.0 -o lib/.libs/libgtest.so.0.0.0
+libtool: link: (cd "lib/.libs" && rm -f "libgtest.so.0" && ln -s "libgtest.so.0.0.0" "libgtest.so.0")
+libtool: link: (cd "lib/.libs" && rm -f "libgtest.so" && ln -s "libgtest.so.0.0.0" "libgtest.so")
+libtool: link: ar cru lib/.libs/libgtest.a  src/gtest-all.o
+libtool: link: ranlib lib/.libs/libgtest.a
+libtool: link: ( cd "lib/.libs" && rm -f "libgtest.la" && ln -s "../libgtest.la" "libgtest.la" )
+/bin/bash ./libtool  --tag=CXX   --mode=compile g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -I./build-aux  -I. -I./include -D_FORTIFY_SOURCE=2 -DGTEST_HAS_PTHREAD=1 -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c -o src/gtest_main.lo src/gtest_main.cc
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -I./build-aux -I. -I./include -D_FORTIFY_SOURCE=2 -DGTEST_HAS_PTHREAD=1 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/gtest_main.cc  -fPIC -DPIC -o src/.libs/gtest_main.o
+libtool: compile:  g++ -std=gnu++11 -DHAVE_CONFIG_H -I. -I./build-aux -I. -I./include -D_FORTIFY_SOURCE=2 -DGTEST_HAS_PTHREAD=1 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -c src/gtest_main.cc -fPIE -o src/gtest_main.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -DGTEST_HAS_PTHREAD=1 -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o lib/libgtest_main.la -rpath /usr/lib src/gtest_main.lo lib/libgtest.la 
+libtool: link: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/.libs/gtest_main.o   -Wl,-rpath -Wl,/«PKGBUILDDIR»/gtest/lib/.libs -lpthread lib/.libs/libgtest.so -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -L/usr/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libgtest_main.so.0 -o lib/.libs/libgtest_main.so.0.0.0
+libtool: link: (cd "lib/.libs" && rm -f "libgtest_main.so.0" && ln -s "libgtest_main.so.0.0.0" "libgtest_main.so.0")
+libtool: link: (cd "lib/.libs" && rm -f "libgtest_main.so" && ln -s "libgtest_main.so.0.0.0" "libgtest_main.so")
+libtool: link: ar cru lib/.libs/libgtest_main.a  src/gtest_main.o
+libtool: link: ranlib lib/.libs/libgtest_main.a
+libtool: link: ( cd "lib/.libs" && rm -f "libgtest_main.la" && ln -s "../libgtest_main.la" "libgtest_main.la" )
+make[5]: Leaving directory `/«PKGBUILDDIR»/gtest'
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG   -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o capnp-test src/kj/capnp_test-common-test.o src/kj/capnp_test-memory-test.o src/kj/capnp_test-refcount-test.o src/kj/capnp_test-array-test.o src/kj/capnp_test-string-test.o src/kj/capnp_test-string-tree-test.o src/kj/capnp_test-exception-test.o src/kj/capnp_test-debug-test.o src/kj/capnp_test-arena-test.o src/kj/capnp_test-units-test.o src/kj/capnp_test-tuple-test.o src/kj/capnp_test-one-of-test.o src/kj/capnp_test-function-test.o src/kj/capnp_test-mutex-test.o src/kj/capnp_test-threadlocal-test.o src/kj/capnp_test-threadlocal-pthread-test.o src/kj/capnp_test-async-test.o src/kj/capnp_test-async-unix-test.o src/kj/capnp_test-async-io-test.o src/kj/parse/capnp_test-common-test.o src/kj/parse/capnp_test-char-test.o src/capnp/capnp_test-common-test.o src/capnp/capnp_test-blob-test.o src/capnp/capnp_test-endian-test.o src/capnp/capnp_test-endian-fallback-test.o src/capnp/capnp_test-endian-reverse-test.o src/capnp/capnp_test-layout-test.o src/capnp/capnp_test-any-test.o src/capnp/capnp_test-message-test.o src/capnp/capnp_test-capability-test.o src/capnp/capnp_test-schema-test.o src/capnp/capnp_test-schema-loader-test.o src/capnp/capnp_test-dynamic-test.o src/capnp/capnp_test-stringify-test.o src/capnp/capnp_test-encoding-test.o src/capnp/capnp_test-orphan-test.o src/capnp/capnp_test-serialize-test.o src/capnp/capnp_test-serialize-async-test.o src/capnp/capnp_test-serialize-packed-test.o src/capnp/capnp_test-rpc-test.o src/capnp/capnp_test-rpc-twoparty-test.o src/capnp/capnp_test-ez-rpc-test.o src/capnp/capnp_test-test-util.o src/capnp/compiler/capnp_test-lexer-test.o src/capnp/compiler/capnp_test-md5-test.o src/capnp/capnp_test-test.capnp.o src/capnp/capnp_test-test-import.capnp.o src/capnp/capnp_test-test-import2.capnp.o gtest/lib/libgtest.la gtest/lib/libgtest_main.la libcapnpc.la libcapnp-rpc.la libcapnp.la libkj-async.la libkj.la 
+libtool: link: g++ -std=gnu++11 -I./src -I./src -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -fPIE -pie -Wl,-z -Wl,relro -Wl,-z -Wl,now -o .libs/capnp-test src/kj/capnp_test-common-test.o src/kj/capnp_test-memory-test.o src/kj/capnp_test-refcount-test.o src/kj/capnp_test-array-test.o src/kj/capnp_test-string-test.o src/kj/capnp_test-string-tree-test.o src/kj/capnp_test-exception-test.o src/kj/capnp_test-debug-test.o src/kj/capnp_test-arena-test.o src/kj/capnp_test-units-test.o src/kj/capnp_test-tuple-test.o src/kj/capnp_test-one-of-test.o src/kj/capnp_test-function-test.o src/kj/capnp_test-mutex-test.o src/kj/capnp_test-threadlocal-test.o src/kj/capnp_test-threadlocal-pthread-test.o src/kj/capnp_test-async-test.o src/kj/capnp_test-async-unix-test.o src/kj/capnp_test-async-io-test.o src/kj/parse/capnp_test-common-test.o src/kj/parse/capnp_test-char-test.o src/capnp/capnp_test-common-test.o src/capnp/capnp_test-blob-test.o src/capnp/capnp_test-endian-test.o src/capnp/capnp_test-endian-fallback-test.o src/capnp/capnp_test-endian-reverse-test.o src/capnp/capnp_test-layout-test.o src/capnp/capnp_test-any-test.o src/capnp/capnp_test-message-test.o src/capnp/capnp_test-capability-test.o src/capnp/capnp_test-schema-test.o src/capnp/capnp_test-schema-loader-test.o src/capnp/capnp_test-dynamic-test.o src/capnp/capnp_test-stringify-test.o src/capnp/capnp_test-encoding-test.o src/capnp/capnp_test-orphan-test.o src/capnp/capnp_test-serialize-test.o src/capnp/capnp_test-serialize-async-test.o src/capnp/capnp_test-serialize-packed-test.o src/capnp/capnp_test-rpc-test.o src/capnp/capnp_test-rpc-twoparty-test.o src/capnp/capnp_test-ez-rpc-test.o src/capnp/capnp_test-test-util.o src/capnp/compiler/capnp_test-lexer-test.o src/capnp/compiler/capnp_test-md5-test.o src/capnp/capnp_test-test.capnp.o src/capnp/capnp_test-test-import.capnp.o src/capnp/capnp_test-test-import2.capnp.o  -lpthread gtest/lib/.libs/libgtest.so gtest/lib/.libs/libgtest_main.so ./.libs/libcapnpc.so ./.libs/libcapnp-rpc.so ./.libs/libcapnp.so ./.libs/libkj-async.so ./.libs/libkj.so
+g++ -std=gnu++11 -DHAVE_CONFIG_H -I.   -D_FORTIFY_SOURCE=2 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG  -c -o src/capnp/compiler/evolution-test.o src/capnp/compiler/evolution-test.c++
+/bin/bash ./libtool  --tag=CXX   --mode=link g++ -std=gnu++11 -I./src -I./src  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG   -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o capnp-evolution-test src/capnp/compiler/evolution-test.o libcapnpc.la libcapnp.la libkj.la 
+libtool: link: g++ -std=gnu++11 -I./src -I./src -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -fPIE -pie -Wl,-z -Wl,relro -Wl,-z -Wl,now -o .libs/capnp-evolution-test src/capnp/compiler/evolution-test.o  -lpthread ./.libs/libcapnpc.so ./.libs/libcapnp.so ./.libs/libkj.so
+make[4]: Leaving directory `/«PKGBUILDDIR»'
+make  check-TESTS
+make[4]: Entering directory `/«PKGBUILDDIR»'
+make[5]: Entering directory `/«PKGBUILDDIR»'
+PASS: capnp-test
+PASS: capnp-evolution-test
+PASS: src/capnp/compiler/capnp-test.sh
+make[6]: Entering directory `/«PKGBUILDDIR»'
+make  all-recursive
+make[7]: Entering directory `/«PKGBUILDDIR»'
+make[8]: Entering directory `/«PKGBUILDDIR»'
+make[8]: Leaving directory `/«PKGBUILDDIR»'
+make[7]: Leaving directory `/«PKGBUILDDIR»'
+make[6]: Leaving directory `/«PKGBUILDDIR»'
+============================================================================
+Testsuite summary for Capn Proto 0.4.1
+============================================================================
+# TOTAL: 3
+# PASS:  3
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory `/«PKGBUILDDIR»'
+make[4]: Leaving directory `/«PKGBUILDDIR»'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary --with autoreconf
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make  install-recursive
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[4]: Entering directory `/«PKGBUILDDIR»'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libkj.la libkj-async.la libcapnp.la libcapnp-rpc.la libcapnpc.la '/«PKGBUILDDIR»/debian/tmp/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libkj-0.4.1.so /«PKGBUILDDIR»/debian/tmp/usr/lib/libkj-0.4.1.so
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib && { ln -s -f libkj-0.4.1.so libkj.so || { rm -f libkj.so && ln -s libkj-0.4.1.so libkj.so; }; })
+libtool: install: /usr/bin/install -c .libs/libkj.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/libkj.la
+libtool: install: warning: relinking `libkj-async.la'
+libtool: install: (cd /«PKGBUILDDIR»; /bin/bash /«PKGBUILDDIR»/libtool  --tag CXX --mode=relink g++ -std=gnu++11 -I./src -I./src -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -release 0.4.1 -no-undefined -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o libkj-async.la -rpath /usr/lib src/kj/async.lo src/kj/async-unix.lo src/kj/async-io.lo libkj.la -lpthread -inst-prefix-dir /«PKGBUILDDIR»/debian/tmp)
+libtool: relink: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/kj/.libs/async.o src/kj/.libs/async-unix.o src/kj/.libs/async-io.o   -L/«PKGBUILDDIR»/debian/tmp/usr/lib -L/usr/lib -lkj -lpthread -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libkj-async-0.4.1.so -o .libs/libkj-async-0.4.1.so
+libtool: install: /usr/bin/install -c .libs/libkj-async-0.4.1.soT /«PKGBUILDDIR»/debian/tmp/usr/lib/libkj-async-0.4.1.so
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib && { ln -s -f libkj-async-0.4.1.so libkj-async.so || { rm -f libkj-async.so && ln -s libkj-async-0.4.1.so libkj-async.so; }; })
+libtool: install: /usr/bin/install -c .libs/libkj-async.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/libkj-async.la
+libtool: install: warning: relinking `libcapnp.la'
+libtool: install: (cd /«PKGBUILDDIR»; /bin/bash /«PKGBUILDDIR»/libtool  --tag CXX --mode=relink g++ -std=gnu++11 -I./src -I./src -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -release 0.4.1 -no-undefined -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o libcapnp.la -rpath /usr/lib src/capnp/c++.capnp.lo src/capnp/blob.lo src/capnp/arena.lo src/capnp/layout.lo src/capnp/list.lo src/capnp/any.lo src/capnp/message.lo src/capnp/schema.capnp.lo src/capnp/schema.lo src/capnp/schema-loader.lo src/capnp/dynamic.lo src/capnp/stringify.lo src/capnp/serialize.lo src/capnp/serialize-packed.lo libkj.la -lpthread -inst-prefix-dir /«PKGBUILDDIR»/debian/tmp)
+libtool: relink: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/capnp/.libs/c++.capnp.o src/capnp/.libs/blob.o src/capnp/.libs/arena.o src/capnp/.libs/layout.o src/capnp/.libs/list.o src/capnp/.libs/any.o src/capnp/.libs/message.o src/capnp/.libs/schema.capnp.o src/capnp/.libs/schema.o src/capnp/.libs/schema-loader.o src/capnp/.libs/dynamic.o src/capnp/.libs/stringify.o src/capnp/.libs/serialize.o src/capnp/.libs/serialize-packed.o   -L/«PKGBUILDDIR»/debian/tmp/usr/lib -L/usr/lib -lkj -lpthread -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libcapnp-0.4.1.so -o .libs/libcapnp-0.4.1.so
+libtool: install: /usr/bin/install -c .libs/libcapnp-0.4.1.soT /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnp-0.4.1.so
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib && { ln -s -f libcapnp-0.4.1.so libcapnp.so || { rm -f libcapnp.so && ln -s libcapnp-0.4.1.so libcapnp.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcapnp.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnp.la
+libtool: install: warning: relinking `libcapnp-rpc.la'
+libtool: install: (cd /«PKGBUILDDIR»; /bin/bash /«PKGBUILDDIR»/libtool  --tag CXX --mode=relink g++ -std=gnu++11 -I./src -I./src -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -release 0.4.1 -no-undefined -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o libcapnp-rpc.la -rpath /usr/lib src/capnp/serialize-async.lo src/capnp/capability.lo src/capnp/dynamic-capability.lo src/capnp/rpc.lo src/capnp/rpc.capnp.lo src/capnp/rpc-twoparty.lo src/capnp/rpc-twoparty.capnp.lo src/capnp/ez-rpc.lo libcapnp.la libkj-async.la libkj.la -lpthread -inst-prefix-dir /«PKGBUILDDIR»/debian/tmp)
+libtool: relink: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/capnp/.libs/serialize-async.o src/capnp/.libs/capability.o src/capnp/.libs/dynamic-capability.o src/capnp/.libs/rpc.o src/capnp/.libs/rpc.capnp.o src/capnp/.libs/rpc-twoparty.o src/capnp/.libs/rpc-twoparty.capnp.o src/capnp/.libs/ez-rpc.o   -L/«PKGBUILDDIR»/debian/tmp/usr/lib -L/usr/lib -lcapnp -lkj-async -lkj -lpthread -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libcapnp-rpc-0.4.1.so -o .libs/libcapnp-rpc-0.4.1.so
+libtool: install: /usr/bin/install -c .libs/libcapnp-rpc-0.4.1.soT /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnp-rpc-0.4.1.so
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib && { ln -s -f libcapnp-rpc-0.4.1.so libcapnp-rpc.so || { rm -f libcapnp-rpc.so && ln -s libcapnp-rpc-0.4.1.so libcapnp-rpc.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcapnp-rpc.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnp-rpc.la
+libtool: install: warning: relinking `libcapnpc.la'
+libtool: install: (cd /«PKGBUILDDIR»; /bin/bash /«PKGBUILDDIR»/libtool  --tag CXX --mode=relink g++ -std=gnu++11 -I./src -I./src -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DNDEBUG -release 0.4.1 -no-undefined -fPIE -pie -Wl,-z,relro -Wl,-z,now -lpthread -o libcapnpc.la -rpath /usr/lib src/capnp/compiler/md5.lo src/capnp/compiler/error-reporter.lo src/capnp/compiler/lexer.capnp.lo src/capnp/compiler/lexer.lo src/capnp/compiler/grammar.capnp.lo src/capnp/compiler/parser.lo src/capnp/compiler/node-translator.lo src/capnp/compiler/compiler.lo src/capnp/schema-parser.lo libcapnp.la libkj.la -lpthread -inst-prefix-dir /«PKGBUILDDIR»/debian/tmp)
+libtool: relink: g++ -std=gnu++11  -fPIC -DPIC -shared -nostdlib /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtbeginS.o  src/capnp/compiler/.libs/md5.o src/capnp/compiler/.libs/error-reporter.o src/capnp/compiler/.libs/lexer.capnp.o src/capnp/compiler/.libs/lexer.o src/capnp/compiler/.libs/grammar.capnp.o src/capnp/compiler/.libs/parser.o src/capnp/compiler/.libs/node-translator.o src/capnp/compiler/.libs/compiler.o src/capnp/.libs/schema-parser.o   -L/«PKGBUILDDIR»/debian/tmp/usr/lib -L/usr/lib -lcapnp -lkj -lpthread -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/lib -lstdc++ -lm -lc -lgcc_s /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/crtendS.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o  -O2 -Wl,-z -Wl,relro -Wl,-z -Wl,now   -Wl,-soname -Wl,libcapnpc-0.4.1.so -o .libs/libcapnpc-0.4.1.so
+libtool: install: /usr/bin/install -c .libs/libcapnpc-0.4.1.soT /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnpc-0.4.1.so
+libtool: install: (cd /«PKGBUILDDIR»/debian/tmp/usr/lib && { ln -s -f libcapnpc-0.4.1.so libcapnpc.so || { rm -f libcapnpc.so && ln -s libcapnpc-0.4.1.so libcapnpc.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcapnpc.lai /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnpc.la
+libtool: install: /usr/bin/install -c .libs/libkj.a /«PKGBUILDDIR»/debian/tmp/usr/lib/libkj.a
+libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/libkj.a
+libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/libkj.a
+libtool: install: /usr/bin/install -c .libs/libkj-async.a /«PKGBUILDDIR»/debian/tmp/usr/lib/libkj-async.a
+libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/libkj-async.a
+libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/libkj-async.a
+libtool: install: /usr/bin/install -c .libs/libcapnp.a /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnp.a
+libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnp.a
+libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnp.a
+libtool: install: /usr/bin/install -c .libs/libcapnp-rpc.a /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnp-rpc.a
+libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnp-rpc.a
+libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnp-rpc.a
+libtool: install: /usr/bin/install -c .libs/libcapnpc.a /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnpc.a
+libtool: install: chmod 644 /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnpc.a
+libtool: install: ranlib /«PKGBUILDDIR»/debian/tmp/usr/lib/libcapnpc.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/bin'
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c capnp capnpc-capnp capnpc-c++ '/«PKGBUILDDIR»/debian/tmp/usr/bin'
+libtool: install: warning: `libcapnpc.la' has not been installed in `/usr/lib'
+libtool: install: warning: `libcapnp.la' has not been installed in `/usr/lib'
+libtool: install: warning: `libkj.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/capnp /«PKGBUILDDIR»/debian/tmp/usr/bin/capnp
+libtool: install: warning: `libcapnp.la' has not been installed in `/usr/lib'
+libtool: install: warning: `libkj.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/capnpc-capnp /«PKGBUILDDIR»/debian/tmp/usr/bin/capnpc-capnp
+libtool: install: warning: `libcapnp.la' has not been installed in `/usr/lib'
+libtool: install: warning: `libkj.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/capnpc-c++ /«PKGBUILDDIR»/debian/tmp/usr/bin/capnpc-c++
+make  install-exec-hook
+make[5]: Entering directory `/«PKGBUILDDIR»'
+ln -sf capnp /«PKGBUILDDIR»/debian/tmp/usr/bin/capnpc
+ldconfig < /dev/null > /dev/null 2>&1 || true
+make[5]: Leaving directory `/«PKGBUILDDIR»'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/include/capnp'
+ /usr/bin/install -c -m 644 src/capnp/c++.capnp src/capnp/schema.capnp '/«PKGBUILDDIR»/debian/tmp/usr/include/capnp'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/include/capnp'
+ /usr/bin/install -c -m 644 src/capnp/c++.capnp.h src/capnp/common.h src/capnp/blob.h src/capnp/endian.h src/capnp/layout.h src/capnp/orphan.h src/capnp/list.h src/capnp/any.h src/capnp/message.h src/capnp/capability.h src/capnp/schema.capnp.h src/capnp/schema.h src/capnp/schema-loader.h src/capnp/schema-parser.h src/capnp/dynamic.h src/capnp/pretty-print.h src/capnp/serialize.h src/capnp/serialize-async.h src/capnp/serialize-packed.h src/capnp/pointer-helpers.h src/capnp/generated-header-support.h src/capnp/rpc-prelude.h src/capnp/rpc.h src/capnp/rpc-twoparty.h src/capnp/rpc.capnp.h src/capnp/rpc-twoparty.capnp.h src/capnp/ez-rpc.h '/«PKGBUILDDIR»/debian/tmp/usr/include/capnp'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/include/kj'
+ /usr/bin/install -c -m 644 src/kj/common.h src/kj/units.h src/kj/memory.h src/kj/refcount.h src/kj/array.h src/kj/vector.h src/kj/string.h src/kj/string-tree.h src/kj/exception.h src/kj/debug.h src/kj/arena.h src/kj/io.h src/kj/tuple.h src/kj/one-of.h src/kj/function.h src/kj/mutex.h src/kj/thread.h src/kj/threadlocal.h src/kj/async-prelude.h src/kj/async.h src/kj/async-inl.h src/kj/async-unix.h src/kj/async-io.h src/kj/main.h '/«PKGBUILDDIR»/debian/tmp/usr/include/kj'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/include/kj/parse'
+ /usr/bin/install -c -m 644 src/kj/parse/common.h src/kj/parse/char.h '/«PKGBUILDDIR»/debian/tmp/usr/include/kj/parse'
+ /bin/mkdir -p '/«PKGBUILDDIR»/debian/tmp/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 capnp.pc capnp-rpc.pc '/«PKGBUILDDIR»/debian/tmp/usr/lib/pkgconfig'
+make[4]: Leaving directory `/«PKGBUILDDIR»'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_lintian
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `libcapnp-0.4.1' in `../libcapnp-0.4.1_0.4.1-1_amd64.deb'.
+dpkg-deb: building package `libcapnp-dev' in `../libcapnp-dev_0.4.1-1_amd64.deb'.
+dpkg-deb: building package `capnproto' in `../capnproto_0.4.1-1_amd64.deb'.
+ dpkg-genchanges  >../capnproto_0.4.1-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build capnproto-0.4.1
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-1836
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+capnproto_0.4.1-1_amd64.changes:
+────────────────────────────────
+
+Format: 1.8
+Date: Wed, 09 Apr 2014 12:00:31 -0700
+Source: capnproto
+Binary: libcapnp-0.4.1 libcapnp-dev capnproto
+Architecture: source amd64
+Version: 0.4.1-1
+Distribution: sid
+Urgency: low
+Maintainer: Tom Lee <debian@tomlee.co>
+Changed-By: Tom Lee <debian@tomlee.co>
+Description: 
+ capnproto  - tool for working with the Cap'n Proto data interchange format
+ libcapnp-0.4.1 - Cap'n Proto C++ library
+ libcapnp-dev - Cap'n Proto C++ library (development files)
+Closes: 735232
+Changes: 
+ capnproto (0.4.1-1) unstable; urgency=low
+ .
+   * Applying a downstream patch for ppc64el (Closes: 735232)
+   * Install capnp.pc and capnp-rpc.pc to the correct location
+   * Imported Upstream version 0.4.1
+Checksums-Sha1: 
+ b1b258548cec017e07fe2838b0b57f83b6dab2ab 1186 capnproto_0.4.1-1.dsc
+ 18ce1a404c2bf68e6625e44927bfe6b67186cb15 1899247 capnproto_0.4.1.orig.tar.gz
+ dcbca04e87d51f4576465afbf868feeed76b8be6 5944 capnproto_0.4.1-1.debian.tar.xz
+ a9e24d9a0ed588bdc255f48e78578e7194383011 462312 libcapnp-0.4.1_0.4.1-1_amd64.deb
+ 611db3bd572b7ee0e1b28ec04c266fc97f1c6ff5 647830 libcapnp-dev_0.4.1-1_amd64.deb
+ 31a80cd239d9a08aa3f1c6d9e662d77615943ab9 173648 capnproto_0.4.1-1_amd64.deb
+Checksums-Sha256: 
+ e00b5d0f2d1646359288014007ba88f3b0d1e330117b2e9edc35524d38c95356 1186 capnproto_0.4.1-1.dsc
+ 8453e8d508906062f113dbdfff552f41e08083ccf7c9407778a8d107675cd468 1899247 capnproto_0.4.1.orig.tar.gz
+ 8cb6cad0314138c2b51a5562459e3f867d781baab7db08a5ac873fcbdc83d18f 5944 capnproto_0.4.1-1.debian.tar.xz
+ 604a34fa6808d393b2faa41f42b4aebc46fae29eab6781a5ad29f0b3d841a791 462312 libcapnp-0.4.1_0.4.1-1_amd64.deb
+ f4beb1ea6d7ba17dfc20198c8306e8409bdb9856062868c83e9275ceefcbf80b 647830 libcapnp-dev_0.4.1-1_amd64.deb
+ 757b808ba435d5d23abc65d3410c5197551a3a984d326fc05c336bf33e0926a5 173648 capnproto_0.4.1-1_amd64.deb
+Files: 
+ 8aa6bc3c6e124893c2c9703a40218b9f 462312 libs optional libcapnp-0.4.1_0.4.1-1_amd64.deb
+ 0ad3b1bc839986e9c66553ed8e740711 647830 libdevel optional libcapnp-dev_0.4.1-1_amd64.deb
+ 8e2cbb1d1688b458c97d3981491aeaf9 173648 devel optional capnproto_0.4.1-1_amd64.deb
+ d17b477534a3c8b4ffe0b65e92083d49 1186 devel optional capnproto_0.4.1-1.dsc
+ 171f85d52828356c2fcccff2417cb395 1899247 devel optional capnproto_0.4.1.orig.tar.gz
+ b7a7b5afab0302226bb34cd7207eadd3 5944 devel optional capnproto_0.4.1-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libcapnp-0.4.1_0.4.1-1_amd64.deb
+────────────────────────────────
+
+ new debian package, version 2.0.
+ size 462312 bytes: control archive=1320 bytes.
+     883 bytes,    22 lines      control              
+     612 bytes,     9 lines      md5sums              
+     188 bytes,    15 lines   *  postinst             #!/bin/sh
+     182 bytes,    15 lines   *  postrm               #!/bin/sh
+     155 bytes,     5 lines      shlibs               
+ Package: libcapnp-0.4.1
+ Source: capnproto
+ Version: 0.4.1-1
+ Architecture: amd64
+ Maintainer: Tom Lee <debian@tomlee.co>
+ Installed-Size: 2082
+ Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.8)
+ Section: libs
+ Priority: optional
+ Homepage: http://kentonv.github.io/capnproto/
+ Description: Cap'n Proto C++ library
+  Similar to Protocol Buffers, Cap'n Proto is an efficient means of
+  serializing structured data to be transferred across a network or
+  written to disk. Users write a Cap'n Proto definition file that
+  drives a code generator, which in turn emits C++ code for encoding &
+  decoding messages in the Cap'n Proto format.
+  .
+  In addition to being extremely fast, Cap'n Proto also smooths over some
+  of the rougher aspects of Protocol Buffers & introduces a number of new
+  features to boot.
+  .
+  This package contains the runtime libraries needed for C++ applications.
+
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/lib/
+-rw-r--r-- root/root    661520 2014-04-28 18:36 ./usr/lib/libcapnp-rpc-0.4.1.so
+-rw-r--r-- root/root    178216 2014-04-28 18:36 ./usr/lib/libkj-0.4.1.so
+-rw-r--r-- root/root    223264 2014-04-28 18:36 ./usr/lib/libkj-async-0.4.1.so
+-rw-r--r-- root/root    501696 2014-04-28 18:36 ./usr/lib/libcapnp-0.4.1.so
+-rw-r--r-- root/root    522176 2014-04-28 18:36 ./usr/lib/libcapnpc-0.4.1.so
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/doc/libcapnp-0.4.1/
+-rw-r--r-- root/root      1399 2014-01-02 18:52 ./usr/share/doc/libcapnp-0.4.1/README.txt
+-rw-r--r-- root/root       371 2014-04-09 09:18 ./usr/share/doc/libcapnp-0.4.1/changelog.Debian.gz
+-rw-r--r-- root/root      4564 2013-12-15 20:01 ./usr/share/doc/libcapnp-0.4.1/copyright
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root       370 2014-04-09 09:18 ./usr/share/lintian/overrides/libcapnp-0.4.1
+
+
+libcapnp-dev_0.4.1-1_amd64.deb
+──────────────────────────────
+
+ new debian package, version 2.0.
+ size 647830 bytes: control archive=2609 bytes.
+     893 bytes,    23 lines      control              
+    3960 bytes,    64 lines      md5sums              
+ Package: libcapnp-dev
+ Source: capnproto
+ Version: 0.4.1-1
+ Architecture: amd64
+ Maintainer: Tom Lee <debian@tomlee.co>
+ Installed-Size: 5211
+ Depends: libcapnp-0.4.1 (= 0.4.1-1)
+ Section: libdevel
+ Priority: optional
+ Homepage: http://kentonv.github.io/capnproto/
+ Description: Cap'n Proto C++ library (development files)
+  Similar to Protocol Buffers, Cap'n Proto is an efficient means of
+  serializing structured data to be transferred across a network or
+  written to disk. Users write a Cap'n Proto definition file that
+  drives a code generator, which in turn emits C++ code for encoding &
+  decoding messages in the Cap'n Proto format.
+  .
+  In addition to being extremely fast, Cap'n Proto also smooths over some
+  of the rougher aspects of Protocol Buffers & introduces a number of new
+  features to boot.
+  .
+  This package contains the headers and static libraries needed for writing
+  C++ applications.
+
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/lib/pkgconfig/
+-rw-r--r-- root/root       261 2014-04-28 18:36 ./usr/lib/pkgconfig/capnp-rpc.pc
+-rw-r--r-- root/root       247 2014-04-28 18:36 ./usr/lib/pkgconfig/capnp.pc
+-rw-r--r-- root/root   1534808 2014-04-28 18:36 ./usr/lib/libcapnp-rpc.a
+-rw-r--r-- root/root    420144 2014-04-28 18:36 ./usr/lib/libkj-async.a
+-rw-r--r-- root/root    887302 2014-04-28 18:36 ./usr/lib/libcapnp.a
+-rw-r--r-- root/root    333044 2014-04-28 18:36 ./usr/lib/libkj.a
+-rw-r--r-- root/root    989056 2014-04-28 18:36 ./usr/lib/libcapnpc.a
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/include/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/include/capnp/
+-rw-r--r-- root/root     14869 2014-04-28 18:36 ./usr/include/capnp/any.h
+-rw-r--r-- root/root     17486 2014-04-28 18:36 ./usr/include/capnp/rpc.h
+-rw-r--r-- root/root      2154 2014-04-28 18:36 ./usr/include/capnp/pretty-print.h
+-rw-r--r-- root/root      8753 2014-04-28 18:36 ./usr/include/capnp/endian.h
+-rw-r--r-- root/root      8497 2014-04-28 18:36 ./usr/include/capnp/schema-parser.h
+-rw-r--r-- root/root      5295 2014-04-28 18:36 ./usr/include/capnp/serialize-packed.h
+-rw-r--r-- root/root      3543 2014-04-28 18:36 ./usr/include/capnp/rpc-prelude.h
+-rw-r--r-- root/root     19435 2014-04-28 18:36 ./usr/include/capnp/list.h
+-rw-r--r-- root/root      5041 2014-04-28 18:36 ./usr/include/capnp/rpc-twoparty.h
+-rw-r--r-- root/root     13201 2014-04-28 18:36 ./usr/include/capnp/schema.capnp
+-rw-r--r-- root/root      5934 2014-04-28 18:36 ./usr/include/capnp/pointer-helpers.h
+-rw-r--r-- root/root     13505 2014-04-28 18:36 ./usr/include/capnp/common.h
+-rw-r--r-- root/root     42017 2014-04-28 18:36 ./usr/include/capnp/layout.h
+-rw-r--r-- root/root      8311 2014-04-28 18:36 ./usr/include/capnp/blob.h
+-rw-r--r-- root/root      9216 2014-04-28 18:36 ./usr/include/capnp/ez-rpc.h
+-rw-r--r-- root/root      7478 2014-04-28 18:36 ./usr/include/capnp/schema-loader.h
+-rw-r--r-- root/root    186341 2014-04-28 18:36 ./usr/include/capnp/rpc.capnp.h
+-rw-r--r-- root/root    194204 2014-04-28 18:36 ./usr/include/capnp/schema.capnp.h
+-rw-r--r-- root/root      1047 2014-04-28 18:36 ./usr/include/capnp/c++.capnp.h
+-rw-r--r-- root/root      2873 2014-04-28 18:36 ./usr/include/capnp/serialize-async.h
+-rw-r--r-- root/root      7496 2014-04-28 18:36 ./usr/include/capnp/serialize.h
+-rw-r--r-- root/root     11045 2014-04-28 18:36 ./usr/include/capnp/orphan.h
+-rw-r--r-- root/root     21129 2014-04-28 18:36 ./usr/include/capnp/message.h
+-rw-r--r-- root/root      1451 2014-04-28 18:36 ./usr/include/capnp/c++.capnp
+-rw-r--r-- root/root     57535 2014-04-28 18:36 ./usr/include/capnp/dynamic.h
+-rw-r--r-- root/root     23174 2014-04-28 18:36 ./usr/include/capnp/schema.h
+-rw-r--r-- root/root     20435 2014-04-28 18:36 ./usr/include/capnp/rpc-twoparty.capnp.h
+-rw-r--r-- root/root     10072 2014-04-28 18:36 ./usr/include/capnp/generated-header-support.h
+-rw-r--r-- root/root     28445 2014-04-28 18:36 ./usr/include/capnp/capability.h
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/include/kj/
+-rw-r--r-- root/root     19415 2014-04-28 18:36 ./usr/include/kj/string.h
+-rw-r--r-- root/root     14019 2014-04-28 18:36 ./usr/include/kj/async-io.h
+-rw-r--r-- root/root      4542 2014-04-28 18:36 ./usr/include/kj/refcount.h
+-rw-r--r-- root/root      4714 2014-04-28 18:36 ./usr/include/kj/threadlocal.h
+-rw-r--r-- root/root     15213 2014-04-28 18:36 ./usr/include/kj/debug.h
+-rw-r--r-- root/root     15542 2014-04-28 18:36 ./usr/include/kj/tuple.h
+-rw-r--r-- root/root     11796 2014-04-28 18:36 ./usr/include/kj/io.h
+-rw-r--r-- root/root     27627 2014-04-28 18:36 ./usr/include/kj/async-inl.h
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/include/kj/parse/
+-rw-r--r-- root/root     11236 2014-04-28 18:36 ./usr/include/kj/parse/char.h
+-rw-r--r-- root/root     25075 2014-04-28 18:36 ./usr/include/kj/parse/common.h
+-rw-r--r-- root/root     31405 2014-04-28 18:36 ./usr/include/kj/async.h
+-rw-r--r-- root/root      4451 2014-04-28 18:36 ./usr/include/kj/vector.h
+-rw-r--r-- root/root     11249 2014-04-28 18:36 ./usr/include/kj/exception.h
+-rw-r--r-- root/root      6200 2014-04-28 18:36 ./usr/include/kj/async-prelude.h
+-rw-r--r-- root/root     15786 2014-04-28 18:36 ./usr/include/kj/units.h
+-rw-r--r-- root/root      8272 2014-04-28 18:36 ./usr/include/kj/string-tree.h
+-rw-r--r-- root/root      9351 2014-04-28 18:36 ./usr/include/kj/function.h
+-rw-r--r-- root/root     13156 2014-04-28 18:36 ./usr/include/kj/memory.h
+-rw-r--r-- root/root      8415 2014-04-28 18:36 ./usr/include/kj/arena.h
+-rw-r--r-- root/root     23450 2014-04-28 18:36 ./usr/include/kj/array.h
+-rw-r--r-- root/root     41422 2014-04-28 18:36 ./usr/include/kj/common.h
+-rw-r--r-- root/root     11922 2014-04-28 18:36 ./usr/include/kj/mutex.h
+-rw-r--r-- root/root      2260 2014-04-28 18:36 ./usr/include/kj/thread.h
+-rw-r--r-- root/root     19876 2014-04-28 18:36 ./usr/include/kj/main.h
+-rw-r--r-- root/root      4943 2014-04-28 18:36 ./usr/include/kj/one-of.h
+-rw-r--r-- root/root      5008 2014-04-28 18:36 ./usr/include/kj/async-unix.h
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/doc/libcapnp-dev/
+-rw-r--r-- root/root       371 2014-04-09 09:18 ./usr/share/doc/libcapnp-dev/changelog.Debian.gz
+-rw-r--r-- root/root      4564 2013-12-15 20:01 ./usr/share/doc/libcapnp-dev/copyright
+lrwxrwxrwx root/root         0 2014-04-28 18:36 ./usr/lib/libcapnpc.so -> libcapnpc-0.4.1.so
+lrwxrwxrwx root/root         0 2014-04-28 18:36 ./usr/lib/libkj.so -> libkj-0.4.1.so
+lrwxrwxrwx root/root         0 2014-04-28 18:36 ./usr/lib/libcapnp.so -> libcapnp-0.4.1.so
+lrwxrwxrwx root/root         0 2014-04-28 18:36 ./usr/lib/libcapnp-rpc.so -> libcapnp-rpc-0.4.1.so
+lrwxrwxrwx root/root         0 2014-04-28 18:36 ./usr/lib/libkj-async.so -> libkj-async-0.4.1.so
+
+
+capnproto_0.4.1-1_amd64.deb
+───────────────────────────
+
+ new debian package, version 2.0.
+ size 173648 bytes: control archive=1064 bytes.
+    1043 bytes,    23 lines      control              
+     438 bytes,     7 lines      md5sums              
+ Package: capnproto
+ Version: 0.4.1-1
+ Architecture: amd64
+ Maintainer: Tom Lee <debian@tomlee.co>
+ Installed-Size: 842
+ Depends: libc6 (>= 2.14), libcapnp-0.4.1 (= 0.4.1-1), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.8)
+ Section: devel
+ Priority: optional
+ Homepage: http://kentonv.github.io/capnproto/
+ Description: tool for working with the Cap'n Proto data interchange format
+  Similar to Protocol Buffers, Cap'n Proto is an efficient means of
+  serializing structured data to be transferred across a network or
+  written to disk. Users write a Cap'n Proto definition file that
+  drives a code generator, which in turn emits C++ code for encoding &
+  decoding messages in the Cap'n Proto format.
+  .
+  In addition to being extremely fast, Cap'n Proto also smooths over some
+  of the rougher aspects of Protocol Buffers & introduces a number of new
+  features to boot.
+  .
+  This package contains a small suite of tools for developing & maintaining
+  your Cap'n Proto schema files, including a code generator for compiling
+  your schema files to supported languages.
+
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/bin/
+-rwxr-xr-x root/root    153696 2014-04-28 18:36 ./usr/bin/capnp
+-rwxr-xr-x root/root    133216 2014-04-28 18:36 ./usr/bin/capnpc-capnp
+-rwxr-xr-x root/root    522336 2014-04-28 18:36 ./usr/bin/capnpc-c++
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/man/man1/
+-rw-r--r-- root/root      2210 2014-04-28 18:36 ./usr/share/man/man1/capnp.1.gz
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/doc/capnproto/
+-rw-r--r-- root/root       371 2014-04-09 09:18 ./usr/share/doc/capnproto/changelog.Debian.gz
+-rw-r--r-- root/root      4564 2013-12-15 20:01 ./usr/share/doc/capnproto/copyright
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-04-28 18:36 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root        63 2013-12-15 20:01 ./usr/share/lintian/overrides/capnproto
+lrwxrwxrwx root/root         0 2014-04-28 18:36 ./usr/bin/capnpc -> capnp
+lrwxrwxrwx root/root         0 2014-04-28 18:36 ./usr/share/man/man1/capnpc-c++.1.gz -> capnp.1.gz
+lrwxrwxrwx root/root         0 2014-04-28 18:36 ./usr/share/man/man1/capnpc.1.gz -> capnp.1.gz
+lrwxrwxrwx root/root         0 2014-04-28 18:36 ./usr/share/man/man1/capnpc-capnp.1.gz -> capnp.1.gz
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 458200
+Build-Time: 197
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 18
+Job: capnproto_0.4.1-1.dsc
+Machine Architecture: amd64
+Package: capnproto
+Package-Time: 220
+Source-Version: 0.4.1-1
+Space: 458200
+Status: successful
+Version: 0.4.1-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-1836
+Build needed 00:03:40, 458200k disc space

@@ -1,0 +1,1146 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ libgooglepinyin 0.1.2-1 (amd64)                            27 Apr 2014 19:23 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: libgooglepinyin
+Version: 0.1.2-1
+Source Version: 0.1.2-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/libgooglepinyin-_tr4jk/libgooglepinyin-0.1.2' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/libgooglepinyin-_tr4jk' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-52b510f2-ed6b-4846-8201-3f093a5e1809' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+libgooglepinyin_0.1.2-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-_o575o/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8.1.3~), cmake
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 8.1.3~), cmake
+dpkg-deb: building package `sbuild-build-depends-libgooglepinyin-dummy' in `/«BUILDDIR»/resolver-4DcjQe/apt_archive/sbuild-build-depends-libgooglepinyin-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install libgooglepinyin build dependencies (apt-based resolver)              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils cmake cmake-data debhelper file gettext gettext-base groff-base
+  intltool-debian libarchive13 libasprintf0c2 libcroco3 libcurl3 libexpat1
+  libgcrypt11 libglib2.0-0 libgnutls26 libgpg-error0 libgssapi-krb5-2
+  libhogweed2 libidn11 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+  libldap-2.4-2 liblzo2-2 libmagic1 libnettle4 libp11-kit0 libpipeline1
+  libprocps3 librtmp1 libsasl2-2 libsasl2-modules-db libssh2-1 libssl1.0.0
+  libtasn1-6 libunistring0 libxml2 man-db po-debconf procps
+Suggested packages:
+  wamerican wordlist whois vacation codeblocks eclipse dh-make gettext-doc
+  groff lrzip rng-tools krb5-doc krb5-user less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  ca-certificates libglib2.0-data shared-mime-info krb5-locales
+  libsasl2-modules xml-core libmail-sendmail-perl psmisc
+The following NEW packages will be installed:
+  bsdmainutils cmake cmake-data debhelper file gettext gettext-base groff-base
+  intltool-debian libarchive13 libasprintf0c2 libcroco3 libcurl3 libexpat1
+  libgcrypt11 libglib2.0-0 libgnutls26 libgpg-error0 libgssapi-krb5-2
+  libhogweed2 libidn11 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+  libldap-2.4-2 liblzo2-2 libmagic1 libnettle4 libp11-kit0 libpipeline1
+  libprocps3 librtmp1 libsasl2-2 libsasl2-modules-db libssh2-1 libssl1.0.0
+  libtasn1-6 libunistring0 libxml2 man-db po-debconf procps
+  sbuild-build-depends-libgooglepinyin-dummy
+0 upgraded, 44 newly installed, 0 to remove and 8 not upgraded.
+Need to get 17.1 MB/17.1 MB of archives.
+After this operation, 55.9 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libprocps3 amd64 1:3.3.9-4 [55.6 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main libssl1.0.0 amd64 1.0.1g-3 [1012 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libgpg-error0 amd64 1.12-0.2 [56.5 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libgcrypt11 amd64 1.5.3-4 [250 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libp11-kit0 amd64 0.20.2-5 [81.1 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libtasn1-6 amd64 3.4-3 [48.8 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libgnutls26 amd64 2.12.23-14 [530 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libkeyutils1 amd64 1.5.6-1 [8758 B]
+Get:14 http://debian.proxad.net/debian/ sid/main libkrb5support0 amd64 1.12.1+dfsg-1 [56.3 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libk5crypto3 amd64 1.12.1+dfsg-1 [109 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libkrb5-3 amd64 1.12.1+dfsg-1 [296 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libgssapi-krb5-2 amd64 1.12.1+dfsg-1 [143 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libidn11 amd64 1.28-2 [158 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libsasl2-modules-db amd64 2.1.26.dfsg1-9 [66.4 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libsasl2-2 amd64 2.1.26.dfsg1-9 [103 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libldap-2.4-2 amd64 2.4.39-1 [212 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main liblzo2-2 amd64 2.06-1.2 [51.2 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main libnettle4 amd64 2.7.1-2 [172 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libarchive13 amd64 3.1.2-8 [265 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libhogweed2 amd64 2.7.1-2 [125 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main librtmp1 amd64 2.4+20131018.git79459a2-2 [58.6 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main libssh2-1 amd64 1.4.3-2 [124 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main libcurl3 amd64 7.36.0-1+b1 [253 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main libexpat1 amd64 2.1.0-4 [138 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main procps amd64 1:3.3.9-4 [233 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:37 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main cmake-data all 2.8.12.1-1.2 [1285 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main cmake amd64 2.8.12.1-1.2 [2638 kB]
+Get:40 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:41 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:42 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:43 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 17.1 MB in 2s (6937 kB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libprocps3:amd64.
+Preparing to unpack .../libprocps3_1%3a3.3.9-4_amd64.deb ...
+Unpacking libprocps3:amd64 (1:3.3.9-4) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.1g-3_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1g-3) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libgpg-error0:amd64.
+Preparing to unpack .../libgpg-error0_1.12-0.2_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.12-0.2) ...
+Selecting previously unselected package libgcrypt11:amd64.
+Preparing to unpack .../libgcrypt11_1.5.3-4_amd64.deb ...
+Unpacking libgcrypt11:amd64 (1.5.3-4) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../libp11-kit0_0.20.2-5_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.20.2-5) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../libtasn1-6_3.4-3_amd64.deb ...
+Unpacking libtasn1-6:amd64 (3.4-3) ...
+Selecting previously unselected package libgnutls26:amd64.
+Preparing to unpack .../libgnutls26_2.12.23-14_amd64.deb ...
+Unpacking libgnutls26:amd64 (2.12.23-14) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../libkeyutils1_1.5.6-1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.6-1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../libkrb5support0_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../libk5crypto3_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../libkrb5-3_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../libgssapi-krb5-2_1.12.1+dfsg-1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.12.1+dfsg-1) ...
+Selecting previously unselected package libidn11:amd64.
+Preparing to unpack .../libidn11_1.28-2_amd64.deb ...
+Unpacking libidn11:amd64 (1.28-2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-9_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.26.dfsg1-9) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../libsasl2-2_2.1.26.dfsg1-9_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.26.dfsg1-9) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../libldap-2.4-2_2.4.39-1_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.39-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package liblzo2-2:amd64.
+Preparing to unpack .../liblzo2-2_2.06-1.2_amd64.deb ...
+Unpacking liblzo2-2:amd64 (2.06-1.2) ...
+Selecting previously unselected package libnettle4:amd64.
+Preparing to unpack .../libnettle4_2.7.1-2_amd64.deb ...
+Unpacking libnettle4:amd64 (2.7.1-2) ...
+Selecting previously unselected package libarchive13:amd64.
+Preparing to unpack .../libarchive13_3.1.2-8_amd64.deb ...
+Unpacking libarchive13:amd64 (3.1.2-8) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libhogweed2:amd64.
+Preparing to unpack .../libhogweed2_2.7.1-2_amd64.deb ...
+Unpacking libhogweed2:amd64 (2.7.1-2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../librtmp1_2.4+20131018.git79459a2-2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20131018.git79459a2-2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../libssh2-1_1.4.3-2_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.4.3-2) ...
+Selecting previously unselected package libcurl3:amd64.
+Preparing to unpack .../libcurl3_7.36.0-1+b1_amd64.deb ...
+Unpacking libcurl3:amd64 (7.36.0-1+b1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-4) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package procps.
+Preparing to unpack .../procps_1%3a3.3.9-4_amd64.deb ...
+Unpacking procps (1:3.3.9-4) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../cmake-data_2.8.12.1-1.2_all.deb ...
+Unpacking cmake-data (2.8.12.1-1.2) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_2.8.12.1-1.2_amd64.deb ...
+Unpacking cmake (2.8.12.1-1.2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package sbuild-build-depends-libgooglepinyin-dummy.
+Preparing to unpack .../sbuild-build-depends-libgooglepinyin-dummy.deb ...
+Unpacking sbuild-build-depends-libgooglepinyin-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libprocps3:amd64 (1:3.3.9-4) ...
+Setting up libssl1.0.0:amd64 (1.0.1g-3) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libgpg-error0:amd64 (1.12-0.2) ...
+Setting up libgcrypt11:amd64 (1.5.3-4) ...
+Setting up libp11-kit0:amd64 (0.20.2-5) ...
+Setting up libtasn1-6:amd64 (3.4-3) ...
+Setting up libgnutls26:amd64 (2.12.23-14) ...
+Setting up libkeyutils1:amd64 (1.5.6-1) ...
+Setting up libkrb5support0:amd64 (1.12.1+dfsg-1) ...
+Setting up libk5crypto3:amd64 (1.12.1+dfsg-1) ...
+Setting up libkrb5-3:amd64 (1.12.1+dfsg-1) ...
+Setting up libgssapi-krb5-2:amd64 (1.12.1+dfsg-1) ...
+Setting up libidn11:amd64 (1.28-2) ...
+Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-9) ...
+Setting up libsasl2-2:amd64 (2.1.26.dfsg1-9) ...
+Setting up libldap-2.4-2:amd64 (2.4.39-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up liblzo2-2:amd64 (2.06-1.2) ...
+Setting up libnettle4:amd64 (2.7.1-2) ...
+Setting up libarchive13:amd64 (3.1.2-8) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libhogweed2:amd64 (2.7.1-2) ...
+Setting up librtmp1:amd64 (2.4+20131018.git79459a2-2) ...
+Setting up libssh2-1:amd64 (1.4.3-2) ...
+Setting up libcurl3:amd64 (7.36.0-1+b1) ...
+Setting up libexpat1:amd64 (2.1.0-4) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up procps (1:3.3.9-4) ...
+update-alternatives: using /usr/bin/w.procps to provide /usr/bin/w (w) in auto mode
+All runlevel operations denied by policy
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up cmake-data (2.8.12.1-1.2) ...
+Setting up cmake (2.8.12.1-1.2) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up sbuild-build-depends-libgooglepinyin-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 cmake_2.8.12.1-1.2 cmake-data_2.8.12.1-1.2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libarchive13_3.1.2-8 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libcurl3_7.36.0-1+b1 libdb5.3_5.3.28-3 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libexpat1_2.1.0-4 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgcrypt11_1.5.3-4 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp10_2:6.0.0+dfsg-2.2 libgnutls26_2.12.23-14 libgomp1_4.9.0-1 libgpg-error0_1.12-0.2 libgpm2_1.20.4-6.1 libgssapi-krb5-2_1.12.1+dfsg-1 libhogweed2_2.7.1-2 libidn11_1.28-2 libisl10_0.12.2-1 libitm1_4.9.0-1 libk5crypto3_1.12.1+dfsg-1 libkeyutils1_1.5.6-1 libkrb5-3_1.12.1+dfsg-1 libkrb5support0_1.12.1+dfsg-1 libldap-2.4-2_2.4.39-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 liblzo2-2_2.06-1.2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libnettle4_2.7.1-2 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libp11-kit0_0.20.2-5 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpipeline1_1.3.0-1 libprocps3_1:3.3.9-4 libquadmath0_4.9.0-1 libreadline6_6.3-6 librtmp1_2.4+20131018.git79459a2-2 libsasl2-2_2.1.26.dfsg1-9 libsasl2-modules-db_2.1.26.dfsg1-9 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libssh2-1_1.4.3-2 libssl1.0.0_1.0.1g-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtasn1-6_3.4-3 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 procps_1:3.3.9-4 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-libgooglepinyin-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Fri Feb  3 14:28:08 2012 UTC using RSA key ID EED3BC0D
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./libgooglepinyin_0.1.2-1.dsc
+dpkg-source: info: extracting libgooglepinyin in libgooglepinyin-0.1.2
+dpkg-source: info: unpacking libgooglepinyin_0.1.2.orig.tar.bz2
+dpkg-source: info: unpacking libgooglepinyin_0.1.2-1.debian.tar.gz
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-52b510f2-ed6b-4846-8201-3f093a5e1809
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package libgooglepinyin
+dpkg-buildpackage: source version 0.1.2-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Aron Xu <aron@debian.org>
+ dpkg-source --before-build libgooglepinyin-0.1.2
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b libgooglepinyin-0.1.2
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building libgooglepinyin using existing ./libgooglepinyin_0.1.2.orig.tar.bz2
+dpkg-source: info: building libgooglepinyin in libgooglepinyin_0.1.2-1.debian.tar.xz
+dpkg-source: info: building libgooglepinyin in libgooglepinyin_0.1.2-1.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_configure -- -DENABLE_STATIC=True -DLIB_INSTALL_DIR=\${prefix}/lib/x86_64-linux-gnu
+-- The C compiler identification is Clang 3.4.0
+-- The CXX compiler identification is Clang 3.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /«PKGBUILDDIR»/obj-x86_64-linux-gnu
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -H/«PKGBUILDDIR» -B/«PKGBUILDDIR»/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[2]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/googlepinyin.dir/build.make src/CMakeFiles/googlepinyin.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/CMakeFiles/googlepinyin.dir/DependInfo.cmake --color=
+Scanning dependencies of target googlepinyin
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/googlepinyin.dir/build.make src/CMakeFiles/googlepinyin.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 3
+[  2%] Building CXX object src/CMakeFiles/googlepinyin.dir/dictbuilder.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/dictbuilder.cpp.o -c /«PKGBUILDDIR»/src/dictbuilder.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 4
+[  5%] Building CXX object src/CMakeFiles/googlepinyin.dir/dictlist.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/dictlist.cpp.o -c /«PKGBUILDDIR»/src/dictlist.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 5
+[  8%] Building CXX object src/CMakeFiles/googlepinyin.dir/dicttrie.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/dicttrie.cpp.o -c /«PKGBUILDDIR»/src/dicttrie.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 6
+[ 11%] Building CXX object src/CMakeFiles/googlepinyin.dir/lpicache.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/lpicache.cpp.o -c /«PKGBUILDDIR»/src/lpicache.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 7
+[ 14%] Building CXX object src/CMakeFiles/googlepinyin.dir/matrixsearch.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/matrixsearch.cpp.o -c /«PKGBUILDDIR»/src/matrixsearch.cpp
+/«PKGBUILDDIR»/src/matrixsearch.cpp:1183:30: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+      printf("[%03d]%d    ", a, lpi_items_[a].psb);
+               ~~~~          ^
+               %03lu
+/«PKGBUILDDIR»/src/matrixsearch.cpp:1190:37: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    printf("--- lpi_total_ = %d\n", lpi_total_);
+                             ~~     ^~~~~~~~~~
+                             %lu
+/«PKGBUILDDIR»/src/matrixsearch.cpp:1490:39: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+      printf("--- lpi_total_ = %d\n", lpi_total_);
+                               ~~     ^~~~~~~~~~
+                               %lu
+/«PKGBUILDDIR»/src/matrixsearch.cpp:1660:30: warning: format specifies type 'int' but the argument has type 'LemmaIdType' (aka 'unsigned long') [-Wformat]
+              mtrx_nd->step, mtrx_nd->id, mtrx_nd->score);
+                             ^~~~~~~~~~~
+4 warnings generated.
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 8
+[ 17%] Building CXX object src/CMakeFiles/googlepinyin.dir/mystdlib.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/mystdlib.cpp.o -c /«PKGBUILDDIR»/src/mystdlib.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 9
+[ 20%] Building CXX object src/CMakeFiles/googlepinyin.dir/ngram.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/ngram.cpp.o -c /«PKGBUILDDIR»/src/ngram.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 10
+[ 23%] Building CXX object src/CMakeFiles/googlepinyin.dir/pinyinime.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/pinyinime.cpp.o -c /«PKGBUILDDIR»/src/pinyinime.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 11
+[ 26%] Building CXX object src/CMakeFiles/googlepinyin.dir/searchutility.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/searchutility.cpp.o -c /«PKGBUILDDIR»/src/searchutility.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 12
+[ 29%] Building CXX object src/CMakeFiles/googlepinyin.dir/spellingtable.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/spellingtable.cpp.o -c /«PKGBUILDDIR»/src/spellingtable.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 13
+[ 32%] Building CXX object src/CMakeFiles/googlepinyin.dir/spellingtrie.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/spellingtrie.cpp.o -c /«PKGBUILDDIR»/src/spellingtrie.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 14
+[ 35%] Building CXX object src/CMakeFiles/googlepinyin.dir/splparser.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/splparser.cpp.o -c /«PKGBUILDDIR»/src/splparser.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 15
+[ 38%] Building CXX object src/CMakeFiles/googlepinyin.dir/sync.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/sync.cpp.o -c /«PKGBUILDDIR»/src/sync.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 16
+[ 41%] Building CXX object src/CMakeFiles/googlepinyin.dir/userdict.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/userdict.cpp.o -c /«PKGBUILDDIR»/src/userdict.cpp
+/«PKGBUILDDIR»/src/userdict.cpp:1270:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  ftruncate(fd, cur);
+  ^~~~~~~~~ ~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1285:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, syncs_, dict_info_.sync_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1286:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, &dict_info_, sizeof(dict_info_));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1294:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, offsets_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1296:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, predicts_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1298:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, scores_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1300:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, syncs_, dict_info_.sync_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1302:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, &dict_info_, sizeof(dict_info_));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1314:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, scores_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1316:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, syncs_, dict_info_.sync_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1318:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, &dict_info_, sizeof(dict_info_));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1331:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, lemmas_ + dict_info_.lemma_size - need_write, need_write);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1333:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, offsets_,  dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1335:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, predicts_,  dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1337:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, scores_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1339:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, syncs_, dict_info_.sync_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1341:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, &dict_info_, sizeof(dict_info_));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1351:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, lemmas_, dict_info_.lemma_size);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1352:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, offsets_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1354:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, predicts_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1356:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, scores_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1358:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, syncs_, dict_info_.sync_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1360:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, &dict_info_, sizeof(dict_info_));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+23 warnings generated.
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 17
+[ 44%] Building CXX object src/CMakeFiles/googlepinyin.dir/utf16char.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/utf16char.cpp.o -c /«PKGBUILDDIR»/src/utf16char.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 18
+[ 47%] Building CXX object src/CMakeFiles/googlepinyin.dir/utf16reader.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++   -Dgooglepinyin_EXPORTS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -fPIC   -o CMakeFiles/googlepinyin.dir/utf16reader.cpp.o -c /«PKGBUILDDIR»/src/utf16reader.cpp
+Linking CXX shared library libgooglepinyin.so
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/googlepinyin.dir/link.txt --verbose=1
+/usr/bin/c++  -fPIC -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2  -Wl,--no-undefined  -Wl,--no-undefined  -shared -Wl,-soname,libgooglepinyin.so.0 -o libgooglepinyin.so.0.1.0 CMakeFiles/googlepinyin.dir/dictbuilder.cpp.o CMakeFiles/googlepinyin.dir/dictlist.cpp.o CMakeFiles/googlepinyin.dir/dicttrie.cpp.o CMakeFiles/googlepinyin.dir/lpicache.cpp.o CMakeFiles/googlepinyin.dir/matrixsearch.cpp.o CMakeFiles/googlepinyin.dir/mystdlib.cpp.o CMakeFiles/googlepinyin.dir/ngram.cpp.o CMakeFiles/googlepinyin.dir/pinyinime.cpp.o CMakeFiles/googlepinyin.dir/searchutility.cpp.o CMakeFiles/googlepinyin.dir/spellingtable.cpp.o CMakeFiles/googlepinyin.dir/spellingtrie.cpp.o CMakeFiles/googlepinyin.dir/splparser.cpp.o CMakeFiles/googlepinyin.dir/sync.cpp.o CMakeFiles/googlepinyin.dir/userdict.cpp.o CMakeFiles/googlepinyin.dir/utf16char.cpp.o CMakeFiles/googlepinyin.dir/utf16reader.cpp.o -lpthread 
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/cmake -E cmake_symlink_library libgooglepinyin.so.0.1.0 libgooglepinyin.so.0 libgooglepinyin.so
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+[ 47%] Built target googlepinyin
+make -f src/CMakeFiles/googlepinyin-static.dir/build.make src/CMakeFiles/googlepinyin-static.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/CMakeFiles/googlepinyin-static.dir/DependInfo.cmake --color=
+Scanning dependencies of target googlepinyin-static
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/googlepinyin-static.dir/build.make src/CMakeFiles/googlepinyin-static.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 19
+[ 50%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/dictbuilder.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/dictbuilder.cpp.o -c /«PKGBUILDDIR»/src/dictbuilder.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 20
+[ 52%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/dictlist.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/dictlist.cpp.o -c /«PKGBUILDDIR»/src/dictlist.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 21
+[ 55%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/dicttrie.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/dicttrie.cpp.o -c /«PKGBUILDDIR»/src/dicttrie.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 22
+[ 58%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/lpicache.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/lpicache.cpp.o -c /«PKGBUILDDIR»/src/lpicache.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 23
+[ 61%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/matrixsearch.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/matrixsearch.cpp.o -c /«PKGBUILDDIR»/src/matrixsearch.cpp
+/«PKGBUILDDIR»/src/matrixsearch.cpp:1183:30: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+      printf("[%03d]%d    ", a, lpi_items_[a].psb);
+               ~~~~          ^
+               %03lu
+/«PKGBUILDDIR»/src/matrixsearch.cpp:1190:37: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    printf("--- lpi_total_ = %d\n", lpi_total_);
+                             ~~     ^~~~~~~~~~
+                             %lu
+/«PKGBUILDDIR»/src/matrixsearch.cpp:1490:39: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+      printf("--- lpi_total_ = %d\n", lpi_total_);
+                               ~~     ^~~~~~~~~~
+                               %lu
+/«PKGBUILDDIR»/src/matrixsearch.cpp:1660:30: warning: format specifies type 'int' but the argument has type 'LemmaIdType' (aka 'unsigned long') [-Wformat]
+              mtrx_nd->step, mtrx_nd->id, mtrx_nd->score);
+                             ^~~~~~~~~~~
+4 warnings generated.
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 24
+[ 64%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/mystdlib.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/mystdlib.cpp.o -c /«PKGBUILDDIR»/src/mystdlib.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 25
+[ 67%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/ngram.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/ngram.cpp.o -c /«PKGBUILDDIR»/src/ngram.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 26
+[ 70%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/pinyinime.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/pinyinime.cpp.o -c /«PKGBUILDDIR»/src/pinyinime.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 27
+[ 73%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/searchutility.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/searchutility.cpp.o -c /«PKGBUILDDIR»/src/searchutility.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 28
+[ 76%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/spellingtable.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/spellingtable.cpp.o -c /«PKGBUILDDIR»/src/spellingtable.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 29
+[ 79%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/spellingtrie.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/spellingtrie.cpp.o -c /«PKGBUILDDIR»/src/spellingtrie.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 30
+[ 82%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/splparser.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/splparser.cpp.o -c /«PKGBUILDDIR»/src/splparser.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 31
+[ 85%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/sync.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/sync.cpp.o -c /«PKGBUILDDIR»/src/sync.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 32
+[ 88%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/userdict.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/userdict.cpp.o -c /«PKGBUILDDIR»/src/userdict.cpp
+/«PKGBUILDDIR»/src/userdict.cpp:1270:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  ftruncate(fd, cur);
+  ^~~~~~~~~ ~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1285:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, syncs_, dict_info_.sync_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1286:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, &dict_info_, sizeof(dict_info_));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1294:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, offsets_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1296:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, predicts_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1298:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, scores_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1300:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, syncs_, dict_info_.sync_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1302:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, &dict_info_, sizeof(dict_info_));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1314:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, scores_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1316:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, syncs_, dict_info_.sync_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1318:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, &dict_info_, sizeof(dict_info_));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1331:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, lemmas_ + dict_info_.lemma_size - need_write, need_write);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1333:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, offsets_,  dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1335:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, predicts_,  dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1337:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, scores_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1339:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, syncs_, dict_info_.sync_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1341:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, &dict_info_, sizeof(dict_info_));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1351:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, lemmas_, dict_info_.lemma_size);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1352:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, offsets_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1354:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, predicts_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1356:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, scores_, dict_info_.lemma_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1358:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, syncs_, dict_info_.sync_count << 2);
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/«PKGBUILDDIR»/src/userdict.cpp:1360:3: warning: ignoring return value of function declared with warn_unused_result attribute [-Wunused-result]
+  write(fd, &dict_info_, sizeof(dict_info_));
+  ^~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+23 warnings generated.
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 33
+[ 91%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/utf16char.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/utf16char.cpp.o -c /«PKGBUILDDIR»/src/utf16char.cpp
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 34
+[ 94%] Building CXX object src/CMakeFiles/googlepinyin-static.dir/utf16reader.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/googlepinyin-static.dir/utf16reader.cpp.o -c /«PKGBUILDDIR»/src/utf16reader.cpp
+Linking CXX static library libgooglepinyin.a
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/cmake -P CMakeFiles/googlepinyin-static.dir/cmake_clean_target.cmake
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/googlepinyin-static.dir/link.txt --verbose=1
+/usr/bin/ar cr libgooglepinyin.a  CMakeFiles/googlepinyin-static.dir/dictbuilder.cpp.o CMakeFiles/googlepinyin-static.dir/dictlist.cpp.o CMakeFiles/googlepinyin-static.dir/dicttrie.cpp.o CMakeFiles/googlepinyin-static.dir/lpicache.cpp.o CMakeFiles/googlepinyin-static.dir/matrixsearch.cpp.o CMakeFiles/googlepinyin-static.dir/mystdlib.cpp.o CMakeFiles/googlepinyin-static.dir/ngram.cpp.o CMakeFiles/googlepinyin-static.dir/pinyinime.cpp.o CMakeFiles/googlepinyin-static.dir/searchutility.cpp.o CMakeFiles/googlepinyin-static.dir/spellingtable.cpp.o CMakeFiles/googlepinyin-static.dir/spellingtrie.cpp.o CMakeFiles/googlepinyin-static.dir/splparser.cpp.o CMakeFiles/googlepinyin-static.dir/sync.cpp.o CMakeFiles/googlepinyin-static.dir/userdict.cpp.o CMakeFiles/googlepinyin-static.dir/utf16char.cpp.o CMakeFiles/googlepinyin-static.dir/utf16reader.cpp.o
+/usr/bin/ranlib libgooglepinyin.a
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
+[ 94%] Built target googlepinyin-static
+make -f tools/CMakeFiles/dictbuilder.dir/build.make tools/CMakeFiles/dictbuilder.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/CMakeFiles/dictbuilder.dir/DependInfo.cmake --color=
+Scanning dependencies of target dictbuilder
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/CMakeFiles/dictbuilder.dir/build.make tools/CMakeFiles/dictbuilder.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 2
+[ 97%] Building CXX object tools/CMakeFiles/dictbuilder.dir/pinyinime_dictbuilder.cpp.o
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools && /usr/bin/c++    -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -o CMakeFiles/dictbuilder.dir/pinyinime_dictbuilder.cpp.o -c /«PKGBUILDDIR»/tools/pinyinime_dictbuilder.cpp
+Linking CXX executable dictbuilder
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools && /usr/bin/cmake -E cmake_link_script CMakeFiles/dictbuilder.dir/link.txt --verbose=1
+/usr/bin/c++   -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -D_FORTIFY_SOURCE=2    -Wl,-z,relro -Wl,--as-needed CMakeFiles/dictbuilder.dir/pinyinime_dictbuilder.cpp.o  -o dictbuilder -rdynamic ../src/libgooglepinyin.so.0.1.0 -lpthread -Wl,-rpath,/«PKGBUILDDIR»/obj-x86_64-linux-gnu/src 
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  2
+[ 97%] Built target dictbuilder
+make -f data/CMakeFiles/datafile.dir/build.make data/CMakeFiles/datafile.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/data /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/CMakeFiles/datafile.dir/DependInfo.cmake --color=
+Scanning dependencies of target datafile
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f data/CMakeFiles/datafile.dir/build.make data/CMakeFiles/datafile.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 1
+[100%] Generating dict_pinyin.dat
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data && ../tools/dictbuilder /«PKGBUILDDIR»/data/rawdict_utf16_65105_freq.txt /«PKGBUILDDIR»/data/valid_utf16.txt
+read successfully, lemma num: 65101
+spelling tree construct successfully.
+
+------------STAT INFO-------------
+[root is layer -1]
+.. max_sonbuf_len per layer(from layer 0):
+   413, 259, 55, 6, 0, 0, 0, 0, -, 
+.. max_homobuf_len per layer:
+   -, 312, 19, 2, 2, 0, 0, 0, 0, 
+.. total_son_num per layer:
+   413, 26183, 13370, 6619, 0, 0, 0, 0, -, 
+.. total_node_hasson per layer:
+   1, 397, 6901, 6269, 0, 0, 0, 0, 0, 
+.. total_sonbuf_num per layer:
+   1, 397, 6901, 6269, 0, 0, 0, 0, -, 
+.. total_sonbuf_allnoson per layer:
+   0, 31, 3862, 6269, 0, 0, 0, 0, -, 
+.. total_node_in_sonbuf_allnoson per layer:
+   0, 243, 4707, 6619, 0, 0, 0, 0, -, 
+.. total_homo_num per layer:
+   0, 17033, 34070, 7372, 6626, 0, 0, 0, 0, 
+.. son buf allocation number with only 1 son: 10732
+.. son buf allocation number with more than 1 son: 2836
+.. total lemma node number: 46586
+Build dictionary successfully.
+Save dictionary successfully.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  1
+[100%] Built target datafile
+make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 0
+make[1]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -H/«PKGBUILDDIR» -B/«PKGBUILDDIR»/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[2]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/googlepinyin.dir/build.make src/CMakeFiles/googlepinyin.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/CMakeFiles/googlepinyin.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/googlepinyin.dir/build.make src/CMakeFiles/googlepinyin.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `src/CMakeFiles/googlepinyin.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+[ 47%] Built target googlepinyin
+make -f src/CMakeFiles/googlepinyin-static.dir/build.make src/CMakeFiles/googlepinyin-static.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src /«PKGBUILDDIR»/obj-x86_64-linux-gnu/src/CMakeFiles/googlepinyin-static.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f src/CMakeFiles/googlepinyin-static.dir/build.make src/CMakeFiles/googlepinyin-static.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `src/CMakeFiles/googlepinyin-static.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
+[ 94%] Built target googlepinyin-static
+make -f tools/CMakeFiles/dictbuilder.dir/build.make tools/CMakeFiles/dictbuilder.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/tools /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools /«PKGBUILDDIR»/obj-x86_64-linux-gnu/tools/CMakeFiles/dictbuilder.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f tools/CMakeFiles/dictbuilder.dir/build.make tools/CMakeFiles/dictbuilder.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `tools/CMakeFiles/dictbuilder.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  2
+[ 97%] Built target dictbuilder
+make -f data/CMakeFiles/datafile.dir/build.make data/CMakeFiles/datafile.dir/depend
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+cd /«PKGBUILDDIR»/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /«PKGBUILDDIR» /«PKGBUILDDIR»/data /«PKGBUILDDIR»/obj-x86_64-linux-gnu /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data /«PKGBUILDDIR»/obj-x86_64-linux-gnu/data/CMakeFiles/datafile.dir/DependInfo.cmake --color=
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make -f data/CMakeFiles/datafile.dir/build.make data/CMakeFiles/datafile.dir/build
+make[3]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[3]: Nothing to be done for `data/CMakeFiles/datafile.dir/build'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_report /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles  1
+[100%] Built target datafile
+make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /«PKGBUILDDIR»/obj-x86_64-linux-gnu/CMakeFiles 0
+make -f CMakeFiles/Makefile2 preinstall
+make[2]: Entering directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+make[2]: Nothing to be done for `preinstall'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr//lib/x86_64-linux-gnu/libgooglepinyin.a
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr//lib/x86_64-linux-gnu/libgooglepinyin.so.0.1.0
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr//lib/x86_64-linux-gnu/libgooglepinyin.so.0
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr//lib/x86_64-linux-gnu/libgooglepinyin.so
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/atomdictbase.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/dictbuilder.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/dictdef.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/dictlist.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/dicttrie.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/lpicache.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/matrixsearch.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/mystdlib.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/ngram.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/pinyinime.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/searchutility.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/spellingtable.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/spellingtrie.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/splparser.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/sync.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/userdict.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/utf16char.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr/include/googlepinyin/utf16reader.h
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr//lib/x86_64-linux-gnu/googlepinyin/data/dict_pinyin.dat
+-- Installing: /«PKGBUILDDIR»/debian/tmp/usr//lib/x86_64-linux-gnu/pkgconfig/googlepinyin.pc
+make[1]: Leaving directory `/«PKGBUILDDIR»/obj-x86_64-linux-gnu'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   debian/rules override_dh_strip
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_strip --dbg-package=libgooglepinyin0-dbg
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dpkg-gencontrol: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `libgooglepinyin0-dev' in `../libgooglepinyin0-dev_0.1.2-1_amd64.deb'.
+dpkg-deb: building package `libgooglepinyin0' in `../libgooglepinyin0_0.1.2-1_amd64.deb'.
+dpkg-deb: building package `libgooglepinyin0-dbg' in `../libgooglepinyin0-dbg_0.1.2-1_amd64.deb'.
+ dpkg-genchanges  >../libgooglepinyin_0.1.2-1_amd64.changes
+dpkg-genchanges: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build libgooglepinyin-0.1.2
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140427-1923
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libgooglepinyin_0.1.2-1_amd64.changes:
+──────────────────────────────────────
+
+Format: 1.8
+Date: Fri, 03 Feb 2012 21:41:29 +0800
+Source: libgooglepinyin
+Binary: libgooglepinyin0-dev libgooglepinyin0 libgooglepinyin0-dbg
+Architecture: source amd64
+Version: 0.1.2-1
+Distribution: sid
+Urgency: low
+Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+Changed-By: Aron Xu <aron@debian.org>
+Description: 
+ libgooglepinyin0 - Pinyin engine fork from Google Pinyin on Android
+ libgooglepinyin0-dbg - Pinyin engine fork from Google Pinyin on Android - debug symbols
+ libgooglepinyin0-dev - Pinyin engine fork from Google Pinyin on Android - development fi
+Changes: 
+ libgooglepinyin (0.1.2-1) unstable; urgency=low
+ .
+   * New upstream release.
+Checksums-Sha1: 
+ 7895dbfd2e02a2d230ca311b560ffa0cc4f460b3 1314 libgooglepinyin_0.1.2-1.dsc
+ b58a0b9a3a885031ad105da176ac0fdb2cfb7676 1348557 libgooglepinyin_0.1.2.orig.tar.bz2
+ 95d3637e94644b7d42fd51b4e8c8a235b4b92867 2128 libgooglepinyin_0.1.2-1.debian.tar.xz
+ b36f399408715851bc5fdd35d2f669bea0456833 25648 libgooglepinyin0-dev_0.1.2-1_amd64.deb
+ 89e3b56289e6787c8880f1ed4719e04f09a38c49 527848 libgooglepinyin0_0.1.2-1_amd64.deb
+ f586a4197d5f7a04d132d3347d428fce632b6798 106078 libgooglepinyin0-dbg_0.1.2-1_amd64.deb
+Checksums-Sha256: 
+ 0df8389f499af44ca45d013b1f65f4a7bd50e2f4832b89a68e0d0c5efaab07ee 1314 libgooglepinyin_0.1.2-1.dsc
+ 1a339ae45721a60b9fadd15e43c34b9bb27af3bb999c00ed0d88b4084cfd0637 1348557 libgooglepinyin_0.1.2.orig.tar.bz2
+ c32c08a853b9cf6a947ed330b156f8cce127b134232174ce14f5b7c46417d744 2128 libgooglepinyin_0.1.2-1.debian.tar.xz
+ 7fc18f930944a610aaebf168dd663c44e66cabc61cb7feac5373e29514e94fcd 25648 libgooglepinyin0-dev_0.1.2-1_amd64.deb
+ b08f3c47980efc250e4c94fe39f8f107627cc57637c1acd303e4f77ab3480e4e 527848 libgooglepinyin0_0.1.2-1_amd64.deb
+ 1deba36cecee37949a9ec0854d41a143dac8264a8ce57b10f13653b73cc211a8 106078 libgooglepinyin0-dbg_0.1.2-1_amd64.deb
+Files: 
+ 5dd56331f4a85d65d8f76e02c6ed0b04 25648 libdevel optional libgooglepinyin0-dev_0.1.2-1_amd64.deb
+ e79a06d79a44df3be2fe7bca87784639 527848 libs optional libgooglepinyin0_0.1.2-1_amd64.deb
+ d00ac5b8b43034d0e1b8dc10fff1851d 106078 debug extra libgooglepinyin0-dbg_0.1.2-1_amd64.deb
+ c935d09c9f74ce9f06832b1a9c9e6a87 1314 libs optional libgooglepinyin_0.1.2-1.dsc
+ d697aba08fdc0fe15c9d7b6096ca3b28 1348557 libs optional libgooglepinyin_0.1.2.orig.tar.bz2
+ 8ea113815755d7d7bba96d073e88e3ed 2128 libs optional libgooglepinyin_0.1.2-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+libgooglepinyin0-dev_0.1.2-1_amd64.deb
+──────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 25648 bytes: control archive=1243 bytes.
+     638 bytes,    17 lines      control              
+    1536 bytes,    21 lines      md5sums              
+ Package: libgooglepinyin0-dev
+ Source: libgooglepinyin
+ Version: 0.1.2-1
+ Architecture: amd64
+ Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+ Installed-Size: 150
+ Depends: libgooglepinyin0 (= 0.1.2-1)
+ Conflicts: libgooglepinyin-dev
+ Provides: libgooglepinyin-dev
+ Section: libdevel
+ Priority: optional
+ Homepage: http://code.google.com/p/libgooglepinyin
+ Description: Pinyin engine fork from Google Pinyin on Android - development files
+  libgooglepinyin is a fork of Google Pinyin on Android, it features
+  to have excellent input experience and uses little resource.
+  .
+  This package provides the library development files.
+
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/x86_64-linux-gnu/pkgconfig/
+-rw-r--r-- root/root       282 2014-04-27 19:23 ./usr/lib/x86_64-linux-gnu/pkgconfig/googlepinyin.pc
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/include/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/include/googlepinyin/
+-rw-r--r-- root/root      2144 2012-02-03 09:20 ./usr/include/googlepinyin/sync.h
+-rw-r--r-- root/root     18438 2012-02-03 09:20 ./usr/include/googlepinyin/matrixsearch.h
+-rw-r--r-- root/root      4320 2012-02-03 09:20 ./usr/include/googlepinyin/splparser.h
+-rw-r--r-- root/root      7268 2012-02-03 09:20 ./usr/include/googlepinyin/pinyinime.h
+-rw-r--r-- root/root      4890 2012-02-03 09:20 ./usr/include/googlepinyin/dictdef.h
+-rw-r--r-- root/root     12837 2012-02-03 09:20 ./usr/include/googlepinyin/userdict.h
+-rw-r--r-- root/root     10629 2012-02-03 09:20 ./usr/include/googlepinyin/atomdictbase.h
+-rw-r--r-- root/root      1663 2012-02-03 09:20 ./usr/include/googlepinyin/utf16char.h
+-rw-r--r-- root/root      5596 2012-02-03 09:20 ./usr/include/googlepinyin/dictbuilder.h
+-rw-r--r-- root/root      1346 2012-02-03 09:20 ./usr/include/googlepinyin/utf16reader.h
+-rw-r--r-- root/root      1042 2012-02-03 09:20 ./usr/include/googlepinyin/mystdlib.h
+-rw-r--r-- root/root      5390 2012-02-03 09:20 ./usr/include/googlepinyin/searchutility.h
+-rw-r--r-- root/root      2051 2012-02-03 09:20 ./usr/include/googlepinyin/lpicache.h
+-rw-r--r-- root/root      8906 2012-02-03 09:20 ./usr/include/googlepinyin/dicttrie.h
+-rw-r--r-- root/root      3978 2012-02-03 09:20 ./usr/include/googlepinyin/dictlist.h
+-rw-r--r-- root/root      8838 2012-02-03 09:20 ./usr/include/googlepinyin/spellingtrie.h
+-rw-r--r-- root/root      3845 2012-02-03 09:20 ./usr/include/googlepinyin/spellingtable.h
+-rw-r--r-- root/root      2884 2012-02-03 09:20 ./usr/include/googlepinyin/ngram.h
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/share/doc/libgooglepinyin0-dev/
+-rw-r--r-- root/root       295 2012-02-03 15:25 ./usr/share/doc/libgooglepinyin0-dev/changelog.Debian.gz
+-rw-r--r-- root/root      1190 2012-02-03 14:54 ./usr/share/doc/libgooglepinyin0-dev/copyright
+lrwxrwxrwx root/root         0 2014-04-27 19:23 ./usr/lib/x86_64-linux-gnu/libgooglepinyin.so -> libgooglepinyin.so.0
+
+
+libgooglepinyin0_0.1.2-1_amd64.deb
+──────────────────────────────────
+
+ new debian package, version 2.0.
+ size 527848 bytes: control archive=979 bytes.
+     643 bytes,    18 lines      control              
+     337 bytes,     4 lines      md5sums              
+     135 bytes,     7 lines   *  postinst             #!/bin/sh
+     132 bytes,     7 lines   *  postrm               #!/bin/sh
+      35 bytes,     1 lines      shlibs               
+ Package: libgooglepinyin0
+ Source: libgooglepinyin
+ Version: 0.1.2-1
+ Architecture: amd64
+ Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+ Installed-Size: 1238
+ Pre-Depends: multiarch-support
+ Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+ Provides: libgooglepinyin
+ Section: libs
+ Priority: optional
+ Multi-Arch: same
+ Homepage: http://code.google.com/p/libgooglepinyin
+ Description: Pinyin engine fork from Google Pinyin on Android
+  libgooglepinyin is a fork of Google Pinyin on Android, it features
+  to have excellent input experience and uses little resource.
+  .
+  This package provides the library file.
+
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/x86_64-linux-gnu/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/x86_64-linux-gnu/googlepinyin/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/x86_64-linux-gnu/googlepinyin/data/
+-rw-r--r-- root/root   1071858 2014-04-27 19:23 ./usr/lib/x86_64-linux-gnu/googlepinyin/data/dict_pinyin.dat
+-rw-r--r-- root/root    152792 2014-04-27 19:23 ./usr/lib/x86_64-linux-gnu/libgooglepinyin.so.0.1.0
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/share/doc/libgooglepinyin0/
+-rw-r--r-- root/root       295 2012-02-03 15:25 ./usr/share/doc/libgooglepinyin0/changelog.Debian.gz
+-rw-r--r-- root/root      1190 2012-02-03 14:54 ./usr/share/doc/libgooglepinyin0/copyright
+lrwxrwxrwx root/root         0 2014-04-27 19:23 ./usr/lib/x86_64-linux-gnu/libgooglepinyin.so.0 -> libgooglepinyin.so.0.1.0
+
+
+libgooglepinyin0-dbg_0.1.2-1_amd64.deb
+──────────────────────────────────────
+
+ new debian package, version 2.0.
+ size 106078 bytes: control archive=709 bytes.
+     563 bytes,    15 lines      control              
+     274 bytes,     3 lines      md5sums              
+ Package: libgooglepinyin0-dbg
+ Source: libgooglepinyin
+ Version: 0.1.2-1
+ Architecture: amd64
+ Maintainer: IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>
+ Installed-Size: 171
+ Depends: libgooglepinyin0 (= 0.1.2-1)
+ Section: debug
+ Priority: extra
+ Homepage: http://code.google.com/p/libgooglepinyin
+ Description: Pinyin engine fork from Google Pinyin on Android - debug symbols
+  libgooglepinyin is a fork of Google Pinyin on Android, it features
+  to have excellent input experience and uses little resource.
+  .
+  This package provides the library debug symbols.
+
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/debug/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/debug/.build-id/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/lib/debug/.build-id/4e/
+-rw-r--r-- root/root    132271 2014-04-27 19:23 ./usr/lib/debug/.build-id/4e/05711793d37be811e1e45ad4c6b55525673341.debug
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/share/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-04-27 19:23 ./usr/share/doc/libgooglepinyin0-dbg/
+-rw-r--r-- root/root       295 2012-02-03 15:25 ./usr/share/doc/libgooglepinyin0-dbg/changelog.Debian.gz
+-rw-r--r-- root/root      1190 2012-02-03 14:54 ./usr/share/doc/libgooglepinyin0-dbg/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 19424
+Build-Time: 15
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 15
+Job: libgooglepinyin_0.1.2-1.dsc
+Machine Architecture: amd64
+Package: libgooglepinyin
+Package-Time: 38
+Source-Version: 0.1.2-1
+Space: 19424
+Status: successful
+Version: 0.1.2-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140427-1923
+Build needed 00:00:38, 19424k disc space

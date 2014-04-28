@@ -1,0 +1,2727 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ zoneminder 1.26.5-3 (amd64)                                28 Apr 2014 20:34 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: zoneminder
+Version: 1.26.5-3
+Source Version: 1.26.5-3
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/zoneminder-uvIaks/zoneminder-1.26.5' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/zoneminder-uvIaks' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-5da968a5-8f62-4a17-ad5c-ba7df3d516d6' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+zoneminder_1.26.5-3.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-Qsbboa/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7.0.50~), autoconf, automake, libphp-serialization-perl, libmysqlclient-dev, libdbd-mysql-perl, libdate-manip-perl, libwww-perl, libjpeg-dev, libpcre3-dev, libavcodec-dev, libavformat-dev (>= 3:0.svn20090204), libswscale-dev (>= 3:0.svn20090204), libavutil-dev, libv4l-dev (>= 0.8.3), libbz2-dev, libsys-mmap-perl, dh-autoreconf, libavdevice-dev, libgnutls-openssl-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 7.0.50~), autoconf, automake, libphp-serialization-perl, libmysqlclient-dev, libdbd-mysql-perl, libdate-manip-perl, libwww-perl, libjpeg-dev, libpcre3-dev, libavcodec-dev, libavformat-dev (>= 3:0.svn20090204), libswscale-dev (>= 3:0.svn20090204), libavutil-dev, libv4l-dev (>= 0.8.3), libbz2-dev, libsys-mmap-perl, dh-autoreconf, libavdevice-dev, libgnutls-openssl-dev
+dpkg-deb: building package `sbuild-build-depends-zoneminder-dummy' in `/«BUILDDIR»/resolver-rUjNhi/apt_archive/sbuild-build-depends-zoneminder-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install zoneminder build dependencies (apt-based resolver)                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils ca-certificates
+  debhelper dh-autoreconf file gettext gettext-base groff-base intltool-debian
+  libasound2 libasound2-data libasprintf0c2 libasyncns0 libavcodec-dev
+  libavcodec54 libavdevice-dev libavdevice53 libavformat-dev libavformat54
+  libavutil-dev libavutil52 libbz2-dev libcdio-cdda1 libcdio-paranoia1
+  libcdio13 libcroco3 libdate-manip-perl libdbd-mysql-perl libdbi-perl
+  libdbus-1-3 libdc1394-22 libencode-locale-perl libfile-listing-perl libflac8
+  libgcrypt11 libglib2.0-0 libgmp-dev libgmpxx4ldbl libgnutls-openssl27
+  libgnutls-xssl0 libgnutls26 libgnutls28 libgnutls28-dev libgnutlsxx28
+  libgpg-error0 libgsm1 libhogweed2 libhtml-parser-perl libhtml-tagset-perl
+  libhtml-tree-perl libhttp-cookies-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libice6 libio-html-perl
+  libio-socket-ssl-perl libjack-jackd2-0 libjpeg8 libjpeg8-dev libjson-c2
+  liblwp-mediatypes-perl liblwp-protocol-https-perl libmagic1 libmp3lame0
+  libmysqlclient-dev libmysqlclient18 libnet-http-perl libnet-ssleay-perl
+  libnettle4 libogg0 libopenjpeg5 libopus0 liborc-0.4-0 libp11-kit-dev
+  libp11-kit0 libpcre3-dev libpcrecpp0 libphp-serialization-perl libpipeline1
+  libpulse0 libraw1394-11 librtmp1 libsamplerate0 libschroedinger-1.0-0
+  libsigsegv2 libsm6 libsndfile1 libspeex1 libssl1.0.0 libswscale-dev
+  libswscale2 libsys-mmap-perl libsystemd-id128-0 libsystemd-journal0
+  libtasn1-6 libtasn1-6-dev libtheora0 libtool libudev1 libunistring0
+  liburi-perl libusb-1.0-0 libv4l-0 libv4l-dev libv4l2rds0 libv4lconvert0
+  libva1 libvorbis0a libvorbisenc2 libvpx1 libwrap0 libwww-perl
+  libwww-robotrules-perl libx11-6 libx11-data libx11-xcb1 libx264-142 libxau6
+  libxcb1 libxdmcp6 libxext6 libxfixes3 libxi6 libxml2 libxtst6 libxvidcore4
+  m4 man-db mysql-common netbase nettle-dev openssl po-debconf x11-common
+  zlib1g-dev
+Suggested packages:
+  autoconf2.13 autoconf-archive gnu-standards autoconf-doc wamerican wordlist
+  whois vacation dh-make gettext-doc groff libasound2-plugins alsa-utils
+  libdc1394-22-dev libgsm1-dev libogg-dev libraw1394-dev libschroedinger-dev
+  libspeex-dev libtheora-dev libvorbis-dev libx11-dev libxext-dev
+  libclone-perl libmldbm-perl libnet-daemon-perl libsql-statement-perl
+  rng-tools libgmp10-doc libmpfr-dev gnutls-bin gnutls-doc guile-gnutls
+  libdata-dump-perl jackd2 libcrypt-ssleay-perl opus-tools pulseaudio
+  libraw1394-doc speex libtool-doc automaken gfortran fortran95-compiler
+  gcj-jdk pkg-config libauthen-ntlm-perl less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur libasprintf-dev libgettextpo-dev dbus libglib2.0-data
+  shared-mime-info libhtml-format-perl libio-socket-ip-perl
+  libio-socket-inet6-perl libltdl-dev tcpd libhtml-form-perl
+  libhttp-daemon-perl libmailtools-perl xml-core ifupdown
+  libmail-sendmail-perl
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdmainutils ca-certificates
+  debhelper dh-autoreconf file gettext gettext-base groff-base intltool-debian
+  libasound2 libasound2-data libasprintf0c2 libasyncns0 libavcodec-dev
+  libavcodec54 libavdevice-dev libavdevice53 libavformat-dev libavformat54
+  libavutil-dev libavutil52 libbz2-dev libcdio-cdda1 libcdio-paranoia1
+  libcdio13 libcroco3 libdate-manip-perl libdbd-mysql-perl libdbi-perl
+  libdbus-1-3 libdc1394-22 libencode-locale-perl libfile-listing-perl libflac8
+  libgcrypt11 libglib2.0-0 libgmp-dev libgmpxx4ldbl libgnutls-openssl27
+  libgnutls-xssl0 libgnutls26 libgnutls28 libgnutls28-dev libgnutlsxx28
+  libgpg-error0 libgsm1 libhogweed2 libhtml-parser-perl libhtml-tagset-perl
+  libhtml-tree-perl libhttp-cookies-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libice6 libio-html-perl
+  libio-socket-ssl-perl libjack-jackd2-0 libjpeg8 libjpeg8-dev libjson-c2
+  liblwp-mediatypes-perl liblwp-protocol-https-perl libmagic1 libmp3lame0
+  libmysqlclient-dev libmysqlclient18 libnet-http-perl libnet-ssleay-perl
+  libnettle4 libogg0 libopenjpeg5 libopus0 liborc-0.4-0 libp11-kit-dev
+  libp11-kit0 libpcre3-dev libpcrecpp0 libphp-serialization-perl libpipeline1
+  libpulse0 libraw1394-11 librtmp1 libsamplerate0 libschroedinger-1.0-0
+  libsigsegv2 libsm6 libsndfile1 libspeex1 libssl1.0.0 libswscale-dev
+  libswscale2 libsys-mmap-perl libsystemd-id128-0 libsystemd-journal0
+  libtasn1-6 libtasn1-6-dev libtheora0 libtool libudev1 libunistring0
+  liburi-perl libusb-1.0-0 libv4l-0 libv4l-dev libv4l2rds0 libv4lconvert0
+  libva1 libvorbis0a libvorbisenc2 libvpx1 libwrap0 libwww-perl
+  libwww-robotrules-perl libx11-6 libx11-data libx11-xcb1 libx264-142 libxau6
+  libxcb1 libxdmcp6 libxext6 libxfixes3 libxi6 libxml2 libxtst6 libxvidcore4
+  m4 man-db mysql-common netbase nettle-dev openssl po-debconf
+  sbuild-build-depends-zoneminder-dummy x11-common zlib1g-dev
+0 upgraded, 141 newly installed, 0 to remove and 8 not upgraded.
+Need to get 38.6 MB/38.6 MB of archives.
+After this operation, 126 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libssl1.0.0 amd64 1.0.1g-3 [1012 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main libudev1 amd64 204-9 [45.7 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libgpg-error0 amd64 1.12-0.2 [56.5 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libgcrypt11 amd64 1.5.3-4 [250 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libnettle4 amd64 2.7.1-2 [172 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main libhogweed2 amd64 2.7.1-2 [125 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libp11-kit0 amd64 0.20.2-5 [81.1 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libtasn1-6 amd64 3.4-3 [48.8 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libgnutls28 amd64 3.2.13-2 [677 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libgnutls-openssl27 amd64 3.2.13-2 [155 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libgnutls26 amd64 2.12.23-14 [530 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main libwrap0 amd64 7.6.q-25 [58.5 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main libasound2-data all 1.0.27.2-3 [58.7 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main libasound2 amd64 1.0.27.2-3 [370 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main libasyncns0 amd64 0.8-5 [12.5 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main libavutil52 amd64 6:9.11-3+b3 [113 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main libgsm1 amd64 1.0.13-4 [29.7 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main libmp3lame0 amd64 3.99.5+repack1-3 [404 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libopenjpeg5 amd64 1.5.2-2 [109 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main libopus0 amd64 1.1-1 [155 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main liborc-0.4-0 amd64 1:0.4.19-1 [139 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libschroedinger-1.0-0 amd64 1.0.11-2 [330 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main libspeex1 amd64 1.2~rc1.1-1 [54.2 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main libogg0 amd64 1.3.1-1 [20.7 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main libtheora0 amd64 1.1.1+dfsg.1-3.2 [170 kB]
+Get:33 http://debian.proxad.net/debian/ sid/main libva1 amd64 1.3.0-2 [40.7 kB]
+Get:34 http://debian.proxad.net/debian/ sid/main libvorbis0a amd64 1.3.2-1.3 [109 kB]
+Get:35 http://debian.proxad.net/debian/ sid/main libvorbisenc2 amd64 1.3.2-1.3 [143 kB]
+Get:36 http://debian.proxad.net/debian/ sid/main libvpx1 amd64 1.3.0-2 [565 kB]
+Get:37 http://debian.proxad.net/debian/ sid/main libx264-142 amd64 2:0.142.2389+git956c8d8-4 [581 kB]
+Get:38 http://debian.proxad.net/debian/ sid/main libxvidcore4 amd64 2:1.3.3-1 [282 kB]
+Get:39 http://debian.proxad.net/debian/ sid/main libavcodec54 amd64 6:9.11-3+b3 [2395 kB]
+Get:40 http://debian.proxad.net/debian/ sid/main librtmp1 amd64 2.4+20131018.git79459a2-2 [58.6 kB]
+Get:41 http://debian.proxad.net/debian/ sid/main libavformat54 amd64 6:9.11-3+b3 [528 kB]
+Get:42 http://debian.proxad.net/debian/ sid/main libcdio13 amd64 0.83-4.1 [167 kB]
+Get:43 http://debian.proxad.net/debian/ sid/main libcdio-cdda1 amd64 0.83-4.1 [132 kB]
+Get:44 http://debian.proxad.net/debian/ sid/main libcdio-paranoia1 amd64 0.83-4.1 [132 kB]
+Get:45 http://debian.proxad.net/debian/ sid/main libraw1394-11 amd64 2.1.0-1 [51.8 kB]
+Get:46 http://debian.proxad.net/debian/ sid/main libusb-1.0-0 amd64 2:1.0.18-2 [46.3 kB]
+Get:47 http://debian.proxad.net/debian/ sid/main libdc1394-22 amd64 2.2.2-1 [103 kB]
+Get:48 http://debian.proxad.net/debian/ sid/main libsamplerate0 amd64 0.1.8-7 [947 kB]
+Get:49 http://debian.proxad.net/debian/ sid/main libjack-jackd2-0 amd64 1.9.9.5+20140404git3d7c67dc~dfsg-1 [168 kB]
+Get:50 http://debian.proxad.net/debian/ sid/main libdbus-1-3 amd64 1.8.0-3 [161 kB]
+Get:51 http://debian.proxad.net/debian/ sid/main x11-common all 1:7.7+7 [287 kB]
+Get:52 http://debian.proxad.net/debian/ sid/main libice6 amd64 2:1.0.8-2 [63.1 kB]
+Get:53 http://debian.proxad.net/debian/ sid/main libjson-c2 amd64 0.11-4 [24.8 kB]
+Get:54 http://debian.proxad.net/debian/ sid/main libsm6 amd64 2:1.2.1-2 [34.2 kB]
+Get:55 http://debian.proxad.net/debian/ sid/main libflac8 amd64 1.3.0-2 [86.6 kB]
+Get:56 http://debian.proxad.net/debian/ sid/main libsndfile1 amd64 1.0.25-9 [213 kB]
+Get:57 http://debian.proxad.net/debian/ sid/main libsystemd-id128-0 amd64 204-9 [25.8 kB]
+Get:58 http://debian.proxad.net/debian/ sid/main libsystemd-journal0 amd64 204-9 [61.9 kB]
+Get:59 http://debian.proxad.net/debian/ sid/main libxau6 amd64 1:1.0.8-1 [20.7 kB]
+Get:60 http://debian.proxad.net/debian/ sid/main libxdmcp6 amd64 1:1.1.1-1 [26.3 kB]
+Get:61 http://debian.proxad.net/debian/ sid/main libxcb1 amd64 1.10-2 [41.8 kB]
+Get:62 http://debian.proxad.net/debian/ sid/main libx11-data all 2:1.6.2-1 [125 kB]
+Get:63 http://debian.proxad.net/debian/ sid/main libx11-6 amd64 2:1.6.2-1 [716 kB]
+Get:64 http://debian.proxad.net/debian/ sid/main libx11-xcb1 amd64 2:1.6.2-1 [162 kB]
+Get:65 http://debian.proxad.net/debian/ sid/main libxext6 amd64 2:1.3.2-1 [56.5 kB]
+Get:66 http://debian.proxad.net/debian/ sid/main libxi6 amd64 2:1.7.2-1 [77.0 kB]
+Get:67 http://debian.proxad.net/debian/ sid/main libxtst6 amd64 2:1.2.2-1 [26.6 kB]
+Get:68 http://debian.proxad.net/debian/ sid/main libpulse0 amd64 5.0-2 [250 kB]
+Get:69 http://debian.proxad.net/debian/ sid/main libxfixes3 amd64 1:5.0.1-1 [22.5 kB]
+Get:70 http://debian.proxad.net/debian/ sid/main libavdevice53 amd64 6:9.11-3+b3 [80.7 kB]
+Get:71 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-2 [2403 kB]
+Get:72 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:73 http://debian.proxad.net/debian/ sid/main libgmpxx4ldbl amd64 2:6.0.0+dfsg-2.2 [21.4 kB]
+Get:74 http://debian.proxad.net/debian/ sid/main libjpeg8 amd64 8d-2 [120 kB]
+Get:75 http://debian.proxad.net/debian/ sid/main mysql-common all 5.5.37-1 [83.7 kB]
+Get:76 http://debian.proxad.net/debian/ sid/main libmysqlclient18 amd64 5.5.37-1 [664 kB]
+Get:77 http://debian.proxad.net/debian/ sid/main libpcrecpp0 amd64 1:8.31-5 [128 kB]
+Get:78 http://debian.proxad.net/debian/ sid/main libsigsegv2 amd64 2.10-2 [29.8 kB]
+Get:79 http://debian.proxad.net/debian/ sid/main libswscale2 amd64 6:9.11-3+b3 [130 kB]
+Get:80 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:81 http://debian.proxad.net/debian/ sid/main libv4lconvert0 amd64 1.0.1-1 [92.5 kB]
+Get:82 http://debian.proxad.net/debian/ sid/main libv4l-0 amd64 1.0.1-1 [57.7 kB]
+Get:83 http://debian.proxad.net/debian/ sid/main libv4l2rds0 amd64 1.0.1-1 [33.3 kB]
+Get:84 http://debian.proxad.net/debian/ sid/main libgnutls-xssl0 amd64 3.2.13-2 [13.7 kB]
+Get:85 http://debian.proxad.net/debian/ sid/main libgnutlsxx28 amd64 3.2.13-2 [14.7 kB]
+Get:86 http://debian.proxad.net/debian/ sid/main netbase all 5.2 [18.9 kB]
+Get:87 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:88 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:89 http://debian.proxad.net/debian/ sid/main m4 amd64 1.4.17-3 [254 kB]
+Get:90 http://debian.proxad.net/debian/ sid/main autoconf all 2.69-6 [340 kB]
+Get:91 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:92 http://debian.proxad.net/debian/ sid/main automake all 1:1.14.1-3 [725 kB]
+Get:93 http://debian.proxad.net/debian/ sid/main autopoint all 0.18.3.2-1 [393 kB]
+Get:94 http://debian.proxad.net/debian/ sid/main openssl amd64 1.0.1g-3 [664 kB]
+Get:95 http://debian.proxad.net/debian/ sid/main ca-certificates all 20140325 [193 kB]
+Get:96 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:97 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:98 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:99 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:100 http://debian.proxad.net/debian/ sid/main libtool amd64 2.4.2-1.7 [505 kB]
+Get:101 http://debian.proxad.net/debian/ sid/main dh-autoreconf all 9 [15.5 kB]
+Get:102 http://debian.proxad.net/debian/ sid/main libavutil-dev amd64 6:9.11-3+b3 [160 kB]
+Get:103 http://debian.proxad.net/debian/ sid/main libavcodec-dev amd64 6:9.11-3+b3 [2648 kB]
+Get:104 http://debian.proxad.net/debian/ sid/main libavformat-dev amd64 6:9.11-3+b3 [623 kB]
+Get:105 http://debian.proxad.net/debian/ sid/main libavdevice-dev amd64 6:9.11-3+b3 [83.1 kB]
+Get:106 http://debian.proxad.net/debian/ sid/main libbz2-dev amd64 1.0.6-5 [28.7 kB]
+Get:107 http://debian.proxad.net/debian/ sid/main libdate-manip-perl all 6.43-1 [928 kB]
+Get:108 http://debian.proxad.net/debian/ sid/main libdbi-perl amd64 1.631-3 [815 kB]
+Get:109 http://debian.proxad.net/debian/ sid/main libdbd-mysql-perl amd64 4.027-1 [118 kB]
+Get:110 http://debian.proxad.net/debian/ sid/main libencode-locale-perl all 1.03-1 [13.6 kB]
+Get:111 http://debian.proxad.net/debian/ sid/main libhttp-date-perl all 6.02-1 [10.7 kB]
+Get:112 http://debian.proxad.net/debian/ sid/main libfile-listing-perl all 6.04-1 [10.3 kB]
+Get:113 http://debian.proxad.net/debian/ sid/main libgmp-dev amd64 2:6.0.0+dfsg-2.2 [601 kB]
+Get:114 http://debian.proxad.net/debian/ sid/main nettle-dev amd64 2.7.1-2 [833 kB]
+Get:115 http://debian.proxad.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-1 [217 kB]
+Get:116 http://debian.proxad.net/debian/ sid/main libtasn1-6-dev amd64 3.4-3 [397 kB]
+Get:117 http://debian.proxad.net/debian/ sid/main libp11-kit-dev amd64 0.20.2-5 [62.1 kB]
+Get:118 http://debian.proxad.net/debian/ sid/main libgnutls28-dev amd64 3.2.13-2 [629 kB]
+Get:119 http://debian.proxad.net/debian/ sid/main liburi-perl all 1.60-1 [100 kB]
+Get:120 http://debian.proxad.net/debian/ sid/main libhtml-tagset-perl all 3.20-2 [13.5 kB]
+Get:121 http://debian.proxad.net/debian/ sid/main libhtml-parser-perl amd64 3.71-1+b1 [117 kB]
+Get:122 http://debian.proxad.net/debian/ sid/main libhtml-tree-perl all 5.03-1 [210 kB]
+Get:123 http://debian.proxad.net/debian/ sid/main libio-html-perl all 1.00-1 [18.2 kB]
+Get:124 http://debian.proxad.net/debian/ sid/main liblwp-mediatypes-perl all 6.02-1 [22.1 kB]
+Get:125 http://debian.proxad.net/debian/ sid/main libhttp-message-perl all 6.06-1 [80.1 kB]
+Get:126 http://debian.proxad.net/debian/ sid/main libhttp-cookies-perl all 6.00-2 [23.5 kB]
+Get:127 http://debian.proxad.net/debian/ sid/main libhttp-negotiate-perl all 6.00-2 [13.6 kB]
+Get:128 http://debian.proxad.net/debian/ sid/main libnet-ssleay-perl amd64 1.58-1 [260 kB]
+Get:129 http://debian.proxad.net/debian/ sid/main libio-socket-ssl-perl all 1.982-1 [149 kB]
+Get:130 http://debian.proxad.net/debian/ sid/main libjpeg8-dev amd64 8d-2 [217 kB]
+Get:131 http://debian.proxad.net/debian/ sid/main libnet-http-perl all 6.06-1 [24.9 kB]
+Get:132 http://debian.proxad.net/debian/ sid/main libwww-robotrules-perl all 6.01-1 [14.3 kB]
+Get:133 http://debian.proxad.net/debian/ sid/main libwww-perl all 6.06-1 [194 kB]
+Get:134 http://debian.proxad.net/debian/ sid/main liblwp-protocol-https-perl all 6.04-2 [7830 B]
+Get:135 http://debian.proxad.net/debian/ sid/main libmysqlclient-dev amd64 5.5.37-1 [935 kB]
+Get:136 http://debian.proxad.net/debian/ sid/main libpcre3-dev amd64 1:8.31-5 [407 kB]
+Get:137 http://debian.proxad.net/debian/ sid/main libphp-serialization-perl all 0.34-1 [11.1 kB]
+Get:138 http://debian.proxad.net/debian/ sid/main libswscale-dev amd64 6:9.11-3+b3 [142 kB]
+Get:139 http://debian.proxad.net/debian/ sid/main libsys-mmap-perl amd64 0.16-1+b2 [19.3 kB]
+Get:140 http://debian.proxad.net/debian/ sid/main libv4l-dev amd64 1.0.1-1 [102 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 38.6 MB in 31s (1214 kB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.1g-3_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1g-3) ...
+Selecting previously unselected package libudev1:amd64.
+Preparing to unpack .../libudev1_204-9_amd64.deb ...
+Unpacking libudev1:amd64 (204-9) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libgpg-error0:amd64.
+Preparing to unpack .../libgpg-error0_1.12-0.2_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.12-0.2) ...
+Selecting previously unselected package libgcrypt11:amd64.
+Preparing to unpack .../libgcrypt11_1.5.3-4_amd64.deb ...
+Unpacking libgcrypt11:amd64 (1.5.3-4) ...
+Selecting previously unselected package libnettle4:amd64.
+Preparing to unpack .../libnettle4_2.7.1-2_amd64.deb ...
+Unpacking libnettle4:amd64 (2.7.1-2) ...
+Selecting previously unselected package libhogweed2:amd64.
+Preparing to unpack .../libhogweed2_2.7.1-2_amd64.deb ...
+Unpacking libhogweed2:amd64 (2.7.1-2) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../libp11-kit0_0.20.2-5_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.20.2-5) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../libtasn1-6_3.4-3_amd64.deb ...
+Unpacking libtasn1-6:amd64 (3.4-3) ...
+Selecting previously unselected package libgnutls28:amd64.
+Preparing to unpack .../libgnutls28_3.2.13-2_amd64.deb ...
+Unpacking libgnutls28:amd64 (3.2.13-2) ...
+Selecting previously unselected package libgnutls-openssl27:amd64.
+Preparing to unpack .../libgnutls-openssl27_3.2.13-2_amd64.deb ...
+Unpacking libgnutls-openssl27:amd64 (3.2.13-2) ...
+Selecting previously unselected package libgnutls26:amd64.
+Preparing to unpack .../libgnutls26_2.12.23-14_amd64.deb ...
+Unpacking libgnutls26:amd64 (2.12.23-14) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libwrap0:amd64.
+Preparing to unpack .../libwrap0_7.6.q-25_amd64.deb ...
+Unpacking libwrap0:amd64 (7.6.q-25) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libasound2-data.
+Preparing to unpack .../libasound2-data_1.0.27.2-3_all.deb ...
+Unpacking libasound2-data (1.0.27.2-3) ...
+Selecting previously unselected package libasound2:amd64.
+Preparing to unpack .../libasound2_1.0.27.2-3_amd64.deb ...
+Unpacking libasound2:amd64 (1.0.27.2-3) ...
+Selecting previously unselected package libasyncns0:amd64.
+Preparing to unpack .../libasyncns0_0.8-5_amd64.deb ...
+Unpacking libasyncns0:amd64 (0.8-5) ...
+Selecting previously unselected package libavutil52:amd64.
+Preparing to unpack .../libavutil52_6%3a9.11-3+b3_amd64.deb ...
+Unpacking libavutil52:amd64 (6:9.11-3+b3) ...
+Selecting previously unselected package libgsm1:amd64.
+Preparing to unpack .../libgsm1_1.0.13-4_amd64.deb ...
+Unpacking libgsm1:amd64 (1.0.13-4) ...
+Selecting previously unselected package libmp3lame0:amd64.
+Preparing to unpack .../libmp3lame0_3.99.5+repack1-3_amd64.deb ...
+Unpacking libmp3lame0:amd64 (3.99.5+repack1-3) ...
+Selecting previously unselected package libopenjpeg5:amd64.
+Preparing to unpack .../libopenjpeg5_1.5.2-2_amd64.deb ...
+Unpacking libopenjpeg5:amd64 (1.5.2-2) ...
+Selecting previously unselected package libopus0:amd64.
+Preparing to unpack .../libopus0_1.1-1_amd64.deb ...
+Unpacking libopus0:amd64 (1.1-1) ...
+Selecting previously unselected package liborc-0.4-0:amd64.
+Preparing to unpack .../liborc-0.4-0_1%3a0.4.19-1_amd64.deb ...
+Unpacking liborc-0.4-0:amd64 (1:0.4.19-1) ...
+Selecting previously unselected package libschroedinger-1.0-0:amd64.
+Preparing to unpack .../libschroedinger-1.0-0_1.0.11-2_amd64.deb ...
+Unpacking libschroedinger-1.0-0:amd64 (1.0.11-2) ...
+Selecting previously unselected package libspeex1:amd64.
+Preparing to unpack .../libspeex1_1.2~rc1.1-1_amd64.deb ...
+Unpacking libspeex1:amd64 (1.2~rc1.1-1) ...
+Selecting previously unselected package libogg0:amd64.
+Preparing to unpack .../libogg0_1.3.1-1_amd64.deb ...
+Unpacking libogg0:amd64 (1.3.1-1) ...
+Selecting previously unselected package libtheora0:amd64.
+Preparing to unpack .../libtheora0_1.1.1+dfsg.1-3.2_amd64.deb ...
+Unpacking libtheora0:amd64 (1.1.1+dfsg.1-3.2) ...
+Selecting previously unselected package libva1:amd64.
+Preparing to unpack .../libva1_1.3.0-2_amd64.deb ...
+Unpacking libva1:amd64 (1.3.0-2) ...
+Selecting previously unselected package libvorbis0a:amd64.
+Preparing to unpack .../libvorbis0a_1.3.2-1.3_amd64.deb ...
+Unpacking libvorbis0a:amd64 (1.3.2-1.3) ...
+Selecting previously unselected package libvorbisenc2:amd64.
+Preparing to unpack .../libvorbisenc2_1.3.2-1.3_amd64.deb ...
+Unpacking libvorbisenc2:amd64 (1.3.2-1.3) ...
+Selecting previously unselected package libvpx1:amd64.
+Preparing to unpack .../libvpx1_1.3.0-2_amd64.deb ...
+Unpacking libvpx1:amd64 (1.3.0-2) ...
+Selecting previously unselected package libx264-142:amd64.
+Preparing to unpack .../libx264-142_2%3a0.142.2389+git956c8d8-4_amd64.deb ...
+Unpacking libx264-142:amd64 (2:0.142.2389+git956c8d8-4) ...
+Selecting previously unselected package libxvidcore4:amd64.
+Preparing to unpack .../libxvidcore4_2%3a1.3.3-1_amd64.deb ...
+Unpacking libxvidcore4:amd64 (2:1.3.3-1) ...
+Selecting previously unselected package libavcodec54:amd64.
+Preparing to unpack .../libavcodec54_6%3a9.11-3+b3_amd64.deb ...
+Unpacking libavcodec54:amd64 (6:9.11-3+b3) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../librtmp1_2.4+20131018.git79459a2-2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20131018.git79459a2-2) ...
+Selecting previously unselected package libavformat54:amd64.
+Preparing to unpack .../libavformat54_6%3a9.11-3+b3_amd64.deb ...
+Unpacking libavformat54:amd64 (6:9.11-3+b3) ...
+Selecting previously unselected package libcdio13.
+Preparing to unpack .../libcdio13_0.83-4.1_amd64.deb ...
+Unpacking libcdio13 (0.83-4.1) ...
+Selecting previously unselected package libcdio-cdda1.
+Preparing to unpack .../libcdio-cdda1_0.83-4.1_amd64.deb ...
+Unpacking libcdio-cdda1 (0.83-4.1) ...
+Selecting previously unselected package libcdio-paranoia1.
+Preparing to unpack .../libcdio-paranoia1_0.83-4.1_amd64.deb ...
+Unpacking libcdio-paranoia1 (0.83-4.1) ...
+Selecting previously unselected package libraw1394-11:amd64.
+Preparing to unpack .../libraw1394-11_2.1.0-1_amd64.deb ...
+Unpacking libraw1394-11:amd64 (2.1.0-1) ...
+Selecting previously unselected package libusb-1.0-0:amd64.
+Preparing to unpack .../libusb-1.0-0_2%3a1.0.18-2_amd64.deb ...
+Unpacking libusb-1.0-0:amd64 (2:1.0.18-2) ...
+Selecting previously unselected package libdc1394-22:amd64.
+Preparing to unpack .../libdc1394-22_2.2.2-1_amd64.deb ...
+Unpacking libdc1394-22:amd64 (2.2.2-1) ...
+Selecting previously unselected package libsamplerate0:amd64.
+Preparing to unpack .../libsamplerate0_0.1.8-7_amd64.deb ...
+Unpacking libsamplerate0:amd64 (0.1.8-7) ...
+Selecting previously unselected package libjack-jackd2-0:amd64.
+Preparing to unpack .../libjack-jackd2-0_1.9.9.5+20140404git3d7c67dc~dfsg-1_amd64.deb ...
+Unpacking libjack-jackd2-0:amd64 (1.9.9.5+20140404git3d7c67dc~dfsg-1) ...
+Selecting previously unselected package libdbus-1-3:amd64.
+Preparing to unpack .../libdbus-1-3_1.8.0-3_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.8.0-3) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../x11-common_1%3a7.7+7_all.deb ...
+Unpacking x11-common (1:7.7+7) ...
+Selecting previously unselected package libice6:amd64.
+Preparing to unpack .../libice6_2%3a1.0.8-2_amd64.deb ...
+Unpacking libice6:amd64 (2:1.0.8-2) ...
+Selecting previously unselected package libjson-c2:amd64.
+Preparing to unpack .../libjson-c2_0.11-4_amd64.deb ...
+Unpacking libjson-c2:amd64 (0.11-4) ...
+Selecting previously unselected package libsm6:amd64.
+Preparing to unpack .../libsm6_2%3a1.2.1-2_amd64.deb ...
+Unpacking libsm6:amd64 (2:1.2.1-2) ...
+Selecting previously unselected package libflac8:amd64.
+Preparing to unpack .../libflac8_1.3.0-2_amd64.deb ...
+Unpacking libflac8:amd64 (1.3.0-2) ...
+Selecting previously unselected package libsndfile1:amd64.
+Preparing to unpack .../libsndfile1_1.0.25-9_amd64.deb ...
+Unpacking libsndfile1:amd64 (1.0.25-9) ...
+Selecting previously unselected package libsystemd-id128-0:amd64.
+Preparing to unpack .../libsystemd-id128-0_204-9_amd64.deb ...
+Unpacking libsystemd-id128-0:amd64 (204-9) ...
+Selecting previously unselected package libsystemd-journal0:amd64.
+Preparing to unpack .../libsystemd-journal0_204-9_amd64.deb ...
+Unpacking libsystemd-journal0:amd64 (204-9) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../libxau6_1%3a1.0.8-1_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.8-1) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../libxdmcp6_1%3a1.1.1-1_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.1-1) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../libxcb1_1.10-2_amd64.deb ...
+Unpacking libxcb1:amd64 (1.10-2) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../libx11-data_2%3a1.6.2-1_all.deb ...
+Unpacking libx11-data (2:1.6.2-1) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../libx11-6_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../libx11-xcb1_2%3a1.6.2-1_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.6.2-1) ...
+Selecting previously unselected package libxext6:amd64.
+Preparing to unpack .../libxext6_2%3a1.3.2-1_amd64.deb ...
+Unpacking libxext6:amd64 (2:1.3.2-1) ...
+Selecting previously unselected package libxi6:amd64.
+Preparing to unpack .../libxi6_2%3a1.7.2-1_amd64.deb ...
+Unpacking libxi6:amd64 (2:1.7.2-1) ...
+Selecting previously unselected package libxtst6:amd64.
+Preparing to unpack .../libxtst6_2%3a1.2.2-1_amd64.deb ...
+Unpacking libxtst6:amd64 (2:1.2.2-1) ...
+Selecting previously unselected package libpulse0:amd64.
+Preparing to unpack .../libpulse0_5.0-2_amd64.deb ...
+Unpacking libpulse0:amd64 (5.0-2) ...
+Selecting previously unselected package libxfixes3:amd64.
+Preparing to unpack .../libxfixes3_1%3a5.0.1-1_amd64.deb ...
+Unpacking libxfixes3:amd64 (1:5.0.1-1) ...
+Selecting previously unselected package libavdevice53:amd64.
+Preparing to unpack .../libavdevice53_6%3a9.11-3+b3_amd64.deb ...
+Unpacking libavdevice53:amd64 (6:9.11-3+b3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-2) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+Preparing to unpack .../libgmpxx4ldbl_2%3a6.0.0+dfsg-2.2_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.0.0+dfsg-2.2) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../libjpeg8_8d-2_amd64.deb ...
+Unpacking libjpeg8:amd64 (8d-2) ...
+Selecting previously unselected package mysql-common.
+Preparing to unpack .../mysql-common_5.5.37-1_all.deb ...
+Unpacking mysql-common (5.5.37-1) ...
+Selecting previously unselected package libmysqlclient18:amd64.
+Preparing to unpack .../libmysqlclient18_5.5.37-1_amd64.deb ...
+Unpacking libmysqlclient18:amd64 (5.5.37-1) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Preparing to unpack .../libpcrecpp0_1%3a8.31-5_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-5) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-2_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-2) ...
+Selecting previously unselected package libswscale2:amd64.
+Preparing to unpack .../libswscale2_6%3a9.11-3+b3_amd64.deb ...
+Unpacking libswscale2:amd64 (6:9.11-3+b3) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package libv4lconvert0:amd64.
+Preparing to unpack .../libv4lconvert0_1.0.1-1_amd64.deb ...
+Unpacking libv4lconvert0:amd64 (1.0.1-1) ...
+Selecting previously unselected package libv4l-0:amd64.
+Preparing to unpack .../libv4l-0_1.0.1-1_amd64.deb ...
+Unpacking libv4l-0:amd64 (1.0.1-1) ...
+Selecting previously unselected package libv4l2rds0:amd64.
+Preparing to unpack .../libv4l2rds0_1.0.1-1_amd64.deb ...
+Unpacking libv4l2rds0:amd64 (1.0.1-1) ...
+Selecting previously unselected package libgnutls-xssl0:amd64.
+Preparing to unpack .../libgnutls-xssl0_3.2.13-2_amd64.deb ...
+Unpacking libgnutls-xssl0:amd64 (3.2.13-2) ...
+Selecting previously unselected package libgnutlsxx28:amd64.
+Preparing to unpack .../libgnutlsxx28_3.2.13-2_amd64.deb ...
+Unpacking libgnutlsxx28:amd64 (3.2.13-2) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../archives/netbase_5.2_all.deb ...
+Unpacking netbase (5.2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-3_amd64.deb ...
+Unpacking m4 (1.4.17-3) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../autoconf_2.69-6_all.deb ...
+Unpacking autoconf (2.69-6) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../automake_1%3a1.14.1-3_all.deb ...
+Unpacking automake (1:1.14.1-3) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../autopoint_0.18.3.2-1_all.deb ...
+Unpacking autopoint (0.18.3.2-1) ...
+Selecting previously unselected package openssl.
+Preparing to unpack .../openssl_1.0.1g-3_amd64.deb ...
+Unpacking openssl (1.0.1g-3) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../ca-certificates_20140325_all.deb ...
+Unpacking ca-certificates (20140325) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../libtool_2.4.2-1.7_amd64.deb ...
+Unpacking libtool (2.4.2-1.7) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../dh-autoreconf_9_all.deb ...
+Unpacking dh-autoreconf (9) ...
+Selecting previously unselected package libavutil-dev.
+Preparing to unpack .../libavutil-dev_6%3a9.11-3+b3_amd64.deb ...
+Unpacking libavutil-dev (6:9.11-3+b3) ...
+Selecting previously unselected package libavcodec-dev.
+Preparing to unpack .../libavcodec-dev_6%3a9.11-3+b3_amd64.deb ...
+Unpacking libavcodec-dev (6:9.11-3+b3) ...
+Selecting previously unselected package libavformat-dev.
+Preparing to unpack .../libavformat-dev_6%3a9.11-3+b3_amd64.deb ...
+Unpacking libavformat-dev (6:9.11-3+b3) ...
+Selecting previously unselected package libavdevice-dev.
+Preparing to unpack .../libavdevice-dev_6%3a9.11-3+b3_amd64.deb ...
+Unpacking libavdevice-dev (6:9.11-3+b3) ...
+Selecting previously unselected package libbz2-dev:amd64.
+Preparing to unpack .../libbz2-dev_1.0.6-5_amd64.deb ...
+Unpacking libbz2-dev:amd64 (1.0.6-5) ...
+Selecting previously unselected package libdate-manip-perl.
+Preparing to unpack .../libdate-manip-perl_6.43-1_all.deb ...
+Unpacking libdate-manip-perl (6.43-1) ...
+Selecting previously unselected package libdbi-perl.
+Preparing to unpack .../libdbi-perl_1.631-3_amd64.deb ...
+Unpacking libdbi-perl (1.631-3) ...
+Selecting previously unselected package libdbd-mysql-perl.
+Preparing to unpack .../libdbd-mysql-perl_4.027-1_amd64.deb ...
+Unpacking libdbd-mysql-perl (4.027-1) ...
+Selecting previously unselected package libencode-locale-perl.
+Preparing to unpack .../libencode-locale-perl_1.03-1_all.deb ...
+Unpacking libencode-locale-perl (1.03-1) ...
+Selecting previously unselected package libhttp-date-perl.
+Preparing to unpack .../libhttp-date-perl_6.02-1_all.deb ...
+Unpacking libhttp-date-perl (6.02-1) ...
+Selecting previously unselected package libfile-listing-perl.
+Preparing to unpack .../libfile-listing-perl_6.04-1_all.deb ...
+Unpacking libfile-listing-perl (6.04-1) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../libgmp-dev_2%3a6.0.0+dfsg-2.2_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.0.0+dfsg-2.2) ...
+Selecting previously unselected package nettle-dev.
+Preparing to unpack .../nettle-dev_2.7.1-2_amd64.deb ...
+Unpacking nettle-dev (2.7.1-2) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Selecting previously unselected package libtasn1-6-dev.
+Preparing to unpack .../libtasn1-6-dev_3.4-3_amd64.deb ...
+Unpacking libtasn1-6-dev (3.4-3) ...
+Selecting previously unselected package libp11-kit-dev.
+Preparing to unpack .../libp11-kit-dev_0.20.2-5_amd64.deb ...
+Unpacking libp11-kit-dev (0.20.2-5) ...
+Selecting previously unselected package libgnutls28-dev:amd64.
+Preparing to unpack .../libgnutls28-dev_3.2.13-2_amd64.deb ...
+Unpacking libgnutls28-dev:amd64 (3.2.13-2) ...
+Selecting previously unselected package liburi-perl.
+Preparing to unpack .../liburi-perl_1.60-1_all.deb ...
+Unpacking liburi-perl (1.60-1) ...
+Selecting previously unselected package libhtml-tagset-perl.
+Preparing to unpack .../libhtml-tagset-perl_3.20-2_all.deb ...
+Unpacking libhtml-tagset-perl (3.20-2) ...
+Selecting previously unselected package libhtml-parser-perl.
+Preparing to unpack .../libhtml-parser-perl_3.71-1+b1_amd64.deb ...
+Unpacking libhtml-parser-perl (3.71-1+b1) ...
+Selecting previously unselected package libhtml-tree-perl.
+Preparing to unpack .../libhtml-tree-perl_5.03-1_all.deb ...
+Unpacking libhtml-tree-perl (5.03-1) ...
+Selecting previously unselected package libio-html-perl.
+Preparing to unpack .../libio-html-perl_1.00-1_all.deb ...
+Unpacking libio-html-perl (1.00-1) ...
+Selecting previously unselected package liblwp-mediatypes-perl.
+Preparing to unpack .../liblwp-mediatypes-perl_6.02-1_all.deb ...
+Unpacking liblwp-mediatypes-perl (6.02-1) ...
+Selecting previously unselected package libhttp-message-perl.
+Preparing to unpack .../libhttp-message-perl_6.06-1_all.deb ...
+Unpacking libhttp-message-perl (6.06-1) ...
+Selecting previously unselected package libhttp-cookies-perl.
+Preparing to unpack .../libhttp-cookies-perl_6.00-2_all.deb ...
+Unpacking libhttp-cookies-perl (6.00-2) ...
+Selecting previously unselected package libhttp-negotiate-perl.
+Preparing to unpack .../libhttp-negotiate-perl_6.00-2_all.deb ...
+Unpacking libhttp-negotiate-perl (6.00-2) ...
+Selecting previously unselected package libnet-ssleay-perl.
+Preparing to unpack .../libnet-ssleay-perl_1.58-1_amd64.deb ...
+Unpacking libnet-ssleay-perl (1.58-1) ...
+Selecting previously unselected package libio-socket-ssl-perl.
+Preparing to unpack .../libio-socket-ssl-perl_1.982-1_all.deb ...
+Unpacking libio-socket-ssl-perl (1.982-1) ...
+Selecting previously unselected package libjpeg8-dev:amd64.
+Preparing to unpack .../libjpeg8-dev_8d-2_amd64.deb ...
+Unpacking libjpeg8-dev:amd64 (8d-2) ...
+Selecting previously unselected package libnet-http-perl.
+Preparing to unpack .../libnet-http-perl_6.06-1_all.deb ...
+Unpacking libnet-http-perl (6.06-1) ...
+Selecting previously unselected package libwww-robotrules-perl.
+Preparing to unpack .../libwww-robotrules-perl_6.01-1_all.deb ...
+Unpacking libwww-robotrules-perl (6.01-1) ...
+Selecting previously unselected package libwww-perl.
+Preparing to unpack .../libwww-perl_6.06-1_all.deb ...
+Unpacking libwww-perl (6.06-1) ...
+Selecting previously unselected package liblwp-protocol-https-perl.
+Preparing to unpack .../liblwp-protocol-https-perl_6.04-2_all.deb ...
+Unpacking liblwp-protocol-https-perl (6.04-2) ...
+Selecting previously unselected package libmysqlclient-dev.
+Preparing to unpack .../libmysqlclient-dev_5.5.37-1_amd64.deb ...
+Unpacking libmysqlclient-dev (5.5.37-1) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-5_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-5) ...
+Selecting previously unselected package libphp-serialization-perl.
+Preparing to unpack .../libphp-serialization-perl_0.34-1_all.deb ...
+Unpacking libphp-serialization-perl (0.34-1) ...
+Selecting previously unselected package libswscale-dev.
+Preparing to unpack .../libswscale-dev_6%3a9.11-3+b3_amd64.deb ...
+Unpacking libswscale-dev (6:9.11-3+b3) ...
+Selecting previously unselected package libsys-mmap-perl.
+Preparing to unpack .../libsys-mmap-perl_0.16-1+b2_amd64.deb ...
+Unpacking libsys-mmap-perl (0.16-1+b2) ...
+Selecting previously unselected package libv4l-dev:amd64.
+Preparing to unpack .../libv4l-dev_1.0.1-1_amd64.deb ...
+Unpacking libv4l-dev:amd64 (1.0.1-1) ...
+Selecting previously unselected package sbuild-build-depends-zoneminder-dummy.
+Preparing to unpack .../sbuild-build-depends-zoneminder-dummy.deb ...
+Unpacking sbuild-build-depends-zoneminder-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libssl1.0.0:amd64 (1.0.1g-3) ...
+Setting up libudev1:amd64 (204-9) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libgpg-error0:amd64 (1.12-0.2) ...
+Setting up libgcrypt11:amd64 (1.5.3-4) ...
+Setting up libnettle4:amd64 (2.7.1-2) ...
+Setting up libhogweed2:amd64 (2.7.1-2) ...
+Setting up libp11-kit0:amd64 (0.20.2-5) ...
+Setting up libtasn1-6:amd64 (3.4-3) ...
+Setting up libgnutls28:amd64 (3.2.13-2) ...
+Setting up libgnutls-openssl27:amd64 (3.2.13-2) ...
+Setting up libgnutls26:amd64 (2.12.23-14) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libwrap0:amd64 (7.6.q-25) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libasound2-data (1.0.27.2-3) ...
+Setting up libasound2:amd64 (1.0.27.2-3) ...
+Setting up libasyncns0:amd64 (0.8-5) ...
+Setting up libavutil52:amd64 (6:9.11-3+b3) ...
+Setting up libgsm1:amd64 (1.0.13-4) ...
+Setting up libmp3lame0:amd64 (3.99.5+repack1-3) ...
+Setting up libopenjpeg5:amd64 (1.5.2-2) ...
+Setting up libopus0:amd64 (1.1-1) ...
+Setting up liborc-0.4-0:amd64 (1:0.4.19-1) ...
+Setting up libschroedinger-1.0-0:amd64 (1.0.11-2) ...
+Setting up libspeex1:amd64 (1.2~rc1.1-1) ...
+Setting up libogg0:amd64 (1.3.1-1) ...
+Setting up libtheora0:amd64 (1.1.1+dfsg.1-3.2) ...
+Setting up libva1:amd64 (1.3.0-2) ...
+Setting up libvorbis0a:amd64 (1.3.2-1.3) ...
+Setting up libvorbisenc2:amd64 (1.3.2-1.3) ...
+Setting up libvpx1:amd64 (1.3.0-2) ...
+Setting up libx264-142:amd64 (2:0.142.2389+git956c8d8-4) ...
+Setting up libxvidcore4:amd64 (2:1.3.3-1) ...
+Setting up libavcodec54:amd64 (6:9.11-3+b3) ...
+Setting up librtmp1:amd64 (2.4+20131018.git79459a2-2) ...
+Setting up libavformat54:amd64 (6:9.11-3+b3) ...
+Setting up libcdio13 (0.83-4.1) ...
+Setting up libcdio-cdda1 (0.83-4.1) ...
+Setting up libcdio-paranoia1 (0.83-4.1) ...
+Setting up libraw1394-11:amd64 (2.1.0-1) ...
+Creating device node /dev/raw1394... done.
+Setting up libusb-1.0-0:amd64 (2:1.0.18-2) ...
+Setting up libdc1394-22:amd64 (2.2.2-1) ...
+Setting up libsamplerate0:amd64 (0.1.8-7) ...
+Setting up libjack-jackd2-0:amd64 (1.9.9.5+20140404git3d7c67dc~dfsg-1) ...
+Setting up libdbus-1-3:amd64 (1.8.0-3) ...
+Setting up x11-common (1:7.7+7) ...
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+All runlevel operations denied by policy
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libice6:amd64 (2:1.0.8-2) ...
+Setting up libjson-c2:amd64 (0.11-4) ...
+Setting up libsm6:amd64 (2:1.2.1-2) ...
+Setting up libflac8:amd64 (1.3.0-2) ...
+Setting up libsndfile1:amd64 (1.0.25-9) ...
+Setting up libsystemd-id128-0:amd64 (204-9) ...
+Setting up libsystemd-journal0:amd64 (204-9) ...
+Setting up libxau6:amd64 (1:1.0.8-1) ...
+Setting up libxdmcp6:amd64 (1:1.1.1-1) ...
+Setting up libxcb1:amd64 (1.10-2) ...
+Setting up libx11-data (2:1.6.2-1) ...
+Setting up libx11-6:amd64 (2:1.6.2-1) ...
+Setting up libx11-xcb1:amd64 (2:1.6.2-1) ...
+Setting up libxext6:amd64 (2:1.3.2-1) ...
+Setting up libxi6:amd64 (2:1.7.2-1) ...
+Setting up libxtst6:amd64 (2:1.2.2-1) ...
+Setting up libpulse0:amd64 (5.0-2) ...
+Setting up libxfixes3:amd64 (1:5.0.1-1) ...
+Setting up libavdevice53:amd64 (6:9.11-3+b3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-2) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.0.0+dfsg-2.2) ...
+Setting up libjpeg8:amd64 (8d-2) ...
+Setting up mysql-common (5.5.37-1) ...
+Setting up libmysqlclient18:amd64 (5.5.37-1) ...
+Setting up libpcrecpp0:amd64 (1:8.31-5) ...
+Setting up libsigsegv2:amd64 (2.10-2) ...
+Setting up libswscale2:amd64 (6:9.11-3+b3) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libv4lconvert0:amd64 (1.0.1-1) ...
+Setting up libv4l-0:amd64 (1.0.1-1) ...
+Setting up libv4l2rds0:amd64 (1.0.1-1) ...
+Setting up libgnutls-xssl0:amd64 (3.2.13-2) ...
+Setting up libgnutlsxx28:amd64 (3.2.13-2) ...
+
+Configuration file '/etc/protocols'
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package maintainer.
+ ==> Using current old file as you requested.
+
+Configuration file '/etc/services'
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package maintainer.
+ ==> Using current old file as you requested.
+Setting up netbase (5.2) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up m4 (1.4.17-3) ...
+Setting up autoconf (2.69-6) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up automake (1:1.14.1-3) ...
+update-alternatives: using /usr/bin/automake-1.14 to provide /usr/bin/automake (automake) in auto mode
+Setting up autopoint (0.18.3.2-1) ...
+Setting up openssl (1.0.1g-3) ...
+Setting up ca-certificates (20140325) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libtool (2.4.2-1.7) ...
+Setting up dh-autoreconf (9) ...
+Setting up libavutil-dev (6:9.11-3+b3) ...
+Setting up libavcodec-dev (6:9.11-3+b3) ...
+Setting up libavformat-dev (6:9.11-3+b3) ...
+Setting up libavdevice-dev (6:9.11-3+b3) ...
+Setting up libbz2-dev:amd64 (1.0.6-5) ...
+Setting up libdate-manip-perl (6.43-1) ...
+Setting up libdbi-perl (1.631-3) ...
+Setting up libdbd-mysql-perl (4.027-1) ...
+Setting up libencode-locale-perl (1.03-1) ...
+Setting up libhttp-date-perl (6.02-1) ...
+Setting up libfile-listing-perl (6.04-1) ...
+Setting up libgmp-dev:amd64 (2:6.0.0+dfsg-2.2) ...
+Setting up nettle-dev (2.7.1-2) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-1) ...
+Setting up libtasn1-6-dev (3.4-3) ...
+Setting up libp11-kit-dev (0.20.2-5) ...
+Setting up libgnutls28-dev:amd64 (3.2.13-2) ...
+Setting up liburi-perl (1.60-1) ...
+Setting up libhtml-tagset-perl (3.20-2) ...
+Setting up libhtml-parser-perl (3.71-1+b1) ...
+Setting up libhtml-tree-perl (5.03-1) ...
+Setting up libio-html-perl (1.00-1) ...
+Setting up liblwp-mediatypes-perl (6.02-1) ...
+Setting up libhttp-message-perl (6.06-1) ...
+Setting up libhttp-cookies-perl (6.00-2) ...
+Setting up libhttp-negotiate-perl (6.00-2) ...
+Setting up libnet-ssleay-perl (1.58-1) ...
+Setting up libio-socket-ssl-perl (1.982-1) ...
+Setting up libjpeg8-dev:amd64 (8d-2) ...
+Setting up libnet-http-perl (6.06-1) ...
+Setting up libwww-robotrules-perl (6.01-1) ...
+Setting up libmysqlclient-dev (5.5.37-1) ...
+Setting up libpcre3-dev:amd64 (1:8.31-5) ...
+Setting up libphp-serialization-perl (0.34-1) ...
+Setting up libswscale-dev (6:9.11-3+b3) ...
+Setting up libsys-mmap-perl (0.16-1+b2) ...
+Setting up libv4l-dev:amd64 (1.0.1-1) ...
+Setting up libwww-perl (6.06-1) ...
+Setting up liblwp-protocol-https-perl (6.04-2) ...
+Setting up sbuild-build-depends-zoneminder-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.18-4) ...
+Processing triggers for ca-certificates (20140325) ...
+Updating certificates in /etc/ssl/certs... 168 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d....done.
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140411-2.1 dpkg-dev_1.17.7 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-4 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.13.10-1
+Package versions: apt_1.0.2 autoconf_2.69-6 automake_1:1.14.1-3 autopoint_0.18.3.2-1 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140411-2.1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 ca-certificates_20140325 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 dh-autoreconf_9 diffutils_1:3.3-1 dpkg_1.17.7 dpkg-dev_1.17.7 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasound2_1.0.27.2-3 libasound2-data_1.0.27.2-3 libasprintf0c2_0.18.3.2-1 libasyncns0_0.8-5 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libavcodec-dev_6:9.11-3+b3 libavcodec54_6:9.11-3+b3 libavdevice-dev_6:9.11-3+b3 libavdevice53_6:9.11-3+b3 libavformat-dev_6:9.11-3+b3 libavformat54_6:9.11-3+b3 libavutil-dev_6:9.11-3+b3 libavutil52_6:9.11-3+b3 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libbz2-dev_1.0.6-5 libc-bin_2.18-4 libc-dev-bin_2.18-4 libc6_2.18-4 libc6-dev_2.18-4 libcap2_1:2.22-1.2 libcdio-cdda1_0.83-4.1 libcdio-paranoia1_0.83-4.1 libcdio13_0.83-4.1 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdate-manip-perl_6.43-1 libdb5.3_5.3.28-3 libdbd-mysql-perl_4.027-1 libdbi-perl_1.631-3 libdbus-1-3_1.8.0-3 libdc1394-22_2.2.2-1 libdebconfclient0_0.189 libdpkg-perl_1.17.7 libencode-locale-perl_1.03-1 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libfile-listing-perl_6.04-1 libflac8_1.3.0-2 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgcrypt11_1.5.3-4 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-2 libgmp-dev_2:6.0.0+dfsg-2.2 libgmp10_2:6.0.0+dfsg-2.2 libgmpxx4ldbl_2:6.0.0+dfsg-2.2 libgnutls-openssl27_3.2.13-2 libgnutls-xssl0_3.2.13-2 libgnutls26_2.12.23-14 libgnutls28_3.2.13-2 libgnutls28-dev_3.2.13-2 libgnutlsxx28_3.2.13-2 libgomp1_4.9.0-1 libgpg-error0_1.12-0.2 libgpm2_1.20.4-6.1 libgsm1_1.0.13-4 libhogweed2_2.7.1-2 libhtml-parser-perl_3.71-1+b1 libhtml-tagset-perl_3.20-2 libhtml-tree-perl_5.03-1 libhttp-cookies-perl_6.00-2 libhttp-date-perl_6.02-1 libhttp-message-perl_6.06-1 libhttp-negotiate-perl_6.00-2 libice6_2:1.0.8-2 libio-html-perl_1.00-1 libio-socket-ssl-perl_1.982-1 libisl10_0.12.2-1 libitm1_4.9.0-1 libjack-jackd2-0_1.9.9.5+20140404git3d7c67dc~dfsg-1 libjpeg8_8d-2 libjpeg8-dev_8d-2 libjson-c2_0.11-4 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblwp-mediatypes-perl_6.02-1 liblwp-protocol-https-perl_6.04-2 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmp3lame0_3.99.5+repack1-3 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libmysqlclient-dev_5.5.37-1 libmysqlclient18_5.5.37-1 libncurses5_5.9+20140118-1 libncursesw5_5.9+20140118-1 libnet-http-perl_6.06-1 libnet-ssleay-perl_1.58-1 libnettle4_2.7.1-2 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libogg0_1.3.1-1 libopenjpeg5_1.5.2-2 libopus0_1.1-1 liborc-0.4-0_1:0.4.19-1 libp11-kit-dev_0.20.2-5 libp11-kit0_0.20.2-5 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libpcre3_1:8.31-5 libpcre3-dev_1:8.31-5 libpcrecpp0_1:8.31-5 libphp-serialization-perl_0.34-1 libpipeline1_1.3.0-1 libpulse0_5.0-2 libquadmath0_4.9.0-1 libraw1394-11_2.1.0-1 libreadline6_6.3-6 librtmp1_2.4+20131018.git79459a2-2 libsamplerate0_0.1.8-7 libschroedinger-1.0-0_1.0.11-2 libselinux1_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsigsegv2_2.10-2 libslang2_2.2.4-16 libsm6_2:1.2.1-2 libsndfile1_1.0.25-9 libspeex1_1.2~rc1.1-1 libss2_1.42.9-3 libssl1.0.0_1.0.1g-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libswscale-dev_6:9.11-3+b3 libswscale2_6:9.11-3+b3 libsys-mmap-perl_0.16-1+b2 libsystemd-id128-0_204-9 libsystemd-journal0_204-9 libtasn1-6_3.4-3 libtasn1-6-dev_3.4-3 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtheora0_1.1.1+dfsg.1-3.2 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140118-1 libtool_2.4.2-1.7 libtsan0_4.9.0-1 libudev1_204-9 libunistring0_0.9.3-5 liburi-perl_1.60-1 libusb-0.1-4_2:0.1.12-23.3 libusb-1.0-0_2:1.0.18-2 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libv4l-0_1.0.1-1 libv4l-dev_1.0.1-1 libv4l2rds0_1.0.1-1 libv4lconvert0_1.0.1-1 libva1_1.3.0-2 libvorbis0a_1.3.2-1.3 libvorbisenc2_1.3.2-1.3 libvpx1_1.3.0-2 libwrap0_7.6.q-25 libwww-perl_6.06-1 libwww-robotrules-perl_6.01-1 libx11-6_2:1.6.2-1 libx11-data_2:1.6.2-1 libx11-xcb1_2:1.6.2-1 libx264-142_2:0.142.2389+git956c8d8-4 libxau6_1:1.0.8-1 libxcb1_1.10-2 libxdmcp6_1:1.1.1-1 libxext6_2:1.3.2-1 libxfixes3_1:5.0.1-1 libxi6_2:1.7.2-1 libxml2_2.9.1+dfsg1-3 libxtst6_2:1.2.2-1 libxvidcore4_2:1.3.3-1 linux-libc-dev_3.13.10-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 m4_1.4.17-3 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-4 mysql-common_5.5.37-1 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 netbase_5.2 nettle-dev_2.7.1-2 openssl_1.0.1g-3 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-zoneminder-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 x11-common_1:7.7+7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1 zlib1g-dev_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+gpgv: keyblock resource `/sbuild-nonexistent/.gnupg/trustedkeys.gpg': file open error
+gpgv: Signature made Tue Feb  4 03:37:13 2014 UTC using RSA key ID 588A553F
+gpgv: Can't check signature: public key not found
+dpkg-source: warning: failed to verify signature on ./zoneminder_1.26.5-3.dsc
+dpkg-source: info: extracting zoneminder in zoneminder-1.26.5
+dpkg-source: info: unpacking zoneminder_1.26.5.orig.tar.gz
+dpkg-source: info: unpacking zoneminder_1.26.5-3.debian.tar.xz
+dpkg-source: info: applying vendor_perl
+dpkg-source: info: applying dir_creation
+dpkg-source: info: applying use_libjs-mootools
+dpkg-source: info: applying libv4l1-videodev.h
+dpkg-source: info: applying do_not_check_for_updates_by_default
+dpkg-source: info: applying libav_path
+dpkg-source: info: applying non_x86_guards
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-5da968a5-8f62-4a17-ad5c-ba7df3d516d6
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package zoneminder
+dpkg-buildpackage: source version 1.26.5-3
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Peter Howard <pjh@northern-ridge.com.au>
+ dpkg-source --before-build zoneminder-1.26.5
+dpkg-buildpackage: host architecture amd64
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+ fakeroot debian/rules clean
+dh clean --with autoreconf
+   dh_testdir
+   dh_auto_clean
+   dh_autoreconf_clean
+   debian/rules override_dh_clean
+make[1]: Entering directory `/«PKGBUILDDIR»'
+# check to make sure that postinst contains the correct upstream version
+[ 1.26.5 = 1.26.5 ]
+# Add here commands to clean up after the build process.
+[ ! -f Makefile ] || /usr/bin/make distclean
+dh_clean 
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ dpkg-source -b zoneminder-1.26.5
+dpkg-source: warning: unknown information field 'Dm-Upload-Allowed' in input data in general section of control info file
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building zoneminder using existing ./zoneminder_1.26.5.orig.tar.gz
+dpkg-source: info: building zoneminder in zoneminder_1.26.5-3.debian.tar.xz
+ debian/rules build
+dpkg-source: info: building zoneminder in zoneminder_1.26.5-3.dsc
+dh build --with autoreconf
+   dh_testdir
+   dh_autoreconf
+configure.ac:204: installing './compile'
+configure.ac:3: installing './install-sh'
+configure.ac:3: installing './missing'
+db/Makefile.am:13: warning: wildcard zm_update-*.sql: non-POSIX variable name
+db/Makefile.am:13: (probably a GNU make extension)
+src/Makefile.am: installing './depcomp'
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+./configure --host=x86_64-linux-gnu --build=x86_64-linux-gnu --sysconfdir=/etc/zm --prefix=/usr --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --with-mysql=/usr  --with-webdir=/usr/share/zoneminder --with-ffmpeg=/usr --with-cgidir=/usr/lib/cgi-bin --with-webuser=www-data --with-webgroup=www-data --enable-crashtrace=no --enable-mmap=yes
+configure: WARNING: unrecognized options: --enable-crashtrace
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+configure: WARNING: You can call configure with the --with-libarch option.
+    This tells configure where to find architecture specific libraries.
+    The default of 'lib' is usually ok but 64 bit machines may require lib64.
+    e.g. --with-libarch=lib or --with-libarch=lib64
+configure: WARNING: You can call configure with the --with-extralibs option.
+    Ordinarily you will need to use this option only when your copy of ffmpeg has been built
+    with support for additional formats and you would use this option to detail which additional
+    libraries ffmpeg was built with so that it is able to link successfully with ZoneMinder.
+    You will need to wrap this option in quotes if it contains any spaces.
+    e.g. --with-extralibs="-lmp3lame"
+configure: WARNING: You can call configure with the --with-webhost option.
+    This tells configure what the host name is for name based virtual hosting. This is only used to populate the sample web/zmHttpd.conf file.
+    e.g. --with-webhost=zm.localdomain
+configure: WARNING: You can call configure with the --enable-debug=<yes|no> or --disable-debug option.
+    This tells configure whether to compile ZoneMinder with debug included. Although debug is included
+    by default it is not output unless explicitly switched on elsewhere. These checks may induce a
+    small penalty on performance and if you are after squeezing the maximum possible performance out
+    of ZoneMinder you may use this switch to prevent debug from being compiled in.
+    e.g. --enable-debug=yes or --disable-debug
+checking for x86_64-linux-gnu-g++... x86_64-linux-gnu-g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether x86_64-linux-gnu-g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of x86_64-linux-gnu-g++... gcc3
+checking for x86_64-linux-gnu-gcc... x86_64-linux-gnu-gcc
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-linux-gnu-gcc accepts -g... yes
+checking for x86_64-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-linux-gnu-gcc... gcc3
+checking whether ln -s works... yes
+checking for x86_64-linux-gnu-ranlib... x86_64-linux-gnu-ranlib
+checking whether make sets $(MAKE)... (cached) yes
+checking how to run the C++ preprocessor... x86_64-linux-gnu-g++ -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... no
+checking for an ANSI C-conforming const... yes
+checking for uid_t in sys/types.h... yes
+checking for inline... inline
+checking for mode_t... yes
+checking for size_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking return type of signal handlers... void
+checking for siginfo_t... yes
+checking for ucontext_t... yes
+checking whether x86_64-linux-gnu-gcc needs -traditional... no
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking types of arguments for select... int,fd_set *,struct timeval *
+checking whether lstat correctly handles trailing slash... yes
+checking whether stat accepts an empty string... no
+checking for strftime... yes
+checking for working strtod... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for gethostbyname... yes
+checking for gethostname... yes
+checking for gettimeofday... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for munmap... yes
+checking for posix_memalign... yes
+checking for putenv... yes
+checking for select... yes
+checking for sendfile... yes
+checking for socket... yes
+checking for sqrt... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strcspn... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strrchr... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoull... yes
+checking for syscall... yes
+checking for sleep... yes
+checking for usleep... yes
+checking for ioctl... yes
+checking for ioctlsocket... no
+checking for sigaction... yes
+checking for ffmpeg... no
+checking for ffmpeg... no
+checking for pnmscale... no
+checking for pnmscale... no
+checking for mysql_init in -lmysqlclient... yes
+checking for jpeg_start_compress in -ljpeg... yes
+checking for pthread_create in -lpthread... yes
+checking for dlsym in -ldl... yes
+checking gnutls/openssl.h usability... yes
+checking gnutls/openssl.h presence... yes
+checking for gnutls/openssl.h... yes
+checking gnutls/gnutls.h usability... yes
+checking gnutls/gnutls.h presence... yes
+checking for gnutls/gnutls.h... yes
+checking gcrypt.h usability... no
+configure: WARNING: zm requires libgcrypt headers to be installed for gnutls
+checking gcrypt.h presence... no
+checking for gcrypt.h... no
+configure: WARNING: libgcrypt.a is required for authenticated streaming - use ZM_SSL_LIB option to select openssl instead
+checking for gcry_check_version in -lgcrypt... no
+checking for gnutls_fingerprint in -lgnutls... yes
+checking for MD5 in -lgnutls-openssl... yes
+checking for pcre_compile in -lpcre... yes
+checking for zlibVersion in -lz... yes
+checking for x264_predict_16x16_init in -lx264... no
+checking for av_malloc in -lavutil... yes
+checking for av_image_copy in -lavcore... no
+checking for avcodec_version in -lavcodec... yes
+checking for avformat_version in -lavformat... yes
+checking for avdevice_register_all in -lavdevice... yes
+checking for sws_scale in -lswscale... yes
+checking for BZ2_bzCompress in -lbz2... yes
+checking for compress in -lz... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for memory.h... (cached) yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking values.h usability... yes
+checking values.h presence... yes
+checking for values.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking for sys/socket.h... (cached) yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking glob.h usability... yes
+checking glob.h presence... yes
+checking for glob.h... yes
+checking sys/sendfile.h usability... yes
+checking sys/sendfile.h presence... yes
+checking for sys/sendfile.h... yes
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking ucontext.h usability... yes
+checking ucontext.h presence... yes
+checking for ucontext.h... yes
+checking sys/syscall.h usability... yes
+checking sys/syscall.h presence... yes
+checking for sys/syscall.h... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking libv4l1-videodev.h usability... yes
+checking libv4l1-videodev.h presence... yes
+checking for libv4l1-videodev.h... yes
+checking linux/videodev2.h usability... yes
+checking linux/videodev2.h presence... yes
+checking for linux/videodev2.h... yes
+checking jpeglib.h usability... yes
+checking jpeglib.h presence... yes
+checking for jpeglib.h... yes
+checking mysql/mysql.h usability... yes
+checking mysql/mysql.h presence... yes
+checking for mysql/mysql.h... yes
+checking how to run the C preprocessor... x86_64-linux-gnu-gcc -E
+checking libavutil/avutil.h usability... yes
+checking libavutil/avutil.h presence... yes
+checking for libavutil/avutil.h... yes
+checking libavcodec/avcodec.h usability... yes
+checking libavcodec/avcodec.h presence... yes
+checking for libavcodec/avcodec.h... yes
+checking libavformat/avformat.h usability... yes
+checking libavformat/avformat.h presence... yes
+checking for libavformat/avformat.h... yes
+checking libswscale/swscale.h usability... yes
+checking libswscale/swscale.h presence... yes
+checking for libswscale/swscale.h... yes
+checking pcre/pcre.h usability... no
+checking pcre/pcre.h presence... no
+checking for pcre/pcre.h... no
+checking pcre.h usability... yes
+checking pcre.h presence... yes
+checking for pcre.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking for fcntl.h... (cached) yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking whether MD5 is declared... yes
+checking whether backtrace is declared... yes
+checking whether backtrace_symbols is declared... yes
+checking for perl... perl
+checking for perl version greater than or equal to 5.6.0... ok
+checking for perl module Sys::Syslog... ok
+checking for perl module DBI... ok
+checking for perl module DBD::mysql... ok
+checking for perl module Getopt::Long... ok
+checking for perl module Time::HiRes... ok
+checking for perl module Date::Manip... ok
+checking for perl module LWP::UserAgent... ok
+checking for perl module ExtUtils::MakeMaker... ok
+checking for perl module Sys::Mmap... ok
+checking for perl module Module::Load... ok
+checking for perl module Device::SerialPort... no
+configure: WARNING: Device::SerialPort is required for RS232/RS485 PTZ camera control
+checking for perl module Net::FTP... ok
+configure: WARNING: Net::SFTP::Foreign is required for automatic event uploading using sftp
+checking for perl module Net::SFTP::Foreign... no
+configure: WARNING: Expect is required for automatic event uploading using sftp
+checking for perl module Expect... no
+checking for perl module Archive::Tar... ok
+checking for perl module Archive::Zip... no
+configure: WARNING: Archive::Zip may be required for automatic event uploading
+checking for perl module Net::SMTP... ok
+configure: WARNING: MIME::Lite may be required for automatic event email notification
+checking for perl module MIME::Lite... no
+checking for perl module MIME::Entity... no
+configure: WARNING: MIME::Entity may be required for automatic event email notification
+checking for perl module X10::ActiveHome... no
+configure: WARNING: X10::ActiveHome is required for X.10 support
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating zm.conf
+config.status: creating zmconfgen.pl
+config.status: creating db/Makefile
+config.status: creating db/zm_create.sql
+config.status: creating misc/Makefile
+config.status: creating misc/apache.conf
+config.status: creating misc/logrotate.conf
+config.status: creating misc/syslog.conf
+config.status: creating scripts/Makefile
+config.status: creating scripts/zm
+config.status: creating scripts/zmaudit.pl
+config.status: creating scripts/zmcontrol.pl
+config.status: creating scripts/zmdc.pl
+config.status: creating scripts/zmfilter.pl
+config.status: creating scripts/zmpkg.pl
+config.status: creating scripts/zmtrack.pl
+config.status: creating scripts/zmtrigger.pl
+config.status: creating scripts/zmupdate.pl
+config.status: creating scripts/zmvideo.pl
+config.status: creating scripts/zmwatch.pl
+config.status: creating scripts/zmx10.pl
+config.status: creating scripts/zmdbbackup
+config.status: creating scripts/zmdbrestore
+config.status: creating scripts/zmeventdump
+config.status: creating scripts/zmlogrotate.conf
+config.status: creating scripts/ZoneMinder/lib/ZoneMinder/Base.pm
+config.status: creating scripts/ZoneMinder/lib/ZoneMinder/Config.pm
+config.status: creating scripts/ZoneMinder/lib/ZoneMinder/Memory.pm
+config.status: creating scripts/ZoneMinder/lib/ZoneMinder/ConfigData.pm
+config.status: creating src/Makefile
+config.status: creating src/zm_config.h
+config.status: creating web/Makefile
+config.status: creating web/ajax/Makefile
+config.status: creating web/css/Makefile
+config.status: creating web/graphics/Makefile
+config.status: creating web/includes/Makefile
+config.status: creating web/includes/config.php
+config.status: creating web/js/Makefile
+config.status: creating web/lang/Makefile
+config.status: creating web/skins/Makefile
+config.status: creating web/skins/classic/Makefile
+config.status: creating web/skins/classic/ajax/Makefile
+config.status: creating web/skins/classic/css/Makefile
+config.status: creating web/skins/classic/graphics/Makefile
+config.status: creating web/skins/classic/includes/Makefile
+config.status: creating web/skins/classic/js/Makefile
+config.status: creating web/skins/classic/lang/Makefile
+config.status: creating web/skins/classic/views/Makefile
+config.status: creating web/skins/classic/views/css/Makefile
+config.status: creating web/skins/classic/views/js/Makefile
+config.status: creating web/skins/mobile/Makefile
+config.status: creating web/skins/mobile/ajax/Makefile
+config.status: creating web/skins/mobile/css/Makefile
+config.status: creating web/skins/mobile/graphics/Makefile
+config.status: creating web/skins/mobile/includes/Makefile
+config.status: creating web/skins/mobile/lang/Makefile
+config.status: creating web/skins/mobile/views/Makefile
+config.status: creating web/skins/mobile/views/css/Makefile
+config.status: creating web/tools/Makefile
+config.status: creating web/tools/mootools/Makefile
+config.status: creating web/views/Makefile
+config.status: creating web/skins/xml/Makefile
+config.status: creating web/skins/xml/views/Makefile
+config.status: creating web/skins/xml/includes/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing src/zm_config_defines.h commands
+Generating 'src/zm_config_defines.h'
+Updating 'db/zm_create.sql'
+config.status: executing scripts/ZoneMinder/Makefile commands
+perl Makefile.PL INSTALLDIRS=vendor
+Checking if your kit is complete...
+Looks good
+Writing Makefile for ZoneMinder
+Writing MYMETA.yml and MYMETA.json
+configure: WARNING: unrecognized options: --enable-crashtrace
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+make  all-recursive
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making all in src
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zmc.o -MD -MP -MF .deps/zmc.Tpo -c -o zmc.o zmc.cpp
+mv -f .deps/zmc.Tpo .deps/zmc.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_box.o -MD -MP -MF .deps/zm_box.Tpo -c -o zm_box.o zm_box.cpp
+mv -f .deps/zm_box.Tpo .deps/zm_box.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_buffer.o -MD -MP -MF .deps/zm_buffer.Tpo -c -o zm_buffer.o zm_buffer.cpp
+In file included from zm_buffer.cpp:23:
+./zm_buffer.h:162:33: warning: comparison of constant 2 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+                else if ( level >= 2 )
+                          ~~~~~ ^  ~
+1 warning generated.
+mv -f .deps/zm_buffer.Tpo .deps/zm_buffer.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_camera.o -MD -MP -MF .deps/zm_camera.Tpo -c -o zm_camera.o zm_camera.cpp
+mv -f .deps/zm_camera.Tpo .deps/zm_camera.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_comms.o -MD -MP -MF .deps/zm_comms.Tpo -c -o zm_comms.o zm_comms.cpp
+In file included from zm_comms.cpp:20:
+./zm_comms.h:445:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:450:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:456:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:462:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:468:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:475:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:480:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:486:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:522:10: warning: 'UnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:529:10: warning: 'UnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:587:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:591:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:595:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:599:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:603:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:608:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:612:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:616:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:625:10: warning: 'UdpUnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:630:10: warning: 'UdpUnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:786:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:790:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:799:10: warning: 'TcpUnixClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:808:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:812:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:816:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:820:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:829:10: warning: 'TcpInetServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpInetSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+./zm_comms.h:835:10: warning: 'TcpUnixServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:844:10: warning: 'TcpUnixServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpUnixSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+30 warnings generated.
+mv -f .deps/zm_comms.Tpo .deps/zm_comms.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_config.o -MD -MP -MF .deps/zm_config.Tpo -c -o zm_config.o zm_config.cpp
+mv -f .deps/zm_config.Tpo .deps/zm_config.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_coord.o -MD -MP -MF .deps/zm_coord.Tpo -c -o zm_coord.o zm_coord.cpp
+mv -f .deps/zm_coord.Tpo .deps/zm_coord.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm.o -MD -MP -MF .deps/zm.Tpo -c -o zm.o zm.cpp
+mv -f .deps/zm.Tpo .deps/zm.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_db.o -MD -MP -MF .deps/zm_db.Tpo -c -o zm_db.o zm_db.cpp
+mv -f .deps/zm_db.Tpo .deps/zm_db.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_logger.o -MD -MP -MF .deps/zm_logger.Tpo -c -o zm_logger.o zm_logger.cpp
+mv -f .deps/zm_logger.Tpo .deps/zm_logger.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_event.o -MD -MP -MF .deps/zm_event.Tpo -c -o zm_event.o zm_event.cpp
+mv -f .deps/zm_event.Tpo .deps/zm_event.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_exception.o -MD -MP -MF .deps/zm_exception.Tpo -c -o zm_exception.o zm_exception.cpp
+mv -f .deps/zm_exception.Tpo .deps/zm_exception.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_file_camera.o -MD -MP -MF .deps/zm_file_camera.Tpo -c -o zm_file_camera.o zm_file_camera.cpp
+In file included from zm_file_camera.cpp:35:
+In file included from ./zm_file_camera.h:24:
+./zm_buffer.h:162:33: warning: comparison of constant 2 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+                else if ( level >= 2 )
+                          ~~~~~ ^  ~
+1 warning generated.
+mv -f .deps/zm_file_camera.Tpo .deps/zm_file_camera.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_ffmpeg_camera.o -MD -MP -MF .deps/zm_ffmpeg_camera.Tpo -c -o zm_ffmpeg_camera.o zm_ffmpeg_camera.cpp
+In file included from zm_ffmpeg_camera.cpp:24:
+In file included from ./zm_ffmpeg_camera.h:25:
+./zm_buffer.h:162:33: warning: comparison of constant 2 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+                else if ( level >= 2 )
+                          ~~~~~ ^  ~
+1 warning generated.
+mv -f .deps/zm_ffmpeg_camera.Tpo .deps/zm_ffmpeg_camera.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_image.o -MD -MP -MF .deps/zm_image.Tpo -c -o zm_image.o zm_image.cpp
+zm_image.cpp:1154:12: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if ( lo_x < 0 || hi_x > (width-1) || ( lo_y < 0 || hi_y > (height-1) ) )
+             ~~~~ ^ ~
+zm_image.cpp:1154:46: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+        if ( lo_x < 0 || hi_x > (width-1) || ( lo_y < 0 || hi_y > (height-1) ) )
+                                               ~~~~ ^ ~
+zm_image.cpp:2992:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("sse2"))) void sse2_fastblend(const uint8_t* col1, const uint8_t* col2, uint8_t* result, unsigned long count, double blendpercent) {
+                        ^
+zm_image.cpp:3336:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("sse2"))) void sse2_delta8_gray8(const uint8_t* col1, const uint8_t* col2, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:3366:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("sse2"))) void sse2_delta8_rgba(const uint8_t* col1, const uint8_t* col2, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:3423:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("sse2"))) void sse2_delta8_bgra(const uint8_t* col1, const uint8_t* col2, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:3480:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("sse2"))) void sse2_delta8_argb(const uint8_t* col1, const uint8_t* col2, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:3538:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("sse2"))) void sse2_delta8_abgr(const uint8_t* col1, const uint8_t* col2, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:3596:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_delta8_rgba(const uint8_t* col1, const uint8_t* col2, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:3650:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_delta8_bgra(const uint8_t* col1, const uint8_t* col2, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:3704:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_delta8_argb(const uint8_t* col1, const uint8_t* col2, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:3759:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_delta8_abgr(const uint8_t* col1, const uint8_t* col2, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:4013:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_convert_rgba_gray8(const uint8_t* col1, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:4061:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_convert_yuyv_gray8(const uint8_t* col1, uint8_t* result, unsigned long count) {
+                        ^
+zm_image.cpp:4120:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[0] = r<0?0:(r>255?255:r);
+                            ~^~
+zm_image.cpp:4121:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[1] = g<0?0:(g>255?255:g);
+                            ~^~
+zm_image.cpp:4122:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[2] = b<0?0:(b>255?255:b);
+                            ~^~
+zm_image.cpp:4128:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[3] = r<0?0:(r>255?255:r);
+                            ~^~
+zm_image.cpp:4129:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[4] = g<0?0:(g>255?255:g);
+                            ~^~
+zm_image.cpp:4130:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[5] = b<0?0:(b>255?255:b);
+                            ~^~
+zm_image.cpp:4149:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[0] = r<0?0:(r>255?255:r);
+                            ~^~
+zm_image.cpp:4150:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[1] = g<0?0:(g>255?255:g);
+                            ~^~
+zm_image.cpp:4151:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[2] = b<0?0:(b>255?255:b);
+                            ~^~
+zm_image.cpp:4157:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[4] = r<0?0:(r>255?255:r);
+                            ~^~
+zm_image.cpp:4158:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[5] = g<0?0:(g>255?255:g);
+                            ~^~
+zm_image.cpp:4159:16: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                result[6] = b<0?0:(b>255?255:b);
+                            ~^~
+zm_image.cpp:4680:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_deinterlace_4field_gray8(uint8_t* col1, uint8_t* col2, unsigned int threshold, unsigned int width, unsigned int height) {
+                        ^
+zm_image.cpp:4815:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_deinterlace_4field_rgba(uint8_t* col1, uint8_t* col2, unsigned int threshold, unsigned int width, unsigned int height) {
+                        ^
+zm_image.cpp:4997:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_deinterlace_4field_bgra(uint8_t* col1, uint8_t* col2, unsigned int threshold, unsigned int width, unsigned int height) {
+                        ^
+zm_image.cpp:5179:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_deinterlace_4field_argb(uint8_t* col1, uint8_t* col2, unsigned int threshold, unsigned int width, unsigned int height) {
+                        ^
+zm_image.cpp:5361:25: warning: unknown attribute '__target__' ignored [-Wattributes]
+__attribute__((noinline,__target__("ssse3"))) void ssse3_deinterlace_4field_abgr(uint8_t* col1, uint8_t* col2, unsigned int threshold, unsigned int width, unsigned int height) {
+                        ^
+31 warnings generated.
+mv -f .deps/zm_image.Tpo .deps/zm_image.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_jpeg.o -MD -MP -MF .deps/zm_jpeg.Tpo -c -o zm_jpeg.o zm_jpeg.cpp
+mv -f .deps/zm_jpeg.Tpo .deps/zm_jpeg.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_local_camera.o -MD -MP -MF .deps/zm_local_camera.Tpo -c -o zm_local_camera.o zm_local_camera.cpp
+mv -f .deps/zm_local_camera.Tpo .deps/zm_local_camera.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_monitor.o -MD -MP -MF .deps/zm_monitor.Tpo -c -o zm_monitor.o zm_monitor.cpp
+In file included from zm_monitor.cpp:35:
+In file included from ./zm_remote_camera_http.h:25:
+./zm_buffer.h:162:33: warning: comparison of constant 2 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+                else if ( level >= 2 )
+                          ~~~~~ ^  ~
+In file included from zm_monitor.cpp:37:
+In file included from ./zm_remote_camera_rtsp.h:27:
+In file included from ./zm_rtsp.h:25:
+./zm_comms.h:445:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:450:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:456:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:462:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:468:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:475:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:480:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:486:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:522:10: warning: 'UnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:529:10: warning: 'UnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:587:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:591:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:595:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:599:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:603:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:608:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:612:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:616:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:625:10: warning: 'UdpUnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:630:10: warning: 'UdpUnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:786:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:790:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:799:10: warning: 'TcpUnixClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:808:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:812:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:816:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:820:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:829:10: warning: 'TcpInetServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpInetSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+./zm_comms.h:835:10: warning: 'TcpUnixServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:844:10: warning: 'TcpUnixServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpUnixSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+31 warnings generated.
+mv -f .deps/zm_monitor.Tpo .deps/zm_monitor.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_ffmpeg.o -MD -MP -MF .deps/zm_ffmpeg.Tpo -c -o zm_ffmpeg.o zm_ffmpeg.cpp
+mv -f .deps/zm_ffmpeg.Tpo .deps/zm_ffmpeg.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_mpeg.o -MD -MP -MF .deps/zm_mpeg.Tpo -c -o zm_mpeg.o zm_mpeg.cpp
+mv -f .deps/zm_mpeg.Tpo .deps/zm_mpeg.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_poly.o -MD -MP -MF .deps/zm_poly.Tpo -c -o zm_poly.o zm_poly.cpp
+mv -f .deps/zm_poly.Tpo .deps/zm_poly.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_regexp.o -MD -MP -MF .deps/zm_regexp.Tpo -c -o zm_regexp.o zm_regexp.cpp
+mv -f .deps/zm_regexp.Tpo .deps/zm_regexp.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_remote_camera.o -MD -MP -MF .deps/zm_remote_camera.Tpo -c -o zm_remote_camera.o zm_remote_camera.cpp
+mv -f .deps/zm_remote_camera.Tpo .deps/zm_remote_camera.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_remote_camera_http.o -MD -MP -MF .deps/zm_remote_camera_http.Tpo -c -o zm_remote_camera_http.o zm_remote_camera_http.cpp
+In file included from zm_remote_camera_http.cpp:20:
+In file included from ./zm_remote_camera_http.h:25:
+./zm_buffer.h:162:33: warning: comparison of constant 2 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+                else if ( level >= 2 )
+                          ~~~~~ ^  ~
+1 warning generated.
+mv -f .deps/zm_remote_camera_http.Tpo .deps/zm_remote_camera_http.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_remote_camera_rtsp.o -MD -MP -MF .deps/zm_remote_camera_rtsp.Tpo -c -o zm_remote_camera_rtsp.o zm_remote_camera_rtsp.cpp
+In file included from zm_remote_camera_rtsp.cpp:24:
+In file included from ./zm_remote_camera_rtsp.h:25:
+./zm_buffer.h:162:33: warning: comparison of constant 2 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+                else if ( level >= 2 )
+                          ~~~~~ ^  ~
+In file included from zm_remote_camera_rtsp.cpp:24:
+In file included from ./zm_remote_camera_rtsp.h:27:
+In file included from ./zm_rtsp.h:25:
+./zm_comms.h:445:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:450:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:456:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:462:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:468:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:475:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:480:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:486:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:522:10: warning: 'UnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:529:10: warning: 'UnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:587:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:591:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:595:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:599:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:603:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:608:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:612:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:616:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:625:10: warning: 'UdpUnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:630:10: warning: 'UdpUnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:786:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:790:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:799:10: warning: 'TcpUnixClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:808:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:812:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:816:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:820:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:829:10: warning: 'TcpInetServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpInetSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+./zm_comms.h:835:10: warning: 'TcpUnixServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:844:10: warning: 'TcpUnixServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpUnixSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+31 warnings generated.
+mv -f .deps/zm_remote_camera_rtsp.Tpo .deps/zm_remote_camera_rtsp.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_rtp.o -MD -MP -MF .deps/zm_rtp.Tpo -c -o zm_rtp.o zm_rtp.cpp
+mv -f .deps/zm_rtp.Tpo .deps/zm_rtp.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_rtp_ctrl.o -MD -MP -MF .deps/zm_rtp_ctrl.Tpo -c -o zm_rtp_ctrl.o zm_rtp_ctrl.cpp
+In file included from zm_rtp_ctrl.cpp:24:
+In file included from ./zm_rtp_ctrl.h:24:
+./zm_comms.h:445:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:450:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:456:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:462:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:468:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:475:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:480:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:486:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:522:10: warning: 'UnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:529:10: warning: 'UnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:587:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:591:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:595:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:599:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:603:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:608:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:612:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:616:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:625:10: warning: 'UdpUnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:630:10: warning: 'UdpUnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:786:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:790:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:799:10: warning: 'TcpUnixClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:808:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:812:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:816:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:820:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:829:10: warning: 'TcpInetServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpInetSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+./zm_comms.h:835:10: warning: 'TcpUnixServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:844:10: warning: 'TcpUnixServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpUnixSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+In file included from zm_rtp_ctrl.cpp:27:
+In file included from ./zm_rtsp.h:27:
+In file included from ./zm_rtp_source.h:23:
+./zm_buffer.h:162:33: warning: comparison of constant 2 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+                else if ( level >= 2 )
+                          ~~~~~ ^  ~
+31 warnings generated.
+mv -f .deps/zm_rtp_ctrl.Tpo .deps/zm_rtp_ctrl.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_rtp_data.o -MD -MP -MF .deps/zm_rtp_data.Tpo -c -o zm_rtp_data.o zm_rtp_data.cpp
+In file included from zm_rtp_data.cpp:24:
+In file included from ./zm_rtp_data.h:24:
+./zm_buffer.h:162:33: warning: comparison of constant 2 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+                else if ( level >= 2 )
+                          ~~~~~ ^  ~
+In file included from zm_rtp_data.cpp:26:
+In file included from ./zm_rtsp.h:25:
+./zm_comms.h:445:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:450:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:456:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:462:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:468:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:475:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:480:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:486:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:522:10: warning: 'UnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:529:10: warning: 'UnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:587:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:591:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:595:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:599:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:603:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:608:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:612:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:616:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:625:10: warning: 'UdpUnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:630:10: warning: 'UdpUnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:786:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:790:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:799:10: warning: 'TcpUnixClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:808:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:812:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:816:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:820:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:829:10: warning: 'TcpInetServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpInetSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+./zm_comms.h:835:10: warning: 'TcpUnixServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:844:10: warning: 'TcpUnixServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpUnixSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+31 warnings generated.
+mv -f .deps/zm_rtp_data.Tpo .deps/zm_rtp_data.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_rtp_source.o -MD -MP -MF .deps/zm_rtp_source.Tpo -c -o zm_rtp_source.o zm_rtp_source.cpp
+In file included from zm_rtp_source.cpp:20:
+In file included from ./zm_rtp_source.h:23:
+./zm_buffer.h:162:33: warning: comparison of constant 2 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+                else if ( level >= 2 )
+                          ~~~~~ ^  ~
+1 warning generated.
+mv -f .deps/zm_rtp_source.Tpo .deps/zm_rtp_source.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_rtsp.o -MD -MP -MF .deps/zm_rtsp.Tpo -c -o zm_rtsp.o zm_rtsp.cpp
+In file included from zm_rtsp.cpp:24:
+In file included from ./zm_rtsp.h:25:
+./zm_comms.h:445:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:450:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:456:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:462:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:468:10: warning: 'InetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:475:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:480:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:486:10: warning: 'InetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:522:10: warning: 'UnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:529:10: warning: 'UnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:587:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:591:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv ) 
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:595:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:599:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:603:10: warning: 'UdpInetSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:608:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const SockAddrInet &addr ) 
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:612:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:616:10: warning: 'UdpInetSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:625:10: warning: 'UdpUnixSocket::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:630:10: warning: 'UdpUnixSocket::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:786:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, const char *serv )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:790:10: warning: 'TcpInetClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *host, int port )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 2)
+        virtual bool connect();
+                     ^
+./zm_comms.h:799:10: warning: 'TcpUnixClient::connect' hides overloaded virtual function [-Woverloaded-virtual]
+    bool connect( const char *path )
+         ^
+./zm_comms.h:299:15: note: hidden overloaded virtual function 'Socket::connect' declared here: different number of parameters (0 vs 1)
+        virtual bool connect();
+                     ^
+./zm_comms.h:808:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:812:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *host, int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 2)
+        virtual bool bind();
+                     ^
+./zm_comms.h:816:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *serv )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:820:10: warning: 'TcpInetServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( int port )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:829:10: warning: 'TcpInetServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpInetSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpInetSocket *&')
+./zm_comms.h:835:10: warning: 'TcpUnixServer::bind' hides overloaded virtual function [-Woverloaded-virtual]
+    bool bind( const char *path )
+         ^
+./zm_comms.h:296:15: note: hidden overloaded virtual function 'Socket::bind' declared here: different number of parameters (0 vs 1)
+        virtual bool bind();
+                     ^
+./zm_comms.h:844:10: warning: 'TcpUnixServer::accept' hides overloaded virtual functions [-Woverloaded-virtual]
+    bool accept( TcpUnixSocket *&newSocket );
+         ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+        virtual bool accept( int & );
+                     ^
+./zm_comms.h:302:15: note: hidden overloaded virtual function 'Socket::accept' declared here: type mismatch at 1st parameter ('int &' vs 'TcpUnixSocket *&')
+In file included from zm_rtsp.cpp:24:
+In file included from ./zm_rtsp.h:27:
+In file included from ./zm_rtp_source.h:23:
+./zm_buffer.h:162:33: warning: comparison of constant 2 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+                else if ( level >= 2 )
+                          ~~~~~ ^  ~
+31 warnings generated.
+mv -f .deps/zm_rtsp.Tpo .deps/zm_rtsp.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_sdp.o -MD -MP -MF .deps/zm_sdp.Tpo -c -o zm_sdp.o zm_sdp.cpp
+mv -f .deps/zm_sdp.Tpo .deps/zm_sdp.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_signal.o -MD -MP -MF .deps/zm_signal.Tpo -c -o zm_signal.o zm_signal.cpp
+mv -f .deps/zm_signal.Tpo .deps/zm_signal.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_stream.o -MD -MP -MF .deps/zm_stream.Tpo -c -o zm_stream.o zm_stream.cpp
+mv -f .deps/zm_stream.Tpo .deps/zm_stream.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_thread.o -MD -MP -MF .deps/zm_thread.Tpo -c -o zm_thread.o zm_thread.cpp
+mv -f .deps/zm_thread.Tpo .deps/zm_thread.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_time.o -MD -MP -MF .deps/zm_time.Tpo -c -o zm_time.o zm_time.cpp
+mv -f .deps/zm_time.Tpo .deps/zm_time.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_timer.o -MD -MP -MF .deps/zm_timer.Tpo -c -o zm_timer.o zm_timer.cpp
+mv -f .deps/zm_timer.Tpo .deps/zm_timer.Po
+x86_64-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/include -I/usr/include -D__STDC_CONSTANT_MACROS -Wall -finline-functions -fomit-frame-pointer -I/usr/include -D__STDC_CONSTANT_MACROS -D_FORTIFY_SOURCE=2 -D__STDC_CONSTANT_MACROS -D__STDC_CONSTANT_MACROS -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -DZM_FFMPEG_CVS -DHAVE_LIBCRYPTO -MT zm_user.o -MD -MP -MF .deps/zm_user.Tpo -c -o zm_user.o zm_user.cpp
+In file included from zm_user.cpp:23:
+./zm_user.h:36:10: fatal error: 'openssl/md5.h' file not found
+#include <openssl/md5.h>
+         ^
+1 error generated.
+make[3]: *** [zm_user.o] Error 1
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: *** [all] Error 2
+dh_auto_build: make -j1 returned exit code 2
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+make: *** [build] Error 2
+dpkg-buildpackage: error: debian/rules build gave error exit status 2
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140428-2035
+
+Finished
+────────
+
+E: Build failure (dpkg-buildpackage died)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 19524
+Build-Time: 24
+Distribution: sid
+Fail-Stage: build
+Host Architecture: amd64
+Install-Time: 51
+Job: zoneminder_1.26.5-3.dsc
+Machine Architecture: amd64
+Package: zoneminder
+Package-Time: 81
+Source-Version: 1.26.5-3
+Space: 19524
+Status: attempted
+Version: 1.26.5-3
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140428-2035
+Build needed 00:01:21, 19524k disc space

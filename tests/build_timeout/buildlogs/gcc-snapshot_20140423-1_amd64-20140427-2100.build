@@ -1,0 +1,112 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ gcc-snapshot 20140423-1 (amd64)                            27 Apr 2014 21:00 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: gcc-snapshot
+Version: 20140423-1
+Source Version: 20140423-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/gcc-snapshot-H2YlnS/gcc-snapshot-20140423' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/gcc-snapshot-H2YlnS' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-9db8a8b2-3067-4b4c-80c4-2e70ab6592cf' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+gcc-snapshot_20140423-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-uziCG6/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11456 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 5.0.62), g++-multilib, libc6-dev (>= 2.13-5), libc6-dev-i386, lib32gcc1, libc6-dev-x32, libx32gcc1, libc6-dbg, m4, libtool, autoconf2.64, autogen, zlib1g-dev, gawk, lzma, xz-utils, patchutils, binutils (>= 2.23) | binutils-multiarch (>= 2.23), gperf (>= 3.0.1), bison (>= 1:2.3), flex, gettext, texinfo (>= 4.3), locales, sharutils, procps, libantlr-java, python, libffi-dev, fastjar, libmagic-dev, libecj-java (>= 3.3.0-2), zip, libasound2-dev, libxtst-dev, libxt-dev, libgtk2.0-dev (>= 2.4.4-2), libart-2.0-dev, libcairo2-dev, gnat-4.9 | gnat-4.6 (>= 4.6.4-2) | gnat (>= 4.1), gnat-4.9 | gnat-4.6 (>= 4.6.4-2) | gnat (<< 4.6.1), netbase, libcloog-isl-dev (>= 0.18), libmpc-dev (>= 1.0), libmpfr-dev (>= 3.0.0-9~), libgmp-dev (>= 2:5.0.1~), dejagnu, realpath (>= 1.9.12), chrpath, lsb-release, quilt
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 5.0.62), g++-multilib, libc6-dev (>= 2.13-5), libc6-dev-i386, lib32gcc1, libc6-dev-x32, libx32gcc1, libc6-dbg, m4, libtool, autoconf2.64, autogen, zlib1g-dev, gawk, lzma, xz-utils, patchutils, binutils (>= 2.23), gperf (>= 3.0.1), bison (>= 1:2.3), flex, gettext, texinfo (>= 4.3), locales, sharutils, procps, libantlr-java, python, libffi-dev, fastjar, libmagic-dev, libecj-java (>= 3.3.0-2), zip, libasound2-dev, libxtst-dev, libxt-dev, libgtk2.0-dev (>= 2.4.4-2), libart-2.0-dev, libcairo2-dev, gnat-4.9, gnat-4.9, netbase, libcloog-isl-dev (>= 0.18), libmpc-dev (>= 1.0), libmpfr-dev (>= 3.0.0-9~), libgmp-dev (>= 2:5.0.1~), dejagnu, realpath (>= 1.9.12), chrpath, lsb-release, quilt
+dpkg-deb: building package `sbuild-build-depends-gcc-snapshot-dummy' in `/«BUILDDIR»/resolver-mYoIgX/apt_archive/sbuild-build-depends-gcc-snapshot-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install gcc-snapshot build dependencies (apt-based resolver)                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ sbuild-build-depends-gcc-snapshot-dummy : Depends: g++-multilib but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+apt-get failed.
+Package installation failed
+Not removing build depends: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Not cleaning session: cloned chroot in use
+E: Package build dependencies not satisfied; skipping
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 0
+Build-Time: 0
+Distribution: sid
+Fail-Stage: install-deps
+Host Architecture: amd64
+Install-Time: 0
+Job: gcc-snapshot_20140423-1.dsc
+Machine Architecture: amd64
+Package: gcc-snapshot
+Package-Time: 0
+Source-Version: 20140423-1
+Space: 0
+Status: failed
+Version: 20140423-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140427-2100
+Build needed 00:00:00, 0k disc space
