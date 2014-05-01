@@ -1,0 +1,675 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ nwipe 0.14-1 (amd64)                                       01 May 2014 21:07 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: nwipe
+Version: 0.14-1
+Source Version: 0.14-1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/nwipe-d9sphJ/nwipe-0.14' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/nwipe-d9sphJ' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-851ff5c4-d7e8-4d07-a9d2-9b21e2ff4f13' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+nwipe_0.14-1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-tYE8ve/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11463 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), autotools-dev, libparted0-dev, libncurses5-dev, dpkg-dev (>= 1.16.1~)
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5), debhelper (>= 9), autotools-dev, libparted0-dev, libncurses5-dev, dpkg-dev (>= 1.16.1~)
+dpkg-deb: building package `sbuild-build-depends-nwipe-dummy' in `/«BUILDDIR»/resolver-JjsSbF/apt_archive/sbuild-build-depends-nwipe-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install nwipe build dependencies (apt-based resolver)                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  autotools-dev bsdmainutils debhelper dmsetup file gettext gettext-base
+  groff-base intltool-debian libasprintf0c2 libblkid-dev libcroco3
+  libdevmapper-dev libdevmapper-event1.02.1 libdevmapper1.02.1 libglib2.0-0
+  libmagic1 libncurses5-dev libparted0-dev libparted0debian1 libpcre3-dev
+  libpcrecpp0 libpipeline1 libselinux1-dev libsepol1-dev libtinfo-dev libudev1
+  libunistring0 libxml2 man-db po-debconf uuid-dev
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff ncurses-doc
+  parted parted-doc libparted0-i18n less www-browser libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  autotools-dev bsdmainutils debhelper dmsetup file gettext gettext-base
+  groff-base intltool-debian libasprintf0c2 libblkid-dev libcroco3
+  libdevmapper-dev libdevmapper-event1.02.1 libdevmapper1.02.1 libglib2.0-0
+  libmagic1 libncurses5-dev libparted0-dev libparted0debian1 libpcre3-dev
+  libpcrecpp0 libpipeline1 libselinux1-dev libsepol1-dev libtinfo-dev libudev1
+  libunistring0 libxml2 man-db po-debconf sbuild-build-depends-nwipe-dummy
+  uuid-dev
+0 upgraded, 33 newly installed, 0 to remove and 9 not upgraded.
+Need to get 11.0 MB/11.0 MB of archives.
+After this operation, 33.3 MB of additional disk space will be used.
+Get:1 http://debian.proxad.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://debian.proxad.net/debian/ sid/main libudev1 amd64 204-10 [46.0 kB]
+Get:3 http://debian.proxad.net/debian/ sid/main groff-base amd64 1.22.2-5 [1043 kB]
+Get:4 http://debian.proxad.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:5 http://debian.proxad.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:6 http://debian.proxad.net/debian/ sid/main libasprintf0c2 amd64 0.18.3.2-1 [29.2 kB]
+Get:7 http://debian.proxad.net/debian/ sid/main libmagic1 amd64 1:5.18-1 [233 kB]
+Get:8 http://debian.proxad.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-3 [791 kB]
+Get:9 http://debian.proxad.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-3 [2405 kB]
+Get:10 http://debian.proxad.net/debian/ sid/main libcroco3 amd64 0.6.8-2 [133 kB]
+Get:11 http://debian.proxad.net/debian/ sid/main dmsetup amd64 2:1.02.83-2 [64.9 kB]
+Get:12 http://debian.proxad.net/debian/ sid/main libdevmapper1.02.1 amd64 2:1.02.83-2 [123 kB]
+Get:13 http://debian.proxad.net/debian/ sid/main libdevmapper-event1.02.1 amd64 2:1.02.83-2 [33.5 kB]
+Get:14 http://debian.proxad.net/debian/ sid/main libparted0debian1 amd64 2.3-20 [311 kB]
+Get:15 http://debian.proxad.net/debian/ sid/main libpcrecpp0 amd64 1:8.31-5 [128 kB]
+Get:16 http://debian.proxad.net/debian/ sid/main libunistring0 amd64 0.9.3-5 [434 kB]
+Get:17 http://debian.proxad.net/debian/ sid/main file amd64 1:5.18-1 [57.5 kB]
+Get:18 http://debian.proxad.net/debian/ sid/main gettext-base amd64 0.18.3.2-1 [116 kB]
+Get:19 http://debian.proxad.net/debian/ sid/main autotools-dev all 20130810.1 [69.6 kB]
+Get:20 http://debian.proxad.net/debian/ sid/main gettext amd64 0.18.3.2-1 [1203 kB]
+Get:21 http://debian.proxad.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:22 http://debian.proxad.net/debian/ sid/main po-debconf all 1.0.16+nmu2 [224 kB]
+Get:23 http://debian.proxad.net/debian/ sid/main debhelper all 9.20140228 [691 kB]
+Get:24 http://debian.proxad.net/debian/ sid/main libsepol1-dev amd64 2.2-1 [162 kB]
+Get:25 http://debian.proxad.net/debian/ sid/main libpcre3-dev amd64 1:8.31-5 [407 kB]
+Get:26 http://debian.proxad.net/debian/ sid/main libselinux1-dev amd64 2.2.2-1 [155 kB]
+Get:27 http://debian.proxad.net/debian/ sid/main libdevmapper-dev amd64 2:1.02.83-2 [45.6 kB]
+Get:28 http://debian.proxad.net/debian/ sid/main libtinfo-dev amd64 5.9+20140118-1 [76.3 kB]
+Get:29 http://debian.proxad.net/debian/ sid/main libncurses5-dev amd64 5.9+20140118-1 [170 kB]
+Get:30 http://debian.proxad.net/debian/ sid/main uuid-dev amd64 2.20.1-5.7 [70.4 kB]
+Get:31 http://debian.proxad.net/debian/ sid/main libblkid-dev amd64 2.20.1-5.7 [127 kB]
+Get:32 http://debian.proxad.net/debian/ sid/main libparted0-dev amd64 2.3-20 [348 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 11.0 MB in 0s (53.1 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11463 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package libudev1:amd64.
+Preparing to unpack .../libudev1_204-10_amd64.deb ...
+Unpacking libudev1:amd64 (204-10) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-5_amd64.deb ...
+Unpacking groff-base (1.22.2-5) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.18.3.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.18.3.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.18-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.18-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-3) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-3_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-3) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-2_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-2) ...
+Selecting previously unselected package dmsetup.
+Preparing to unpack .../dmsetup_2%3a1.02.83-2_amd64.deb ...
+Unpacking dmsetup (2:1.02.83-2) ...
+Selecting previously unselected package libdevmapper1.02.1:amd64.
+Preparing to unpack .../libdevmapper1.02.1_2%3a1.02.83-2_amd64.deb ...
+Unpacking libdevmapper1.02.1:amd64 (2:1.02.83-2) ...
+Selecting previously unselected package libdevmapper-event1.02.1:amd64.
+Preparing to unpack .../libdevmapper-event1.02.1_2%3a1.02.83-2_amd64.deb ...
+Unpacking libdevmapper-event1.02.1:amd64 (2:1.02.83-2) ...
+Selecting previously unselected package libparted0debian1:amd64.
+Preparing to unpack .../libparted0debian1_2.3-20_amd64.deb ...
+Unpacking libparted0debian1:amd64 (2.3-20) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Preparing to unpack .../libpcrecpp0_1%3a8.31-5_amd64.deb ...
+Unpacking libpcrecpp0:amd64 (1:8.31-5) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.18-1_amd64.deb ...
+Unpacking file (1:5.18-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.18.3.2-1_amd64.deb ...
+Unpacking gettext-base (0.18.3.2-1) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../autotools-dev_20130810.1_all.deb ...
+Unpacking autotools-dev (20130810.1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.18.3.2-1_amd64.deb ...
+Unpacking gettext (0.18.3.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu2_all.deb ...
+Unpacking po-debconf (1.0.16+nmu2) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140228_all.deb ...
+Unpacking debhelper (9.20140228) ...
+Selecting previously unselected package libsepol1-dev.
+Preparing to unpack .../libsepol1-dev_2.2-1_amd64.deb ...
+Unpacking libsepol1-dev (2.2-1) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../libpcre3-dev_1%3a8.31-5_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (1:8.31-5) ...
+Selecting previously unselected package libselinux1-dev:amd64.
+Preparing to unpack .../libselinux1-dev_2.2.2-1_amd64.deb ...
+Unpacking libselinux1-dev:amd64 (2.2.2-1) ...
+Selecting previously unselected package libdevmapper-dev.
+Preparing to unpack .../libdevmapper-dev_2%3a1.02.83-2_amd64.deb ...
+Unpacking libdevmapper-dev (2:1.02.83-2) ...
+Selecting previously unselected package libtinfo-dev:amd64.
+Preparing to unpack .../libtinfo-dev_5.9+20140118-1_amd64.deb ...
+Unpacking libtinfo-dev:amd64 (5.9+20140118-1) ...
+Selecting previously unselected package libncurses5-dev:amd64.
+Preparing to unpack .../libncurses5-dev_5.9+20140118-1_amd64.deb ...
+Unpacking libncurses5-dev:amd64 (5.9+20140118-1) ...
+Selecting previously unselected package uuid-dev.
+Preparing to unpack .../uuid-dev_2.20.1-5.7_amd64.deb ...
+Unpacking uuid-dev (2.20.1-5.7) ...
+Selecting previously unselected package libblkid-dev.
+Preparing to unpack .../libblkid-dev_2.20.1-5.7_amd64.deb ...
+Unpacking libblkid-dev (2.20.1-5.7) ...
+Selecting previously unselected package libparted0-dev.
+Preparing to unpack .../libparted0-dev_2.3-20_amd64.deb ...
+Unpacking libparted0-dev (2.3-20) ...
+Selecting previously unselected package sbuild-build-depends-nwipe-dummy.
+Preparing to unpack .../sbuild-build-depends-nwipe-dummy.deb ...
+Unpacking sbuild-build-depends-nwipe-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up libudev1:amd64 (204-10) ...
+Setting up groff-base (1.22.2-5) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.18.3.2-1) ...
+Setting up libmagic1:amd64 (1:5.18-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-3) ...
+Setting up libglib2.0-0:amd64 (2.40.0-3) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-2) ...
+Setting up libpcrecpp0:amd64 (1:8.31-5) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up file (1:5.18-1) ...
+Setting up gettext-base (0.18.3.2-1) ...
+Setting up autotools-dev (20130810.1) ...
+Setting up gettext (0.18.3.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20140228) ...
+Setting up libsepol1-dev (2.2-1) ...
+Setting up libpcre3-dev:amd64 (1:8.31-5) ...
+Setting up libselinux1-dev:amd64 (2.2.2-1) ...
+Setting up libtinfo-dev:amd64 (5.9+20140118-1) ...
+Setting up libncurses5-dev:amd64 (5.9+20140118-1) ...
+Setting up uuid-dev (2.20.1-5.7) ...
+Setting up libblkid-dev (2.20.1-5.7) ...
+Setting up libdevmapper1.02.1:amd64 (2:1.02.83-2) ...
+Setting up libdevmapper-event1.02.1:amd64 (2:1.02.83-2) ...
+Setting up libparted0debian1:amd64 (2.3-20) ...
+Setting up libdevmapper-dev (2:1.02.83-2) ...
+Setting up libparted0-dev (2.3-20) ...
+Setting up sbuild-build-depends-nwipe-dummy (0.invalid.0) ...
+Setting up dmsetup (2:1.02.83-2) ...
+Processing triggers for libc-bin (2.18-5) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.13-1-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140425-1 dpkg-dev_1.17.9 g++-4.8_4.8.2-19 gcc-4.8_4.8.2-19 libc6-dev_2.18-5 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 linux-libc-dev_3.14.2-1
+Package versions: apt_1.0.2 autotools-dev_20130810.1 base-files_7.2 base-passwd_3.5.33 bash_4.3-7 binutils_2.24.51.20140425-1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.7 build-essential_11.6 bzip2_1.0.6-5 clang-3.4_1:3.4-2 coreutils_8.21-1.2 cpp_4:4.8.2-3 cpp-4.8_4.8.2-19 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-1.2 debhelper_9.20140228 debian-archive-keyring_2012.4 debianutils_4.4 diffutils_1:3.3-1 dmsetup_2:1.02.83-2 dpkg_1.17.9 dpkg-dev_1.17.9 e2fslibs_1.42.9-3 e2fsprogs_1.42.9-3 fakeroot_1.20-3 file_1:5.18-1 findutils_4.4.2-8 g++_4:4.8.2-3 g++-4.8_4.8.2-19 gcc_4:4.8.2-3 gcc-4.7-base_4.7.3-12 gcc-4.8_4.8.2-19 gcc-4.8-base_4.8.2-19 gcc-4.9-base_4.9.0-1 gettext_0.18.3.2-1 gettext-base_0.18.3.2-1 gnupg_1.4.16-1.1 gpgv_1.4.16-1.1 grep_2.18-2 groff-base_1.22.2-5 gzip_1.6-3 hostname_3.15 initscripts_2.88dsf-53 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1 libapt-pkg4.12_1.0.2 libasan0_4.8.2-19 libasprintf0c2_0.18.3.2-1 libatomic1_4.9.0-1 libattr1_1:2.4.47-1 libaudit-common_1:2.3.6-1 libaudit1_1:2.3.6-1 libblkid-dev_2.20.1-5.7 libblkid1_2.20.1-5.7 libbz2-1.0_1.0.6-5 libc-bin_2.18-5 libc-dev-bin_2.18-5 libc6_2.18-5 libc6-dev_2.18-5 libcap2_1:2.22-1.2 libclang-common-3.4-dev_1:3.4-2 libclang1-3.4_1:3.4-2 libcloog-isl4_0.18.2-1 libcomerr2_1.42.9-3 libcroco3_0.6.8-2 libdb5.3_5.3.28-3 libdebconfclient0_0.190 libdevmapper-dev_2:1.02.83-2 libdevmapper-event1.02.1_2:1.02.83-2 libdevmapper1.02.1_2:1.02.83-2 libdpkg-perl_1.17.9 libfakeroot_1.20-3 libffi6_3.1~rc1+r3.0.13-12 libgc1c2_1:7.2d-6 libgcc-4.8-dev_4.8.2-19 libgcc1_1:4.9.0-1 libgdbm3_1.8.3-12 libglib2.0-0_2.40.0-3 libgmp10_2:6.0.0+dfsg-2.3 libgomp1_4.9.0-1 libgpm2_1.20.4-6.1 libisl10_0.12.2-1 libitm1_4.9.0-1 libllvm3.4_1:3.4-2 liblocale-gettext-perl_1.05-8 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.18-1 libmount1_2.20.1-5.7 libmpc3_1.0.1-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140118-1 libncurses5-dev_5.9+20140118-1 libncursesw5_5.9+20140118-1 libobjc-4.8-dev_4.8.2-19 libobjc4_4.9.0-1 libpam-modules_1.1.8-3 libpam-modules-bin_1.1.8-3 libpam-runtime_1.1.8-3 libpam0g_1.1.8-3 libparted0-dev_2.3-20 libparted0debian1_2.3-20 libpcre3_1:8.31-5 libpcre3-dev_1:8.31-5 libpcrecpp0_1:8.31-5 libpipeline1_1.3.0-1 libquadmath0_4.9.0-1 libreadline6_6.3-6 libselinux1_2.2.2-1 libselinux1-dev_2.2.2-1 libsemanage-common_2.2-1 libsemanage1_2.2-1 libsepol1_2.2-1 libsepol1-dev_2.2-1 libslang2_2.2.4-16 libss2_1.42.9-3 libstdc++-4.8-dev_4.8.2-19 libstdc++6_4.9.0-1 libtext-charwidth-perl_0.04-7+b2 libtext-iconv-perl_1.7-5+b1 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo-dev_5.9+20140118-1 libtinfo5_5.9+20140118-1 libtsan0_4.9.0-1 libudev1_204-10 libunistring0_0.9.3-5 libusb-0.1-4_2:0.1.12-23.3 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.7 libxml2_2.9.1+dfsg1-3 linux-libc-dev_3.14.2-1 login_1:4.1.5.1-1.1 lsb-base_4.1+Debian12 make_3.81-8.3 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.7 multiarch-support_2.18-5 nano_2.2.6-1.1 ncurses-base_5.9+20140118-1 ncurses-bin_5.9+20140118-1 passwd_1:4.1.5.1-1.1 patch_2.7.1-5 perl_5.18.2-2+b1 perl-base_5.18.2-2+b1 perl-modules_5.18.2-2 po-debconf_1.0.16+nmu2 readline-common_6.3-6 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-nwipe-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 sysv-rc_2.88dsf-53 sysvinit_2.88dsf-53 sysvinit-core_2.88dsf-53 sysvinit-utils_2.88dsf-53 tar_1.27.1-2 tzdata_2014b-1 util-linux_2.20.1-5.7 uuid-dev_2.20.1-5.7 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-1
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (nwipe_0.14-1.dsc)
+dpkg-source: info: extracting nwipe in nwipe-0.14
+dpkg-source: info: unpacking nwipe_0.14.orig.tar.gz
+dpkg-source: info: unpacking nwipe_0.14-1.debian.tar.xz
+dpkg-source: info: applying clang_FTBFS_Wreturn-type.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-851ff5c4-d7e8-4d07-a9d2-9b21e2ff4f13
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package nwipe
+dpkg-buildpackage: source version 0.14-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Martijn van Brummelen <martijn@brumit.nl>
+ dpkg-source --before-build nwipe-0.14
+dpkg-buildpackage: host architecture amd64
+dpkg-source: info: using options from nwipe-0.14/debian/source/options: --extend-diff-ignore=(^|/)(Makefile\.in|aclocal\.m4|depcomp|configure|install-sh|src/Makefile\.in|missing|man/Makefile\.in)$
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b nwipe-0.14
+dpkg-source: info: using options from nwipe-0.14/debian/source/options: --extend-diff-ignore=(^|/)(Makefile\.in|aclocal\.m4|depcomp|configure|install-sh|src/Makefile\.in|missing|man/Makefile\.in)$
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building nwipe using existing ./nwipe_0.14.orig.tar.gz
+dpkg-source: info: building nwipe in nwipe_0.14-1.debian.tar.xz
+dpkg-source: info: building nwipe in nwipe_0.14-1.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory `/«PKGBUILDDIR»'
+dh_auto_configure -- --bindir=/usr/sbin
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... none
+checking for pkg-config... no
+checking for PANEL... no
+checking for main in -lpanel... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for NCURSES... no
+checking for delscreen in -lncurses... yes
+checking ncurses.h usability... yes
+checking ncurses.h presence... yes
+checking for ncurses.h... yes
+checking for ped_device_probe_all in -lparted... yes
+checking for main in -lpthread... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for inttypes.h... (cached) yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking for unistd.h... (cached) yes
+checking for size_t... yes
+checking for struct stat.st_blksize... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for fdatasync... yes
+checking for memset... yes
+checking for regcomp... yes
+checking for strdup... yes
+checking for strerror... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_build
+make[1]: Entering directory `/«PKGBUILDDIR»'
+(CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /«PKGBUILDDIR»/missing --run autoheader)
+/«PKGBUILDDIR»/missing: line 52: autoheader: command not found
+WARNING: `autoheader' is missing on your system.  You should only need it if
+         you modified `acconfig.h' or `configure.ac'.  You might want
+         to install the `Autoconf' and `GNU m4' packages.  Grab them
+         from any GNU archive site.
+rm -f stamp-h1
+touch config.h.in
+cd . && /bin/bash ./config.status config.h
+config.status: creating config.h
+config.status: config.h is unchanged
+make  all-recursive
+make[2]: Entering directory `/«PKGBUILDDIR»'
+Making all in src
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c isaac_rand.c
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c nwipe.c
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c gui.c
+gui.c:2047:1: warning: control reaches end of non-void function [-Wreturn-type]
+} /* nwipe_gui_status */
+^
+1 warning generated.
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c pass.c
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c device.c
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c mt19937ar-cok.c
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c logging.c
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c method.c
+method.c:114:1: warning: control reaches end of non-void function [-Wreturn-type]
+} /* nwipe_zero */
+^
+method.c:176:1: warning: control may reach end of non-void function [-Wreturn-type]
+} /* nwipe_dod522022m */
+^
+method.c:232:1: warning: control may reach end of non-void function [-Wreturn-type]
+} /* nwipe_dodshort */
+^
+method.c:358:1: warning: control may reach end of non-void function [-Wreturn-type]
+} /* nwipe_gutmann */
+^
+method.c:509:1: warning: control may reach end of non-void function [-Wreturn-type]
+} /* nwipe_ops2 */
+^
+method.c:537:1: warning: control reaches end of non-void function [-Wreturn-type]
+} /* nwipe_random */
+^
+6 warnings generated.
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c options.c
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c prng.c
+gcc -DHAVE_CONFIG_H -I. -I..   -D_FORTIFY_SOURCE=2  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -c version.c
+gcc  -g -O2 -fPIE -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security  -fPIE -pie -Wl,-z,relro -Wl,-z,now -o nwipe isaac_rand.o nwipe.o gui.o pass.o device.o mt19937ar-cok.o logging.o method.o options.o prng.o version.o  -lpthread -lparted -lncurses -lpanel 
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+Making all in man
+make[3]: Entering directory `/«PKGBUILDDIR»/man'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/man'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_auto_test
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making check in src
+make[2]: Entering directory `/«PKGBUILDDIR»/src'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/src'
+Making check in man
+make[2]: Entering directory `/«PKGBUILDDIR»/man'
+make[2]: Nothing to be done for `check'.
+make[2]: Leaving directory `/«PKGBUILDDIR»/man'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+make[1]: Entering directory `/«PKGBUILDDIR»'
+Making install in src
+make[2]: Entering directory `/«PKGBUILDDIR»/src'
+make[3]: Entering directory `/«PKGBUILDDIR»/src'
+test -z "/usr/sbin" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/nwipe/usr/sbin"
+  /usr/bin/install -c nwipe '/«PKGBUILDDIR»/debian/nwipe/usr/sbin'
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»/src'
+make[2]: Leaving directory `/«PKGBUILDDIR»/src'
+Making install in man
+make[2]: Entering directory `/«PKGBUILDDIR»/man'
+make[3]: Entering directory `/«PKGBUILDDIR»/man'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/nwipe/usr/share/man/man1"
+ /usr/bin/install -c -m 644 nwipe.1 '/«PKGBUILDDIR»/debian/nwipe/usr/share/man/man1'
+make[3]: Leaving directory `/«PKGBUILDDIR»/man'
+make[2]: Leaving directory `/«PKGBUILDDIR»/man'
+make[2]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Entering directory `/«PKGBUILDDIR»'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/«PKGBUILDDIR»'
+make[2]: Leaving directory `/«PKGBUILDDIR»'
+make[1]: Leaving directory `/«PKGBUILDDIR»'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `nwipe' in `../nwipe_0.14-1_amd64.deb'.
+ dpkg-genchanges  >../nwipe_0.14-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build nwipe-0.14
+dpkg-source: info: using options from nwipe-0.14/debian/source/options: --extend-diff-ignore=(^|/)(Makefile\.in|aclocal\.m4|depcomp|configure|install-sh|src/Makefile\.in|missing|man/Makefile\.in)$
+dpkg-buildpackage: full upload (original source is included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140501-2108
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+nwipe_0.14-1_amd64.changes:
+───────────────────────────
+
+Format: 1.8
+Date: Tue, 16 Apr 2013 20:59:57 +0200
+Source: nwipe
+Binary: nwipe
+Architecture: source amd64
+Version: 0.14-1
+Distribution: sid
+Urgency: low
+Maintainer: Martijn van Brummelen <martijn@brumit.nl>
+Changed-By: Martijn van Brummelen <martijn@brumit.nl>
+Description: 
+ nwipe      - Utility to securely erase disks
+Closes: 703914
+Changes: 
+ nwipe (0.14-1) unstable; urgency=low
+ .
+   * New upstream release((Closes: #703914).
+   * Cleanup hardening build options.
+Checksums-Sha1: 
+ 2c0af291fcc651bdf4ad21a0f827f94f9879ccf8 874 nwipe_0.14-1.dsc
+ 29f7b1c2b5e8d547f6e87fe623c6386b03cd8a79 150685 nwipe_0.14.orig.tar.gz
+ 8cb119500dbc8b997c22109df38d00c541657e5e 3644 nwipe_0.14-1.debian.tar.xz
+ 9f9525945d234f3065e51ec0073dcb1745e21661 28934 nwipe_0.14-1_amd64.deb
+Checksums-Sha256: 
+ 1d8fd71c9a72f17267ad9a76fdfcc8a702e2252f3a1f5a3a72fa43f7f54b5598 874 nwipe_0.14-1.dsc
+ 2fa879256bad5e2369e325e6cb047651b85eb1e8bc88ce9fc89c1db3f4067a2a 150685 nwipe_0.14.orig.tar.gz
+ 3626e9837143a16415311d5068804a8822995d90480cc25884201817aab282f4 3644 nwipe_0.14-1.debian.tar.xz
+ fcacbf43035c86836f37ab9546e953ab56bcea59032a71c697ff84b9de5b410f 28934 nwipe_0.14-1_amd64.deb
+Files: 
+ 84e1b230a4f796025bb984b087731534 28934 utils extra nwipe_0.14-1_amd64.deb
+ 8c36622fbf6230e969b1b84cc9da14bf 874 utils extra nwipe_0.14-1.dsc
+ a1ac88e8205e814b26d956c2b0461dc0 150685 utils extra nwipe_0.14.orig.tar.gz
+ a7c4c58089d027a510d61de7ed7d1cbb 3644 utils extra nwipe_0.14-1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+nwipe_0.14-1_amd64.deb
+──────────────────────
+
+ new debian package, version 2.0.
+ size 28934 bytes: control archive=745 bytes.
+     505 bytes,    13 lines      control              
+     312 bytes,     5 lines      md5sums              
+ Package: nwipe
+ Version: 0.14-1
+ Architecture: amd64
+ Maintainer: Martijn van Brummelen <martijn@brumit.nl>
+ Installed-Size: 110
+ Depends: libc6 (>= 2.14), libncurses5 (>= 5.5-5~), libparted0debian1 (>= 2.2-1), libtinfo5
+ Section: utils
+ Priority: extra
+ Homepage: http://www.andybev.com/index.php/Nwipe
+ Description: Utility to securely erase disks
+  Nwipe is a command that will securely erase disks using a variety of
+  recognised methods. It is a fork of the dwipe command used by Darik's Boot and
+  Nuke (DBAN).
+
+drwxr-xr-x root/root         0 2014-05-01 21:08 ./
+drwxr-xr-x root/root         0 2014-05-01 21:08 ./usr/
+drwxr-xr-x root/root         0 2014-05-01 21:08 ./usr/sbin/
+-rwxr-xr-x root/root     64104 2014-05-01 21:08 ./usr/sbin/nwipe
+drwxr-xr-x root/root         0 2014-05-01 21:08 ./usr/share/
+drwxr-xr-x root/root         0 2014-05-01 21:08 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-05-01 21:08 ./usr/share/man/man1/
+-rw-r--r-- root/root      1304 2014-05-01 21:08 ./usr/share/man/man1/nwipe.1.gz
+drwxr-xr-x root/root         0 2014-05-01 21:08 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-05-01 21:08 ./usr/share/doc/nwipe/
+-rw-r--r-- root/root       335 2013-04-16 21:03 ./usr/share/doc/nwipe/changelog.Debian.gz
+-rw-r--r-- root/root      7662 2012-10-05 09:43 ./usr/share/doc/nwipe/copyright
+-rw-r--r-- root/root      2359 2013-02-14 22:01 ./usr/share/doc/nwipe/README
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 1844
+Build-Time: 5
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 15
+Job: nwipe_0.14-1.dsc
+Machine Architecture: amd64
+Package: nwipe
+Package-Time: 27
+Source-Version: 0.14-1
+Space: 1844
+Status: successful
+Version: 0.14-1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140501-2108
+Build needed 00:00:27, 1844k disc space
