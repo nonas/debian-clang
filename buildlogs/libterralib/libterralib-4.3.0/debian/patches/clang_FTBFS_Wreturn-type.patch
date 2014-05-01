@@ -1,0 +1,11 @@
+--- a/src/terralib/kernel/Gra_algo.h
++++ b/src/terralib/kernel/Gra_algo.h
+@@ -187,7 +187,7 @@
+        std::cerr << "Error: graph contains a cycle!\n";
+     return VerticesWithoutSuccessor == 0;
+ 	*/
+-	return;
++	return 1;
+ }
+ 
+ } // namespace br_stl
