@@ -1,0 +1,4 @@
+ccseapps_2.5-4_amd64-20140504-0030.build:Status: successful
+openturns_1.3-2_amd64-20140504-0219.build:Status: successful
+psi4_4.0~beta5+dfsg-2_amd64-20140504-0233.build:Status: successful
+scilab_5.5.0-2_amd64-20140504-0334.build:Status: successful
