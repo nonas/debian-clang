@@ -1,0 +1,11 @@
+ferret-vis_6.6.2-4_amd64-20140504-1148.build:Status: attempted
+gcc-4.4_4.4.7-8_amd64-20140504-1207.build:Status: attempted
+gcc-4.6_4.6.4-7_amd64-20140504-1208.build:Status: attempted
+gcc-4.8_4.8.2-21_amd64-20140504-1208.build:Status: attempted
+gcc-snapshot_20140423-1_amd64-20140504-1209.build:Status: attempted
+gdb_7.6.2-1_amd64-20140504-1210.build:Status: attempted
+gnat-4.8_4.8.2-8_amd64-20140504-1232.build:Status: attempted
+lhapdf_5.9.1-3_amd64-20140504-1233.build:Status: attempted
+octave-nan_2.5.9-2_amd64-20140504-1235.build:Status: attempted
+opari2_1.0.7+dfsg-2_amd64-20140504-1243.build:Status: attempted
+root-system_5.34.14-1.1_amd64-20140504-1244.build:Status: attempted
