@@ -1,0 +1,14 @@
+Description: fix FTBFS with clang instead of gcc [-Wreturn-type]
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-09-02
+--- a/src/newt/native/bcm_vc_iv.c
++++ b/src/newt/native/bcm_vc_iv.c
+@@ -357,7 +357,7 @@
+    VC_RECT_T src_rect;
+ 
+    if( 0 == display ) {
+-       return;
++       return NULL;
+    }
+    dst_rect.x = x;
+    dst_rect.y = y;
