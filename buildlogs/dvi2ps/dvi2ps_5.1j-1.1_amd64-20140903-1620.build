@@ -1,0 +1,3590 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ dvi2ps 5.1j-1.1 (amd64)                                    03 Sep 2014 16:20 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: dvi2ps
+Version: 5.1j-1.1
+Source Version: 5.1j-1.1
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/dvi2ps-awjDGr/dvi2ps-5.1j' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/dvi2ps-awjDGr' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-1ee5b05b-20a6-4c6b-8a0c-c5051b1c1f95' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+dvi2ps_5.1j-1.1.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-U3FY4P/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 20 not upgraded.
+Need to get 0 B/816 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11952 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, init, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.9.1), g++ (>= 4:4.9.1), make, dpkg-dev (>= 1.17.11), debhelper (>= 5.0.0), nkf, libkpathsea-dev, vflib3-dev, libfreetype6-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, init, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.9.1), g++ (>= 4:4.9.1), make, dpkg-dev (>= 1.17.11), debhelper (>= 5.0.0), nkf, libkpathsea-dev, vflib3-dev, libfreetype6-dev
+dpkg-deb: building package `sbuild-build-depends-dvi2ps-dummy' in `/«BUILDDIR»/resolver-NFsKEW/apt_archive/sbuild-build-depends-dvi2ps-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install dvi2ps build dependencies (apt-based resolver)                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libfreetype6 libfreetype6-dev libglib2.0-0
+  libkpathsea-dev libkpathsea6 libmagic1 libpipeline1 libpng12-0 libpng12-dev
+  libunistring0 libxml2 man-db nkf po-debconf vflib3 vflib3-dev zlib1g-dev
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff less www-browser
+  libmail-box-perl watanabe-vfont asiya24-vfont
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libfreetype6 libfreetype6-dev libglib2.0-0
+  libkpathsea-dev libkpathsea6 libmagic1 libpipeline1 libpng12-0 libpng12-dev
+  libunistring0 libxml2 man-db nkf po-debconf
+  sbuild-build-depends-dvi2ps-dummy vflib3 vflib3-dev zlib1g-dev
+0 upgraded, 27 newly installed, 0 to remove and 20 not upgraded.
+Need to get 11.9 MB/11.9 MB of archives.
+After this operation, 40.2 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-7 [1142 kB]
+Get:3 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://http.debian.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.19.2-1 [30.7 kB]
+Get:6 http://http.debian.net/debian/ sid/main libmagic1 amd64 1:5.19-1 [237 kB]
+Get:7 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-4 [797 kB]
+Get:8 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-5 [2421 kB]
+Get:9 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-3 [135 kB]
+Get:10 http://http.debian.net/debian/ sid/main libpng12-0 amd64 1.2.50-2 [172 kB]
+Get:11 http://http.debian.net/debian/ sid/main libfreetype6 amd64 2.5.2-1.1 [456 kB]
+Get:12 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5.2 [283 kB]
+Get:13 http://http.debian.net/debian/ sid/main file amd64 1:5.19-1 [58.0 kB]
+Get:14 http://http.debian.net/debian/ sid/main gettext-base amd64 0.19.2-1 [121 kB]
+Get:15 http://http.debian.net/debian/ sid/main gettext amd64 0.19.2-1 [1235 kB]
+Get:16 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:17 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu3 [220 kB]
+Get:18 http://http.debian.net/debian/ sid/main debhelper all 9.20140817 [814 kB]
+Get:19 http://http.debian.net/debian/ sid/main zlib1g-dev amd64 1:1.2.8.dfsg-2 [205 kB]
+Get:20 http://http.debian.net/debian/ sid/main libpng12-dev amd64 1.2.50-2 [247 kB]
+Get:21 http://http.debian.net/debian/ sid/main libfreetype6-dev amd64 2.5.2-1.1 [630 kB]
+Get:22 http://http.debian.net/debian/ sid/main libkpathsea6 amd64 2014.20140528.34243-5 [152 kB]
+Get:23 http://http.debian.net/debian/ sid/main libkpathsea-dev amd64 2014.20140528.34243-5 [179 kB]
+Get:24 http://http.debian.net/debian/ sid/main nkf amd64 2.13-4 [127 kB]
+Get:25 http://http.debian.net/debian/ sid/main vflib3 amd64 3.6.14.dfsg-3+nmu2 [874 kB]
+Get:26 http://http.debian.net/debian/ sid/main vflib3-dev amd64 3.6.14.dfsg-3+nmu2 [131 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 11.9 MB in 0s (51.0 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11952 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-7_amd64.deb ...
+Unpacking groff-base (1.22.2-7) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.19.2-1_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.19.2-1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.19-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.19-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-4_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-4) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-3_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-3) ...
+Selecting previously unselected package libpng12-0:amd64.
+Preparing to unpack .../libpng12-0_1.2.50-2_amd64.deb ...
+Unpacking libpng12-0:amd64 (1.2.50-2) ...
+Selecting previously unselected package libfreetype6:amd64.
+Preparing to unpack .../libfreetype6_2.5.2-1.1_amd64.deb ...
+Unpacking libfreetype6:amd64 (2.5.2-1.1) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5.2_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5.2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.19-1_amd64.deb ...
+Unpacking file (1:5.19-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.19.2-1_amd64.deb ...
+Unpacking gettext-base (0.19.2-1) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.19.2-1_amd64.deb ...
+Unpacking gettext (0.19.2-1) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu3_all.deb ...
+Unpacking po-debconf (1.0.16+nmu3) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140817_all.deb ...
+Unpacking debhelper (9.20140817) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.8.dfsg-2_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.8.dfsg-2) ...
+Selecting previously unselected package libpng12-dev:amd64.
+Preparing to unpack .../libpng12-dev_1.2.50-2_amd64.deb ...
+Unpacking libpng12-dev:amd64 (1.2.50-2) ...
+Selecting previously unselected package libfreetype6-dev.
+Preparing to unpack .../libfreetype6-dev_2.5.2-1.1_amd64.deb ...
+Unpacking libfreetype6-dev (2.5.2-1.1) ...
+Selecting previously unselected package libkpathsea6.
+Preparing to unpack .../libkpathsea6_2014.20140528.34243-5_amd64.deb ...
+Unpacking libkpathsea6 (2014.20140528.34243-5) ...
+Selecting previously unselected package libkpathsea-dev.
+Preparing to unpack .../libkpathsea-dev_2014.20140528.34243-5_amd64.deb ...
+Unpacking libkpathsea-dev (2014.20140528.34243-5) ...
+Selecting previously unselected package nkf.
+Preparing to unpack .../archives/nkf_2.13-4_amd64.deb ...
+Unpacking nkf (2.13-4) ...
+Selecting previously unselected package vflib3.
+Preparing to unpack .../vflib3_3.6.14.dfsg-3+nmu2_amd64.deb ...
+Unpacking vflib3 (3.6.14.dfsg-3+nmu2) ...
+Selecting previously unselected package vflib3-dev.
+Preparing to unpack .../vflib3-dev_3.6.14.dfsg-3+nmu2_amd64.deb ...
+Unpacking vflib3-dev (3.6.14.dfsg-3+nmu2) ...
+Selecting previously unselected package sbuild-build-depends-dvi2ps-dummy.
+Preparing to unpack .../sbuild-build-depends-dvi2ps-dummy.deb ...
+Unpacking sbuild-build-depends-dvi2ps-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-7) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.19.2-1) ...
+Setting up libmagic1:amd64 (1:5.19-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-4) ...
+Setting up libglib2.0-0:amd64 (2.40.0-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-3) ...
+Setting up libpng12-0:amd64 (1.2.50-2) ...
+Setting up libfreetype6:amd64 (2.5.2-1.1) ...
+Setting up libunistring0:amd64 (0.9.3-5.2) ...
+Setting up file (1:5.19-1) ...
+Setting up gettext-base (0.19.2-1) ...
+Setting up gettext (0.19.2-1) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu3) ...
+Setting up debhelper (9.20140817) ...
+Setting up zlib1g-dev:amd64 (1:1.2.8.dfsg-2) ...
+Setting up libpng12-dev:amd64 (1.2.50-2) ...
+Setting up libfreetype6-dev (2.5.2-1.1) ...
+Setting up libkpathsea6 (2014.20140528.34243-5) ...
+Setting up libkpathsea-dev (2014.20140528.34243-5) ...
+Setting up nkf (2.13-4) ...
+Setting up vflib3 (3.6.14.dfsg-3+nmu2) ...
+Setting up vflib3-dev (3.6.14.dfsg-3+nmu2) ...
+Setting up sbuild-build-depends-dvi2ps-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.19-10) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.14-2-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140818-1 dpkg-dev_1.17.13 g++-4.9_4.9.1-9 gcc-4.9_4.9.1-9 libc6-dev_2.19-10 libstdc++-4.9-dev_4.9.1-9 libstdc++6_4.9.1-9 linux-libc-dev_3.14.15-2
+Package versions: acl_2.2.52-1.1 adduser_3.113+nmu3 apt_1.0.7 base-files_7.5 base-passwd_3.5.35 bash_4.3-9 binutils_2.24.51.20140818-1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.8 build-essential_11.7 bzip2_1.0.6-7 clang-3.5_1:3.5~+rc4-1 coreutils_8.23-2 cpp_4:4.9.1-3 cpp-4.9_4.9.1-9 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-2 debhelper_9.20140817 debian-archive-keyring_2014.1 debianutils_4.4 diffutils_1:3.3-1 dmsetup_2:1.02.88-1 dpkg_1.17.13 dpkg-dev_1.17.13 e2fslibs_1.42.12-1 e2fsprogs_1.42.12-1 fakeroot_1.20.1-1.1 file_1:5.19-1 findutils_4.4.2-9 g++_4:4.9.1-3 g++-4.9_4.9.1-9 gcc_4:4.9.1-3 gcc-4.7-base_4.7.4-3 gcc-4.8-base_4.8.3-9 gcc-4.9_4.9.1-9 gcc-4.9-base_4.9.1-9 gettext_0.19.2-1 gettext-base_0.19.2-1 gnupg_1.4.18-3 gpgv_1.4.18-3 grep_2.20-2 groff-base_1.22.2-7 gzip_1.6-3 hostname_3.15 init_1.21 initscripts_2.88dsf-53.4 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1.1 libapt-pkg4.12_1.0.7 libasan1_4.9.1-9 libasprintf0c2_0.19.2-1 libatomic1_4.9.1-9 libattr1_1:2.4.47-1 libaudit-common_1:2.3.7-1 libaudit1_1:2.3.7-1 libblkid1_2.20.1-5.8 libbsd0_0.7.0-2 libbz2-1.0_1.0.6-7 libc-bin_2.19-10 libc-dev-bin_2.19-10 libc6_2.19-10 libc6-dev_2.19-10 libcap2_1:2.24-4 libcap2-bin_1:2.24-4 libcilkrts5_4.9.1-9 libclang-common-3.5-dev_1:3.5~+rc4-1 libclang1-3.5_1:3.5~+rc4-1 libcloog-isl4_0.18.2-1 libcomerr2_1.42.12-1 libcroco3_0.6.8-3 libcryptsetup4_2:1.6.6-1 libdb5.3_5.3.28-6 libdbus-1-3_1.8.6-2 libdebconfclient0_0.191 libdevmapper1.02.1_2:1.02.88-1 libdpkg-perl_1.17.13 libedit2_3.1-20140620-2 libfakeroot_1.20.1-1.1 libffi6_3.1-2 libfreetype6_2.5.2-1.1 libfreetype6-dev_2.5.2-1.1 libgc1c2_1:7.2d-6.3 libgcc-4.9-dev_4.9.1-9 libgcc1_1:4.9.1-9 libgcrypt11_1.5.4-3 libgcrypt20_1.6.2-3 libgdbm3_1.8.3-13 libglib2.0-0_2.40.0-5 libgmp10_2:6.0.0+dfsg-6 libgomp1_4.9.1-9 libgpg-error0_1.13-4 libisl10_0.12.2-2 libitm1_4.9.1-9 libkmod2_18-1 libkpathsea-dev_2014.20140528.34243-5 libkpathsea6_2014.20140528.34243-5 libllvm3.5_1:3.5~+rc4-1 liblocale-gettext-perl_1.05-8+b1 liblsan0_4.9.1-9 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.19-1 libmount1_2.20.1-5.8 libmpc3_1.0.2-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140712-2 libncursesw5_5.9+20140712-2 libobjc-4.9-dev_4.9.1-9 libobjc4_4.9.1-9 libpam-modules_1.1.8-3.1 libpam-modules-bin_1.1.8-3.1 libpam-runtime_1.1.8-3.1 libpam0g_1.1.8-3.1 libpcre3_1:8.35-3 libpipeline1_1.3.0-1 libpng12-0_1.2.50-2 libpng12-dev_1.2.50-2 libprocps3_1:3.3.9-7 libquadmath0_4.9.1-9 libreadline6_6.3-8 libselinux1_2.3-2 libsemanage-common_2.3-1 libsemanage1_2.3-1 libsepol1_2.3-2 libslang2_2.2.4-17 libss2_1.42.12-1 libstdc++-4.9-dev_4.9.1-9 libstdc++6_4.9.1-9 libsystemd-daemon0_208-8 libsystemd-journal0_208-8 libsystemd-login0_208-8 libtext-charwidth-perl_0.04-7+b3 libtext-iconv-perl_1.7-5+b2 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140712-2 libtsan0_4.9.1-9 libubsan0_4.9.1-9 libudev1_208-8 libunistring0_0.9.3-5.2 libusb-0.1-4_2:0.1.12-24 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.8 libwrap0_7.6.q-25 libxml2_2.9.1+dfsg1-4 linux-libc-dev_3.14.15-2 login_1:4.2-2+b1 lsb-base_4.1+Debian13 make_4.0-8 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.8 multiarch-support_2.19-10 nano_2.2.6-3 ncurses-base_5.9+20140712-2 ncurses-bin_5.9+20140712-2 nkf_2.13-4 passwd_1:4.2-2+b1 patch_2.7.1-6 perl_5.20.0-6 perl-base_5.20.0-6 perl-modules_5.20.0-6 po-debconf_1.0.16+nmu3 procps_1:3.3.9-7 readline-common_6.3-8 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-dvi2ps-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 systemd_208-8 systemd-sysv_208-8 sysv-rc_2.88dsf-53.4 sysvinit-utils_2.88dsf-53.4 tar_1.27.1-2 tzdata_2014g-1 udev_208-8 util-linux_2.20.1-5.8 vflib3_3.6.14.dfsg-3+nmu2 vflib3-dev_3.6.14.dfsg-3+nmu2 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-2 zlib1g-dev_1:1.2.8.dfsg-2
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (dvi2ps_5.1j-1.1.dsc)
+dpkg-source: info: extracting dvi2ps in dvi2ps-5.1j
+dpkg-source: info: unpacking dvi2ps_5.1j.orig.tar.gz
+dpkg-source: info: unpacking dvi2ps_5.1j-1.1.debian.tar.xz
+dpkg-source: info: applying 01_ftfont_tools.patch
+dpkg-source: info: applying 01_tools_texfix_mktemp.patch
+dpkg-source: info: applying 05_debian-patch.patch
+dpkg-source: info: applying 07_vflib3.patch
+dpkg-source: info: applying 08_kpse_set_program_name.patch
+dpkg-source: info: applying 09_freetype_header.patch
+dpkg-source: info: applying 10_clang_FTBFS.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-1ee5b05b-20a6-4c6b-8a0c-c5051b1c1f95
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SEAT=seat0
+XDG_SESSION_ID=1
+XDG_VTNR=7
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package dvi2ps
+dpkg-buildpackage: source version 5.1j-1.1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Margarita Manterola <marga@debian.org>
+ dpkg-source --before-build dvi2ps-5.1j
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp configure-stamp
+# Add here commands to clean up after the build process.
+[ ! -f Makefile ] || /usr/bin/make clean
+(cd tools ; /usr/bin/make -f ../debian/Makefile.tools clean)
+make[1]: Entering directory '/«PKGBUILDDIR»/tools'
+rm nup texfix
+rm: cannot remove 'nup': No such file or directory
+rm: cannot remove 'texfix': No such file or directory
+make[1]: [clean] Error 1 (ignored)
+../debian/Makefile.tools:23: recipe for target 'clean' failed
+make[1]: Leaving directory '/«PKGBUILDDIR»/tools'
+dh_clean
+ dpkg-source -b dvi2ps-5.1j
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building dvi2ps using existing ./dvi2ps_5.1j.orig.tar.gz
+dpkg-source: info: building dvi2ps in dvi2ps_5.1j-1.1.debian.tar.xz
+dpkg-source: info: building dvi2ps in dvi2ps_5.1j-1.1.dsc
+ debian/rules build
+dh_testdir
+# Add here commands to configure the package.
+./configure --prefix=/usr --with-dvi2pslib=/usr/lib/dvi2ps
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for ANSI C header files... (cached) yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for dup2... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for mkstemp... yes
+checking for library containing sqrt... -lm
+checking for kpse_init_prog in -lkpathsea... yes
+checking kpathsea/config.h usability... yes
+checking kpathsea/config.h presence... yes
+checking for kpathsea/config.h... yes
+checking for freetype-config... /usr/bin/freetype-config
+checking for VF_Init in -lVFlib2... no
+checking VF.h usability... no
+checking VF.h presence... no
+checking for VF.h... no
+checking for TT_Init_FreeType in -lttf... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+touch configure-stamp
+dh_testdir
+# Add here commands to compile the package.
+rm dvi2ps-conf.h
+/usr/bin/make dvi2ps-conf.h
+make[1]: Entering directory '/«PKGBUILDDIR»'
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /«PKGBUILDDIR»/build-aux/missing --run aclocal-1.11 -I m4
+/«PKGBUILDDIR»/build-aux/missing: line 52: aclocal-1.11: command not found
+WARNING: `aclocal-1.11' is missing on your system.  You should only need it if
+         you modified `acinclude.m4' or `configure.ac'.  You might want
+         to install the `Automake' and `Perl' packages.  Grab them from
+         any GNU archive site.
+ cd . && /bin/bash /«PKGBUILDDIR»/build-aux/missing --run automake-1.11 --foreign
+/«PKGBUILDDIR»/build-aux/missing: line 52: automake-1.11: command not found
+WARNING: `automake-1.11' is missing on your system.  You should only need it if
+         you modified `Makefile.am', `acinclude.m4' or `configure.ac'.
+         You might want to install the `Automake' and `Perl' packages.
+         Grab them from any GNU archive site.
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /«PKGBUILDDIR»/build-aux/missing --run autoconf
+/«PKGBUILDDIR»/build-aux/missing: line 52: autoconf: command not found
+WARNING: `autoconf' is missing on your system.  You should only need it if
+         you modified `configure.ac'.  You might want to install the
+         `Autoconf' and `GNU m4' packages.  Grab them from any GNU
+         archive site.
+/bin/bash ./config.status --recheck
+running CONFIG_SHELL=/bin/bash /bin/bash ./configure --prefix=/usr --with-dvi2pslib=/usr/lib/dvi2ps --no-create --no-recursion
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for ANSI C header files... (cached) yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for dup2... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for mkstemp... yes
+checking for library containing sqrt... -lm
+checking for kpse_init_prog in -lkpathsea... yes
+checking kpathsea/config.h usability... yes
+checking kpathsea/config.h presence... yes
+checking for kpathsea/config.h... yes
+checking for freetype-config... /usr/bin/freetype-config
+checking for VF_Init in -lVFlib2... no
+checking VF.h usability... no
+checking VF.h presence... no
+checking for VF.h... no
+checking for TT_Init_FreeType in -lttf... no
+configure: creating ./config.status
+ /bin/bash ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+echo "#define	DVI2LIB	\"/usr/lib/dvi2ps\"" > dvi2ps-conf.h
+./confsub dvi2ps.conf dvi2ps-conf.in >> dvi2ps-conf.h
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+/usr/bin/make PREFIX=/usr MFMODE=ljfour \
+	CCFLAGS='-g -O -DPOSIX -DSYSV -DANSI -Wall'
+make[1]: Entering directory '/«PKGBUILDDIR»'
+(CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /«PKGBUILDDIR»/build-aux/missing --run autoheader)
+/«PKGBUILDDIR»/build-aux/missing: line 52: autoheader: command not found
+WARNING: `autoheader' is missing on your system.  You should only need it if
+         you modified `acconfig.h' or `configure.ac'.  You might want
+         to install the `Autoconf' and `GNU m4' packages.  Grab them
+         from any GNU archive site.
+rm -f stamp-h1
+touch config.h.in
+cd . && /bin/bash ./config.status config.h
+config.status: creating config.h
+config.status: config.h is unchanged
+/usr/bin/make  all-am
+make[2]: Entering directory '/«PKGBUILDDIR»'
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT dvi2.o -MD -MP -MF .deps/dvi2.Tpo -c -o dvi2.o dvi2.c
+dvi2.c:111:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(argc, argv)
+^~~~
+dvi2.c:142:5: warning: implicit declaration of function 'fix_default' is invalid in C99 [-Wimplicit-function-declaration]
+    fix_default(RESOLUTION, MFMODE);
+    ^
+dvi2.c:163:5: warning: implicit declaration of function 'dev_init' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_init();
+    ^
+dvi2.c:166:5: warning: implicit declaration of function 'setcurdconv' is invalid in C99 [-Wimplicit-function-declaration]
+    setcurdconv(&dfd_dconv_templ);
+    ^
+dvi2.c:184:5: warning: implicit declaration of function 'dev_initfont' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_initfont();
+    ^
+dvi2.c:185:5: warning: implicit declaration of function 'scanfont' is invalid in C99 [-Wimplicit-function-declaration]
+    scanfont(PreLoad, &hdfontidx);
+    ^
+dvi2.c:187:5: warning: implicit declaration of function 'dev_prologue' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_prologue();
+    ^
+dvi2.c:188:5: warning: implicit declaration of function 'dev_setup' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_setup();
+    ^
+dvi2.c:212:5: warning: implicit declaration of function 'dev_endsetup' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_endsetup();
+    ^
+dvi2.c:230:5: warning: implicit declaration of function 'dev_initpage' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_initpage();
+    ^
+dvi2.c:231:5: warning: implicit declaration of function 'initdir' is invalid in C99 [-Wimplicit-function-declaration]
+    initdir();
+    ^
+dvi2.c:232:5: warning: implicit declaration of function 'dviconv' is invalid in C99 [-Wimplicit-function-declaration]
+    dviconv(hdfontidx);
+    ^
+dvi2.c:233:5: warning: implicit declaration of function 'dev_finish' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_finish();
+    ^
+dvi2.c:239:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+default_def()
+^~~~~~~~~~~
+dvi2.c:242:5: warning: implicit declaration of function 'add_def0' is invalid in C99 [-Wimplicit-function-declaration]
+    add_def0("TEXMF", kpse_var_value("TEXMF"));
+    ^
+dvi2.c:244:5: warning: implicit declaration of function 'init_default' is invalid in C99 [-Wimplicit-function-declaration]
+    init_default(MFMODE, KPSENAME);
+    ^
+dvi2.c:245:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+17 warnings generated.
+mv -f .deps/dvi2.Tpo .deps/dvi2.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT dviconv.o -MD -MP -MF .deps/dviconv.Tpo -c -o dviconv.o dviconv.c
+dviconv.c:40:20: warning: '/*' within block comment [-Wcomment]
+    /*long cpagep;      /* current page pointer         */
+                        ^
+dviconv.c:83:6: warning: implicit declaration of function 'setdir' is invalid in C99 [-Wimplicit-function-declaration]
+            setdir(HOR);
+            ^
+dviconv.c:87:6: warning: implicit declaration of function 'dev_initpage' is invalid in C99 [-Wimplicit-function-declaration]
+            dev_initpage();
+            ^
+dviconv.c:92:3: warning: implicit declaration of function 'dev_bop' is invalid in C99 [-Wimplicit-function-declaration]
+                dev_bop(count[0]);
+                ^
+dviconv.c:106:3: warning: implicit declaration of function 'dev_eop' is invalid in C99 [-Wimplicit-function-declaration]
+                dev_eop();
+                ^
+dviconv.c:131:3: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                else
+                ^
+dviconv.c:250:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+initdir()
+^~~~~~~
+dviconv.c:254:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+dviconv.c:256:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+setdir(d)
+^~~~~~
+dviconv.c:264:6: warning: implicit declaration of function 'setdirhor' is invalid in C99 [-Wimplicit-function-declaration]
+            setdirhor();
+            ^
+dviconv.c:267:6: warning: implicit declaration of function 'setdirver' is invalid in C99 [-Wimplicit-function-declaration]
+            setdirver();
+            ^
+dviconv.c:270:2: warning: implicit declaration of function 'dev_dir' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_dir(d);
+        ^
+dviconv.c:272:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+13 warnings generated.
+mv -f .deps/dviconv.Tpo .deps/dviconv.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT dfdcom.o -MD -MP -MF .deps/dfdcom.Tpo -c -o dfdcom.o dfdcom.c
+dfdcom.c:159:2: warning: implicit declaration of function 'dev_setposn' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_setposn(h, v);      /* lower left corner */
+        ^
+dfdcom.c:160:2: warning: implicit declaration of function 'dev_setrule' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_setrule(a, b);
+        ^
+2 warnings generated.
+mv -f .deps/dfdcom.Tpo .deps/dfdcom.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT fontcom.o -MD -MP -MF .deps/fontcom.Tpo -c -o fontcom.o fontcom.c
+fontcom.c:45:9: warning: implicit declaration of function 'replfont' is invalid in C99 [-Wimplicit-function-declaration]
+    if (replfont(n, s, rn, &rd, &rs)) {
+        ^
+fontcom.c:96:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+first_markchar(c)
+^~~~~~~~~~~~~~
+fontcom.c:101:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontcom.c:145:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+null_markchar(c)
+^~~~~~~~~~~~~
+fontcom.c:148:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontcom.c:172:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+null_setchar(c)
+^~~~~~~~~~~~
+fontcom.c:179:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+null_setstring(s, len)
+^~~~~~~~~~~~~~
+7 warnings generated.
+mv -f .deps/fontcom.Tpo .deps/fontcom.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT set.o -MD -MP -MF .deps/set.Tpo -c -o set.o set.c
+mv -f .deps/set.Tpo .deps/set.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT rfset.o -MD -MP -MF .deps/rfset.Tpo -c -o rfset.o rfset.c
+rfset.c:23:2: warning: implicit declaration of function 'dev_setfont' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_setfont(devf);
+        ^
+rfset.c:24:2: warning: implicit declaration of function 'dev_setposn' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_setposn(h, v);
+        ^
+2 warnings generated.
+mv -f .deps/rfset.Tpo .deps/rfset.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT vfset.o -MD -MP -MF .deps/vfset.Tpo -c -o vfset.o vfset.c
+mv -f .deps/vfset.Tpo .deps/vfset.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT dconv.o -MD -MP -MF .deps/dconv.Tpo -c -o dconv.o dconv.c
+dconv.c:20:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+setcurdconv(dp)
+^~~~~~~~~~~
+dconv.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+dconv.c:45:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+setdirhor()
+^~~~~~~~~
+dconv.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+dconv.c:52:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+setdirver()
+^~~~~~~~~
+dconv.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+6 warnings generated.
+mv -f .deps/dconv.Tpo .deps/dconv.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT run.o -MD -MP -MF .deps/run.Tpo -c -o run.o run.c
+run.c:49:7: warning: implicit declaration of function 'arg_define' is invalid in C99 [-Wimplicit-function-declaration]
+                    arg_define(tcp);
+                    ^
+run.c:142:7: warning: implicit declaration of function 'dev_arg' is invalid in C99 [-Wimplicit-function-declaration]
+                    dev_arg('o', argv[argind]);
+                    ^
+run.c:182:7: warning: implicit declaration of function 'usage' is invalid in C99 [-Wimplicit-function-declaration]
+                    usage(*tcp);
+                    ^
+run.c:262:5: warning: implicit declaration of function 'default_def' is invalid in C99 [-Wimplicit-function-declaration]
+    default_def();
+    ^
+run.c:296:3: warning: implicit declaration of function 'set_resolution' is invalid in C99 [-Wimplicit-function-declaration]
+                set_resolution(tcp);
+                ^
+run.c:315:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+usage(c)
+^~~~~
+run.c:326:5: warning: data argument not used by format string [-Wformat-extra-args]
+                  "[dvifile]");
+                  ^
+run.c:329:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+8 warnings generated.
+mv -f .deps/run.Tpo .deps/run.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT mag.o -MD -MP -MF .deps/mag.Tpo -c -o mag.o mag.c
+mv -f .deps/mag.Tpo .deps/mag.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT fontdesc.o -MD -MP -MF .deps/fontdesc.Tpo -c -o fontdesc.o fontdesc.c
+fontdesc.c:122:9: warning: implicit declaration of function 'searchfile' is invalid in C99 [-Wimplicit-function-declaration]
+    if (searchfile(fdn, fdfile, &newlibdir, top, (char *)NULL)) {
+        ^
+fontdesc.c:143:2: warning: implicit declaration of function 'getfield' is invalid in C99 [-Wimplicit-function-declaration]
+        getfield(field);
+        ^
+fontdesc.c:155:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+findsearchfile(newf, newlcd, ld, lcd, f, ext)
+^
+fontdesc.c:183:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+pathsearchfile(nextpath, path, newf, newlcd, newld, lcd, f, ext)
+^
+fontdesc.c:210:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+searchfile(f, newf, nld, top, ext)
+^~~~~~~~~~
+fontdesc.c:277:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+searchfiledir(f, ld, newf)
+^~~~~~~~~~~~~
+fontdesc.c:321:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getfield(field)
+^~~~~~~~
+fontdesc.c:334:8: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+            } else {
+              ^
+fontdesc.c:344:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:346:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getqfield0(field)
+^~~~~~~~~~
+fontdesc.c:368:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:370:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getqfield(field)
+^~~~~~~~~
+fontdesc.c:375:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:377:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getoqfield(field)
+^~~~~~~~~~
+fontdesc.c:385:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:387:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getlfield(field)
+^~~~~~~~~
+fontdesc.c:399:8: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+            } else {
+              ^
+fontdesc.c:408:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:523:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+pathtype_init(proto, ff)
+^~~~~~~~~~~~~
+fontdesc.c:548:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+add_def0(var, val)
+^~~~~~~~
+fontdesc.c:560:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:562:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+add_def(var, val)
+^~~~~~~
+fontdesc.c:574:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:589:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+arg_define(def)
+^~~~~~~~~~
+fontdesc.c:600:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:664:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+set_resolution(r)
+^~~~~~~~~~~~~~
+fontdesc.c:671:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:721:5: warning: implicit declaration of function 'add_devfile' is invalid in C99 [-Wimplicit-function-declaration]
+    add_devfile(f, top, DF_ALWAYS, "includefile", &nextif);
+    ^
+fontdesc.c:750:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+add_devfile(f, top, kind, k, np)
+^~~~~~~~~~~
+fontdesc.c:779:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:781:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+add_include_spec(f, op)
+^~~~~~~~~~~~~~~~
+fontdesc.c:793:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:795:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+add_setup_spec(f, op)
+^~~~~~~~~~~~~~
+fontdesc.c:807:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:812:5: warning: implicit declaration of function 'getdevfile' is invalid in C99 [-Wimplicit-function-declaration]
+    getdevfile(add_include);
+    ^
+fontdesc.c:818:5: warning: implicit declaration of function 'getdevfileif' is invalid in C99 [-Wimplicit-function-declaration]
+    getdevfileif(add_includeif);
+    ^
+fontdesc.c:833:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getdevfile(add)
+^~~~~~~~~~
+fontdesc.c:841:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:843:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getdevfileif(add)
+^~~~~~~~~~~~
+fontdesc.c:853:31: warning: implicit declaration of function 'dev_devfilekind' is invalid in C99 [-Wimplicit-function-declaration]
+    (*add)(field_file, FALSE, dev_devfilekind(field_kind));
+                              ^
+fontdesc.c:854:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:856:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+do_include()
+^~~~~~~~~~
+fontdesc.c:858:5: warning: implicit declaration of function 'do_devfile' is invalid in C99 [-Wimplicit-function-declaration]
+    do_devfile(includefiles);
+    ^
+fontdesc.c:859:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:861:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+do_setup()
+^~~~~~~~
+fontdesc.c:864:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:866:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+do_devfile(df)
+^~~~~~~~~~
+fontdesc.c:870:34: warning: implicit declaration of function 'dev_devfileif' is invalid in C99 [-Wimplicit-function-declaration]
+        if (df->df_kind == DF_ALWAYS || dev_devfileif(df->df_kind))
+                                        ^
+fontdesc.c:872:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:895:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+findcconvmap(name, file)
+^~~~~~~~~~~~
+fontdesc.c:989:16: warning: implicit declaration of function 'scale_exact' is invalid in C99 [-Wimplicit-function-declaration]
+                fr->fr_fix = scale_exact(fr->fr_fix, atoi(f+1));
+                             ^
+fontdesc.c:1011:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+init_default(def_mfmode, def_kpse)
+^~~~~~~~~~~~
+fontdesc.c:1016:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:1018:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+fix_default(def_resolution, def_mfmode)
+^~~~~~~~~~~
+fontdesc.c:1031:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+fontdesc.c:1037:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+replfont(n, s, rn, rd, rs)
+^~~~~~~~
+fontdesc.c:1047:6: warning: implicit declaration of function 'match_subf' is invalid in C99 [-Wimplicit-function-declaration]
+        if (match_subf(fr->fr_replfont, n, FALSE, &sb, &se)) {
+            ^
+fontdesc.c:1048:6: warning: implicit declaration of function 'subst_subf' is invalid in C99 [-Wimplicit-function-declaration]
+            subst_subf(rn, fr->fr_font, sb, se);
+            ^
+58 warnings generated.
+mv -f .deps/fontdesc.Tpo .deps/fontdesc.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT scanfont.o -MD -MP -MF .deps/scanfont.Tpo -c -o scanfont.o scanfont.c
+scanfont.c:54:3: warning: implicit declaration of function 'dev_prebop' is invalid in C99 [-Wimplicit-function-declaration]
+                dev_prebop(count[0]);
+                ^
+scanfont.c:73:36: warning: data argument not used by format string [-Wformat-extra-args]
+                        (void)fprintf(stderr, "eop}\n", count[0]);
+                                              ~~~~~~~~  ^
+scanfont.c:144:21: warning: implicit declaration of function 'HasBeenRead' is invalid in C99 [-Wimplicit-function-declaration]
+            if (PreLoad || HasBeenRead(k, *hdfip))
+                           ^
+3 warnings generated.
+mv -f .deps/scanfont.Tpo .deps/scanfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT virfont.o -MD -MP -MF .deps/virfont.Tpo -c -o virfont.o virfont.c
+virfont.c:33:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+vftype_access(proto, fe, acca)
+^~~~~~~~~~~~~
+virfont.c:38:12: warning: implicit declaration of function 'vfty_acc' is invalid in C99 [-Wimplicit-function-declaration]
+    return vfty_acc(proto, fe, acca, "vf", NULL);
+           ^
+virfont.c:41:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jvftype_access(proto, fe, acca)
+^~~~~~~~~~~~~~
+virfont.c:50:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+vfty_acc(proto, fe, acca, type, suffix)
+^~~~~~~~
+virfont.c:62:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (ok = (filename != NULL))
+        ~~~^~~~~~~~~~~~~~~~~~~~
+virfont.c:62:12: note: place parentheses around the assignment to silence this warning
+    if (ok = (filename != NULL))
+           ^
+        (                      )
+virfont.c:62:12: note: use '==' to turn this assignment into an equality comparison
+    if (ok = (filename != NULL))
+           ^
+           ==
+virfont.c:82:5: warning: implicit declaration of function 'read_vf_dviinfo' is invalid in C99 [-Wimplicit-function-declaration]
+    read_vf_dviinfo(fe);
+    ^
+virfont.c:94:5: warning: implicit declaration of function 'read_jvf_dviinfo' is invalid in C99 [-Wimplicit-function-declaration]
+    read_jvf_dviinfo(fe);
+    ^
+virfont.c:107:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+read_vf_dviinfo(fe)
+^~~~~~~~~~~~~~~
+virfont.c:110:5: warning: implicit declaration of function 'read_vf_di' is invalid in C99 [-Wimplicit-function-declaration]
+    read_vf_di(fe, CODE_NORMAL);
+    ^
+virfont.c:111:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+virfont.c:113:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+read_jvf_dviinfo(fe)
+^~~~~~~~~~~~~~~~
+virfont.c:117:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+virfont.c:119:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+read_vf_di(fe, coding)
+^~~~~~~~~~
+virfont.c:190:19: warning: implicit declaration of function 'jis_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+                else if ((idx = jis_to_idx94(cc)) < 0) {
+                                ^
+virfont.c:222:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+virfont.c:267:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+vf_markchar(c)
+^~~~~~~~~~~
+virfont.c:270:5: warning: implicit declaration of function 'vf_mc' is invalid in C99 [-Wimplicit-function-declaration]
+    vf_mc(curfontent, &virfinfo(curfontent)->ch[c], c);
+    ^
+virfont.c:271:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+virfont.c:273:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jvf_markchar(c)
+^~~~~~~~~~~~
+virfont.c:286:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+virfont.c:307:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+vf_mc(fe, ce, c)
+^~~~~
+virfont.c:320:9: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'int' [-Wint-conversion]
+        return NULL;
+               ^~~~
+/usr/lib/llvm-3.5/bin/../lib/clang/3.5.0/include/stddef.h:101:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+virfont.c:344:9: warning: implicit declaration of function 'setc_com' is invalid in C99 [-Wimplicit-function-declaration]
+    if (setc_com(cmd = *dvip, dvip, dvilen, ce)) {
+        ^
+virfont.c:372:9: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'int' [-Wint-conversion]
+        return NULL;
+               ^~~~
+/usr/lib/llvm-3.5/bin/../lib/clang/3.5.0/include/stddef.h:101:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+virfont.c:383:5: warning: implicit declaration of function 'setcurdconv' is invalid in C99 [-Wimplicit-function-declaration]
+    setcurdconv(&vfd_dconv_templ);
+    ^
+virfont.c:387:5: warning: implicit declaration of function 'scanfont' is invalid in C99 [-Wimplicit-function-declaration]
+    scanfont(TRUE, &(virfinfo(fe)->vf_fontidx));
+    ^
+virfont.c:393:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+virfont.c:395:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+setc_com(cmd, dvip, dvilen, ce)
+^~~~~~~~
+virfont.c:446:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+virfont.c:448:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+vf_setchar(c)
+^~~~~~~~~~
+virfont.c:451:12: warning: implicit declaration of function 'vf_sc' is invalid in C99 [-Wimplicit-function-declaration]
+    return vf_sc(curfontent, &virfinfo(curfontent)->ch[c], c);
+           ^
+virfont.c:454:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jvf_setchar(c)
+^~~~~~~~~~~
+virfont.c:466:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+vf_sc(fe, ce, c)
+^~~~~
+virfont.c:504:5: warning: implicit declaration of function 'dviconv' is invalid in C99 [-Wimplicit-function-declaration]
+    dviconv(virfinfo(fe)->vf_fontidx);
+    ^
+virfont.c:512:5: warning: implicit declaration of function 'setdir' is invalid in C99 [-Wimplicit-function-declaration]
+    setdir(save_dir);
+    ^
+virfont.c:518:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+vf_setstring(s, len)
+^~~~~~~~~~~~
+virfont.c:533:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jvf_setstring(s, len)
+^~~~~~~~~~~~~
+37 warnings generated.
+mv -f .deps/virfont.Tpo .deps/virfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT vfdcom.o -MD -MP -MF .deps/vfdcom.Tpo -c -o vfdcom.o vfdcom.c
+vfdcom.c:126:5: warning: implicit declaration of function 'dfd_setrule' is invalid in C99 [-Wimplicit-function-declaration]
+    dfd_setrule(scale(a, dc_scale), scale(b, dc_scale));
+    ^
+vfdcom.c:134:5: warning: implicit declaration of function 'dfd_setrule_v' is invalid in C99 [-Wimplicit-function-declaration]
+    dfd_setrule_v(scale(a, dc_scale), scale(b, dc_scale));
+    ^
+2 warnings generated.
+mv -f .deps/vfdcom.Tpo .deps/vfdcom.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT pkfont.o -MD -MP -MF .deps/pkfont.Tpo -c -o pkfont.o pkfont.c
+pkfont.c:29:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+pktype_access(proto, fe, acca)
+^~~~~~~~~~~~~
+pkfont.c:37:5: warning: implicit declaration of function 'rast_mag' is invalid in C99 [-Wimplicit-function-declaration]
+    rast_mag(fe, acca, 1);
+    ^
+pkfont.c:39:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (ok = ((filename = kpsearch_glyph(proto, fe->n, kpse_pk_format,
+        ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pkfont.c:39:12: note: place parentheses around the assignment to silence this warning
+    if (ok = ((filename = kpsearch_glyph(proto, fe->n, kpse_pk_format,
+           ^
+pkfont.c:39:12: note: use '==' to turn this assignment into an equality comparison
+    if (ok = ((filename = kpsearch_glyph(proto, fe->n, kpse_pk_format,
+           ^
+           ==
+pkfont.c:47:5: warning: implicit declaration of function 'rast_debug_report' is invalid in C99 [-Wimplicit-function-declaration]
+    rast_debug_report(fe, acca, ok, "pk");
+    ^
+pkfont.c:59:5: warning: implicit declaration of function 'init_rast_fontinfo' is invalid in C99 [-Wimplicit-function-declaration]
+    init_rast_fontinfo(fe);
+    ^
+pkfont.c:119:3: warning: implicit declaration of function 'readpkchar' is invalid in C99 [-Wimplicit-function-declaration]
+                readpkchar(cmd, fe, rii);
+                ^
+pkfont.c:138:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+readpkchar(flag, fe, rii)
+^~~~~~~~~~
+pkfont.c:153:13: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'int' [-Wint-conversion]
+            return NULL;
+                   ^~~~
+/usr/lib/llvm-3.5/bin/../lib/clang/3.5.0/include/stddef.h:101:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+pkfont.c:157:13: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'int' [-Wint-conversion]
+            return NULL;
+                   ^~~~
+/usr/lib/llvm-3.5/bin/../lib/clang/3.5.0/include/stddef.h:101:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+pkfont.c:168:13: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'int' [-Wint-conversion]
+            return NULL;
+                   ^~~~
+/usr/lib/llvm-3.5/bin/../lib/clang/3.5.0/include/stddef.h:101:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+pkfont.c:177:13: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'int' [-Wint-conversion]
+            return NULL;
+                   ^~~~
+/usr/lib/llvm-3.5/bin/../lib/clang/3.5.0/include/stddef.h:101:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+pkfont.c:191:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+pkfont.c:215:2: warning: implicit declaration of function 'unpack_raster' is invalid in C99 [-Wimplicit-function-declaration]
+        unpack_raster();
+        ^
+pkfont.c:217:2: warning: implicit declaration of function 'unpack_run' is invalid in C99 [-Wimplicit-function-declaration]
+        unpack_run(pl);
+        ^
+pkfont.c:252:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+unpack_run(pl)
+^~~~~~~~~~
+pkfont.c:289:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pkfont.c:293:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+unpack_raster()
+^~~~~~~~~~~~~
+pkfont.c:315:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+18 warnings generated.
+mv -f .deps/pkfont.Tpo .deps/pkfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT gffont.o -MD -MP -MF .deps/gffont.Tpo -c -o gffont.o gffont.c
+gffont.c:27:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+gftype_access(proto, fe, acca)
+^~~~~~~~~~~~~
+gffont.c:35:5: warning: implicit declaration of function 'rast_mag' is invalid in C99 [-Wimplicit-function-declaration]
+    rast_mag(fe, acca, 1);
+    ^
+gffont.c:37:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (ok = ((filename = kpsearch_glyph(proto, fe->n, kpse_gf_format,
+        ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gffont.c:37:12: note: place parentheses around the assignment to silence this warning
+    if (ok = ((filename = kpsearch_glyph(proto, fe->n, kpse_gf_format,
+           ^
+gffont.c:37:12: note: use '==' to turn this assignment into an equality comparison
+    if (ok = ((filename = kpsearch_glyph(proto, fe->n, kpse_gf_format,
+           ^
+           ==
+gffont.c:45:5: warning: implicit declaration of function 'rast_debug_report' is invalid in C99 [-Wimplicit-function-declaration]
+    rast_debug_report(fe, acca, ok, "gf");
+    ^
+gffont.c:57:5: warning: implicit declaration of function 'init_rast_fontinfo' is invalid in C99 [-Wimplicit-function-declaration]
+    init_rast_fontinfo(fe);
+    ^
+gffont.c:149:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    for (; t = getuint(fntfp, 1); ) {
+           ~~^~~~~~~~~~~~~~~~~~~
+gffont.c:149:14: note: place parentheses around the assignment to silence this warning
+    for (; t = getuint(fntfp, 1); ) {
+             ^
+           (                    )
+gffont.c:149:14: note: use '==' to turn this assignment into an equality comparison
+    for (; t = getuint(fntfp, 1); ) {
+             ^
+             ==
+6 warnings generated.
+mv -f .deps/gffont.Tpo .deps/gffont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT rastfont.o -MD -MP -MF .deps/rastfont.Tpo -c -o rastfont.o rastfont.c
+rastfont.c:7:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+rast_mag(fe, acca, t)
+^~~~~~~~
+rastfont.c:30:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+rastfont.c:33:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+rast_debug_report(fe, acca, ok, type)
+^~~~~~~~~~~~~~~~~
+rastfont.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+rastfont.c:49:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+check_id(name, id)
+^~~~~~~~
+rastfont.c:70:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+init_rast_fontinfo(fe)
+^~~~~~~~~~~~~~~~~~
+rastfont.c:87:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+rastfont.c:89:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+rast_markchar(c)
+^~~~~~~~~~~~~
+rastfont.c:94:9: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'int' [-Wint-conversion]
+        return NULL;
+               ^~~~
+/usr/lib/llvm-3.5/bin/../lib/clang/3.5.0/include/stddef.h:101:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+rastfont.c:99:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+10 warnings generated.
+mv -f .deps/rastfont.Tpo .deps/rastfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT bifont.o -MD -MP -MF .deps/bifont.Tpo -c -o bifont.o bifont.c
+bifont.c:72:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+gentfm_access(proto, fe, acca, dev_is_format, type)
+^~~~~~~~~~~~~
+bifont.c:85:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (ok = (filename != NULL))
+        ~~~^~~~~~~~~~~~~~~~~~~~
+bifont.c:85:12: note: place parentheses around the assignment to silence this warning
+    if (ok = (filename != NULL))
+           ^
+        (                      )
+bifont.c:85:12: note: use '==' to turn this assignment into an equality comparison
+    if (ok = (filename != NULL))
+           ^
+           ==
+bifont.c:105:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+tfm_access(proto, fe, acca)
+^~~~~~~~~~
+bifont.c:123:13: warning: implicit declaration of function 'dev_tfm_kind' is invalid in C99 [-Wimplicit-function-declaration]
+    switch (dev_tfm_kind(fe)) {
+            ^
+bifont.c:134:2: warning: implicit declaration of function 'init_ft_fontinfo' is invalid in C99 [-Wimplicit-function-declaration]
+        init_ft_fontinfo(fe);
+        ^
+bifont.c:151:5: warning: implicit declaration of function 'readtfm' is invalid in C99 [-Wimplicit-function-declaration]
+    readtfm(fntfp = fe->openfile);
+    ^
+bifont.c:156:27: warning: '/*' within block comment [-Wcomment]
+        /* ce->dev_font = fe->k;        /* Not used */
+                                        ^
+bifont.c:173:5: warning: implicit declaration of function 'dev_tfm_initfe' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_tfm_initfe(fe);
+    ^
+bifont.c:175:5: warning: implicit declaration of function 'dev_tfm_initfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_tfm_initfontdict(fe);
+    ^
+bifont.c:218:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_access(proto, fe, acca)
+^~~~~~~~~~~~
+bifont.c:284:2: warning: implicit declaration of function 'jsub_to_jis' is invalid in C99 [-Wimplicit-function-declaration]
+        jsub_to_jis(subfont, i, &(ce->dev_ku), &(ce->dev_ten));
+        ^
+bifont.c:303:5: warning: implicit declaration of function 'dev_jstfm_initfe' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_jstfm_initfe(fe);
+    ^
+bifont.c:306:2: warning: implicit declaration of function 'dev_jstfm_initfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_jstfm_initfontdict(fe);
+        ^
+bifont.c:323:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_access(proto, fe, acca)
+^~~~~~~~~~
+bifont.c:374:10: warning: implicit declaration of function 'readjfm' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!readjfm(fntfp = fe->openfile))
+         ^
+bifont.c:402:5: warning: implicit declaration of function 'dev_jfm_initfe' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_jfm_initfe(fe, id);
+    ^
+bifont.c:403:5: warning: implicit declaration of function 'dev_jfm_initfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_jfm_initfontdict(fe);
+    ^
+bifont.c:406:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getctype(c, jfmfi)
+^~~~~~~~
+bifont.c:432:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+readtfm(fntfp)
+^~~~~~~
+bifont.c:449:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+bifont.c:451:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+readjfm(fntfp)
+^~~~~~~
+21 warnings generated.
+mv -f .deps/bifont.Tpo .deps/bifont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT type1font.o -MD -MP -MF .deps/type1font.Tpo -c -o type1font.o type1font.c
+type1font.c:23:2: warning: implicit declaration of function 'dev_set_repfe' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_set_repfe(biinifinfo(fe)->bf, fe);
+        ^
+type1font.c:45:5: warning: implicit declaration of function 'dev_tfm_initfe' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_tfm_initfe(fe);
+    ^
+type1font.c:48:2: warning: implicit declaration of function 'dev_t1_initfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_t1_initfontdict(fe, bii, NULL, NULL);
+        ^
+type1font.c:55:2: warning: implicit declaration of function 'read_null_fontinfo' is invalid in C99 [-Wimplicit-function-declaration]
+        read_null_fontinfo(fe);
+        ^
+4 warnings generated.
+mv -f .deps/type1font.Tpo .deps/type1font.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT wlfont.o -MD -MP -MF .deps/wlfont.Tpo -c -o wlfont.o wlfont.c
+wlfont.c:95:7: warning: implicit declaration of function 'read_null_fontinfo' is invalid in C99 [-Wimplicit-function-declaration]
+                    read_null_fontinfo(fe);
+                    ^
+wlfont.c:113:10: warning: implicit declaration of function 'idx94_to_std' is invalid in C99 [-Wimplicit-function-declaration]
+            c = idx94_to_std(kk);
+                ^
+wlfont.c:115:35: warning: implicit declaration of function 'getctype' is invalid in C99 [-Wimplicit-function-declaration]
+                (wlfi->ch+kk)->tfmw = jfmfi->ch[getctype(c,jfmfi)].tfmw;
+                                                ^
+wlfont.c:116:6: warning: implicit declaration of function 'dev_wl_initfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+            dev_wl_initfontdict(fe, wlfi, kk, c, nchars--, k1fp);
+            ^
+wlfont.c:121:5: warning: implicit declaration of function 'dev_wl_endfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_wl_endfontdict();
+    ^
+wlfont.c:140:5: warning: implicit declaration of function 'dev_wl_initfe' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_wl_initfe(fe);
+    ^
+wlfont.c:141:5: warning: implicit declaration of function 'dev_wl_begfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_wl_begfontdict(fe);
+    ^
+wlfont.c:155:28: warning: implicit declaration of function 'jis_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+    return wlfinfo(fe)->ch[jis_to_idx94(c)].dev_font;
+                           ^
+wlfont.c:189:5: warning: implicit declaration of function 'dev_jswl_initfe' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_jswl_initfe(fe);
+    ^
+wlfont.c:193:2: warning: implicit declaration of function 'dev_jswl_begfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_jswl_begfontdict(fe);
+        ^
+wlfont.c:209:32: warning: implicit declaration of function 'jsub_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+    return jswlfinfo(jsfi)->ch[jsub_to_idx94(jsfi->jsubfont,c)].dev_font;
+                               ^
+11 warnings generated.
+mv -f .deps/wlfont.Tpo .deps/wlfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT ttfont.o -MD -MP -MF .deps/ttfont.Tpo -c -o ttfont.o ttfont.c
+ttfont.c:33:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+ft_initialize()
+^~~~~~~~~~~~~
+ttfont.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ttfont.c:46:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+ft_glyph(filename)
+^~~~~~~~
+ttfont.c:56:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+ft_size(filename, fsize)
+^~~~~~~
+ttfont.c:68:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+ft_char(i, c)
+^~~~~~~
+ttfont.c:79:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ttfont.c:81:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+fto_size1000(filename)
+^~~~~~~~~~~~
+ttfont.c:95:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+fto_char(c, i)
+^~~~~~~~
+ttfont.c:101:5: warning: implicit declaration of function 'FT_Outline_Transform' is invalid in C99 [-Wimplicit-function-declaration]
+    FT_Outline_Transform(&(face->glyph->outline), &oscale);
+    ^
+ttfont.c:106:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ttfont.c:127:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+set_unimap(enc)
+^~~~~~~~~~
+ttfont.c:149:9: warning: implicit declaration of function 'findcconvmap' is invalid in C99 [-Wimplicit-function-declaration]
+    if (findcconvmap(tabname, file)) {
+        ^
+ttfont.c:197:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+noconv(idx)
+^~~~~~
+ttfont.c:203:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+iso1_to_uni(c)
+^~~~~~~~~~~
+ttfont.c:209:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+idx94_to_uni(idx)
+^~~~~~~~~~~~
+ttfont.c:226:9: warning: implicit declaration of function 'dev_mf_kind' is invalid in C99 [-Wimplicit-function-declaration]
+    if (dev_mf_kind(tfmfinfo(fe)->tfm_bf) == MF_KIND_FT)
+        ^
+ttfont.c:230:2: warning: implicit declaration of function 'dev_set_repfe' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_set_repfe(biinifinfo(fe)->bf, fe);
+        ^
+ttfont.c:251:5: warning: implicit declaration of function 't1_get_encode' is invalid in C99 [-Wimplicit-function-declaration]
+    t1_get_encode(enc, glyphs);
+    ^
+ttfont.c:252:5: warning: implicit declaration of function 'reencode' is invalid in C99 [-Wimplicit-function-declaration]
+    reencode(glyphs, bii->mark, bii->maxc, remap);
+    ^
+ttfont.c:253:5: warning: implicit declaration of function 't1_free_encode' is invalid in C99 [-Wimplicit-function-declaration]
+    t1_free_encode(glyphs);
+    ^
+ttfont.c:283:5: warning: implicit declaration of function 'dev_tfm_initfe' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_tfm_initfe(fe);
+    ^
+ttfont.c:287:2: warning: implicit declaration of function 'dev_fto_refontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_fto_refontdict(fe);
+        ^
+ttfont.c:294:2: warning: implicit declaration of function 'read_null_fontinfo' is invalid in C99 [-Wimplicit-function-declaration]
+        read_null_fontinfo(fe);
+        ^
+ttfont.c:340:9: warning: implicit declaration of function 'dev_ft_begfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        tfmw = dev_ft_begfontdict(fe, bii->maxc);
+               ^
+ttfont.c:354:13: warning: assigning to 'char *' from 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            npixel = face->glyph->bitmap.buffer;
+                   ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+ttfont.c:359:6: warning: implicit declaration of function 'dev_ft_initfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+            dev_ft_initfontdict(fe, tfmfi, i,
+            ^
+ttfont.c:367:9: warning: implicit declaration of function 'dev_fto_begfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        tfmw = dev_fto_begfontdict(fe, face->family_name,
+               ^
+ttfont.c:373:6: warning: implicit declaration of function 'dev_fto_initfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+            dev_fto_initfontdict(remap[i], &(face->glyph->outline),
+            ^
+ttfont.c:376:2: warning: implicit declaration of function 'dev_fto_endfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_fto_endfontdict(fe);
+        ^
+ttfont.c:476:16: warning: implicit declaration of function 'dev_bold' is invalid in C99 [-Wimplicit-function-declaration]
+    embolden = dev_bold(jftfi->jft_bf);
+               ^
+ttfont.c:496:13: warning: assigning to 'char *' from 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+            npixel = face->glyph->bitmap.buffer;
+                   ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+ttfont.c:501:6: warning: implicit declaration of function 'dev_jft_initfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+            dev_jft_initfontdict(fe, jftfi, i, jis, tfmw, 
+            ^
+ttfont.c:510:2: warning: implicit declaration of function 'dev_jfto_begfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_jfto_begfontdict(dname, face->family_name);
+        ^
+ttfont.c:517:6: warning: implicit declaration of function 'dev_jfto_initfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+            dev_jfto_initfontdict(jftfi, i, nchars--,
+            ^
+ttfont.c:520:2: warning: implicit declaration of function 'dev_jfto_endfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_jfto_endfontdict();
+        ^
+ttfont.c:544:5: warning: implicit declaration of function 'dev_jft_initfe' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_jft_initfe(fe);
+    ^
+ttfont.c:545:12: warning: implicit declaration of function 'dev_jft_begfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+    tfmw = dev_jft_begfontdict(fe);
+           ^
+ttfont.c:562:29: warning: implicit declaration of function 'jis_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+    return jftfinfo(fe)->ch[jis_to_idx94(c)].dev_font;
+                            ^
+ttfont.c:603:5: warning: implicit declaration of function 'dev_jsft_initfe' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_jsft_initfe(fe);
+    ^
+ttfont.c:608:9: warning: implicit declaration of function 'dev_jsft_begfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        tfmw = dev_jsft_begfontdict(fe);
+               ^
+ttfont.c:627:32: warning: implicit declaration of function 'jsub_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+    return jsftfinfo(jsfi)->ch[jsub_to_idx94(jsfi->jsubfont,c)].dev_font;
+                               ^
+ttfont.c:633:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+trim_bitmap(wid, bwid, hgt, xo, dep, pixel, nwid, nhgt, nxo, ndep, npixel)
+^~~~~~~~~~~
+ttfont.c:680:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+43 warnings generated.
+mv -f .deps/ttfont.Tpo .deps/ttfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT vflfont.o -MD -MP -MF .deps/vflfont.Tpo -c -o vflfont.o vflfont.c
+vflfont.c:26:5: warning: implicit declaration of function 'getfield' is invalid in C99 [-Wimplicit-function-declaration]
+    getfield(field_file);
+    ^
+1 warning generated.
+mv -f .deps/vflfont.Tpo .deps/vflfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT mmfont.o -MD -MP -MF .deps/mmfont.Tpo -c -o mmfont.o mmfont.c
+mmfont.c:44:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jmm_markchar(c)
+^~~~~~~~~~~~
+mmfont.c:47:9: warning: implicit declaration of function 'jis_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+    c = jis_to_idx94(c);
+        ^
+mmfont.c:51:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+mmfont.c:53:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+mm_markchar(c)
+^~~~~~~~~~~
+mmfont.c:59:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+mmfont.c:61:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jsmm_markchar(c)
+^~~~~~~~~~~~~
+mmfont.c:67:9: warning: implicit declaration of function 'jsub_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+    c = jsub_to_idx94(jsfi->jsubfont, c);
+        ^
+mmfont.c:72:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+8 warnings generated.
+mv -f .deps/mmfont.Tpo .deps/mmfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT compfont.o -MD -MP -MF .deps/compfont.Tpo -c -o compfont.o compfont.c
+compfont.c:20:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+comptype_init(pars, ff)
+^~~~~~~~~~~~~
+compfont.c:28:10: warning: implicit declaration of function 'getstrtok' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!getstrtok(pars, ',', &p1))
+         ^
+compfont.c:40:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+comptype_access(ffcmp, fe, acca)
+^~~~~~~~~~~~~~~
+compfont.c:57:20: warning: implicit declaration of function 'getjsubfont' is invalid in C99 [-Wimplicit-function-declaration]
+            subpre = (s = getjsubfont(fe->n+strlen(ffcmp->cmp_name), &se)) > 0;
+                          ^
+compfont.c:59:20: warning: implicit declaration of function 'getdcode' is invalid in C99 [-Wimplicit-function-declaration]
+            subpre = (s = getdcode(fe->n+strlen(ffcmp->cmp_name), &se)) > 0;
+                          ^
+compfont.c:60:16: warning: implicit declaration of function 'numstr' is invalid in C99 [-Wimplicit-function-declaration]
+        if (subpre && numstr(se+1)) {
+                      ^
+compfont.c:109:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+cmpntt_markchar(c)
+^~~~~~~~~~~~~~~
+compfont.c:115:5: warning: implicit declaration of function 'jsub_to_jis' is invalid in C99 [-Wimplicit-function-declaration]
+    jsub_to_jis(cmpfinfo(curfontent)->cmp_sub, c, &ku, &ten);
+    ^
+compfont.c:117:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+compfont.c:152:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+cmpntt_setchar(c)
+^~~~~~~~~~~~~~
+compfont.c:163:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+cmpntt_setstring(s, len)
+^~~~~~~~~~~~~~~~
+compfont.c:192:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+cmpdcd_markchar(c)
+^~~~~~~~~~~~~~~
+compfont.c:198:5: warning: implicit declaration of function 'code_to_jis' is invalid in C99 [-Wimplicit-function-declaration]
+    code_to_jis(cmpfinfo(curfontent)->cmp_sub, c, &ku, &ten);
+    ^
+compfont.c:200:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+compfont.c:229:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+cmpdcd_setchar(c)
+^~~~~~~~~~~~~~
+compfont.c:240:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+cmpdcd_setstring(s, len)
+^~~~~~~~~~~~~~~~
+16 warnings generated.
+mv -f .deps/compfont.Tpo .deps/compfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT decompfont.o -MD -MP -MF .deps/decompfont.Tpo -c -o decompfont.o decompfont.c
+decompfont.c:20:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+decomptype_init(pars, ff)
+^~~~~~~~~~~~~~~
+decompfont.c:28:10: warning: implicit declaration of function 'getstrtok' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!getstrtok(pars, ',', &p1))
+         ^
+decompfont.c:40:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+decomptype_access(ffdcmp, fe, acca)
+^~~~~~~~~~~~~~~~~
+decompfont.c:53:6: warning: implicit declaration of function 'numstr' is invalid in C99 [-Wimplicit-function-declaration]
+        if (numstr(fe->n+strlen(ffdcmp->dcmp_name)) ) {
+            ^
+decompfont.c:113:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dcmpntt_markchar(c)
+^~~~~~~~~~~~~~~~
+decompfont.c:119:5: warning: implicit declaration of function 'jis_to_jsub' is invalid in C99 [-Wimplicit-function-declaration]
+    jis_to_jsub(ku(c), ten(c), &f, &cc);
+    ^
+decompfont.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+decompfont.c:156:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dcmpntt_setchar(c)
+^~~~~~~~~~~~~~~
+decompfont.c:168:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dcmpntt_setstring(s, len)
+^~~~~~~~~~~~~~~~~
+decompfont.c:173:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+decompfont.c:200:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dcmpdcd_markchar(c)
+^~~~~~~~~~~~~~~~
+decompfont.c:206:5: warning: implicit declaration of function 'jis_to_dcode' is invalid in C99 [-Wimplicit-function-declaration]
+    jis_to_dcode(ku(c), ten(c), &f, &cc);
+    ^
+decompfont.c:208:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+decompfont.c:237:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dcmpdcd_setchar(c)
+^~~~~~~~~~~~~~~
+decompfont.c:249:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dcmpdcd_setstring(s, len)
+^~~~~~~~~~~~~~~~~
+decompfont.c:254:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+16 warnings generated.
+mv -f .deps/decompfont.Tpo .deps/decompfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT execfont.o -MD -MP -MF .deps/execfont.Tpo -c -o execfont.o execfont.c
+mv -f .deps/execfont.Tpo .deps/execfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT funcfont.o -MD -MP -MF .deps/funcfont.Tpo -c -o funcfont.o funcfont.c
+funcfont.c:25:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+functype_init(desc, ff)
+^~~~~~~~~~~~~
+funcfont.c:40:7: warning: implicit declaration of function 'getstrtok' is invalid in C99 [-Wimplicit-function-declaration]
+        if (!getstrtok(desc, '(', &d))
+             ^
+funcfont.c:62:2: warning: implicit declaration of function 'skipstrblank' is invalid in C99 [-Wimplicit-function-declaration]
+        skipstrblank(e, &d);
+        ^
+funcfont.c:82:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+functype_access(ff, fe, acca)
+^~~~~~~~~~~~~~~
+funcfont.c:198:5: warning: implicit declaration of function 'pavek' is invalid in C99 [-Wimplicit-function-declaration]
+    pavek(fe->name, &path, &base, proto, acca);
+    ^
+funcfont.c:205:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (ok = (filename != NULL))
+        ~~~^~~~~~~~~~~~~~~~~~~~
+funcfont.c:205:12: note: place parentheses around the assignment to silence this warning
+    if (ok = (filename != NULL))
+           ^
+        (                      )
+funcfont.c:205:12: note: use '==' to turn this assignment into an equality comparison
+    if (ok = (filename != NULL))
+           ^
+           ==
+6 warnings generated.
+mv -f .deps/funcfont.Tpo .deps/funcfont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT kpse.o -MD -MP -MF .deps/kpse.Tpo -c -o kpse.o kpse.c
+kpse.c:24:5: warning: implicit declaration of function 'pavek' is invalid in C99 [-Wimplicit-function-declaration]
+    pavek(name, &path, &base, proto, acca);
+    ^
+kpse.c:44:13: warning: assigning to 'string' (aka 'char *') from 'const_string' (aka 'const char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        spec->path = save_path;
+                   ^ ~~~~~~~~~
+kpse.c:96:13: warning: assigning to 'string' (aka 'char *') from 'const_string' (aka 'const char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        spec->path = save_path;
+                   ^ ~~~~~~~~~
+kpse.c:133:13: warning: assigning to 'string' (aka 'char *') from 'const_string' (aka 'const char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        spec->path = save_path;
+                   ^ ~~~~~~~~~
+4 warnings generated.
+mv -f .deps/kpse.Tpo .deps/kpse.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT kanji.o -MD -MP -MF .deps/kanji.Tpo -c -o kanji.o kanji.c
+kanji.c:49:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getjsubfont(n, subend)
+^~~~~~~~~~~
+kanji.c:65:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getdcode(n, subend)
+^~~~~~~~
+kanji.c:202:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+match_subf(sname, fname, ini, sb, se)
+^~~~~~~~~~
+kanji.c:260:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jis_to_idx94(jis)
+^~~~~~~~~~~~
+kanji.c:276:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+idx94_to_std(idx)
+^~~~~~~~~~~~
+kanji.c:282:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jsub_to_idx94(f, c)
+^~~~~~~~~~~~~
+kanji.c:291:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+idx94_to_sjis(idx)
+^~~~~~~~~~~~~
+kanji.c:311:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jis_to_euc(jis)
+^~~~~~~~~~
+kanji.c:317:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jis_to_sjis(jis)
+^~~~~~~~~~~
+9 warnings generated.
+mv -f .deps/kanji.Tpo .deps/kanji.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT open.o -MD -MP -MF .deps/open.Tpo -c -o open.o open.c
+open.c:56:13: warning: implicit declaration of function 'priority' is invalid in C99 [-Wimplicit-function-declaration]
+            prio = priority(least_used);
+                   ^
+open.c:85:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+priority(i)
+^~~~~~~~
+2 warnings generated.
+mv -f .deps/open.Tpo .deps/open.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT io.o -MD -MP -MF .deps/io.Tpo -c -o io.o io.c
+mv -f .deps/io.Tpo .deps/io.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.c
+util.c:13:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+makeuint(s, n)          /* return n byte quantity from string */
+^~~~~~~~
+util.c:27:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+makeint(s, n)           /* return n byte quantity from string */
+^~~~~~~
+util.c:51:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+htoi(s, se)             /* hex string to int */
+^~~~
+util.c:70:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+numstr(s)
+^~~~~~
+util.c:95:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getstrtok(d, c, e)
+^~~~~~~~~
+util.c:110:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+skipstrblank(d, e)
+^~~~~~~~~~~~
+util.c:117:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+util.c:128:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+scale_exact(s, d)
+^~~~~~~~~~~
+8 warnings generated.
+mv -f .deps/util.Tpo .deps/util.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT xxstdio.o -MD -MP -MF .deps/xxstdio.Tpo -c -o xxstdio.o xxstdio.c
+mv -f .deps/xxstdio.Tpo .deps/xxstdio.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT version.o -MD -MP -MF .deps/version.Tpo -c -o version.o version.c
+mv -f .deps/version.Tpo .deps/version.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT ps.o -MD -MP -MF .deps/ps.Tpo -c -o ps.o ps.c
+ps.c:68:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_arg(option, c)
+^~~~~~~
+ps.c:74:7: warning: implicit declaration of function 'ChkOpt' is invalid in C99 [-Wimplicit-function-declaration]
+        if (!ChkOpt(c))
+             ^
+ps.c:78:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:83:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+ChkOpt(str)
+^~~~~~
+ps.c:173:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_init()
+^~~~~~~~
+ps.c:175:5: warning: implicit declaration of function 'initcolor' is invalid in C99 [-Wimplicit-function-declaration]
+    initcolor();
+    ^
+ps.c:176:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:178:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_prologue()
+^~~~~~~~~~~~
+ps.c:200:5: warning: implicit declaration of function 'do_include' is invalid in C99 [-Wimplicit-function-declaration]
+    do_include();
+    ^
+ps.c:201:5: warning: implicit declaration of function 'dev_outbangspecials' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_outbangspecials();
+    ^
+ps.c:203:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:205:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_setup()
+^~~~~~~~~
+ps.c:209:13: warning: implicit declaration of function 'DoConv' is invalid in C99 [-Wimplicit-function-declaration]
+    hconv = DoConv(num, den, mag, hconvresolution);
+            ^
+ps.c:237:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:239:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_endsetup()
+^~~~~~~~~~~~
+ps.c:241:9: warning: implicit declaration of function 'useifont' is invalid in C99 [-Wimplicit-function-declaration]
+    if (useifont())
+        ^
+ps.c:242:2: warning: implicit declaration of function 'ifont_setup' is invalid in C99 [-Wimplicit-function-declaration]
+        ifont_setup();
+        ^
+ps.c:244:5: warning: implicit declaration of function 'do_setup' is invalid in C99 [-Wimplicit-function-declaration]
+    do_setup();
+    ^
+ps.c:247:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:249:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_finish()
+^~~~~~~~~~
+ps.c:251:5: warning: implicit declaration of function 'end_string' is invalid in C99 [-Wimplicit-function-declaration]
+    end_string();
+    ^
+ps.c:256:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:264:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_devfilekind(kind)
+^~~~~~~~~~~~~~~
+ps.c:279:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_devfileif(kind)
+^~~~~~~~~~~~~
+ps.c:294:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+ps.c:312:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_newdevfont()
+^~~~~~~~~~~~~~
+ps.c:317:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_initpage()
+^~~~~~~~~~~~
+ps.c:320:5: warning: implicit declaration of function 'dev_initfont' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_initfont();
+    ^
+ps.c:321:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:323:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_prebop(count)
+^~~~~~~~~~
+ps.c:330:5: warning: implicit declaration of function 'bopcolor' is invalid in C99 [-Wimplicit-function-declaration]
+    bopcolor(FALSE);
+    ^
+ps.c:331:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:333:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_bop(count)
+^~~~~~~
+ps.c:342:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:344:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_eop()
+^~~~~~~
+ps.c:348:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:361:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_initfont()
+^~~~~~~~~~~~
+ps.c:364:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:366:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_setfont(psf)
+^~~~~~~~~~~
+ps.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:376:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_setposn(x, y)       /* output a positioning command */
+^~~~~~~~~~~
+ps.c:383:14: warning: implicit declaration of function 'pixround' is invalid in C99 [-Wimplicit-function-declaration]
+            if ((rx=pixround(x-ps_h,hconv)) != 0) {
+                    ^
+ps.c:401:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:403:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_setposn_abs(x, y)   /* output a positioning command */
+^~~~~~~~~~~~~~~
+ps.c:414:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:416:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_setrule(a, b)
+^~~~~~~~~~~
+ps.c:423:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:429:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_dir(d)
+^~~~~~~
+ps.c:441:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:446:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+begin_string()
+^~~~~~~~~~~~
+ps.c:452:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:454:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+begin_string_v()
+^~~~~~~~~~~~~~
+ps.c:461:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+ps.c:463:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+end_string()
+^~~~~~~~~~
+ps.c:473:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+55 warnings generated.
+mv -f .deps/ps.Tpo .deps/ps.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT psrast.o -MD -MP -MF .deps/psrast.Tpo -c -o psrast.o psrast.c
+psrast.c:52:5: warning: implicit declaration of function 'getfield' is invalid in C99 [-Wimplicit-function-declaration]
+    getfield(field);
+    ^
+psrast.c:62:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dictform(name)
+^~~~~~~~
+psrast.c:85:17: warning: implicit declaration of function 'dev_newdevfont' is invalid in C99 [-Wimplicit-function-declaration]
+                pl->pl_font = dev_newdevfont();
+                              ^
+psrast.c:117:5: warning: implicit declaration of function 'end_string' is invalid in C99 [-Wimplicit-function-declaration]
+    end_string();
+    ^
+psrast.c:144:5: warning: implicit declaration of function 'dev_setfont' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_setfont(ce->dev_font);  /* because this isn't done on pass 0 */
+    ^
+psrast.c:152:10: warning: implicit declaration of function 'pscharbitmap' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!pscharbitmap(bytewidth, ce->nbpl, ce->height, ce->where.pixptr)) {
+         ^
+psrast.c:173:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+pscharbitmap(bytewidth, nbpl, height, pixel)
+^~~~~~~~~~~~
+psrast.c:211:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+rast_setchar(c)
+^~~~~~~~~~~~
+psrast.c:217:5: warning: implicit declaration of function 'begin_string' is invalid in C99 [-Wimplicit-function-declaration]
+    begin_string();
+    ^
+psrast.c:218:5: warning: implicit declaration of function 'pschar' is invalid in C99 [-Wimplicit-function-declaration]
+    pschar(ce->dev_char);
+    ^
+psrast.c:223:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+rast_setstring(s, len)
+^~~~~~~~~~~~~~
+11 warnings generated.
+mv -f .deps/psrast.Tpo .deps/psrast.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT psbi.o -MD -MP -MF .deps/psbi.Tpo -c -o psbi.o psbi.c
+psbi.c:147:5: warning: implicit declaration of function 'getfield' is invalid in C99 [-Wimplicit-function-declaration]
+    getfield(field_name);
+    ^
+psbi.c:149:5: warning: implicit declaration of function 'getqfield' is invalid in C99 [-Wimplicit-function-declaration]
+    getqfield(field_psfont);
+    ^
+psbi.c:150:5: warning: implicit declaration of function 'getoqfield' is invalid in C99 [-Wimplicit-function-declaration]
+    getoqfield(field_psopt1);
+    ^
+psbi.c:215:21: warning: implicit declaration of function 'htoi' is invalid in C99 [-Wimplicit-function-declaration]
+            bf->bf_stand = htoi(++mode, &he);
+                           ^
+psbi.c:341:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+comp_bfname(fname, bf)
+^~~~~~~~~~~
+psbi.c:390:10: warning: implicit declaration of function 'match_subf' is invalid in C99 [-Wimplicit-function-declaration]
+            if (match_subf(bf->bf_name, name,
+                ^
+psbi.c:396:16: warning: implicit declaration of function 'getjsubfont' is invalid in C99 [-Wimplicit-function-declaration]
+                foundjsubf = getjsubfont(name+bf->bf_len, &subend);
+                             ^
+psbi.c:418:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_set_repfe(bi, fe)
+^~~~~~~~~~~~~
+psbi.c:423:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psbi.c:439:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_bold(bi)
+^~~~~~~~
+psbi.c:459:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_mf_kind(bf)
+^~~~~~~~~~~
+psbi.c:465:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_is_tfm(fe, tfmmode)
+^~~~~~~~~~
+psbi.c:483:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_tfm_kind(fe)
+^~~~~~~~~~~~
+psbi.c:520:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+t1tobi(bi, t1fname)
+^~~~~~
+psbi.c:536:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psbi.c:538:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+fttobi(bi, ftfname)
+^~~~~~
+psbi.c:554:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psbi.c:556:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_is_jstfm(fe, tfmmode)
+^~~~~~~~~~~~
+psbi.c:600:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+psbi.c:602:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_jstfm_kind(fe)
+^~~~~~~~~~~~~~
+psbi.c:608:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_is_jfm(fe, tfmmode)
+^~~~~~~~~~
+psbi.c:626:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_jfm_kind(fe)
+^~~~~~~~~~~~
+psbi.c:633:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+bifpos_relun(bf)
+^~~~~~~~~~~~
+psbi.c:640:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+bifpos_rel(bf)
+^~~~~~~~~~
+psbi.c:646:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+bif_coding(bf)
+^~~~~~~~~~
+psbi.c:689:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+get_tfm_psbiops(fe, po)
+^~~~~~~~~~~~~~~
+psbi.c:732:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psbi.c:734:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+get_jstfm_psbiops(fe, po)
+^~~~~~~~~~~~~~~~~
+psbi.c:775:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psbi.c:784:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+get_jfm_psbiops(fe, po)
+^~~~~~~~~~~~~~~
+psbi.c:801:26: warning: implicit declaration of function 'getctype' is invalid in C99 [-Wimplicit-function-declaration]
+        po->po_size = jfmfi->ch[getctype(bf->bf_stand,jfmfi)].tfmw;
+                                ^
+psbi.c:827:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psbi.c:829:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+psgetfontsize(po)
+^~~~~~~~~~~~~
+psbi.c:835:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+psfindfontop(psfn, po)
+^~~~~~~~~~~~
+psbi.c:841:5: warning: implicit declaration of function 'psfindfop' is invalid in C99 [-Wimplicit-function-declaration]
+    psfindfop(psfn, po);
+    ^
+psbi.c:842:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psbi.c:844:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+psfindsubfop(psfn, po)
+^~~~~~~~~~~~
+psbi.c:857:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psbi.c:859:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+psfindfop(psfn, po)
+^~~~~~~~~
+psbi.c:864:2: warning: implicit declaration of function 'codetopsstr' is invalid in C99 [-Wimplicit-function-declaration]
+        codetopsstr(po->po_stand, po->po_stlen);
+        ^
+psbi.c:868:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psbi.c:870:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+getpd(pd)
+^~~~~
+psbi.c:874:16: warning: implicit declaration of function 'dev_newdevfont' is invalid in C99 [-Wimplicit-function-declaration]
+        pd->pd_font = dev_newdevfont();
+                      ^
+43 warnings generated.
+mv -f .deps/psbi.Tpo .deps/psbi.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT pstfm.o -MD -MP -MF .deps/pstfm.Tpo -c -o pstfm.o pstfm.c
+pstfm.c:21:13: warning: implicit declaration of function 'dev_newdevfont' is invalid in C99 [-Wimplicit-function-declaration]
+    fe->k = dev_newdevfont();
+            ^
+pstfm.c:22:5: warning: implicit declaration of function 'get_tfm_psbiops' is invalid in C99 [-Wimplicit-function-declaration]
+    get_tfm_psbiops(fe, &po);
+    ^
+pstfm.c:23:5: warning: implicit declaration of function 'psfindfontop' is invalid in C99 [-Wimplicit-function-declaration]
+    psfindfontop(psfname(fe->k), &po);
+    ^
+pstfm.c:36:9: warning: implicit declaration of function 'bifpos_relun' is invalid in C99 [-Wimplicit-function-declaration]
+    if (bifpos_relun(tfmfinfo(fe)->tfm_bf)) {
+        ^
+pstfm.c:45:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+tfm_setchar(c)
+^~~~~~~~~~~
+pstfm.c:51:5: warning: implicit declaration of function 'begin_string' is invalid in C99 [-Wimplicit-function-declaration]
+    begin_string();
+    ^
+pstfm.c:52:5: warning: implicit declaration of function 'pschar' is invalid in C99 [-Wimplicit-function-declaration]
+    pschar(ce->dev_char);
+    ^
+pstfm.c:57:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+tfm_setstring(s, len)
+^~~~~~~~~~~~~
+pstfm.c:74:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+tfm_setchar_abs(c)
+^~~~~~~~~~~~~~~
+pstfm.c:80:5: warning: implicit declaration of function 'dev_setposn_abs' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_setposn_abs(ps_h, ps_v);
+    ^
+pstfm.c:84:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+tfm_setstring_abs(s, len)
+^~~~~~~~~~~~~~~~~
+pstfm.c:95:2: warning: implicit declaration of function 'end_string' is invalid in C99 [-Wimplicit-function-declaration]
+        end_string();
+        ^
+pstfm.c:115:5: warning: implicit declaration of function 'get_jstfm_psbiops' is invalid in C99 [-Wimplicit-function-declaration]
+    get_jstfm_psbiops(fe, &po);
+    ^
+pstfm.c:135:10: warning: implicit declaration of function 'bif_coding' is invalid in C99 [-Wimplicit-function-declaration]
+        switch (bif_coding(bf)) {
+                ^
+pstfm.c:167:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+pschar_jis(c1, c2)
+^~~~~~~~~~
+pstfm.c:172:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstfm.c:174:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+pschar_euc(c1, c2)
+^~~~~~~~~~
+pstfm.c:179:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstfm.c:181:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+pschar_sjis(c1, c2)
+^~~~~~~~~~~
+pstfm.c:184:13: warning: implicit declaration of function 'jis_to_sjis' is invalid in C99 [-Wimplicit-function-declaration]
+    int c = jis_to_sjis((c1<<8)+c2);
+            ^
+pstfm.c:188:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstfm.c:190:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setchar_gen(c, psch)
+^~~~~~~~~~~~~~~~~
+pstfm.c:203:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setchar(c)
+^~~~~~~~~~~~~
+pstfm.c:209:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setchar_euc(c)
+^~~~~~~~~~~~~~~~~
+pstfm.c:215:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setchar_sjis(c)
+^~~~~~~~~~~~~~~~~~
+pstfm.c:221:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setstring_gen(s, len, psch)
+^~~~~~~~~~~~~~~~~~~
+pstfm.c:239:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setstring(s, len)
+^~~~~~~~~~~~~~~
+pstfm.c:246:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setstring_euc(s, len)
+^~~~~~~~~~~~~~~~~~~
+pstfm.c:253:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setstring_sjis(s, len)
+^~~~~~~~~~~~~~~~~~~~
+pstfm.c:260:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+setchar_abs_gen(c, setch)
+^~~~~~~~~~~~~~~
+pstfm.c:271:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setchar_abs(c)
+^~~~~~~~~~~~~~~~~
+pstfm.c:277:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setchar_abs_euc(c)
+^~~~~~~~~~~~~~~~~~~~~
+pstfm.c:283:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setchar_abs_sjis(c)
+^~~~~~~~~~~~~~~~~~~~~~
+pstfm.c:289:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setstring_abs_gen(s, len, psch)
+^~~~~~~~~~~~~~~~~~~~~~~
+pstfm.c:309:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setstring_abs(s, len)
+^~~~~~~~~~~~~~~~~~~
+pstfm.c:316:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setstring_abs_euc(s, len)
+^~~~~~~~~~~~~~~~~~~~~~~
+pstfm.c:323:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jstfm_setstring_abs_sjis(s, len)
+^~~~~~~~~~~~~~~~~~~~~~~~
+pstfm.c:340:5: warning: implicit declaration of function 'get_jfm_psbiops' is invalid in C99 [-Wimplicit-function-declaration]
+    get_jfm_psbiops(fe, &po);
+    ^
+pstfm.c:364:6: warning: implicit declaration of function 'bifpos_rel' is invalid in C99 [-Wimplicit-function-declaration]
+        if (bifpos_rel(bf)) {
+            ^
+pstfm.c:402:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_gen(c, bstr, psch)
+^~~~~~~~~~~~~~~
+pstfm.c:411:33: warning: implicit declaration of function 'getctype' is invalid in C99 [-Wimplicit-function-declaration]
+    *ps_move += (cw = jfmfi->ch[getctype(c,jfmfi)].tfmw);
+                                ^
+pstfm.c:417:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar(c)
+^~~~~~~~~~~
+pstfm.c:423:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_euc(c)
+^~~~~~~~~~~~~~~
+pstfm.c:429:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_sjis(c)
+^~~~~~~~~~~~~~~~
+pstfm.c:436:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setstring(s, len)
+^~~~~~~~~~~~~
+pstfm.c:441:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstfm.c:443:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_abs(c)
+^~~~~~~~~~~~~~~
+pstfm.c:449:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_abs_euc(c)
+^~~~~~~~~~~~~~~~~~~
+pstfm.c:455:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_abs_sjis(c)
+^~~~~~~~~~~~~~~~~~~~
+pstfm.c:462:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setstring_abs(s, len)
+^~~~~~~~~~~~~~~~~
+pstfm.c:467:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstfm.c:469:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_v(c)
+^~~~~~~~~~~~~
+pstfm.c:475:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_v_euc(c)
+^~~~~~~~~~~~~~~~~
+pstfm.c:481:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_v_sjis(c)
+^~~~~~~~~~~~~~~~~~
+pstfm.c:488:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setstring_v(s, len)
+^~~~~~~~~~~~~~~
+pstfm.c:493:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstfm.c:498:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+setchar_vabs_gen(c, setch)
+^~~~~~~~~~~~~~~~
+pstfm.c:510:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_vabs(c)
+^~~~~~~~~~~~~~~~
+pstfm.c:516:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_vabs_euc(c)
+^~~~~~~~~~~~~~~~~~~~
+pstfm.c:522:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setchar_vabs_sjis(c)
+^~~~~~~~~~~~~~~~~~~~~
+pstfm.c:529:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfm_setstring_vabs(s, len)
+^~~~~~~~~~~~~~~~~~
+pstfm.c:534:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+62 warnings generated.
+mv -f .deps/pstfm.Tpo .deps/pstfm.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT pstype1.o -MD -MP -MF .deps/pstype1.Tpo -c -o pstype1.o pstype1.c
+pstype1.c:20:13: warning: implicit declaration of function 'dev_newdevfont' is invalid in C99 [-Wimplicit-function-declaration]
+    fe->k = dev_newdevfont();
+            ^
+pstype1.c:22:2: warning: implicit declaration of function 'read_type1_file' is invalid in C99 [-Wimplicit-function-declaration]
+        read_type1_file(fe, bii, t1path, t1font, encpath);
+        ^
+pstype1.c:23:2: warning: implicit declaration of function 't1tobi' is invalid in C99 [-Wimplicit-function-declaration]
+        t1tobi(tfmfinfo(fe)->tfm_bf, t1font);
+        ^
+pstype1.c:25:5: warning: implicit declaration of function 'get_tfm_psbiops' is invalid in C99 [-Wimplicit-function-declaration]
+    get_tfm_psbiops(fe, &po);
+    ^
+pstype1.c:26:5: warning: implicit declaration of function 'psfindfontop' is invalid in C99 [-Wimplicit-function-declaration]
+    psfindfontop(psfname(fe->k), &po);
+    ^
+pstype1.c:30:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+read_type1_file(fe, bii, fn, t1f, en)
+^~~~~~~~~~~~~~~
+pstype1.c:95:2: warning: implicit declaration of function 't1_subset' is invalid in C99 [-Wimplicit-function-declaration]
+        t1_subset(fn, en, bii->mark);
+        ^
+pstype1.c:102:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+8 warnings generated.
+mv -f .deps/pstype1.Tpo .deps/pstype1.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT pswl.o -MD -MP -MF .deps/pswl.Tpo -c -o pswl.o pswl.c
+pswl.c:20:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_wl_begfontdict(fe)
+^~~~~~~~~~~~~~~~~~
+pswl.c:24:5: warning: implicit declaration of function 'get_jfm_psbiops' is invalid in C99 [-Wimplicit-function-declaration]
+    get_jfm_psbiops(fe, &po);
+    ^
+pswl.c:25:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pswl.c:45:15: warning: implicit declaration of function 'htoi' is invalid in C99 [-Wimplicit-function-declaration]
+            if (c == htoi(buffer+len-12, &be)) {
+                     ^
+pswl.c:55:7: warning: implicit declaration of function 'getpd' is invalid in C99 [-Wimplicit-function-declaration]
+                if (getpd(&pd)) {
+                    ^
+pswl.c:56:7: warning: implicit declaration of function 'wl_type1_prologue1' is invalid in C99 [-Wimplicit-function-declaration]
+                    wl_type1_prologue1(pd.pd_font);
+                    ^
+pswl.c:57:7: warning: implicit declaration of function 'cnum_type1_encoding' is invalid in C99 [-Wimplicit-function-declaration]
+                    cnum_type1_encoding(nc >= NPACKPSCHARS ? NPACKPSCHARS : nc);
+                    ^
+pswl.c:58:7: warning: implicit declaration of function 'wl_type1_prologue2' is invalid in C99 [-Wimplicit-function-declaration]
+                    wl_type1_prologue2();
+                    ^
+pswl.c:62:3: warning: implicit declaration of function 'wl_type1_char' is invalid in C99 [-Wimplicit-function-declaration]
+                wl_type1_char(ce->dev_char, charstr, len);
+                ^
+pswl.c:64:7: warning: implicit declaration of function 'wl_endfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+                    wl_endfontdict();
+                    ^
+pswl.c:73:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_wl_endfontdict()
+^~~~~~~~~~~~~~~~~~
+pswl.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pswl.c:79:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+wl_endfontdict()
+^~~~~~~~~~~~~~
+pswl.c:83:5: warning: implicit declaration of function 'wl_type1_epilogue' is invalid in C99 [-Wimplicit-function-declaration]
+    wl_type1_epilogue();
+    ^
+pswl.c:86:5: warning: implicit declaration of function 'psfindfontop' is invalid in C99 [-Wimplicit-function-declaration]
+    psfindfontop(psfname(pd.pd_font), &po);
+    ^
+pswl.c:87:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pswl.c:98:9: warning: implicit declaration of function 'bifpos_rel' is invalid in C99 [-Wimplicit-function-declaration]
+    if (bifpos_rel(jfmfinfo(fe)->jfm_bf)) {
+        ^
+pswl.c:107:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+wl_setchar(c)
+^~~~~~~~~~
+pswl.c:113:36: warning: implicit declaration of function 'jis_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+    ce = &(wlfinfo(curfontent)->ch[jis_to_idx94(c)]);
+                                   ^
+pswl.c:114:5: warning: implicit declaration of function 'begin_string' is invalid in C99 [-Wimplicit-function-declaration]
+    begin_string();
+    ^
+pswl.c:115:5: warning: implicit declaration of function 'pschar' is invalid in C99 [-Wimplicit-function-declaration]
+    pschar(ce->dev_char);
+    ^
+pswl.c:121:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+wl_setstring(s, len)
+^~~~~~~~~~~~
+pswl.c:126:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pswl.c:128:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+wl_setchar_abs(c)
+^~~~~~~~~~~~~~
+pswl.c:134:5: warning: implicit declaration of function 'dev_setposn_abs' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_setposn_abs(ps_h, ps_v);
+    ^
+pswl.c:139:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+wl_setstring_abs(s, len)
+^~~~~~~~~~~~~~~~
+pswl.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pswl.c:149:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_jswl_begfontdict(fe)
+^~~~~~~~~~~~~~~~~~~~
+pswl.c:153:5: warning: implicit declaration of function 'get_jstfm_psbiops' is invalid in C99 [-Wimplicit-function-declaration]
+    get_jstfm_psbiops(fe, &po);
+    ^
+pswl.c:154:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pswl.c:174:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jswl_setchar(c)
+^~~~~~~~~~~~
+pswl.c:182:32: warning: implicit declaration of function 'jsub_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+    pschar(jswlfinfo(jsfi)->ch[jsub_to_idx94(jsfi->jsubfont,c)].dev_char);
+                               ^
+pswl.c:188:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jswl_setstring(s, len)
+^~~~~~~~~~~~~~
+pswl.c:207:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jswl_setchar_abs(c)
+^~~~~~~~~~~~~~~~
+pswl.c:218:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jswl_setstring_abs(s, len)
+^~~~~~~~~~~~~~~~~~
+pswl.c:231:2: warning: implicit declaration of function 'end_string' is invalid in C99 [-Wimplicit-function-declaration]
+        end_string();
+        ^
+pswl.c:249:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+wl_type1_prologue1(fid)
+^~~~~~~~~~~~~~~~~~
+pswl.c:272:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pswl.c:274:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+wl_type1_prologue2()
+^~~~~~~~~~~~~~~~~~
+pswl.c:285:5: warning: implicit declaration of function 'begin_eexec' is invalid in C99 [-Wimplicit-function-declaration]
+    begin_eexec();
+    ^
+pswl.c:286:5: warning: implicit declaration of function 'e_printf' is invalid in C99 [-Wimplicit-function-declaration]
+    e_printf("dup /Private 14 dict dup begin\n");
+    ^
+pswl.c:309:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pswl.c:311:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+wl_type1_char(c, cstr, len)
+^~~~~~~~~~~~~
+pswl.c:320:2: warning: implicit declaration of function 'e_putchar' is invalid in C99 [-Wimplicit-function-declaration]
+        e_putchar((unsigned)*(cstr+i));
+        ^
+pswl.c:322:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pswl.c:324:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+wl_type1_epilogue()
+^~~~~~~~~~~~~~~~~
+pswl.c:332:5: warning: implicit declaration of function 'end_eexec' is invalid in C99 [-Wimplicit-function-declaration]
+    end_eexec();
+    ^
+pswl.c:337:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+48 warnings generated.
+mv -f .deps/pswl.Tpo .deps/pswl.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT pstt.o -MD -MP -MF .deps/pstt.Tpo -c -o pstt.o pstt.c
+pstt.c:24:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_ft_begfontdict(fe, maxc)
+^~~~~~~~~~~~~~~~~~
+pstt.c:29:10: warning: implicit declaration of function 'dev_newdevfont' is invalid in C99 [-Wimplicit-function-declaration]
+        fe->k = dev_newdevfont();
+                ^
+pstt.c:34:5: warning: implicit declaration of function 'get_tfm_psbiops' is invalid in C99 [-Wimplicit-function-declaration]
+    get_tfm_psbiops(fe, &po);
+    ^
+pstt.c:35:12: warning: implicit declaration of function 'psgetfontsize' is invalid in C99 [-Wimplicit-function-declaration]
+    return psgetfontsize(&po);
+           ^
+pstt.c:49:5: warning: implicit declaration of function 'end_string' is invalid in C99 [-Wimplicit-function-declaration]
+    end_string();
+    ^
+pstt.c:54:5: warning: implicit declaration of function 'dev_setfont' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_setfont(ce->dev_font);
+    ^
+pstt.c:62:10: warning: implicit declaration of function 'pscharbitmap' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!pscharbitmap(bw, bw, h, pixel)) {
+         ^
+pstt.c:70:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_fto_begfontdict(fe, famname, mark, maxc, remap)
+^~~~~~~~~~~~~~~~~~~
+pstt.c:82:5: warning: implicit declaration of function 'fttobi' is invalid in C99 [-Wimplicit-function-declaration]
+    fttobi(tfmfinfo(fe)->tfm_bf, dictname);
+    ^
+pstt.c:84:5: warning: implicit declaration of function 'tt_type1_prologue1' is invalid in C99 [-Wimplicit-function-declaration]
+    tt_type1_prologue1(dictname, famname);
+    ^
+pstt.c:85:5: warning: implicit declaration of function 'stdex_type1_encoding' is invalid in C99 [-Wimplicit-function-declaration]
+    stdex_type1_encoding(mark, maxc, remap);
+    ^
+pstt.c:86:5: warning: implicit declaration of function 'tt_type1_prologue2' is invalid in C99 [-Wimplicit-function-declaration]
+    tt_type1_prologue2();
+    ^
+pstt.c:87:5: warning: implicit declaration of function 'tt_type1_prologue3' is invalid in C99 [-Wimplicit-function-declaration]
+    tt_type1_prologue3();
+    ^
+pstt.c:91:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_fto_refontdict(fe)
+^~~~~~~~~~~~~~~~~~
+pstt.c:96:5: warning: implicit declaration of function 'psfindfontop' is invalid in C99 [-Wimplicit-function-declaration]
+    psfindfontop(psfname(fe->k), &po);
+    ^
+pstt.c:98:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt.c:106:5: warning: implicit declaration of function 'PS_CharString' is invalid in C99 [-Wimplicit-function-declaration]
+    PS_CharString(outline, stdex_type1_charname(i), a);
+    ^
+pstt.c:109:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_fto_endfontdict(fe)
+^~~~~~~~~~~~~~~~~~~
+pstt.c:112:5: warning: implicit declaration of function 'tt_type1_epilogue' is invalid in C99 [-Wimplicit-function-declaration]
+    tt_type1_epilogue(500);
+    ^
+pstt.c:114:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt.c:120:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_jft_begfontdict(fe)
+^~~~~~~~~~~~~~~~~~~
+pstt.c:123:5: warning: implicit declaration of function 'get_jfm_psbiops' is invalid in C99 [-Wimplicit-function-declaration]
+    get_jfm_psbiops(fe, &po);
+    ^
+pstt.c:173:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_jfto_begfontdict(dictname, famname)
+^~~~~~~~~~~~~~~~~~~~
+pstt.c:179:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt.c:195:9: warning: implicit declaration of function 'getpd' is invalid in C99 [-Wimplicit-function-declaration]
+    if (getpd(&pd)) {
+        ^
+pstt.c:198:2: warning: implicit declaration of function 'jtt_type1_prologue1' is invalid in C99 [-Wimplicit-function-declaration]
+        jtt_type1_prologue1(dictname, jfamname);
+        ^
+pstt.c:199:2: warning: implicit declaration of function 'cnum_type1_encoding' is invalid in C99 [-Wimplicit-function-declaration]
+        cnum_type1_encoding(nc >= NPACKPSCHARS ? NPACKPSCHARS : nc);
+        ^
+pstt.c:200:2: warning: implicit declaration of function 'jtt_type1_prologue2' is invalid in C99 [-Wimplicit-function-declaration]
+        jtt_type1_prologue2();
+        ^
+pstt.c:205:28: warning: implicit declaration of function 'cnum_type1_charname' is invalid in C99 [-Wimplicit-function-declaration]
+    PS_CharString(outline, cnum_type1_charname(pd.pd_char), a);
+                           ^
+pstt.c:207:2: warning: implicit declaration of function 'jfto_endfontdict' is invalid in C99 [-Wimplicit-function-declaration]
+        jfto_endfontdict(pd.pd_font);
+        ^
+pstt.c:210:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_jfto_endfontdict()
+^~~~~~~~~~~~~~~~~~~~
+pstt.c:214:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt.c:216:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jfto_endfontdict(pd_font)
+^~~~~~~~~~~~~~~~
+pstt.c:220:5: warning: implicit declaration of function 'psfindsubfop' is invalid in C99 [-Wimplicit-function-declaration]
+    psfindsubfop(psfname(pd_font), &po);
+    ^
+pstt.c:221:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt.c:234:9: warning: implicit declaration of function 'bifpos_rel' is invalid in C99 [-Wimplicit-function-declaration]
+    if (bifpos_rel(jfmfinfo(fe)->jfm_bf)) {
+        ^
+pstt.c:243:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jft_setchar(c)
+^~~~~~~~~~~
+pstt.c:249:37: warning: implicit declaration of function 'jis_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+    ce = &(jftfinfo(curfontent)->ch[jis_to_idx94(c)]);
+                                    ^
+pstt.c:250:5: warning: implicit declaration of function 'begin_string' is invalid in C99 [-Wimplicit-function-declaration]
+    begin_string();
+    ^
+pstt.c:251:5: warning: implicit declaration of function 'pschar' is invalid in C99 [-Wimplicit-function-declaration]
+    pschar(ce->dev_char);
+    ^
+pstt.c:257:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jft_setstring(s, len)
+^~~~~~~~~~~~~
+pstt.c:262:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt.c:264:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jft_setchar_abs(c)
+^~~~~~~~~~~~~~~
+pstt.c:270:5: warning: implicit declaration of function 'dev_setposn_abs' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_setposn_abs(ps_h, ps_v);
+    ^
+pstt.c:275:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jft_setstring_abs(s, len)
+^~~~~~~~~~~~~~~~~
+pstt.c:280:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt.c:285:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_jsft_begfontdict(fe)
+^~~~~~~~~~~~~~~~~~~~
+pstt.c:288:5: warning: implicit declaration of function 'get_jstfm_psbiops' is invalid in C99 [-Wimplicit-function-declaration]
+    get_jstfm_psbiops(fe, &po);
+    ^
+pstt.c:310:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jsft_setchar(c)
+^~~~~~~~~~~~
+pstt.c:318:32: warning: implicit declaration of function 'jsub_to_idx94' is invalid in C99 [-Wimplicit-function-declaration]
+    pschar(jsftfinfo(jsfi)->ch[jsub_to_idx94(jsfi->jsubfont,c)].dev_char);
+                               ^
+pstt.c:324:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jsft_setstring(s, len)
+^~~~~~~~~~~~~~
+pstt.c:343:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jsft_setchar_abs(c)
+^~~~~~~~~~~~~~~~
+pstt.c:354:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jsft_setstring_abs(s, len)
+^~~~~~~~~~~~~~~~~~
+53 warnings generated.
+mv -f .deps/pstt.Tpo .deps/pstt.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT pstt2t1.o -MD -MP -MF .deps/pstt2t1.Tpo -c -o pstt2t1.o pstt2t1.c
+pstt2t1.c:45:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+tt_type1_prologue1(fontname, fontfam)
+^~~~~~~~~~~~~~~~~~
+pstt2t1.c:69:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt2t1.c:71:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+tt_type1_prologue2()
+^~~~~~~~~~~~~~~~~~
+pstt2t1.c:83:5: warning: implicit declaration of function 'begin_eexec' is invalid in C99 [-Wimplicit-function-declaration]
+    begin_eexec();
+    ^
+pstt2t1.c:84:5: warning: implicit declaration of function 'e_printf' is invalid in C99 [-Wimplicit-function-declaration]
+    e_printf("dup /Private 9 dict dup begin\n");
+    ^
+pstt2t1.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt2t1.c:97:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+tt_type1_prologue3()
+^~~~~~~~~~~~~~~~~~
+pstt2t1.c:102:5: warning: implicit declaration of function 'charstring_start' is invalid in C99 [-Wimplicit-function-declaration]
+    charstring_start();
+    ^
+pstt2t1.c:103:5: warning: implicit declaration of function 'charstring_int' is invalid in C99 [-Wimplicit-function-declaration]
+    charstring_int(3); charstring_int(0);
+    ^
+pstt2t1.c:104:5: warning: implicit declaration of function 'charstring_com' is invalid in C99 [-Wimplicit-function-declaration]
+    charstring_com(callothersubr);
+    ^
+pstt2t1.c:109:5: warning: implicit declaration of function 'charstring_end' is invalid in C99 [-Wimplicit-function-declaration]
+    charstring_end();
+    ^
+pstt2t1.c:136:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt2t1.c:138:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jtt_type1_prologue1(fontname, fontfam)
+^~~~~~~~~~~~~~~~~~~
+pstt2t1.c:161:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt2t1.c:163:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+jtt_type1_prologue2()
+^~~~~~~~~~~~~~~~~~~
+pstt2t1.c:189:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt2t1.c:194:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+tt_type1_epilogue(a)
+^~~~~~~~~~~~~~~~~
+pstt2t1.c:207:5: warning: implicit declaration of function 'end_eexec' is invalid in C99 [-Wimplicit-function-declaration]
+    end_eexec();
+    ^
+pstt2t1.c:212:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pstt2t1.c:281:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+PS_CharString(outline, cn, a)
+^~~~~~~~~~~~~
+pstt2t1.c:356:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+21 warnings generated.
+mv -f .deps/pstt2t1.Tpo .deps/pstt2t1.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT psvfl.o -MD -MP -MF .deps/psvfl.Tpo -c -o psvfl.o psvfl.c
+mv -f .deps/psvfl.Tpo .deps/psvfl.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT pst1form.o -MD -MP -MF .deps/pst1form.Tpo -c -o pst1form.o pst1form.c
+pst1form.c:96:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+stdex_type1_reencoding(mark, maxc, remap)
+^~~~~~~~~~~~~~~~~~~~~~
+pst1form.c:108:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:110:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+stdex_type1_encoding(mark, maxc, remap)
+^~~~~~~~~~~~~~~~~~~~
+pst1form.c:120:13: warning: incompatible pointer to integer conversion returning 'void *' from a function with result type 'int' [-Wint-conversion]
+            return NULL;
+                   ^~~~
+/usr/lib/llvm-3.5/bin/../lib/clang/3.5.0/include/stddef.h:101:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+pst1form.c:123:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:135:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+cnum_type1_encoding(nc)
+^~~~~~~~~~~~~~~~~~~
+pst1form.c:159:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:161:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+reencode(glyphs, mark, maxc, remap)
+^~~~~~~~
+pst1form.c:178:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:184:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+begin_eexec()
+^~~~~~~~~~~
+pst1form.c:186:5: warning: implicit declaration of function 'init_encrypt' is invalid in C99 [-Wimplicit-function-declaration]
+    init_encrypt();
+    ^
+pst1form.c:188:5: warning: implicit declaration of function 'e_putchar' is invalid in C99 [-Wimplicit-function-declaration]
+    e_putchar(0);
+    ^
+pst1form.c:192:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:194:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+end_eexec()
+^~~~~~~~~
+pst1form.c:204:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:247:3: warning: implicit declaration of function 'init_cencrypt' is invalid in C99 [-Wimplicit-function-declaration]
+  init_cencrypt();
+  ^
+pst1form.c:249:24: warning: implicit declaration of function 'cencrypt_char' is invalid in C99 [-Wimplicit-function-declaration]
+    *charstring_bp++ = cencrypt_char((byte) 0);
+                       ^
+pst1form.c:261:6: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+            sizeof(charstring_buf));
+            ^~~~~~~~~~~~~~~~~~~~~~
+pst1form.c:275:27: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+  sprintf(line, "%d %s ", charstring_bp - charstring_buf, cs_start);
+                 ~~       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                 %ld
+pst1form.c:276:3: warning: implicit declaration of function 'e_printf' is invalid in C99 [-Wimplicit-function-declaration]
+  e_printf(line);
+  ^
+pst1form.c:341:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+charstring_com(com)
+^~~~~~~~~~~~~~
+pst1form.c:347:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:351:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+e_printf(form, i0, i1, i2, i3, i4, i5, i6, i7, i8, i9)
+^~~~~~~~
+pst1form.c:361:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:363:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+e_putchar(plain)
+^~~~~~~~~
+pst1form.c:366:25: warning: implicit declaration of function 'encrypt_char' is invalid in C99 [-Wimplicit-function-declaration]
+    EMIT(outfp, "%02X", encrypt_char(plain));
+                        ^
+pst1form.c:372:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:379:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+init_encrypt()
+^~~~~~~~~~~~
+pst1form.c:382:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:384:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+init_cencrypt()
+^~~~~~~~~~~~~
+pst1form.c:387:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+pst1form.c:389:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+encrypt_char(plain)
+^~~~~~~~~~~~
+pst1form.c:399:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+cencrypt_char(plain)
+^~~~~~~~~~~~~
+33 warnings generated.
+mv -f .deps/pst1form.Tpo .deps/pst1form.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT writet1.o -MD -MP -MF .deps/writet1.Tpo -c -o writet1.o writet1.c
+writet1.c:313:10: warning: implicit declaration of function 'enc_open' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!enc_open()) {
+         ^
+writet1.c:611:13: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+            else
+            ^
+writet1.c:799:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+static copy_glyph_names(char **glyph_names, int a, int b)
+~~~~~~ ^
+writet1.c:808:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+writet1.c:1022:10: warning: implicit declaration of function 't1_open' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!t1_open())
+         ^
+writet1.c:1319:44: warning: too few arguments in call to 't1_printf'
+                          t1_glyph_names[i]);
+                                           ^
+writet1.c:1318:47: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'char *' [-Wint-conversion]
+                t1_printf("dup %i /%s put\n", (int)t1_char(i), 
+                                              ^~~~~~~~~~~~~~~
+writet1.c:1453:12: warning: implicit declaration of function 'isdigit' is invalid in C99 [-Wimplicit-function-declaration]
+    while (isdigit(*p))
+           ^
+writet1.c:1462:47: warning: format specifies type 'unsigned int' but the argument has type 'long' [-Wformat]
+                sprintf(t1_line, "dup %u %u", ptr - tab, ptr->cslen);
+                                      ~~      ^~~~~~~~~
+                                      %ld
+writet1.c:1629:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+writet1.c:1635:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+t1_open()
+^~~~~~~
+writet1.c:1641:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+enc_open()
+^~~~~~~~
+writet1.c:1655:5: warning: implicit declaration of function 'Fatal' is invalid in C99 [-Wimplicit-function-declaration]
+    Fatal(newfmt, a, b, c);
+    ^
+writet1.c:1666:5: warning: implicit declaration of function 'Warning' is invalid in C99 [-Wimplicit-function-declaration]
+    Warning(newfmt, a, b, c);
+    ^
+writet1.c:1672:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+t1_get_encode(encfile, glyphs)
+^~~~~~~~~~~~~
+writet1.c:1683:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+writet1.c:1685:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+t1_free_encode(glyphs)
+^~~~~~~~~~~~~~
+writet1.c:1693:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+18 warnings generated.
+mv -f .deps/writet1.Tpo .deps/writet1.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT psspecial.o -MD -MP -MF .deps/psspecial.Tpo -c -o psspecial.o psspecial.c
+psspecial.c:160:6: warning: implicit declaration of function 'ps_add_include' is invalid in C99 [-Wimplicit-function-declaration]
+            ps_add_include(p);
+            ^
+psspecial.c:167:2: warning: implicit declaration of function 'background' is invalid in C99 [-Wimplicit-function-declaration]
+        background(p);
+        ^
+psspecial.c:177:6: warning: implicit declaration of function 'pushcolor' is invalid in C99 [-Wimplicit-function-declaration]
+            pushcolor(p, FALSE);
+            ^
+psspecial.c:179:6: warning: implicit declaration of function 'popcolor' is invalid in C99 [-Wimplicit-function-declaration]
+            popcolor(FALSE);
+            ^
+psspecial.c:181:6: warning: implicit declaration of function 'resetcolorstack' is invalid in C99 [-Wimplicit-function-declaration]
+            resetcolorstack(p, FALSE);
+            ^
+psspecial.c:227:6: warning: implicit declaration of function 'ps_scanifont' is invalid in C99 [-Wimplicit-function-declaration]
+            ps_scanifont(sf);
+            ^
+psspecial.c:232:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+dev_outbangspecials()
+^~~~~~~~~~~~~~~~~~~
+psspecial.c:245:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psspecial.c:264:5: warning: implicit declaration of function 'end_string' is invalid in C99 [-Wimplicit-function-declaration]
+    end_string();
+    ^
+psspecial.c:265:5: warning: implicit declaration of function 'dev_setposn' is invalid in C99 [-Wimplicit-function-declaration]
+    dev_setposn(h, v);
+    ^
+psspecial.c:281:2: warning: implicit declaration of function 'dev_initfont' is invalid in C99 [-Wimplicit-function-declaration]
+        dev_initfont();
+        ^
+psspecial.c:436:6: warning: implicit declaration of function 'scanfile' is invalid in C99 [-Wimplicit-function-declaration]
+        if (scanfile(sf, &llx, &lly, &urx, &ury)) {
+            ^
+12 warnings generated.
+mv -f .deps/psspecial.Tpo .deps/psspecial.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT pscolor.o -MD -MP -MF .deps/pscolor.Tpo -c -o pscolor.o pscolor.c
+pscolor.c:21:22: warning: '/*' within block comment [-Wcomment]
+/*#include "dvips.h" /* The copyright notice in that file is included too! */
+                     ^
+1 warning generated.
+mv -f .deps/pscolor.Tpo .deps/pscolor.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT psifont.o -MD -MP -MF .deps/psifont.Tpo -c -o psifont.o psifont.c
+psifont.c:12:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+ps_scanifont(str)
+^~~~~~~~~~~~
+psifont.c:18:17: warning: implicit declaration of function 'ps_searchfile' is invalid in C99 [-Wimplicit-function-declaration]
+    if (found = ps_searchfile(str, newf)) {
+                ^
+psifont.c:18:15: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (found = ps_searchfile(str, newf)) {
+        ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+psifont.c:18:15: note: place parentheses around the assignment to silence this warning
+    if (found = ps_searchfile(str, newf)) {
+              ^
+        (                               )
+psifont.c:18:15: note: use '==' to turn this assignment into an equality comparison
+    if (found = ps_searchfile(str, newf)) {
+              ^
+              ==
+psifont.c:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psifont.c:63:2: warning: implicit declaration of function 'skipstrblank' is invalid in C99 [-Wimplicit-function-declaration]
+        skipstrblank(buffer+7, &n);
+        ^
+psifont.c:64:7: warning: implicit declaration of function 'getstrtok' is invalid in C99 [-Wimplicit-function-declaration]
+        if (!getstrtok(n, ' ', &p)) {
+             ^
+psifont.c:74:6: warning: implicit declaration of function 'bp2sp' is invalid in C99 [-Wimplicit-function-declaration]
+        s = bp2sp(f);
+            ^
+psifont.c:123:7: warning: implicit declaration of function 'MarkChar' is invalid in C99 [-Wimplicit-function-declaration]
+                    MarkChar(c);
+                    ^
+psifont.c:135:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+bp2sp(f)
+^~~~~
+psifont.c:141:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+useifont()
+^~~~~~~~
+psifont.c:146:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+ifont_setup()
+^~~~~~~~~~~
+psifont.c:172:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+12 warnings generated.
+mv -f .deps/psifont.Tpo .deps/psifont.Po
+gcc -DHAVE_CONFIG_H -I.  -I/usr/include/freetype2   -g -O2 -MT psio.o -MD -MP -MF .deps/psio.Tpo -c -o psio.o psio.c
+psio.c:34:17: warning: implicit declaration of function 'ps_searchfile' is invalid in C99 [-Wimplicit-function-declaration]
+    if (found = ps_searchfile(str, newf)) {
+                ^
+psio.c:34:15: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (found = ps_searchfile(str, newf)) {
+        ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+psio.c:34:15: note: place parentheses around the assignment to silence this warning
+    if (found = ps_searchfile(str, newf)) {
+              ^
+        (                               )
+psio.c:34:15: note: use '==' to turn this assignment into an equality comparison
+    if (found = ps_searchfile(str, newf)) {
+              ^
+              ==
+psio.c:35:2: warning: implicit declaration of function 'add_include_spec' is invalid in C99 [-Wimplicit-function-declaration]
+        add_include_spec(found == SEARCH_ORIG ? str : newf, dev_copyfile);
+        ^
+psio.c:47:15: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (found = ps_searchfile(str, newf)) {
+        ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+psio.c:47:15: note: place parentheses around the assignment to silence this warning
+    if (found = ps_searchfile(str, newf)) {
+              ^
+        (                               )
+psio.c:47:15: note: use '==' to turn this assignment into an equality comparison
+    if (found = ps_searchfile(str, newf)) {
+              ^
+              ==
+psio.c:48:2: warning: implicit declaration of function 'add_setup_spec' is invalid in C99 [-Wimplicit-function-declaration]
+        add_setup_spec(found == SEARCH_ORIG ? str : newf, dev_copyfile);
+        ^
+psio.c:60:15: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (found = ps_searchfile(str, newf)) {
+        ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+psio.c:60:15: note: place parentheses around the assignment to silence this warning
+    if (found = ps_searchfile(str, newf)) {
+              ^
+        (                               )
+psio.c:60:15: note: use '==' to turn this assignment into an equality comparison
+    if (found = ps_searchfile(str, newf)) {
+              ^
+              ==
+psio.c:68:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+ps_searchfile(f, newf)
+^~~~~~~~~~~~~
+psio.c:144:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+pschar(c)
+^~~~~~
+psio.c:154:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psio.c:156:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+codetopsstr(code, n)
+^~~~~~~~~~~
+psio.c:160:5: warning: implicit declaration of function 'c2pstr' is invalid in C99 [-Wimplicit-function-declaration]
+    c2pstr(code, n);
+    ^
+psio.c:162:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psio.c:164:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+c2pstr(code, n)
+^~~~~~
+psio.c:171:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+psio.c:174:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+cpfile(spfp, remcom, fn)
+^~~~~~
+psio.c:197:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+16 warnings generated.
+mv -f .deps/psio.Tpo .deps/psio.Po
+/bin/bash ./libtool --tag=CC   --mode=link gcc  -g -O2   -o dvi2ps dvi2.o dviconv.o dfdcom.o fontcom.o set.o rfset.o vfset.o dconv.o run.o mag.o fontdesc.o scanfont.o virfont.o vfdcom.o pkfont.o gffont.o rastfont.o bifont.o type1font.o wlfont.o ttfont.o vflfont.o mmfont.o compfont.o decompfont.o execfont.o funcfont.o kpse.o kanji.o open.o io.o util.o xxstdio.o version.o ps.o psrast.o psbi.o pstfm.o pstype1.o pswl.o pstt.o pstt2t1.o psvfl.o pst1form.o writet1.o psspecial.o pscolor.o psifont.o psio.o -lm -L/usr/lib/x86_64-linux-gnu -lfreetype -lz -lpng12 -lkpathsea -lm 
+libtool: link: gcc -g -O2 -o dvi2ps dvi2.o dviconv.o dfdcom.o fontcom.o set.o rfset.o vfset.o dconv.o run.o mag.o fontdesc.o scanfont.o virfont.o vfdcom.o pkfont.o gffont.o rastfont.o bifont.o type1font.o wlfont.o ttfont.o vflfont.o mmfont.o compfont.o decompfont.o execfont.o funcfont.o kpse.o kanji.o open.o io.o util.o xxstdio.o version.o ps.o psrast.o psbi.o pstfm.o pstype1.o pswl.o pstt.o pstt2t1.o psvfl.o pst1form.o writet1.o psspecial.o pscolor.o psifont.o psio.o  -L/usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/libfreetype.so -lz -lpng12 -lkpathsea -lm
+make[2]: Leaving directory '/«PKGBUILDDIR»'
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+/usr/bin/make lprdvi newlib CCFLAGS='-g -O -DPOSIX -DSYSV -DANSI -Wall'
+make[1]: Entering directory '/«PKGBUILDDIR»'
+sed -e s,'%%ETCAREA%%',/usr/etc, \
+    -e s,'%%FONTDESC%%',`./confval dvi2ps.conf FONTDESC`, \
+    -e s,'%%LEFTMARGIN%%',`./confval dvi2ps.conf LEFTMARGIN`, \
+    -e s,'%%TOPMARGIN%%',`./confval dvi2ps.conf TOPMARGIN`, \
+	tools/lprdvi.templ > lprdvi
+mkdir lib lib/headers
+./tools/psstrip < dvi2.psdoc | \
+sed -e s/'##XCOORD##'/`./confval dvi2ps.conf LEFTMARGIN`/ \
+    -e s/'##YCOORD##'/`./confval dvi2ps.conf TOPMARGIN`/ \
+	> lib/headers/dvi2.ps
+mkdir lib lib/headers
+mkdir: cannot create directory 'lib': File exists
+mkdir: cannot create directory 'lib/headers': File exists
+make[1]: [lib/headers/special.ps] Error 1 (ignored)
+Makefile:816: recipe for target 'lib/headers/special.ps' failed
+./tools/psstrip < special.psdoc > lib/headers/special.ps
+mkdir lib lib/headers
+mkdir: cannot create directory 'lib': File exists
+mkdir: cannot create directory 'lib/headers': File exists
+make[1]: [lib/headers/psifont.ps] Error 1 (ignored)
+Makefile:819: recipe for target 'lib/headers/psifont.ps' failed
+./tools/psstrip < psifont.psdoc > lib/headers/psifont.ps
+mkdir lib lib/headers
+mkdir: cannot create directory 'lib': File exists
+mkdir: cannot create directory 'lib/headers': File exists
+make[1]: [lib/headers/color.ps] Error 1 (ignored)
+Makefile:822: recipe for target 'lib/headers/color.ps' failed
+./tools/psstrip < color.psdoc > lib/headers/color.ps
+cat lib/headers/dvi2.ps lib/headers/special.ps > lib/dvi2.ps
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+(cd tools ; /usr/bin/make -f ../debian/Makefile.tools)
+make[1]: Entering directory '/«PKGBUILDDIR»/tools'
+gcc -Wall -DPOSIX -g -o texfix texfix.c
+texfix.c:41:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^~~~
+texfix.c:43:20: warning: incompatible pointer types passing 'int ()' to parameter of type '__sighandler_t' (aka 'void (*)(int)') [-Wincompatible-pointer-types]
+    signal(SIGHUP, cleanup);
+                   ^~~~~~~
+/usr/include/signal.h:102:57: note: passing argument to parameter '__handler' here
+extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+                                                        ^
+texfix.c:44:20: warning: incompatible pointer types passing 'int ()' to parameter of type '__sighandler_t' (aka 'void (*)(int)') [-Wincompatible-pointer-types]
+    signal(SIGINT, cleanup);
+                   ^~~~~~~
+/usr/include/signal.h:102:57: note: passing argument to parameter '__handler' here
+extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+                                                        ^
+texfix.c:45:21: warning: incompatible pointer types passing 'int ()' to parameter of type '__sighandler_t' (aka 'void (*)(int)') [-Wincompatible-pointer-types]
+    signal(SIGQUIT, cleanup);
+                    ^~~~~~~
+/usr/include/signal.h:102:57: note: passing argument to parameter '__handler' here
+extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+                                                        ^
+texfix.c:46:21: warning: incompatible pointer types passing 'int ()' to parameter of type '__sighandler_t' (aka 'void (*)(int)') [-Wincompatible-pointer-types]
+    signal(SIGPIPE, cleanup);
+                    ^~~~~~~
+/usr/include/signal.h:102:57: note: passing argument to parameter '__handler' here
+extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+                                                        ^
+texfix.c:47:21: warning: incompatible pointer types passing 'int ()' to parameter of type '__sighandler_t' (aka 'void (*)(int)') [-Wincompatible-pointer-types]
+    signal(SIGTERM, cleanup);
+                    ^~~~~~~
+/usr/include/signal.h:102:57: note: passing argument to parameter '__handler' here
+extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+                                                        ^
+texfix.c:51:10: warning: implicit declaration of function 'pageout' is invalid in C99 [-Wimplicit-function-declaration]
+            if (pageout()) {
+                ^
+texfix.c:61:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+pageout()
+^~~~~~~
+texfix.c:88:11: warning: implicit declaration of function 'specialout' is invalid in C99 [-Wimplicit-function-declaration]
+                    if (specialout()) {
+                        ^
+texfix.c:99:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+specialout()
+^~~~~~~~~~
+texfix.c:113:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+cleanup()
+^~~~~~~
+11 warnings generated.
+gcc -Wall -DPOSIX -g -o nup nup.c
+nup.c:75:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(argc, argv)
+^~~~
+nup.c:107:6: warning: unsequenced modification and access to 'p' [-Wunsequenced]
+                        *p++ = tolower(*p);
+                          ^             ~
+nup.c:109:4: warning: expression result unused [-Wunused-value]
+                        *p++;
+                        ^~~~
+nup.c:129:7: warning: implicit declaration of function 'usage' is invalid in C99 [-Wimplicit-function-declaration]
+                    usage();
+                    ^
+nup.c:154:10: warning: implicit declaration of function 'printprologue' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!printprologue() || !printscript())
+         ^
+nup.c:154:30: warning: implicit declaration of function 'printscript' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!printprologue() || !printscript())
+                             ^
+nup.c:159:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+printprologue()
+^~~~~~~~~~~~~
+nup.c:161:10: warning: implicit declaration of function 'printheader' is invalid in C99 [-Wimplicit-function-declaration]
+    if (!printheader())
+         ^
+nup.c:165:6: warning: implicit declaration of function 'printprocset' is invalid in C99 [-Wimplicit-function-declaration]
+            printprocset();
+            ^
+nup.c:174:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+printheader()
+^~~~~~~~~~~
+nup.c:220:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+printscript()
+^~~~~~~~~~~
+nup.c:229:36: warning: unsequenced modification and access to 'page' [-Wunsequenced]
+                printf("%%%%Page: %i %i\nBP0\n", ++page, page);
+                                                 ^       ~~~~
+nup.c:237:11: warning: implicit declaration of function 'skipdocument' is invalid in C99 [-Wimplicit-function-declaration]
+            if (!skipdocument())
+                 ^
+nup.c:242:11: warning: implicit declaration of function 'printsetup' is invalid in C99 [-Wimplicit-function-declaration]
+            if (!printsetup())
+                 ^
+nup.c:251:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+printsetup()
+^~~~~~~~~~
+nup.c:266:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+skipdocument()
+^~~~~~~~~~~~
+nup.c:280:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+printprocset()
+^~~~~~~~~~~~
+nup.c:372:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+nup.c:374:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+usage()
+^~~~~
+nup.c:377:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+20 warnings generated.
+make[1]: Leaving directory '/«PKGBUILDDIR»/tools'
+find lib -type d -name 'CVS' |xargs rm -rf
+touch build-stamp
+ fakeroot debian/rules binary
+dh_testdir
+dh_testroot
+dh_clean -k
+dh_clean: dh_clean -k is deprecated; use dh_prep instead
+dh_installdirs
+# Add here commands to install the package into debian/dvi2ps.
+/usr/bin/make install prefix=/«PKGBUILDDIR»/debian/dvi2ps/usr DVI2PSLIB=/«PKGBUILDDIR»/debian/dvi2ps/usr/lib/dvi2ps
+make[1]: Entering directory '/«PKGBUILDDIR»'
+make[2]: Entering directory '/«PKGBUILDDIR»'
+test -z "/«PKGBUILDDIR»/debian/dvi2ps/usr/bin" || /bin/mkdir -p "/«PKGBUILDDIR»/debian/dvi2ps/usr/bin"
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c dvi2ps '/«PKGBUILDDIR»/debian/dvi2ps/usr/bin'
+libtool: install: /usr/bin/install -c dvi2ps /«PKGBUILDDIR»/debian/dvi2ps/usr/bin/dvi2ps
+mkdir /«PKGBUILDDIR»/debian/dvi2ps/usr/lib/dvi2ps
+mkdir /«PKGBUILDDIR»/debian/dvi2ps/usr/lib/dvi2ps/headers
+cp -p lib/headers/dvi2.ps lib/headers/special.ps lib/headers/psifont.ps lib/headers/color.ps /«PKGBUILDDIR»/debian/dvi2ps/usr/lib/dvi2ps/headers
+cp -p lib/dvi2.ps /«PKGBUILDDIR»/debian/dvi2ps/usr/lib/dvi2ps
+cp -pR lib-dist/* /«PKGBUILDDIR»/debian/dvi2ps/usr/lib/dvi2ps
+cp -pR cconv /«PKGBUILDDIR»/debian/dvi2ps/usr/lib/dvi2ps
+chmod -R a+r /«PKGBUILDDIR»/debian/dvi2ps/usr/lib/dvi2ps
+make[2]: Leaving directory '/«PKGBUILDDIR»'
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+rm -rf /«PKGBUILDDIR»/debian/dvi2ps/usr/share/texmf/dvi2ps/fonts
+chmod +x debian/install-ja
+rm -f debian/dvi2ps/usr/share/texmf/dvi2ps/configk
+install -m 755 lprdvi debian/dvi2ps/usr/bin
+install -m 644 tools/lprdvi.conf debian/dvi2ps/etc/texmf/dvi2ps
+install -c -s -m 755 tools/nup debian/dvi2ps/usr/bin
+install -c -s -m 755 tools/texfix debian/dvi2ps/usr/bin/texfix
+#-install -m 644 lib/PS600J \
+#		debian/dvi2ps/etc/texmf/dvi2ps/fontdesc
+install -m 644 debian/fontdesc /«PKGBUILDDIR»/debian/dvi2ps/etc/texmf/dvi2ps/fontdesc
+ln -sf /etc/texmf/dvi2ps/fontdesc /«PKGBUILDDIR»/debian/dvi2ps/usr/share/texmf/dvi2ps/fontdesc
+install -m 644 lib-dist/configk /«PKGBUILDDIR»/debian/dvi2ps/etc/texmf/dvi2ps/configk
+ln -sf /etc/texmf/dvi2ps/configk /«PKGBUILDDIR»/debian/dvi2ps/usr/share/texmf/dvi2ps/configk
+install -m 644 lib-dist/multex /«PKGBUILDDIR»/debian/dvi2ps/etc/texmf/dvi2ps/multex
+ln -sf /etc/texmf/dvi2ps/multex /«PKGBUILDDIR»/debian/dvi2ps/usr/share/texmf/dvi2ps/multex
+install -m 644 doc/history doc/*.mf \
+		debian/dvi2ps/usr/share/doc/dvi2ps
+for f in README doc/DOCS doc/*.doc; do \
+	debian/install-ja $f \
+		debian/dvi2ps/usr/share/doc/dvi2ps/ja ;\
+done
+doc/DOCS: No such file or directory
+touch: failed to get attributes of 'doc/DOCS': No such file or directory
+install -m 644 man/dvi2ps.man \
+		debian/dvi2ps/usr/share/man/man1/dvi2ps.1
+debian/install-ja man/dvi2ps.jman \
+		debian/dvi2ps/usr/share/man/ja/man1/dvi2ps.1
+dh_testdir
+dh_testroot
+dh_installdebconf	
+dh_installdocs
+dh_installman debian/texfix.1 debian/nup.1 debian/lprdvi.1
+dh_installchangelogs 
+dh_link
+dh_strip
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_shlibdeps
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/dvi2ps/usr/bin/dvi2ps was not linked against libpng12.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/dvi2ps/usr/bin/dvi2ps was not linked against libz.so.1 (it uses none of the library's symbols)
+dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package `dvi2ps' in `../dvi2ps_5.1j-1.1_amd64.deb'.
+ dpkg-genchanges  >../dvi2ps_5.1j-1.1_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build dvi2ps-5.1j
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140903-1621
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+dvi2ps_5.1j-1.1_amd64.changes:
+──────────────────────────────
+
+Format: 1.8
+Date: Fri, 25 Apr 2014 19:32:54 +0200
+Source: dvi2ps
+Binary: dvi2ps
+Architecture: source amd64
+Version: 5.1j-1.1
+Distribution: sid
+Urgency: medium
+Maintainer: OHURA Makoto <ohura@debian.org>
+Changed-By: Margarita Manterola <marga@debian.org>
+Description:
+ dvi2ps     - TeX DVI-driver for NTT JTeX, MulTeX and ASCII pTeX
+Closes: 733394
+Changes:
+ dvi2ps (5.1j-1.1) unstable; urgency=medium
+ .
+   * Non-maintainer upload to fix FTBFS.
+   * Add 09_freetype_header.patch, renaming freetype.h to dvi2ps_freetype.h
+     to avoid collision with Freetype (Closes: #733394)
+Checksums-Sha1:
+ c6e239ce30478811bf392078d05032610ad74813 817 dvi2ps_5.1j-1.1.dsc
+ b64c2bc2acc0450ef2d33bc50c9f2cea7df3b099 20964 dvi2ps_5.1j-1.1.debian.tar.xz
+ a6d656ab8d6bf1bc329a268715bb90914f01016c 190758 dvi2ps_5.1j-1.1_amd64.deb
+Checksums-Sha256:
+ 90a7f9b0e207c02793880ec7321998cc43dacc8bef541450f2cf33733f36d5a7 817 dvi2ps_5.1j-1.1.dsc
+ 91279a4045f4bacd13df91f10a5515a35fbc749fa3d6d59b4f7b17c8870282f7 20964 dvi2ps_5.1j-1.1.debian.tar.xz
+ e521ee3ae961d1516af8bfb27df053a632e0deeb9a22db263ff47ecc2957bc85 190758 dvi2ps_5.1j-1.1_amd64.deb
+Files:
+ 4eaf54f9f2e91525a602c99159e929bc 190758 tex optional dvi2ps_5.1j-1.1_amd64.deb
+ b7562e47c648072bd6d9291c66c5f673 817 tex optional dvi2ps_5.1j-1.1.dsc
+ f3ea9a6956d48125505fd1513656063c 20964 tex optional dvi2ps_5.1j-1.1.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+dvi2ps_5.1j-1.1_amd64.deb
+─────────────────────────
+
+ new debian package, version 2.0.
+ size 190758 bytes: control archive=13273 bytes.
+     108 bytes,     4 lines      conffiles            
+     277 bytes,    16 lines   *  config               #!/bin/sh
+     742 bytes,    14 lines      control              
+   12046 bytes,   189 lines      md5sums              
+    1400 bytes,    52 lines   *  postinst             #!/bin/sh
+    1219 bytes,    53 lines   *  postrm               #!/bin/sh
+    3002 bytes,   127 lines   *  preinst              #!/bin/sh
+   17542 bytes,   173 lines      templates            
+ Package: dvi2ps
+ Version: 5.1j-1.1
+ Architecture: amd64
+ Maintainer: OHURA Makoto <ohura@debian.org>
+ Installed-Size: 537
+ Depends: libc6 (>= 2.14), libfreetype6 (>= 2.2.1), libkpathsea6, libpng12-0 (>= 1.2.13-4), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0, texlive-base-bin | tetex-bin
+ Suggests: dvi2ps-fontdata-ja
+ Conflicts: dvi2ps-fontdata-a2n (<< 1.0-6), dvi2ps-fontdata-ja (<< 1.0-6), dvi2ps-fontdata-rrs (<< 1.0-6), dvi2ps-fontdata-rsp (<< 1.0-6), dvi2ps-fontdata-tbank (<< 1.0-6), dvi2ps-j
+ Replaces: dvi2ps-j
+ Section: tex
+ Priority: optional
+ Description: TeX DVI-driver for NTT JTeX, MulTeX and ASCII pTeX
+  dvi2ps is another converter of DVI file to PostScript file.
+  dvi2ps can handle dvi files of NTT JTeX, MulTeX and ASCII pTeX.
+
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/lib/
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/lib/dvi2ps/
+-rw-r--r-- root/root       215 2006-08-05 20:09 ./usr/lib/dvi2ps/multex
+-rw-r--r-- root/root       175 2014-09-03 16:21 ./usr/lib/dvi2ps/PS360J
+-rw-r--r-- root/root       222 2014-09-03 16:21 ./usr/lib/dvi2ps/vflib-bluesky
+-rw-r--r-- root/root        82 2006-06-01 15:51 ./usr/lib/dvi2ps/fontdesc.ipa
+-rw-r--r-- root/root       194 2014-09-03 16:21 ./usr/lib/dvi2ps/LW16-600J-bluesky
+-rw-r--r-- root/root       155 2014-09-03 16:21 ./usr/lib/dvi2ps/LW16-600-vflib
+-rw-r--r-- root/root       175 2014-09-03 16:21 ./usr/lib/dvi2ps/PS720J
+-rw-r--r-- root/root       168 2006-05-29 17:59 ./usr/lib/dvi2ps/bikanji
+-rw-r--r-- root/root       154 2014-09-03 16:21 ./usr/lib/dvi2ps/PS360-vflib
+-rw-r--r-- root/root       175 2014-09-03 16:21 ./usr/lib/dvi2ps/PS400J
+-rw-r--r-- root/root        66 2006-06-01 15:51 ./usr/lib/dvi2ps/fontdesc.emb
+-rw-r--r-- root/root       241 2014-09-03 16:21 ./usr/lib/dvi2ps/bikanji-bluesky
+-rw-r--r-- root/root       193 1993-11-21 14:01 ./usr/lib/dvi2ps/defaulttray.ps
+-rw-r--r-- root/root       477 2006-05-29 17:35 ./usr/lib/dvi2ps/config
+-rw-r--r-- root/root       175 2014-09-03 16:21 ./usr/lib/dvi2ps/PS600J
+-rw-r--r-- root/root       162 2014-09-03 16:21 ./usr/lib/dvi2ps/PS720-bluesky
+-rw-r--r-- root/root        95 2011-08-23 19:54 ./usr/lib/dvi2ps/fontdesc.ipsio
+-rw-r--r-- root/root      1154 1994-01-23 16:36 ./usr/lib/dvi2ps/oldfix.ps
+-rw-r--r-- root/root       174 1998-04-30 20:46 ./usr/lib/dvi2ps/header
+-rw-r--r-- root/root       153 2014-09-03 16:21 ./usr/lib/dvi2ps/LWIINTX-vflib
+-rw-r--r-- root/root      9789 2014-09-03 16:21 ./usr/lib/dvi2ps/dvi2.ps
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/lib/dvi2ps/printer/
+-rw-r--r-- root/root        71 2014-09-03 16:21 ./usr/lib/dvi2ps/printer/PS720
+-rw-r--r-- root/root        73 2014-09-03 16:21 ./usr/lib/dvi2ps/printer/PS600
+-rw-r--r-- root/root        67 2006-05-25 15:59 ./usr/lib/dvi2ps/printer/LWII
+-rw-r--r-- root/root        73 2014-09-03 16:21 ./usr/lib/dvi2ps/printer/PS400
+-rw-r--r-- root/root        67 2014-09-03 16:21 ./usr/lib/dvi2ps/printer/PS200
+-rw-r--r-- root/root        66 2006-05-25 15:58 ./usr/lib/dvi2ps/printer/RicohSP10
+-rw-r--r-- root/root        74 2014-09-03 16:21 ./usr/lib/dvi2ps/printer/PS360
+-rw-r--r-- root/root        67 2006-05-25 15:59 ./usr/lib/dvi2ps/printer/RicohIPSiO
+-rw-r--r-- root/root        72 2006-05-25 15:58 ./usr/lib/dvi2ps/printer/LW16
+-rw-r--r-- root/root       137 2006-05-29 18:05 ./usr/lib/dvi2ps/wadalabz
+-rw-r--r-- root/root       184 2006-09-27 16:03 ./usr/lib/dvi2ps/jemb
+-rw-r--r-- root/root        91 1996-07-16 12:44 ./usr/lib/dvi2ps/bothside.ps
+-rw-r--r-- root/root       230 2006-05-29 17:59 ./usr/lib/dvi2ps/bifont-90ms
+-rw-r--r-- root/root       140 2006-05-29 18:05 ./usr/lib/dvi2ps/vtexe
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/lib/dvi2ps/headers/
+-rw-r--r-- root/root       208 2014-09-03 16:21 ./usr/lib/dvi2ps/headers/psifont.ps
+-rw-r--r-- root/root      5053 2014-09-03 16:21 ./usr/lib/dvi2ps/headers/dvi2.ps
+-rw-r--r-- root/root      4736 2014-09-03 16:21 ./usr/lib/dvi2ps/headers/special.ps
+-rw-r--r-- root/root      3499 2014-09-03 16:21 ./usr/lib/dvi2ps/headers/color.ps
+-rw-r--r-- root/root       755 1992-07-07 03:41 ./usr/lib/dvi2ps/tombo.ps
+-rw-r--r-- root/root       138 1998-05-08 07:34 ./usr/lib/dvi2ps/tumble.ps
+-rw-r--r-- root/root       220 2006-05-29 17:59 ./usr/lib/dvi2ps/bifont
+-rw-r--r-- root/root       162 2014-09-03 16:21 ./usr/lib/dvi2ps/PS600-bluesky
+-rw-r--r-- root/root       154 2014-09-03 16:21 ./usr/lib/dvi2ps/PS720-vflib
+-rw-r--r-- root/root       216 2006-05-29 17:35 ./usr/lib/dvi2ps/configk
+drwxr-xr-x root/root         0 2006-08-05 08:43 ./usr/lib/dvi2ps/cconv/
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/grk2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/ltnii2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/viscu2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/crl2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/sisheng2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/arb2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/viscl2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/ltni2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/thai2uni
+-rw-r--r-- root/root     17672 1999-10-01 13:55 ./usr/lib/dvi2ps/cconv/jis2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/hbw2uni
+-rw-r--r-- root/root     17672 2003-02-07 09:20 ./usr/lib/dvi2ps/cconv/ksc2uni
+-rw-r--r-- root/root       512 2006-07-28 19:54 ./usr/lib/dvi2ps/cconv/kana2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/ltnv2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/ltniv2uni
+-rw-r--r-- root/root     17672 1999-11-03 07:48 ./usr/lib/dvi2ps/cconv/jissp2uni
+-rw-r--r-- root/root     17672 2003-02-05 09:54 ./usr/lib/dvi2ps/cconv/bvi2uni
+-rw-r--r-- root/root     17672 2003-02-07 09:20 ./usr/lib/dvi2ps/cconv/bvii2uni
+-rw-r--r-- root/root     17672 1999-11-01 09:05 ./usr/lib/dvi2ps/cconv/gb2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/ltniii2uni
+-rw-r--r-- root/root       512 2006-07-27 09:51 ./usr/lib/dvi2ps/cconv/ipa2uni
+-rw-r--r-- root/root       349 2006-08-07 19:24 ./usr/lib/dvi2ps/fontdesc.0
+-rw-r--r-- root/root       180 2006-05-29 18:00 ./usr/lib/dvi2ps/bitmap
+-rw-r--r-- root/root       193 2014-09-03 16:21 ./usr/lib/dvi2ps/vflib
+-rw-r--r-- root/root       154 2014-09-03 16:21 ./usr/lib/dvi2ps/PS600-vflib
+-rw-r--r-- root/root       245 2006-05-29 17:59 ./usr/lib/dvi2ps/bikant1
+-rw-r--r-- root/root       175 2014-09-03 16:21 ./usr/lib/dvi2ps/PS200J
+-rw-r--r-- root/root        86 2006-06-01 15:51 ./usr/lib/dvi2ps/fontdesc.pdf
+-rw-r--r-- root/root      1738 1992-07-07 03:12 ./usr/lib/dvi2ps/macfix.ps
+-rw-r--r-- root/root       395 2003-02-05 06:36 ./usr/lib/dvi2ps/dvips.ps
+-rw-r--r-- root/root       270 2006-06-01 15:50 ./usr/lib/dvi2ps/fontdesc
+-rw-r--r-- root/root       209 2014-09-03 16:21 ./usr/lib/dvi2ps/PS400J-bluesky
+-rw-r--r-- root/root       209 2014-09-03 16:21 ./usr/lib/dvi2ps/PS600J-bluesky
+-rw-r--r-- root/root       255 2006-05-29 17:59 ./usr/lib/dvi2ps/bikant1-90ms
+-rw-r--r-- root/root        37 1996-05-23 13:49 ./usr/lib/dvi2ps/old
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/lib/dvi2ps/fontsk/
+-rw-r--r-- root/root       178 2014-09-03 16:21 ./usr/lib/dvi2ps/fontsk/asc-vflkanji
+-rw-r--r-- root/root       298 2006-05-25 07:54 ./usr/lib/dvi2ps/fontsk/bikan-morisawa
+-rw-r--r-- root/root       143 2006-08-05 20:42 ./usr/lib/dvi2ps/fontsk/mul-bikanji
+-rw-r--r-- root/root       765 1999-10-07 18:24 ./usr/lib/dvi2ps/fontsk/psfonts-0.map
+-rw-r--r-- root/root       322 2006-05-25 11:42 ./usr/lib/dvi2ps/fontsk/bikan-ricoh-90ms
+-rw-r--r-- root/root       136 2006-08-18 20:05 ./usr/lib/dvi2ps/fontsk/a2n
+-rw-r--r-- root/root       109 2006-09-27 16:14 ./usr/lib/dvi2ps/fontsk/bikan-heisei
+-rw-r--r-- root/root        26 1998-04-26 09:28 ./usr/lib/dvi2ps/fontsk/generate
+-rw-r--r-- root/root       236 1999-08-02 11:15 ./usr/lib/dvi2ps/fontsk/ntt-bitmap
+-rw-r--r-- root/root       204 2014-09-03 16:21 ./usr/lib/dvi2ps/fontsk/bikan-vfl
+-rw-r--r-- root/root      1820 1999-10-07 18:17 ./usr/lib/dvi2ps/fontsk/psfonts-std.map
+-rw-r--r-- root/root       162 2006-05-25 11:42 ./usr/lib/dvi2ps/fontsk/bikan-wada
+-rw-r--r-- root/root       179 2006-05-25 12:10 ./usr/lib/dvi2ps/fontsk/asc-wadaz
+-rw-r--r-- root/root       470 2004-04-01 19:54 ./usr/lib/dvi2ps/fontsk/ntt2jp
+-rw-r--r-- root/root      1349 1999-10-07 18:18 ./usr/lib/dvi2ps/fontsk/psfonts-misc.map
+-rw-r--r-- root/root       189 2006-05-25 12:09 ./usr/lib/dvi2ps/fontsk/asc-bikanji-90ms
+-rw-r--r-- root/root       187 2006-05-26 20:17 ./usr/lib/dvi2ps/fontsk/psfonts
+-rw-r--r-- root/root      3085 2006-05-28 20:57 ./usr/lib/dvi2ps/fontsk/t1cm.map
+-rw-r--r-- root/root       184 2006-09-23 21:03 ./usr/lib/dvi2ps/fontsk/ntt-bikanji-90ms
+-rw-r--r-- root/root        73 2006-05-25 11:42 ./usr/lib/dvi2ps/fontsk/bikan-wadaz
+-rw-r--r-- root/root       193 2006-09-23 20:53 ./usr/lib/dvi2ps/fontsk/asc-jemb
+-rw-r--r-- root/root       226 2006-05-25 11:42 ./usr/lib/dvi2ps/fontsk/bikan-ricoh
+-rw-r--r-- root/root        94 2006-09-23 21:04 ./usr/lib/dvi2ps/fontsk/ntt-wadaz
+-rw-r--r-- root/root       172 2006-05-25 12:11 ./usr/lib/dvi2ps/fontsk/mul-bitmap
+-rw-r--r-- root/root       152 2006-09-23 21:02 ./usr/lib/dvi2ps/fontsk/ntt-bikanji
+-rw-r--r-- root/root      1663 2006-08-21 18:41 ./usr/lib/dvi2ps/fontsk/mul-cb
+-rw-r--r-- root/root       141 2006-08-05 20:15 ./usr/lib/dvi2ps/fontsk/ntt-ipa
+-rw-r--r-- root/root      2890 2006-05-28 20:57 ./usr/lib/dvi2ps/fontsk/t1ams.map
+-rw-r--r-- root/root       350 1998-04-26 09:54 ./usr/lib/dvi2ps/fontsk/muldecomp
+-rw-r--r-- root/root       609 1992-07-07 03:12 ./usr/lib/dvi2ps/fontsk/vtex.ps
+-rw-r--r-- root/root        96 2006-09-23 20:55 ./usr/lib/dvi2ps/fontsk/bikan-ipa
+-rw-r--r-- root/root      5830 2006-05-26 20:17 ./usr/lib/dvi2ps/fontsk/psfonts-8.map
+-rw-r--r-- root/root       426 2006-05-25 07:54 ./usr/lib/dvi2ps/fontsk/bikan-morisawa-90ms
+-rw-r--r-- root/root        86 2014-09-03 16:21 ./usr/lib/dvi2ps/fontsk/ntt-vflkanji
+-rw-r--r-- root/root       149 2006-08-05 20:15 ./usr/lib/dvi2ps/fontsk/ntt-heisei
+-rw-r--r-- root/root       106 2006-05-28 20:58 ./usr/lib/dvi2ps/fontsk/fonts-t1
+-rw-r--r-- root/root       203 2006-09-23 21:03 ./usr/lib/dvi2ps/fontsk/ntt-wada
+-rw-r--r-- root/root        77 1998-05-03 07:00 ./usr/lib/dvi2ps/fontsk/asc-bitmap
+-rw-r--r-- root/root       168 2014-09-03 16:21 ./usr/lib/dvi2ps/fontsk/fonts-bitmap
+-rw-r--r-- root/root       130 2006-08-18 20:02 ./usr/lib/dvi2ps/fontsk/n2a
+-rw-r--r-- root/root       185 2006-09-23 21:04 ./usr/lib/dvi2ps/fontsk/vtex
+-rw-r--r-- root/root      1146 2006-05-26 19:42 ./usr/lib/dvi2ps/fontsk/psfonts.ps
+-rw-r--r-- root/root       188 2006-05-25 12:10 ./usr/lib/dvi2ps/fontsk/asc-wada
+-rw-r--r-- root/root       184 2006-05-25 12:09 ./usr/lib/dvi2ps/fontsk/asc-bikanji
+-rw-r--r-- root/root       154 2014-09-03 16:21 ./usr/lib/dvi2ps/PS400-vflib
+-rw-r--r-- root/root       267 2006-09-27 16:03 ./usr/lib/dvi2ps/jembt1
+-rw-r--r-- root/root       209 2014-09-03 16:21 ./usr/lib/dvi2ps/PS720J-bluesky
+-rw-r--r-- root/root       209 2014-09-03 16:21 ./usr/lib/dvi2ps/PS360J-bluesky
+-rw-r--r-- root/root        89 2011-08-23 19:55 ./usr/lib/dvi2ps/fontdesc.lw16
+-rw-r--r-- root/root       154 2014-09-03 16:21 ./usr/lib/dvi2ps/PS200-vflib
+-rw-r--r-- root/root       135 2006-05-29 18:05 ./usr/lib/dvi2ps/wadalab
+-rw-r--r-- root/root       107 2006-06-01 15:52 ./usr/lib/dvi2ps/fontdesc.pk
+drwxr-xr-x root/root         0 2006-09-27 16:20 ./usr/lib/dvi2ps/fonts/
+-rw-r--r-- root/root       294 1998-05-10 16:01 ./usr/lib/dvi2ps/fonts/bikan-morisawa
+-rw-r--r-- root/root       149 2006-08-05 20:42 ./usr/lib/dvi2ps/fonts/mul-bikanji
+-rw-r--r-- root/root       765 1999-10-07 18:24 ./usr/lib/dvi2ps/fonts/psfonts-0.map
+-rw-r--r-- root/root       321 2006-05-25 16:09 ./usr/lib/dvi2ps/fonts/bikan-ricoh-90ms
+-rw-r--r-- root/root        78 2006-05-25 16:10 ./usr/lib/dvi2ps/fonts/a2n
+-rw-r--r-- root/root       107 2006-09-27 16:20 ./usr/lib/dvi2ps/fonts/bikan-heisei
+-rw-r--r-- root/root       196 1997-10-08 20:30 ./usr/lib/dvi2ps/fonts/generate
+-rw-r--r-- root/root       252 1998-04-26 09:40 ./usr/lib/dvi2ps/fonts/ntt-bitmap
+-rw-r--r-- root/root      1820 1999-10-07 18:17 ./usr/lib/dvi2ps/fonts/psfonts-std.map
+-rw-r--r-- root/root       132 2000-11-02 18:56 ./usr/lib/dvi2ps/fonts/bikan-wada
+-rw-r--r-- root/root       172 2006-05-25 16:09 ./usr/lib/dvi2ps/fonts/asc-wadaz
+-rw-r--r-- root/root       470 2004-04-01 19:54 ./usr/lib/dvi2ps/fonts/ntt2jp
+-rw-r--r-- root/root      1349 1999-10-07 18:18 ./usr/lib/dvi2ps/fonts/psfonts-misc.map
+-rw-r--r-- root/root       185 2006-05-25 16:09 ./usr/lib/dvi2ps/fonts/asc-bikanji-90ms
+-rw-r--r-- root/root       255 2006-05-26 20:17 ./usr/lib/dvi2ps/fonts/psfonts
+-rw-r--r-- root/root      3085 2006-05-28 20:57 ./usr/lib/dvi2ps/fonts/t1cm.map
+-rw-r--r-- root/root       182 2006-09-23 21:06 ./usr/lib/dvi2ps/fonts/ntt-bikanji-90ms
+-rw-r--r-- root/root        74 2000-11-02 18:57 ./usr/lib/dvi2ps/fonts/bikan-wadaz
+-rw-r--r-- root/root       195 2006-09-23 20:57 ./usr/lib/dvi2ps/fonts/asc-jemb
+-rw-r--r-- root/root       225 2000-03-08 19:56 ./usr/lib/dvi2ps/fonts/bikan-ricoh
+-rw-r--r-- root/root        92 2006-09-23 21:06 ./usr/lib/dvi2ps/fonts/ntt-wadaz
+-rw-r--r-- root/root       245 2000-03-03 19:14 ./usr/lib/dvi2ps/fonts/mul-bitmap
+-rw-r--r-- root/root       150 2006-09-23 21:05 ./usr/lib/dvi2ps/fonts/ntt-bikanji
+-rw-r--r-- root/root      1675 2006-08-21 18:42 ./usr/lib/dvi2ps/fonts/mul-cb
+-rw-r--r-- root/root       139 2006-08-05 20:37 ./usr/lib/dvi2ps/fonts/ntt-ipa
+-rw-r--r-- root/root      2890 2006-05-28 20:57 ./usr/lib/dvi2ps/fonts/t1ams.map
+-rw-r--r-- root/root       350 1998-04-26 09:54 ./usr/lib/dvi2ps/fonts/muldecomp
+-rw-r--r-- root/root       609 1992-07-07 03:12 ./usr/lib/dvi2ps/fonts/vtex.ps
+-rw-r--r-- root/root        97 2006-09-23 20:59 ./usr/lib/dvi2ps/fonts/bikan-ipa
+-rw-r--r-- root/root      5830 2006-05-26 20:17 ./usr/lib/dvi2ps/fonts/psfonts-8.map
+-rw-r--r-- root/root       422 2006-05-25 16:09 ./usr/lib/dvi2ps/fonts/bikan-morisawa-90ms
+-rw-r--r-- root/root       147 2006-08-05 20:37 ./usr/lib/dvi2ps/fonts/ntt-heisei
+-rw-r--r-- root/root       111 2006-05-28 20:58 ./usr/lib/dvi2ps/fonts/fonts-t1
+-rw-r--r-- root/root       170 2006-09-23 21:06 ./usr/lib/dvi2ps/fonts/ntt-wada
+-rw-r--r-- root/root        77 1995-03-12 17:49 ./usr/lib/dvi2ps/fonts/asc-bitmap
+-rw-r--r-- root/root       142 1996-05-23 10:45 ./usr/lib/dvi2ps/fonts/fonts-bitmap
+-rw-r--r-- root/root        78 2006-05-25 16:10 ./usr/lib/dvi2ps/fonts/n2a
+-rw-r--r-- root/root       183 2006-09-23 21:07 ./usr/lib/dvi2ps/fonts/vtex
+-rw-r--r-- root/root      1146 2006-05-26 19:42 ./usr/lib/dvi2ps/fonts/psfonts.ps
+-rw-r--r-- root/root       184 2006-05-25 16:09 ./usr/lib/dvi2ps/fonts/asc-wada
+-rw-r--r-- root/root       180 2006-05-25 16:09 ./usr/lib/dvi2ps/fonts/asc-bikanji
+-rw-r--r-- root/root       178 2006-05-29 17:59 ./usr/lib/dvi2ps/bikanji-90ms
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/bin/
+-rwxr-xr-x root/root      2719 2014-09-03 16:21 ./usr/bin/lprdvi
+-rwxr-xr-x root/root    180376 2014-09-03 16:21 ./usr/bin/dvi2ps
+-rwxr-xr-x root/root      7328 2014-09-03 16:21 ./usr/bin/texfix
+-rwxr-xr-x root/root     15264 2014-09-03 16:21 ./usr/bin/nup
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/share/
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/share/texmf/
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/share/texmf/dvi2ps/
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/share/man/ja/
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/share/man/ja/man1/
+-rw-r--r-- root/root      3648 2014-09-03 16:21 ./usr/share/man/ja/man1/dvi2ps.1.gz
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/share/man/man1/
+-rw-r--r-- root/root       602 2014-09-03 16:21 ./usr/share/man/man1/lprdvi.1.gz
+-rw-r--r-- root/root       600 2014-09-03 16:21 ./usr/share/man/man1/texfix.1.gz
+-rw-r--r-- root/root       616 2014-09-03 16:21 ./usr/share/man/man1/nup.1.gz
+-rw-r--r-- root/root      3118 2014-09-03 16:21 ./usr/share/man/man1/dvi2ps.1.gz
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./usr/share/doc/dvi2ps/
+-rw-r--r-- root/root      1894 2004-02-14 07:45 ./usr/share/doc/dvi2ps/README.Debian
+-rw-r--r-- root/root      2945 2014-04-25 19:34 ./usr/share/doc/dvi2ps/changelog.Debian.gz
+-rw-r--r-- root/root       242 2014-09-03 16:21 ./usr/share/doc/dvi2ps/local.mf
+-rw-r--r-- root/root      5235 2008-05-15 16:12 ./usr/share/doc/dvi2ps/copyright
+-rw-r--r-- root/root      1865 2014-09-03 16:21 ./usr/share/doc/dvi2ps/history.gz
+-rw-r--r-- root/root      1619 2011-08-24 08:51 ./usr/share/doc/dvi2ps/ja.gz
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./etc/
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./etc/texmf/
+drwxr-xr-x root/root         0 2014-09-03 16:21 ./etc/texmf/dvi2ps/
+-rw-r--r-- root/root       215 2014-09-03 16:21 ./etc/texmf/dvi2ps/multex
+-rw-r--r-- root/root       216 2014-09-03 16:21 ./etc/texmf/dvi2ps/configk
+-rw-r--r-- root/root      1315 2014-09-03 16:21 ./etc/texmf/dvi2ps/fontdesc
+-rw-r--r-- root/root       184 2014-09-03 16:21 ./etc/texmf/dvi2ps/lprdvi.conf
+lrwxrwxrwx root/root         0 2014-09-03 16:21 ./usr/share/texmf/dvi2ps/multex -> /etc/texmf/dvi2ps/multex
+lrwxrwxrwx root/root         0 2014-09-03 16:21 ./usr/share/texmf/dvi2ps/configk -> /etc/texmf/dvi2ps/configk
+lrwxrwxrwx root/root         0 2014-09-03 16:21 ./usr/share/texmf/dvi2ps/fontdesc -> /etc/texmf/dvi2ps/fontdesc
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 7424
+Build-Time: 21
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 10
+Job: dvi2ps_5.1j-1.1.dsc
+Machine Architecture: amd64
+Package: dvi2ps
+Package-Time: 36
+Source-Version: 5.1j-1.1
+Space: 7424
+Status: successful
+Version: 5.1j-1.1
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140903-1621
+Build needed 00:00:36, 7424k disc space

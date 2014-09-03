@@ -1,0 +1,101 @@
+Description: fix FTBFS with clang instead of gcc [-Wreturn-type]
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-09-03
+--- a/virfont.c
++++ b/virfont.c
+@@ -317,7 +317,7 @@
+     struct font_entry *save_curfontent;
+ 
+     if (ce->vfdstat >= VFD_NULL)
+-	return;
++	return NULL;
+     if (ce->vfdstat == VFD_UNDEF) {
+ 	if ((defce = &virfinfo(fe)->ch[JISDEFAULT])->vfdstat == VFD_UNDEF)
+ 	    Fatal("char %d in vf file %s is not defined", c, fe->n);
+@@ -369,7 +369,7 @@
+ 	MarkChar(ce->vfd.set.c);
+ 	setcurfont(save_curfontent);
+ 	free((char *)dvip);
+-	return;
++	return NULL;
+     }
+     ce->vfd.dvi.where.dviptr = dvip;
+ 
+--- a/pkfont.c
++++ b/pkfont.c
+@@ -150,11 +150,11 @@
+ 	if ((cc = getuint(fntfp, 4)) > MAXMARKCHAR) {
+ 	    Warning("cc %d in pk file %s (skipped)", cc, fe->name);
+ 	    (void)fseek(fntfp, pl+8, SEEK_CUR);
+-	    return;
++	    return NULL;
+ 	}
+ 	if (rii->mark[cc] == FALSE) {
+ 	    (void)fseek(fntfp, pl+8, SEEK_CUR);
+-	    return;
++	    return NULL;
+ 	}
+ 	ce = &rastfinfo(fe)->ch[cc];
+ 	ce->tfmw = scale(getuint(fntfp, 4), fe->s);
+@@ -165,7 +165,7 @@
+ 	ce = &rastfinfo(fe)->ch[cc = getuint(fntfp, 1)];
+ 	if (rii->mark[cc] == FALSE) {
+ 	    (void)fseek(fntfp, pl+3, SEEK_CUR);
+-	    return;
++	    return NULL;
+ 	}
+ 	ce->tfmw = scale(getuint(fntfp, 3), fe->s);
+ 	n = 2;
+@@ -174,7 +174,7 @@
+ 	ce = &rastfinfo(fe)->ch[cc = getuint(fntfp, 1)];
+ 	if (rii->mark[cc] == FALSE) {
+ 	    (void)fseek(fntfp, pl+3, SEEK_CUR);
+-	    return;
++	    return NULL;
+ 	}
+ 	ce->tfmw = scale(getuint(fntfp, 3), fe->s);
+ 	n = 1;
+--- a/rastfont.c
++++ b/rastfont.c
+@@ -91,7 +91,7 @@
+ {
+     if (c > MAXMARKCHAR) {
+ 	Warning("char %d in %s ignored", c, curfontent->name);
+-	return;
++	return NULL;
+     }
+     rastinifinfo(curfontent)->mark[c] = TRUE;
+     if (c > rastinifinfo(curfontent)->maxc)
+--- a/wlfont.c
++++ b/wlfont.c
+@@ -93,7 +93,7 @@
+ 					      kpse_type1_format)) == NULL) {
+ 		    Warning("FreeType font file %s not found", k1wlfn);
+ 		    read_null_fontinfo(fe);
+-		    return;
++		    return NULL;
+ 		}
+ #else
+ 		filename = k1wlfn;
+--- a/ttfont.c
++++ b/ttfont.c
+@@ -431,7 +431,7 @@
+     if ((filename = kpsearch_file(fn, fe->n, kpse_truetype_format)) == NULL) {
+ 	Warning("FreeType font file %s not found", fn);
+ 	read_null_fontinfo(fe);
+-	return;
++	return NULL;
+     }
+ #else
+     filename = fn;
+--- a/pst1form.c
++++ b/pst1form.c
+@@ -117,7 +117,7 @@
+     for (i = 0; i <= maxc; i++)
+ 	if (mark[i] && std_char_names[remap[i]] == NULL) {
+ 	    stdex_type1_reencoding(mark, maxc, remap);
+-	    return;
++	    return NULL;
+ 	}
+     EMIT(outfp, "/Encoding StandardEncoding def\n");
+ }
