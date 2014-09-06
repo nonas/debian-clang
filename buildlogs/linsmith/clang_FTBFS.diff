@@ -1,0 +1,21 @@
+--- linsmith-0.99.21.orig/src/element.c
++++ linsmith-0.99.21/src/element.c
+@@ -305,6 +305,7 @@
+ }
+ 
+ 
++void
+ clear_element_lnlist(chart_lnlist *lnlst)
+ {
+   GList *l;
+--- linsmith-0.99.21.orig/src/remote.c
++++ linsmith-0.99.21/src/remote.c
+@@ -36,7 +36,7 @@
+ remove_fifos(gpointer data)
+ {
+   // if not even enabled manually, just go away
+-  if (pref.rem_mode != REMOTE_SOCK) return;
++  if (pref.rem_mode != REMOTE_SOCK) return -1;
+   
+ printf("Removing the remote pipes\n");
+   close(pref.inpipe);
