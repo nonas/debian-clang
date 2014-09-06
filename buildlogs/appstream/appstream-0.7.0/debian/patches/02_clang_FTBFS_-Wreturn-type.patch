@@ -1,0 +1,34 @@
+Description: fix FTBFS with clang [-Wreturn-type]
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-09-06
+--- a/src/as-metadata.c
++++ b/src/as-metadata.c
+@@ -319,7 +319,7 @@
+ 	gchar *content;
+ 	gchar *node_name;
+ 	GString *str;
+-	g_return_if_fail (metad != NULL);
++	g_return_val_if_fail (metad != NULL, NULL);
+ 
+ 	str = g_string_new ("");
+ 	for (iter = node->children; iter != NULL; iter = iter->next) {
+--- a/src/as-component.c
++++ b/src/as-component.c
+@@ -379,7 +379,7 @@
+ GHashTable*
+ as_component_get_urls (AsComponent *self)
+ {
+-	g_return_if_fail (self != NULL);
++	g_return_val_if_fail (self != NULL, NULL);
+ 	return self->priv->urls;
+ }
+ 
+@@ -397,7 +397,7 @@
+ const gchar *
+ as_component_get_url (AsComponent *self, AsUrlKind url_kind)
+ {
+-	g_return_if_fail (self != NULL);
++	g_return_val_if_fail (self != NULL, NULL);
+ 	return g_hash_table_lookup (self->priv->urls,
+ 				    as_url_kind_to_string (url_kind));
+ }
