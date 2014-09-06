@@ -1,0 +1,11 @@
+--- scrollz-2.1.orig/source/screen.c
++++ scrollz-2.1/source/screen.c
+@@ -2000,7 +2000,7 @@
+ 	{
+ 		puts(incoming);
+ 		fflush(stdout);
+-		return;
++		return NULL;
+ 	}
+ 	/* Handles output redirection first */
+ 	if (!in_redirect && current_screen->redirect_name &&
