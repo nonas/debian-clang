@@ -1,0 +1,885 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ gramophone2 0.8.13a-3 (amd64)                              06 Sep 2014 18:42 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: gramophone2
+Version: 0.8.13a-3
+Source Version: 0.8.13a-3
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/gramophone2-gPgJoe/gramophone2-0.8.13a' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/gramophone2-gPgJoe' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-5091de95-5f78-495e-9c10-5894159e006a' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+gramophone2_0.8.13a-3.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-ad49Qw/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 23 not upgraded.
+Need to get 0 B/820 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11952 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, init, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.9.1), g++ (>= 4:4.9.1), make, dpkg-dev (>= 1.17.11), debhelper (>= 5), cdbs, bison, flex, dpkg-dev (>= 1.16.1~), quilt
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, init, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.9.1), g++ (>= 4:4.9.1), make, dpkg-dev (>= 1.17.11), debhelper (>= 5), cdbs, bison, flex, dpkg-dev (>= 1.16.1~), quilt
+dpkg-deb: building package `sbuild-build-depends-gramophone2-dummy' in `/«BUILDDIR»/resolver-YhWphP/apt_archive/sbuild-build-depends-gramophone2-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install gramophone2 build dependencies (apt-based resolver)                  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bison bsdmainutils cdbs debhelper diffstat file flex gettext gettext-base
+  groff-base intltool-debian libasprintf0c2 libbison-dev libcroco3 libfl-dev
+  libglib2.0-0 libmagic1 libpipeline1 libsigsegv2 libunistring0 libxml2 m4
+  man-db po-debconf quilt
+Suggested packages:
+  bison-doc wamerican wordlist whois vacation devscripts dh-make gettext-doc
+  groff less www-browser libmail-box-perl procmail graphviz default-mta
+  mail-transport-agent
+Recommended packages:
+  autotools-dev curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bison bsdmainutils cdbs debhelper diffstat file flex gettext gettext-base
+  groff-base intltool-debian libasprintf0c2 libbison-dev libcroco3 libfl-dev
+  libglib2.0-0 libmagic1 libpipeline1 libsigsegv2 libunistring0 libxml2 m4
+  man-db po-debconf quilt sbuild-build-depends-gramophone2-dummy
+0 upgraded, 26 newly installed, 0 to remove and 23 not upgraded.
+Need to get 11.2 MB/11.2 MB of archives.
+After this operation, 32.7 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-8 [1183 kB]
+Get:3 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://http.debian.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.19.2-2 [30.8 kB]
+Get:6 http://http.debian.net/debian/ sid/main libmagic1 amd64 1:5.19-1 [237 kB]
+Get:7 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-4 [797 kB]
+Get:8 http://http.debian.net/debian/ sid/main libsigsegv2 amd64 2.10-4 [28.8 kB]
+Get:9 http://http.debian.net/debian/ sid/main m4 amd64 1.4.17-4 [254 kB]
+Get:10 http://http.debian.net/debian/ sid/main libfl-dev amd64 2.5.39-8 [75.0 kB]
+Get:11 http://http.debian.net/debian/ sid/main flex amd64 2.5.39-8 [422 kB]
+Get:12 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-5 [2421 kB]
+Get:13 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-3 [135 kB]
+Get:14 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5.2 [283 kB]
+Get:15 http://http.debian.net/debian/ sid/main file amd64 1:5.19-1 [58.0 kB]
+Get:16 http://http.debian.net/debian/ sid/main gettext-base amd64 0.19.2-2 [120 kB]
+Get:17 http://http.debian.net/debian/ sid/main libbison-dev amd64 2:3.0.2.dfsg-2 [426 kB]
+Get:18 http://http.debian.net/debian/ sid/main bison amd64 2:3.0.2.dfsg-2 [765 kB]
+Get:19 http://http.debian.net/debian/ sid/main cdbs all 0.4.126 [75.5 kB]
+Get:20 http://http.debian.net/debian/ sid/main gettext amd64 0.19.2-2 [1237 kB]
+Get:21 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:22 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu3 [220 kB]
+Get:23 http://http.debian.net/debian/ sid/main debhelper all 9.20140817 [814 kB]
+Get:24 http://http.debian.net/debian/ sid/main diffstat amd64 1.58-1 [29.4 kB]
+Get:25 http://http.debian.net/debian/ sid/main quilt all 0.63-3 [312 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 11.2 MB in 0s (60.1 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11952 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-8_amd64.deb ...
+Unpacking groff-base (1.22.2-8) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.19.2-2_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.19.2-2) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.19-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.19-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-4_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-4) ...
+Selecting previously unselected package libsigsegv2:amd64.
+Preparing to unpack .../libsigsegv2_2.10-4_amd64.deb ...
+Unpacking libsigsegv2:amd64 (2.10-4) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../archives/m4_1.4.17-4_amd64.deb ...
+Unpacking m4 (1.4.17-4) ...
+Selecting previously unselected package libfl-dev:amd64.
+Preparing to unpack .../libfl-dev_2.5.39-8_amd64.deb ...
+Unpacking libfl-dev:amd64 (2.5.39-8) ...
+Selecting previously unselected package flex.
+Preparing to unpack .../flex_2.5.39-8_amd64.deb ...
+Unpacking flex (2.5.39-8) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-3_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-3) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5.2_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5.2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.19-1_amd64.deb ...
+Unpacking file (1:5.19-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.19.2-2_amd64.deb ...
+Unpacking gettext-base (0.19.2-2) ...
+Selecting previously unselected package libbison-dev:amd64.
+Preparing to unpack .../libbison-dev_2%3a3.0.2.dfsg-2_amd64.deb ...
+Unpacking libbison-dev:amd64 (2:3.0.2.dfsg-2) ...
+Selecting previously unselected package bison.
+Preparing to unpack .../bison_2%3a3.0.2.dfsg-2_amd64.deb ...
+Unpacking bison (2:3.0.2.dfsg-2) ...
+Selecting previously unselected package cdbs.
+Preparing to unpack .../archives/cdbs_0.4.126_all.deb ...
+Unpacking cdbs (0.4.126) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.19.2-2_amd64.deb ...
+Unpacking gettext (0.19.2-2) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu3_all.deb ...
+Unpacking po-debconf (1.0.16+nmu3) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140817_all.deb ...
+Unpacking debhelper (9.20140817) ...
+Selecting previously unselected package diffstat.
+Preparing to unpack .../diffstat_1.58-1_amd64.deb ...
+Unpacking diffstat (1.58-1) ...
+Selecting previously unselected package quilt.
+Preparing to unpack .../archives/quilt_0.63-3_all.deb ...
+Unpacking quilt (0.63-3) ...
+Selecting previously unselected package sbuild-build-depends-gramophone2-dummy.
+Preparing to unpack .../sbuild-build-depends-gramophone2-dummy.deb ...
+Unpacking sbuild-build-depends-gramophone2-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-8) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.19.2-2) ...
+Setting up libmagic1:amd64 (1:5.19-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-4) ...
+Setting up libsigsegv2:amd64 (2.10-4) ...
+Setting up m4 (1.4.17-4) ...
+Setting up libfl-dev:amd64 (2.5.39-8) ...
+Setting up flex (2.5.39-8) ...
+Setting up libglib2.0-0:amd64 (2.40.0-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-3) ...
+Setting up libunistring0:amd64 (0.9.3-5.2) ...
+Setting up file (1:5.19-1) ...
+Setting up gettext-base (0.19.2-2) ...
+Setting up libbison-dev:amd64 (2:3.0.2.dfsg-2) ...
+Setting up bison (2:3.0.2.dfsg-2) ...
+update-alternatives: using /usr/bin/bison.yacc to provide /usr/bin/yacc (yacc) in auto mode
+Setting up cdbs (0.4.126) ...
+Setting up gettext (0.19.2-2) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu3) ...
+Setting up debhelper (9.20140817) ...
+Setting up diffstat (1.58-1) ...
+Setting up quilt (0.63-3) ...
+Setting up sbuild-build-depends-gramophone2-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.19-10) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.14-2-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140903-1 dpkg-dev_1.17.13 g++-4.9_4.9.1-9 gcc-4.9_4.9.1-9 libc6-dev_2.19-10 libstdc++-4.9-dev_4.9.1-9 libstdc++6_4.9.1-9 linux-libc-dev_3.14.15-2
+Package versions: acl_2.2.52-1.1 adduser_3.113+nmu3 apt_1.0.7 base-files_7.5 base-passwd_3.5.36 bash_4.3-9 binutils_2.24.51.20140903-1 bison_2:3.0.2.dfsg-2 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.8 build-essential_11.7 bzip2_1.0.6-7 cdbs_0.4.126 clang-3.5_1:3.5-1 coreutils_8.23-2 cpp_4:4.9.1-3 cpp-4.9_4.9.1-9 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-2 debhelper_9.20140817 debian-archive-keyring_2014.1 debianutils_4.4 diffstat_1.58-1 diffutils_1:3.3-1 dmsetup_2:1.02.88-1 dpkg_1.17.13 dpkg-dev_1.17.13 e2fslibs_1.42.12-1 e2fsprogs_1.42.12-1 fakeroot_1.20.1-1.1 file_1:5.19-1 findutils_4.4.2-9 flex_2.5.39-8 g++_4:4.9.1-3 g++-4.9_4.9.1-9 gcc_4:4.9.1-3 gcc-4.7-base_4.7.4-3 gcc-4.8-base_4.8.3-9 gcc-4.9_4.9.1-9 gcc-4.9-base_4.9.1-9 gettext_0.19.2-2 gettext-base_0.19.2-2 gnupg_1.4.18-4 gpgv_1.4.18-4 grep_2.20-2 groff-base_1.22.2-8 gzip_1.6-3 hostname_3.15 init_1.21 initscripts_2.88dsf-53.4 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1.1 libapt-pkg4.12_1.0.7 libasan1_4.9.1-9 libasprintf0c2_0.19.2-2 libatomic1_4.9.1-9 libattr1_1:2.4.47-1 libaudit-common_1:2.3.7-1 libaudit1_1:2.3.7-1 libbison-dev_2:3.0.2.dfsg-2 libblkid1_2.20.1-5.8 libbsd0_0.7.0-2 libbz2-1.0_1.0.6-7 libc-bin_2.19-10 libc-dev-bin_2.19-10 libc6_2.19-10 libc6-dev_2.19-10 libcap2_1:2.24-4 libcap2-bin_1:2.24-4 libcilkrts5_4.9.1-9 libclang-common-3.5-dev_1:3.5-1 libclang1-3.5_1:3.5-1 libcloog-isl4_0.18.2-1 libcomerr2_1.42.12-1 libcroco3_0.6.8-3 libcryptsetup4_2:1.6.6-1 libdb5.3_5.3.28-6 libdbus-1-3_1.8.6-2 libdebconfclient0_0.191 libdevmapper1.02.1_2:1.02.88-1 libdpkg-perl_1.17.13 libedit2_3.1-20140620-2 libfakeroot_1.20.1-1.1 libffi6_3.1-2 libfl-dev_2.5.39-8 libgc1c2_1:7.2d-6.3 libgcc-4.9-dev_4.9.1-9 libgcc1_1:4.9.1-9 libgcrypt11_1.5.4-3 libgcrypt20_1.6.2-3 libgdbm3_1.8.3-13 libglib2.0-0_2.40.0-5 libgmp10_2:6.0.0+dfsg-6 libgomp1_4.9.1-9 libgpg-error0_1.13-4 libisl10_0.12.2-2 libitm1_4.9.1-9 libkmod2_18-1 libllvm3.5_1:3.5-1 liblocale-gettext-perl_1.05-8+b1 liblsan0_4.9.1-9 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.19-1 libmount1_2.20.1-5.8 libmpc3_1.0.2-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140712-2 libncursesw5_5.9+20140712-2 libobjc-4.9-dev_4.9.1-9 libobjc4_4.9.1-9 libpam-modules_1.1.8-3.1 libpam-modules-bin_1.1.8-3.1 libpam-runtime_1.1.8-3.1 libpam0g_1.1.8-3.1 libpcre3_1:8.35-3 libpipeline1_1.3.0-1 libprocps3_1:3.3.9-7 libquadmath0_4.9.1-9 libreadline6_6.3-8 libselinux1_2.3-2 libsemanage-common_2.3-1 libsemanage1_2.3-1 libsepol1_2.3-2 libsigsegv2_2.10-4 libslang2_2.2.4-17 libss2_1.42.12-1 libstdc++-4.9-dev_4.9.1-9 libstdc++6_4.9.1-9 libsystemd-daemon0_208-8 libsystemd-journal0_208-8 libsystemd-login0_208-8 libtext-charwidth-perl_0.04-7+b3 libtext-iconv-perl_1.7-5+b2 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140712-2 libtsan0_4.9.1-9 libubsan0_4.9.1-9 libudev1_208-8 libunistring0_0.9.3-5.2 libusb-0.1-4_2:0.1.12-24 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.8 libwrap0_7.6.q-25 libxml2_2.9.1+dfsg1-4 linux-libc-dev_3.14.15-2 login_1:4.2-2+b1 lsb-base_4.1+Debian13 m4_1.4.17-4 make_4.0-8 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.8 multiarch-support_2.19-10 nano_2.2.6-3 ncurses-base_5.9+20140712-2 ncurses-bin_5.9+20140712-2 passwd_1:4.2-2+b1 patch_2.7.1-6 perl_5.20.0-6 perl-base_5.20.0-6 perl-modules_5.20.0-6 po-debconf_1.0.16+nmu3 procps_1:3.3.9-7 quilt_0.63-3 readline-common_6.3-8 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-gramophone2-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 systemd_208-8 systemd-sysv_208-8 sysv-rc_2.88dsf-53.4 sysvinit-utils_2.88dsf-53.4 tar_1.27.1-2 tzdata_2014g-1 udev_208-8 util-linux_2.20.1-5.8 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-2
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (gramophone2_0.8.13a-3.dsc)
+dpkg-source: info: extracting gramophone2 in gramophone2-0.8.13a
+dpkg-source: info: unpacking gramophone2_0.8.13a.orig.tar.gz
+dpkg-source: info: unpacking gramophone2_0.8.13a-3.debian.tar.xz
+dpkg-source: info: applying Makefile.diff
+dpkg-source: info: applying GRAMophone.y.diff
+dpkg-source: info: applying grammyVM.c.diff
+dpkg-source: info: applying clang_FTBFS.patch
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-5091de95-5f78-495e-9c10-5894159e006a
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SEAT=seat0
+XDG_SESSION_ID=1
+XDG_VTNR=7
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package gramophone2
+dpkg-buildpackage: source version 0.8.13a-3
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Francesco Namuri <franam@debian.org>
+ dpkg-source --before-build gramophone2-0.8.13a
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+test -x debian/rules
+rm -f debian/stamp-makefile-build debian/stamp-makefile-install
+make -C . -k clean
+make[1]: Entering directory '/«PKGBUILDDIR»'
+rm -f y* lex* GRAMophone.tab.* gramophone2
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+dh_clean 
+/usr/bin/make -f debian/rules reverse-config
+make[1]: Entering directory '/«PKGBUILDDIR»'
+make[1]: Nothing to be done for 'reverse-config'.
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+if [ -d "." ]; then \
+  cd . && QUILT_PATCHES=/«PKGBUILDDIR»/debian/patches quilt --quiltrc /dev/null pop -a -R || test $? = 2 ; \
+fi
+Removing patch clang_FTBFS.patch
+Restoring midifile.c
+
+Removing patch grammyVM.c.diff
+Restoring grammyVM.c
+
+Removing patch GRAMophone.y.diff
+Restoring GRAMophone.y
+
+Removing patch Makefile.diff
+Restoring Makefile
+
+No patches applied
+rm -rf ./.pc
+rm -f debian/stamp-patch*
+ dpkg-source -b gramophone2-0.8.13a
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: applying Makefile.diff
+dpkg-source: info: applying GRAMophone.y.diff
+dpkg-source: info: applying grammyVM.c.diff
+dpkg-source: info: applying clang_FTBFS.patch
+dpkg-source: info: building gramophone2 using existing ./gramophone2_0.8.13a.orig.tar.gz
+dpkg-source: info: building gramophone2 in gramophone2_0.8.13a-3.debian.tar.xz
+dpkg-source: info: building gramophone2 in gramophone2_0.8.13a-3.dsc
+ debian/rules build
+test -x debian/rules
+mkdir -p "."
+/usr/bin/make -f debian/rules reverse-config
+make[1]: Entering directory '/«PKGBUILDDIR»'
+make[1]: Nothing to be done for 'reverse-config'.
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+cd . && QUILT_PATCHES=/«PKGBUILDDIR»/debian/patches quilt --quiltrc /dev/null push -a || test $? = 2
+File series fully applied, ends at patch clang_FTBFS.patch
+touch debian/stamp-patched
+/usr/bin/make -f debian/rules update-config
+make[1]: Entering directory '/«PKGBUILDDIR»'
+make[1]: Nothing to be done for 'update-config'.
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+make -C . 
+make[1]: Entering directory '/«PKGBUILDDIR»'
+flex GRAMophone.l
+bison -d GRAMophone.y
+GRAMophone.y: warning: 22 shift/reduce conflicts [-Wconflicts-sr]
+GRAMophone.y: warning: 39 reduce/reduce conflicts [-Wconflicts-rr]
+gcc -D_FORTIFY_SOURCE=2 -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -O2 -lm -Wl,-z,relro -o gramophone2 GRAMophone.c\
+		grammyVM.c init.c midicode.c\
+		midifile.c expcode.c debug.c errors.c\
+		hash.c GRAMophone.tab.c
+GRAMophone.c:94:2: warning: implicit declaration of function 'usageError' is invalid in C99 [-Wimplicit-function-declaration]
+        usageError();
+        ^
+GRAMophone.c:98:3: warning: implicit declaration of function 'initGRAMophone' is invalid in C99 [-Wimplicit-function-declaration]
+  initGRAMophone();
+  ^
+GRAMophone.c:99:3: warning: implicit declaration of function 'yyparse' is invalid in C99 [-Wimplicit-function-declaration]
+  yyparse();
+  ^
+GRAMophone.c:102:59: warning: implicit declaration of function 'grammyvm' is invalid in C99 [-Wimplicit-function-declaration]
+  checkOption?(printf("the composition source is ok\n")):(grammyvm());
+                                                          ^
+4 warnings generated.
+grammyVM.c:521:122: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+        if(op_counter && players[playerCount]->productions[id_prod]->midicode[players[playerCount]->productions[id_prod]->cc][1]>=0) {
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^ ~
+grammyVM.c:562:12: warning: expression result unused [-Wunused-value]
+                                        note[1];
+                                        ~~~~ ~^
+grammyVM.c:657:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        while(code=players[playerCount]->productions[nt]->midicode[players[playerCount]->productions[nt]->cc][0]) {
+              ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+grammyVM.c:657:12: note: place parentheses around the assignment to silence this warning
+        while(code=players[playerCount]->productions[nt]->midicode[players[playerCount]->productions[nt]->cc][0]) {
+                  ^
+              (                                                                                                 )
+grammyVM.c:657:12: note: use '==' to turn this assignment into an equality comparison
+        while(code=players[playerCount]->productions[nt]->midicode[players[playerCount]->productions[nt]->cc][0]) {
+                  ^
+                  ==
+grammyVM.c:693:6: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                        else
+                                        ^
+grammyVM.c:711:11: warning: implicit declaration of function 'mf_write_midi_event' is invalid in C99 [-Wimplicit-function-declaration]
+                                                if(!mf_write_midi_event(prev_duration, note_on, players[playerCount]->local_params[CHN], data, 2)) {
+                                                    ^
+grammyVM.c:1057:12: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        while(code=players[playerCount]->productions[nt]->midicode[players[playerCount]->productions[nt]->cc][0]) {
+              ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+grammyVM.c:1057:12: note: place parentheses around the assignment to silence this warning
+        while(code=players[playerCount]->productions[nt]->midicode[players[playerCount]->productions[nt]->cc][0]) {
+                  ^
+              (                                                                                                 )
+grammyVM.c:1057:12: note: use '==' to turn this assignment into an equality comparison
+        while(code=players[playerCount]->productions[nt]->midicode[players[playerCount]->productions[nt]->cc][0]) {
+                  ^
+                  ==
+grammyVM.c:1093:6: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                        else
+                                        ^
+grammyVM.c:1114:25: warning: implicit declaration of function 'hash' is invalid in C99 [-Wimplicit-function-declaration]
+                                                buffer[counter++]=hash(string_buf, 0);
+                                                                  ^
+grammyVM.c:1465:14: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+                for(j=0; nt=supporto[j]; j++)
+                         ~~^~~~~~~~~~~~
+grammyVM.c:1465:14: note: place parentheses around the assignment to silence this warning
+                for(j=0; nt=supporto[j]; j++)
+                           ^
+                         (             )
+grammyVM.c:1465:14: note: use '==' to turn this assignment into an equality comparison
+                for(j=0; nt=supporto[j]; j++)
+                           ^
+                           ==
+grammyVM.c:1487:7: warning: implicit declaration of function 'mf_write_meta_event' is invalid in C99 [-Wimplicit-function-declaration]
+                if(!mf_write_meta_event(0, copyright_notice, copyright, strlen(copyright))) {
+                    ^
+grammyVM.c:1491:3: warning: implicit declaration of function 'mf_write_tempo' is invalid in C99 [-Wimplicit-function-declaration]
+                mf_write_tempo((long)60000000/tempo);
+                ^
+grammyVM.c:1514:5: warning: implicit declaration of function 'print_local_params' is invalid in C99 [-Wimplicit-function-declaration]
+                                print_local_params(playerCount);                //debug
+                                ^
+grammyVM.c:1548:4: warning: implicit declaration of function 'print_composition_info' is invalid in C99 [-Wimplicit-function-declaration]
+          print_composition_info();             //debug
+          ^
+grammyVM.c:1549:4: warning: implicit declaration of function 'print_global_params' is invalid in C99 [-Wimplicit-function-declaration]
+          print_global_params();                //debug
+          ^
+grammyVM.c:1556:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+15 warnings generated.
+init.c:66:5: warning: implicit declaration of function 'sntx_err' is invalid in C99 [-Wimplicit-function-declaration]
+    sntx_err(MEMORY_ERR, "");
+    ^
+1 warning generated.
+midicode.c:31:6: warning: implicit declaration of function 'hash' is invalid in C99 [-Wimplicit-function-declaration]
+  id=hash(idTemp, 0);
+     ^
+1 warning generated.
+midifile.c:98:3: warning: implicit declaration of function 'eputc' is invalid in C99 [-Wimplicit-function-declaration]
+                eputc((unsigned)(buffer & 0xff));
+                ^
+midifile.c:107:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+mfread()                /* The only non-static function in this file. */
+^~~~~~
+midifile.c:110:3: warning: implicit declaration of function 'mferror' is invalid in C99 [-Wimplicit-function-declaration]
+                mferror("mfread() called without setting Mf_getc"); 
+                ^
+midifile.c:112:2: warning: implicit declaration of function 'readheader' is invalid in C99 [-Wimplicit-function-declaration]
+        readheader();
+        ^
+midifile.c:113:10: warning: implicit declaration of function 'readtrack' is invalid in C99 [-Wimplicit-function-declaration]
+        while ( readtrack() )
+                ^
+midifile.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+midifile.c:118:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+midifile()
+^~~~~~~~
+midifile.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+midifile.c:124:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+readmt(s)               /* read through the "MThd" or "MTrk" header string */
+^~~~~~
+midifile.c:143:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+egetc()                 /* read a single character and abort on EOF */
+^~~~~
+midifile.c:154:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+readheader()            /* read a header chunk */
+^~~~~~~~~~
+midifile.c:172:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+midifile.c:175:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+readtrack()              /* read a track chunk */
+^~~~~~~~~
+midifile.c:227:4: warning: implicit declaration of function 'chanmessage' is invalid in C99 [-Wimplicit-function-declaration]
+                        chanmessage( status, c1, (needed>1) ? egetc() : 0 );
+                        ^
+midifile.c:237:4: warning: implicit declaration of function 'msginit' is invalid in C99 [-Wimplicit-function-declaration]
+                        msginit();
+                        ^
+midifile.c:240:5: warning: implicit declaration of function 'msgadd' is invalid in C99 [-Wimplicit-function-declaration]
+                                msgadd(egetc());
+                                ^
+midifile.c:242:4: warning: implicit declaration of function 'metaevent' is invalid in C99 [-Wimplicit-function-declaration]
+                        metaevent(type);
+                        ^
+midifile.c:255:5: warning: implicit declaration of function 'sysex' is invalid in C99 [-Wimplicit-function-declaration]
+                                sysex();
+                                ^
+midifile.c:272:22: warning: implicit declaration of function 'msgleng' is invalid in C99 [-Wimplicit-function-declaration]
+                                        (*Mf_arbitrary)(msgleng(),msg());
+                                                        ^
+midifile.c:280:4: warning: implicit declaration of function 'badbyte' is invalid in C99 [-Wimplicit-function-declaration]
+                        badbyte(c);
+                        ^
+midifile.c:290:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+badbyte(c)
+^~~~~~~
+midifile.c:297:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+midifile.c:300:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+metaevent(type)
+^~~~~~~~~
+midifile.c:357:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+midifile.c:360:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+sysex()
+^~~~~
+midifile.c:364:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+midifile.c:367:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+chanmessage(status,c1,c2)
+^~~~~~~~~~~
+midifile.c:403:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+midifile.c:439:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+to16bit(c1,c2)
+^
+midifile.c:458:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+read16bit()
+^
+midifile.c:467:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+mferror(s)
+^~~~~~~
+midifile.c:485:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+msginit()
+^~~~~~~
+midifile.c:488:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+midifile.c:497:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+msgleng()
+^~~~~~~
+midifile.c:503:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+msgadd(c)
+^~~~~~
+midifile.c:508:3: warning: implicit declaration of function 'biggermsg' is invalid in C99 [-Wimplicit-function-declaration]
+                biggermsg();
+                ^
+midifile.c:510:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+midifile.c:513:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+biggermsg()
+^~~~~~~~~
+midifile.c:537:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+midifile.c:850:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+eputc(c)                        
+^~~~~
+40 warnings generated.
+expcode.c:33:6: warning: implicit declaration of function 'hash' is invalid in C99 [-Wimplicit-function-declaration]
+  id=hash(idTemp, 0);
+     ^
+1 warning generated.
+hash.c:65:11: warning: implicit declaration of function 'sntx_err' is invalid in C99 [-Wimplicit-function-declaration]
+          sntx_err(ALREADY, "variable ");
+          ^
+hash.c:111:4: warning: implicit declaration of function 'gen_code' is invalid in C99 [-Wimplicit-function-declaration]
+                        gen_code(_PRD, ++players[playerCount]->productions[i]->numOr);
+                        ^
+hash.c:154:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+hash.c:167:10: warning: expression which evaluates to zero treated as a null pointer constant of type 'char *' [-Wnon-literal-null-conversion]
+  return '\0';
+         ^~~~
+hash.c:208:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+5 warnings generated.
+In file included from GRAMophone.y:40:
+GRAMophone.l:50:1: warning: implicit declaration of function 'sntx_err' is invalid in C99 [-Wimplicit-function-declaration]
+sntx_err(EOF, "");
+^
+GRAMophone.l:248:11: warning: implicit declaration of function 'check_id' is invalid in C99 [-Wimplicit-function-declaration]
+                                          if(check_id()==MACRO) {
+                                             ^
+GRAMophone.l:251:12: warning: implicit declaration of function 'dhSearch2' is invalid in C99 [-Wimplicit-function-declaration]
+                                                                                        dhSearch2(yytext),YY_BUF_SIZE));                                                        
+                                                                                        ^
+GRAMophone.l:250:42: warning: cast to 'char *' from smaller integer type 'int' [-Wint-to-pointer-cast]
+                                                yy_switch_to_buffer(yy_scan_buffer((char *)
+                                                                                   ^
+GRAMophone.l:321:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+yywrap() {
+^~~~~~
+GRAMophone.y:171:5: warning: implicit declaration of function 'gen_exp3_code' is invalid in C99 [-Wimplicit-function-declaration]
+                  gen_exp3_code(_NOT, (yyvsp[0]), ctrl[2]);
+                  ^
+GRAMophone.y:180:5: warning: implicit declaration of function 'gen_exp1_code' is invalid in C99 [-Wimplicit-function-declaration]
+                  gen_exp1_code(_AND, (yyvsp[-3]), ctrlTemp[--w], (yyvsp[0]), ctrl[2]);
+                  ^
+GRAMophone.y:256:7: warning: implicit declaration of function 'gen_exp4_code' is invalid in C99 [-Wimplicit-function-declaration]
+                    gen_exp4_code(_ENDEXP);
+                    ^
+GRAMophone.y:280:9: warning: implicit declaration of function 'gen_exp2_code' is invalid in C99 [-Wimplicit-function-declaration]
+                      gen_exp2_code(_MOV, (yyvsp[-2]), (yyvsp[0]), ctrl[2]);
+                      ^
+GRAMophone.y:285:47: warning: implicit declaration of function 'hash' is invalid in C99 [-Wimplicit-function-declaration]
+                      if((players[playerCount]->productions[hash(idTemp, 0)]->
+                                                            ^
+GRAMophone.y:454:40: warning: implicit declaration of function 'dhSearch' is invalid in C99 [-Wimplicit-function-declaration]
+                      if(!(noteVarTempBis=(pnote_var)dhSearch(yytext, 0)) && 
+                                                     ^
+GRAMophone.y:454:29: warning: cast to 'pnote_var' (aka 'struct note_vars_value *') from smaller integer type 'int' [-Wint-to-pointer-cast]
+                      if(!(noteVarTempBis=(pnote_var)dhSearch(yytext, 0)) && 
+                                          ^
+GRAMophone.y:455:29: warning: cast to 'pnote_var' (aka 'struct note_vars_value *') from smaller integer type 'int' [-Wint-to-pointer-cast]
+                         !(noteVarTempBis=(pnote_var)dhSearch(yytext, 1)))       
+                                          ^
+GRAMophone.y:459:29: warning: cast to 'pnote_var' (aka 'struct note_vars_value *') from smaller integer type 'int' [-Wint-to-pointer-cast]
+                      if(!(noteVarTempBis=(pnote_var)dhSearch(yytext, 1)))
+                                          ^
+GRAMophone.y:493:5: warning: implicit declaration of function 'back' is invalid in C99 [-Wimplicit-function-declaration]
+                  back();
+                  ^
+GRAMophone.y:507:5: warning: implicit declaration of function 'dhInsert' is invalid in C99 [-Wimplicit-function-declaration]
+                  dhInsert(NULL, idTemp, 2);
+                  ^
+GRAMophone.y:943:5: warning: implicit declaration of function 'init_local_flag' is invalid in C99 [-Wimplicit-function-declaration]
+                  init_local_flag();
+                  ^
+GRAMophone.y:946:5: warning: implicit declaration of function 'init_player' is invalid in C99 [-Wimplicit-function-declaration]
+                  init_player();  
+                  ^
+GRAMophone.y:1141:5: warning: implicit declaration of function 'gen_code' is invalid in C99 [-Wimplicit-function-declaration]
+                  gen_code(_CHK, ec);
+                  ^
+GRAMophone.y:1156:5: warning: implicit declaration of function 'gen_code2' is invalid in C99 [-Wimplicit-function-declaration]
+                  gen_code2(_ELSE);
+                  ^
+GRAMophone.y:1160:5: warning: implicit declaration of function 'code_update' is invalid in C99 [-Wimplicit-function-declaration]
+                  code_update(cc, ccCond);
+                  ^
+GRAMophone.y:1209:18: warning: implicit declaration of function 'gen_note_code' is invalid in C99 [-Wimplicit-function-declaration]
+                  (ctrl[4]<0)?(gen_note_code(_EMPTY, ctrl[4], ctrl[5], ctrl[6], ctrl[7], ctrl[8], ctrl[9], ctrl[10], ctrl[11], ctrl[12])):(gen_note_code(_NOTEON, ctrl[4], ctrl[5], ctrl[6], ctrl[7], ctrl[8], ctrl[9], ctrl[10], ctrl[11], ctrl[12]));           
+                               ^
+GRAMophone.y:1241:5: warning: implicit declaration of function 'gen_code3' is invalid in C99 [-Wimplicit-function-declaration]
+                  gen_code3(_REST, ctrl[9], ctrl[10]);            
+                  ^
+GRAMophone.y:1322:4: warning: implicit declaration of function 'gen_code4' is invalid in C99 [-Wimplicit-function-declaration]
+                        gen_code4(_PRNT, ctrl[5], ctrl[6], ctrl[3]);
+                        ^
+GRAMophone.tab.c:4522:7: warning: implicit declaration of function 'yyerror' is invalid in C99 [-Wimplicit-function-declaration]
+      yyerror (YY_("syntax error"));
+      ^
+GRAMophone.y:1061:5: warning: array index 6 is past the end of the array (which contains 6 elements) [-Warray-bounds]
+                  players[playerCount]->local_params[DEFMSB]=(yyvsp[0]);  
+                  ^                                  ~~~~~~
+./global.h:167:3: note: array 'local_params' declared here
+  int local_params[NUM_LOCAL_PARAMS];
+  ^
+GRAMophone.y:1677:15: warning: array index 6 is past the end of the array (which contains 6 elements) [-Warray-bounds]
+                    ctrl[5]=players[playerCount]->local_params[DEFMSB];
+                            ^                                  ~~~~~~
+./global.h:167:3: note: array 'local_params' declared here
+  int local_params[NUM_LOCAL_PARAMS];
+  ^
+GRAMophone.y:1978:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+GRAMophone.y:1982:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+29 warnings generated.
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+touch debian/stamp-makefile-build
+DEB_MAKE_CHECK_TARGET unset, not running checks
+ fakeroot debian/rules binary
+test -x debian/rules
+dh_testroot
+dh_clean -k 
+dh_clean: dh_clean -k is deprecated; use dh_prep instead
+dh_installdirs -A 
+mkdir -p "."
+DEB_MAKE_CHECK_TARGET unset, not running checks
+make -C . install DESTDIR=/«PKGBUILDDIR»/debian/tmp/ 
+make[1]: Entering directory '/«PKGBUILDDIR»'
+mkdir -p /«PKGBUILDDIR»/debian/tmp//bin
+install gramophone2 /«PKGBUILDDIR»/debian/tmp//bin
+install -d /«PKGBUILDDIR»/debian/tmp//share/man/man1
+install -m 0644 man/man1/gramophone2.1 /«PKGBUILDDIR»/debian/tmp//share/man/man1
+install -d /«PKGBUILDDIR»/debian/tmp//share/man/it/man1
+install -m 0644 man/it/man1/gramophone2.1 /«PKGBUILDDIR»/debian/tmp//share/man/it/man1	
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+touch debian/stamp-makefile-install
+Adding cdbs dependencies to debian/gramophone2.substvars
+dh_installdirs -pgramophone2 
+dh_installdocs -pgramophone2 ./TODO ./AUTHORS 
+dh_installexamples -pgramophone2 
+dh_installman -pgramophone2  
+dh_installinfo -pgramophone2  
+dh_installmenu -pgramophone2 
+dh_installcron -pgramophone2 
+dh_installinit -pgramophone2  
+dh_installdebconf -pgramophone2 
+dh_installemacsen -pgramophone2   
+dh_installcatalogs -pgramophone2 
+dh_installpam -pgramophone2 
+dh_installlogrotate -pgramophone2 
+dh_installlogcheck -pgramophone2 
+dh_installchangelogs -pgramophone2  
+dh_installudev -pgramophone2 
+dh_lintian -pgramophone2 
+dh_bugfiles -pgramophone2 
+dh_install -pgramophone2  
+dh_link -pgramophone2  
+dh_installmime -pgramophone2 
+dh_installgsettings -pgramophone2 
+dh_strip -pgramophone2  
+dh_compress -pgramophone2  
+dh_fixperms -pgramophone2  
+dh_makeshlibs -pgramophone2  
+dh_installdeb -pgramophone2 
+dh_perl -pgramophone2 
+dh_shlibdeps -pgramophone2    
+dh_gencontrol -pgramophone2  
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dh_md5sums -pgramophone2 
+dh_builddeb -pgramophone2 
+dpkg-deb: building package `gramophone2' in `../gramophone2_0.8.13a-3_amd64.deb'.
+ dpkg-genchanges  >../gramophone2_0.8.13a-3_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build gramophone2-0.8.13a
+dpkg-source: info: unapplying clang_FTBFS.patch
+dpkg-source: info: unapplying grammyVM.c.diff
+dpkg-source: info: unapplying GRAMophone.y.diff
+dpkg-source: info: unapplying Makefile.diff
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140906-1843
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+gramophone2_0.8.13a-3_amd64.changes:
+────────────────────────────────────
+
+Format: 1.8
+Date: Tue, 28 Jan 2014 23:28:11 +0100
+Source: gramophone2
+Binary: gramophone2
+Architecture: source amd64
+Version: 0.8.13a-3
+Distribution: sid
+Urgency: medium
+Maintainer: Francesco Namuri <franam@debian.org>
+Changed-By: Francesco Namuri <franam@debian.org>
+Description:
+ gramophone2 - GRAMophone II is an algorithmic music generator
+Closes: 733354
+Changes:
+ gramophone2 (0.8.13a-3) unstable; urgency=medium
+ .
+   * switched to quilt patch system, migrated all the existing patches.
+   * addes GRAMophone.y patch to fix a compilation issue. (Closes: #733354)
+   * debian/control: Standards-Version updated to 3.9.5, no changes needed.
+   * debian/rules: Added madro needed by quilt.
+   * debian/control: updated maintainer entry, changed to my debian email.
+Checksums-Sha1:
+ 241903b91d5885cef634f35d298e518987e3ccdf 915 gramophone2_0.8.13a-3.dsc
+ 3aa31d5e7481d3180890fb714ae335c80873690e 3060 gramophone2_0.8.13a-3.debian.tar.xz
+ 39267f0d12818db17d37a118960eb2d9aacf1b57 53596 gramophone2_0.8.13a-3_amd64.deb
+Checksums-Sha256:
+ 5138be9ad254e84c55305f90a157fdefab7ca55332e86b5db98f0b5b635e9703 915 gramophone2_0.8.13a-3.dsc
+ f3a8477b4f42a443df52ba5780a5dfc5a1daea2694cbc229ebdb7410aaf4fea3 3060 gramophone2_0.8.13a-3.debian.tar.xz
+ 19fb4d3a6837892a7914c3973af64efe9bf19e924b5501daab759743cd57121a 53596 gramophone2_0.8.13a-3_amd64.deb
+Files:
+ 2c43932a02b8b8c7fa856c490013818c 53596 sound optional gramophone2_0.8.13a-3_amd64.deb
+ 2b19cf900680961bcb11d5b39875e941 915 sound optional gramophone2_0.8.13a-3.dsc
+ e493c51f5822aaa6e44b44bd8f34a9f6 3060 sound optional gramophone2_0.8.13a-3.debian.tar.xz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+gramophone2_0.8.13a-3_amd64.deb
+───────────────────────────────
+
+ new debian package, version 2.0.
+ size 53596 bytes: control archive=1100 bytes.
+    1003 bytes,    20 lines      control              
+     544 bytes,     8 lines      md5sums              
+ Package: gramophone2
+ Version: 0.8.13a-3
+ Architecture: amd64
+ Maintainer: Francesco Namuri <franam@debian.org>
+ Installed-Size: 152
+ Depends: libc6 (>= 2.14)
+ Section: sound
+ Priority: optional
+ Homepage: http://gramophone2.sourceforge.net/
+ Description: GRAMophone II is an algorithmic music generator
+  GRAMophone is partly based on an idea of Jon McCormack’s, who invented
+  the idea of a virtual player (virtual musician). The player in question
+  is associated with a MIDI track, and interprets instructions telling it
+  what to do. Generally, they say play notes (send MIDI messages).
+  GRAMophone’s players together make up an orchestra, which plays a
+  composition. Any number of players can play a composition, but in practice
+  the hardware used might impose an upper limit. In general every player
+  plays an instrument and each has a different set of  grammar rules.
+  An individual player is characterised by a set of parameters which are
+  shared by the whole orchestra and/or a personal parameter set.
+
+drwxr-xr-x root/root         0 2014-09-06 18:42 ./
+drwxr-xr-x root/root         0 2014-09-06 18:43 ./usr/
+drwxr-xr-x root/root         0 2014-09-06 18:43 ./usr/bin/
+-rwxr-xr-x root/root     92488 2014-09-06 18:43 ./usr/bin/gramophone2
+drwxr-xr-x root/root         0 2014-09-06 18:43 ./usr/share/
+drwxr-xr-x root/root         0 2014-09-06 18:42 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-09-06 18:42 ./usr/share/man/it/
+drwxr-xr-x root/root         0 2014-09-06 18:43 ./usr/share/man/it/man1/
+-rw-r--r-- root/root      7582 2014-09-06 18:42 ./usr/share/man/it/man1/gramophone2.1.gz
+drwxr-xr-x root/root         0 2014-09-06 18:43 ./usr/share/man/man1/
+-rw-r--r-- root/root      7008 2014-09-06 18:42 ./usr/share/man/man1/gramophone2.1.gz
+drwxr-xr-x root/root         0 2014-09-06 18:42 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-09-06 18:43 ./usr/share/doc/gramophone2/
+-rw-r--r-- root/root       183 2008-02-23 07:38 ./usr/share/doc/gramophone2/TODO
+-rw-r--r-- root/root       286 2008-02-23 07:38 ./usr/share/doc/gramophone2/FAQ
+-rw-r--r-- root/root       851 2014-01-28 23:35 ./usr/share/doc/gramophone2/changelog.Debian.gz
+-rw-r--r-- root/root        55 2008-02-23 07:38 ./usr/share/doc/gramophone2/AUTHORS
+-rw-r--r-- root/root      1129 2014-01-28 23:14 ./usr/share/doc/gramophone2/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 1376
+Build-Time: 8
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 13
+Job: gramophone2_0.8.13a-3.dsc
+Machine Architecture: amd64
+Package: gramophone2
+Package-Time: 25
+Source-Version: 0.8.13a-3
+Space: 1376
+Status: successful
+Version: 0.8.13a-3
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140906-1843
+Build needed 00:00:25, 1376k disc space

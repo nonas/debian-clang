@@ -1,0 +1,14 @@
+Description: fix FTBFS with clang [-Wreturn-type]
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2014-09-06
+--- a/midifile.c
++++ b/midifile.c
+@@ -156,7 +156,7 @@
+ 	int format, ntrks, division;
+ 
+ 	if ( readmt("MThd") == EOF )
+-		return;
++		return -1;
+ 
+ 	Mf_toberead = read32bit();
+ 	format = read16bit();
