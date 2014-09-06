@@ -1,0 +1,79 @@
+--- grcm-0.1.6.orig/src/callbacks.c
++++ grcm-0.1.6/src/callbacks.c
+@@ -131,7 +131,7 @@
+ 					(_("There was a problem saving."),
+ 					 ConnectionsWindow);
+ 			gtk_widget_hide (ConnectionsWindow);
+-			return;
++			return FALSE;
+ 		}
+ 		case 1:
+ 		{
+@@ -141,7 +141,7 @@
+ 					 ConnectionsWindow);
+ 			rcm_update_connections_window_list ();
+ 			gtk_widget_hide (GTK_WIDGET (ConnectionsWindow));
+-			return;
++			return FALSE;
+ 		}
+ 		}
+ 	}
+@@ -188,7 +188,7 @@
+ 					(_("There was a problem saving."),
+ 					 ConnectionTypesWindow);
+ 			gtk_widget_hide (ConnectionTypesWindow);
+-			return;
++			return FALSE;
+ 		}
+ 		case 1:
+ 		{
+@@ -198,7 +198,7 @@
+ 					 ConnectionTypesWindow);
+ 			rcm_update_connectiontypes_window_list ();
+ 			gtk_widget_hide (ConnectionTypesWindow);
+-			return;
++			return FALSE;
+ 		}
+ 		}
+ 	}
+@@ -828,7 +828,7 @@
+ 	if (event->type == GDK_2BUTTON_PRESS && event->button == 1)
+ 	{
+ 		icon_list = lookup_widget (MainWindow, "MainList");
+-		g_return_if_fail (icon_list != NULL);
++		g_return_val_if_fail (icon_list != NULL, TRUE);
+ 		l = gnome_icon_list_get_selection (GNOME_ICON_LIST
+ 						   (icon_list));
+ 
+@@ -836,7 +836,7 @@
+ 		{
+ 			i = GPOINTER_TO_INT (l->data);
+ 			connection = g_slist_nth_data (ConnectionsSList, i);
+-			g_return_if_fail (connection != NULL);
++			g_return_val_if_fail (connection != NULL, TRUE);
+ 			rcm_launch_connection_by_name (connection->Name);
+ 		}
+ 	}
+@@ -844,7 +844,7 @@
+ 	{
+ 		popupmenu = create_MainWindowPopupMenu();
+ 		icon_list = lookup_widget (MainWindow, "MainList");
+-		g_return_if_fail (icon_list != NULL);
++		g_return_val_if_fail (icon_list != NULL, TRUE);
+ 		l = gnome_icon_list_get_selection (GNOME_ICON_LIST
+ 						   (icon_list));
+ 
+--- grcm-0.1.6.orig/src/connections.c
++++ grcm-0.1.6/src/connections.c
+@@ -455,10 +455,10 @@
+ 
+ 	connection =
+ 		rcm_find_connection_by_name_in_list (name, ConnectionsSList);
+-	g_return_if_fail (connection != NULL);
++	g_return_val_if_fail (connection != NULL, TRUE);
+ 
+ 	type = g_slist_nth_data (ConnectionTypesSList, connection->Type);
+-	g_return_if_fail (type != NULL);
++	g_return_val_if_fail (type != NULL, TRUE);
+ 
+ 	memset (buff, 0, MAX_BUFFER_LENGTH);
