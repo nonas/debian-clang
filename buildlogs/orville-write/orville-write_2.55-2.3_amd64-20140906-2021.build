@@ -1,0 +1,728 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ orville-write 2.55-2.3 (amd64)                             06 Sep 2014 20:21 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: orville-write
+Version: 2.55-2.3
+Source Version: 2.55-2.3
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/orville-write-nychOM/orville-write-2.55' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/orville-write-nychOM' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-6ed2a020-ebfe-4912-ba05-f65ad72bf538' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+orville-write_2.55-2.3.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-FuxP6_/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 23 not upgraded.
+Need to get 0 B/822 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11952 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, init, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.9.1), g++ (>= 4:4.9.1), make, dpkg-dev (>= 1.17.11), debhelper (>= 7)
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, init, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.9.1), g++ (>= 4:4.9.1), make, dpkg-dev (>= 1.17.11), debhelper (>= 7)
+dpkg-deb: building package `sbuild-build-depends-orville-write-dummy' in `/«BUILDDIR»/resolver-rKxraU/apt_archive/sbuild-build-depends-orville-write-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install orville-write build dependencies (apt-based resolver)                │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpipeline1 libunistring0
+  libxml2 man-db po-debconf
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff less www-browser
+  libmail-box-perl
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper file gettext gettext-base groff-base intltool-debian
+  libasprintf0c2 libcroco3 libglib2.0-0 libmagic1 libpipeline1 libunistring0
+  libxml2 man-db po-debconf sbuild-build-depends-orville-write-dummy
+0 upgraded, 17 newly installed, 0 to remove and 23 not upgraded.
+Need to get 8793 kB/8794 kB of archives.
+After this operation, 26.9 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-8 [1183 kB]
+Get:3 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://http.debian.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.19.2-2 [30.8 kB]
+Get:6 http://http.debian.net/debian/ sid/main libmagic1 amd64 1:5.19-1 [237 kB]
+Get:7 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-4 [797 kB]
+Get:8 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-5 [2421 kB]
+Get:9 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-3 [135 kB]
+Get:10 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5.2 [283 kB]
+Get:11 http://http.debian.net/debian/ sid/main file amd64 1:5.19-1 [58.0 kB]
+Get:12 http://http.debian.net/debian/ sid/main gettext-base amd64 0.19.2-2 [120 kB]
+Get:13 http://http.debian.net/debian/ sid/main gettext amd64 0.19.2-2 [1237 kB]
+Get:14 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:15 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu3 [220 kB]
+Get:16 http://http.debian.net/debian/ sid/main debhelper all 9.20140817 [814 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 8793 kB in 0s (57.2 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11952 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-8_amd64.deb ...
+Unpacking groff-base (1.22.2-8) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.19.2-2_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.19.2-2) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.19-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.19-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-4_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-4) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-3_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-3) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5.2_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5.2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.19-1_amd64.deb ...
+Unpacking file (1:5.19-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.19.2-2_amd64.deb ...
+Unpacking gettext-base (0.19.2-2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.19.2-2_amd64.deb ...
+Unpacking gettext (0.19.2-2) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu3_all.deb ...
+Unpacking po-debconf (1.0.16+nmu3) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140817_all.deb ...
+Unpacking debhelper (9.20140817) ...
+Selecting previously unselected package sbuild-build-depends-orville-write-dummy.
+Preparing to unpack .../sbuild-build-depends-orville-write-dummy.deb ...
+Unpacking sbuild-build-depends-orville-write-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-8) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.19.2-2) ...
+Setting up libmagic1:amd64 (1:5.19-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-4) ...
+Setting up libglib2.0-0:amd64 (2.40.0-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-3) ...
+Setting up libunistring0:amd64 (0.9.3-5.2) ...
+Setting up file (1:5.19-1) ...
+Setting up gettext-base (0.19.2-2) ...
+Setting up gettext (0.19.2-2) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu3) ...
+Setting up debhelper (9.20140817) ...
+Setting up sbuild-build-depends-orville-write-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.19-10) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.14-2-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140903-1 dpkg-dev_1.17.13 g++-4.9_4.9.1-9 gcc-4.9_4.9.1-9 libc6-dev_2.19-10 libstdc++-4.9-dev_4.9.1-9 libstdc++6_4.9.1-9 linux-libc-dev_3.14.15-2
+Package versions: acl_2.2.52-1.1 adduser_3.113+nmu3 apt_1.0.7 base-files_7.5 base-passwd_3.5.36 bash_4.3-9 binutils_2.24.51.20140903-1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.8 build-essential_11.7 bzip2_1.0.6-7 clang-3.5_1:3.5-1 coreutils_8.23-2 cpp_4:4.9.1-3 cpp-4.9_4.9.1-9 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-2 debhelper_9.20140817 debian-archive-keyring_2014.1 debianutils_4.4 diffutils_1:3.3-1 dmsetup_2:1.02.88-1 dpkg_1.17.13 dpkg-dev_1.17.13 e2fslibs_1.42.12-1 e2fsprogs_1.42.12-1 fakeroot_1.20.1-1.1 file_1:5.19-1 findutils_4.4.2-9 g++_4:4.9.1-3 g++-4.9_4.9.1-9 gcc_4:4.9.1-3 gcc-4.7-base_4.7.4-3 gcc-4.8-base_4.8.3-9 gcc-4.9_4.9.1-9 gcc-4.9-base_4.9.1-9 gettext_0.19.2-2 gettext-base_0.19.2-2 gnupg_1.4.18-4 gpgv_1.4.18-4 grep_2.20-2 groff-base_1.22.2-8 gzip_1.6-3 hostname_3.15 init_1.21 initscripts_2.88dsf-53.4 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1.1 libapt-pkg4.12_1.0.7 libasan1_4.9.1-9 libasprintf0c2_0.19.2-2 libatomic1_4.9.1-9 libattr1_1:2.4.47-1 libaudit-common_1:2.3.7-1 libaudit1_1:2.3.7-1 libblkid1_2.20.1-5.8 libbsd0_0.7.0-2 libbz2-1.0_1.0.6-7 libc-bin_2.19-10 libc-dev-bin_2.19-10 libc6_2.19-10 libc6-dev_2.19-10 libcap2_1:2.24-4 libcap2-bin_1:2.24-4 libcilkrts5_4.9.1-9 libclang-common-3.5-dev_1:3.5-1 libclang1-3.5_1:3.5-1 libcloog-isl4_0.18.2-1 libcomerr2_1.42.12-1 libcroco3_0.6.8-3 libcryptsetup4_2:1.6.6-1 libdb5.3_5.3.28-6 libdbus-1-3_1.8.6-2 libdebconfclient0_0.191 libdevmapper1.02.1_2:1.02.88-1 libdpkg-perl_1.17.13 libedit2_3.1-20140620-2 libfakeroot_1.20.1-1.1 libffi6_3.1-2 libgc1c2_1:7.2d-6.3 libgcc-4.9-dev_4.9.1-9 libgcc1_1:4.9.1-9 libgcrypt11_1.5.4-3 libgcrypt20_1.6.2-3 libgdbm3_1.8.3-13 libglib2.0-0_2.40.0-5 libgmp10_2:6.0.0+dfsg-6 libgomp1_4.9.1-9 libgpg-error0_1.13-4 libisl10_0.12.2-2 libitm1_4.9.1-9 libkmod2_18-1 libllvm3.5_1:3.5-1 liblocale-gettext-perl_1.05-8+b1 liblsan0_4.9.1-9 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.19-1 libmount1_2.20.1-5.8 libmpc3_1.0.2-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140712-2 libncursesw5_5.9+20140712-2 libobjc-4.9-dev_4.9.1-9 libobjc4_4.9.1-9 libpam-modules_1.1.8-3.1 libpam-modules-bin_1.1.8-3.1 libpam-runtime_1.1.8-3.1 libpam0g_1.1.8-3.1 libpcre3_1:8.35-3 libpipeline1_1.3.0-1 libprocps3_1:3.3.9-7 libquadmath0_4.9.1-9 libreadline6_6.3-8 libselinux1_2.3-2 libsemanage-common_2.3-1 libsemanage1_2.3-1 libsepol1_2.3-2 libslang2_2.2.4-17 libss2_1.42.12-1 libstdc++-4.9-dev_4.9.1-9 libstdc++6_4.9.1-9 libsystemd-daemon0_208-8 libsystemd-journal0_208-8 libsystemd-login0_208-8 libtext-charwidth-perl_0.04-7+b3 libtext-iconv-perl_1.7-5+b2 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo5_5.9+20140712-2 libtsan0_4.9.1-9 libubsan0_4.9.1-9 libudev1_208-8 libunistring0_0.9.3-5.2 libusb-0.1-4_2:0.1.12-24 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.8 libwrap0_7.6.q-25 libxml2_2.9.1+dfsg1-4 linux-libc-dev_3.14.15-2 login_1:4.2-2+b1 lsb-base_4.1+Debian13 make_4.0-8 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.8 multiarch-support_2.19-10 nano_2.2.6-3 ncurses-base_5.9+20140712-2 ncurses-bin_5.9+20140712-2 passwd_1:4.2-2+b1 patch_2.7.1-6 perl_5.20.0-6 perl-base_5.20.0-6 perl-modules_5.20.0-6 po-debconf_1.0.16+nmu3 procps_1:3.3.9-7 readline-common_6.3-8 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-orville-write-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 systemd_208-8 systemd-sysv_208-8 sysv-rc_2.88dsf-53.4 sysvinit-utils_2.88dsf-53.4 tar_1.27.1-2 tzdata_2014g-1 udev_208-8 util-linux_2.20.1-5.8 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-2
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (orville-write_2.55-2.3.dsc)
+dpkg-source: info: extracting orville-write in orville-write-2.55
+dpkg-source: info: unpacking orville-write_2.55.orig.tar.gz
+dpkg-source: info: applying orville-write_2.55-2.3.diff.gz
+dpkg-source: info: upstream files that have been modified: 
+ orville-write-2.55/Makefile.in
+ orville-write-2.55/chat.1
+ orville-write-2.55/config.guess
+ orville-write-2.55/config.sub
+ orville-write-2.55/configure
+ orville-write-2.55/configure.in
+ orville-write-2.55/mesg.1
+ orville-write-2.55/mesg.c
+ orville-write-2.55/ojot.1
+ orville-write-2.55/orville.conf
+ orville-write-2.55/orville.h
+ orville-write-2.55/tel.1
+ orville-write-2.55/telegram.1
+ orville-write-2.55/write.1
+ orville-write-2.55/wrt_him.c
+ orville-write-2.55/wrt_hist.c
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-6ed2a020-ebfe-4912-ba05-f65ad72bf538
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SEAT=seat0
+XDG_SESSION_ID=1
+XDG_VTNR=7
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package orville-write
+dpkg-buildpackage: source version 2.55-2.3
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Christian Perrier <bubulle@debian.org>
+ dpkg-source --before-build orville-write-2.55
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp 
+# Add here commands to clean up after the build process.
+[ ! -f Makefile ] || /usr/bin/make distclean
+rm -f config.log
+dh_clean
+ dpkg-source -b orville-write-2.55
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building orville-write using existing orville-write_2.55.orig.tar.gz
+dpkg-source: info: building orville-write in orville-write_2.55-2.3.diff.gz
+dpkg-source: warning: ignoring deletion of file config.log, use --include-removal to override
+dpkg-source: warning: the diff modifies the following upstream files: 
+ Makefile.in
+ chat.1
+ config.guess
+ config.sub
+ configure
+ configure.in
+ mesg.1
+ mesg.c
+ ojot.1
+ orville.conf
+ orville.h
+ tel.1
+ telegram.1
+ write.1
+ wrt_him.c
+ wrt_hist.c
+dpkg-source: info: use the '3.0 (quilt)' format to have separate and documented changes to upstream files, see dpkg-source(1)
+dpkg-source: info: building orville-write in orville-write_2.55-2.3.dsc
+ debian/rules build
+dh_testdir
+# Add here commands to configure the package.
+./configure --host=x86_64-linux-gnu --build=x86_64-linux-gnu --prefix=/usr --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var/lib/orville-write
+creating cache ./config.cache
+checking for gcc... gcc
+checking whether the C compiler (gcc  ) works... yes
+checking whether the C compiler (gcc  ) is a cross-compiler... no
+checking whether we are using GNU C... yes
+checking whether gcc accepts -g... yes
+checking for a BSD compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for crypt in -lcrypt... yes
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for fcntl.h... yes
+checking for paths.h... yes
+checking for sys/time.h... yes
+checking for unistd.h... yes
+checking for crypt.h... yes
+checking for termios.h... yes
+checking for working const... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for tm_zone in struct tm... yes
+checking whether gcc needs -traditional... no
+checking return type of signal handlers... void
+checking for random... yes
+checking for getutent... yes
+checking for strchr... yes
+checking for getuserpw... no
+checking for library containing getspnam... none required
+checking for library containing kg_pwhash... no
+checking for library containing pw_encrpyt... no
+Configuration file will be in /etc/orville.conf
+updating cache ./config.cache
+creating ./config.status
+creating Makefile
+creating config.h
+dh_testdir
+# Add here commands to compile the package.
+/usr/bin/make
+make[1]: Entering directory '/«PKGBUILDDIR»'
+gcc -g -O2   -c -o wrt_main.o wrt_main.c
+wrt_main.c:75:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(int argc, char **argv)
+^~~~
+wrt_main.c:127:9: warning: implicit declaration of function 'getdevtty' is invalid in C99 [-Wimplicit-function-declaration]
+    if (getdevtty()) done(1);
+        ^
+wrt_main.c:160:29: warning: flag '0' results in undefined behavior with 's' conversion specifier [-Wformat]
+            printf("%s is running %0.*s\n",hisname,
+                                  ~^~~~
+wrt_main.c:163:33: warning: flag '0' results in undefined behavior with 's' conversion specifier [-Wformat]
+            printf("%s is now writing %0.*s.\n",
+                                      ~^~~~
+4 warnings generated.
+gcc -g -O2   -c -o wrt_type.o wrt_type.c
+gcc -g -O2   -c -o wrt_him.o wrt_him.c
+wrt_him.c:46:13: warning: incompatible redeclaration of library function 'log' [-Wincompatible-library-redeclaration]
+extern void log(char *outcome);
+            ^
+wrt_him.c:46:13: note: 'log' is a builtin with type 'double (double)'
+wrt_him.c:145:3: warning: implicit declaration of function 'wrtlog' is invalid in C99 [-Wimplicit-function-declaration]
+                wrtlog("FAIL: no previous");
+                ^
+wrt_him.c:447:20: warning: implicit declaration of function 'type_help' is invalid in C99 [-Wimplicit-function-declaration]
+            if (f_nohelp) type_help(f_nohelp);
+                          ^
+wrt_him.c:546:13: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+        if (am_root= !strcmp(cpass,spwd->sp_pwdp))
+            ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wrt_him.c:546:13: note: place parentheses around the assignment to silence this warning
+        if (am_root= !strcmp(cpass,spwd->sp_pwdp))
+                   ^
+            (                                    )
+wrt_him.c:546:13: note: use '==' to turn this assignment into an equality comparison
+        if (am_root= !strcmp(cpass,spwd->sp_pwdp))
+                   ^
+                   ==
+wrt_him.c:565:16: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+    if (am_root= (getuid() == 0))
+        ~~~~~~~^~~~~~~~~~~~~~~~~
+wrt_him.c:565:16: note: place parentheses around the assignment to silence this warning
+    if (am_root= (getuid() == 0))
+               ^
+        (                       )
+wrt_him.c:565:16: note: use '==' to turn this assignment into an equality comparison
+    if (am_root= (getuid() == 0))
+               ^
+               ==
+5 warnings generated.
+gcc -g -O2   -c -o wrt_me.o wrt_me.c
+gcc -g -O2   -c -o wrt_opt.o wrt_opt.c
+wrt_opt.c:104:5: warning: implicit declaration of function 'readconfig' is invalid in C99 [-Wimplicit-function-declaration]
+    readconfig(set_dflt);
+    ^
+1 warning generated.
+gcc -g -O2   -c -o wrt_sig.o wrt_sig.c
+wrt_sig.c:83:8: warning: 'sigblock' is deprecated [-Wdeprecated-declarations]
+        mask= sigblock(sigmask(SIGTSTP));
+              ^
+/usr/include/signal.h:189:12: note: 'sigblock' has been explicitly marked deprecated here
+extern int sigblock (int __mask) __THROW __attribute_deprecated__;
+           ^
+wrt_sig.c:91:2: warning: 'sigsetmask' is deprecated [-Wdeprecated-declarations]
+        sigsetmask(0);
+        ^
+/usr/include/signal.h:192:12: note: 'sigsetmask' has been explicitly marked deprecated here
+extern int sigsetmask (int __mask) __THROW __attribute_deprecated__;
+           ^
+wrt_sig.c:96:2: warning: 'sigsetmask' is deprecated [-Wdeprecated-declarations]
+        sigsetmask(mask);
+        ^
+/usr/include/signal.h:192:12: note: 'sigsetmask' has been explicitly marked deprecated here
+extern int sigsetmask (int __mask) __THROW __attribute_deprecated__;
+           ^
+wrt_sig.c:101:2: warning: implicit declaration of function 'update_modes' is invalid in C99 [-Wimplicit-function-declaration]
+        update_modes();
+        ^
+wrt_sig.c:144:6: warning: implicit declaration of function 'sendchar' is invalid in C99 [-Wimplicit-function-declaration]
+                                        sendchar(ch);
+                                        ^
+wrt_sig.c:185:17: warning: implicit declaration of function 'wait' is invalid in C99 [-Wimplicit-function-declaration]
+        while ((wpid = wait((int *)0)) != cpid && wpid != -1)
+                       ^
+6 warnings generated.
+gcc -g -O2   -c -o wrt_tty.o wrt_tty.c
+wrt_tty.c:109:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+static tfg;
+~~~~~~ ^
+1 warning generated.
+gcc -g -O2   -c -o wrt_hist.o wrt_hist.c
+gcc -g -O2   -c -o lib_common.o lib_common.c
+lib_common.c:92:15: warning: more '%' conversions than data arguments [-Wformat]
+        printf("%s: Not on a valid tty\n");
+                ~^
+1 warning generated.
+gcc -g -O2   -c -o getutent.o getutent.c
+gcc -g -O2 -o write wrt_main.o wrt_type.o wrt_him.o wrt_me.o wrt_opt.o wrt_sig.o wrt_tty.o wrt_hist.o lib_common.o getutent.o -lcrypt 
+gcc -g -O2   -c -o mesg.o mesg.c
+mesg.c:95:9: warning: implicit declaration of function 'getdevtty' is invalid in C99 [-Wimplicit-function-declaration]
+    if (getdevtty()) exit(1);
+        ^
+mesg.c:100:5: warning: implicit declaration of function 'readconfig' is invalid in C99 [-Wimplicit-function-declaration]
+    readconfig(NULL);
+    ^
+mesg.c:606:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+mesg.c:711:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+4 warnings generated.
+gcc  -o mesg mesg.o lib_common.o getutent.o
+gcc -g -O2   -c -o amin.o amin.c
+amin.c:53:5: warning: implicit declaration of function 'readconfig' is invalid in C99 [-Wimplicit-function-declaration]
+    readconfig(NULL);
+    ^
+amin.c:219:9: warning: implicit declaration of function 'getdevtty' is invalid in C99 [-Wimplicit-function-declaration]
+    if (getdevtty()) exit(1);
+        ^
+amin.c:306:22: warning: '/*' within block comment [-Wcomment]
+        /* close(wstream);  /* Don't need this, since set close-on-exec */
+                            ^
+amin.c:344:8: warning: 'sigblock' is deprecated [-Wdeprecated-declarations]
+        mask= sigblock(sigmask(SIGTSTP));
+              ^
+/usr/include/signal.h:189:12: note: 'sigblock' has been explicitly marked deprecated here
+extern int sigblock (int __mask) __THROW __attribute_deprecated__;
+           ^
+amin.c:358:2: warning: 'sigsetmask' is deprecated [-Wdeprecated-declarations]
+        sigsetmask(0);
+        ^
+/usr/include/signal.h:192:12: note: 'sigsetmask' has been explicitly marked deprecated here
+extern int sigsetmask (int __mask) __THROW __attribute_deprecated__;
+           ^
+amin.c:363:2: warning: 'sigsetmask' is deprecated [-Wdeprecated-declarations]
+        sigsetmask(mask);
+        ^
+/usr/include/signal.h:192:12: note: 'sigsetmask' has been explicitly marked deprecated here
+extern int sigsetmask (int __mask) __THROW __attribute_deprecated__;
+           ^
+6 warnings generated.
+gcc  -o amin amin.o lib_common.o getutent.o
+gcc -g -O2   -c -o huh.o huh.c
+huh.c:49:9: warning: implicit declaration of function 'getdevtty' is invalid in C99 [-Wimplicit-function-declaration]
+    if (getdevtty()) exit(1);
+        ^
+huh.c:75:5: warning: implicit declaration of function 'readconfig' is invalid in C99 [-Wimplicit-function-declaration]
+    readconfig(NULL);
+    ^
+2 warnings generated.
+gcc  -o huh huh.o lib_common.o getutent.o
+gcc -g -O2   -c -o helpers.o helpers.c
+helpers.c:70:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(int argc, char **argv)
+^~~~
+helpers.c:84:5: warning: implicit declaration of function 'readconfig' is invalid in C99 [-Wimplicit-function-declaration]
+    readconfig(NULL);
+    ^
+2 warnings generated.
+gcc  -o helpers helpers.o getutent.o lib_common.o
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+touch build-stamp
+ fakeroot debian/rules binary
+dh_testdir
+dh_testroot
+dh_prep
+dh_installdirs
+# Add here commands to install the package into debian/orville-write.
+/usr/bin/make install prefix=/«PKGBUILDDIR»/debian/orville-write/usr sysconfdir=/«PKGBUILDDIR»/debian/orville-write/etc localstatedir=/«PKGBUILDDIR»/debian/orville-write/var/lib/orville-write
+make[1]: Entering directory '/«PKGBUILDDIR»'
+./install-sh -d /«PKGBUILDDIR»/debian/orville-write/usr/bin
+/usr/bin/install -c -o root -g tty -m 6711 write /«PKGBUILDDIR»/debian/orville-write/usr/bin
+(cd /«PKGBUILDDIR»/debian/orville-write/usr/bin; ln -s write ojot; ln -s write tel; ln -s write telegram)
+/usr/bin/install -c -o root -m 4711 mesg /«PKGBUILDDIR»/debian/orville-write/usr/bin
+/usr/bin/install -c -o root -m 4711 amin /«PKGBUILDDIR»/debian/orville-write/usr/bin
+/usr/bin/install -c -o root -m 4711 huh /«PKGBUILDDIR»/debian/orville-write/usr/bin
+/usr/bin/install -c -m 4711 helpers /«PKGBUILDDIR»/debian/orville-write/usr/bin
+./install-sh -d /«PKGBUILDDIR»/debian/orville-write/etc
+/usr/bin/install -c -m 644 orville.conf /«PKGBUILDDIR»/debian/orville-write/etc
+rm -f /«PKGBUILDDIR»/debian/orville-write/var/lib/orville-write/wrttmp
+touch /«PKGBUILDDIR»/debian/orville-write/var/lib/orville-write/wrttmp
+chown root /«PKGBUILDDIR»/debian/orville-write/var/lib/orville-write/wrttmp
+chmod 600 /«PKGBUILDDIR»/debian/orville-write/var/lib/orville-write/wrttmp
+rm -f /«PKGBUILDDIR»/debian/orville-write/var/lib/orville-write/wrthist
+touch /«PKGBUILDDIR»/debian/orville-write/var/lib/orville-write/wrthist
+chmod 600 /«PKGBUILDDIR»/debian/orville-write/var/lib/orville-write/wrthist
+./install-sh -d /«PKGBUILDDIR»/debian/orville-write/usr/share/man/man1
+/usr/bin/install -c -m 644 write.1 /«PKGBUILDDIR»/debian/orville-write/usr/share/man/man1
+/usr/bin/install -c -m 644 mesg.1 /«PKGBUILDDIR»/debian/orville-write/usr/share/man/man1
+/usr/bin/install -c -m 644 amin.1 /«PKGBUILDDIR»/debian/orville-write/usr/share/man/man1
+/usr/bin/install -c -m 644 huh.1 /«PKGBUILDDIR»/debian/orville-write/usr/share/man/man1
+/usr/bin/install -c -m 644 helpers.1 /«PKGBUILDDIR»/debian/orville-write/usr/share/man/man1
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+mv /«PKGBUILDDIR»/debian/orville-write/usr/bin/write \
+/«PKGBUILDDIR»/debian/orville-write/usr/bin/orville-write
+mv /«PKGBUILDDIR»/debian/orville-write/usr/share/man/man1/write.1 \
+/«PKGBUILDDIR»/debian/orville-write/usr/share/man/man1/orville-write.1
+install -m 755 -d /«PKGBUILDDIR»/debian/orville-write/usr/share/lintian/overrides
+install -m 644 debian/lintian.overrides /«PKGBUILDDIR»/debian/orville-write/usr/share/lintian/overrides/orville-write
+dh_testdir
+dh_testroot
+dh_installchangelogs CHANGES
+dh_installdocs
+dh_installdebconf	
+dh_installlogrotate
+dh_installman
+dh_link
+dh_strip
+dh_compress
+dh_fixperms
+cd /«PKGBUILDDIR»/debian/orville-write/usr/bin && \
+	chown root:tty orville-write mesg huh helpers amin; \
+	chmod 6755 orville-write mesg; \
+	chmod 2755 amin huh helpers
+# These aren't supposed to be readable
+cd /«PKGBUILDDIR»/debian/orville-write/var/lib/orville-write && \
+	chown root:tty wrthist wrttmp; chmod 0660 wrthist wrttmp
+dh_installdeb
+dh_shlibdeps
+dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package `orville-write' in `../orville-write_2.55-2.3_amd64.deb'.
+ dpkg-genchanges  >../orville-write_2.55-2.3_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build orville-write-2.55
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140906-2021
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+orville-write_2.55-2.3_amd64.changes:
+─────────────────────────────────────
+
+Format: 1.8
+Date: Tue, 03 Aug 2010 14:53:12 -0400
+Source: orville-write
+Binary: orville-write
+Architecture: source amd64
+Version: 2.55-2.3
+Distribution: sid
+Urgency: low
+Maintainer: Shane Wegner <shane@debian.org>
+Changed-By: Christian Perrier <bubulle@debian.org>
+Description:
+ orville-write - An alternative to the standard write program
+Closes: 555689 591224
+Changes:
+ orville-write (2.55-2.3) unstable; urgency=low
+ .
+   * Non-maintainer upload.
+   * Clean config.log in the clean rule
+   * Bump debhelper compatibility to 7
+   * Accordingly, replace "dh_clean -k" by dh_prep
+   * Fix pending l10n issues. Debconf translations:
+     - Japanese (Hideki Yamane (Debian-JP)).  Closes: #555689
+     - Danish (Joe Hansen).  Closes: #591224
+Checksums-Sha1:
+ 264441aa126e6a5965117cddcde69d2065408734 796 orville-write_2.55-2.3.dsc
+ 3408706c5ef989cdfff718cf6b89859e9e4a1dbf 37466 orville-write_2.55-2.3.diff.gz
+ d9377599c899cf4a47c66cd7d1a5f1a763d1f3dc 55800 orville-write_2.55-2.3_amd64.deb
+Checksums-Sha256:
+ 206d49db92933b96043203d02b769bbdd293c1b5f82f5fdd1f2ed29a0989e3eb 796 orville-write_2.55-2.3.dsc
+ 2e1db2ad5bf6fa6e2fd828b6ba2875fc98bc2937bd7c43c126f96157ce68fc77 37466 orville-write_2.55-2.3.diff.gz
+ 000170c47140b182854298ffbfd348e3b91da024a0fad7744f406671f276fd0d 55800 orville-write_2.55-2.3_amd64.deb
+Files:
+ 3be733be9418f68e1b9e153671b5da7f 55800 utils extra orville-write_2.55-2.3_amd64.deb
+ 3ff44d1f8a4cc41ae99c11583a57aa94 796 utils extra orville-write_2.55-2.3.dsc
+ fe4e68a24af8b31598348fede7066df1 37466 utils extra orville-write_2.55-2.3.diff.gz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+orville-write_2.55-2.3_amd64.deb
+────────────────────────────────
+
+ new debian package, version 2.0.
+ size 55800 bytes: control archive=6087 bytes.
+      49 bytes,     2 lines      conffiles            
+      96 bytes,     4 lines   *  config               #!/bin/sh
+     554 bytes,    16 lines      control              
+    1154 bytes,    18 lines      md5sums              
+     709 bytes,    26 lines   *  postinst             #!/bin/sh
+     551 bytes,    20 lines   *  postrm               #!/bin/sh
+     651 bytes,    22 lines   *  preinst              #!/bin/sh
+      74 bytes,     5 lines   *  prerm                #!/bin/sh
+    8085 bytes,    74 lines      templates            
+ Package: orville-write
+ Version: 2.55-2.3
+ Architecture: amd64
+ Maintainer: Shane Wegner <shane@debian.org>
+ Installed-Size: 193
+ Depends: debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.14)
+ Conflicts: xtell
+ Section: utils
+ Priority: extra
+ Description: An alternative to the standard write program
+  Orville Write is an alternative to the default write program.  It has many
+  features which are not present in the default write including helper
+  flags, telegrams, access control, and more.
+  .
+  The Orville Write home page is at:
+  http://www.unixpapa.com/write.html
+
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./usr/
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./usr/bin/
+-rwxr-sr-x root/tty      11488 2014-09-06 20:21 ./usr/bin/helpers
+-rwxr-sr-x root/tty      15760 2014-09-06 20:21 ./usr/bin/amin
+-rwsr-sr-x root/tty      36528 2014-09-06 20:21 ./usr/bin/orville-write
+-rwxr-sr-x root/tty      11696 2014-09-06 20:21 ./usr/bin/huh
+-rwsr-sr-x root/tty      20272 2014-09-06 20:21 ./usr/bin/mesg
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./usr/share/
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./usr/share/man/man1/
+-rw-r--r-- root/root       544 2014-09-06 20:21 ./usr/share/man/man1/huh.1.gz
+-rw-r--r-- root/root       919 2014-09-06 20:21 ./usr/share/man/man1/amin.1.gz
+-rw-r--r-- root/root      4646 2014-09-06 20:21 ./usr/share/man/man1/orville-write.1.gz
+-rw-r--r-- root/root       444 2014-09-06 20:21 ./usr/share/man/man1/helpers.1.gz
+-rw-r--r-- root/root      2940 2014-09-06 20:21 ./usr/share/man/man1/mesg.1.gz
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./usr/share/doc/orville-write/
+-rw-r--r-- root/root      2538 2004-09-29 06:42 ./usr/share/doc/orville-write/changelog.gz
+-rw-r--r-- root/root      3409 2004-09-29 05:27 ./usr/share/doc/orville-write/README.gz
+-rw-r--r-- root/root      1592 2014-09-06 20:21 ./usr/share/doc/orville-write/changelog.Debian.gz
+-rw-r--r-- root/root       321 2014-09-06 20:21 ./usr/share/doc/orville-write/copyright
+-rw-r--r-- root/root      3887 2003-05-30 18:04 ./usr/share/doc/orville-write/INSTALLATION.gz
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./usr/share/lintian/
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./usr/share/lintian/overrides/
+-rw-r--r-- root/root       460 2014-09-06 20:21 ./usr/share/lintian/overrides/orville-write
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./etc/
+-rw-r--r-- root/root      3329 2014-09-06 20:21 ./etc/orville.conf
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./etc/logrotate.d/
+-rw-r--r-- root/root        55 2014-09-06 20:21 ./etc/logrotate.d/orville-write
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./var/
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./var/lib/
+drwxr-xr-x root/root         0 2014-09-06 20:21 ./var/lib/orville-write/
+-rw-rw---- root/tty          0 2014-09-06 20:21 ./var/lib/orville-write/wrttmp
+-rw-rw---- root/tty          0 2014-09-06 20:21 ./var/lib/orville-write/wrthist
+lrwxrwxrwx root/root         0 2014-09-06 20:21 ./usr/bin/ojot -> write
+lrwxrwxrwx root/root         0 2014-09-06 20:21 ./usr/bin/tel -> write
+lrwxrwxrwx root/root         0 2014-09-06 20:21 ./usr/bin/telegram -> write
+lrwxrwxrwx root/root         0 2014-09-06 20:21 ./usr/share/man/man1/telegram.1.gz -> orville-write.1.gz
+lrwxrwxrwx root/root         0 2014-09-06 20:21 ./usr/share/man/man1/tel.1.gz -> orville-write.1.gz
+lrwxrwxrwx root/root         0 2014-09-06 20:21 ./usr/share/man/man1/ojot.1.gz -> orville-write.1.gz
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 1528
+Build-Time: 3
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 9
+Job: orville-write_2.55-2.3.dsc
+Machine Architecture: amd64
+Package: orville-write
+Package-Time: 16
+Source-Version: 2.55-2.3
+Space: 1528
+Status: successful
+Version: 2.55-2.3
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140906-2021
+Build needed 00:00:16, 1528k disc space

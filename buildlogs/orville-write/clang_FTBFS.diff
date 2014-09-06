@@ -1,0 +1,32 @@
+--- orville-write-2.55.orig/wrt_hist.c
++++ orville-write-2.55/wrt_hist.c
+@@ -86,7 +86,7 @@
+  * slot "writer" wrote the person in slot "writee".
+  */
+ 
+-put_hist(long writer, long writee, struct wrthist *hist)
++void put_hist(long writer, long writee, struct wrthist *hist)
+ {
+ 	if (writee > MAXSLOTS)
+ 		return;
+ 		
+--- orville-write-2.55.orig/mesg.c
++++ orville-write-2.55/mesg.c
+@@ -651,14 +651,14 @@
+ int n, foundsome= 0;
+ FILE *fp;
+ 
+-    if (newmode == 0) return;
++    if (newmode == 0) return 0;
+ 
+     /* Compute my slot number from my offset */
+     if ((writer= (mypos - wt_head.hdr_size)/wt_head.tmp_size) > MAXSLOTS)
+-	return;
++	return 0;
+ 
+     if ((fp= fopen(f_wrthist,"r")) == NULL)
+-	return;
++	return 0;
+ 
+     fseek(fp,whindex(writer,0),0);
+     hist= (struct wrthist *)malloc(MAXSLOTS*sizeof(struct wrthist));
