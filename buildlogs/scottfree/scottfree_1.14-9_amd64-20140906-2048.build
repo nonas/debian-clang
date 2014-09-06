@@ -1,0 +1,491 @@
+sbuild (Debian sbuild) 0.64.1 (13 Oct 2013) on core.localdomain
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ scottfree 1.14-9 (amd64)                                   06 Sep 2014 20:48 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Package: scottfree
+Version: 1.14-9
+Source Version: 1.14-9
+Distribution: sid
+Machine Architecture: amd64
+Host Architecture: amd64
+Build Architecture: amd64
+
+I: NOTICE: Log filtering will replace 'build/scottfree-FODGVG/scottfree-1.14' with '«PKGBUILDDIR»'
+I: NOTICE: Log filtering will replace 'build/scottfree-FODGVG' with '«BUILDDIR»'
+I: NOTICE: Log filtering will replace 'var/lib/schroot/mount/sid-amd64-sbuild-828dd9dc-1742-4b0c-9b23-bcb21aa10827' with '«CHROOT»'
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Fetch source files                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Local sources
+─────────────
+
+scottfree_1.14-9.dsc exists in .; copying to chroot
+
+Check arch
+──────────
+
+Merged Build-Depends: build-essential, fakeroot
+Filtered Build-Depends: build-essential, fakeroot
+dpkg-deb: building package `sbuild-build-depends-core-dummy' in `/«BUILDDIR»/resolver-8yEPRc/apt_archive/sbuild-build-depends-core-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install core build dependencies (apt-based resolver)                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  sbuild-build-depends-core-dummy
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 23 not upgraded.
+Need to get 0 B/820 B of archives.
+After this operation, 0 B of additional disk space will be used.
+Selecting previously unselected package sbuild-build-depends-core-dummy.
+(Reading database ... 11952 files and directories currently installed.)
+Preparing to unpack .../sbuild-build-depends-core-dummy.deb ...
+Unpacking sbuild-build-depends-core-dummy (0.invalid.0) ...
+Setting up sbuild-build-depends-core-dummy (0.invalid.0) ...
+Merged Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, init, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, tar, util-linux, libc6-dev | libc-dev, gcc (>= 4:4.9.1), g++ (>= 4:4.9.1), make, dpkg-dev (>= 1.17.11), debhelper (>= 5.0.0), quilt, libncurses5-dev
+Filtered Build-Depends: base-files, base-passwd, bash, bsdutils, coreutils, dash, debianutils, diffutils, dpkg, e2fsprogs, findutils, grep, gzip, hostname, init, libc-bin, login, mount, ncurses-base, ncurses-bin, perl-base, sed, sysvinit-utils, tar, util-linux, libc6-dev, gcc (>= 4:4.9.1), g++ (>= 4:4.9.1), make, dpkg-dev (>= 1.17.11), debhelper (>= 5.0.0), quilt, libncurses5-dev
+dpkg-deb: building package `sbuild-build-depends-scottfree-dummy' in `/«BUILDDIR»/resolver-dy3voT/apt_archive/sbuild-build-depends-scottfree-dummy.deb'.
+OK
+Reading package lists...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Install scottfree build dependencies (apt-based resolver)                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  bsdmainutils debhelper diffstat file gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libcroco3 libglib2.0-0 libmagic1
+  libncurses5-dev libpipeline1 libtinfo-dev libunistring0 libxml2 man-db
+  po-debconf quilt
+Suggested packages:
+  wamerican wordlist whois vacation dh-make gettext-doc groff ncurses-doc less
+  www-browser libmail-box-perl procmail graphviz default-mta
+  mail-transport-agent
+Recommended packages:
+  curl wget lynx-cur autopoint libasprintf-dev libgettextpo-dev
+  libglib2.0-data shared-mime-info xml-core libmail-sendmail-perl
+The following NEW packages will be installed:
+  bsdmainutils debhelper diffstat file gettext gettext-base groff-base
+  intltool-debian libasprintf0c2 libcroco3 libglib2.0-0 libmagic1
+  libncurses5-dev libpipeline1 libtinfo-dev libunistring0 libxml2 man-db
+  po-debconf quilt sbuild-build-depends-scottfree-dummy
+0 upgraded, 21 newly installed, 0 to remove and 23 not upgraded.
+Need to get 9384 kB/9385 kB of archives.
+After this operation, 29.2 MB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ sid/main libpipeline1 amd64 1.3.0-1 [25.8 kB]
+Get:2 http://http.debian.net/debian/ sid/main groff-base amd64 1.22.2-8 [1183 kB]
+Get:3 http://http.debian.net/debian/ sid/main bsdmainutils amd64 9.0.5 [211 kB]
+Get:4 http://http.debian.net/debian/ sid/main man-db amd64 2.6.7.1-1 [990 kB]
+Get:5 http://http.debian.net/debian/ sid/main libasprintf0c2 amd64 0.19.2-2 [30.8 kB]
+Get:6 http://http.debian.net/debian/ sid/main libmagic1 amd64 1:5.19-1 [237 kB]
+Get:7 http://http.debian.net/debian/ sid/main libxml2 amd64 2.9.1+dfsg1-4 [797 kB]
+Get:8 http://http.debian.net/debian/ sid/main libglib2.0-0 amd64 2.40.0-5 [2421 kB]
+Get:9 http://http.debian.net/debian/ sid/main libcroco3 amd64 0.6.8-3 [135 kB]
+Get:10 http://http.debian.net/debian/ sid/main libunistring0 amd64 0.9.3-5.2 [283 kB]
+Get:11 http://http.debian.net/debian/ sid/main file amd64 1:5.19-1 [58.0 kB]
+Get:12 http://http.debian.net/debian/ sid/main gettext-base amd64 0.19.2-2 [120 kB]
+Get:13 http://http.debian.net/debian/ sid/main gettext amd64 0.19.2-2 [1237 kB]
+Get:14 http://http.debian.net/debian/ sid/main intltool-debian all 0.35.0+20060710.1 [30.8 kB]
+Get:15 http://http.debian.net/debian/ sid/main po-debconf all 1.0.16+nmu3 [220 kB]
+Get:16 http://http.debian.net/debian/ sid/main debhelper all 9.20140817 [814 kB]
+Get:17 http://http.debian.net/debian/ sid/main diffstat amd64 1.58-1 [29.4 kB]
+Get:18 http://http.debian.net/debian/ sid/main libtinfo-dev amd64 5.9+20140712-2 [76.1 kB]
+Get:19 http://http.debian.net/debian/ sid/main libncurses5-dev amd64 5.9+20140712-2 [174 kB]
+Get:20 http://http.debian.net/debian/ sid/main quilt all 0.63-3 [312 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 9384 kB in 0s (74.6 MB/s)
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11952 files and directories currently installed.)
+Preparing to unpack .../libpipeline1_1.3.0-1_amd64.deb ...
+Unpacking libpipeline1:amd64 (1.3.0-1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../groff-base_1.22.2-8_amd64.deb ...
+Unpacking groff-base (1.22.2-8) ...
+Selecting previously unselected package bsdmainutils.
+Preparing to unpack .../bsdmainutils_9.0.5_amd64.deb ...
+Unpacking bsdmainutils (9.0.5) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../man-db_2.6.7.1-1_amd64.deb ...
+Unpacking man-db (2.6.7.1-1) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Preparing to unpack .../libasprintf0c2_0.19.2-2_amd64.deb ...
+Unpacking libasprintf0c2:amd64 (0.19.2-2) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.19-1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.19-1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.1+dfsg1-4_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-4) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../libglib2.0-0_2.40.0-5_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.40.0-5) ...
+Selecting previously unselected package libcroco3:amd64.
+Preparing to unpack .../libcroco3_0.6.8-3_amd64.deb ...
+Unpacking libcroco3:amd64 (0.6.8-3) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5.2_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5.2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.19-1_amd64.deb ...
+Unpacking file (1:5.19-1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../gettext-base_0.19.2-2_amd64.deb ...
+Unpacking gettext-base (0.19.2-2) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../gettext_0.19.2-2_amd64.deb ...
+Unpacking gettext (0.19.2-2) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../intltool-debian_0.35.0+20060710.1_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.1) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../po-debconf_1.0.16+nmu3_all.deb ...
+Unpacking po-debconf (1.0.16+nmu3) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../debhelper_9.20140817_all.deb ...
+Unpacking debhelper (9.20140817) ...
+Selecting previously unselected package diffstat.
+Preparing to unpack .../diffstat_1.58-1_amd64.deb ...
+Unpacking diffstat (1.58-1) ...
+Selecting previously unselected package libtinfo-dev:amd64.
+Preparing to unpack .../libtinfo-dev_5.9+20140712-2_amd64.deb ...
+Unpacking libtinfo-dev:amd64 (5.9+20140712-2) ...
+Selecting previously unselected package libncurses5-dev:amd64.
+Preparing to unpack .../libncurses5-dev_5.9+20140712-2_amd64.deb ...
+Unpacking libncurses5-dev:amd64 (5.9+20140712-2) ...
+Selecting previously unselected package quilt.
+Preparing to unpack .../archives/quilt_0.63-3_all.deb ...
+Unpacking quilt (0.63-3) ...
+Selecting previously unselected package sbuild-build-depends-scottfree-dummy.
+Preparing to unpack .../sbuild-build-depends-scottfree-dummy.deb ...
+Unpacking sbuild-build-depends-scottfree-dummy (0.invalid.0) ...
+Setting up libpipeline1:amd64 (1.3.0-1) ...
+Setting up groff-base (1.22.2-8) ...
+Setting up bsdmainutils (9.0.5) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up man-db (2.6.7.1-1) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up libasprintf0c2:amd64 (0.19.2-2) ...
+Setting up libmagic1:amd64 (1:5.19-1) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-4) ...
+Setting up libglib2.0-0:amd64 (2.40.0-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.8-3) ...
+Setting up libunistring0:amd64 (0.9.3-5.2) ...
+Setting up file (1:5.19-1) ...
+Setting up gettext-base (0.19.2-2) ...
+Setting up gettext (0.19.2-2) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu3) ...
+Setting up debhelper (9.20140817) ...
+Setting up diffstat (1.58-1) ...
+Setting up libtinfo-dev:amd64 (5.9+20140712-2) ...
+Setting up libncurses5-dev:amd64 (5.9+20140712-2) ...
+Setting up quilt (0.63-3) ...
+Setting up sbuild-build-depends-scottfree-dummy (0.invalid.0) ...
+Processing triggers for libc-bin (2.19-10) ...
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build environment                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Kernel: Linux 3.14-2-amd64 amd64 (x86_64)
+Toolchain package versions: binutils_2.24.51.20140903-1 dpkg-dev_1.17.13 g++-4.9_4.9.1-9 gcc-4.9_4.9.1-9 libc6-dev_2.19-10 libstdc++-4.9-dev_4.9.1-9 libstdc++6_4.9.1-9 linux-libc-dev_3.14.15-2
+Package versions: acl_2.2.52-1.1 adduser_3.113+nmu3 apt_1.0.7 base-files_7.5 base-passwd_3.5.36 bash_4.3-9 binutils_2.24.51.20140903-1 bsdmainutils_9.0.5 bsdutils_1:2.20.1-5.8 build-essential_11.7 bzip2_1.0.6-7 clang-3.5_1:3.5-1 coreutils_8.23-2 cpp_4:4.9.1-3 cpp-4.9_4.9.1-9 dash_0.5.7-4 debconf_1.5.53 debconf-i18n_1.5.53 debfoster_2.7-2 debhelper_9.20140817 debian-archive-keyring_2014.1 debianutils_4.4 diffstat_1.58-1 diffutils_1:3.3-1 dmsetup_2:1.02.88-1 dpkg_1.17.13 dpkg-dev_1.17.13 e2fslibs_1.42.12-1 e2fsprogs_1.42.12-1 fakeroot_1.20.1-1.1 file_1:5.19-1 findutils_4.4.2-9 g++_4:4.9.1-3 g++-4.9_4.9.1-9 gcc_4:4.9.1-3 gcc-4.7-base_4.7.4-3 gcc-4.8-base_4.8.3-9 gcc-4.9_4.9.1-9 gcc-4.9-base_4.9.1-9 gettext_0.19.2-2 gettext-base_0.19.2-2 gnupg_1.4.18-4 gpgv_1.4.18-4 grep_2.20-2 groff-base_1.22.2-8 gzip_1.6-3 hostname_3.15 init_1.21 initscripts_2.88dsf-53.4 insserv_1.14.0-5 intltool-debian_0.35.0+20060710.1 libacl1_2.2.52-1.1 libapt-pkg4.12_1.0.7 libasan1_4.9.1-9 libasprintf0c2_0.19.2-2 libatomic1_4.9.1-9 libattr1_1:2.4.47-1 libaudit-common_1:2.3.7-1 libaudit1_1:2.3.7-1 libblkid1_2.20.1-5.8 libbsd0_0.7.0-2 libbz2-1.0_1.0.6-7 libc-bin_2.19-10 libc-dev-bin_2.19-10 libc6_2.19-10 libc6-dev_2.19-10 libcap2_1:2.24-4 libcap2-bin_1:2.24-4 libcilkrts5_4.9.1-9 libclang-common-3.5-dev_1:3.5-1 libclang1-3.5_1:3.5-1 libcloog-isl4_0.18.2-1 libcomerr2_1.42.12-1 libcroco3_0.6.8-3 libcryptsetup4_2:1.6.6-1 libdb5.3_5.3.28-6 libdbus-1-3_1.8.6-2 libdebconfclient0_0.191 libdevmapper1.02.1_2:1.02.88-1 libdpkg-perl_1.17.13 libedit2_3.1-20140620-2 libfakeroot_1.20.1-1.1 libffi6_3.1-2 libgc1c2_1:7.2d-6.3 libgcc-4.9-dev_4.9.1-9 libgcc1_1:4.9.1-9 libgcrypt11_1.5.4-3 libgcrypt20_1.6.2-3 libgdbm3_1.8.3-13 libglib2.0-0_2.40.0-5 libgmp10_2:6.0.0+dfsg-6 libgomp1_4.9.1-9 libgpg-error0_1.13-4 libisl10_0.12.2-2 libitm1_4.9.1-9 libkmod2_18-1 libllvm3.5_1:3.5-1 liblocale-gettext-perl_1.05-8+b1 liblsan0_4.9.1-9 liblzma5_5.1.1alpha+20120614-2 libmagic1_1:5.19-1 libmount1_2.20.1-5.8 libmpc3_1.0.2-1 libmpfr4_3.1.2-1 libncurses5_5.9+20140712-2 libncurses5-dev_5.9+20140712-2 libncursesw5_5.9+20140712-2 libobjc-4.9-dev_4.9.1-9 libobjc4_4.9.1-9 libpam-modules_1.1.8-3.1 libpam-modules-bin_1.1.8-3.1 libpam-runtime_1.1.8-3.1 libpam0g_1.1.8-3.1 libpcre3_1:8.35-3 libpipeline1_1.3.0-1 libprocps3_1:3.3.9-7 libquadmath0_4.9.1-9 libreadline6_6.3-8 libselinux1_2.3-2 libsemanage-common_2.3-1 libsemanage1_2.3-1 libsepol1_2.3-2 libslang2_2.2.4-17 libss2_1.42.12-1 libstdc++-4.9-dev_4.9.1-9 libstdc++6_4.9.1-9 libsystemd-daemon0_208-8 libsystemd-journal0_208-8 libsystemd-login0_208-8 libtext-charwidth-perl_0.04-7+b3 libtext-iconv-perl_1.7-5+b2 libtext-wrapi18n-perl_0.06-7 libtimedate-perl_2.3000-2 libtinfo-dev_5.9+20140712-2 libtinfo5_5.9+20140712-2 libtsan0_4.9.1-9 libubsan0_4.9.1-9 libudev1_208-8 libunistring0_0.9.3-5.2 libusb-0.1-4_2:0.1.12-24 libustr-1.0-1_1.0.4-3 libuuid1_2.20.1-5.8 libwrap0_7.6.q-25 libxml2_2.9.1+dfsg1-4 linux-libc-dev_3.14.15-2 login_1:4.2-2+b1 lsb-base_4.1+Debian13 make_4.0-8 man-db_2.6.7.1-1 mawk_1.3.3-17 mount_2.20.1-5.8 multiarch-support_2.19-10 nano_2.2.6-3 ncurses-base_5.9+20140712-2 ncurses-bin_5.9+20140712-2 passwd_1:4.2-2+b1 patch_2.7.1-6 perl_5.20.0-6 perl-base_5.20.0-6 perl-modules_5.20.0-6 po-debconf_1.0.16+nmu3 procps_1:3.3.9-7 quilt_0.63-3 readline-common_6.3-8 sbuild-build-depends-core-dummy_0.invalid.0 sbuild-build-depends-scottfree-dummy_0.invalid.0 sed_4.2.2-4 sensible-utils_0.0.9 startpar_0.59-3 systemd_208-8 systemd-sysv_208-8 sysv-rc_2.88dsf-53.4 sysvinit-utils_2.88dsf-53.4 tar_1.27.1-2 tzdata_2014g-1 udev_208-8 util-linux_2.20.1-5.8 xz-utils_5.1.1alpha+20120614-2 zlib1g_1:1.2.8.dfsg-2
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Build                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+Unpack source
+─────────────
+
+dpkg-source: warning: extracting unsigned source package (scottfree_1.14-9.dsc)
+dpkg-source: info: extracting scottfree in scottfree-1.14
+dpkg-source: info: unpacking scottfree_1.14.orig.tar.gz
+dpkg-source: info: applying scottfree_1.14-9.diff.gz
+dpkg-source: info: upstream files that have been modified: 
+ scottfree-1.14/ScottCurses.c
+
+Check disc space
+────────────────
+
+Sufficient free space for build
+
+User Environment
+────────────────
+
+HOME=/sbuild-nonexistent
+LOGNAME=nonas
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+SCHROOT_ALIAS_NAME=sid-amd64-sbuild
+SCHROOT_CHROOT_NAME=sid-amd64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=nonas
+SCHROOT_SESSION_ID=sid-amd64-sbuild-828dd9dc-1742-4b0c-9b23-bcb21aa10827
+SCHROOT_UID=1000
+SCHROOT_USER=nonas
+SHELL=/bin/sh
+TERM=xterm
+USER=nonas
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SEAT=seat0
+XDG_SESSION_ID=1
+XDG_VTNR=7
+
+dpkg-buildpackage
+─────────────────
+
+dpkg-buildpackage: source package scottfree
+dpkg-buildpackage: source version 1.14-9
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Barry deFreese <bddebian@comcast.net>
+ dpkg-source --before-build scottfree-1.14
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+QUILT_PATCHES=debian/patches \
+	quilt --quiltrc /dev/null pop -a -R || test $? = 2
+No patch removed
+rm -rf .pc debian/stamp-patched
+dh_testdir
+dh_testroot
+rm -f build
+rm -f ScottCurses.o scottfree
+rm -f `find . -name "*~"`
+rm -rf debian/scottfree debian/files* core debian/substvars
+ dpkg-source -b scottfree-1.14
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building scottfree using existing scottfree_1.14.orig.tar.gz
+dpkg-source: info: building scottfree in scottfree_1.14-9.diff.gz
+dpkg-source: warning: the diff modifies the following upstream files: 
+ ScottCurses.c
+dpkg-source: info: use the '3.0 (quilt)' format to have separate and documented changes to upstream files, see dpkg-source(1)
+dpkg-source: info: building scottfree in scottfree_1.14-9.dsc
+ debian/rules build
+QUILT_PATCHES=debian/patches \
+	quilt --quiltrc /dev/null push -a || test $? = 2
+Applying patch 01_makefile.diff
+patching file Makefile
+
+Applying patch 02_scottcurses_includes.diff
+patching file ScottCurses.c
+
+Now at patch 02_scottcurses_includes.diff
+touch debian/stamp-patched
+dh_testdir
+/usr/bin/make CFLAGS="-Wall -g -O2"
+make[1]: Entering directory '/«PKGBUILDDIR»'
+gcc -Wall -g -O2   -c -o ScottCurses.o ScottCurses.c
+ScottCurses.c:197:1: warning: unused label 'oops' [-Wunused-label]
+oops:   do
+^~~~~~~~
+ScottCurses.c:242:48: warning: data argument not used by format string [-Wformat-extra-args]
+                &ni,&na,&nw,&nr,&mc,&pr,&tr,&wl,&lt,&mn,&trm,&ct)<10)
+                                                             ^
+ScottCurses.c:697:13: warning: format specifies type 'int *' but the argument has type 'short *' [-Wformat]
+                &BitFlags,&DarkFlag,&MyLoc,&CurrentCounter,&SavedRoom,
+                          ^~~~~~~~~
+ScottCurses.c:1301:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main(int argc, char *argv[])
+^
+ScottCurses.c:1301:1: note: change return type to 'int'
+void main(int argc, char *argv[])
+^~~~
+int
+ScottCurses.c:1394:8: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+        srand(time(NULL)^getpid()^getuid());
+              ^
+5 warnings generated.
+gcc ScottCurses.o -o scottfree -lcurses
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+touch build-stamp
+ fakeroot debian/rules binary
+dh_testdir
+dh_testroot
+dh_clean -k
+dh_clean: dh_clean -k is deprecated; use dh_prep instead
+dh_installdirs
+/usr/bin/make install DESTDIR=/«PKGBUILDDIR»/debian/scottfree
+make[1]: Entering directory '/«PKGBUILDDIR»'
+mkdir -p /«PKGBUILDDIR»/debian/scottfree/usr/games
+install -m 755 -o root -g root scottfree /«PKGBUILDDIR»/debian/scottfree/usr/games
+make[1]: Leaving directory '/«PKGBUILDDIR»'
+dh_testdir
+dh_testroot
+dh_installchangelogs
+dh_installdocs
+dh_installmenu
+dh_installman debian/scottfree.6
+dh_strip
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_shlibdeps
+dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package `scottfree' in `../scottfree_1.14-9_amd64.deb'.
+ dpkg-genchanges  >../scottfree_1.14-9_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build scottfree-1.14
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+────────────────────────────────────────────────────────────────────────────────
+Build finished at 20140906-2048
+
+Finished
+────────
+
+I: Built successfully
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build Chroot                                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Changes                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+scottfree_1.14-9_amd64.changes:
+───────────────────────────────
+
+Format: 1.8
+Date: Fri, 11 Jan 2008 09:52:55 -0500
+Source: scottfree
+Binary: scottfree
+Architecture: source amd64
+Version: 1.14-9
+Distribution: sid
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Barry deFreese <bddebian@comcast.net>
+Description:
+ scottfree  - Interpreter for Adventure International games
+Closes: 348950 438005
+Changes:
+ scottfree (1.14-9) unstable; urgency=low
+ .
+   [ Barry deFreese ]
+   * New maintainer (Closes: #348950)
+     + Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+   * Add myself to uploaders
+   * Add VCS fields to control file
+   * Update build system to debhelper
+     + Add build-dep on debhelper
+   * Make clean not ignore errors
+   * Handle nostrip options (Closes: #438005)
+   * Add quilt patching system
+     + Move source changes to patches
+   * Remove spurious losar directory
+   * Bump Standards Version to 3.7.3
+Checksums-Sha1:
+ 22208e3369510deec5b72490e1f3f83952951533 1008 scottfree_1.14-9.dsc
+ 41c46dca37dcfaf76c761e010d9d2264e0a84293 4847 scottfree_1.14-9.diff.gz
+ ee7980c2bb713b4b0335bada2ec8f864e41eacb5 22538 scottfree_1.14-9_amd64.deb
+Checksums-Sha256:
+ ca9babe7eb287f6678d0f66ff2a272fdd794bd4907f2aefe56516ff631853c62 1008 scottfree_1.14-9.dsc
+ 158a82951bc87145717ab6c373581cbd761da3c07cbce92f5a431c684f422d31 4847 scottfree_1.14-9.diff.gz
+ c42cc1095b4d8295fec1a8fd2b762c216f5580fd1b47b7f5538f067303bea6eb 22538 scottfree_1.14-9_amd64.deb
+Files:
+ 26ba5fd3c5ed6770afd4052d528420dc 22538 games optional scottfree_1.14-9_amd64.deb
+ 18f050e37ed9f77a1e1872180c4e64e2 1008 games optional scottfree_1.14-9.dsc
+ 7a88cbfac9a4f71e5689d9c71cbf6b93 4847 games optional scottfree_1.14-9.diff.gz
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Package contents                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+scottfree_1.14-9_amd64.deb
+──────────────────────────
+
+ new debian package, version 2.0.
+ size 22538 bytes: control archive=826 bytes.
+     615 bytes,    15 lines      control              
+     408 bytes,     6 lines      md5sums              
+ Package: scottfree
+ Version: 1.14-9
+ Architecture: amd64
+ Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+ Installed-Size: 75
+ Depends: libc6 (>= 2.14), libncurses5 (>= 5.5-5~), libtinfo5
+ Section: games
+ Priority: optional
+ Description: Interpreter for Adventure International games
+  ScottFree reads and executes TRS-80 format Scott Adams data files. It is
+  possible to run other formats either by writing a loader for that format or
+  a converter to TRS-80 format.
+  .
+  Most Adventure International Games are distributed as shareware and are
+  available from ftp://ftp.gmd.de/if-archive/scott-adams/
+
+drwxr-xr-x root/root         0 2014-09-06 20:48 ./
+drwxr-xr-x root/root         0 2014-09-06 20:48 ./usr/
+drwxr-xr-x root/root         0 2014-09-06 20:48 ./usr/games/
+-rwxr-xr-x root/root     31656 2014-09-06 20:48 ./usr/games/scottfree
+drwxr-xr-x root/root         0 2014-09-06 20:48 ./usr/share/
+drwxr-xr-x root/root         0 2014-09-06 20:48 ./usr/share/man/
+drwxr-xr-x root/root         0 2014-09-06 20:48 ./usr/share/man/man6/
+-rw-r--r-- root/root      1199 2014-09-06 20:48 ./usr/share/man/man6/scottfree.6.gz
+drwxr-xr-x root/root         0 2014-09-06 20:48 ./usr/share/doc/
+drwxr-xr-x root/root         0 2014-09-06 20:48 ./usr/share/doc/scottfree/
+-rw-r--r-- root/root      2412 1995-04-11 22:49 ./usr/share/doc/scottfree/Definition.gz
+-rw-r--r-- root/root      3158 1995-04-27 12:12 ./usr/share/doc/scottfree/README.gz
+-rw-r--r-- root/root       901 2014-09-06 20:48 ./usr/share/doc/scottfree/changelog.Debian.gz
+-rw-r--r-- root/root       257 2014-09-06 20:48 ./usr/share/doc/scottfree/copyright
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Post Build                                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Cleanup                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Purging /«BUILDDIR»
+Not cleaning session: cloned chroot in use
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ Summary                                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Build Architecture: amd64
+Build-Space: 484
+Build-Time: 2
+Distribution: sid
+Host Architecture: amd64
+Install-Time: 8
+Job: scottfree_1.14-9.dsc
+Machine Architecture: amd64
+Package: scottfree
+Package-Time: 15
+Source-Version: 1.14-9
+Space: 484
+Status: successful
+Version: 1.14-9
+────────────────────────────────────────────────────────────────────────────────
+Finished at 20140906-2048
+Build needed 00:00:15, 484k disc space

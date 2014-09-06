@@ -1,0 +1,11 @@
+--- scottfree-1.14.orig/ScottCurses.c
++++ scottfree-1.14/ScottCurses.c
+@@ -1162,7 +1162,7 @@
+ 					if(f2==2)
+ 						doagain=1;
+ 					if(vb!=0 && doagain==0)
+-						return;
++						return 0;
+ 				}
+ 			}
+ 		}
