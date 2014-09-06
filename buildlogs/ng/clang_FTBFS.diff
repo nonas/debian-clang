@@ -1,0 +1,29 @@
+--- ng-1.5~beta1.orig/sys/default/tty.c
++++ ng-1.5~beta1/sys/default/tty.c
+@@ -281,7 +281,7 @@
+ 	if (row == bot) {		/* Case of one line insert is	*/
+ 		ttmove(row, 0);		/*	special			*/
+ 		tteeol();
+-		return;
++		return 0;
+ 	}
+ 	if (CS && SR) {		/* Use scroll region and back index	*/
+ 		nl = bot - row;
+@@ -289,7 +289,7 @@
+ 		ttmove(row, 0);
+ 		while (nchunk--) putpad(SR, nl);
+ 		ttnowindow();
+-		return;
++		return 0;
+ 	} else if (insdel) {
+ 		ttmove(1+bot-nchunk, 0);
+ 		nl = nrow - ttrow;
+@@ -321,7 +321,7 @@
+ 	if (row == bot) {		/* One line special case	*/
+ 		ttmove(row, 0);
+ 		tteeol();
+-		return;
++		return 0;
+ 	}
+ 	if (CS) {			/* scrolling region	*/
+ 		nl = bot - row;
