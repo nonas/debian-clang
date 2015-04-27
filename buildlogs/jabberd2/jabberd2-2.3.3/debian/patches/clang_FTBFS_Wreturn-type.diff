@@ -1,0 +1,51 @@
+Description: fix FTBFS with clang instead of gcc
+Author: Nicolas Sévelin-Radiguet <nicosr@free.fr>
+Last-Update: 2015-04-27
+
+--- a/sm/mod_roster.c
++++ b/sm/mod_roster.c
+@@ -307,7 +307,7 @@
+     pkt_sess(push, rw->sess);
+ }
+ 
+-static void _roster_set_item(pkt_t pkt, int elem, sess_t sess, mod_instance_t mi)
++static _roster_set_item(pkt_t pkt, int elem, sess_t sess, mod_instance_t mi)
+ {
+     mod_roster_t mroster = (mod_roster_t) mi->mod->private;
+     module_t mod = mi->mod;
+@@ -322,7 +322,7 @@
+     jid = jid_new(NAD_AVAL(pkt->nad, attr), NAD_AVAL_L(pkt->nad, attr));
+     if(jid == NULL) {
+         log_debug(ZONE, "jid failed prep check, skipping");
+-        return;
++        return 0;
+     }
+ 
+     /* check for removals */
+@@ -378,7 +378,7 @@
+ 
+         jid_free(jid);
+ 
+-        return;
++        return 0;
+     }
+ 
+     /* find a pre-existing one */
+@@ -393,7 +393,7 @@
+ 
+             /* if the limit is reached, skip it */
+             if (ret == st_SUCCESS && items >= mroster->maxitems)
+-                return;
++                return 0;
+         }
+ 
+         /* make a new one */
+@@ -460,7 +460,7 @@
+     log_debug(ZONE, "added %s to roster (to %d from %d ask %d name %s ngroups %d)", jid_full(item->jid), item->to, item->from, item->ask, item->name, item->ngroups);
+ 
+     if (sm_storage_rate_limit(sess->user->sm, jid_user(sess->user->jid)))
+-        return;
++        return 0;
+ 
+     /* save changes */
+     _roster_save_item(sess->user, item);
